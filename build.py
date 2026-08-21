@@ -97,7 +97,7 @@ img{max-width:100%; display:block}
 .col.mid,.col.side{display:grid; gap:15px; align-content:start}
 .col.mid > article + article{border-top:1px solid var(--hair); padding-top:18px}
 .col.side{text-align:center}
-.col.side .tag{margin-left:auto; margin-right:auto}
+.col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
 .col.side .tx{margin-left:auto; margin-right:auto}
 .col.side > article + article{border-top:1px solid var(--hair); padding-top:18px}
 .foot-row{
@@ -146,12 +146,19 @@ img{max-width:100%; display:block}
 .ph-foot.fb span{font-size:19px}
 
 /* ---- pills ---- */
+.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:7px}
+.xmark{
+  width:22px; height:22px; flex:0 0 22px; border-radius:50%;
+  background:var(--cat,var(--red));
+  display:inline-flex; align-items:center; justify-content:center;
+}
+.xmark svg{width:11px; height:11px; display:block}
 .tag{
   display:inline-flex; align-items:center; gap:5px;
   background:transparent; color:var(--cat,var(--red));
   border:1px solid var(--cat,var(--red));
   font-size:8.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
-  padding:2.5px 9px 2.5px 6px; border-radius:999px; margin-bottom:7px;
+  padding:2.5px 9px 2.5px 6px; border-radius:999px;
 }
 .tag::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--cat,var(--red))}
 
@@ -183,7 +190,8 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   .a-mid .tx,.a-foot .tx,.a-side .tx{font-size:14px}
   .ph-side{aspect-ratio:16/9}
   .col.side{text-align:left}
-  .col.side .tag,.col.side .tx{margin-left:0; margin-right:0}
+  .col.side .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
+  .col.side .tx{margin-left:0; margin-right:0}
 }
 
 .langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
@@ -241,7 +249,12 @@ def article(it, kind):
                     for k in ("en", "zh", "ko") if it.get(k))
     return (
         '<article class="a-{k}">{ph}'
-        '<span class="tag" style="--cat:{c}">{tag}</span>'
+        '<span class="tagrow" style="--cat:{c}">'
+        '<span class="xmark" aria-hidden="true">'
+        '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round">'
+        '<path d="M7 3.5 17 13.5M17 3.5 7 13.5M5.5 20.5h13"/></svg>'
+        '</span>'
+        '<span class="tag">{tag}</span></span>'
         '<h3 class="hl">{t}</h3>{langs}'
         '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
     ).format(k=kind, ph=photo(it, kind), c=cat_colour(it.get("tag")),
