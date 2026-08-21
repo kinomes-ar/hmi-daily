@@ -62,7 +62,7 @@ img{max-width:100%; display:block}
 .masthead{padding:22px 0 18px; text-align:center; border-bottom:1px solid var(--ink)}
 .masthead h1{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
-  font-size:clamp(32px,6.4vw,64px); line-height:.92; letter-spacing:-.03em;
+  font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
   text-transform:uppercase; text-wrap:balance;
 }
 .masthead .kicker{
@@ -95,8 +95,11 @@ img{max-width:100%; display:block}
 .col:first-child{padding-left:0; border-left:0}
 .col:last-child{padding-right:0}
 .col.mid,.col.side{display:grid; gap:15px; align-content:start}
-.col.mid > article + article,
-.col.side > article + article{border-top:1px solid var(--hair); padding-top:15px}
+.col.mid > article + article{border-top:1px solid var(--hair); padding-top:18px}
+.col.side{text-align:center}
+.col.side .tag{margin-left:auto; margin-right:auto}
+.col.side .tx{margin-left:auto; margin-right:auto}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:18px}
 .foot-row{
   display:grid; grid-template-columns:repeat(4,1fr); gap:0;
   border-top:1px solid var(--hair); margin-bottom:2px;
@@ -154,31 +157,33 @@ img{max-width:100%; display:block}
 
 /* ---- headlines & text ---- */
 .hl{
-  font-family:"Newsreader","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
-  font-weight:600; margin:0 0 8px;
-  line-height:1.14; letter-spacing:-.01em; text-wrap:balance;
+  font-family:"Playfair Display","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:400; margin:0 0 10px;
+  line-height:1.12; letter-spacing:-.005em; text-wrap:balance;
 }
-.a-lead .hl{font-size:clamp(23px,2.7vw,31px); line-height:1.08; margin-bottom:9px}
-.a-mid .hl{font-size:17px}
-.a-side .hl{font-size:13.5px; line-height:1.22}
-.a-foot .hl{font-size:16px}
+.a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
+.a-mid .hl{font-size:clamp(22px,2.5vw,29px); line-height:1.1}
+.a-side .hl{font-size:17px; line-height:1.2}
+.a-foot .hl{font-size:20px; line-height:1.15}
 .tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
 .tx.en{display:block}
 html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
 html[data-lang="zh"] .tx.zh{display:block}
 html[data-lang="ko"] .tx.ko{display:block}
-.a-lead .tx{font-size:13.5px; line-height:1.6}
-.a-mid .tx{font-size:12.5px; line-height:1.55; color:var(--muted)}
-.a-foot .tx,.a-side .tx{font-size:12px; line-height:1.5; color:var(--muted)}
+.a-lead .tx{font-size:14px; line-height:1.6; color:var(--muted)}
+.a-mid .tx{font-size:13px; line-height:1.55; color:var(--muted)}
+.a-foot .tx,.a-side .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
 /* the reference runs headline-only in the narrow cells; keep that in English,
    but show the translated line when a reader picks 中文 / 한국어 */
 html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
 html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 @media (max-width:660px){
-  .a-side .hl,.a-foot .hl,.a-mid .hl{font-size:19px}
-  .a-lead .hl{font-size:24px}
-  .a-mid .tx,.a-foot .tx{font-size:13.5px}
+  .a-side .hl,.a-foot .hl,.a-mid .hl{font-size:24px}
+  .a-lead .hl{font-size:29px}
+  .a-mid .tx,.a-foot .tx,.a-side .tx{font-size:14px}
   .ph-side{aspect-ratio:16/9}
+  .col.side{text-align:left}
+  .col.side .tag,.col.side .tx{margin-left:0; margin-right:0}
 }
 
 .langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
@@ -206,7 +211,13 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 .src:hover,.src:focus-visible{border-bottom-color:var(--red)}
 :focus-visible{outline:2px solid var(--red); outline-offset:3px}
 
-.foot{background:var(--footer); color:var(--footer-ink); margin-top:52px; padding:38px 0 44px}
+.morebar{
+  display:block; margin:26px 0 8px; padding:15px; border-radius:999px;
+  background:var(--ink); color:var(--ground); text-decoration:none; text-align:center;
+  font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+}
+.morebar:hover{background:var(--red); color:#fff}
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:38px 0 44px}
 .foot .shell{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
 .foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
 .foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
@@ -278,9 +289,9 @@ def render():
     return """<title>HMI Daily</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=Playfair+Display:wght@400;500;600&display=swap">
 <style>%s</style>
-<div class="sheet">
+<div class="sheet" id="top">
 <div class="shell">
   <div class="top">
     <span class="wordmark">HMI&nbsp;DAILY</span>
@@ -299,6 +310,7 @@ def render():
     <div class="kicker">Cockpit &middot; Micromobility &middot; Interaction &middot; AI</div>
   </header>
   %s
+  <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
 </div>
 <footer class="foot"><div class="shell">
