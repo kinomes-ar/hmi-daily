@@ -61,93 +61,126 @@ img{max-width:100%; display:block}
 .top .nav{display:flex; gap:18px; color:var(--muted); flex-wrap:wrap}
 .top .nav a{color:inherit; text-decoration:none}
 .top .nav a:hover{color:var(--red)}
-.masthead{padding:40px 0 26px; text-align:center; border-bottom:3px solid var(--ink)}
-@media (max-width:700px){ .masthead{padding:28px 0 20px} .masthead .kicker{font-size:9.5px; letter-spacing:.14em} }
+.masthead{padding:22px 0 18px; text-align:center; border-bottom:1px solid var(--ink)}
 .masthead h1{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
-  font-size:clamp(42px,10.5vw,116px); line-height:.85; letter-spacing:-.025em;
+  font-size:clamp(32px,6.4vw,64px); line-height:.92; letter-spacing:-.03em;
   text-transform:uppercase; text-wrap:balance;
 }
 .masthead .kicker{
-  margin-top:14px; font-size:11px; font-weight:600; letter-spacing:.2em;
+  margin-top:9px; font-size:9.5px; font-weight:600; letter-spacing:.18em;
   text-transform:uppercase; color:var(--muted);
 }
+@media (max-width:700px){ .masthead{padding:18px 0 14px} }
 
-.day{padding:36px 0 6px; border-bottom:1px solid var(--hair)}
-.dayhead{display:flex; align-items:baseline; gap:16px; margin-bottom:24px}
+/* ---- date band ---- */
+.day{padding:22px 0 4px}
+.day + .day{border-top:2px solid var(--ink)}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:16px}
 .dayhead h2{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
-  font-size:clamp(22px,3.2vw,30px); letter-spacing:-.01em; font-variant-numeric:tabular-nums;
-  text-transform:uppercase;
+  font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; text-transform:uppercase;
 }
-.dayhead .rule{flex:1; height:2px; background:var(--ink)}
+.dayhead .rule{flex:1; height:1px; background:var(--ink)}
 .dayhead .meta{
-  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  font-size:9.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
   color:var(--muted); white-space:nowrap;
 }
 
+/* ---- newspaper grid: lead | middle | narrow rail ---- */
 .band{
-  display:grid; grid-template-columns:1.55fr 1fr; gap:32px;
-  padding-bottom:28px; margin-bottom:28px; border-bottom:1px solid var(--hair);
+  display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
+  border-top:1px solid var(--ink);
 }
-.rail{display:grid; gap:22px; align-content:start; border-left:1px solid var(--hair); padding-left:32px}
-.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:30px; padding-bottom:32px}
-@media (max-width:920px){
-  .band{grid-template-columns:1fr; gap:26px}
-  .rail{border-left:0; padding-left:0; border-top:1px solid var(--hair); padding-top:24px;
-        grid-template-columns:1fr 1fr}
-  .grid{grid-template-columns:1fr 1fr; gap:26px}
+.col{padding:16px 20px; border-left:1px solid var(--hair); min-width:0}
+.col:first-child{padding-left:0; border-left:0}
+.col:last-child{padding-right:0}
+.col.mid,.col.side{display:grid; gap:16px; align-content:start}
+.col.mid > article + article,
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:16px}
+.foot-row{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+  border-top:1px solid var(--ink); margin-bottom:4px;
 }
-@media (max-width:620px){
-  .rail,.grid{grid-template-columns:1fr; gap:34px}
-  .band{padding-bottom:22px; margin-bottom:22px}
-  .rail{padding-top:30px; gap:34px}
-  .a-rail .hl,.a-grid .hl{font-size:24px}
-  .a-rail .tx,.a-grid .tx{font-size:15px; line-height:1.55}
-  .ph-rail,.ph-grid{aspect-ratio:16/10}
-  .a-lead .hl{font-size:30px}
-  .dayhead{gap:12px}
+.foot-row > article{padding:16px 18px; border-left:1px solid var(--hair); min-width:0}
+.foot-row > article:first-child{padding-left:0; border-left:0}
+@media (max-width:980px){
+  .band{grid-template-columns:1.3fr 1fr}
+  .col.side{grid-column:1 / -1; grid-template-columns:1fr 1fr 1fr;
+            border-left:0; padding:16px 0 0; border-top:1px solid var(--hair)}
+  .col.side > article + article{border-top:0; border-left:1px solid var(--hair);
+            padding-top:0; padding-left:18px}
+  .foot-row{grid-template-columns:1fr 1fr}
+  .foot-row > article:nth-child(3){border-left:0; padding-left:0}
+}
+@media (max-width:660px){
+  .band{grid-template-columns:1fr}
+  .col{padding:16px 0; border-left:0; border-top:1px solid var(--hair)}
+  .col:first-child{border-top:0; padding-top:0}
+  .col.side{grid-template-columns:1fr}
+  .col.side > article + article{border-left:0; padding-left:0;
+            border-top:1px solid var(--hair); padding-top:16px}
+  .foot-row{grid-template-columns:1fr}
+  .foot-row > article{padding:16px 0; border-left:0; border-top:1px solid var(--hair)}
+  .foot-row > article:first-child{border-top:0}
 }
 
-.ph{margin:0 0 13px; overflow:hidden; background:var(--shade)}
+/* ---- photos ---- */
+.ph{margin:0 0 10px; overflow:hidden; background:var(--shade)}
 .ph img{width:100%; height:100%; object-fit:cover}
 .ph-lead{aspect-ratio:16/9}
-.ph-rail{aspect-ratio:4/3}
-.ph-grid{aspect-ratio:3/2}
-.ph.fb{display:flex; align-items:flex-end; padding:14px}
+.ph-mid{aspect-ratio:4/3}
+.ph-side{aspect-ratio:1/1}
+.ph-foot{aspect-ratio:3/2}
+.ph.fb{display:flex; align-items:flex-end; padding:10px}
 .ph.fb span{
   font-family:"Archivo Black",Impact,sans-serif; text-transform:uppercase;
   line-height:.86; letter-spacing:-.02em; word-break:break-word;
 }
-.ph-lead.fb span{font-size:clamp(34px,5vw,60px)}
-.ph-rail.fb span{font-size:26px}
-.ph-grid.fb span{font-size:30px}
+.ph-lead.fb span{font-size:clamp(26px,3.6vw,44px)}
+.ph-mid.fb span{font-size:21px}
+.ph-side.fb span{font-size:15px}
+.ph-foot.fb span{font-size:19px}
 
+/* ---- pills ---- */
 .tag{
-  display:inline-flex; align-items:center; gap:6px;
+  display:inline-flex; align-items:center; gap:5px;
   background:var(--red); color:var(--onred);
-  font-size:9.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
-  padding:4px 10px 4px 7px; border-radius:999px; margin-bottom:10px;
+  font-size:8.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  padding:3px 9px 3px 6px; border-radius:999px; margin-bottom:7px;
 }
-.tag::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--onred); opacity:.9}
-.a-grid .tag{background:transparent; color:var(--red); border:1px solid var(--red); padding:3px 10px 3px 7px}
-.a-grid .tag::before{background:var(--red); opacity:1}
+.tag::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--onred); opacity:.9}
+.a-side .tag,.a-foot .tag{
+  background:transparent; color:var(--red); border:1px solid var(--red); padding:2px 8px 2px 6px;
+}
+.a-side .tag::before,.a-foot .tag::before{background:var(--red); opacity:1}
+
+/* ---- headlines & text ---- */
 .hl{
   font-family:"Newsreader","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
-  font-weight:600; margin:0 0 11px;
-  line-height:1.12; letter-spacing:-.012em; text-wrap:balance;
+  font-weight:600; margin:0 0 8px;
+  line-height:1.14; letter-spacing:-.01em; text-wrap:balance;
 }
-.a-lead .hl{font-size:clamp(30px,3.7vw,44px); line-height:1.06}
-.a-rail .hl{font-size:19px}
-.a-grid .hl{font-size:22px}
-.tx{display:none; margin:0; max-width:62ch}
+.a-lead .hl{font-size:clamp(23px,2.7vw,31px); line-height:1.08; margin-bottom:9px}
+.a-mid .hl{font-size:17px}
+.a-side .hl{font-size:13.5px; line-height:1.22}
+.a-foot .hl{font-size:16px}
+.tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
 .tx.en{display:block}
 html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
 html[data-lang="zh"] .tx.zh{display:block}
 html[data-lang="ko"] .tx.ko{display:block}
-.a-lead .tx{font-size:15.5px}
-.a-rail .tx{font-size:12.5px; line-height:1.5}
-.a-grid .tx{font-size:13.5px}
+.a-lead .tx{font-size:13.5px; line-height:1.6}
+.a-mid .tx{font-size:12.5px; line-height:1.55; color:var(--muted)}
+.a-foot .tx{font-size:12.5px; line-height:1.55; color:var(--muted)}
+.a-side .tx{display:none !important}
+@media (max-width:660px){
+  .a-side .hl,.a-foot .hl,.a-mid .hl{font-size:19px}
+  .a-lead .hl{font-size:24px}
+  .a-mid .tx,.a-foot .tx{font-size:13.5px}
+  .ph-side{aspect-ratio:16/9}
+}
 
 .langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
 .langsw button{
@@ -167,9 +200,9 @@ html[data-lang="ko"] .tx.ko{display:block}
 .themesw:hover{background:var(--shade)}
 .top .ctrls{display:flex; align-items:center; gap:10px}
 .src{
-  display:inline-block; margin-top:12px; color:var(--red); text-decoration:none;
-  font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
-  border-bottom:2px solid transparent; padding-bottom:2px;
+  display:inline-block; margin-top:9px; color:var(--red); text-decoration:none;
+  font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  border-bottom:1px solid transparent; padding-bottom:1px;
 }
 .src:hover,.src:focus-visible{border-bottom-color:var(--red)}
 :focus-visible{outline:2px solid var(--red); outline-offset:3px}
@@ -194,8 +227,9 @@ def photo(it, kind):
 
 
 def article(it, kind):
-    langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
-                    for k in ("en", "zh", "ko") if it.get(k))
+    langs = "" if kind == "side" else "".join(
+        '<p class="tx %s">%s</p>' % (k, esc(it[k]))
+        for k in ("en", "zh", "ko") if it.get(k))
     return (
         '<article class="a-{k}">{ph}<span class="tag">{tag}</span>'
         '<h3 class="hl">{t}</h3>{langs}'
@@ -220,16 +254,21 @@ def render():
         y, m, dd = (int(x) for x in d.split("-"))
         wd = _date(y, m, dd).strftime("%A")
         lead = article(items[0], "lead") if items else ""
-        rail = "".join(article(i, "rail") for i in items[1:3])
-        grid = "".join(article(i, "grid") for i in items[3:])
+        mid = "".join(article(i, "mid") for i in items[1:3])
+        side = "".join(article(i, "side") for i in items[3:6])
+        foot = "".join(article(i, "foot") for i in items[6:10])
+        band = ('<div class="band">'
+                '<div class="col lead">{lead}</div>'
+                '<div class="col mid">{mid}</div>'
+                '<div class="col side">{side}</div>'
+                '</div>').format(lead=lead, mid=mid, side=side)
         body.append(
             '<section class="day" id="d{d}">'
             '<div class="dayhead"><h2>{d}</h2><span class="rule"></span>'
             '<span class="meta">{wd} &middot; {n} stories</span></div>'
-            '<div class="band">{lead}<div class="rail">{rail}</div></div>'
-            '{gridwrap}</section>'.format(
-                d=d, wd=wd, n=len(items), lead=lead, rail=rail,
-                gridwrap='<div class="grid">%s</div>' % grid if grid else "")
+            '{band}{footrow}</section>'.format(
+                d=d, wd=wd, n=len(items), band=band,
+                footrow='<div class="foot-row">%s</div>' % foot if foot else "")
         )
 
     latest = days[0][0] if days else "—"
@@ -253,8 +292,8 @@ def render():
     </span>
   </div>
   <header class="masthead">
-    <h1>Interface<br>Intelligence</h1>
-    <div class="kicker">Cockpit &middot; Micromobility &middot; Interaction &middot; AI &mdash; every working day</div>
+    <h1>Latest News</h1>
+    <div class="kicker">Cockpit &middot; Micromobility &middot; Interaction &middot; AI</div>
   </header>
   %s
 </div>
