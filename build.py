@@ -10,31 +10,29 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 
 # fallback panel colours, keyed by category
-SWATCH = {
-    "display":     ("#E5342A", "#FFFFFF"),
-    "ar / hud":    ("#1F45C8", "#FFFFFF"),
-    "interaction": ("#F0C020", "#141412"),
-    "industry":    ("#12916A", "#FFFFFF"),
-    "ai":          ("#7A3BD6", "#FFFFFF"),
+# one hue per category — pill colour and photo-fallback panel
+CAT = {
+    "display":     "#E5342A",
+    "ar / hud":    "#7B5CF0",
+    "interaction": "#17A472",
+    "industry":    "#E07A18",
+    "ai":          "#DB3A9C",
 }
-DEFAULT_SWATCH = ("#141412", "#EFEEE9")
+DEFAULT_CAT = "#5B5750"
+
+
+def cat_colour(tag):
+    return CAT.get((tag or "").strip().lower(), DEFAULT_CAT)
 
 CSS = """
 :root{
-  --ground:#E4E2DB; --paper:#F9F8F5; --ink:#111110; --muted:#6A6862;
-  --rule:#D3D0C7; --hair:#E4E1D9; --red:#E5342A; --onred:#FFFFFF;
-  --footer:#151513; --footer-ink:#F2F1ED; --shade:#EDEBE4;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --ground:#080807; --paper:#131311; --ink:#EDEBE4; --muted:#918D83;
-    --rule:#2E2D29; --hair:#252420; --red:#FF4A3D; --onred:#141412;
-    --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
-  }
+  --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
+  --rule:#BFBCB2; --hair:#D1CFC6; --red:#E5342A; --onred:#FFFFFF;
+  --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
 }
 :root[data-theme="dark"]{
-  --ground:#080807; --paper:#131311; --ink:#EDEBE4; --muted:#918D83;
-  --rule:#2E2D29; --hair:#252420; --red:#FF4A3D; --onred:#141412;
+  --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+  --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
   --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
 }
 *{box-sizing:border-box}
@@ -44,9 +42,9 @@ body{
   font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%; display:block}
-.sheet{max-width:1180px; margin:26px auto; background:var(--paper)}
+.sheet{max-width:1180px; margin:0 auto}
 .shell{max-width:1180px; margin:0 auto; padding:0 34px}
-@media (max-width:700px){ .sheet{margin:0} .shell{padding:0 20px} }
+@media (max-width:700px){ .shell{padding:0 20px} }
 
 .top{
   display:flex; align-items:center; justify-content:space-between; gap:14px;
@@ -93,17 +91,18 @@ img{max-width:100%; display:block}
   display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
   border-top:1px solid var(--ink);
 }
-.col{padding:16px 20px; border-left:1px solid var(--hair); min-width:0}
+.col{padding:14px 15px 18px; border-left:1px solid var(--hair); min-width:0}
 .col:first-child{padding-left:0; border-left:0}
 .col:last-child{padding-right:0}
-.col.mid,.col.side{display:grid; gap:16px; align-content:start}
+.col.mid,.col.side{display:grid; gap:15px; align-content:start}
 .col.mid > article + article,
-.col.side > article + article{border-top:1px solid var(--hair); padding-top:16px}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:15px}
 .foot-row{
   display:grid; grid-template-columns:repeat(4,1fr); gap:0;
-  border-top:1px solid var(--ink); margin-bottom:4px;
+  border-top:1px solid var(--hair); margin-bottom:2px;
 }
-.foot-row > article{padding:16px 18px; border-left:1px solid var(--hair); min-width:0}
+.foot-row:first-of-type{border-top:1px solid var(--ink)}
+.foot-row > article{padding:14px 15px 18px; border-left:1px solid var(--hair); min-width:0}
 .foot-row > article:first-child{padding-left:0; border-left:0}
 @media (max-width:980px){
   .band{grid-template-columns:1.3fr 1fr}
@@ -146,15 +145,12 @@ img{max-width:100%; display:block}
 /* ---- pills ---- */
 .tag{
   display:inline-flex; align-items:center; gap:5px;
-  background:var(--red); color:var(--onred);
-  font-size:8.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-  padding:3px 9px 3px 6px; border-radius:999px; margin-bottom:7px;
+  background:transparent; color:var(--cat,var(--red));
+  border:1px solid var(--cat,var(--red));
+  font-size:8.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  padding:2.5px 9px 2.5px 6px; border-radius:999px; margin-bottom:7px;
 }
-.tag::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--onred); opacity:.9}
-.a-side .tag,.a-foot .tag{
-  background:transparent; color:var(--red); border:1px solid var(--red); padding:2px 8px 2px 6px;
-}
-.a-side .tag::before,.a-foot .tag::before{background:var(--red); opacity:1}
+.tag::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--cat,var(--red))}
 
 /* ---- headlines & text ---- */
 .hl{
@@ -173,8 +169,11 @@ html[data-lang="zh"] .tx.zh{display:block}
 html[data-lang="ko"] .tx.ko{display:block}
 .a-lead .tx{font-size:13.5px; line-height:1.6}
 .a-mid .tx{font-size:12.5px; line-height:1.55; color:var(--muted)}
-.a-foot .tx{font-size:12.5px; line-height:1.55; color:var(--muted)}
-.a-side .tx{display:none !important}
+.a-foot .tx,.a-side .tx{font-size:12px; line-height:1.5; color:var(--muted)}
+/* the reference runs headline-only in the narrow cells; keep that in English,
+   but show the translated line when a reader picks 中文 / 한국어 */
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 @media (max-width:660px){
   .a-side .hl,.a-foot .hl,.a-mid .hl{font-size:19px}
   .a-lead .hl{font-size:24px}
@@ -221,20 +220,21 @@ def photo(it, kind):
     if it.get("img"):
         return '<figure class="ph ph-%s"><img src="%s" alt="" loading="lazy"></figure>' % (
             kind, esc(it["img"]))
-    bg, fg = SWATCH.get(it.get("tag", "").strip().lower(), DEFAULT_SWATCH)
-    return ('<figure class="ph ph-%s fb" style="background:%s;color:%s">'
-            '<span>%s</span></figure>') % (kind, bg, fg, esc(it.get("tag", "News")))
+    return ('<figure class="ph ph-%s fb" style="background:%s;color:#fff">'
+            '<span>%s</span></figure>') % (
+        kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")))
 
 
 def article(it, kind):
-    langs = "" if kind == "side" else "".join(
-        '<p class="tx %s">%s</p>' % (k, esc(it[k]))
-        for k in ("en", "zh", "ko") if it.get(k))
+    langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
+                    for k in ("en", "zh", "ko") if it.get(k))
     return (
-        '<article class="a-{k}">{ph}<span class="tag">{tag}</span>'
+        '<article class="a-{k}">{ph}'
+        '<span class="tag" style="--cat:{c}">{tag}</span>'
         '<h3 class="hl">{t}</h3>{langs}'
         '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
-    ).format(k=kind, ph=photo(it, kind), tag=esc(it.get("tag", "News")), t=esc(it["t"]),
+    ).format(k=kind, ph=photo(it, kind), c=cat_colour(it.get("tag")),
+             tag=esc(it.get("tag", "News")), t=esc(it["t"]),
              langs=langs, url=esc(it["url"]), src=esc(it["src"]))
 
 
@@ -256,7 +256,11 @@ def render():
         lead = article(items[0], "lead") if items else ""
         mid = "".join(article(i, "mid") for i in items[1:3])
         side = "".join(article(i, "side") for i in items[3:6])
-        foot = "".join(article(i, "foot") for i in items[6:10])
+        rest = items[6:]
+        rows = [rest[i:i + 4] for i in range(0, len(rest), 4)]
+        foot = "".join(
+            '<div class="foot-row">%s</div>' % "".join(article(i, "foot") for i in row)
+            for row in rows)
         band = ('<div class="band">'
                 '<div class="col lead">{lead}</div>'
                 '<div class="col mid">{mid}</div>'
@@ -266,9 +270,8 @@ def render():
             '<section class="day" id="d{d}">'
             '<div class="dayhead"><h2>{d}</h2><span class="rule"></span>'
             '<span class="meta">{wd} &middot; {n} stories</span></div>'
-            '{band}{footrow}</section>'.format(
-                d=d, wd=wd, n=len(items), band=band,
-                footrow='<div class="foot-row">%s</div>' % foot if foot else "")
+            '{band}{foot}</section>'.format(
+                d=d, wd=wd, n=len(items), band=band, foot=foot)
         )
 
     latest = days[0][0] if days else "—"
@@ -317,9 +320,6 @@ def render():
   btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.set);});});
 
   var sw=document.getElementById('themesw');
-  function prefersDark(){
-    try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}
-  }
   function paint(t){
     root.setAttribute('data-theme',t);
     if(sw) sw.textContent = (t==='dark' ? 'Light' : 'Dark');
@@ -327,12 +327,9 @@ def render():
   }
   var st=null;
   try{st=localStorage.getItem('hmi-theme');}catch(e){}
-  if(st==='dark'||st==='light'){ paint(st); }
-  else if(sw){ sw.textContent = prefersDark() ? 'Light' : 'Dark'; }
+  paint(st==='dark' ? 'dark' : 'light');   // light is the default
   if(sw) sw.addEventListener('click',function(){
-    var cur=root.getAttribute('data-theme');
-    if(!cur) cur = prefersDark() ? 'dark' : 'light';
-    paint(cur==='dark'?'light':'dark');
+    paint(root.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
   });
 })();
 </script>""" % (CSS, nav, "".join(body), total, len(days), latest)
