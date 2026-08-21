@@ -32,6 +32,13 @@ CSS = """
   --rule:#BFBCB2; --hair:#D1CFC6; --red:#E5342A; --onred:#FFFFFF;
   --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
 }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+    --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
+    --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+  }
+}
 :root[data-theme="dark"]{
   --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
   --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
@@ -54,14 +61,14 @@ img{max-width:100%; display:block}
   font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
 }
 @media (max-width:700px){
-  .top{justify-content:center; gap:12px; padding:14px 0}
-  .top .nav{order:3; width:100%; justify-content:center; overflow-x:auto; gap:14px}
+  .top{gap:12px; padding:13px 0}
+  .top .nav{order:3; width:100%; justify-content:flex-start; overflow-x:auto; gap:16px; padding-bottom:2px}
 }
 .top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
 .top .nav{display:flex; gap:18px; color:var(--muted); flex-wrap:wrap}
 .top .nav a{color:inherit; text-decoration:none}
 .top .nav a:hover{color:var(--red)}
-.masthead{padding:22px 0 18px; text-align:center; border-bottom:1px solid var(--ink)}
+.masthead{padding:36px 0 30px; text-align:center; border-bottom:1px solid var(--ink)}
 .masthead h1{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
   font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
@@ -74,9 +81,9 @@ img{max-width:100%; display:block}
 @media (max-width:700px){ .masthead{padding:18px 0 14px} }
 
 /* ---- date band ---- */
-.day{padding:22px 0 4px}
+.day{padding:34px 0 12px}
 .day + .day{border-top:2px solid var(--ink)}
-.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:16px}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:24px}
 .dayhead h2{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
   font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
@@ -93,21 +100,21 @@ img{max-width:100%; display:block}
   display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
   border-top:1px solid var(--ink);
 }
-.col{padding:14px 15px 18px; border-left:1px solid var(--hair); min-width:0}
+.col{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
 .col:first-child{padding-left:0; border-left:0}
 .col:last-child{padding-right:0}
-.col.mid,.col.side{display:grid; gap:15px; align-content:start}
-.col.mid > article + article{border-top:1px solid var(--hair); padding-top:18px}
+.col.mid,.col.side{display:grid; gap:24px; align-content:start}
+.col.mid > article + article{border-top:1px solid var(--hair); padding-top:24px}
 .col.side{text-align:center}
 .col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
 .col.side .tx{margin-left:auto; margin-right:auto}
-.col.side > article + article{border-top:1px solid var(--hair); padding-top:18px}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:24px}
 .foot-row{
   display:grid; grid-template-columns:repeat(4,1fr); gap:0;
-  border-top:1px solid var(--hair); margin-bottom:2px;
+  border-top:1px solid var(--hair); margin-bottom:4px;
 }
 .foot-row:first-of-type{border-top:1px solid var(--ink)}
-.foot-row > article{padding:14px 15px 18px; border-left:1px solid var(--hair); min-width:0}
+.foot-row > article{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
 .foot-row > article:first-child{padding-left:0; border-left:0}
 @media (max-width:980px){
   .band{grid-template-columns:1.3fr 1fr}
@@ -120,18 +127,18 @@ img{max-width:100%; display:block}
 }
 @media (max-width:660px){
   .band{grid-template-columns:1fr}
-  .col{padding:16px 0; border-left:0; border-top:1px solid var(--hair)}
-  .col:first-child{border-top:0; padding-top:0}
+  .col{padding:24px 0; border-left:0; border-top:1px solid var(--hair)}
+  .col:first-child{border-top:0; padding-top:4px}
   .col.side{grid-template-columns:1fr}
   .col.side > article + article{border-left:0; padding-left:0;
-            border-top:1px solid var(--hair); padding-top:16px}
+            border-top:1px solid var(--hair); padding-top:24px}
   .foot-row{grid-template-columns:1fr}
-  .foot-row > article{padding:16px 0; border-left:0; border-top:1px solid var(--hair)}
+  .foot-row > article{padding:24px 0; border-left:0; border-top:1px solid var(--hair)}
   .foot-row > article:first-child{border-top:0}
 }
 
 /* ---- photos ---- */
-.ph{margin:0 0 10px; overflow:hidden; background:var(--shade)}
+.ph{margin:0 0 14px; overflow:hidden; background:var(--shade)}
 .ph img{width:100%; height:100%; object-fit:cover}
 .ph-lead{aspect-ratio:16/9}
 .ph-mid{aspect-ratio:4/3}
@@ -148,13 +155,7 @@ img{max-width:100%; display:block}
 .ph-foot.fb span{font-size:19px}
 
 /* ---- pills ---- */
-.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:7px}
-.xmark{
-  width:22px; height:22px; flex:0 0 22px; border-radius:50%;
-  background:var(--cat,var(--red));
-  display:inline-flex; align-items:center; justify-content:center;
-}
-.xmark svg{width:11px; height:11px; display:block}
+.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:10px}
 .tag{
   display:inline-flex; align-items:center; gap:5px;
   background:transparent; color:var(--cat,var(--red));
@@ -196,6 +197,25 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   .col.side .tx{margin-left:0; margin-right:0}
 }
 
+.ctrls{position:relative}
+.menubtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink);
+  border-radius:999px; width:34px; height:28px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center; color:var(--ink);
+}
+.menubtn:hover{background:var(--shade)}
+.menubtn svg{width:14px; height:14px; display:block}
+.menu{
+  position:absolute; right:0; top:calc(100% + 10px); z-index:60;
+  background:var(--ground); border:1px solid var(--ink);
+  padding:16px; display:grid; gap:14px; min-width:216px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.menu[hidden]{display:none}
+.menu .mlabel{
+  display:block; font-size:9px; font-weight:700; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:7px;
+}
 .langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
 .langsw button{
   appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
@@ -252,10 +272,6 @@ def article(it, kind):
     return (
         '<article class="a-{k}">{ph}'
         '<span class="tagrow" style="--cat:{c}">'
-        '<span class="xmark" aria-hidden="true">'
-        '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round">'
-        '<path d="M7 3.5 17 13.5M17 3.5 7 13.5M5.5 20.5h13"/></svg>'
-        '</span>'
         '<span class="tag">{tag}</span></span>'
         '<h3 class="hl">{t}</h3>{langs}'
         '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
@@ -301,7 +317,7 @@ def render():
         )
 
     latest = days[0][0] if days else "—"
-    return """<title>HMI Daily</title>
+    return """<title>ADUX Daily</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
@@ -309,15 +325,24 @@ def render():
 <div class="sheet" id="top">
 <div class="shell">
   <div class="top">
-    <span class="wordmark">HMI&nbsp;DAILY</span>
+    <span class="wordmark">ADUX&nbsp;DAILY</span>
     <span class="nav">%s</span>
     <span class="ctrls">
-      <span class="langsw" role="group" aria-label="Language">
-        <button type="button" data-set="en" aria-pressed="true">EN</button>
-        <button type="button" data-set="zh" aria-pressed="false">中文</button>
-        <button type="button" data-set="ko" aria-pressed="false">한국어</button>
-      </span>
-      <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
+      <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
+        <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <div><span class="mlabel">Language</span>
+          <span class="langsw" role="group" aria-label="Language">
+            <button type="button" data-set="en" aria-pressed="false">EN</button>
+            <button type="button" data-set="zh" aria-pressed="false">中文</button>
+            <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+          </span>
+        </div>
+        <div><span class="mlabel">Theme</span>
+          <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
+        </div>
+      </div>
     </span>
   </div>
   <header class="masthead">
@@ -329,35 +354,65 @@ def render():
 </div>
 </div>
 <footer class="foot"><div class="shell">
-  <span class="wordmark">HMI Daily</span>
+  <span class="wordmark">ADUX Daily</span>
   <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
   <span class="note">Curated by Claude</span>
 </div></footer>
 <script>
 (function(){
-  var root=document.documentElement,btns=[].slice.call(document.querySelectorAll('.langsw button'));
-  function apply(l){
+  var root=document.documentElement;
+  var btns=[].slice.call(document.querySelectorAll('.langsw button'));
+  var sw=document.getElementById('themesw');
+  var mb=document.getElementById('menubtn'), menu=document.getElementById('menu');
+
+  /* ---- language: stored choice, else the device language ---- */
+  function applyLang(l,store){
     root.setAttribute('data-lang',l);
     btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
-    try{localStorage.setItem('hmi-lang',l);}catch(e){}
+    if(store){try{localStorage.setItem('hmi-lang',l);}catch(e){}}
   }
-  var saved='en';
-  try{saved=localStorage.getItem('hmi-lang')||'en';}catch(e){}
-  apply(['en','zh','ko'].indexOf(saved)>-1?saved:'en');
-  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.set);});});
+  var lang=null;
+  try{lang=localStorage.getItem('hmi-lang');}catch(e){}
+  if(['en','zh','ko'].indexOf(lang)<0){
+    var nav=(navigator.language||'en').toLowerCase();
+    lang=nav.indexOf('ko')===0?'ko':nav.indexOf('zh')===0?'zh':'en';
+  }
+  applyLang(lang,false);
+  btns.forEach(function(b){b.addEventListener('click',function(){applyLang(b.dataset.set,true);});});
 
-  var sw=document.getElementById('themesw');
-  function paint(t){
-    root.setAttribute('data-theme',t);
-    if(sw) sw.textContent = (t==='dark' ? 'Light' : 'Dark');
-    try{localStorage.setItem('hmi-theme',t);}catch(e){}
+  /* ---- theme: stored choice, else the device setting (via media query) ---- */
+  function systemDark(){
+    try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}
   }
-  var st=null;
-  try{st=localStorage.getItem('hmi-theme');}catch(e){}
-  paint(st==='dark' ? 'dark' : 'light');   // light is the default
+  function label(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    if(sw) sw.textContent=dark?'Light':'Dark';
+  }
+  var th=null;
+  try{th=localStorage.getItem('hmi-theme');}catch(e){}
+  if(th==='dark'||th==='light'){ root.setAttribute('data-theme',th); }
+  label();
   if(sw) sw.addEventListener('click',function(){
-    paint(root.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('hmi-theme',next);}catch(e){}
+    label();
   });
+
+  /* ---- hamburger ---- */
+  function setMenu(open){
+    if(!menu||!mb) return;
+    menu.hidden=!open;
+    mb.setAttribute('aria-expanded',String(open));
+  }
+  if(mb) mb.addEventListener('click',function(e){e.stopPropagation(); setMenu(menu.hidden);});
+  document.addEventListener('click',function(e){
+    if(menu&&!menu.hidden&&!menu.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
 })();
 </script>""" % (CSS, nav, "".join(body), total, len(days), latest)
 

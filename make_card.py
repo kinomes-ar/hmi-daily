@@ -30,7 +30,7 @@ def brief(i, it):
 
 
 def assemble(items, date, n_full):
-    head = "# HMI Daily · %s\n" % date
+    head = "# ADUX Daily · %s\n" % date
     blocks = [full(i, it) for i, it in enumerate(items[:n_full], 1)]
     body = head + SEP.join(blocks)
     rest = items[n_full:]
