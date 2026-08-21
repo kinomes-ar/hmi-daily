@@ -108,10 +108,17 @@ def main():
             if it.get("img") and os.path.exists(os.path.join(HERE, it["img"])):
                 continue
             stem = "%s-%d" % (date, i)
-            try:
-                cands = image_candidates(it["url"])
-            except Exception as e:
-                print("  page unreachable %s :: %s" % (it["url"][:60], e)); continue
+            # "img_from" lets an item keep its primary source link while pulling
+            # the picture from a mirror that actually serves one.
+            pages = [u for u in (it.get("img_from"), it["url"]) if u]
+            cands = []
+            for page in pages:
+                try:
+                    cands = image_candidates(page)
+                except Exception as e:
+                    print("  page unreachable %s :: %s" % (page[:60], e)); continue
+                if cands:
+                    break
             if not cands:
                 print("  no candidates  %s" % it["url"][:70]); continue
             for img_url in cands:
