@@ -31,28 +31,63 @@ def get(url, timeout=25):
     return urllib.request.urlopen(req, timeout=timeout)
 
 
-def find_image_url(page_url):
+IMG_TAG = re.compile(rb'<img\b[^>]*>', re.I)
+SRC = re.compile(rb'\b(?:data-src|data-original|src)\s*=\s*["\']([^"\']+)["\']', re.I)
+SRCSET = re.compile(rb'\bsrcset\s*=\s*["\']([^"\']+)["\']', re.I)
+JUNK = ("logo", "icon", "sprite", "avatar", "placeholder", "blank", "pixel",
+        "spacer", "1x1", "badge", "favicon", "share", "banner-ad", "/ads/")
+
+
+def _clean(raw, base):
+    raw = raw.decode("utf-8", "ignore").strip().replace("&amp;", "&")
+    if not raw or raw.startswith("data:"):
+        return None
+    return urllib.parse.urljoin(base, raw)
+
+
+def image_candidates(page_url):
+    """og:image / twitter:image first, then the article's own <img> tags."""
     with get(page_url) as r:
-        head = r.read(400_000)          # meta tags live near the top
+        body = r.read(900_000)
         base = r.geturl()
-    for m in META.finditer(head):
+    out = []
+    for m in META.finditer(body):
         c = CONTENT.search(m.group(0))
-        if not c:
+        if c:
+            u = _clean(c.group(1), base)
+            if u:
+                out.append(u)
+    for m in IMG_TAG.finditer(body):
+        tag = m.group(0)
+        ss = SRCSET.search(tag)
+        if ss:
+            # take the widest entry of the srcset
+            parts = [p.strip().split()[0] for p in ss.group(1).split(b",") if p.strip()]
+            if parts:
+                u = _clean(parts[-1], base)
+                if u:
+                    out.append(u)
+        sm = SRC.search(tag)
+        if sm:
+            u = _clean(sm.group(1), base)
+            if u:
+                out.append(u)
+    seen, keep = set(), []
+    for u in out:
+        low = u.lower()
+        if u in seen or low.endswith(".svg") or any(j in low for j in JUNK):
             continue
-        raw = c.group(1).decode("utf-8", "ignore").strip()
-        raw = raw.replace("&amp;", "&")
-        if not raw or raw.startswith("data:"):
-            continue
-        return urllib.parse.urljoin(base, raw)
-    return None
+        seen.add(u)
+        keep.append(u)
+    return keep[:12]
 
 
 def download(img_url, stem):
     with get(img_url) as r:
         ctype = (r.headers.get("Content-Type") or "").split(";")[0].strip().lower()
         blob = r.read(MAX_BYTES + 1)
-    if len(blob) > MAX_BYTES or len(blob) < 1000:
-        raise ValueError("size %d out of range" % len(blob))
+    if len(blob) > MAX_BYTES or len(blob) < 25_000:
+        raise ValueError("size %dB out of range" % len(blob))
     ext = EXT.get(ctype) or os.path.splitext(urllib.parse.urlparse(img_url).path)[1].lower()
     if ext not in EXT.values():
         ext = ".jpg"
@@ -74,15 +109,22 @@ def main():
                 continue
             stem = "%s-%d" % (date, i)
             try:
-                img_url = find_image_url(it["url"])
-                if not img_url:
-                    print("  no og:image  %s" % it["url"]); continue
-                it["img"] = download(img_url, stem)
-                it["img_src"] = img_url
-                dirty = True; changed += 1
-                print("  saved %s  <- %s" % (it["img"], img_url[:80]))
+                cands = image_candidates(it["url"])
             except Exception as e:
-                print("  FAILED %s :: %s" % (it["url"][:70], e))
+                print("  page unreachable %s :: %s" % (it["url"][:60], e)); continue
+            if not cands:
+                print("  no candidates  %s" % it["url"][:70]); continue
+            for img_url in cands:
+                try:
+                    it["img"] = download(img_url, stem)
+                    it["img_src"] = img_url
+                    dirty = True; changed += 1
+                    print("  saved %s  <- %s" % (it["img"], img_url[:80]))
+                    break
+                except Exception as e:
+                    print("    skip %s :: %s" % (img_url[:60], e))
+            else:
+                print("  FAILED all %d candidates for %s" % (len(cands), it["url"][:60]))
         if dirty:
             json.dump(items, open(f, "w"), ensure_ascii=False, indent=1)
             print("updated %s" % f)
