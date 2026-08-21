@@ -29,19 +29,19 @@ def cat_colour(tag):
 CSS = """
 :root{
   --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
-  --rule:#BFBCB2; --hair:#D1CFC6; --red:#E5342A; --onred:#FFFFFF;
+  --rule:#111110; --hair:#111110; --red:#E5342A; --onred:#FFFFFF;
   --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
-    --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
+    --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
     --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
   }
 }
 :root[data-theme="dark"]{
   --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
-  --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
+  --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
   --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
 }
 *{box-sizing:border-box}
@@ -93,6 +93,9 @@ img{max-width:100%; display:block}
 .filters button[aria-pressed="true"]{
   background:var(--ink); color:var(--ground);
   padding:7px 14px; font-weight:700;
+}
+.filters button[data-f]:not([data-f=""])[aria-pressed="true"]{
+  background:var(--cat); color:#fff;
 }
 @media (max-width:700px){
   .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
@@ -423,13 +426,13 @@ def render():
   </header>
   <div class="fwrap"><nav class="filters" aria-label="Category filter">
     <button type="button" data-f="" aria-pressed="true">All</button>
-    <button type="button" data-f="micromobility" aria-pressed="false">Micromobility</button>
-    <button type="button" data-f="cockpit" aria-pressed="false">Cockpit</button>
-    <button type="button" data-f="interaction" aria-pressed="false">Interaction</button>
-    <button type="button" data-f="ai" aria-pressed="false">AI</button>
-    <button type="button" data-f="design" aria-pressed="false">Design</button>
-    <button type="button" data-f="visual" aria-pressed="false">Visual</button>
-    <button type="button" data-f="industrial" aria-pressed="false">Industrial</button>
+    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
+    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
+    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
+    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
+    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
+    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
+    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
   </nav></div>
   %s
   <a class="morebar" href="#top">Back to top &uarr;</a>
