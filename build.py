@@ -212,6 +212,17 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
 }
 .menu[hidden]{display:none}
+.menu-team{
+  border-top:1px solid var(--hair); padding-top:13px; display:grid; gap:6px;
+}
+.menu-team .dedication{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
+  font-size:13px; color:var(--ink); text-transform:none; letter-spacing:0;
+}
+.menu-team .team-names{
+  font-size:10.5px; font-weight:600; letter-spacing:.05em; color:var(--muted);
+  text-transform:uppercase; line-height:1.7;
+}
 .menu .mlabel{
   display:block; font-size:9px; font-weight:700; letter-spacing:.16em;
   text-transform:uppercase; color:var(--muted); margin-bottom:7px;
@@ -249,19 +260,9 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 }
 .morebar:hover{background:var(--red); color:#fff}
 .foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
-.foot-grid{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start}
+.foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
 .foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
-.foot-brand{display:grid; gap:6px}
-.dedication{
-  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
-  font-size:14px; opacity:.85;
-}
-.team{display:grid; gap:6px}
-.team-label{font-size:9px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; opacity:.5}
-.team-names{font-size:12px; font-weight:600; letter-spacing:.04em; opacity:.9}
-.foot-meta{display:grid; gap:5px; text-align:right}
 .foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
-@media (max-width:700px){ .foot-grid{flex-direction:column; gap:22px} .foot-meta{text-align:left} }
 """
 
 
@@ -353,6 +354,10 @@ def render():
         <div><span class="mlabel">Theme</span>
           <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
         </div>
+        <div class="menu-team">
+          <span class="dedication">for DC Advanced UX Team.</span>
+          <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim<br>Jisu &middot; Katey &middot; Anna</span>
+        </div>
       </div>
     </span>
   </div>
@@ -365,18 +370,9 @@ def render():
 </div>
 </div>
 <footer class="foot"><div class="shell foot-grid">
-  <div class="foot-brand">
-    <span class="wordmark">ADUX Daily</span>
-    <span class="dedication">for DC Advanced UX Team.</span>
-  </div>
-  <div class="team">
-    <span class="team-label">Team</span>
-    <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim &middot; Jisu &middot; Katey &middot; Anna</span>
-  </div>
-  <div class="foot-meta">
-    <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
-    <span class="note">Curated by Claude</span>
-  </div>
+  <span class="wordmark">ADUX Daily</span>
+  <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
+  <span class="note">Curated by Claude</span>
 </div></footer>
 <script>
 (function(){
