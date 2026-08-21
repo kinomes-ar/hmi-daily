@@ -80,6 +80,51 @@ img{max-width:100%; display:block}
 }
 @media (max-width:700px){ .masthead{padding:18px 0 14px} }
 
+/* ---- category filter ---- */
+.filters{
+  display:flex; gap:8px; justify-content:center; flex-wrap:wrap;
+  padding:15px 0; border-bottom:1px solid var(--ink);
+}
+.filters button{
+  appearance:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px;
+  background:transparent; border:1px solid var(--cat,var(--ink)); border-radius:999px;
+  color:var(--cat,var(--ink)); font:inherit; font-size:9px; font-weight:700;
+  letter-spacing:.11em; text-transform:uppercase; padding:5px 12px 5px 8px;
+  white-space:nowrap; transition:background .12s,color .12s;
+}
+.filters button::before{
+  content:""; width:6px; height:6px; border-radius:50%;
+  background:var(--cat,var(--ink)); flex:0 0 6px;
+}
+.filters button:hover{background:var(--shade)}
+.filters button[aria-pressed="true"]{
+  background:var(--cat,var(--ink)); color:var(--ground);
+}
+.filters button[aria-pressed="true"]::before{background:var(--ground)}
+@media (max-width:700px){
+  .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
+           -webkit-overflow-scrolling:touch; padding:12px 0; gap:7px}
+}
+
+/* ---- filtered view: one uniform grid ---- */
+html[data-filter="micromobility"] article:not([data-tag="micromobility"]){display:none}
+html[data-filter="cockpit"] article:not([data-tag="cockpit"]){display:none}
+html[data-filter="interaction"] article:not([data-tag="interaction"]){display:none}
+html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
+html[data-filter="design"] article:not([data-tag="design"]){display:none}
+html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
+html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
+html[data-filter] .band,html[data-filter] .col,html[data-filter] .foot-row{display:contents}
+html[data-filter] .day{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
+html[data-filter] .dayhead{grid-column:1/-1; margin-bottom:0}
+html[data-filter] .day article{border:0; padding:0}
+html[data-filter] .ph{aspect-ratio:3/2}
+html[data-filter] .hl{font-size:19px; line-height:1.18}
+html[data-filter] .tx{font-size:12.5px}
+html[data-filter] .col.side ~ *{text-align:left}
+html[data-filter] .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
+html[data-filter] article{text-align:left}
+
 /* ---- date band ---- */
 .day{padding:34px 0 12px}
 .day + .day{border-top:2px solid var(--ink)}
@@ -282,12 +327,13 @@ def article(it, kind):
     langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
                     for k in ("en", "zh", "ko") if it.get(k))
     return (
-        '<article class="a-{k}">{ph}'
+        '<article class="a-{k}" data-tag="{slug}">{ph}'
         '<span class="tagrow" style="--cat:{c}">'
         '<span class="tag">{tag}</span></span>'
         '<h3 class="hl">{t}</h3>{langs}'
         '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
     ).format(k=kind, ph=photo(it, kind), c=cat_colour(it.get("tag")),
+             slug="".join(ch for ch in (it.get("tag","") or "").lower() if ch.isalpha()),
              tag=esc(it.get("tag", "News")), t=esc(it["t"]),
              langs=langs, url=esc(it["url"]), src=esc(it["src"]))
 
@@ -365,6 +411,16 @@ def render():
     <h1>Latest News</h1>
     <div class="kicker">Micromobility &middot; Cockpit &middot; Interaction &middot; AI &middot; Design</div>
   </header>
+  <nav class="filters" aria-label="Category filter">
+    <button type="button" data-f="" aria-pressed="true">All</button>
+    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
+    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
+    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
+    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
+    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
+    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
+    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
+  </nav>
   %s
   <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
@@ -429,6 +485,16 @@ def render():
     if(menu&&!menu.hidden&&!menu.contains(e.target)) setMenu(false);
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
+
+  /* ---- category filter ---- */
+  var fbtns=[].slice.call(document.querySelectorAll('.filters button'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      if(b.dataset.f){ root.setAttribute('data-filter',b.dataset.f); }
+      else{ root.removeAttribute('data-filter'); }
+      fbtns.forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); });
+    });
+  });
 })();
 </script>""" % (CSS, nav, "".join(body), total, len(days), latest)
 
