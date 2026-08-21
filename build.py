@@ -77,9 +77,11 @@ img{max-width:100%; display:block}
 @media (max-width:700px){ .masthead{padding:30px 0 22px} }
 
 /* ---- category filter ---- */
+.fwrap{border-bottom:1px solid var(--ink); display:none}
+@media (max-width:700px){ .fwrap{display:block} }
 .filters{
   display:flex; gap:22px; justify-content:center; align-items:center; flex-wrap:wrap;
-  padding:14px 0; border-bottom:1px solid var(--ink);
+  padding:14px 0;
 }
 .filters button{
   appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px;
@@ -108,7 +110,7 @@ html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
 html[data-filter="design"] article:not([data-tag="design"]){display:none}
 html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
 html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
-html[data-filter] .band,html[data-filter] .col,html[data-filter] .foot-row{display:contents}
+html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
 html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
 html[data-filter] .day article{border:0; padding:0}
 html[data-filter] .ph{aspect-ratio:3/2}
@@ -147,36 +149,48 @@ html[data-filter] article{text-align:left}
 .col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
 .col.side .tx{margin-left:auto; margin-right:auto}
 .col.side > article + article{border-top:1px solid var(--hair); padding-top:24px}
-.foot-row{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
-  border-top:1px solid var(--hair); margin-bottom:4px;
+.duo{
+  display:grid; grid-template-columns:1fr 1.25fr; gap:0;
+  border-top:1px solid var(--hair); margin-top:28px;
 }
-.foot-row:first-of-type{border-top:1px solid var(--ink)}
-.foot-row > article{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
-.foot-row > article:first-child{padding-left:0; border-left:0}
+.duo > article{padding:22px 0 0}
+.duo > article + article{border-left:1px solid var(--hair); padding-left:24px; margin-left:24px}
+.a-duo .hl{font-size:19px; line-height:1.18}
+.a-duotx .hl{font-size:clamp(21px,2.2vw,27px); line-height:1.12}
+.ph-duo{aspect-ratio:4/3}
+
+/* ---- lower well: ragged newsprint columns ---- */
+.rest{
+  columns:4; column-gap:28px; column-rule:1px solid var(--hair);
+  border-top:1px solid var(--ink); padding-top:22px; margin-top:6px;
+}
+.rest > article{break-inside:avoid; padding:0 0 26px; margin-bottom:2px;
+  border-bottom:1px solid var(--hair)}
+.rest .ph{aspect-ratio:auto}
+.rest .ph.fb{aspect-ratio:4/5}
+.a-foot .hl{font-size:17px; line-height:1.2}
 @media (max-width:980px){
   .band{grid-template-columns:1.3fr 1fr}
   .col.side{grid-column:1 / -1; grid-template-columns:1fr 1fr 1fr;
             border-left:0; padding:16px 0 0; border-top:1px solid var(--hair)}
   .col.side > article + article{border-top:0; border-left:1px solid var(--hair);
             padding-top:0; padding-left:18px}
-  .foot-row{grid-template-columns:1fr 1fr}
-  .foot-row > article:nth-child(3){border-left:0; padding-left:0}
+  .duo{grid-template-columns:1fr}
+  .duo > article + article{border-left:0; padding-left:0; margin-left:0;
+    border-top:1px solid var(--hair); margin-top:20px}
+  .rest{columns:2}
 }
 @media (max-width:660px){
-  .band{grid-template-columns:1fr 1fr; column-gap:18px}
-  .col{padding:0; border-left:0}
-  .col.lead{grid-column:1/-1; padding:22px 0 30px}
-  .col.mid,.col.side{display:contents}
-  .col.mid > article,.col.side > article{
-    border-top:1px solid var(--ink); padding:16px 0 28px; text-align:left;
+  .day{columns:2; column-gap:20px; column-rule:1px solid var(--hair)}
+  .band,.col.mid,.col.side,.duo,.rest{display:contents}
+  .col{padding:0; border:0}
+  .col.lead{display:block; column-span:all; padding:22px 0 28px}
+  .col.mid > article,.col.side > article,.duo > article,.rest > article{
+    display:block; break-inside:avoid; text-align:left;
+    border-top:1px solid var(--ink); border-bottom:0; border-left:0;
+    padding:14px 0 24px; margin:0;
   }
-  .col.mid > article + article,
-  .col.side > article + article{border-top:1px solid var(--ink); padding-top:16px; padding-left:0; border-left:0}
   .col.side .tagrow{margin:0 0 10px; display:inline-flex; justify-content:flex-start}
-  .foot-row{grid-template-columns:1fr 1fr; column-gap:18px; margin:0; border-top:0}
-  .foot-row:first-of-type{border-top:0}
-  .foot-row > article{border-left:0; border-top:1px solid var(--ink); padding:16px 0 28px}
 }
 
 /* ---- photos ---- */
@@ -213,9 +227,8 @@ html[data-filter] article{text-align:left}
   line-height:1.08; letter-spacing:-.01em; text-wrap:balance;
 }
 .a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
-.a-mid .hl{font-size:clamp(22px,2.5vw,29px); line-height:1.1}
+.a-mid .hl{font-size:clamp(20px,2.2vw,26px); line-height:1.14}
 .a-side .hl{font-size:17px; line-height:1.2}
-.a-foot .hl{font-size:20px; line-height:1.15}
 .tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
 .tx.en{display:block}
 html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
@@ -227,14 +240,19 @@ html[data-lang="ko"] .tx.ko{display:block}
 /* the reference runs headline-only in the narrow cells; keep that in English,
    but show the translated line when a reader picks 中文 / 한국어 */
 html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-mid .tx,
 html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 @media (max-width:660px){
-  .a-lead .hl{font-size:30px}
-  .a-lead .tx{font-size:14.5px}
-  .a-mid .hl,.a-side .hl,.a-foot .hl{font-size:17px; line-height:1.22}
-  .a-mid .tx{display:none}
-  .ph-mid,.ph-side,.ph-foot{aspect-ratio:4/5}
-  .tag{font-size:9px; padding:5px 11px}
+  .hl{font-weight:600}
+  .a-lead .hl{font-size:34px; line-height:1.04}
+  .a-lead .tx{font-size:15.5px}
+  .a-mid .hl,.a-side .hl,.a-foot .hl{font-size:20px; line-height:1.18}
+  .a-mid .tx{font-size:14px}
+  .ph-mid,.ph-side,.ph-foot{aspect-ratio:auto}
+  .ph-mid.fb,.ph-side.fb,.ph-foot.fb{aspect-ratio:4/5}
+  .tag{font-size:9.5px; padding:6px 12px}
+  .filters button{font-size:10.5px}
+  .src{font-size:10px}
 }
 
 .ctrls{position:relative}
@@ -318,7 +336,7 @@ def photo(it, kind):
         kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")))
 
 
-def article(it, kind):
+def article(it, kind, photo_on=True):
     langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
                     for k in ("en", "zh", "ko") if it.get(k))
     return (
@@ -327,7 +345,7 @@ def article(it, kind):
         '<span class="tag">{tag}</span></span>'
         '<h3 class="hl">{t}</h3>{langs}'
         '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
-    ).format(k=kind, ph=photo(it, kind), c=cat_colour(it.get("tag")),
+    ).format(k=kind, ph=photo(it, kind) if photo_on else "", c=cat_colour(it.get("tag")),
              slug="".join(ch for ch in (it.get("tag","") or "").lower() if ch.isalpha()),
              tag=esc(it.get("tag", "News")), t=esc(it["t"]),
              langs=langs, url=esc(it["url"]), src=esc(it["src"]))
@@ -347,18 +365,22 @@ def render():
         y, m, dd = (int(x) for x in d.split("-"))
         wd = _date(y, m, dd).strftime("%A")
         lead = article(items[0], "lead") if items else ""
-        mid = "".join(article(i, "mid") for i in items[1:3])
-        side = "".join(article(i, "side") for i in items[3:6])
-        rest = items[6:]
-        rows = [rest[i:i + 4] for i in range(0, len(rest), 4)]
-        foot = "".join(
-            '<div class="foot-row">%s</div>' % "".join(article(i, "foot") for i in row)
-            for row in rows)
+        duo = ""
+        if len(items) > 2:
+            duo = ('<div class="duo">%s%s</div>' %
+                   (article(items[1], "duo"),
+                    article(items[2], "duotx", photo_on=False)))
+        mid = "".join(article(i, "mid") for i in items[3:5])
+        side = "".join(article(i, "side") for i in items[5:8])
+        foot = ""
+        if items[8:]:
+            foot = '<div class="rest">%s</div>' % "".join(
+                article(i, "foot") for i in items[8:])
         band = ('<div class="band">'
-                '<div class="col lead">{lead}</div>'
+                '<div class="col lead">{lead}{duo}</div>'
                 '<div class="col mid">{mid}</div>'
                 '<div class="col side">{side}</div>'
-                '</div>').format(lead=lead, mid=mid, side=side)
+                '</div>').format(lead=lead, duo=duo, mid=mid, side=side)
         body.append(
             '<section class="day" id="d{d}">{band}{foot}</section>'.format(
                 d=d, band=band, foot=foot)
@@ -399,7 +421,7 @@ def render():
   <header class="masthead">
     <h1>Latest News</h1>
   </header>
-  <nav class="filters" aria-label="Category filter">
+  <div class="fwrap"><nav class="filters" aria-label="Category filter">
     <button type="button" data-f="" aria-pressed="true">All</button>
     <button type="button" data-f="micromobility" aria-pressed="false">Micromobility</button>
     <button type="button" data-f="cockpit" aria-pressed="false">Cockpit</button>
@@ -408,7 +430,7 @@ def render():
     <button type="button" data-f="design" aria-pressed="false">Design</button>
     <button type="button" data-f="visual" aria-pressed="false">Visual</button>
     <button type="button" data-f="industrial" aria-pressed="false">Industrial</button>
-  </nav>
+  </nav></div>
   %s
   <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
