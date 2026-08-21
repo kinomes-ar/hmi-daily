@@ -1,171 +1,339 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HMI Daily</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADUX Daily</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
 </head><body><style>
 :root{
-  --paper:#EFEEE9; --ink:#0E0E0C; --muted:#65635C;
-  --rule:#CFCCC2; --hair:#DCD9D0; --red:#E5342A; --onred:#FFFFFF;
-  --footer:#141412; --footer-ink:#EFEEE9; --shade:#E3E1DA;
+  --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
+  --rule:#BFBCB2; --hair:#D1CFC6; --red:#E5342A; --onred:#FFFFFF;
+  --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#121211; --ink:#EDEBE4; --muted:#918D83;
-    --rule:#2E2D29; --hair:#26251F; --red:#FF4A3D; --onred:#141412;
-    --footer:#0A0A09; --footer-ink:#EDEBE4; --shade:#1D1C19;
+    --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+    --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
+    --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#121211; --ink:#EDEBE4; --muted:#918D83;
-  --rule:#2E2D29; --hair:#26251F; --red:#FF4A3D; --onred:#141412;
-  --footer:#0A0A09; --footer-ink:#EDEBE4; --shade:#1D1C19;
+  --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+  --rule:#33322D; --hair:#2A2924; --red:#FF4A3D; --onred:#141412;
+  --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
 }
 *{box-sizing:border-box}
 body{
-  margin:0; background:var(--paper); color:var(--ink);
-  font-family:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,-apple-system,BlinkMacSystemFont,Arial,"PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%; display:block}
-.shell{max-width:1160px; margin:0 auto; padding:0 28px}
+.sheet{max-width:1180px; margin:0 auto}
+.shell{max-width:1180px; margin:0 auto; padding:0 34px}
+@media (max-width:700px){ .shell{padding:0 20px} }
 
 .top{
-  display:flex; align-items:center; justify-content:space-between; gap:16px;
-  padding:16px 0; border-bottom:1px solid var(--ink);
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:15px 0; border-bottom:1px solid var(--ink); flex-wrap:wrap;
   font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+}
+@media (max-width:700px){
+  .top{gap:12px; padding:13px 0}
+  .top .nav{order:3; width:100%; justify-content:flex-start; overflow-x:auto; gap:16px; padding-bottom:2px}
 }
 .top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
 .top .nav{display:flex; gap:18px; color:var(--muted); flex-wrap:wrap}
 .top .nav a{color:inherit; text-decoration:none}
 .top .nav a:hover{color:var(--red)}
-.masthead{padding:40px 0 26px; text-align:center; border-bottom:3px solid var(--ink)}
+.masthead{padding:36px 0 30px; text-align:center; border-bottom:1px solid var(--ink)}
 .masthead h1{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
-  font-size:clamp(42px,10.5vw,116px); line-height:.85; letter-spacing:-.025em;
+  font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
   text-transform:uppercase; text-wrap:balance;
 }
 .masthead .kicker{
-  margin-top:14px; font-size:11px; font-weight:600; letter-spacing:.2em;
+  margin-top:9px; font-size:9.5px; font-weight:600; letter-spacing:.18em;
   text-transform:uppercase; color:var(--muted);
 }
+@media (max-width:700px){ .masthead{padding:18px 0 14px} }
 
-.day{padding:36px 0 6px; border-bottom:1px solid var(--hair)}
-.dayhead{display:flex; align-items:baseline; gap:16px; margin-bottom:24px}
+/* ---- date band ---- */
+.day{padding:34px 0 12px}
+.day + .day{border-top:2px solid var(--ink)}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:24px}
 .dayhead h2{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
-  font-size:clamp(24px,3.6vw,34px); letter-spacing:-.01em; font-variant-numeric:tabular-nums;
+  font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; text-transform:uppercase;
 }
-.dayhead .rule{flex:1; height:2px; background:var(--ink)}
+.dayhead .rule{flex:1; height:1px; background:var(--ink)}
 .dayhead .meta{
-  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  font-size:9.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
   color:var(--muted); white-space:nowrap;
 }
 
+/* ---- newspaper grid: lead | middle | narrow rail ---- */
 .band{
-  display:grid; grid-template-columns:1.55fr 1fr; gap:32px;
-  padding-bottom:28px; margin-bottom:28px; border-bottom:1px solid var(--hair);
+  display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
+  border-top:1px solid var(--ink);
 }
-.rail{display:grid; gap:22px; align-content:start; border-left:1px solid var(--hair); padding-left:32px}
-.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:30px; padding-bottom:32px}
-@media (max-width:920px){
-  .band{grid-template-columns:1fr; gap:26px}
-  .rail{border-left:0; padding-left:0; border-top:1px solid var(--hair); padding-top:24px;
-        grid-template-columns:1fr 1fr}
-  .grid{grid-template-columns:1fr 1fr; gap:26px}
+.col{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
+.col:first-child{padding-left:0; border-left:0}
+.col:last-child{padding-right:0}
+.col.mid,.col.side{display:grid; gap:24px; align-content:start}
+.col.mid > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.col.side{text-align:center}
+.col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
+.col.side .tx{margin-left:auto; margin-right:auto}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.foot-row{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+  border-top:1px solid var(--hair); margin-bottom:4px;
 }
-@media (max-width:620px){ .rail,.grid{grid-template-columns:1fr} }
+.foot-row:first-of-type{border-top:1px solid var(--ink)}
+.foot-row > article{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
+.foot-row > article:first-child{padding-left:0; border-left:0}
+@media (max-width:980px){
+  .band{grid-template-columns:1.3fr 1fr}
+  .col.side{grid-column:1 / -1; grid-template-columns:1fr 1fr 1fr;
+            border-left:0; padding:16px 0 0; border-top:1px solid var(--hair)}
+  .col.side > article + article{border-top:0; border-left:1px solid var(--hair);
+            padding-top:0; padding-left:18px}
+  .foot-row{grid-template-columns:1fr 1fr}
+  .foot-row > article:nth-child(3){border-left:0; padding-left:0}
+}
+@media (max-width:660px){
+  .band{grid-template-columns:1fr}
+  .col{padding:24px 0; border-left:0; border-top:1px solid var(--hair)}
+  .col:first-child{border-top:0; padding-top:4px}
+  .col.side{grid-template-columns:1fr}
+  .col.side > article + article{border-left:0; padding-left:0;
+            border-top:1px solid var(--hair); padding-top:24px}
+  .foot-row{grid-template-columns:1fr}
+  .foot-row > article{padding:24px 0; border-left:0; border-top:1px solid var(--hair)}
+  .foot-row > article:first-child{border-top:0}
+}
 
-.ph{margin:0 0 13px; overflow:hidden; background:var(--shade)}
+/* ---- photos ---- */
+.ph{margin:0 0 14px; overflow:hidden; background:var(--shade)}
 .ph img{width:100%; height:100%; object-fit:cover}
 .ph-lead{aspect-ratio:16/9}
-.ph-rail{aspect-ratio:4/3}
-.ph-grid{aspect-ratio:3/2}
-.ph.fb{display:flex; align-items:flex-end; padding:14px}
+.ph-mid{aspect-ratio:4/3}
+.ph-side{aspect-ratio:1/1}
+.ph-foot{aspect-ratio:3/2}
+.ph.fb{display:flex; align-items:flex-end; padding:10px}
 .ph.fb span{
   font-family:"Archivo Black",Impact,sans-serif; text-transform:uppercase;
   line-height:.86; letter-spacing:-.02em; word-break:break-word;
 }
-.ph-lead.fb span{font-size:clamp(34px,5vw,60px)}
-.ph-rail.fb span{font-size:26px}
-.ph-grid.fb span{font-size:30px}
+.ph-lead.fb span{font-size:clamp(26px,3.6vw,44px)}
+.ph-mid.fb span{font-size:21px}
+.ph-side.fb span{font-size:15px}
+.ph-foot.fb span{font-size:19px}
 
+/* ---- pills ---- */
+.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:10px}
 .tag{
-  display:inline-flex; align-items:center; gap:6px;
-  background:var(--red); color:var(--onred);
-  font-size:9.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
-  padding:4px 10px 4px 7px; border-radius:999px; margin-bottom:10px;
+  display:inline-flex; align-items:center; gap:5px;
+  background:transparent; color:var(--cat,var(--red));
+  border:1px solid var(--cat,var(--red));
+  font-size:8.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  padding:2.5px 9px 2.5px 6px; border-radius:999px;
 }
-.tag::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--onred); opacity:.9}
+.tag::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--cat,var(--red))}
+
+/* ---- headlines & text ---- */
 .hl{
-  font-family:"Archivo Black",Impact,sans-serif; margin:0 0 11px;
-  line-height:1.05; letter-spacing:-.015em; text-wrap:balance;
+  font-family:"Noto Serif Display","Times New Roman","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; margin:0 0 10px;
+  line-height:1.08; letter-spacing:-.01em; text-wrap:balance;
 }
-.a-lead .hl{font-size:clamp(27px,3.4vw,40px)}
-.a-rail .hl{font-size:17px}
-.a-grid .hl{font-size:19px}
-.tx{display:none; margin:0; max-width:62ch}
+.a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
+.a-mid .hl{font-size:clamp(22px,2.5vw,29px); line-height:1.1}
+.a-side .hl{font-size:17px; line-height:1.2}
+.a-foot .hl{font-size:20px; line-height:1.15}
+.tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
 .tx.en{display:block}
 html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
 html[data-lang="zh"] .tx.zh{display:block}
 html[data-lang="ko"] .tx.ko{display:block}
-.a-lead .tx{font-size:15.5px}
-.a-rail .tx{font-size:12.5px; line-height:1.5}
-.a-grid .tx{font-size:13.5px}
+.a-lead .tx{font-size:14px; line-height:1.6; color:var(--muted)}
+.a-mid .tx{font-size:13px; line-height:1.55; color:var(--muted)}
+.a-foot .tx,.a-side .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+/* the reference runs headline-only in the narrow cells; keep that in English,
+   but show the translated line when a reader picks 中文 / 한국어 */
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
+@media (max-width:660px){
+  .a-side .hl,.a-foot .hl,.a-mid .hl{font-size:24px}
+  .a-lead .hl{font-size:29px}
+  .a-mid .tx,.a-foot .tx,.a-side .tx{font-size:14px}
+  .ph-side{aspect-ratio:16/9}
+  .col.side{text-align:left}
+  .col.side .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
+  .col.side .tx{margin-left:0; margin-right:0}
+}
 
+.ctrls{position:relative}
+.menubtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink);
+  border-radius:999px; width:34px; height:28px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center; color:var(--ink);
+}
+.menubtn:hover{background:var(--shade)}
+.menubtn svg{width:14px; height:14px; display:block}
+.menu{
+  position:absolute; right:0; top:calc(100% + 10px); z-index:60;
+  background:var(--ground); border:1px solid var(--ink);
+  padding:16px; display:grid; gap:14px; min-width:216px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.menu[hidden]{display:none}
+.menu-team{
+  border-top:1px solid var(--hair); padding-top:13px; display:grid; gap:6px;
+}
+.menu-team .dedication{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
+  font-size:13px; color:var(--ink); text-transform:none; letter-spacing:0;
+}
+.menu-team .team-names{
+  font-size:10.5px; font-weight:600; letter-spacing:.05em; color:var(--muted);
+  text-transform:uppercase; line-height:1.7;
+}
+.menu .mlabel{
+  display:block; font-size:9px; font-weight:700; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:7px;
+}
 .langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
+.langsw button{flex:1 1 0}
 .langsw button{
   appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
-  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-  padding:5px 11px; line-height:1.4;
+  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  padding:5px 10px; line-height:1.4; text-align:center; white-space:nowrap;
 }
 .langsw button + button{border-left:1px solid var(--ink)}
 .langsw button[aria-pressed="true"]{background:var(--red); color:var(--onred)}
 .langsw button:hover:not([aria-pressed="true"]){background:var(--shade)}
+.themesw{
+  appearance:none; cursor:pointer; font:inherit; font-size:9.5px; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; padding:5px 12px; line-height:1.4;
+  border:1px solid var(--ink); border-radius:999px;
+  background:transparent; color:var(--ink);
+}
+.themesw:hover{background:var(--shade)}
+.top .ctrls{display:flex; align-items:center; gap:10px}
 .src{
-  display:inline-block; margin-top:12px; color:var(--red); text-decoration:none;
-  font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
-  border-bottom:2px solid transparent; padding-bottom:2px;
+  display:inline-block; margin-top:9px; color:var(--red); text-decoration:none;
+  font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  border-bottom:1px solid transparent; padding-bottom:1px;
 }
 .src:hover,.src:focus-visible{border-bottom-color:var(--red)}
 :focus-visible{outline:2px solid var(--red); outline-offset:3px}
 
-.foot{background:var(--footer); color:var(--footer-ink); margin-top:52px; padding:38px 0 44px}
-.foot .shell{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
+.morebar{
+  display:block; margin:26px 0 8px; padding:15px; border-radius:999px;
+  background:var(--ink); color:var(--ground); text-decoration:none; text-align:center;
+  font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+}
+.morebar:hover{background:var(--red); color:#fff}
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
+.foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
 .foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
 .foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
 </style>
+<div class="sheet" id="top">
 <div class="shell">
   <div class="top">
-    <span class="wordmark">HMI&nbsp;DAILY</span>
+    <span class="wordmark">ADUX&nbsp;DAILY</span>
     <span class="nav"><a href="#d2026-08-21">08-21</a></span>
-    <span class="langsw" role="group" aria-label="Language">
-      <button type="button" data-set="en" aria-pressed="true">EN</button>
-      <button type="button" data-set="zh" aria-pressed="false">中文</button>
-      <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+    <span class="ctrls">
+      <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
+        <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <div><span class="mlabel">Language</span>
+          <span class="langsw" role="group" aria-label="Language">
+            <button type="button" data-set="en" aria-pressed="false">EN</button>
+            <button type="button" data-set="zh" aria-pressed="false">中文</button>
+            <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+          </span>
+        </div>
+        <div><span class="mlabel">Theme</span>
+          <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
+        </div>
+        <div class="menu-team">
+          <span class="dedication">for DC Advanced UX Team.</span>
+          <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim<br>Jisu &middot; Katey &middot; Anna</span>
+        </div>
+      </div>
     </span>
   </div>
   <header class="masthead">
-    <h1>Interface<br>Intelligence</h1>
-    <div class="kicker">Cockpit &middot; Micromobility &middot; Interaction &middot; AI &mdash; every working day</div>
+    <h1>Latest News</h1>
+    <div class="kicker">Micromobility &middot; Cockpit &middot; Interaction &middot; AI &middot; Design</div>
   </header>
-  <section class="day" id="d2026-08-21"><div class="dayhead"><h2>2026-08-21</h2><span class="rule"></span><span class="meta">Friday &middot; 4 stories</span></div><div class="band"><article class="a-lead"><figure class="ph ph-lead fb" style="background:#E5342A;color:#FFFFFF"><span>Display</span></figure><span class="tag">Display</span><h3 class="hl">Dual View OLED — one panel, two viewers</h3><p class="tx en">LG Display won a CES 2026 Innovation Award for an OLED that feeds driving data to the driver and entertainment to the passenger from a single panel. Its UDC-IR OLED hides the driver-monitoring infrared camera under the screen.</p><p class="tx zh">LG Display 凭双视角 OLED 斩获 CES 2026 创新奖：同一面板可同时向驾驶员显示行车信息、向乘客播放娱乐内容；UDC-IR OLED 将红外监测摄像头置于屏下，不损画质。</p><p class="tx ko">한 패널로 운전자·동승자에게 서로 다른 화면을 동시 출력. 운전자 모니터링 IR 카메라는 화면 아래 내장해 화질 손실이 없음.</p><a class="src" href="https://news.lgdisplay.com/en/2025/11/ces-2026-innovation-awards-the-world-first-automotive-display-solutions-dual-view-oled-and-udc-ir-oled/" target="_blank" rel="noopener">LG Display Newsroom &rarr;</a></article><div class="rail"><article class="a-rail"><figure class="ph ph-rail fb" style="background:#1F45C8;color:#FFFFFF"><span>AR / HUD</span></figure><span class="tag">AR / HUD</span><h3 class="hl">QuadAlliance drives holographic windshields to mass production</h3><p class="tx en">ZEISS, tesa, Saint-Gobain Sekurit and Hyundai Mobis formed the QuadAlliance to industrialise full-windshield holographic displays — a 1.2L optical engine at over 95% transparency.</p><p class="tx zh">蔡司、德莎、圣戈班 Sekurit 与现代摩比斯组建 QuadAlliance，推动整片挡风玻璃全息显示量产：光学引擎约 1.2 升，透光率超 95%。</p><p class="tx ko">윈드실드 전면 홀로그램 HUD 양산을 위한 4사 동맹. 광학엔진 1.2L, 투과율 95% 이상, 운전자·동승자 아이박스 분리.</p><a class="src" href="https://www.prnewswire.com/news-releases/zeiss-tesa-saint-gobain-sekurit-and-hyundai-mobis-form-quadalliance-to-accelerate-holographic-windshield-display-mass-production-302674969.html" target="_blank" rel="noopener">PR Newswire &rarr;</a></article><article class="a-rail"><figure class="ph ph-rail fb" style="background:#F0C020;color:#141412"><span>Interaction</span></figure><span class="tag">Interaction</span><h3 class="hl">VW puts the buttons back</h3><p class="tx en">Volkswagen's design chief confirmed physical buttons and knobs are returning, starting with the ID. Polo — "it's a car, not a phone." A direct correction to touch-only interiors.</p><p class="tx zh">大众设计负责人确认实体按键与旋钮回归，将从 ID. Polo 开始——「这是车，不是手机。」这是对纯触控内饰的直接修正。</p><p class="tx ko">멀티모달이 확산되는 와중에도 촉각 조작을 되살림. 터치 일변도 UI에 대한 반작용으로, 마이크로모빌리티 HMI에도 시사점이 있음.</p><a class="src" href="https://insideevs.com/news/752840/vw-brings-back-buttons-switches/" target="_blank" rel="noopener">InsideEVs &rarr;</a></article></div></div><div class="grid"><article class="a-grid"><figure class="ph ph-grid fb" style="background:#12916A;color:#FFFFFF"><span>Industry</span></figure><span class="tag">Industry</span><h3 class="hl">AUO spins out AMSC — from panels to whole cockpits</h3><p class="tx en">AUO launched AUO Mobility Solutions Corp., bundling displays with climate control and HMI design into system-integrated cockpits, debuting at CES 2026.</p><p class="tx zh">友达成立 AUO Mobility Solutions，将显示、空调与 HMI 设计整合为座舱系统方案，并于 CES 2026 亮相。</p><p class="tx ko">패널 공급사에서 콕핏 시스템 통합업체로 전환. 디스플레이+공조+HMI 설계를 묶어 판매하는 구조.</p><a class="src" href="https://www.auo.com/en-global/New_Archive/detail/News_Archive_Product_20251118" target="_blank" rel="noopener">AUO &rarr;</a></article></div></section>
+  <section class="day" id="d2026-08-21"><div class="dayhead"><h2>2026-08-21</h2><span class="rule"></span><span class="meta">Friday &middot; 16 stories</span></div><div class="band"><div class="col lead"><article class="a-lead"><figure class="ph ph-lead"><img src="assets/2026-08-21-1.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><h3 class="hl">CES 2026 scooters: phone-grade UX arrives on the deck</h3><p class="tx en">GOTRAX put Apple Find My and NFC unlocking on the GX3, Segway showed the Ninebot KickScooter MAX G3, and INMOTION drew attention with a claimed 94 mph RS PRO prototype. Onboard UX is becoming a spec line, not an afterthought.</p><p class="tx zh">GOTRAX GX3 加入 Apple Find My 与 NFC 解锁，九号展出 KickScooter MAX G3，INMOTION 以宣称 94 英里/时的 RS PRO 原型引发关注。车载体验正成为参数表上的一项。</p><p class="tx ko">GOTRAX GX3는 애플 Find My와 NFC 잠금해제를 탑재, 세그웨이는 Ninebot KickScooter MAX G3 공개, INMOTION은 시속 94마일 주장 프로토타입으로 주목. 온보드 UX가 스펙 항목이 되는 중.</p><a class="src" href="https://electricscooterguide.com/every-electric-scooter-ces-2026/" target="_blank" rel="noopener">Electric Scooter Guide &rarr;</a></article></div><div class="col mid"><article class="a-mid"><figure class="ph ph-mid fb" style="background:#17A472;color:#fff"><span>Interaction</span></figure><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">Euro NCAP will score cars on physical controls</h3><p class="tx en">Euro NCAP is tying safety ratings to interaction design: cars that bury core functions like wipers, hazard lights and indicators in touchscreen menus will lose points. Physical controls become a scoring requirement, not a styling choice.</p><p class="tx zh">Euro NCAP 将交互设计纳入安全评分：把雨刷、双闪、转向灯等核心功能埋进触屏菜单的车型将被扣分。实体控件从造型选择变成评分硬性要求。</p><p class="tx ko">유로 NCAP이 인터랙션 설계를 안전 등급에 연동. 와이퍼·비상등·방향지시등을 터치 메뉴에 묻은 차는 감점. 물리 조작계가 스타일 선택이 아니라 평가 요건이 됨.</p><a class="src" href="https://www.eetimes.eu/poor-automotive-hmi-design-to-impact-euro-ncap-safety-rating/" target="_blank" rel="noopener">EE Times Europe &rarr;</a></article><article class="a-mid"><figure class="ph ph-mid"><img src="assets/2026-08-21-3.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">Rivian ships an assistant that drives the car, not just talks</h3><p class="tx en">"Hey Rivian" rolled out with software 2026.15, giving voice control over vehicle functions rather than search and media alone. It is one of the first shipping cases of an in-car agent with real actuation authority.</p><p class="tx zh">「Hey Rivian」随 2026.15 版本推送，语音可直接操作车辆功能，而非仅限搜索与媒体。这是车内智能体真正获得执行权限的首批量产案例之一。</p><p class="tx ko">소프트웨어 2026.15와 함께 배포. 검색·미디어를 넘어 차량 기능 자체를 음성으로 조작. 실행 권한을 가진 차내 에이전트의 첫 양산 사례 중 하나.</p><a class="src" href="https://electrek.co/2026/05/12/rivian-hey-rivian-ai-assistant-vehicle-control/" target="_blank" rel="noopener">Electrek &rarr;</a></article></div><div class="col side"><article class="a-side"><figure class="ph ph-side"><img src="assets/2026-08-21-4.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">VW puts the buttons back</h3><p class="tx en">Volkswagen's design chief confirmed physical buttons and knobs are returning, starting with the ID. Polo — "it's a car, not a phone." A direct correction to touch-only interiors.</p><p class="tx zh">大众设计负责人确认实体按键与旋钮回归，将从 ID. Polo 开始——「这是车，不是手机。」这是对纯触控内饰的直接修正。</p><p class="tx ko">멀티모달이 확산되는 와중에도 촉각 조작을 되살림. 터치 일변도 UI에 대한 반작용으로, 마이크로모빌리티 HMI에도 시사점이 있음.</p><a class="src" href="https://insideevs.com/news/752840/vw-brings-back-buttons-switches/" target="_blank" rel="noopener">InsideEVs &rarr;</a></article><article class="a-side"><figure class="ph ph-side"><img src="assets/2026-08-21-5.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">Dual View OLED — one panel, two viewers</h3><p class="tx en">LG Display won a CES 2026 Innovation Award for an OLED that feeds driving data to the driver and entertainment to the passenger from a single panel. Its UDC-IR OLED hides the driver-monitoring infrared camera under the screen.</p><p class="tx zh">LG Display 凭双视角 OLED 斩获 CES 2026 创新奖：同一面板可同时向驾驶员显示行车信息、向乘客播放娱乐内容；UDC-IR OLED 将红外监测摄像头置于屏下，不损画质。</p><p class="tx ko">한 패널로 운전자·동승자에게 서로 다른 화면을 동시 출력. 운전자 모니터링 IR 카메라는 화면 아래 내장해 화질 손실이 없음.</p><a class="src" href="https://news.lgdisplay.com/en/2025/11/ces-2026-innovation-awards-the-world-first-automotive-display-solutions-dual-view-oled-and-udc-ir-oled/" target="_blank" rel="noopener">LG Display Newsroom &rarr;</a></article><article class="a-side"><figure class="ph ph-side"><img src="assets/2026-08-21-6.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">QuadAlliance drives holographic windshields to production</h3><p class="tx en">ZEISS, tesa, Saint-Gobain Sekurit and Hyundai Mobis formed the QuadAlliance to industrialise full-windshield holographic displays — a 1.2L optical engine at over 95% transparency.</p><p class="tx zh">蔡司、德莎、圣戈班 Sekurit 与现代摩比斯组建 QuadAlliance，推动整片挡风玻璃全息显示量产：光学引擎约 1.2 升，透光率超 95%。</p><p class="tx ko">윈드실드 전면 홀로그램 HUD 양산을 위한 4사 동맹. 광학엔진 1.2L, 투과율 95% 이상, 운전자·동승자 아이박스 분리.</p><a class="src" href="https://www.prnewswire.com/news-releases/zeiss-tesa-saint-gobain-sekurit-and-hyundai-mobis-form-quadalliance-to-accelerate-holographic-windshield-display-mass-production-302674969.html" target="_blank" rel="noopener">PR Newswire &rarr;</a></article></div></div><div class="foot-row"><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-7.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">K-Display 2026: 48-inch dashboards vs the Big Hole fascia</h3><p class="tx en">LG Display showed a 48-inch pillar-to-pillar dashboard with split-screen and an 18-inch slidable rear-seat panel. Samsung Display countered with an 80mm "Big Hole" fascia that reintegrates gear shift and vents into the screen, plus a slidable panel expanding to 15.5 inches.</p><p class="tx zh">LG Display 展出 48 英寸贯穿式仪表台（支持分屏）与 18 英寸后排可滑动屏；三星显示则推出 80mm「大孔」中控，将换挡与出风口重新整合进屏幕，另有可扩展至 15.5 英寸的滑动屏。</p><p class="tx ko">LG디스플레이는 48인치 필러투필러 대시보드(분할화면)와 18인치 슬라이더블 후석 패널을, 삼성디스플레이는 변속·송풍구를 화면에 재통합한 80mm 빅홀 센터페시아와 15.5인치까지 늘어나는 슬라이더블 패널을 내놓음.</p><a class="src" href="https://finance.biggo.com/news/58f7e61f-912b-427e-8260-8d1bd65b98a1" target="_blank" rel="noopener">BigGo &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot fb" style="background:#DB3A9C;color:#fff"><span>AI</span></figure><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">BMW's 2026 cars get a conversational assistant</h3><p class="tx en">BMW is fitting its 2026 line with an assistant built for natural phrasing rather than fixed commands, part of a broader shift where the cockpit's primary input becomes speech.</p><p class="tx zh">宝马为 2026 年款车型配备可理解自然表达的助手，不再依赖固定指令。座舱主输入方式正在向语音迁移。</p><p class="tx ko">고정 명령어가 아니라 자연스러운 말투를 이해하는 어시스턴트를 2026년형에 탑재. 콕핏의 1차 입력이 음성으로 옮겨가는 흐름의 일부.</p><a class="src" href="https://www.autoblog.com/news/bmws-2026-cars-get-an-ai-assistant-that-actually-understands-you" target="_blank" rel="noopener">Autoblog &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-9.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">AUO spins out AMSC — from panels to whole cockpits</h3><p class="tx en">AUO launched AUO Mobility Solutions Corp., bundling displays with climate control and HMI design into system-integrated cockpits, debuting at CES 2026.</p><p class="tx zh">友达成立 AUO Mobility Solutions，将显示、空调与 HMI 设计整合为座舱系统方案，并于 CES 2026 亮相。</p><p class="tx ko">패널 공급사에서 콕핏 시스템 통합업체로 전환. 디스플레이+공조+HMI 설계를 묶어 판매하는 구조.</p><a class="src" href="https://www.auo.com/en-global/New_Archive/detail/News_Archive_Product_20251118" target="_blank" rel="noopener">AUO &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-10.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#E07A18"><span class="tag">Design</span></span><h3 class="hl">Figma Config 2026 brings motion and code onto the canvas</h3><p class="tx en">Figma Motion adds keyframes, easing and spring animation with production-ready export in Dev Mode. Code Layers goes further — clone a repository and pull real interaction flows in as inspectable layers, convertible both ways.</p><p class="tx zh">Figma Motion 引入关键帧、缓动与弹簧动画，并可在 Dev Mode 导出可用代码；Code Layers 更进一步，可克隆代码仓库、将真实交互流程作为可检视图层引入，并支持双向转换。</p><p class="tx ko">Figma Motion이 키프레임·이징·스프링 애니메이션과 Dev Mode 코드 내보내기를 지원. Code Layers는 저장소를 클론해 실제 인터랙션 플로우를 검사 가능한 레이어로 가져오고 양방향 변환까지 제공.</p><a class="src" href="https://qubika.com/blog/figma-config-2026-announcements-for-designers/" target="_blank" rel="noopener">Qubika &rarr;</a></article></div><div class="foot-row"><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-11.webp" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#E07A18"><span class="tag">Design</span></span><h3 class="hl">Figma's agent gets skills, MCP and live web data</h3><p class="tx en">Config 2026 also opened the agent up: teams can turn their own workflows into reusable skills, connect external tools over MCP, pull live data from the web, and see each other's agent conversations by default.</p><p class="tx zh">Config 2026 同时开放了 AI 智能体：团队可将自身工作流转为可复用技能、通过 MCP 连接外部工具、从网络获取实时数据，且智能体对话默认全员可见。</p><p class="tx ko">팀의 작업 흐름을 재사용 가능한 스킬로 만들고, MCP로 외부 도구를 연결하고, 웹에서 실시간 데이터를 가져오며, 에이전트 대화가 기본적으로 팀에 공개됨.</p><a class="src" href="https://explainx.ai/blog/figma-config-2026-complete-recap-motion-code-shaders-ai-2026" target="_blank" rel="noopener">ExplainX &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-12.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">Car Design Award 2026 goes to Audi, Renault and Jeep</h3><p class="tx en">The 2026 Car Design Award named Audi, Renault and Jeep its winners, with the jury weighing interior and interface coherence alongside exterior form.</p><p class="tx zh">2026 年度汽车设计大奖由奥迪、雷诺与 Jeep 获得，评审在外观之外同样考量内饰与界面的一致性。</p><p class="tx ko">2026 카 디자인 어워드 수상은 아우디·르노·지프. 심사에서 외관뿐 아니라 인테리어와 인터페이스의 일관성이 함께 평가됨.</p><a class="src" href="https://autodesignmagazine.com/en/2026/04/2026-car-design-awards-go-to-audi-renault-and-jeep/" target="_blank" rel="noopener">Auto&amp;Design &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot fb" style="background:#B08900;color:#fff"><span>Industrial</span></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">IKEA makes collectible design a mass product</h3><p class="tx en">IKEA's limited Konstrunda collection puts 22 collectible pieces by seven international designers on shelves "at a price that people can afford" — a deliberate play to democratise design objects usually priced as art.</p><p class="tx zh">宜家限量 Konstrunda 系列将七位国际设计师的 22 件收藏级作品以「人人负担得起的价格」上架——有意将通常按艺术品定价的设计物件大众化。</p><p class="tx ko">이케아가 한정 컬렉션 Konstrunda로 7명의 디자이너가 만든 수집용 오브제 22점을 대중 가격에 출시. 아트 가격이 붙던 디자인 오브제의 대중화 시도.</p><a class="src" href="https://www.dezeen.com/2026/08/19/ikea-konstrunda-collection-collectible-design-art/" target="_blank" rel="noopener">Dezeen &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">A survival game about surviving a heatwave, no AC allowed</h3><p class="tx en">Blue Hood Games' Europe Heatwave Simulator makes players endure 14 days in a Paris flat without air-conditioning — a darkly comic piece of climate commentary built as an interactive experience.</p><p class="tx zh">Blue Hood Games 的《欧洲热浪模拟器》让玩家在没有空调的巴黎公寓里熬过 14 天——以互动体验呈现的黑色幽默气候评论。</p><p class="tx ko">에어컨 없는 파리 아파트에서 14일을 버티는 시뮬레이터. 기후 문제를 인터랙티브 경험으로 풀어낸 블랙코미디형 작업.</p><a class="src" href="https://www.dezeen.com/2026/08/18/europe-heatwave-simulator-blue-hood-games/" target="_blank" rel="noopener">Dezeen &rarr;</a></article></div><div class="foot-row"><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-15.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">Xiaomi's $121 capsule machine: ecosystem CMF at work</h3><p class="tx en">Xiaomi's Mijia capsule coffee machine lands at $121 with Italian pump internals and a magnetic capsule rack that clips to a fridge — another case of the ecosystem brand's cost-down, detail-up industrial design.</p><p class="tx zh">小米米家胶囊咖啡机售价约 121 美元，意式泵芯加可磁吸冰箱的胶囊架——生态链品牌「降成本、抠细节」工业设计的又一案例。</p><p class="tx ko">121달러 캡슐머신. 이탈리아식 펌프에 냉장고에 붙는 자석 캡슐랙 — 샤오미 생태계 특유의 원가 절감+디테일 강화 설계.</p><a class="src" href="https://www.yankodesign.com/2026/08/20/xiaomi-now-sells-coffee-machines-and-this-one-costs-just-121/" target="_blank" rel="noopener">Yanko Design &rarr;</a></article><article class="a-foot"><figure class="ph ph-foot"><img src="assets/2026-08-21-16.jpg" alt="" loading="lazy"></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">A ferry you crank by hand — mobility stripped to zero UI</h3><p class="tx en">Tilburg installed a hand-cranked floating crossing that moves cyclists over the Piushaven on submerged chains — no motor, no schedule, no interface. Mobility design reduced to a single physical control.</p><p class="tx zh">蒂尔堡建成手摇渡轮：骑行者摇动手柄，靠水下链条横渡 Piushaven——没有电机、班次和界面，移动出行被简化为一个纯物理操作。</p><p class="tx ko">모터도 시간표도 인터페이스도 없이, 크랭크 하나로 수중 체인을 감아 건너는 자전거 도하 플랫폼. 이동수단 UI의 극단적 미니멀 사례.</p><a class="src" href="https://www.yankodesign.com/2026/08/20/the-dutch-just-built-a-ferry-you-power-yourself-with-a-crank/" target="_blank" rel="noopener">Yanko Design &rarr;</a></article></div></section>
+  <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
-<footer class="foot"><div class="shell">
-  <span class="wordmark">HMI Daily</span>
-  <span class="note">4 stories &middot; 1 editions &middot; latest 2026-08-21</span>
+</div>
+<footer class="foot"><div class="shell foot-grid">
+  <span class="wordmark">ADUX Daily</span>
+  <span class="note">16 stories &middot; 1 editions &middot; latest 2026-08-21</span>
   <span class="note">Curated by Claude</span>
 </div></footer>
 <script>
 (function(){
-  var root=document.documentElement,btns=[].slice.call(document.querySelectorAll('.langsw button'));
-  function apply(l){
+  var root=document.documentElement;
+  var btns=[].slice.call(document.querySelectorAll('.langsw button'));
+  var sw=document.getElementById('themesw');
+  var mb=document.getElementById('menubtn'), menu=document.getElementById('menu');
+
+  /* ---- language: stored choice, else the device language ---- */
+  function applyLang(l,store){
     root.setAttribute('data-lang',l);
     btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
-    try{localStorage.setItem('hmi-lang',l);}catch(e){}
+    if(store){try{localStorage.setItem('hmi-lang',l);}catch(e){}}
   }
-  var saved='en';
-  try{saved=localStorage.getItem('hmi-lang')||'en';}catch(e){}
-  apply(['en','zh','ko'].indexOf(saved)>-1?saved:'en');
-  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.set);});});
+  var lang=null;
+  try{lang=localStorage.getItem('hmi-lang');}catch(e){}
+  if(['en','zh','ko'].indexOf(lang)<0){
+    var nav=(navigator.language||'en').toLowerCase();
+    lang=nav.indexOf('ko')===0?'ko':nav.indexOf('zh')===0?'zh':'en';
+  }
+  applyLang(lang,false);
+  btns.forEach(function(b){b.addEventListener('click',function(){applyLang(b.dataset.set,true);});});
+
+  /* ---- theme: stored choice, else the device setting (via media query) ---- */
+  function systemDark(){
+    try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}
+  }
+  function label(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    if(sw) sw.textContent=dark?'Light':'Dark';
+  }
+  var th=null;
+  try{th=localStorage.getItem('hmi-theme');}catch(e){}
+  if(th==='dark'||th==='light'){ root.setAttribute('data-theme',th); }
+  label();
+  if(sw) sw.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('hmi-theme',next);}catch(e){}
+    label();
+  });
+
+  /* ---- hamburger ---- */
+  function setMenu(open){
+    if(!menu||!mb) return;
+    menu.hidden=!open;
+    mb.setAttribute('aria-expanded',String(open));
+  }
+  if(mb) mb.addEventListener('click',function(e){e.stopPropagation(); setMenu(menu.hidden);});
+  document.addEventListener('click',function(e){
+    if(menu&&!menu.hidden&&!menu.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
 })();
 </script></body></html>
