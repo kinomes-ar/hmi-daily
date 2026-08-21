@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Render every data/YYYY-MM-DD.json into one HMI Daily archive page.
-  python3 build.py            -> fragment for Claude Artifact (no doctype/head)
-  python3 build.py standalone -> full standalone document
+"""Render every data/YYYY-MM-DD.json into the HMI Daily archive page.
+  python3 build.py            -> fragment (Claude Artifact)
+  python3 build.py standalone -> full document -> index.html
 """
 import json, os, sys, glob, html
 from datetime import date as _date
@@ -9,197 +9,251 @@ from datetime import date as _date
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 
+# fallback panel colours, keyed by category
+SWATCH = {
+    "display":     ("#E5342A", "#FFFFFF"),
+    "ar / hud":    ("#1F45C8", "#FFFFFF"),
+    "interaction": ("#F0C020", "#141412"),
+    "industry":    ("#12916A", "#FFFFFF"),
+    "ai":          ("#7A3BD6", "#FFFFFF"),
+}
+DEFAULT_SWATCH = ("#141412", "#EFEEE9")
+
 CSS = """
 :root{
-  --bg:#EDEFF2; --surface:#FFFFFF; --ink:#12161C; --muted:#5A6472;
-  --rule:#D6DBE2; --accent:#9A4B0B; --accent-soft:#F3E4D6; --shadow:0 1px 2px rgba(18,22,28,.06);
+  --paper:#EFEEE9; --ink:#0E0E0C; --muted:#65635C;
+  --rule:#CFCCC2; --hair:#DCD9D0; --red:#E5342A; --onred:#FFFFFF;
+  --footer:#141412; --footer-ink:#EFEEE9; --shade:#E3E1DA;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0D1117; --surface:#151A21; --ink:#E4E9F0; --muted:#8A94A3;
-    --rule:#232A34; --accent:#F0A340; --accent-soft:#2A2016; --shadow:none;
+    --paper:#121211; --ink:#EDEBE4; --muted:#918D83;
+    --rule:#2E2D29; --hair:#26251F; --red:#FF4A3D; --onred:#141412;
+    --footer:#0A0A09; --footer-ink:#EDEBE4; --shade:#1D1C19;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0D1117; --surface:#151A21; --ink:#E4E9F0; --muted:#8A94A3;
-  --rule:#232A34; --accent:#F0A340; --accent-soft:#2A2016; --shadow:none;
+  --paper:#121211; --ink:#EDEBE4; --muted:#918D83;
+  --rule:#2E2D29; --hair:#26251F; --red:#FF4A3D; --onred:#141412;
+  --footer:#0A0A09; --footer-ink:#EDEBE4; --shade:#1D1C19;
 }
 *{box-sizing:border-box}
 body{
-  margin:0; background:var(--bg); color:var(--ink);
-  font-family:"Barlow",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
-  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px}
+img{max-width:100%; display:block}
+.shell{max-width:1160px; margin:0 auto; padding:0 28px}
 
-header.masthead{
-  border-bottom:2px solid var(--ink); padding:40px 0 16px; margin-bottom:8px;
-  display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap;
+.top{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:16px 0; border-bottom:1px solid var(--ink);
+  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
 }
-.brand{display:flex; flex-direction:column; gap:2px}
-.brand h1{
-  font-family:"Barlow Condensed",Impact,"PingFang SC","Apple SD Gothic Neo",sans-serif; font-weight:700;
-  font-size:clamp(40px,7vw,68px); line-height:.92; letter-spacing:-.01em;
-  margin:0; text-transform:uppercase; text-wrap:balance;
+.top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
+.top .nav{display:flex; gap:18px; color:var(--muted); flex-wrap:wrap}
+.top .nav a{color:inherit; text-decoration:none}
+.top .nav a:hover{color:var(--red)}
+.masthead{padding:40px 0 26px; text-align:center; border-bottom:3px solid var(--ink)}
+.masthead h1{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(42px,10.5vw,116px); line-height:.85; letter-spacing:-.025em;
+  text-transform:uppercase; text-wrap:balance;
 }
-.brand .sub{
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+.masthead .kicker{
+  margin-top:14px; font-size:11px; font-weight:600; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--muted);
 }
-.stats{
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
-  text-align:right; line-height:1.9; font-variant-numeric:tabular-nums;
-}
-.stats b{color:var(--ink); font-weight:600}
 
-.layout{display:grid; grid-template-columns:150px 1fr; gap:48px; margin-top:40px; align-items:start}
-@media (max-width:760px){ .layout{grid-template-columns:1fr; gap:24px} }
-
-nav.rail{position:sticky; top:24px}
-@media (max-width:760px){
-  nav.rail{position:static; display:flex; gap:8px; overflow-x:auto; padding-bottom:8px}
-}
-nav.rail .rail-label{
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
-  padding-bottom:10px; border-bottom:1px solid var(--rule); margin-bottom:10px;
-}
-@media (max-width:760px){ nav.rail .rail-label{display:none} }
-nav.rail a{
-  display:block; padding:5px 0; text-decoration:none; color:var(--muted);
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:12px;
-  font-variant-numeric:tabular-nums; white-space:nowrap; border-left:2px solid transparent;
-  padding-left:10px; margin-left:-12px; transition:color .15s,border-color .15s;
-}
-nav.rail a:hover,nav.rail a:focus-visible{color:var(--accent); border-left-color:var(--accent)}
-
-section.day{margin-bottom:56px; scroll-margin-top:24px}
-.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:20px}
+.day{padding:36px 0 6px; border-bottom:1px solid var(--hair)}
+.dayhead{display:flex; align-items:baseline; gap:16px; margin-bottom:24px}
 .dayhead h2{
-  font-family:"Barlow Condensed",Impact,"PingFang SC","Apple SD Gothic Neo",sans-serif; font-weight:700; font-size:28px;
-  letter-spacing:.01em; margin:0; font-variant-numeric:tabular-nums;
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(24px,3.6vw,34px); letter-spacing:-.01em; font-variant-numeric:tabular-nums;
 }
-.dayhead .weekday{
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
-  letter-spacing:.12em; text-transform:uppercase; color:var(--muted);
+.dayhead .rule{flex:1; height:2px; background:var(--ink)}
+.dayhead .meta{
+  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap;
 }
-.dayhead .line{flex:1; height:1px; background:var(--rule)}
 
-.cards{display:grid; gap:14px}
-article.card{
-  background:var(--surface); border:1px solid var(--rule); border-radius:3px;
-  padding:20px 22px; box-shadow:var(--shadow);
-  display:grid; gap:9px;
+.band{
+  display:grid; grid-template-columns:1.55fr 1fr; gap:32px;
+  padding-bottom:28px; margin-bottom:28px; border-bottom:1px solid var(--hair);
 }
-article.card h3{
-  font-family:"Barlow Condensed",Impact,"PingFang SC","Apple SD Gothic Neo",sans-serif; font-weight:600;
-  font-size:24px; line-height:1.15; margin:0; text-wrap:balance;
+.rail{display:grid; gap:22px; align-content:start; border-left:1px solid var(--hair); padding-left:32px}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:30px; padding-bottom:32px}
+@media (max-width:920px){
+  .band{grid-template-columns:1fr; gap:26px}
+  .rail{border-left:0; padding-left:0; border-top:1px solid var(--hair); padding-top:24px;
+        grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:1fr 1fr; gap:26px}
 }
-article.card p{margin:0; color:var(--ink); max-width:66ch}
-.langs{display:grid; gap:7px; margin:0}
-.langs .row{display:grid; grid-template-columns:26px 1fr; gap:10px; align-items:baseline}
-.langs .lg{
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; font-weight:600;
-  letter-spacing:.06em; color:var(--muted); text-transform:uppercase; padding-top:3px;
+@media (max-width:620px){ .rail,.grid{grid-template-columns:1fr} }
+
+.ph{margin:0 0 13px; overflow:hidden; background:var(--shade)}
+.ph img{width:100%; height:100%; object-fit:cover}
+.ph-lead{aspect-ratio:16/9}
+.ph-rail{aspect-ratio:4/3}
+.ph-grid{aspect-ratio:3/2}
+.ph.fb{display:flex; align-items:flex-end; padding:14px}
+.ph.fb span{
+  font-family:"Archivo Black",Impact,sans-serif; text-transform:uppercase;
+  line-height:.86; letter-spacing:-.02em; word-break:break-word;
 }
-.langs .row.alt p{color:var(--muted); font-size:15px}
+.ph-lead.fb span{font-size:clamp(34px,5vw,60px)}
+.ph-rail.fb span{font-size:26px}
+.ph-grid.fb span{font-size:30px}
+
 .tag{
-  justify-self:start; font-family:"JetBrains Mono",ui-monospace,monospace;
-  font-size:10px; letter-spacing:.12em; text-transform:uppercase;
-  color:var(--accent); background:var(--accent-soft);
-  padding:3px 8px; border-radius:2px;
+  display:inline-flex; align-items:center; gap:6px;
+  background:var(--red); color:var(--onred);
+  font-size:9.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  padding:4px 10px 4px 7px; border-radius:999px; margin-bottom:10px;
 }
-.src{
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:12px;
-  color:var(--accent); text-decoration:none; justify-self:start;
-  border-bottom:1px solid transparent; padding-top:2px;
+.tag::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--onred); opacity:.9}
+.hl{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0 0 11px;
+  line-height:1.05; letter-spacing:-.015em; text-wrap:balance;
 }
-.src:hover,.src:focus-visible{border-bottom-color:var(--accent)}
-:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+.a-lead .hl{font-size:clamp(27px,3.4vw,40px)}
+.a-rail .hl{font-size:17px}
+.a-grid .hl{font-size:19px}
+.tx{display:none; margin:0; max-width:62ch}
+.tx.en{display:block}
+html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
+html[data-lang="zh"] .tx.zh{display:block}
+html[data-lang="ko"] .tx.ko{display:block}
+.a-lead .tx{font-size:15.5px}
+.a-rail .tx{font-size:12.5px; line-height:1.5}
+.a-grid .tx{font-size:13.5px}
 
-footer.foot{
-  margin-top:64px; padding-top:20px; border-top:1px solid var(--rule);
-  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
-  letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
-  display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+.langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
+.langsw button{
+  appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
+  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  padding:5px 11px; line-height:1.4;
 }
+.langsw button + button{border-left:1px solid var(--ink)}
+.langsw button[aria-pressed="true"]{background:var(--red); color:var(--onred)}
+.langsw button:hover:not([aria-pressed="true"]){background:var(--shade)}
+.src{
+  display:inline-block; margin-top:12px; color:var(--red); text-decoration:none;
+  font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  border-bottom:2px solid transparent; padding-bottom:2px;
+}
+.src:hover,.src:focus-visible{border-bottom-color:var(--red)}
+:focus-visible{outline:2px solid var(--red); outline-offset:3px}
+
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:52px; padding:38px 0 44px}
+.foot .shell{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
+.foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
+.foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
 """
+
 
 def esc(s): return html.escape(s, quote=False)
 
+
+def photo(it, kind):
+    if it.get("img"):
+        return '<figure class="ph ph-%s"><img src="%s" alt="" loading="lazy"></figure>' % (
+            kind, esc(it["img"]))
+    bg, fg = SWATCH.get(it.get("tag", "").strip().lower(), DEFAULT_SWATCH)
+    return ('<figure class="ph ph-%s fb" style="background:%s;color:%s">'
+            '<span>%s</span></figure>') % (kind, bg, fg, esc(it.get("tag", "News")))
+
+
+def article(it, kind):
+    langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
+                    for k in ("en", "zh", "ko") if it.get(k))
+    return (
+        '<article class="a-{k}">{ph}<span class="tag">{tag}</span>'
+        '<h3 class="hl">{t}</h3>{langs}'
+        '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
+    ).format(k=kind, ph=photo(it, kind), tag=esc(it.get("tag", "News")), t=esc(it["t"]),
+             langs=langs, url=esc(it["url"]), src=esc(it["src"]))
+
+
 def render():
     files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
-    days = []
-    total = 0
+    days, total = [], 0
     for f in files:
         d = os.path.basename(f)[:-5]
         items = json.load(open(f))
         total += len(items)
         days.append((d, items))
 
-    rail = "".join(
-        '<a href="#d{d}">{d}</a>'.format(d=d) for d, _ in days
-    )
+    nav = "".join('<a href="#d%s">%s</a>' % (d, d[5:]) for d, _ in days[:7])
 
     body = []
     for d, items in days:
         y, m, dd = (int(x) for x in d.split("-"))
-        weekday = _date(y, m, dd).strftime("%A")
-        cards = "".join(
-            '<article class="card">'
-            '<span class="tag">{tag}</span>'
-            '<h3>{t}</h3>'
-            '<div class="langs">'
-            '<div class="row"><span class="lg">EN</span><p>{en}</p></div>'
-            '<div class="row alt"><span class="lg">中</span><p>{zh}</p></div>'
-            '<div class="row alt"><span class="lg">한</span><p>{ko}</p></div>'
-            '</div>'
-            '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>'
-            '</article>'.format(tag=esc(i.get("tag", "News")), t=esc(i["t"]),
-                                en=esc(i["en"]), zh=esc(i["zh"]), ko=esc(i["ko"]),
-                                url=esc(i["url"]), src=esc(i["src"]))
-            for i in items
-        )
+        wd = _date(y, m, dd).strftime("%A")
+        lead = article(items[0], "lead") if items else ""
+        rail = "".join(article(i, "rail") for i in items[1:3])
+        grid = "".join(article(i, "grid") for i in items[3:])
         body.append(
             '<section class="day" id="d{d}">'
-            '<div class="dayhead"><h2>{d}</h2><span class="weekday">{w}</span>'
-            '<span class="line"></span></div>'
-            '<div class="cards">{c}</div></section>'.format(d=d, w=weekday, c=cards)
+            '<div class="dayhead"><h2>{d}</h2><span class="rule"></span>'
+            '<span class="meta">{wd} &middot; {n} stories</span></div>'
+            '<div class="band">{lead}<div class="rail">{rail}</div></div>'
+            '{gridwrap}</section>'.format(
+                d=d, wd=wd, n=len(items), lead=lead, rail=rail,
+                gridwrap='<div class="grid">%s</div>' % grid if grid else "")
         )
 
     latest = days[0][0] if days else "—"
     return """<title>HMI Daily</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&display=swap">
 <style>%s</style>
-<div class="wrap">
-<header class="masthead">
-  <div class="brand">
-    <h1>HMI Daily</h1>
-    <span class="sub">Interface &amp; cockpit intelligence &middot; DC UXUI</span>
+<div class="shell">
+  <div class="top">
+    <span class="wordmark">HMI&nbsp;DAILY</span>
+    <span class="nav">%s</span>
+    <span class="langsw" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="zh" aria-pressed="false">中文</button>
+      <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+    </span>
   </div>
-  <div class="stats">
-    <div>Latest <b>%s</b></div>
-    <div><b>%d</b> entries &middot; <b>%d</b> days</div>
-  </div>
-</header>
-<div class="layout">
-  <nav class="rail"><div class="rail-label">Archive</div>%s</nav>
-  <main>%s</main>
+  <header class="masthead">
+    <h1>Interface<br>Intelligence</h1>
+    <div class="kicker">Cockpit &middot; Micromobility &middot; Interaction &middot; AI &mdash; every working day</div>
+  </header>
+  %s
 </div>
-<footer class="foot"><span>Curated by Claude</span><span>Updated %s</span></footer>
-</div>""" % (CSS, latest, total, len(days), rail, "".join(body), latest)
+<footer class="foot"><div class="shell">
+  <span class="wordmark">HMI Daily</span>
+  <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
+  <span class="note">Curated by Claude</span>
+</div></footer>
+<script>
+(function(){
+  var root=document.documentElement,btns=[].slice.call(document.querySelectorAll('.langsw button'));
+  function apply(l){
+    root.setAttribute('data-lang',l);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    try{localStorage.setItem('hmi-lang',l);}catch(e){}
+  }
+  var saved='en';
+  try{saved=localStorage.getItem('hmi-lang')||'en';}catch(e){}
+  apply(['en','zh','ko'].indexOf(saved)>-1?saved:'en');
+  btns.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.set);});});
+})();
+</script>""" % (CSS, nav, "".join(body), total, len(days), latest)
+
 
 if __name__ == "__main__":
     page = render()
     if len(sys.argv) > 1 and sys.argv[1] == "standalone":
-        page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
-                '<meta name="viewport" content="width=device-width,initial-scale=1">'
-                + page.replace("<title>", "<title>", 1) +
-                "</body></html>").replace("<style>", "</head><body><style>", 1)
-        open(os.path.join(HERE, "index.html"), "w").write(page)
+        doc = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+               '<meta name="viewport" content="width=device-width,initial-scale=1">'
+               + page.replace("<style>", "</head><body><style>", 1) + "</body></html>")
+        open(os.path.join(HERE, "index.html"), "w").write(doc)
         print("wrote index.html")
     else:
         open(os.path.join(HERE, "artifact.html"), "w").write(page)
