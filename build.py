@@ -38,7 +38,7 @@ CSS = """
 *{box-sizing:border-box}
 body{
   margin:0; background:var(--ground); color:var(--ink);
-  font-family:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-family:"Helvetica Neue",Helvetica,-apple-system,BlinkMacSystemFont,Arial,"PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%; display:block}
@@ -157,9 +157,9 @@ img{max-width:100%; display:block}
 
 /* ---- headlines & text ---- */
 .hl{
-  font-family:"Playfair Display","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
-  font-weight:400; margin:0 0 10px;
-  line-height:1.12; letter-spacing:-.005em; text-wrap:balance;
+  font-family:"Noto Serif Display","Times New Roman","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; margin:0 0 10px;
+  line-height:1.08; letter-spacing:-.01em; text-wrap:balance;
 }
 .a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
 .a-mid .hl{font-size:clamp(22px,2.5vw,29px); line-height:1.1}
@@ -289,7 +289,7 @@ def render():
     return """<title>HMI Daily</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=Playfair+Display:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
 <style>%s</style>
 <div class="sheet" id="top">
 <div class="shell">
