@@ -1,0 +1,17 @@
+name: Push card to WeCom
+on:
+  push:
+    branches: [main]
+    paths: ['outbox/card.json']
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Post to WeCom
+        run: |
+          resp=$(curl -sS -m 30 -X POST "${{ secrets.WECOM_WEBHOOK }}" \
+            -H 'Content-Type: application/json' \
+            --data-binary @outbox/card.json)
+          echo "$resp"
+          echo "$resp" | grep -q '"errcode":0' || exit 1
