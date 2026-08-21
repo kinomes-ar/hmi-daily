@@ -217,10 +217,11 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   text-transform:uppercase; color:var(--muted); margin-bottom:7px;
 }
 .langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
+.langsw button{flex:1 1 0}
 .langsw button{
   appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
-  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-  padding:5px 11px; line-height:1.4;
+  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  padding:5px 10px; line-height:1.4; text-align:center; white-space:nowrap;
 }
 .langsw button + button{border-left:1px solid var(--ink)}
 .langsw button[aria-pressed="true"]{background:var(--red); color:var(--onred)}
@@ -247,10 +248,20 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
 }
 .morebar:hover{background:var(--red); color:#fff}
-.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:38px 0 44px}
-.foot .shell{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
+.foot-grid{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; align-items:flex-start}
 .foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
+.foot-brand{display:grid; gap:6px}
+.dedication{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
+  font-size:14px; opacity:.85;
+}
+.team{display:grid; gap:6px}
+.team-label{font-size:9px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; opacity:.5}
+.team-names{font-size:12px; font-weight:600; letter-spacing:.04em; opacity:.9}
+.foot-meta{display:grid; gap:5px; text-align:right}
 .foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
+@media (max-width:700px){ .foot-grid{flex-direction:column; gap:22px} .foot-meta{text-align:left} }
 """
 
 
@@ -353,10 +364,19 @@ def render():
   <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
 </div>
-<footer class="foot"><div class="shell">
-  <span class="wordmark">ADUX Daily</span>
-  <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
-  <span class="note">Curated by Claude</span>
+<footer class="foot"><div class="shell foot-grid">
+  <div class="foot-brand">
+    <span class="wordmark">ADUX Daily</span>
+    <span class="dedication">for DC Advanced UX Team.</span>
+  </div>
+  <div class="team">
+    <span class="team-label">Team</span>
+    <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim &middot; Jisu &middot; Katey &middot; Anna</span>
+  </div>
+  <div class="foot-meta">
+    <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
+    <span class="note">Curated by Claude</span>
+  </div>
 </div></footer>
 <script>
 (function(){
