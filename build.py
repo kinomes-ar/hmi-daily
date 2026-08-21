@@ -12,11 +12,13 @@ DATA = os.path.join(HERE, "data")
 # fallback panel colours, keyed by category
 # one hue per category — pill colour and photo-fallback panel
 CAT = {
-    "display":     "#E5342A",
-    "ar / hud":    "#7B5CF0",
-    "interaction": "#17A472",
-    "industry":    "#E07A18",
-    "ai":          "#DB3A9C",
+    "micromobility": "#E5342A",   # the desk's own beat rides the red
+    "cockpit":       "#7B5CF0",
+    "interaction":   "#17A472",
+    "ai":            "#DB3A9C",
+    "design":        "#E07A18",
+    "visual":        "#2E6BE6",   # graphic / 2D / motion graphics
+    "industrial":    "#B08900",   # product & industrial design, CMF
 }
 DEFAULT_CAT = "#5B5750"
 
@@ -320,7 +322,7 @@ def render():
   </div>
   <header class="masthead">
     <h1>Latest News</h1>
-    <div class="kicker">Cockpit &middot; Micromobility &middot; Interaction &middot; AI</div>
+    <div class="kicker">Micromobility &middot; Cockpit &middot; Interaction &middot; AI &middot; Design</div>
   </header>
   %s
   <a class="morebar" href="#top">Back to top &uarr;</a>
