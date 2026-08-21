@@ -57,18 +57,14 @@ img{max-width:100%; display:block}
 
 .top{
   display:flex; align-items:center; justify-content:space-between; gap:14px;
-  padding:15px 0; border-bottom:1px solid var(--ink); flex-wrap:wrap;
+  padding:22px 0 6px; flex-wrap:wrap;
   font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
 }
 @media (max-width:700px){
-  .top{gap:12px; padding:13px 0}
-  .top .nav{order:3; width:100%; justify-content:flex-start; overflow-x:auto; gap:16px; padding-bottom:2px}
+  .top{gap:12px; padding:18px 0 4px}
 }
 .top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
-.top .nav{display:flex; gap:18px; color:var(--muted); flex-wrap:wrap}
-.top .nav a{color:inherit; text-decoration:none}
-.top .nav a:hover{color:var(--red)}
-.masthead{padding:36px 0 30px; text-align:center; border-bottom:1px solid var(--ink)}
+.masthead{padding:46px 0 36px; text-align:center; border-bottom:1px solid var(--ink)}
 .masthead h1{
   font-family:"Archivo Black",Impact,sans-serif; margin:0;
   font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
@@ -78,32 +74,30 @@ img{max-width:100%; display:block}
   margin-top:9px; font-size:9.5px; font-weight:600; letter-spacing:.18em;
   text-transform:uppercase; color:var(--muted);
 }
-@media (max-width:700px){ .masthead{padding:18px 0 14px} }
+@media (max-width:700px){ .masthead{padding:30px 0 22px} }
 
 /* ---- category filter ---- */
 .filters{
-  display:flex; gap:8px; justify-content:center; flex-wrap:wrap;
-  padding:15px 0; border-bottom:1px solid var(--ink);
+  display:flex; gap:22px; justify-content:center; align-items:center; flex-wrap:wrap;
+  padding:14px 0; border-bottom:1px solid var(--ink);
 }
 .filters button{
-  appearance:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px;
-  background:transparent; border:1px solid var(--cat,var(--ink)); border-radius:999px;
-  color:var(--cat,var(--ink)); font:inherit; font-size:9px; font-weight:700;
-  letter-spacing:.11em; text-transform:uppercase; padding:5px 12px 5px 8px;
-  white-space:nowrap; transition:background .12s,color .12s;
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; padding:0; white-space:nowrap;
+  transition:color .12s;
 }
-.filters button::before{
-  content:""; width:6px; height:6px; border-radius:50%;
-  background:var(--cat,var(--ink)); flex:0 0 6px;
-}
-.filters button:hover{background:var(--shade)}
+.filters button:hover{color:var(--red)}
 .filters button[aria-pressed="true"]{
-  background:var(--cat,var(--ink)); color:var(--ground);
+  background:var(--ink); color:var(--ground);
+  padding:7px 14px; font-weight:700;
 }
-.filters button[aria-pressed="true"]::before{background:var(--ground)}
 @media (max-width:700px){
   .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
-           -webkit-overflow-scrolling:touch; padding:12px 0; gap:7px}
+           -webkit-overflow-scrolling:touch; padding:12px 20px; gap:20px;
+           margin-left:-20px; margin-right:-20px;
+           scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
 }
 
 /* ---- filtered view: one uniform grid ---- */
@@ -115,8 +109,7 @@ html[data-filter="design"] article:not([data-tag="design"]){display:none}
 html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
 html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
 html[data-filter] .band,html[data-filter] .col,html[data-filter] .foot-row{display:contents}
-html[data-filter] .day{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
-html[data-filter] .dayhead{grid-column:1/-1; margin-bottom:0}
+html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
 html[data-filter] .day article{border:0; padding:0}
 html[data-filter] .ph{aspect-ratio:3/2}
 html[data-filter] .hl{font-size:19px; line-height:1.18}
@@ -126,7 +119,8 @@ html[data-filter] .tagrow{margin-left:0; margin-right:0; justify-content:flex-st
 html[data-filter] article{text-align:left}
 
 /* ---- date band ---- */
-.day{padding:34px 0 12px}
+.day{padding:6px 0 12px}
+.day + .day{padding-top:34px}
 .day + .day{border-top:2px solid var(--ink)}
 .dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:24px}
 .dayhead h2{
@@ -134,7 +128,7 @@ html[data-filter] article{text-align:left}
   font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
   font-variant-numeric:tabular-nums; text-transform:uppercase;
 }
-.dayhead .rule{flex:1; height:1px; background:var(--ink)}
+.dayhead .rule{flex:1; height:1px; background:var(--hair)}
 .dayhead .meta{
   font-size:9.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
   color:var(--muted); white-space:nowrap;
@@ -143,7 +137,6 @@ html[data-filter] article{text-align:left}
 /* ---- newspaper grid: lead | middle | narrow rail ---- */
 .band{
   display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
-  border-top:1px solid var(--ink);
 }
 .col{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
 .col:first-child{padding-left:0; border-left:0}
@@ -171,15 +164,19 @@ html[data-filter] article{text-align:left}
   .foot-row > article:nth-child(3){border-left:0; padding-left:0}
 }
 @media (max-width:660px){
-  .band{grid-template-columns:1fr}
-  .col{padding:24px 0; border-left:0; border-top:1px solid var(--hair)}
-  .col:first-child{border-top:0; padding-top:4px}
-  .col.side{grid-template-columns:1fr}
-  .col.side > article + article{border-left:0; padding-left:0;
-            border-top:1px solid var(--hair); padding-top:24px}
-  .foot-row{grid-template-columns:1fr}
-  .foot-row > article{padding:24px 0; border-left:0; border-top:1px solid var(--hair)}
-  .foot-row > article:first-child{border-top:0}
+  .band{grid-template-columns:1fr 1fr; column-gap:18px}
+  .col{padding:0; border-left:0}
+  .col.lead{grid-column:1/-1; padding:22px 0 30px}
+  .col.mid,.col.side{display:contents}
+  .col.mid > article,.col.side > article{
+    border-top:1px solid var(--ink); padding:16px 0 28px; text-align:left;
+  }
+  .col.mid > article + article,
+  .col.side > article + article{border-top:1px solid var(--ink); padding-top:16px; padding-left:0; border-left:0}
+  .col.side .tagrow{margin:0 0 10px; display:inline-flex; justify-content:flex-start}
+  .foot-row{grid-template-columns:1fr 1fr; column-gap:18px; margin:0; border-top:0}
+  .foot-row:first-of-type{border-top:0}
+  .foot-row > article{border-left:0; border-top:1px solid var(--ink); padding:16px 0 28px}
 }
 
 /* ---- photos ---- */
@@ -202,13 +199,12 @@ html[data-filter] article{text-align:left}
 /* ---- pills ---- */
 .tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:10px}
 .tag{
-  display:inline-flex; align-items:center; gap:5px;
-  background:transparent; color:var(--cat,var(--red));
-  border:1px solid var(--cat,var(--red));
-  font-size:8.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
-  padding:2.5px 9px 2.5px 6px; border-radius:999px;
+  display:inline-flex; align-items:center;
+  background:transparent; color:var(--ink);
+  border:1.5px solid var(--cat,var(--red));
+  font-size:10px; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
+  padding:6px 13px; border-radius:999px; line-height:1;
 }
-.tag::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--cat,var(--red))}
 
 /* ---- headlines & text ---- */
 .hl{
@@ -233,13 +229,12 @@ html[data-lang="ko"] .tx.ko{display:block}
 html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
 html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 @media (max-width:660px){
-  .a-side .hl,.a-foot .hl,.a-mid .hl{font-size:24px}
-  .a-lead .hl{font-size:29px}
-  .a-mid .tx,.a-foot .tx,.a-side .tx{font-size:14px}
-  .ph-side{aspect-ratio:16/9}
-  .col.side{text-align:left}
-  .col.side .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
-  .col.side .tx{margin-left:0; margin-right:0}
+  .a-lead .hl{font-size:30px}
+  .a-lead .tx{font-size:14.5px}
+  .a-mid .hl,.a-side .hl,.a-foot .hl{font-size:17px; line-height:1.22}
+  .a-mid .tx{display:none}
+  .ph-mid,.ph-side,.ph-foot{aspect-ratio:4/5}
+  .tag{font-size:9px; padding:5px 11px}
 }
 
 .ctrls{position:relative}
@@ -347,8 +342,6 @@ def render():
         total += len(items)
         days.append((d, items))
 
-    nav = "".join('<a href="#d%s">%s</a>' % (d, d[5:]) for d, _ in days[:7])
-
     body = []
     for d, items in days:
         y, m, dd = (int(x) for x in d.split("-"))
@@ -367,11 +360,8 @@ def render():
                 '<div class="col side">{side}</div>'
                 '</div>').format(lead=lead, mid=mid, side=side)
         body.append(
-            '<section class="day" id="d{d}">'
-            '<div class="dayhead"><h2>{d}</h2><span class="rule"></span>'
-            '<span class="meta">{wd} &middot; {n} stories</span></div>'
-            '{band}{foot}</section>'.format(
-                d=d, wd=wd, n=len(items), band=band, foot=foot)
+            '<section class="day" id="d{d}">{band}{foot}</section>'.format(
+                d=d, band=band, foot=foot)
         )
 
     latest = days[0][0] if days else "—"
@@ -384,7 +374,6 @@ def render():
 <div class="shell">
   <div class="top">
     <span class="wordmark">ADUX&nbsp;DAILY</span>
-    <span class="nav">%s</span>
     <span class="ctrls">
       <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
         <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
@@ -409,17 +398,16 @@ def render():
   </div>
   <header class="masthead">
     <h1>Latest News</h1>
-    <div class="kicker">Micromobility &middot; Cockpit &middot; Interaction &middot; AI &middot; Design</div>
   </header>
   <nav class="filters" aria-label="Category filter">
     <button type="button" data-f="" aria-pressed="true">All</button>
-    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
-    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
-    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
-    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
-    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
-    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
-    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
+    <button type="button" data-f="micromobility" aria-pressed="false">Micromobility</button>
+    <button type="button" data-f="cockpit" aria-pressed="false">Cockpit</button>
+    <button type="button" data-f="interaction" aria-pressed="false">Interaction</button>
+    <button type="button" data-f="ai" aria-pressed="false">AI</button>
+    <button type="button" data-f="design" aria-pressed="false">Design</button>
+    <button type="button" data-f="visual" aria-pressed="false">Visual</button>
+    <button type="button" data-f="industrial" aria-pressed="false">Industrial</button>
   </nav>
   %s
   <a class="morebar" href="#top">Back to top &uarr;</a>
@@ -427,7 +415,6 @@ def render():
 </div>
 <footer class="foot"><div class="shell foot-grid">
   <span class="wordmark">ADUX Daily</span>
-  <span class="note">%d stories &middot; %d editions &middot; latest %s</span>
   <span class="note">Curated by Claude</span>
 </div></footer>
 <script>
@@ -496,7 +483,7 @@ def render():
     });
   });
 })();
-</script>""" % (CSS, nav, "".join(body), total, len(days), latest)
+</script>""" % (CSS, "".join(body))
 
 
 if __name__ == "__main__":
