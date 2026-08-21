@@ -1,0 +1,206 @@
+#!/usr/bin/env python3
+"""Render every data/YYYY-MM-DD.json into one HMI Daily archive page.
+  python3 build.py            -> fragment for Claude Artifact (no doctype/head)
+  python3 build.py standalone -> full standalone document
+"""
+import json, os, sys, glob, html
+from datetime import date as _date
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(HERE, "data")
+
+CSS = """
+:root{
+  --bg:#EDEFF2; --surface:#FFFFFF; --ink:#12161C; --muted:#5A6472;
+  --rule:#D6DBE2; --accent:#9A4B0B; --accent-soft:#F3E4D6; --shadow:0 1px 2px rgba(18,22,28,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1117; --surface:#151A21; --ink:#E4E9F0; --muted:#8A94A3;
+    --rule:#232A34; --accent:#F0A340; --accent-soft:#2A2016; --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1117; --surface:#151A21; --ink:#E4E9F0; --muted:#8A94A3;
+  --rule:#232A34; --accent:#F0A340; --accent-soft:#2A2016; --shadow:none;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Barlow",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px}
+
+header.masthead{
+  border-bottom:2px solid var(--ink); padding:40px 0 16px; margin-bottom:8px;
+  display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap;
+}
+.brand{display:flex; flex-direction:column; gap:2px}
+.brand h1{
+  font-family:"Barlow Condensed",Impact,"PingFang SC","Apple SD Gothic Neo",sans-serif; font-weight:700;
+  font-size:clamp(40px,7vw,68px); line-height:.92; letter-spacing:-.01em;
+  margin:0; text-transform:uppercase; text-wrap:balance;
+}
+.brand .sub{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+}
+.stats{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+  text-align:right; line-height:1.9; font-variant-numeric:tabular-nums;
+}
+.stats b{color:var(--ink); font-weight:600}
+
+.layout{display:grid; grid-template-columns:150px 1fr; gap:48px; margin-top:40px; align-items:start}
+@media (max-width:760px){ .layout{grid-template-columns:1fr; gap:24px} }
+
+nav.rail{position:sticky; top:24px}
+@media (max-width:760px){
+  nav.rail{position:static; display:flex; gap:8px; overflow-x:auto; padding-bottom:8px}
+}
+nav.rail .rail-label{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+  padding-bottom:10px; border-bottom:1px solid var(--rule); margin-bottom:10px;
+}
+@media (max-width:760px){ nav.rail .rail-label{display:none} }
+nav.rail a{
+  display:block; padding:5px 0; text-decoration:none; color:var(--muted);
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:12px;
+  font-variant-numeric:tabular-nums; white-space:nowrap; border-left:2px solid transparent;
+  padding-left:10px; margin-left:-12px; transition:color .15s,border-color .15s;
+}
+nav.rail a:hover,nav.rail a:focus-visible{color:var(--accent); border-left-color:var(--accent)}
+
+section.day{margin-bottom:56px; scroll-margin-top:24px}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:20px}
+.dayhead h2{
+  font-family:"Barlow Condensed",Impact,"PingFang SC","Apple SD Gothic Neo",sans-serif; font-weight:700; font-size:28px;
+  letter-spacing:.01em; margin:0; font-variant-numeric:tabular-nums;
+}
+.dayhead .weekday{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--muted);
+}
+.dayhead .line{flex:1; height:1px; background:var(--rule)}
+
+.cards{display:grid; gap:14px}
+article.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:3px;
+  padding:20px 22px; box-shadow:var(--shadow);
+  display:grid; gap:9px;
+}
+article.card h3{
+  font-family:"Barlow Condensed",Impact,"PingFang SC","Apple SD Gothic Neo",sans-serif; font-weight:600;
+  font-size:24px; line-height:1.15; margin:0; text-wrap:balance;
+}
+article.card p{margin:0; color:var(--ink); max-width:66ch}
+.langs{display:grid; gap:7px; margin:0}
+.langs .row{display:grid; grid-template-columns:26px 1fr; gap:10px; align-items:baseline}
+.langs .lg{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; font-weight:600;
+  letter-spacing:.06em; color:var(--muted); text-transform:uppercase; padding-top:3px;
+}
+.langs .row.alt p{color:var(--muted); font-size:15px}
+.tag{
+  justify-self:start; font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--accent); background:var(--accent-soft);
+  padding:3px 8px; border-radius:2px;
+}
+.src{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:12px;
+  color:var(--accent); text-decoration:none; justify-self:start;
+  border-bottom:1px solid transparent; padding-top:2px;
+}
+.src:hover,.src:focus-visible{border-bottom-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+
+footer.foot{
+  margin-top:64px; padding-top:20px; border-top:1px solid var(--rule);
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
+  display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+}
+"""
+
+def esc(s): return html.escape(s, quote=False)
+
+def render():
+    files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
+    days = []
+    total = 0
+    for f in files:
+        d = os.path.basename(f)[:-5]
+        items = json.load(open(f))
+        total += len(items)
+        days.append((d, items))
+
+    rail = "".join(
+        '<a href="#d{d}">{d}</a>'.format(d=d) for d, _ in days
+    )
+
+    body = []
+    for d, items in days:
+        y, m, dd = (int(x) for x in d.split("-"))
+        weekday = _date(y, m, dd).strftime("%A")
+        cards = "".join(
+            '<article class="card">'
+            '<span class="tag">{tag}</span>'
+            '<h3>{t}</h3>'
+            '<div class="langs">'
+            '<div class="row"><span class="lg">EN</span><p>{en}</p></div>'
+            '<div class="row alt"><span class="lg">中</span><p>{zh}</p></div>'
+            '<div class="row alt"><span class="lg">한</span><p>{ko}</p></div>'
+            '</div>'
+            '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>'
+            '</article>'.format(tag=esc(i.get("tag", "News")), t=esc(i["t"]),
+                                en=esc(i["en"]), zh=esc(i["zh"]), ko=esc(i["ko"]),
+                                url=esc(i["url"]), src=esc(i["src"]))
+            for i in items
+        )
+        body.append(
+            '<section class="day" id="d{d}">'
+            '<div class="dayhead"><h2>{d}</h2><span class="weekday">{w}</span>'
+            '<span class="line"></span></div>'
+            '<div class="cards">{c}</div></section>'.format(d=d, w=weekday, c=cards)
+        )
+
+    latest = days[0][0] if days else "—"
+    return """<title>HMI Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>%s</style>
+<div class="wrap">
+<header class="masthead">
+  <div class="brand">
+    <h1>HMI Daily</h1>
+    <span class="sub">Interface &amp; cockpit intelligence &middot; DC UXUI</span>
+  </div>
+  <div class="stats">
+    <div>Latest <b>%s</b></div>
+    <div><b>%d</b> entries &middot; <b>%d</b> days</div>
+  </div>
+</header>
+<div class="layout">
+  <nav class="rail"><div class="rail-label">Archive</div>%s</nav>
+  <main>%s</main>
+</div>
+<footer class="foot"><span>Curated by Claude</span><span>Updated %s</span></footer>
+</div>""" % (CSS, latest, total, len(days), rail, "".join(body), latest)
+
+if __name__ == "__main__":
+    page = render()
+    if len(sys.argv) > 1 and sys.argv[1] == "standalone":
+        page = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+                '<meta name="viewport" content="width=device-width,initial-scale=1">'
+                + page.replace("<title>", "<title>", 1) +
+                "</body></html>").replace("<style>", "</head><body><style>", 1)
+        open(os.path.join(HERE, "index.html"), "w").write(page)
+        print("wrote index.html")
+    else:
+        open(os.path.join(HERE, "artifact.html"), "w").write(page)
+        print("wrote artifact.html")
