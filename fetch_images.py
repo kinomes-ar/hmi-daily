@@ -98,12 +98,66 @@ def download(img_url, stem):
     return "assets/" + stem + ext
 
 
+def ensure_playwright():
+    """Install Playwright + Chromium on the fly (Actions runner only)."""
+    import subprocess
+    try:
+        import playwright  # noqa
+    except ImportError:
+        print("  installing playwright...")
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
+    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"],
+                   check=True, capture_output=True)
+
+
+def screenshot_pass(misses):
+    """Last resort: render each article page and keep a screenshot as its image."""
+    if not misses:
+        return 0
+    try:
+        ensure_playwright()
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        print("  screenshot fallback unavailable :: %s" % e)
+        return 0
+    done = 0
+    os.makedirs(ASSETS, exist_ok=True)
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+        ctx = browser.new_context(viewport={"width": 1280, "height": 900},
+                                  user_agent=UA, locale="en-US")
+        for it, stem in misses:
+            page_url = it.get("img_from") or it["url"]
+            try:
+                pg = ctx.new_page()
+                pg.goto(page_url, timeout=35000, wait_until="domcontentloaded")
+                pg.wait_for_timeout(3000)
+                pg.mouse.wheel(0, 220)          # roll past most sticky banners
+                pg.wait_for_timeout(600)
+                path = os.path.join(ASSETS, stem + ".jpg")
+                pg.screenshot(path=path, type="jpeg", quality=82)
+                pg.close()
+                if os.path.getsize(path) > 20_000:
+                    it["img"] = "assets/" + stem + ".jpg"
+                    it["img_src"] = "screenshot:" + page_url
+                    done += 1
+                    print("  screenshot %s" % it["img"])
+                else:
+                    os.remove(path)
+                    print("  screenshot too small for %s" % page_url[:60])
+            except Exception as e:
+                print("  screenshot failed %s :: %s" % (page_url[:60], e))
+        browser.close()
+    return done
+
+
 def main():
     changed = 0
     for f in sorted(glob.glob(os.path.join(DATA, "*.json"))):
         date = os.path.basename(f)[:-5]
         items = json.load(open(f))
         dirty = False
+        misses = []
         for i, it in enumerate(items, 1):
             if it.get("img") and os.path.exists(os.path.join(HERE, it["img"])):
                 continue
@@ -119,19 +173,22 @@ def main():
                     print("  page unreachable %s :: %s" % (page[:60], e)); continue
                 if cands:
                     break
-            if not cands:
-                print("  no candidates  %s" % it["url"][:70]); continue
+            got = False
             for img_url in cands:
                 try:
                     it["img"] = download(img_url, stem)
                     it["img_src"] = img_url
-                    dirty = True; changed += 1
+                    dirty = True; changed += 1; got = True
                     print("  saved %s  <- %s" % (it["img"], img_url[:80]))
                     break
                 except Exception as e:
                     print("    skip %s :: %s" % (img_url[:60], e))
-            else:
-                print("  FAILED all %d candidates for %s" % (len(cands), it["url"][:60]))
+            if not got:
+                print("  no image yet for %s -> screenshot queue" % it["url"][:60])
+                misses.append((it, stem))
+        shots = screenshot_pass(misses)
+        if shots:
+            dirty = True; changed += shots
         if dirty:
             json.dump(items, open(f, "w"), ensure_ascii=False, indent=1)
             print("updated %s" % f)
