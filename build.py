@@ -312,6 +312,12 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   border-bottom:1px solid transparent; padding-bottom:1px;
 }
 .src:hover,.src:focus-visible{border-bottom-color:var(--red)}
+.adate{
+  display:block; margin-top:7px; font-size:9px; font-weight:600;
+  letter-spacing:.14em; color:var(--muted); font-variant-numeric:tabular-nums;
+}
+.col.side .adate{text-align:center}
+@media (max-width:660px){ .col.side .adate{text-align:left} }
 :focus-visible{outline:2px solid var(--red); outline-offset:3px}
 
 .morebar{
@@ -339,7 +345,7 @@ def photo(it, kind):
         kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")))
 
 
-def article(it, kind, photo_on=True):
+def article(it, kind, photo_on=True, date=""):
     langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
                     for k in ("en", "zh", "ko") if it.get(k))
     return (
@@ -347,8 +353,10 @@ def article(it, kind, photo_on=True):
         '<span class="tagrow" style="--cat:{c}">'
         '<span class="tag">{tag}</span></span>'
         '<h3 class="hl">{t}</h3>{langs}'
-        '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a></article>'
+        '<a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>'
+        '<span class="adate">{date}</span></article>'
     ).format(k=kind, ph=photo(it, kind) if photo_on else "", c=cat_colour(it.get("tag")),
+             date=date,
              slug="".join(ch for ch in (it.get("tag","") or "").lower() if ch.isalpha()),
              tag=esc(it.get("tag", "News")), t=esc(it["t"]),
              langs=langs, url=esc(it["url"]), src=esc(it["src"]))
@@ -367,18 +375,18 @@ def render():
     for d, items in days:
         y, m, dd = (int(x) for x in d.split("-"))
         wd = _date(y, m, dd).strftime("%A")
-        lead = article(items[0], "lead") if items else ""
+        lead = article(items[0], "lead", date=d) if items else ""
         duo = ""
         if len(items) > 2:
             duo = ('<div class="duo">%s%s</div>' %
-                   (article(items[1], "duo"),
-                    article(items[2], "duotx", photo_on=False)))
-        mid = "".join(article(i, "mid") for i in items[3:5])
-        side = "".join(article(i, "side") for i in items[5:8])
+                   (article(items[1], "duo", date=d),
+                    article(items[2], "duotx", photo_on=False, date=d)))
+        mid = "".join(article(i, "mid", date=d) for i in items[3:5])
+        side = "".join(article(i, "side", date=d) for i in items[5:8])
         foot = ""
         if items[8:]:
             foot = '<div class="rest">%s</div>' % "".join(
-                article(i, "foot") for i in items[8:])
+                article(i, "foot", date=d) for i in items[8:])
         band = ('<div class="band">'
                 '<div class="col lead">{lead}{duo}</div>'
                 '<div class="col mid">{mid}</div>'
