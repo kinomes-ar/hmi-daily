@@ -15,7 +15,9 @@
   "zh": "赛格威开启 Ninebot S2 儿童平衡车预售，立减 100 美元后售价 350 美元——平衡车产品线首次下探到低龄用户。",
   "ko": "나인봇 S2 키즈 셀프밸런싱 스쿠터가 100달러 할인된 350달러에 예약 판매 시작. 밸런싱 라인업이 가장 어린 사용자층까지 확장됐다.",
   "src": "9to5Toys",
-  "url": "https://9to5toys.com/2026/08/18/segway-ninebot-s2-kids-self-balancing-scooter-pre-order-350/"
+  "url": "https://9to5toys.com/2026/08/18/segway-ninebot-s2-kids-self-balancing-scooter-pre-order-350/",
+  "img": "assets/2026-08-24-2.jpg",
+  "img_src": "https://9to5toys.com/wp-content/uploads/sites/5/2026/08/Segway-Ninebot-S2-Kids-Self-Balancing-Scooter.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Micromobility",
@@ -24,7 +26,9 @@
   "zh": "多伦多警方针对规避法规的电动自行车与滑板车展开执法行动——大城市对微出行的监管蜜月期正在结束。",
   "ko": "토론토 경찰이 법규를 피해 다니는 전기자전거·킥보드 단속에 착수. 대도시에서 마이크로모빌리티 규제 유예기가 끝나가는 신호다.",
   "src": "CBC News",
-  "url": "https://www.cbc.ca/news/canada/toronto/toronto-police-enforcement-campaign-micromobility-devices-9.7302460"
+  "url": "https://www.cbc.ca/news/canada/toronto/toronto-police-enforcement-campaign-micromobility-devices-9.7302460",
+  "img": "assets/2026-08-24-3.jpg",
+  "img_src": "https://i.cbc.ca/ais/64bffdcd-85d0-478c-b8a7-d6c428123140,1786401329872/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C282%2C5421%2C3049%29%3BResize%3D620"
  },
  {
   "tag": "Cockpit",
@@ -33,7 +37,9 @@
   "zh": "LG 展示了将抬头显示与虚拟座舱屏融合的系统，把两个独立显示域合并为一个连续的驾驶员界面。",
   "ko": "HUD와 버추얼 콕핏 스크린을 하나로 합친 시스템. 분리돼 있던 두 디스플레이 영역이 하나의 연속된 운전자 화면이 된다.",
   "src": "Automotive World",
-  "url": "https://www.automotiveworld.com/news/lg-merges-head-up-display-and-virtual-cockpit-screen/"
+  "url": "https://www.automotiveworld.com/news/lg-merges-head-up-display-and-virtual-cockpit-screen/",
+  "img": "assets/2026-08-24-4.jpg",
+  "img_src": "https://media.automotiveworld.com/app/uploads/2026/07/28101903/lg-electronics-hud-pace-pilot-award-2.jpg"
  },
  {
   "tag": "Interaction",
@@ -51,7 +57,9 @@
   "zh": "FEV 与微软合作，将小型语言模型引入车内离线智能，并用英伟达 GPU 加速——没有网络时语音助手依然可用。",
   "ko": "소형 언어모델(SLM)을 엔비디아 GPU 가속으로 차량에 넣어 오프라인 음성 지능 구현. 통신이 끊겨도 작동하는 어시스턴트.",
   "src": "Automotive Interiors World",
-  "url": "https://www.automotiveinteriorsworld.com/news/hmi/small-language-models-power-offline-vehicle-intelligence-in-microsoft-fev-collaboration.html"
+  "url": "https://www.automotiveinteriorsworld.com/news/hmi/small-language-models-power-offline-vehicle-intelligence-in-microsoft-fev-collaboration.html",
+  "img": "assets/2026-08-24-6.jpg",
+  "img_src": "https://www.automotiveinteriorsworld.com/wp-content/uploads/2026/07/fev-collaborates-with-microsoft-on-efficient-ai-model-approach-for-incar-applications-built-on-nvidi.jpg"
  },
  {
   "tag": "AI",
@@ -69,7 +77,9 @@
   "zh": "Watti 是一款五轴机器人台灯，通过计算机视觉识别桌面活动并自主调整光位——环境感知正落地到最小尺度的产品上。",
   "ko": "컴퓨터 비전으로 작업을 인식해 스스로 조명 위치를 바꾸는 5축 로봇 램프. 앰비언트 센싱이 가장 작은 제품 단위까지 내려온 사례.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/08/22/watti-is-the-robotic-desk-lamp-that-wants-to-know-what-youre-doing-before-you-ask-for-light/"
+  "url": "https://www.yankodesign.com/2026/08/22/watti-is-the-robotic-desk-lamp-that-wants-to-know-what-youre-doing-before-you-ask-for-light/",
+  "img": "assets/2026-08-24-8.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/08/watti-is-the-robotic-desk-lamp-that-wants-to-know-what-youre-doing-before-you-ask-for-light/watti-diy-smart-robot-lamp-02.jpg"
  },
  {
   "tag": "Cockpit",
@@ -78,7 +88,9 @@
   "zh": "延锋 XiM27 智能座舱概念将可重构布局与 AI 自适应座椅结合——座舱成为会响应的产品，而非固定结构。",
   "ko": "재구성 가능한 실내 레이아웃과 AI 적응형 시트를 결합한 스마트 캐빈 콘셉트. 고정 구조가 아니라 반응하는 제품으로서의 실내.",
   "src": "Automotive Interiors World",
-  "url": "https://www.automotiveinteriorsworld.com/news/concepts/yanfeng-reveals-xim27-smart-cabin-concept-with-reconfigurable-layout-and-ai-adaptive-seating.html"
+  "url": "https://www.automotiveinteriorsworld.com/news/concepts/yanfeng-reveals-xim27-smart-cabin-concept-with-reconfigurable-layout-and-ai-adaptive-seating.html",
+  "img": "assets/2026-08-24-9.jpg",
+  "img_src": "https://www.automotiveinteriorsworld.com/wp-content/uploads/2026/07/Yanfeng_XiM27_main-image.jpg"
  },
  {
   "tag": "Design",
@@ -114,7 +126,9 @@
   "zh": "可折叠 A2 扫描仪兼作实时演示相机，支持 180 种语言 OCR——工作室级硬件缩小到通勤尺寸。",
   "ko": "가방에 들어가는 A2 스캐너. 라이브 프레젠터 겸용에 180개 언어 OCR — 스튜디오 장비가 통근 사이즈로 줄었다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/08/22/this-foldable-a2-scanner-fits-in-a-bag-and-doubles-as-a-live-presenter/"
+  "url": "https://www.yankodesign.com/2026/08/22/this-foldable-a2-scanner-fits-in-a-bag-and-doubles-as-a-live-presenter/",
+  "img": "assets/2026-08-24-13.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/08/this-foldable-a2-scanner-fits-in-a-bag-and-doubles-as-a-live-presenter/ScanMax_320_hero.jpg"
  },
  {
   "tag": "Industrial",
@@ -123,7 +137,9 @@
   "zh": "Yanko 对华为 Pura 90s Pro Max 的评测聚焦其双色渐变工艺——当参数无法取胜时，用 CMF 承载旗舰身份的案例。",
   "ko": "듀얼톤 그라데이션 마감이 핵심인 리뷰. 스펙으로 못 이길 때 CMF가 플래그십의 정체성을 떠받치는 전략 사례.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/08/22/huawei-pura-90s-pro-max-review-a-beautiful-comeback-with-caveats/"
+  "url": "https://www.yankodesign.com/2026/08/22/huawei-pura-90s-pro-max-review-a-beautiful-comeback-with-caveats/",
+  "img": "assets/2026-08-24-14.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/08/huawei-pura-90s-pro-max-review-a-beautiful-comeback-with-caveats/huawei-pura-90s-pro-max-review-05-1.jpg"
  },
  {
   "tag": "Visual",
@@ -132,7 +148,9 @@
   "zh": "设计概念将韩国传统斗笠「갓」转化为带收纳托盘的灯具——传统形态语言翻译成当代物件。",
   "ko": "전통 갓의 형태를 수납 트레이가 달린 조명으로 번역한 콘셉트. 유산의 조형 언어를 동시대 오브제로 옮긴 작업.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/08/22/this-korean-hat-was-always-meant-to-be-a-lamp-and-finally-became-one/"
+  "url": "https://www.yankodesign.com/2026/08/22/this-korean-hat-was-always-meant-to-be-a-lamp-and-finally-became-one/",
+  "img": "assets/2026-08-24-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/08/this-korean-hat-was-always-meant-to-be-a-lamp-and-finally-became-one/gat-ongojisin-korean-headpiece-lamp-concept-11.jpg"
  },
  {
   "tag": "Visual",
