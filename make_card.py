@@ -78,7 +78,9 @@ def assemble(items, date, cap):
     rest = [(i + 1, it) for i, it in enumerate(items) if i not in feats]
     if rest:
         body += "\n━━━━━━━\n**MORE**\n" + "\n".join(brief(i, it) for i, it in rest) + "\n"
-    body += "\n━━━━━━━\n[📑 Full archive · %s](%s)" % (SITE.replace("https://", ""), SITE)
+    # date-stamped URL defeats the WeCom webview cache — a fresh address every day
+    body += "\n━━━━━━━\n[📑 Full archive · %s](%s/?%s)" % (
+        SITE.replace("https://", ""), SITE, date.replace("-", ""))
     return body
 
 
