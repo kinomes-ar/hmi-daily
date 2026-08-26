@@ -1,0 +1,146 @@
+[
+ {
+  "tag": "Cockpit",
+  "t": "Volvo EX60: software-defined clarity",
+  "en": "Car Design News' HMI review of the Volvo EX60 credits the software-defined platform with a calmer, clearer interface — fewer layers, faster reach to core controls, and typography doing the wayfinding.",
+  "zh": "Car Design News 评测沃尔沃 EX60 的 HMI：软件定义平台带来更平静清晰的界面——层级更少、核心控制触达更快、字体排印承担导视。",
+  "ko": "소프트웨어 정의 플랫폼이 만든 더 차분하고 명료한 인터페이스. 계층은 줄이고 핵심 조작 접근은 빠르게, 길찾기는 타이포그래피가 맡는다.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/ux/volvo-ex60-hmi-review-the-software-defined-volvo-finds-new-clarity/2711003"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "KTM ships a tablet-sized TFT for the handlebar",
+  "en": "KTM revealed a new tablet-sized TFT dashboard — a motorcycle cluster large enough to rethink layout hierarchy, not just restyle gauges. Directly relevant to how our two-wheeler clusters could evolve.",
+  "zh": "KTM 发布平板尺寸的 TFT 仪表——摩托车仪表首次大到足以重构布局层级，而非只是重绘表盘。对我们两轮产品的仪表演进有直接参考价值。",
+  "ko": "게이지 리스타일이 아니라 레이아웃 위계 자체를 재설계할 수 있는 크기의 태블릿급 TFT. 우리 이륜 클러스터 진화에 직접 참고가 되는 사례.",
+  "src": "Motorcycle.com",
+  "url": "https://www.motorcycle.com/bikes/news/ktm-reveals-new-tablet-sized-tft-dashboard-44609836"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Audi Q4 e-tron: UX as the mid-cycle update",
+  "en": "Car Design News looks at how Audi refreshed its bestselling EV mainly through UX — the interface, not the sheet metal, carrying the update story.",
+  "zh": "Car Design News 分析奥迪如何主要通过 UX 更新其最畅销电动车——承载改款叙事的是界面而非钣金。",
+  "ko": "베스트셀러 EV의 부분변경을 시트메탈이 아니라 UX로 끌고 간 사례. 업데이트 서사의 주인공이 인터페이스가 됐다.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/interiors/new-audi-q4-etron-improving-ux-to-update-your-bestselling-ev/2690722"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "TFT cluster design for small EVs",
+  "en": "Renesas' design guide for e-mobility TFT clusters walks through sunlight legibility, glance time and layout hierarchy for scooters and small EVs — an engineering-side reference for exactly our product class.",
+  "zh": "瑞萨的电动出行 TFT 仪表设计指南：阳光下可读性、瞥视时间与布局层级——正是我们产品品类的工程侧参考。",
+  "ko": "직사광 가독성, 글랜스 타임, 레이아웃 위계까지 — 킥보드·소형 EV 클러스터 설계를 다룬 엔지니어링 쪽 레퍼런스.",
+  "src": "Renesas",
+  "url": "https://www.renesas.com/en/blogs/designing-digital-dashboards-e-mobility-tft-instrument-clusters-e-scooters-bikes-and-urban-evs"
+ },
+ {
+  "tag": "Visual",
+  "t": "August's best new typefaces",
+  "en": "Creative Boom rounds up eight new releases — transitional serifs, slabs and expressive display families — a quick scan for anything worth testing in our interface and brand work.",
+  "zh": "Creative Boom 盘点八款新字体：过渡衬线、粗衬线与表现型展示字族——快速扫一遍，看有无值得引入界面与品牌工作的候选。",
+  "ko": "트랜지셔널 세리프·슬랩·디스플레이 계열 신작 8종. 인터페이스·브랜드 작업에 테스트해볼 후보 스캔용.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/resources/the-best-new-typefaces-for-august-2026/"
+ },
+ {
+  "tag": "Visual",
+  "t": "StudioDBD brands a town the press overlooked",
+  "en": "StudioDBD built an identity system for Ashton-in-Makerfield's square regeneration rooted in local manufacturing heritage — place branding that starts from what a town actually made.",
+  "zh": "StudioDBD 为 Ashton-in-Makerfield 广场再生项目打造识别系统，扎根本地制造业传统——从小镇真正的产物出发的地方品牌。",
+  "ko": "지역 제조업 유산에서 출발한 광장 재생 아이덴티티 시스템. 마을이 실제로 만들던 것에서 시작하는 플레이스 브랜딩.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/inspiration/the-worlds-press-descended-on-ashton-in-makerfield-and-missed-the-real-story-studiodbd-didnt/"
+ },
+ {
+  "tag": "Visual",
+  "t": "Drawing the feelings she can't say out loud",
+  "en": "Bangkok illustrator Chanida Areewatanasombat processes emotion through visual diaries and surreal animation — a study in giving interior states a graphic language.",
+  "zh": "曼谷插画师 Chanida Areewatanasombat 以视觉日记与超现实动画处理情绪——为内在状态赋予图形语言的研究样本。",
+  "ko": "비주얼 다이어리와 초현실 애니메이션으로 감정을 그리는 방콕 일러스트레이터. 내면 상태에 그래픽 언어를 입히는 작업.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/inspiration/how-chanida-areewatanasombat-draws-the-feelings-she-cant-say-out-loud/"
+ },
+ {
+  "tag": "Interaction",
+  "t": "Autonomous driving has a comms problem",
+  "en": "Car Design News argues autonomy's real gap is communication — how the car tells occupants and pedestrians what it is about to do. Interface design as the trust layer.",
+  "zh": "Car Design News 指出自动驾驶真正的短板是沟通——车如何告诉乘员与行人它将做什么。界面设计成为信任层。",
+  "ko": "자율주행의 진짜 공백은 소통 — 차가 탑승자와 보행자에게 다음 행동을 알리는 방식. 인터페이스가 신뢰의 레이어가 된다.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Is Ferrari's Luce interior an HMI masterclass?",
+  "en": "A critical look at Ferrari's Luce cabin asks whether its restrained, driver-first interface earns the 'masterclass' label — luxury HMI judged as design, not spec.",
+  "zh": "对法拉利 Luce 座舱的批评性审视：克制的、驾驶者优先的界面是否配得上「教科书」之名——以设计而非参数评判豪华 HMI。",
+  "ko": "절제된 드라이버 퍼스트 인터페이스가 '교과서' 칭호에 값하는가. 스펙이 아니라 디자인으로 평가한 럭셔리 HMI 비평.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/interiors/is-ferraris-luce-interior-a-masterclass-in-hmi/2604887"
+ },
+ {
+  "tag": "Design",
+  "t": "Pforzheim degree show: the next cohort",
+  "en": "Highlights from Pforzheim's MA degree show — the school that feeds half the industry's studios — signalling where the next generation wants to take vehicle design.",
+  "zh": "普福尔茨海姆硕士毕业展亮点——这所输送了半个行业工作室的学校，预示下一代想把汽车设计带向何方。",
+  "ko": "업계 스튜디오 절반에 인력을 대는 포르츠하임의 석사 졸업전. 다음 세대가 차량 디자인을 끌고 갈 방향의 신호.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/designers/pforzheim-ma-summer-2026-degree-show-highlights/2721238"
+ },
+ {
+  "tag": "Design",
+  "t": "CDN round-up: GV90, Torcal, Slavia",
+  "en": "CDN's design round-up: Genesis' flagship GV90, Bentley's Torcal material exploration and Škoda's Slavia update — three takes on how brands stretch a design language.",
+  "zh": "CDN 设计综述：捷尼赛思旗舰 GV90、宾利 Torcal 材质探索、斯柯达 Slavia 印度改款——品牌延展设计语言的三种方式。",
+  "ko": "제네시스 GV90, 벤틀리 토르칼 소재 실험, 슈코다 슬라비아 — 브랜드가 디자인 언어를 늘려 쓰는 세 가지 방식.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/cars/design-round-up-genesis-gv90-bentley-torcal-materials-skoda-updates-slavia-for-india/2723988"
+ },
+ {
+  "tag": "Visual",
+  "t": "Sweets in peril: the lift takeover",
+  "en": "VCCP puts sweets in peril across UK shopping-centre lifts, playing on 'cute aggression' — campaign craft where environment becomes the media format.",
+  "zh": "VCCP 让糖果在英国商场电梯里「身陷险境」，玩转「可爱侵略性」——环境本身成为媒介形式的campaign工艺。",
+  "ko": "쇼핑센터 엘리베이터를 미디어 포맷으로 바꾼 캠페인. '귀여움 공격성' 심리를 활용한 공간 그래픽.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/inspiration/maynards-bassetts-goes-up-a-level-with-a-dangerous-lift-takeover/"
+ },
+ {
+  "tag": "Visual",
+  "t": "A winter that looks nothing like winter",
+  "en": "Myriam Wares documents her Montreal-to-Turin relocation in a surreal, symbol-heavy series — illustration as autobiography.",
+  "zh": "Myriam Wares 以超现实、符号密布的系列记录从蒙特利尔到都灵的迁居——插画即自传。",
+  "ko": "몬트리올에서 토리노로의 이주를 상징으로 빼곡히 기록한 초현실 연작. 자서전으로서의 일러스트레이션.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/inspiration/myriam-wares-crafts-a-winter-that-looks-nothing-like-winter-in-a-surreal-series-about-starting-again-in-italy/"
+ },
+ {
+  "tag": "AI",
+  "t": "Perspective beats execution, says Adler",
+  "en": "Lindsay Adler argues that as AI absorbs technical execution, a distinct creative viewpoint becomes the differentiator — the case for taste as the durable skill.",
+  "zh": "Lindsay Adler 认为，当 AI 吞下技术执行，独特的创作视角才是差异所在——「品味」作为持久技能的论证。",
+  "ko": "AI가 기술 실행을 흡수할수록 관점이 차별점이 된다는 주장. '취향'이 오래가는 역량이라는 논거.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/tips/adobe-creative-collective-member-lindsay-adler-on-why-photographic-skills-will-matter-more-in-future-not-less/"
+ },
+ {
+  "tag": "Industrial",
+  "t": "Chinese design school builds a working car",
+  "en": "A Chinese design school took a student project all the way to a running vehicle — design education crossing from renders into engineering reality.",
+  "zh": "中国一所设计院校把学生项目做成了能开的车——设计教育从渲染图跨入工程现实。",
+  "ko": "학생 프로젝트를 실제 주행 가능한 차량까지 끌고 간 중국 디자인 스쿨. 렌더링에서 엔지니어링 실물로.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/designers/chinese-design-school-builds-a-working-carnbsp/2718150"
+ },
+ {
+  "tag": "Industrial",
+  "t": "Nichols N1A: a track car that keeps its style",
+  "en": "The Nichols N1A shows a track-focused machine refusing to trade beauty for lap time — surface language doing performance work.",
+  "zh": "Nichols N1A 证明赛道机器不必用美感换圈速——曲面语言本身在做性能工作。",
+  "ko": "랩타임을 위해 조형을 포기하지 않은 트랙카. 서피스 언어가 곧 성능의 일부가 된 사례.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/exteriors/nichols-n1a-is-a-track-car-that-doesnt-compromise-on-style/2723421"
+ }
+]
