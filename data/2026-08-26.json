@@ -83,7 +83,9 @@
   "zh": "Car Design News 指出自动驾驶真正的短板是沟通——车如何告诉乘员与行人它将做什么。界面设计成为信任层。",
   "ko": "자율주행의 진짜 공백은 소통 — 차가 탑승자와 보행자에게 다음 행동을 알리는 방식. 인터페이스가 신뢰의 레이어가 된다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699"
+  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699",
+  "img": "assets/2026-08-26-8.jpg",
+  "img_src": "https://image.cardesignnews.com/2676706.jpg?imageId=2676706&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Cockpit",
@@ -92,7 +94,9 @@
   "zh": "对法拉利 Luce 座舱的批评性审视：克制的、驾驶者优先的界面是否配得上「教科书」之名——以设计而非参数评判豪华 HMI。",
   "ko": "절제된 드라이버 퍼스트 인터페이스가 '교과서' 칭호에 값하는가. 스펙이 아니라 디자인으로 평가한 럭셔리 HMI 비평.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/interiors/is-ferraris-luce-interior-a-masterclass-in-hmi/2604887"
+  "url": "https://www.cardesignnews.com/interiors/is-ferraris-luce-interior-a-masterclass-in-hmi/2604887",
+  "img": "assets/2026-08-26-9.jpg",
+  "img_src": "https://image.cardesignnews.com/2604904.webp?imageId=2604904&width=960&height=548&format=jpg"
  },
  {
   "tag": "Design",
@@ -154,7 +158,9 @@
   "zh": "中国一所设计院校把学生项目做成了能开的车——设计教育从渲染图跨入工程现实。",
   "ko": "학생 프로젝트를 실제 주행 가능한 차량까지 끌고 간 중국 디자인 스쿨. 렌더링에서 엔지니어링 실물로.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/designers/chinese-design-school-builds-a-working-carnbsp/2718150"
+  "url": "https://www.cardesignnews.com/designers/chinese-design-school-builds-a-working-carnbsp/2718150",
+  "img": "assets/2026-08-26-15.jpg",
+  "img_src": "https://image.cardesignnews.com/2718211.webp?imageId=2718211&width=960&height=548&format=jpg"
  },
  {
   "tag": "Industrial",
