@@ -520,6 +520,8 @@ def render():
 
 
 if __name__ == "__main__":
+    _files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
+    latest = os.path.basename(_files[0])[:-5] if _files else ""
     page = render()
     if len(sys.argv) > 1 and sys.argv[1] == "standalone":
         doc = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
@@ -527,6 +529,12 @@ if __name__ == "__main__":
                + page.replace("<style>", "</head><body><style>", 1) + "</body></html>")
         open(os.path.join(HERE, "index.html"), "w").write(doc)
         print("wrote index.html")
+        # a dated copy gives every edition its own path — webview caches
+        # that ignore query strings can never serve yesterday's page
+        if latest and latest != "\u2014":
+            dated = latest.replace("-", "") + ".html"
+            open(os.path.join(HERE, dated), "w").write(doc)
+            print("wrote", dated)
     else:
         open(os.path.join(HERE, "artifact.html"), "w").write(page)
         print("wrote artifact.html")
