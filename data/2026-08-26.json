@@ -28,7 +28,9 @@
   "zh": "Car Design News 分析奥迪如何主要通过 UX 更新其最畅销电动车——承载改款叙事的是界面而非钣金。",
   "ko": "베스트셀러 EV의 부분변경을 시트메탈이 아니라 UX로 끌고 간 사례. 업데이트 서사의 주인공이 인터페이스가 됐다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/interiors/new-audi-q4-etron-improving-ux-to-update-your-bestselling-ev/2690722"
+  "url": "https://www.cardesignnews.com/interiors/new-audi-q4-etron-improving-ux-to-update-your-bestselling-ev/2690722",
+  "img": "assets/2026-08-26-3.jpg",
+  "img_src": "https://image.cardesignnews.com/2690745.jpg?imageId=2690745&x=0&y=14.17&cropw=100&croph=71.67&panox=0&panoy=14.17&panow=100&panoh=71.67&width=1200&height=683"
  },
  {
   "tag": "Cockpit",
@@ -81,7 +83,9 @@
   "zh": "Car Design News 指出自动驾驶真正的短板是沟通——车如何告诉乘员与行人它将做什么。界面设计成为信任层。",
   "ko": "자율주행의 진짜 공백은 소통 — 차가 탑승자와 보행자에게 다음 행동을 알리는 방식. 인터페이스가 신뢰의 레이어가 된다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699"
+  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699",
+  "img": "assets/2026-08-26-8.jpg",
+  "img_src": "https://image.cardesignnews.com/2676706.jpg?imageId=2676706&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Cockpit",
@@ -90,7 +94,9 @@
   "zh": "对法拉利 Luce 座舱的批评性审视：克制的、驾驶者优先的界面是否配得上「教科书」之名——以设计而非参数评判豪华 HMI。",
   "ko": "절제된 드라이버 퍼스트 인터페이스가 '교과서' 칭호에 값하는가. 스펙이 아니라 디자인으로 평가한 럭셔리 HMI 비평.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/interiors/is-ferraris-luce-interior-a-masterclass-in-hmi/2604887"
+  "url": "https://www.cardesignnews.com/interiors/is-ferraris-luce-interior-a-masterclass-in-hmi/2604887",
+  "img": "assets/2026-08-26-9.jpg",
+  "img_src": "https://image.cardesignnews.com/2604904.jpg?imageId=2604904&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Design",
@@ -110,7 +116,9 @@
   "zh": "CDN 设计综述：捷尼赛思旗舰 GV90、宾利 Torcal 材质探索、斯柯达 Slavia 印度改款——品牌延展设计语言的三种方式。",
   "ko": "제네시스 GV90, 벤틀리 토르칼 소재 실험, 슈코다 슬라비아 — 브랜드가 디자인 언어를 늘려 쓰는 세 가지 방식.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/cars/design-round-up-genesis-gv90-bentley-torcal-materials-skoda-updates-slavia-for-india/2723988"
+  "url": "https://www.cardesignnews.com/cars/design-round-up-genesis-gv90-bentley-torcal-materials-skoda-updates-slavia-for-india/2723988",
+  "img": "assets/2026-08-26-11.jpg",
+  "img_src": "https://image.cardesignnews.com/2724000.jpg?imageId=2724000&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Visual",
@@ -163,6 +171,8 @@
   "zh": "Nichols N1A 证明赛道机器不必用美感换圈速——曲面语言本身在做性能工作。",
   "ko": "랩타임을 위해 조형을 포기하지 않은 트랙카. 서피스 언어가 곧 성능의 일부가 된 사례.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/exteriors/nichols-n1a-is-a-track-car-that-doesnt-compromise-on-style/2723421"
+  "url": "https://www.cardesignnews.com/exteriors/nichols-n1a-is-a-track-car-that-doesnt-compromise-on-style/2723421",
+  "img": "assets/2026-08-26-16.jpg",
+  "img_src": "https://image.cardesignnews.com/2723426.jpg?imageId=2723426&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  }
 ]
