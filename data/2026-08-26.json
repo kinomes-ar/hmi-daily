@@ -6,9 +6,7 @@
   "zh": "Car Design News 评测沃尔沃 EX60 的 HMI：软件定义平台带来更平静清晰的界面——层级更少、核心控制触达更快、字体排印承担导视。",
   "ko": "소프트웨어 정의 플랫폼이 만든 더 차분하고 명료한 인터페이스. 계층은 줄이고 핵심 조작 접근은 빠르게, 길찾기는 타이포그래피가 맡는다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/ux/volvo-ex60-hmi-review-the-software-defined-volvo-finds-new-clarity/2711003",
-  "img": "assets/2026-08-26-1.jpg",
-  "img_src": "https://image.cardesignnews.com/2709439.jpg?imageId=2709439&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+  "url": "https://www.cardesignnews.com/ux/volvo-ex60-hmi-review-the-software-defined-volvo-finds-new-clarity/2711003"
  },
  {
   "tag": "Cockpit",
@@ -17,9 +15,7 @@
   "zh": "KTM 发布平板尺寸的 TFT 仪表——摩托车仪表首次大到足以重构布局层级，而非只是重绘表盘。对我们两轮产品的仪表演进有直接参考价值。",
   "ko": "게이지 리스타일이 아니라 레이아웃 위계 자체를 재설계할 수 있는 크기의 태블릿급 TFT. 우리 이륜 클러스터 진화에 직접 참고가 되는 사례.",
   "src": "Motorcycle.com",
-  "url": "https://www.motorcycle.com/bikes/news/ktm-reveals-new-tablet-sized-tft-dashboard-44609836",
-  "img": "assets/2026-08-26-2.jpg",
-  "img_src": "https://cdn-fastly.motorcycle.com/media/marketing_photos/2024/10/16/89725/social-44609836.jpg?size=1200x628"
+  "url": "https://www.motorcycle.com/bikes/news/ktm-reveals-new-tablet-sized-tft-dashboard-44609836"
  },
  {
   "tag": "Cockpit",
@@ -37,9 +33,7 @@
   "zh": "瑞萨的电动出行 TFT 仪表设计指南：阳光下可读性、瞥视时间与布局层级——正是我们产品品类的工程侧参考。",
   "ko": "직사광 가독성, 글랜스 타임, 레이아웃 위계까지 — 킥보드·소형 EV 클러스터 설계를 다룬 엔지니어링 쪽 레퍼런스.",
   "src": "Renesas",
-  "url": "https://www.renesas.com/en/blogs/designing-digital-dashboards-e-mobility-tft-instrument-clusters-e-scooters-bikes-and-urban-evs",
-  "img": "assets/2026-08-26-4.png",
-  "img_src": "https://www.renesas.com/sites/default/files/media/images/tft-instrument-cluster-bluetooth-audio-telematics-diagram.png"
+  "url": "https://www.renesas.com/en/blogs/designing-digital-dashboards-e-mobility-tft-instrument-clusters-e-scooters-bikes-and-urban-evs"
  },
  {
   "tag": "Visual",
@@ -75,9 +69,7 @@
   "zh": "Car Design News 指出自动驾驶真正的短板是沟通——车如何告诉乘员与行人它将做什么。界面设计成为信任层。",
   "ko": "자율주행의 진짜 공백은 소통 — 차가 탑승자와 보행자에게 다음 행동을 알리는 방식. 인터페이스가 신뢰의 레이어가 된다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699",
-  "img": "assets/2026-08-26-8.jpg",
-  "img_src": "https://image.cardesignnews.com/2676708.webp?imageId=2676708&x=0.00&y=21.42&cropw=100.00&croph=42.84&width=960&height=548&format=jpg"
+  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699"
  },
  {
   "tag": "Cockpit",
@@ -95,9 +87,7 @@
   "zh": "普福尔茨海姆硕士毕业展亮点——这所输送了半个行业工作室的学校，预示下一代想把汽车设计带向何方。",
   "ko": "업계 스튜디오 절반에 인력을 대는 포르츠하임의 석사 졸업전. 다음 세대가 차량 디자인을 끌고 갈 방향의 신호.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/designers/pforzheim-ma-summer-2026-degree-show-highlights/2721238",
-  "img": "assets/2026-08-26-10.jpg",
-  "img_src": "https://image.cardesignnews.com/2721250.webp?imageId=2721250&width=960&height=680&format=jpg"
+  "url": "https://www.cardesignnews.com/designers/pforzheim-ma-summer-2026-degree-show-highlights/2721238"
  },
  {
   "tag": "Design",
