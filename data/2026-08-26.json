@@ -83,7 +83,9 @@
   "zh": "Car Design News 指出自动驾驶真正的短板是沟通——车如何告诉乘员与行人它将做什么。界面设计成为信任层。",
   "ko": "자율주행의 진짜 공백은 소통 — 차가 탑승자와 보행자에게 다음 행동을 알리는 방식. 인터페이스가 신뢰의 레이어가 된다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699"
+  "url": "https://www.cardesignnews.com/ux/autonomous-driving-has-a-comms-problem/2676699",
+  "img": "assets/2026-08-26-8.jpg",
+  "img_src": "https://image.cardesignnews.com/2676706.jpg?imageId=2676706&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Cockpit",
@@ -103,7 +105,9 @@
   "zh": "普福尔茨海姆硕士毕业展亮点——这所输送了半个行业工作室的学校，预示下一代想把汽车设计带向何方。",
   "ko": "업계 스튜디오 절반에 인력을 대는 포르츠하임의 석사 졸업전. 다음 세대가 차량 디자인을 끌고 갈 방향의 신호.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/designers/pforzheim-ma-summer-2026-degree-show-highlights/2721238"
+  "url": "https://www.cardesignnews.com/designers/pforzheim-ma-summer-2026-degree-show-highlights/2721238",
+  "img": "assets/2026-08-26-10.jpg",
+  "img_src": "https://image.cardesignnews.com/2721349.jpg?imageId=2721349&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Design",
@@ -112,7 +116,9 @@
   "zh": "CDN 设计综述：捷尼赛思旗舰 GV90、宾利 Torcal 材质探索、斯柯达 Slavia 印度改款——品牌延展设计语言的三种方式。",
   "ko": "제네시스 GV90, 벤틀리 토르칼 소재 실험, 슈코다 슬라비아 — 브랜드가 디자인 언어를 늘려 쓰는 세 가지 방식.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/cars/design-round-up-genesis-gv90-bentley-torcal-materials-skoda-updates-slavia-for-india/2723988"
+  "url": "https://www.cardesignnews.com/cars/design-round-up-genesis-gv90-bentley-torcal-materials-skoda-updates-slavia-for-india/2723988",
+  "img": "assets/2026-08-26-11.jpg",
+  "img_src": "https://image.cardesignnews.com/2724000.jpg?imageId=2724000&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Visual",
@@ -154,7 +160,9 @@
   "zh": "中国一所设计院校把学生项目做成了能开的车——设计教育从渲染图跨入工程现实。",
   "ko": "학생 프로젝트를 실제 주행 가능한 차량까지 끌고 간 중국 디자인 스쿨. 렌더링에서 엔지니어링 실물로.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/designers/chinese-design-school-builds-a-working-carnbsp/2718150"
+  "url": "https://www.cardesignnews.com/designers/chinese-design-school-builds-a-working-carnbsp/2718150",
+  "img": "assets/2026-08-26-15.jpg",
+  "img_src": "https://image.cardesignnews.com/2718211.jpg?imageId=2718211&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  },
  {
   "tag": "Industrial",
@@ -163,6 +171,8 @@
   "zh": "Nichols N1A 证明赛道机器不必用美感换圈速——曲面语言本身在做性能工作。",
   "ko": "랩타임을 위해 조형을 포기하지 않은 트랙카. 서피스 언어가 곧 성능의 일부가 된 사례.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/exteriors/nichols-n1a-is-a-track-car-that-doesnt-compromise-on-style/2723421"
+  "url": "https://www.cardesignnews.com/exteriors/nichols-n1a-is-a-track-car-that-doesnt-compromise-on-style/2723421",
+  "img": "assets/2026-08-26-16.jpg",
+  "img_src": "https://image.cardesignnews.com/2723426.jpg?imageId=2723426&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
  }
 ]
