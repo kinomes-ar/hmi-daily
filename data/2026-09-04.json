@@ -6,7 +6,9 @@
   "zh": "布加迪用三年时间和数千次仿真，让 Tourbillon 的 V16 保持'有点脏、有点粗粝'的声浪——不用扬声器，只靠进排气雕琢，让驾驶者听清每一次转速变化，还要卡进 72 分贝的法规上限。声音被当作设计出来的界面，也是无法造假的品牌识别。",
   "ko": "부가티는 3년과 수천 번의 시뮬레이션을 들여 투르비용 V16의 사운드를 '조금 지저분하고 거칠게' 유지했다. 스피커 없이 흡배기만으로 회전수 변화가 그대로 들리게 하면서 72dB 규제까지 통과. 사운드를 설계된 인터페이스이자, 흉내 낼 수 없는 브랜드 아이덴티티로 다룬 사례.",
   "src": "Carscoops",
-  "url": "https://www.carscoops.com/2026/09/bugatti-tourbillon-v16-sound/"
+  "url": "https://www.carscoops.com/2026/09/bugatti-tourbillon-v16-sound/",
+  "img": "assets/2026-09-04-1.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/01-2608-BUGATTI-Tourbillon-BTS-Ep18-copy-scaled.jpg"
  },
  {
   "tag": "Cockpit",
@@ -24,7 +26,9 @@
   "zh": "在 IFA 2026 上，Plaud One 耳机先转写你的会议，再交给 AI 直接起草后续邮件和幻灯片。它的界面野心很直白：入口在耳朵，出口在交付物——中间所有步骤都被自动化抹平。",
   "ko": "IFA 2026에서 플라우드 원 이어버드는 회의를 전사한 뒤 AI가 후속 이메일과 슬라이드 초안까지 만들어준다. 인터페이스의 야심이 노골적이다 — 입력은 귀에서, 출력은 산출물로. 그 사이 모든 단계는 자동화로 지워진다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/03/plaud-one-hands-on-at-ifa-2026-ai-earbuds-that-transcribe-meetings-then-draft-emails-and-decks-for-you/"
+  "url": "https://www.yankodesign.com/2026/09/03/plaud-one-hands-on-at-ifa-2026-ai-earbuds-that-transcribe-meetings-then-draft-emails-and-decks-for-you/",
+  "img": "assets/2026-09-04-3.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/645797/plaud_one_ifa_2026_1.jpg"
  },
  {
   "tag": "Design",
@@ -42,7 +46,9 @@
   "zh": "联想的 IFA 概念机藏着一块卷轴屏，可按需从 14 英寸展开到 17 英寸。抛开炫技，它提出了一个真实的 UI 问题：当画布本身可以伸缩，界面应该如何响应？",
   "ko": "레노버의 IFA 콘셉트 노트북은 롤러블 디스플레이를 숨겨 화면을 14인치에서 17인치로 늘린다. 눈요기 너머의 진짜 UI 질문 — 캔버스 자체가 신축적이 될 때 인터페이스는 무엇을 해야 하는가.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/03/lenovos-ifa-2026-laptop-concept-rolls-out-from-14-to-17-inches/"
+  "url": "https://www.yankodesign.com/2026/09/03/lenovos-ifa-2026-laptop-concept-rolls-out-from-14-to-17-inches/",
+  "img": "assets/2026-09-04-5.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/lenovos-ifa-2026-laptop-concept-rolls-out-from-14-to-17-inches/lenovo-thinkbook-project-swan-rollable-02.jpg"
  },
  {
   "tag": "Visual",
@@ -51,7 +57,9 @@
   "zh": "韩国国立现代美术馆首尔馆推出徐道获 500 件作品回顾展。他半透明的织物房屋，把迁徙与记忆变成可以走入的建筑。对任何在设计'归属感'的空间或界面的人来说，这是本季必看——而且就在首尔。",
   "ko": "국립현대미술관 서울관이 서도호 회고전을 연다. 500여 점 — 반투명 천으로 지은 집들이 이주와 기억을 걸어 들어갈 수 있는 건축으로 바꾼다. '소속감'을 다루는 공간·인터페이스 디자이너라면 이번 시즌 필견, 그것도 서울에서.",
   "src": "designboom",
-  "url": "https://www.designboom.com/art/do-ho-suh-four-decades-home-memory-migration-mmca-seoul-retrospective/"
+  "url": "https://www.designboom.com/art/do-ho-suh-four-decades-home-memory-migration-mmca-seoul-retrospective/",
+  "img": "assets/2026-09-04-6.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/08/do-ho-suh-four-decades-home-memory-migration-mmca-seoul-retrospective-designboom-1200.jpg"
  },
  {
   "tag": "Visual",
@@ -60,7 +68,9 @@
   "zh": "史蒂文·海勒回顾 Ron Cobb：60 年代言辞尖刻的地下漫画家，讽刺战争与生态毁灭，后来成为《异形》《星球大战》硬件世界的设计师。一段职业生涯证明：评论的锋利与世界观营造的手艺，是同一块肌肉。",
   "ko": "스티븐 헬러가 론 콥을 회고한다. 전쟁과 생태 파괴를 찌르던 60년대 언더그라운드 만화가는 훗날 '에이리언'과 '스타워즈'의 하드웨어를 그린 디자이너가 됐다. 비평의 날카로움과 세계관 구축의 장인정신이 같은 근육임을 증명한 경력.",
   "src": "PRINT Magazine",
-  "url": "https://www.printmag.com/daily-heller/the-daily-heller-ron-cobb-sixties-acerbic-cartoon-hero-dies/"
+  "url": "https://www.printmag.com/daily-heller/the-daily-heller-ron-cobb-sixties-acerbic-cartoon-hero-dies/",
+  "img": "assets/2026-09-04-7.jpg",
+  "img_src": "https://i0.wp.com/www.printmag.com/wp-content/uploads/2020/09/da4aaf_f6f5f816973b4c7a95f50680a3fbdbefmv2.jpg?fit=1414%2C1405&quality=89&ssl=1"
  },
  {
   "tag": "Visual",
@@ -69,7 +79,9 @@
   "zh": "电影人 Will Norman 把一台 15 英镑的老 iMac 绑上 25 英尺的摇臂重拍《奥德赛》，这套土法装置一夜爆红。在 AI 视频之年，它提醒我们：约束加机智，依然比算力更迷人。",
   "ko": "필름메이커 윌 노먼은 15파운드짜리 빈티지 아이맥을 7.6m 크레인에 묶어 '오디세이'를 다시 찍었고, 이 즉흥 장비는 바이럴이 됐다. AI 비디오의 해에 — 제약과 재치가 여전히 연산력보다 매력적이라는 증명.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/forget-ai-studios-this-filmmaker-strapped-a-ps15-imac-to-a-25ft-crane-to-remake-the-odyssey/"
+  "url": "https://www.creativeboom.com/inspiration/forget-ai-studios-this-filmmaker-strapped-a-ps15-imac-to-a-25ft-crane-to-remake-the-odyssey/",
+  "img": "assets/2026-09-04-8.webp",
+  "img_src": "https://media.creativeboom.com/86df4c52-d689-454b-a0a5-fae586a0a7ce/conversions/c1510ffab0ba68787162c976a9975222cf804286-medium.webp"
  },
  {
   "tag": "Design",
@@ -78,7 +90,9 @@
   "zh": "Pokémon Sleep 与 NOT A HOTEL 在北海道造了一颗真人尺寸的精灵球——可居住的球体，只开放极少量过夜名额。IP 没有变成周边，而是变成建筑：幻想物件被做成 1:1，被收服的成了你。",
   "ko": "포켓몬 슬립과 NOT A HOTEL이 홋카이도에 사람 크기의 몬스터볼을 지었다. 숙박 가능한 구체, 극소수 오버나이트만 오픈. IP가 굿즈가 아니라 건축으로 번역됐다 — 판타지 오브젝트가 1:1이 되고, 잡히는 쪽은 당신이다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/giant-poke-ball-human-sized-sleeping-pod-japan/"
+  "url": "https://www.designboom.com/design/giant-poke-ball-human-sized-sleeping-pod-japan/",
+  "img": "assets/2026-09-04-9.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/giant-poke-ball-human-sized-sleeping-pod-japa9-818x653.jpg"
  },
  {
   "tag": "Visual",
@@ -87,7 +101,9 @@
   "zh": "'它填满我的生活，也拯救了我'——插画师 Varya Yakovleva 谈她的速写本：即兴的墨水涂画后来长成了油画与木雕。速写本在这里不是热身，而是发动机舱。",
   "ko": "'그건 내 삶을 채우고, 나를 구한다' — 일러스트레이터 바리야 야코블레바의 스케치북 이야기. 즉흥의 잉크 드로잉이 회화와 목조각으로 자랐다. 스케치북은 워밍업이 아니라 엔진룸이라는 초상.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/it-simply-fills-my-life-and-saves-me-inside-varya-yakovlevas-sketchbooks/"
+  "url": "https://www.creativeboom.com/inspiration/it-simply-fills-my-life-and-saves-me-inside-varya-yakovlevas-sketchbooks/",
+  "img": "assets/2026-09-04-10.webp",
+  "img_src": "https://media.creativeboom.com/d14a2d68-e1d4-4c04-b620-8e02e656c010/conversions/c30fcbb19b3559ac9c1667f5396dc4361d19bf89-medium.webp"
  },
  {
   "tag": "Design",
@@ -96,7 +112,9 @@
   "zh": "东京的停车法规迫使建筑师把车位刻进最迷你的住宅——汽车'占走了剖面的重要一块'。designboom 梳理了当法规而非品味主导平面时，随之而来的种种精妙空间体操。",
   "ko": "도쿄의 주차 의무 규정은 가장 작은 집에도 차고를 새겨 넣게 만든다 — 자동차가 '단면의 큰 몫'을 차지하는 것. 취향이 아니라 규제가 평면을 끌고 갈 때 벌어지는 기발한 공간 체조들을 designboom이 정리했다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/architecture/japanese-carve-parking-tiny-urban-homes-tokyo/"
+  "url": "https://www.designboom.com/architecture/japanese-carve-parking-tiny-urban-homes-tokyo/",
+  "img": "assets/2026-09-04-11.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/car-shaped-hole-japanese-houses-tokyo-parking-architecture-designboom-FB.jpg"
  },
  {
   "tag": "Industrial",
@@ -105,7 +123,9 @@
   "zh": "摩托罗拉给 Razr 穿上绗缝织物，再手工镶上 35 颗施华洛世奇水晶——包括铰链处那颗 32 切面的主石，恰是整机最机械的部位。珠宝逻辑进入消费电子：颂扬机械结构，而非遮掩它。",
   "ko": "모토로라가 레이저를 퀼팅 패브릭으로 감싸고 스와로브스키 크리스털 35개를 수작업으로 박았다. 가장 기계적인 부위인 힌지 위에 32면 컷 스톤을 올린 것이 핵심. 주얼리의 논리로 메커니즘을 숨기지 않고 축하하는 가전.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/03/motorolas-swarovski-razr-was-designed-to-be-seen-not-hidden/"
+  "url": "https://www.yankodesign.com/2026/09/03/motorolas-swarovski-razr-was-designed-to-be-seen-not-hidden/",
+  "img": "assets/2026-09-04-12.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/motorolas-swarovski-razr-was-designed-to-be-seen-not-hidden/motorola-razr-2026-crystals-swarovski-02.jpg"
  },
  {
   "tag": "Design",
@@ -114,7 +134,9 @@
   "zh": "一本新书记录了北加州 60–70 年代'归土运动'公社的即兴住宅：完全脱离常规建造的家，如今的影像与建造者的口述历史并置。乡土设计在这里，是被住进去的意识形态。",
   "ko": "북캘리포니아 60~70년대 '땅으로 돌아가기' 코뮌들의 즉흥 주거를 기록한 신간. 모든 관습 바깥에서 지어진 집들을 오늘의 사진과 건축자들의 구술사로 함께 담았다. 버내큘러 디자인이란 — 거주 가능해진 이데올로기.",
   "src": "designboom",
-  "url": "https://www.designboom.com/architecture/handmade-utopia-radical-homes-northern-california-land-movement/"
+  "url": "https://www.designboom.com/architecture/handmade-utopia-radical-homes-northern-california-land-movement/",
+  "img": "assets/2026-09-04-13.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/08/handmade-utopia-radical-homes-northern-california-land-movement-designboom-1200.jpg"
  },
  {
   "tag": "Industrial",
@@ -123,7 +145,9 @@
   "zh": "Bristol Fighter 回来了：600 马力 V10、鸥翼门的 GT，只为五位客户复活。与其说是造车项目，不如说是限量物件研究——一个沉睡的品牌，如何把全部身份蒸馏进寥寥几件手工制品。",
   "ko": "브리스톨 파이터가 돌아왔다. 600마력 V10, 걸윙 도어의 GT를 단 5명의 고객을 위해 부활시킨 것. 자동차 프로그램이라기보다 한정판 오브제 연구 — 잠들어 있던 브랜드가 정체성 전부를 수공 아티팩트 몇 점에 증류하는 법.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/03/the-bristol-fighter-is-back-and-only-5-people-can-own-this-600hp-v10-gt/"
+  "url": "https://www.yankodesign.com/2026/09/03/the-bristol-fighter-is-back-and-only-5-people-can-own-this-600hp-v10-gt/",
+  "img": "assets/2026-09-04-14.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/the-bristol-fighter-is-back-and-only-5-people-can-own-this-600hp-v10-gt/Bristol-Cars-Fighter-1.jpg"
  },
  {
   "tag": "Industrial",
@@ -132,7 +156,9 @@
   "zh": "Vention 的新充电宝放弃了参数表美学，换上柔和的落日渐变——一个大宗品类突然被做成愿意摆上桌面的物件。一个小小的证明：再普通的硬件，也是品牌的画布。",
   "ko": "벤션의 새 보조배터리는 스펙시트 미학 대신 부드러운 노을 그라디언트를 입었다. 범용 카테고리가 갑자기 책상 위에 두고 싶은 오브제가 된 것. 가장 제네릭한 하드웨어조차 브랜딩의 표면이라는 작은 증명.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/03/ventions-new-power-bank-reads-like-a-sunset-not-a-spec-sheet/"
+  "url": "https://www.yankodesign.com/2026/09/03/ventions-new-power-bank-reads-like-a-sunset-not-a-spec-sheet/",
+  "img": "assets/2026-09-04-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/ventions-new-power-bank-reads-like-a-sunset-not-a-spec-sheet/vention-h-series-dash-series.jpg"
  },
  {
   "tag": "Design",
@@ -141,6 +167,8 @@
   "zh": "MAD 将把鹿特丹 1923 年的装饰艺术仓库改造成'舞蹈之家'：排练室、剧场与屋顶场地，专业舞者与业余爱好者共享同一片地板。这次改造性再利用，服务的是运动中的身体，而非陈列中的物件。",
   "ko": "MAD가 로테르담의 1923년 아르데코 창고를 '댄스 하우스'로 바꾼다. 스튜디오와 무대, 루프탑 공연장에서 프로와 아마추어가 같은 바닥을 공유한다. 전시된 사물이 아니라 움직이는 몸을 위한 어댑티브 리유스.",
   "src": "designboom",
-  "url": "https://www.designboom.com/architecture/mad-ma-yansong-1923-art-deco-warehouse-rotterdam-house-dance-danshuis/"
+  "url": "https://www.designboom.com/architecture/mad-ma-yansong-1923-art-deco-warehouse-rotterdam-house-dance-danshuis/",
+  "img": "assets/2026-09-04-16.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/mad-ma-yansong-1923-art-deco-warehouse-rotterdam-house-dance-danshuis-designboom-1200.jpg"
  }
 ]
