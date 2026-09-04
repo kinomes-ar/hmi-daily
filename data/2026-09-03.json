@@ -1,0 +1,146 @@
+[
+ {
+  "tag": "Interaction",
+  "t": "In-car gaming: the cabin is the console",
+  "en": "Cinemo, Dolby and SmashLabs are building games that could only exist inside a car — gameplay synced to ambient lighting, seat haptics, even climate control, with Atmos audio steering sound around the cabin. Whether or not you want to play in traffic, this is the clearest preview yet of the cabin as a multisensory canvas.",
+  "zh": "Cinemo、杜比与 SmashLabs 正在做只可能存在于车内的游戏：玩法与氛围灯、座椅触觉反馈甚至空调联动，Atmos 音效在座舱里定向游走。无论你是否想在车里打游戏，这都是'座舱即多感官画布'最清晰的一次预演。",
+  "ko": "시네모·돌비·스매시랩스가 '차 안에서만 가능한 게임'을 만들고 있다. 게임플레이가 앰비언트 라이트, 시트 햅틱, 심지어 공조와 동기화되고 애트모스 사운드가 캐빈을 돌아다닌다. 게임 여부를 떠나 — 캐빈이 멀티센서리 캔버스가 된다는 가장 선명한 예고편.",
+  "src": "Automotive Interiors World",
+  "url": "https://www.automotiveinteriorsworld.com/news/infotainment/in-car-gaming-gets-immersive-upgrades-with-cinemo-dolby-and-smashlabs-collab.html"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Denza Z: 1,582 hp, buttons survive",
+  "en": "BYD's electric super-coupe has landed in showrooms ahead of its Q4 launch: 1.96 s to 100 km/h, a D-shaped wheel, a 12.8-inch screen — and a row of physical controls kept right under it. Even at hypercar money, China's fastest EV decides the essentials still deserve buttons.",
+  "zh": "比亚迪的电动超跑已提前抵达门店：百公里加速 1.96 秒，D 形方向盘，12.8 英寸屏幕——屏幕正下方还保留了一排实体按键。即便卖到超跑价位，中国最快的电动车仍认定：关键操作值得留给按键。",
+  "ko": "BYD의 전기 슈퍼 쿠페가 4분기 출시를 앞두고 매장에 도착했다. 100km/h까지 1.96초, D형 스티어링 휠, 12.8인치 스크린 — 그리고 그 바로 아래 실체 버튼 줄은 그대로다. 하이퍼카 가격에서도 핵심 조작은 버튼 몫이라는 판단.",
+  "src": "CarNewsChina",
+  "url": "https://carnewschina.com/2026/08/31/the-denza-z-arrived-at-dealers-in-china-ahead-of-domestic-launch-scheduled-for-q4-2026/"
+ },
+ {
+  "tag": "AI",
+  "t": "TWA defends its AI illustration system",
+  "en": "Creative Boom challenged studio TWA over using AI illustration in a branding project — and got a considered answer: a custom-trained system built to generate dynamic, ever-shifting brand visuals, not to replace the illustrators who defined the style. The most useful public exchange yet on where AI sits in identity work.",
+  "zh": "Creative Boom 就一项品牌项目中使用 AI 插画质询了 TWA 工作室，得到了认真回应：那是一套定制训练的系统，用来生成动态多变的品牌视觉，而非取代定义风格的插画师。这是关于 AI 在品牌设计中位置的最有价值的一次公开交锋。",
+  "ko": "크리에이티브 붐이 브랜딩 프로젝트에 AI 일러스트를 쓴 스튜디오 TWA에 문제를 제기했고, 진지한 답이 돌아왔다. 스타일을 만든 일러스트레이터를 대체하는 게 아니라, 계속 변하는 다이내믹 브랜드 비주얼을 생성하려 커스텀 학습한 시스템이라는 것. AI와 아이덴티티 작업의 관계에 대한 가장 유익한 공개 문답.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/insight/i-questioned-twas-use-of-ai-illustration-in-a-branding-project-heres-their-fascinating-response/"
+ },
+ {
+  "tag": "Design",
+  "t": "Formula S GT: China's performance wagon",
+  "en": "BYD's Fang Cheng Bao Formula S GT — a low, long-roof performance station wagon — has reached dealers before launch. Wagons barely exist in China's market; making one the halo body style is a pure design statement, aimed straight at people who miss proportion over posture.",
+  "zh": "比亚迪方程豹 Formula S GT——一台低趴长顶的性能旅行车——已在上市前进店。旅行车在中国市场几乎不存在；把它做成光环车型，本身就是一次纯粹的设计表态，献给在意比例胜过姿态的人。",
+  "ko": "BYD 팡청바오 포뮬러 S GT — 낮고 긴 루프의 퍼포먼스 왜건이 출시 전 매장에 깔렸다. 중국 시장에 왜건은 거의 없다. 그걸 헤일로 모델로 삼는 것 자체가 순수한 디자인 선언 — 포즈보다 비례를 그리워하는 사람들을 향한.",
+  "src": "CarNewsChina",
+  "url": "https://carnewschina.com/2026/09/01/byd-fang-cheng-bao-formula-s-gt-station-wagon-arrived-at-dealers-ahead-of-launch/"
+ },
+ {
+  "tag": "Interaction",
+  "t": "Miele's dishwasher looks, then decides",
+  "en": "At IFA 2026, Miele's G8 photographs the load, judges how dirty it is, and picks the cycle itself — the interface disappears into a camera and a decision. A neat live example of 'zero-UI' thinking: the best control panel is the one you never touch.",
+  "zh": "在 IFA 2026 上，美诺 G8 会先给餐具拍照、判断脏污程度，然后自己选择程序——界面消失，只剩一台相机和一次决策。'零 UI'思维的鲜活样本：最好的控制面板是你从不去碰的那块。",
+  "ko": "IFA 2026에서 밀레 G8은 식기를 촬영해 오염도를 판단하고 스스로 코스를 고른다. 인터페이스가 카메라 한 대와 판단 하나로 사라진 셈. '제로 UI' 사고의 생생한 예 — 최고의 컨트롤 패널은 만질 일이 없는 패널이다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/09/02/mieles-g8-dishwasher-photographs-your-dirty-dishes-before-auto-selecting-the-cycle-hands-on-at-ifa-2026/"
+ },
+ {
+  "tag": "Design",
+  "t": "RCA folds communication into design",
+  "en": "The Royal College of Art is merging communication and design into a single school — an institutional admission that identity, product, interaction and story are no longer separable disciplines. Expect the graduates your team hires in three years to be shaped by this.",
+  "zh": "皇家艺术学院将把传达与设计合并为一个学院——这等于机构层面承认：品牌、产品、交互与叙事已不再是可分割的学科。三年后你团队招到的毕业生，将由这次改革塑造。",
+  "ko": "영국 왕립예술대학(RCA)이 커뮤니케이션과 디자인을 하나의 스쿨로 합친다. 아이덴티티·프로덕트·인터랙션·스토리가 더는 분리 가능한 학제가 아니라는 제도적 인정. 3년 뒤 우리 팀이 뽑을 졸업생들이 이 개편의 산물일 것이다.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/news/the-royal-college-of-art-is-bringing-communication-and-design-together-in-one-school-and-thats-big-news/"
+ },
+ {
+  "tag": "Visual",
+  "t": "Lorena Spurio draws to find what she loves",
+  "en": "The Turin illustrator — now drawing for The New York Times and FT — treats her sketchbook as an instrument of discovery: the drawings tell her what she cares about, not the other way round. A quietly radical way to keep client work from hollowing out a personal voice.",
+  "zh": "这位都灵插画师如今为《纽约时报》与《金融时报》供图，却把速写本当作发现自我的仪器：是画告诉她自己在乎什么，而非相反。让商业委托不掏空个人声音的一种安静而激进的方法。",
+  "ko": "뉴욕타임스와 FT에 그림을 싣는 토리노의 일러스트레이터 로레나 스푸리오는 스케치북을 자기 발견의 도구로 쓴다. 그림이 그녀에게 무엇을 사랑하는지 알려준다는 것. 클라이언트 작업이 개인의 목소리를 갉아먹지 않게 하는, 조용히 급진적인 방법.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/inspiration/how-lorena-spurio-lets-her-drawings-tell-her-what-she-loves/"
+ },
+ {
+  "tag": "Visual",
+  "t": "Paolo Garretto, Heller's pen pal",
+  "en": "Steven Heller revisits his correspondence with Paolo Garretto, the Italian caricaturist whose airbrushed, geometry-clean portraits defined 1930s magazine covers. A century later his economy of shape still reads like a masterclass for icon and character designers.",
+  "zh": "史蒂文·海勒重温与意大利漫画家 Paolo Garretto 的通信。这位用喷枪画出几何般干净肖像的艺术家定义了 1930 年代的杂志封面。一个世纪后，他对形状的极度节制，仍是图标与角色设计师的大师课。",
+  "ko": "스티븐 헬러가 이탈리아 캐리커처리스트 파올로 가레토와의 서신을 다시 꺼냈다. 에어브러시의 기하학적으로 깨끗한 초상으로 1930년대 잡지 커버를 정의한 인물. 한 세기가 지나도 그의 절제된 형태 언어는 아이콘·캐릭터 디자이너의 교본이다.",
+  "src": "PRINT Magazine",
+  "url": "https://www.printmag.com/daily-heller/paolo-garretto-was-my-pen-pal/"
+ },
+ {
+  "tag": "Design",
+  "t": "Home as life support",
+  "en": "designboom surveys the habitats BIG, ICON, SAGA and NASA are testing for the Moon and Mars — where privacy, waste and resource loops stop being amenities and become survival systems. Extreme-environment design as a stress test for every assumption we make about 'home'.",
+  "zh": "designboom 梳理了 BIG、ICON、SAGA 与 NASA 正在测试的月球与火星栖息舱：隐私、废弃物与资源循环不再是舒适性配置，而是生存系统。极端环境设计，是对我们关于'家'的一切假设的压力测试。",
+  "ko": "designboom이 BIG·ICON·SAGA·NASA가 달과 화성용으로 시험 중인 거주 모듈들을 정리했다. 프라이버시와 폐기물, 자원 순환이 편의 사양이 아니라 생존 시스템이 되는 곳. 극한 환경 디자인은 '집'에 대한 모든 전제를 시험대에 올린다.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/architecture/home-becomes-life-support-habitats-mars-moon-big-icon-saga-nasa/"
+ },
+ {
+  "tag": "Design",
+  "t": "32 square meters, 24 rooms",
+  "en": "Gary Chang's 'Domestic Transformer' makes one 32 m² Hong Kong flat reconfigure into 24 layouts with sliding walls and fold-down elements. Two decades on, it remains the sharpest built argument that interaction design applies to architecture too.",
+  "zh": "张智强的'变形宅'让一套 32 平方米的香港公寓通过滑墙与翻折构件变出 24 种布局。二十年过去，它仍是'交互设计同样适用于建筑'这一命题最锋利的实体论证。",
+  "ko": "게리 창의 '도메스틱 트랜스포머'는 32㎡ 홍콩 아파트를 슬라이딩 월과 접이식 요소로 24가지 레이아웃으로 바꾼다. 20년이 지나도 — 인터랙션 디자인이 건축에도 적용된다는 가장 날카로운 실물 논증.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/architecture/gary-chang-domestic-transformer-32-sqm-hong-kong-living-space-24-ways/"
+ },
+ {
+  "tag": "Industrial",
+  "t": "Venetian blinds reborn as lighting",
+  "en": "Reza Raeisifar's Keker collection rolls discarded aluminum blind slats into cylindrical pendants and wall fixtures, using the slats' own geometry to direct light. Recycling that doesn't apologize — the waste material is the design language.",
+  "zh": "Reza Raeisifar 的 Keker 系列把废弃的铝制百叶帘片卷成圆柱形吊灯与壁灯，用帘片自身的几何来控光。这是不带歉意的再利用——废料本身就是设计语言。",
+  "ko": "레자 라에이시파르의 케케르 컬렉션은 버려진 알루미늄 블라인드 슬랫을 말아 원통형 펜던트와 벽 조명으로 만든다. 슬랫 고유의 기하학이 빛을 조율한다. 사과하지 않는 재활용 — 폐기물 자체가 디자인 언어다.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/design/discarded-aluminum-blinds-cylindrical-lighting-system-keker-collection-reza-raeisifar/"
+ },
+ {
+  "tag": "Visual",
+  "t": "A sailor's knot cast in glass",
+  "en": "François Hurtaud casts a figure-eight maritime knot into a glass sculpture that projects shifting shadow drawings onto the wall as it glows. Object, light source and graphic all at once — the kind of piece that blurs product and image-making.",
+  "zh": "François Hurtaud 把一枚八字海员结铸成玻璃雕塑，点亮时在墙上投出不断变化的阴影图案。物件、光源与图形三位一体——正是那种模糊了产品与图像创作边界的作品。",
+  "ko": "프랑수아 위르토는 8자 매듭을 유리 조각으로 떠냈다. 불이 켜지면 벽에 변화하는 그림자 드로잉이 투사된다. 오브제이자 광원이자 그래픽 — 프로덕트와 이미지 메이킹의 경계를 흐리는 작업.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/art/figure-eight-knot-glass-light-sculpture-shifting-shadows-noeuds-marins-francois-hurtaud/"
+ },
+ {
+  "tag": "Design",
+  "t": "An unofficial A8 that keeps the grille",
+  "en": "An independent concept reimagines the Audi A8 with classic sedan proportions and a proper traditional grille — a pointed rejection of the melted-EV aesthetic. Render or not, it captures a real mood: the pendulum swinging back toward formality.",
+  "zh": "一份独立概念以经典轿车比例和一张堂堂正正的传统格栅重新想象奥迪 A8——对'融化式'电车美学的鲜明拒绝。哪怕只是渲染图，它捕捉到了真实的情绪：钟摆正摆回庄重一侧。",
+  "ko": "한 독립 콘셉트가 아우디 A8를 고전적 세단 비례와 당당한 전통 그릴로 다시 그렸다. '녹아내린 EV' 미학에 대한 명확한 거부. 렌더링일지언정 실제 기류를 포착했다 — 추는 다시 격식 쪽으로 돌아오는 중.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/09/02/unofficial-audi-a8-concept-keeps-classic-sedan-proportions-and-a-traditional-grille/"
+ },
+ {
+  "tag": "Industrial",
+  "t": "A CD player that shows its work",
+  "en": "Instead of hiding the transport, this CD player puts the spinning disc and mechanism on open display — playback as performance. In a streaming decade, the pleasure it sells is watching the machine do the thing.",
+  "zh": "这台 CD 机不再隐藏机芯，而是把旋转的碟片与机械结构完全敞开展示——播放即表演。在流媒体的十年里，它出售的乐趣是：看着机器把事情做完。",
+  "ko": "이 CD 플레이어는 트랜스포트를 숨기는 대신 회전하는 디스크와 메커니즘을 그대로 드러낸다. 재생이 곧 퍼포먼스. 스트리밍의 시대에 이 물건이 파는 즐거움은 '기계가 일하는 걸 지켜보는 것'이다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/09/02/this-cd-player-doesnt-hide-its-mechanism-it-puts-it-on-display/"
+ },
+ {
+  "tag": "Industrial",
+  "t": "Lume Ranger: teak in, aluminum out",
+  "en": "The Lume Ranger travel trailer wraps a pop-up roof and teak-lined interior in a compact riveted-aluminum shell — yacht warmth in an Airstream diet. Small-space cabin design with lessons for anyone packaging comfort into a vehicle footprint.",
+  "zh": "Lume Ranger 旅行拖挂把升顶结构和柚木内饰装进紧凑的铆接铝壳——Airstream 的身材，游艇的温度。这种小空间舱体设计，对任何要把舒适装进车辆尺寸里的人都有启发。",
+  "ko": "루메 레인저 트레일러는 팝업 루프와 티크 마감 인테리어를 컴팩트한 리벳 알루미늄 셸에 담았다. 에어스트림의 몸집에 요트의 온기. 차량 풋프린트 안에 안락함을 패키징해야 하는 모두에게 참고가 될 스몰 스페이스 캐빈 디자인.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/09/02/lume-ranger-is-compact-aluminum-travel-trailer-with-teak-interiors-and-pop-up-roof/"
+ },
+ {
+  "tag": "Visual",
+  "t": "BIG's Suzhou museum: 12 pavilions",
+  "en": "Bjarke Ingels Group's Museum of Contemporary Art in Suzhou opens as a village of twelve interlinked pavilions along the waterfront, borrowing the wandering logic of classical Chinese gardens. Exhibition-going recast as a stroll rather than a sequence.",
+  "zh": "BIG 的苏州当代美术馆开馆：十二座相连的展亭沿水岸铺开，借用中国古典园林的游走逻辑。看展被重新设计成一次漫步，而非一条流线。",
+  "ko": "BIG의 쑤저우 현대미술관이 개관했다. 물가를 따라 이어진 12개의 파빌리온 마을 — 중국 고전 정원의 '거닐기' 논리를 빌렸다. 전시 관람을 동선이 아니라 산책으로 다시 설계한 건축.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/art/big-bjarke-ingels-group-suzhou-museum-contemporary-art-public-village-12-pavilions/"
+ }
+]
