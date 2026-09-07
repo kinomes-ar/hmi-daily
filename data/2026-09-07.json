@@ -15,7 +15,9 @@
   "zh": "WardsAuto 2026 最佳内饰榜从日产轩逸一路排到 Corvette ZR1X 和捷尼赛思的 27 英寸 OLED——而评委反复表扬的点很说明问题：舒服的座椅、诚实的用料、不分散注意力的实体按键。行业自己的裁判，仍然把'可触'排在'炫技'前面。",
   "ko": "워즈오토 2026 베스트 인테리어 리스트는 닛산 센트라부터 콜벳 ZR1X, 제네시스 27인치 OLED까지 이어진다. 심사평에서 반복되는 칭찬이 의미심장하다 — 편한 시트, 정직한 소재, 주의를 뺏지 않는 물리 버튼. 업계의 심판들은 여전히 스펙터클보다 촉각에 점수를 준다.",
   "src": "The Car Guide",
-  "url": "https://www.guideautoweb.com/en/articles/81867/top-10-best-car-interiors-of-2026-according-to-wardsauto/"
+  "url": "https://www.guideautoweb.com/en/articles/81867/top-10-best-car-interiors-of-2026-according-to-wardsauto/",
+  "img": "assets/2026-09-07-2.jpg",
+  "img_src": "https://i.gaw.to/content/photos/70/40/704060-les-10-meilleurs-habitacles-de-2026-selon-wardsauto.jpeg?1024x640"
  },
  {
   "tag": "AI",
@@ -24,7 +26,9 @@
   "zh": "Anker 在 IFA 展出的 MindBase，为现有的 eufy 家用摄像头加装端侧 AI 和最高 48TB 本地存储——更聪明的检索与识别，却不需要云订阅。一个鲜明的设计立场：智能是你拥有的升级，而不是你租用的服务。",
   "ko": "앵커가 IFA에서 선보인 마인드베이스는 기존 유피 홈 카메라에 온디바이스 AI와 최대 48TB 로컬 메모리를 더한다. 클라우드 구독 없이 더 똑똑한 검색과 인식. 선명한 디자인 입장 — 지능은 빌려 쓰는 서비스가 아니라 소유하는 업그레이드다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/03/anker-mindbase-gives-your-old-eufy-cameras-a-real-brain-and-48tb-of-memory-hands-on-at-ifa-2026/"
+  "url": "https://www.yankodesign.com/2026/09/03/anker-mindbase-gives-your-old-eufy-cameras-a-real-brain-and-48tb-of-memory-hands-on-at-ifa-2026/",
+  "img": "assets/2026-09-07-3.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/645767/anker_mindbase_1.jpg"
  },
  {
   "tag": "Interaction",
@@ -33,7 +37,9 @@
   "zh": "Yanko 巡礼 IFA 2026 的怪奇角落：点亮时悬浮的台灯、狗狗跳三下就能给你打电话的穿戴设备、能在破纸上打印的打印机、带真回车杆的打字机键盘。边缘地带，正是交互创意进入主流前的排练场。",
   "ko": "얀코가 돌아본 IFA 2026의 기묘한 구석 — 켜진 채 공중부양하는 램프, 개가 세 번 점프하면 주인에게 전화가 걸리는 웨어러블, 찢어진 종이에 인쇄하는 프린터, 실제 리턴 레버가 달린 타자기 키보드. 프린지는 인터랙션 아이디어가 주류로 가기 전 리허설하는 무대다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/06/floating-lamps-pet-phones-and-printers-that-print-on-ripped-paper-the-weird-wonderful-gadgets-at-ifa-2026/"
+  "url": "https://www.yankodesign.com/2026/09/06/floating-lamps-pet-phones-and-printers-that-print-on-ripped-paper-the-weird-wonderful-gadgets-at-ifa-2026/",
+  "img": "assets/2026-09-07-4.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/draft-gcs-screens-workspaces-etc/gcs_screens_workplaces_ifa2026_9.jpg"
  },
  {
   "tag": "Design",
@@ -51,7 +57,9 @@
   "zh": "AEG 在 IFA 把严格的包豪斯纪律用在了台式披萨炉上：纯粹几何、诚实材料、零家电媚俗。证明哪怕最容易堆噱头的品类，只要设计语言是被执行而非被装饰的，也会安静下来。",
   "ko": "AEG가 IFA에서 카운터톱 피자 오븐에 엄격한 바우하우스 규율을 적용했다. 순수한 기하, 정직한 소재, 가전 특유의 키치 제로. 노벨티로 흐르기 쉬운 카테고리도 디자인 언어를 '장식'이 아니라 '집행'하면 차분해진다는 증명.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/06/what-happens-when-bauhaus-meets-a-pizza-oven-aeg-just-showed-us-at-ifa-2026/"
+  "url": "https://www.yankodesign.com/2026/09/06/what-happens-when-bauhaus-meets-a-pizza-oven-aeg-just-showed-us-at-ifa-2026/",
+  "img": "assets/2026-09-07-6.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/draft-aeg-design-challenge/aeg_pizza_oven_challenge_ifa2026_1.jpg"
  },
  {
   "tag": "Industrial",
@@ -60,7 +68,9 @@
   "zh": "ARBREST COVE 办公椅从女性人体数据出发——姿态、比例、支撑点——而不是把围绕男性平均值设计的椅子等比缩小。它安静地控诉着：所谓'通用'人体工学，从来就没通用过。",
   "ko": "아브레스트 코브 오피스 체어는 남성 평균에 맞춘 의자를 축소하는 대신, 여성 인체 데이터 — 자세·비례·지지점 — 에서 출발한다. '유니버설' 에르고노믹스가 사실 한 번도 유니버설이 아니었다는 조용한 고발.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/06/arbrest-cove-is-the-office-chair-that-is-actually-designed-for-women/"
+  "url": "https://www.yankodesign.com/2026/09/06/arbrest-cove-is-the-office-chair-that-is-actually-designed-for-women/",
+  "img": "assets/2026-09-07-7.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/cove-is-the-office-chair-that-actually-leaves-room-for-your-ponytail/arbest-cove-ergonomic-chair-01.jpg"
  },
  {
   "tag": "Industrial",
@@ -69,7 +79,9 @@
   "zh": "可穿戴外骨骼长期强化髋部与腰背，却忽视最先垮掉的关节——Halo 把助力逻辑围绕膝盖重建。体外机动设计正从'力量放大器'走向'定点关节关怀'。",
   "ko": "웨어러블 엑소스켈레톤은 오랫동안 고관절과 허리만 보조하며 가장 먼저 망가지는 관절을 외면해왔다. 헤일로는 어시스트를 무릎 중심으로 다시 설계했다. 신체 착용형 모빌리티가 '근력 증폭기'에서 '표적 관절 케어'로 성숙하는 중.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/05/exoskeletons-always-ignored-your-knees-but-halo-doesnt/"
+  "url": "https://www.yankodesign.com/2026/09/05/exoskeletons-always-ignored-your-knees-but-halo-doesnt/",
+  "img": "assets/2026-09-07-8.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/exoskeletons-always-ignored-your-knees-halo-doesnt/hypershell-01.jpg"
  },
  {
   "tag": "Visual",
@@ -78,7 +90,9 @@
   "zh": "2026 阿姆斯特丹时装周把秀场散落在各种实验性场地——包括一条穿过营业中超市的秀道。布景即信息：被放进日常基础设施里的时装，与被供上高台的时装，读起来完全不同。",
   "ko": "암스테르담 패션위크 2026이 쇼를 실험적 장소들로 흩어놓았다 — 영업 중인 슈퍼마켓을 관통하는 런웨이까지. 연출이 곧 메시지다. 일상의 인프라 속에 놓인 패션은 좌대 위의 패션과 완전히 다르게 읽힌다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/amsterdam-fashion-week-2026-design-highlights-performance/"
+  "url": "https://www.designboom.com/design/amsterdam-fashion-week-2026-design-highlights-performance/",
+  "img": "assets/2026-09-07-9.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/amsterdam-fashion-week-2026-design-highlights-performance-designboom-644-667x1000.jpg"
  },
  {
   "tag": "Design",
@@ -87,7 +101,9 @@
   "zh": "designboom 回访 Leisurama：Andrew Geller 与 Raymond Loewy 在 1960 年代设计的预制海滨小屋，在梅西百货有售，家具乃至牙刷都配齐。世纪中叶的证明——'为所有人设计'曾经意味着一整栋房子，零售定价，拎包入住。",
   "ko": "designboom이 레저라마를 재조명한다. 앤드루 겔러와 레이먼드 로위가 설계해 메이시스 백화점에서 팔린 1960년대 조립식 해변 주택 — 가구부터 칫솔까지 포함. '모두를 위한 디자인'이 집 한 채 통째, 소매가로, 입주 준비 완료를 뜻하던 미드센추리의 증거.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/leisurama-promise-fabulous-mid-century-vacationing-for-all/"
+  "url": "https://www.designboom.com/design/leisurama-promise-fabulous-mid-century-vacationing-for-all/",
+  "img": "assets/2026-09-07-10.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/leisurama-designboom-49.jpg"
  },
  {
   "tag": "Design",
@@ -96,7 +112,9 @@
   "zh": "designboom 的一篇随笔把上海的摩天楼顶读作一套寻路系统：每个独特的'楼冠'都是地标，在街道层为人定向，同时向外播报城市的野心。天际线在此被当作界面分析，而不只是剪影。",
   "ko": "designboom의 에세이는 상하이의 타워 꼭대기들을 웨이파인딩 시스템으로 읽는다. 저마다 다른 '크라운'이 거리에서 사람의 방향을 잡아주는 동시에 도시의 야심을 송출하는 랜드마크. 스카이라인을 실루엣이 아니라 인터페이스로 분석한 글.",
   "src": "designboom",
-  "url": "https://www.designboom.com/architecture/paul-clemence-skyscraper-crowns-landmarks-shanghai-guest-essay/"
+  "url": "https://www.designboom.com/architecture/paul-clemence-skyscraper-crowns-landmarks-shanghai-guest-essay/",
+  "img": "assets/2026-09-07-11.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/paul-clemence-skyscraper-crowns-landmarks-shanghai-guest-essay-designboom-4.jpg"
  },
  {
   "tag": "Industrial",
@@ -105,7 +123,9 @@
   "zh": "MÖDEK 的 Evolution Pro 把唱机、混音台和所有线缆收进一个连续的白色单体壳。专业音频设备用上了汽车级的曲面纪律——DJ 台成为雕塑，而非一堆机箱。",
   "ko": "뫼덱의 에볼루션 프로는 턴테이블·믹서·모든 케이블을 하나의 연속된 화이트 모노코크에 담았다. 자동차급 서피스 규율로 스타일링된 프로 오디오 — 부스가 장비 랙이 아니라 조각이 된다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/continuous-white-dj-console-turntables-mixers-hidden-cables-modek-evolution-pro/"
+  "url": "https://www.designboom.com/design/continuous-white-dj-console-turntables-mixers-hidden-cables-modek-evolution-pro/",
+  "img": "assets/2026-09-07-12.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/09/modek-imagine-sound-furniture-dj-booths-designboom-1200-1.jpg"
  },
  {
   "tag": "Design",
@@ -114,7 +134,9 @@
   "zh": "designboom 梳理'被动生存力'：利用热质量、穿堂风与遮阳，让住宅在停电与热浪中保持宜居。气候韧性被重新表述为一个布局问题——在工程师接通任何设备之前，设计师就该解掉它。",
   "ko": "designboom이 '패시브 생존력'을 정리했다. 축열체·맞통풍·차양으로 정전과 폭염 속에서도 거주 가능한 집을 유지하는 법. 기후 리질리언스를 — 엔지니어가 무언가를 꽂기 전에 디자이너가 푸는 — 레이아웃 문제로 재정의한다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/architecture/power-goes-out-keep-house-cooling-passive-survivability/"
+  "url": "https://www.designboom.com/architecture/power-goes-out-keep-house-cooling-passive-survivability/",
+  "img": "assets/2026-09-07-13.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/cooling-without-electricity-architecture-designboom-FB.jpg"
  },
  {
   "tag": "Design",
@@ -123,7 +145,9 @@
   "zh": "比亚迪腾势 N8L 将于 9 月 14 日上市：130 kWh 电池、960 公里续航——还有 208 升的前备箱，在量产电动车里名列前茅。'包装布置'成了头条卖点：引擎盖下的空腔如今是被设计、被营销的体积。",
   "ko": "BYD 덴자 N8L이 9월 14일 출시된다. 130kWh 배터리, 960km 주행거리 — 그리고 양산 EV 최대급인 208리터 프렁크. 패키징이 헤드라인 사양이 된 시대. 후드 아래 빈 공간은 이제 설계되고 마케팅되는 볼륨이다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/05/byds-denza-n8l-ev-to-launch-september-14-with-130-kwh-battery-960-km-range-and-208l-frunk/"
+  "url": "https://carnewschina.com/2026/09/05/byds-denza-n8l-ev-to-launch-september-14-with-130-kwh-battery-960-km-range-and-208l-frunk/",
+  "img": "assets/2026-09-07-14.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/remove-writing-and-white-frame-around-car_webhook_1500x900_q85_1788615968.jpg"
  },
  {
   "tag": "Industrial",
@@ -132,7 +156,9 @@
   "zh": "在日本全国植树节上，Yano 与 Aoyama 用三片可旋转的雪松·扁柏 CLT 板搭起临时展亭——所有节点都为事后回收而设计。'可拆解'在这里是设计要求，而非事后的补救。",
   "ko": "일본 전국식수제를 위해 야노와 아오야마는 삼나무·편백 CLT 세 장의 회전 평면으로 임시 파빌리온을 세웠다. 모든 패널이 행사 후 회수되도록 디테일링된 구조. 해체가 사후 고려가 아니라 설계 요구조건으로 다뤄진 사례.",
   "src": "designboom",
-  "url": "https://www.designboom.com/architecture/temporary-timber-pavilion-cedar-cypress-reclaimed-clt-japan-forest-festival-onodatesho-yano-aoyama/"
+  "url": "https://www.designboom.com/architecture/temporary-timber-pavilion-cedar-cypress-reclaimed-clt-japan-forest-festival-onodatesho-yano-aoyama/",
+  "img": "assets/2026-09-07-15.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/onodatesho-temporary-timber-pavilion-japan-forest-festival-yano-aoyama-designboom-1200-1.jpg"
  },
  {
   "tag": "Industrial",
@@ -141,7 +167,8 @@
   "zh": "IFA 上手的 Lexar Muse 号称全球最薄移动固态硬盘——存储被压缩到物体几乎只剩表面。硬件正滑向卡片般的匿名形态，而在这里，工业设计本身就是那条规格。",
   "ko": "IFA에서 만져본 렉사 뮤즈는 '세계에서 가장 얇은 포터블 SSD'를 자처한다. 물체가 거의 표면만 남을 때까지 압축된 스토리지. 하드웨어가 카드 같은 익명성으로 흘러가는 흐름 속에서 — 산업디자인 자체가 곧 스펙이 된 사례.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/06/we-held-the-worlds-thinnest-portable-ssd-at-ifa-2026-hands-on-with-the-lexar-muse/"
+  "url": "https://www.yankodesign.com/2026/09/06/we-held-the-worlds-thinnest-portable-ssd-at-ifa-2026-hands-on-with-the-lexar-muse/",
+  "img": "assets/2026-09-07-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/we-held-the-worlds-thinnest-portable-ssd-at-ifa-hands-on-with-the-lexar-muse/lexar_muse_ssd_ifa_2026_1.jpg"
  }
 ]
-
