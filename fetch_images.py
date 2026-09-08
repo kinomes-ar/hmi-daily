@@ -22,13 +22,50 @@ EXT = {"image/jpeg": ".jpg", "image/jpg": ".jpg", "image/png": ".png",
        "image/webp": ".webp", "image/gif": ".gif", "image/avif": ".avif"}
 
 
+class _Resp:
+    """Minimal urlopen-compatible wrapper around a curl_cffi response."""
+    def __init__(self, r):
+        self._r = r
+        self.headers = r.headers
+    def read(self, n=-1):
+        return self._r.content if n < 0 else self._r.content[:n]
+    def geturl(self):
+        return str(self._r.url)
+    def __enter__(self):
+        return self
+    def __exit__(self, *a):
+        return False
+
+
+def _cffi_get(url, timeout):
+    """Cloudflare-tolerant fallback: browser TLS fingerprint via curl_cffi."""
+    try:
+        from curl_cffi import requests as creq
+    except ImportError:
+        import subprocess
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "curl_cffi"], check=True)
+        from curl_cffi import requests as creq
+    r = creq.get(url, impersonate="chrome", timeout=timeout, headers={
+        "Accept": "text/html,application/xhtml+xml,image/*,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
+    if r.status_code >= 400:
+        raise urllib.error.HTTPError(url, r.status_code, "cffi %d" % r.status_code, r.headers, None)
+    return _Resp(r)
+
+
 def get(url, timeout=25):
     req = urllib.request.Request(url, headers={
         "User-Agent": UA,
         "Accept": "text/html,application/xhtml+xml,image/*,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
     })
-    return urllib.request.urlopen(req, timeout=timeout)
+    try:
+        return urllib.request.urlopen(req, timeout=timeout)
+    except Exception as e:
+        # Bot walls (403/503/429, TLS resets) -> retry with a real browser fingerprint
+        print("    urllib failed %s :: %s -> curl_cffi" % (url[:60], str(e)[:60]))
+        return _cffi_get(url, timeout)
 
 
 IMG_TAG = re.compile(rb'<img\b[^>]*>', re.I)
@@ -165,8 +202,9 @@ def main():
             # "img_from" lets an item keep its primary source link while pulling
             # the picture from a mirror that actually serves one.
             pages = [u for u in (it.get("img_from"), it["url"]) if u]
-            cands = []
-            for page in pages:
+            # "img_url" pins an explicit image URL (used when the page itself is bot-walled)
+            cands = [it["img_url"]] if it.get("img_url") else []
+            for page in ([] if cands else pages):
                 try:
                     cands = image_candidates(page)
                 except Exception as e:
