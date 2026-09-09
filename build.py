@@ -326,6 +326,41 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
   font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
 }
 .morebar:hover{background:var(--red); color:#fff}
+/* ---- edition date bar + calendar ---- */
+.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin-top:14px; position:relative}
+.datebar a,.datebar button{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  padding:6px 12px; line-height:1.4; text-decoration:none; display:inline-flex; align-items:center; gap:6px;
+}
+.datebar a:hover,.datebar button:hover{background:var(--shade)}
+.datebar a[aria-disabled="true"]{opacity:.3; pointer-events:none}
+.datebar .arrow{padding:6px 10px}
+.datebar .cur{font-variant-numeric:tabular-nums; letter-spacing:.1em}
+.datebar .cur svg{width:13px; height:13px; display:block; stroke:currentColor; stroke-width:1.8; fill:none}
+.cal{
+  position:absolute; top:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
+  background:var(--ground); border:1px solid var(--ink); padding:14px; width:292px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.cal[hidden]{display:none}
+.calhead{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px}
+.calhead .mon{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+.calhead button{appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); width:28px; height:24px; font:inherit; font-size:12px; line-height:1; padding:0}
+.calhead button:hover{background:var(--shade)}
+.calgrid{display:grid; grid-template-columns:repeat(7,1fr); gap:3px}
+.calgrid .wd{font-size:8.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:center; padding:3px 0 5px}
+.calgrid .d{aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:12px;
+  color:var(--muted); border-radius:999px; text-decoration:none; font-variant-numeric:tabular-nums}
+.calgrid .d.has{color:var(--ink); font-weight:700; border:1.5px solid var(--ink)}
+.calgrid .d.has:hover{background:var(--ink); color:var(--ground)}
+.calgrid .d.now{background:var(--red); color:var(--onred); border-color:var(--red)}
+.calgrid .d.off{opacity:.35}
+.calfoot{margin-top:10px; padding-top:9px; border-top:1px solid var(--hair); display:flex; justify-content:space-between;
+  font-size:9px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.calfoot a{color:var(--red); text-decoration:none}
+
 /* ---- top nav (Daily / Weekly / My) ---- */
 .topnav{display:flex; gap:18px; align-items:center}
 .topnav a{color:var(--ink); text-decoration:none; padding-bottom:2px; border-bottom:1.5px solid transparent}
@@ -537,6 +572,63 @@ def render_days(days):
     return "".join(body)
 
 
+def datebar(d, dates):
+    """Prev / current / next edition controls plus the calendar popover."""
+    idx = dates.index(d)
+    older = dates[idx + 1] if idx + 1 < len(dates) else None   # dates is newest-first
+    newer = dates[idx - 1] if idx > 0 else None
+    y, m, dd = (int(x) for x in d.split("-"))
+    label = _date(y, m, dd).strftime("%a %d %b %Y")
+    def arrow(target, glyph, lbl):
+        if target:
+            return '<a class="arrow" href="%s.html" aria-label="%s">%s</a>' % (target.replace("-", ""), lbl, glyph)
+        return '<a class="arrow" aria-disabled="true">%s</a>' % glyph
+    return ('<div class="datebar">{older}'
+            '<button type="button" class="cur" id="calbtn" aria-expanded="false" aria-haspopup="dialog">'
+            '<svg viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 7h12M5 1.5v3M11 1.5v3"/></svg>{label}</button>'
+            '{newer}<div class="cal" id="cal" hidden role="dialog" aria-label="Pick an edition"></div></div>'
+            ).format(older=arrow(older, "&larr;", "Previous edition"), newer=arrow(newer, "&rarr;", "Next edition"), label=esc(label))
+
+
+CAL_JS = r"""<script>
+(function(){
+  var btn=document.getElementById('calbtn'), cal=document.getElementById('cal'); if(!btn||!cal) return;
+  var dates=window.ADUX_DATES||[], cur=window.ADUX_CUR||'', latest=dates[0]||'';
+  var has={}; dates.forEach(function(d){ has[d]=1; });
+  var y=parseInt(cur.slice(0,4),10), m=parseInt(cur.slice(5,7),10)-1;
+  var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function pad(n){ return (n<10?'0':'')+n; }
+  function draw(){
+    var first=new Date(y,m,1), start=(first.getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+    var h='<div class="calhead"><button type="button" data-go="-1" aria-label="Previous month">&lsaquo;</button>'+
+      '<span class="mon">'+MON[m]+' '+y+'</span><button type="button" data-go="1" aria-label="Next month">&rsaquo;</button></div>'+
+      '<div class="calgrid">'+['Mo','Tu','We','Th','Fr','Sa','Su'].map(function(w){ return '<span class="wd">'+w+'</span>'; }).join('');
+    for(var i=0;i<start;i++) h+='<span class="d off"></span>';
+    for(var d=1;d<=days;d++){
+      var iso=y+'-'+pad(m+1)+'-'+pad(d);
+      if(has[iso]) h+='<a class="d has'+(iso===cur?' now':'')+'" href="'+iso.replace(/-/g,'')+'.html">'+d+'</a>';
+      else h+='<span class="d">'+d+'</span>';
+    }
+    h+='</div><div class="calfoot"><span>'+dates.length+' editions</span><a href="'+latest.replace(/-/g,'')+'.html">Latest &rarr;</a></div>';
+    cal.innerHTML=h;
+    [].forEach.call(cal.querySelectorAll('[data-go]'),function(b){
+      b.addEventListener('click',function(e){ e.stopPropagation(); m+=parseInt(b.dataset.go,10); if(m<0){m=11;y--;} if(m>11){m=0;y++;} draw(); });
+    });
+  }
+  function open(o){ cal.hidden=!o; btn.setAttribute('aria-expanded',String(o)); if(o){ y=parseInt(cur.slice(0,4),10); m=parseInt(cur.slice(5,7),10)-1; draw(); } }
+  btn.addEventListener('click',function(e){ e.stopPropagation(); open(cal.hidden); });
+  document.addEventListener('click',function(e){ if(!cal.hidden&&!cal.contains(e.target)) open(false); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') open(false);
+    if(e.target&&/input|textarea/i.test(e.target.tagName)) return;
+    var i=dates.indexOf(cur);
+    if(e.key==='ArrowLeft'&&i+1<dates.length) location.href=dates[i+1].replace(/-/g,'')+'.html';
+    if(e.key==='ArrowRight'&&i>0) location.href=dates[i-1].replace(/-/g,'')+'.html';
+  });
+})();
+</script>"""
+
+
 # ---------------------------------------------------------------- weekly
 WEEKLY = os.path.join(HERE, "weekly")
 
@@ -566,8 +658,8 @@ def render_weeks(weeks, index, counts):
                 it = byid.get(iid)
                 if not it:
                     continue
-                lis.append('<li><a href="index.html#d%s" data-id="%s">%s</a><span class="who">%s</span></li>' % (
-                    it["date"], iid, esc(it["t"]), esc(it["src"])))
+                lis.append('<li><a href="%s.html" data-id="%s">%s</a><span class="who">%s</span></li>' % (
+                    it["date"].replace("-", ""), iid, esc(it["t"]), esc(it["src"])))
             cats.append('<div class="wcat" id="%s"><span class="tagrow" style="--cat:%s"><span class="tag">%s</span></span>%s<ul>%s</ul></div>' % (
                 cid, cat_colour(tag), esc(tag), txt, "".join(lis)))
         # most loved: explicit list in the file, else computed from the like snapshot
@@ -875,7 +967,16 @@ def render_all():
     days = load_days()
     index = items_index(days)
     counts = load_likes()
-    daily = page("ADUX Daily", "Latest News", "daily", FILTERS + render_days(days))
+    dates = [d for d, _ in days]
+    daily = {}
+    for d, items in days:
+        latest = d == dates[0]
+        h1 = "Latest News" if latest else "Back Issue"
+        daily[d] = page("ADUX Daily" if latest else "ADUX Daily · " + d, h1, "daily",
+                        FILTERS + render_days([(d, items)]),
+                        kicker=datebar(d, dates),
+                        extra_js='<script>window.ADUX_DATES=%s;window.ADUX_CUR=%s;</script>' % (
+                            json.dumps(dates), json.dumps(d)) + CAL_JS)
     my = page("ADUX Daily · My", "My &#9829;", "my",
               '<div class="dayhead" style="margin-top:22px"><h2>Saved on this device</h2><span class="rule"></span>'
               '<button type="button" class="clearbtn" id="clearall" hidden>Clear all</button></div>'
@@ -917,19 +1018,17 @@ if __name__ == "__main__":
     latest = os.path.basename(_files[0])[:-5] if _files else ""
     daily, my, weekly, index = render_all()
     if "standalone" in args:
-        doc = standalone(daily)
-        open(os.path.join(HERE, "index.html"), "w").write(doc)
-        print("wrote index.html")
-        # a dated copy gives every edition its own path — webview caches
-        # that ignore query strings can never serve yesterday's page
+        # one page per edition (YYYYMMDD.html); index.html is the latest one.
+        # a dated path per edition means webview caches can never serve yesterday's page
+        for d, doc in daily.items():
+            open(os.path.join(HERE, d.replace("-", "") + ".html"), "w").write(standalone(doc))
         if latest:
-            dated = latest.replace("-", "") + ".html"
-            open(os.path.join(HERE, dated), "w").write(doc)
-            print("wrote", dated)
+            open(os.path.join(HERE, "index.html"), "w").write(standalone(daily[latest]))
+        print("wrote index.html + %d dated pages" % len(daily))
         open(os.path.join(HERE, "my.html"), "w").write(standalone(my))
         open(os.path.join(HERE, "weekly.html"), "w").write(standalone(weekly))
         json.dump(index, open(os.path.join(HERE, "items.json"), "w"), ensure_ascii=False, separators=(",", ":"))
         print("wrote my.html, weekly.html, items.json (%d items)" % len(index))
     else:
-        open(os.path.join(HERE, "artifact.html"), "w").write(daily)
+        open(os.path.join(HERE, "artifact.html"), "w").write(daily[latest] if latest else "")
         print("wrote artifact.html")
