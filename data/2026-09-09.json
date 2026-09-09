@@ -7,7 +7,9 @@
   "ko": "아우디가 A2를 2027년형 전기 크로스오버로 되살렸다. 1999년 원조의 박스형 차체와 분할 리어 윈도를 오마주하고, 역대 가장 효율적인 아우디(12.8 kWh/100 km, Cd 0.24, WLTP 최대 645 km)를 표방하며 개발 기간은 단 21개월. 실내는 11.9인치 클러스터+12.8인치 커브드 터치스크린, 25 W Qi 2.2 듀얼 패드, 그리고 액세서리를 어디든 붙이는 Fidlock 자석 마운트 시스템. 도어 핸들은 필러 하단의 센서식 '윙'으로 숨었다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/audi-a2-e-tron-launch/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Audi-A2-e-tron-v2-lead-Sep4261-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Audi-A2-e-tron-v2-lead-Sep4261-1024x576.jpg",
+  "img": "assets/2026-09-09-1.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Audi-A2-e-tron-v2-lead-Sep4261-1024x576.jpg"
  },
  {
   "tag": "Visual",
@@ -16,7 +18,9 @@
   "zh": "PRINT的Type Tuesday专栏评介布鲁克林Koyubi Studio（Mio Kosaka、Mizuki Hanada、Monet Fukawa）的《J Type 101》，号称首本英文日文排版指南。44页、十堂课，讲解平假名、片假名与汉字、网格排版、竖排与横排、字距、断行、标点以及日文与拉丁字母的混排；该书获ICMA 2025卓越奖。",
   "ko": "PRINT의 Type Tuesday가 브루클린 Koyubi Studio(코사카 미오·하나다 미즈키·후카와 모네)의 『J Type 101』을 소개했다. 최초의 영문 일본어 타이포그래피 가이드를 표방하며, 44쪽·10개 레슨으로 히라가나·가타카나·한자, 그리드 조판, 세로쓰기 vs 가로쓰기, 자간, 줄바꿈, 문장부호, 일문+라틴 혼용을 다룬다. ICMA 2025 우수상 수상작.",
   "src": "PRINT",
-  "url": "https://www.printmag.com/type-tuesday/lost-in-translation-a-designers-guide-to-japanese-type/"
+  "url": "https://www.printmag.com/type-tuesday/lost-in-translation-a-designers-guide-to-japanese-type/",
+  "img": "assets/2026-09-09-2.png",
+  "img_src": "https://www.printmag.com/wp-content/uploads/2026/09/J-Type-101-1-1-1024x629.png"
  },
  {
   "tag": "AI",
@@ -26,7 +30,9 @@
   "ko": "결함으로 10억 달러 넘게 잃은 포드가 3년간 약 350명의 시니어 기술 전문가(사내 별명 '그레이 비어드')를 채용해 J.D. Power 2026 초기품질조사에서 2023년 23위→대중 브랜드 1위로 뛰어올랐다. 디자인 팀에 주는 교훈: AI는 데이터를 돌리고 시스템 작동을 검증하지만, 익스플로러의 수동 테일게이트 결함처럼 양산 전 설계·엔지니어링 문제를 잡는 건 여전히 경험 많은 사람의 몫.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/when-ai-wasnt-good-enough-ford-rehired-the-kind-of-experts-it-fired/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Ford-Experts-Main-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Ford-Experts-Main-1024x576.jpg",
+  "img": "assets/2026-09-09-3.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Ford-Experts-Main-1024x576.jpg"
  },
  {
   "tag": "Interaction",
@@ -36,7 +42,9 @@
   "ko": "현대차 CEO 인베스터 데이에서 박민우 AVP본부장(42dot CEO)이 '데이터 플라이휠'을 설명했다. 수백만 대의 차량이 주행·인포테인먼트 데이터를 새 100 MW·5만 GPU 새만금 AI 데이터센터로 보내고, 개선분은 OTA로 되돌아온다. 국내 그랜저부터 시작해 현대·기아·42dot·모셔널의 엔비디아 기반 센서를 표준화하고, Atria AI 주행 스택과 Gleo 생성형 어시스턴트를 학습시켜 2028년 양산차 L2+를 목표로 한다.",
   "src": "WardsAuto",
   "url": "https://www.wardsauto.com/news/hyundai-building-a-data-flywheel-to-strengthen-its-sdv-capabilities/829555/",
-  "img_url": "https://imgproxy.divecdn.com/kA1_IAAykjX5qciR2XmPJ2IR_h5Ul0ExOl5dXnhjdFI/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDktMDNfYXRfOS4wOC4zNEFNLnBuZw==.webp"
+  "img_url": "https://imgproxy.divecdn.com/kA1_IAAykjX5qciR2XmPJ2IR_h5Ul0ExOl5dXnhjdFI/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDktMDNfYXRfOS4wOC4zNEFNLnBuZw==.webp",
+  "img": "assets/2026-09-09-4.webp",
+  "img_src": "https://imgproxy.divecdn.com/kA1_IAAykjX5qciR2XmPJ2IR_h5Ul0ExOl5dXnhjdFI/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDktMDNfYXRfOS4wOC4zNEFNLnBuZw==.webp"
  },
  {
   "tag": "Micromobility",
@@ -56,7 +64,9 @@
   "ko": "EQE를 대체하는 전기 E-클래스가 위장을 크게 걷어낸 채 포착됐다. 전통적 세단 비례, 별 모양 주간주행등, 직선형 LED 테일 그래픽, 전기 GLC·C-클래스처럼 발광 그릴이 유력. 실내는 상위 트림에 풀와이드 디지털 대시보드가 예상되지만, Carscoops는 조수석 화면이 거의 쓰이지 않는다는 연구를 짚었다. MB.EA, 800 V, 330 kW 충전, 2027년 판매.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/mercedes-benz-e-class-electric-scoop/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Mercedes-E-class-EQ-scoop-Sep8261-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Mercedes-E-class-EQ-scoop-Sep8261-1024x576.jpg",
+  "img": "assets/2026-09-09-6.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Mercedes-E-class-EQ-scoop-Sep8261-1024x576.jpg"
  },
  {
   "tag": "Cockpit",
@@ -66,7 +76,9 @@
   "ko": "현대차가 유럽에 스타리아 일렉트릭을 내놨다. ID. Buzz보다 크고 싼 대안으로 전장 5,253 mm, 최대 9인승, 84 kWh 배터리로 WLTP 430 km, 10→80% 약 20분. 그릴은 액티브 셔터가 달린 매끈한 패널로, 캘리그래피 트림은 루프까지 오르는 파라메트릭 픽셀 LED 테일램프 타워, 전 트림 12.3인치 듀얼 디스플레이. 7인승 캘리그래피는 2열에 열선·통풍 릴랙션 시트.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/hyundai-staria-electric-europe/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Hyundai-Staria-Electric-Europe-main-copy-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Hyundai-Staria-Electric-Europe-main-copy-1024x576.jpg",
+  "img": "assets/2026-09-09-7.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Hyundai-Staria-Electric-Europe-main-copy-1024x576.jpg"
  },
  {
   "tag": "Design",
@@ -75,7 +87,9 @@
   "zh": "伪装版smart #2原型车在北京、上海、深圳路测，10月巴黎车展首发。双门双座延续经典Fortwo配方：车长2,751-2,764 mm、轴距1,875 mm、整备质量1,130 kg，基于小型车ECA架构转弯直径仅6.95 m；表情化大灯、封闭格栅、圆形尾灯与双色车顶，60 kW电机搭配35.7 kWh宁德时代磷酸铁锂电池，续航约300 km。",
   "ko": "위장한 스마트 #2 프로토타입이 베이징·상하이·선전에서 포착됐다. 10월 파리 모터쇼 데뷔 예정. 2도어 2인승으로 포투 공식을 잇는데 전장 2,751~2,764 mm, 휠베이스 1,875 mm, 공차 1,130 kg, 소형차 전용 ECA 플랫폼으로 회전직경 6.95 m. 표정 있는 헤드램프, 막힌 그릴, 원형 테일램프, 투톤 루프, 60 kW 모터와 35.7 kWh CATL LFP로 약 300 km.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/08/smart-2-with-camouflage-spotted-on-china-streets/"
+  "url": "https://carnewschina.com/2026/09/08/smart-2-with-camouflage-spotted-on-china-streets/",
+  "img": "assets/2026-09-09-8.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/e59bbee78987-62-e1788850821117_webhook_1500x900_q85_1788851411.jpg"
  },
  {
   "tag": "Micromobility",
@@ -94,7 +108,9 @@
   "zh": "Yanko上手小米18 Fold（219 g，折叠10.68 mm、展开5.02 mm，10,999元起，仅中国发售），恰在苹果折叠屏预期发布前几天。5.38英寸外屏与7.58英寸内屏采用相同比例，应用切换无缝、视频几乎无黑边；折痕手指几乎摸不到，放桌上不像三星那样翘起，展开后更像一台小平板，扬声器布局兼顾立体声平衡。",
   "ko": "Yanko가 샤오미 18 폴드(219 g, 접힘 10.68 mm, 펼침 5.02 mm, 10,999위안부터, 중국 전용)를 만져봤다. 애플 폴더블 예상 발표 며칠 전. 5.38인치 커버와 7.58인치 내부 화면이 같은 비율이라 앱 전환이 매끄럽고 영상 레터박스도 거의 없다. 주름은 손끝에 거의 안 잡히고, 삼성과 달리 책상에 평평히 놓이며, 펼치면 스피커 배치까지 균형 잡힌 작은 태블릿 같다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/"
+  "url": "https://www.yankodesign.com/2026/09/08/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/",
+  "img": "assets/2026-09-09-10.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/xiaomi-18-fold-hands-on-got-here-before-apple-can-it-beat-samsung/xiaomi-18-fold-hands-on-03.jpg"
  },
  {
   "tag": "AI",
@@ -103,7 +119,9 @@
   "zh": "Batten and Kamp的'Beauty Seeker Seeker'是一台驮着单枝兰花的六足机器人，在家中游走并停在最能吸引你目光的地方。它只靠LiDAR导航，摄像头与更高级的传感器被刻意去掉，让作品以行为而非技术被评判。作为2023年'Comfort Seeker Seeker'（Eames椅骑在Spot机器狗上）的续作，它戳向注意力经济；自动化版本计划2027年推出。",
   "ko": "Batten and Kamp의 'Beauty Seeker Seeker'는 난초 한 송이를 얹고 집안을 돌아다니다 당신의 시선이 닿을 자리에 자리 잡는 육족 로봇이다. LiDAR만으로 길을 찾고, 카메라와 고급 센서는 일부러 뺐다—기술이 아니라 행동으로 평가받게 하려고. 2023년 임스 체어를 스팟에 태운 'Comfort Seeker Seeker'의 속편으로 주의력 경제를 꼬집는다. 자동화 버전은 2027년 예정.",
   "src": "designboom",
-  "url": "https://www.designboom.com/art/attention-seeking-ai-robot-mobile-vase-single-orchid-batten-kamp-beauty-seeker-seeker/"
+  "url": "https://www.designboom.com/art/attention-seeking-ai-robot-mobile-vase-single-orchid-batten-kamp-beauty-seeker-seeker/",
+  "img": "assets/2026-09-09-11.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/attention-seeking-ai-robot-mobile-vase-orchid-batten-kamp-beauty-seeker-seeker-designboom-1200-1.jpg"
  },
  {
   "tag": "Visual",
@@ -112,7 +130,9 @@
   "zh": "Creative Boom专访伦敦插画师Innes Clark：在爱丁堡艺术学院经历四年疫情期学业后倦怠，边在面包店打工边恶补平面设计，借餐饮圈人脉做起餐厅品牌、菜单与海报（The Barbary x Layla、Straker's Dining Room）。她的风格是纸上松弛手绘线条，扫描后在Photoshop叠加纹理与混合模式并带点幽默：'这样的作品比AI有趣得多。'",
   "ko": "Creative Boom이 런던 일러스트레이터 Innes Clark를 조명했다. 에든버러 예술대학에서 팬데믹기 4년을 보내고 번아웃, 빵집에서 일하며 그래픽 디자인을 독학하다 그 외식업 인연으로 레스토랑 브랜딩·메뉴·포스터(The Barbary x Layla, Straker's Dining Room) 전문가가 됐다. 종이에 느슨한 손선을 그려 스캔한 뒤 포토샵에서 텍스처·블렌드 모드와 위트를 얹는 스타일. '이런 작업이 AI보다 훨씬 재밌다.'",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/just-to-keep-drawing-the-tale-of-how-innes-clark-designed-her-way-out-of-a-bakery-and-into-restaurant-branding/"
+  "url": "https://www.creativeboom.com/inspiration/just-to-keep-drawing-the-tale-of-how-innes-clark-designed-her-way-out-of-a-bakery-and-into-restaurant-branding/",
+  "img": "assets/2026-09-09-12.webp",
+  "img_src": "https://media.creativeboom.com/5a1cf5b7-5a60-49f8-906c-fdefa77e4035/conversions/f960592bd38b6e332a3d4381914cbe909cd03820-medium.webp"
  },
  {
   "tag": "Visual",
@@ -121,7 +141,9 @@
   "zh": "为温哥华唐人街的零浪费鸡尾酒吧Bar Supernova，ONBOX Creative办了一场快闪：100多位客人各用毛笔画一个字母，工作室几乎全数保留，将这些不完美的字形编成一套没有单一作者的模块化字标。系统以干净的正文字体、大量留白与剪纸质感平衡这份混乱，致敬马蒂斯与米罗，应用于菜单、杯垫、招牌与网站。",
   "ko": "밴쿠버 차이나타운의 제로웨이스트 칵테일바 Bar Supernova를 위해 ONBOX Creative가 팝업을 열어 손님 100여 명이 각자 붓으로 글자 하나씩을 그렸다. 스튜디오는 그 불완전한 글자들을 거의 다 살려 '저자가 없는' 모듈식 워드마크로 엮었다. 깔끔한 본문 서체, 넉넉한 여백, 컷페이퍼 질감으로 그 혼돈을 받치며 마티스·미로를 참조, 메뉴·코스터·사이니지·웹사이트에 적용.",
   "src": "PRINT",
-  "url": "https://www.printmag.com/branding-identity-design/bar-supernova-onbox-brand-identity/"
+  "url": "https://www.printmag.com/branding-identity-design/bar-supernova-onbox-brand-identity/",
+  "img": "assets/2026-09-09-13.png",
+  "img_src": "https://www.printmag.com/wp-content/uploads/2026/08/Screenshot-2026-08-25-at-10.54.22-AM.png"
  },
  {
   "tag": "Visual",
@@ -130,7 +152,9 @@
   "zh": "波哥大艺术家Danna Gutiérrez（Gallina Clueka）的每件器物都始于纸上的一幅画，再不用拉坯机、以手捏法成型，让指纹留在陶器上并与线条相连。手绘剪影、几何图案与刻字以主题'drop'形式发布；最新的白色陶罐系列'El mundo'（2026）完成于哥伦比亚地震前夕，震后读来别有意味。",
   "ko": "보고타의 Danna Gutiérrez(Gallina Clueka)는 모든 오브제를 종이 드로잉에서 시작해 물레 없이 손으로 꼬집어 빚는다. 지문이 그릇에 남아 드로잉의 선과 이어지게 하려는 것. 손으로 그린 실루엣, 기하 모티프, 새겨 넣은 글을 테마별 '드롭'으로 내놓는데, 최신작 흰 항아리 연작 'El mundo'(2026)는 콜롬비아 지진 직전에 완성돼 지진 후 다르게 읽혔다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/meet-danna-gutierrez-aka-gallina-clueka-the-project-turning-drawings-into-tactile-vessels-you-can-hold/"
+  "url": "https://www.creativeboom.com/inspiration/meet-danna-gutierrez-aka-gallina-clueka-the-project-turning-drawings-into-tactile-vessels-you-can-hold/",
+  "img": "assets/2026-09-09-14.webp",
+  "img_src": "https://media.creativeboom.com/83e31ea6-f7ce-467f-aab1-7bb70eab88dd/conversions/2bf3c915594e72ec6ae5af12d8c79f64a83ad786-medium.webp"
  },
  {
   "tag": "Industrial",
@@ -139,7 +163,9 @@
   "zh": "里尔的KOVR Studio把房间里被触摸最多、被设计最少的开关当作设计元素：玉米淀粉PLA+材质的雕塑感面盖，无需工具或胶水即可卡在标准开关上，数字化制造以贴合尺寸，再手工精修。模块化、可更换，不改一根电线就把功能性面板变成一件小小的触感宣言。",
   "ko": "릴의 KOVR Studio가 방에서 가장 많이 만지지만 가장 덜 디자인된 물건, 전등 스위치를 디자인 요소로 다룬다. 옥수수 전분 PLA+로 만든 조형적 커버가 공구·접착제 없이 표준 스위치 위에 딸깍 끼워지고, 디지털 제작으로 치수를 맞춘 뒤 손으로 마감. 모듈식이라 갈아 끼울 수 있어 배선 하나 안 건드리고 실용 플레이트를 작은 촉각적 선언으로 바꾼다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/playful-covers-bio-based-pla-conventional-light-switch-kovr-studio/"
+  "url": "https://www.designboom.com/design/playful-covers-bio-based-pla-conventional-light-switch-kovr-studio/",
+  "img": "assets/2026-09-09-15.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/kovr-studio-light-switches-designboom-1200.jpg"
  },
  {
   "tag": "Design",
@@ -148,6 +174,8 @@
   "zh": "芝加哥工业设计公司Tangent把一辆2021款911 Carrera 4当作自家画布：不换悬架、通过重新布置容纳更大轮胎实现三英寸抬升；3D扫描保险杠与翼子板后在CAD中重塑；Paint-to-Sample黑橄榄色在绿与近黑间变化，黄色侧饰、防撞杠、鸭尾、琥珀色灯光与带Gerber斧头的车顶架。始于2019年，是数字精度与手工技艺结合的工作室练习。",
   "ko": "시카고 산업디자인 컨설팅 Tangent가 2021 911 카레라 4를 자기 캔버스로 썼다. 서스펜션 교체 없이 더 큰 타이어를 넣도록 재배치해 3인치 리프트, 범퍼·펜더를 3D 스캔해 CAD로 재작업, 초록에서 검정에 가깝게 변하는 페인트 투 샘플 블랙 올리브, 노란 사이드 그래픽, 불바, 덕테일, 앰버 조명, Gerber 도끼를 얹은 루프랙. 2019년 시작한, 디지털 정밀함과 손작업을 섞는 스튜디오 연습.",
   "src": "designboom",
-  "url": "https://www.designboom.com/technology/tangent-porsche-911-chicago-urban-safari-car/"
+  "url": "https://www.designboom.com/technology/tangent-porsche-911-chicago-urban-safari-car/",
+  "img": "assets/2026-09-09-16.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/tangent-porsche-911-C4-safari-designboom-FB-1.jpg"
  }
 ]
