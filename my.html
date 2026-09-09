@@ -303,7 +303,7 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 }
 .morebar:hover{background:var(--red); color:#fff}
 /* ---- edition date bar + calendar ---- */
-.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin-top:14px; position:relative}
+.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin:34px 0 4px; padding-top:22px; border-top:1px solid var(--ink); position:relative}
 .datebar a,.datebar button{
   appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
   color:var(--ink); font:inherit; font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
@@ -315,7 +315,7 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 .datebar .cur{font-variant-numeric:tabular-nums; letter-spacing:.1em}
 .datebar .cur svg{width:13px; height:13px; display:block; stroke:currentColor; stroke-width:1.8; fill:none}
 .cal{
-  position:absolute; top:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
   background:var(--ground); border:1px solid var(--ink); padding:14px; width:292px;
   box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
 }

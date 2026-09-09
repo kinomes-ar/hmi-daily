@@ -327,7 +327,7 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 }
 .morebar:hover{background:var(--red); color:#fff}
 /* ---- edition date bar + calendar ---- */
-.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin-top:14px; position:relative}
+.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin:34px 0 4px; padding-top:22px; border-top:1px solid var(--ink); position:relative}
 .datebar a,.datebar button{
   appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
   color:var(--ink); font:inherit; font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
@@ -339,7 +339,7 @@ html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
 .datebar .cur{font-variant-numeric:tabular-nums; letter-spacing:.1em}
 .datebar .cur svg{width:13px; height:13px; display:block; stroke:currentColor; stroke-width:1.8; fill:none}
 .cal{
-  position:absolute; top:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
   background:var(--ground); border:1px solid var(--ink); padding:14px; width:292px;
   box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
 }
@@ -865,12 +865,12 @@ JS = r"""<script>
 </script>"""
 
 
-def page(title, h1, active, body, kicker="", extra_js=""):
+def page(title, h1, active, body, kicker="", extra_js="", bottom=""):
     api = site_cfg().get("like_api", "")
     cur = lambda k: ' aria-current="page"' if k == active else ""
     return (HEAD.format(title=esc(title), css=CSS, h1=h1, kicker=kicker,
                         c_daily=cur("daily"), c_weekly=cur("weekly"), c_my=cur("my"))
-            + body + FOOT
+            + body + bottom + FOOT
             + '<script>window.ADUX_LIKE_API=%s;</script>' % json.dumps(api)
             + JS.replace("%HEART%", HEART_SVG.replace("'", "\\'"))
             + extra_js)
@@ -974,7 +974,7 @@ def render_all():
         h1 = "Latest News" if latest else "Back Issue"
         daily[d] = page("ADUX Daily" if latest else "ADUX Daily · " + d, h1, "daily",
                         FILTERS + render_days([(d, items)]),
-                        kicker=datebar(d, dates),
+                        bottom=datebar(d, dates),
                         extra_js='<script>window.ADUX_DATES=%s;window.ADUX_CUR=%s;</script>' % (
                             json.dumps(dates), json.dumps(d)) + CAL_JS)
     my = page("ADUX Daily · My", "My &#9829;", "my",
