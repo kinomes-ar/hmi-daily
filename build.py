@@ -382,7 +382,24 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
   margin:0 0 14px; text-wrap:balance;
 }
 .wintro .tx{max-width:70ch; font-size:15px; line-height:1.65}
-.wcats{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0 34px; border-top:1px solid var(--ink); margin-top:26px}
+.wtabs{position:sticky; top:0; z-index:20; background:var(--ground); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:26px}
+.wtabs .filters{padding:12px 0}
+.wtabs .filters a{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px; text-decoration:none;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600; letter-spacing:.13em; text-transform:uppercase;
+  padding:7px 14px; white-space:nowrap; transition:color .12s, background .12s;
+}
+.wtabs .filters a:hover{color:var(--red)}
+.wtabs .filters a[aria-current="true"]{background:var(--cat); color:#fff; font-weight:700}
+@media (max-width:700px){
+  .wtabs .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; -webkit-overflow-scrolling:touch;
+    padding:10px 20px; gap:14px; margin-left:-20px; margin-right:-20px; scrollbar-width:none}
+  .wtabs .filters::-webkit-scrollbar{display:none}
+}
+.wcat{scroll-margin-top:64px; border-radius:6px; transition:background .35s, box-shadow .35s}
+.wcat.hit{background:var(--shade); box-shadow:0 0 0 12px var(--shade)}
+.wcat.hit .tag{background:var(--cat); color:#fff}
+.wcats{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0 34px}
 .wcat{padding:22px 0 24px; border-bottom:1px solid var(--hair); break-inside:avoid}
 .wcat .tx{max-width:none; font-size:13.5px; line-height:1.6}
 .wcat ul{list-style:none; margin:12px 0 0; padding:0; display:grid; gap:7px}
@@ -538,9 +555,11 @@ def render_weeks(weeks, index, counts):
         intro = w.get("intro", {})
         tl = "".join('<p class="tx %s">%s</p>' % (k, esc(title[k])) for k in ("en", "zh", "ko") if title.get(k))
         il = "".join('<p class="tx %s">%s</p>' % (k, esc(intro[k])) for k in ("en", "zh", "ko") if intro.get(k))
-        cats = []
+        cats, tabs = [], []
         for c in w.get("cats", []):
             tag = c.get("tag", "")
+            cid = "%s-%s" % (wid, slug(tag))
+            tabs.append('<a href="#%s" data-cat="%s" style="--cat:%s">%s</a>' % (cid, cid, cat_colour(tag), esc(tag)))
             txt = "".join('<p class="tx %s">%s</p>' % (k, esc(c[k])) for k in ("en", "zh", "ko") if c.get(k))
             lis = []
             for iid in c.get("items", []):
@@ -549,8 +568,8 @@ def render_weeks(weeks, index, counts):
                     continue
                 lis.append('<li><a href="index.html#d%s" data-id="%s">%s</a><span class="who">%s</span></li>' % (
                     it["date"], iid, esc(it["t"]), esc(it["src"])))
-            cats.append('<div class="wcat"><span class="tagrow" style="--cat:%s"><span class="tag">%s</span></span>%s<ul>%s</ul></div>' % (
-                cat_colour(tag), esc(tag), txt, "".join(lis)))
+            cats.append('<div class="wcat" id="%s"><span class="tagrow" style="--cat:%s"><span class="tag">%s</span></span>%s<ul>%s</ul></div>' % (
+                cid, cat_colour(tag), esc(tag), txt, "".join(lis)))
         # most loved: explicit list in the file, else computed from the like snapshot
         top = w.get("top") or []
         if not top:
@@ -570,9 +589,10 @@ def render_weeks(weeks, index, counts):
             '<section class="week" id="{wid}"><div class="dayhead"><h2>{wid}</h2><span class="rule"></span>'
             '<span class="meta">{frm} &ndash; {to}</span></div>'
             '<div class="wtitle">{tl}</div><div class="wintro">{il}</div>'
+            '<div class="wtabs"><nav class="filters" aria-label="Categories this week">{tabs}</nav></div>'
             '<div class="wcats">{cats}</div>{top}</section>'.format(
                 wid=esc(wid), frm=esc(w.get("from", "")), to=esc(w.get("to", "")),
-                tl=tl, il=il, cats="".join(cats), top=topblock))
+                tl=tl, il=il, tabs="".join(tabs), cats="".join(cats), top=topblock))
     if not out:
         out.append('<div class="empty"><div class="big">Coming Monday</div>'
                    '<p class="tx en">The first weekly roundup lands next Monday at 10:00.</p>'
@@ -824,6 +844,33 @@ MY_JS = r"""<script>
 </script>"""
 
 
+WEEK_JS = r"""<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.wtabs a[data-cat]')); if(!tabs.length) return;
+  var lock=0;
+  function mark(id){ tabs.forEach(function(a){ a.setAttribute('aria-current',String(a.dataset.cat===id)); }); }
+  tabs.forEach(function(a){
+    a.addEventListener('click',function(e){
+      var el=document.getElementById(a.dataset.cat); if(!el) return;
+      e.preventDefault(); mark(a.dataset.cat); lock=Date.now()+1500;
+      try{ el.scrollIntoView({behavior:'smooth',block:'start'}); }catch(x){ el.scrollIntoView(); }
+      [].forEach.call(document.querySelectorAll('.wcat.hit'),function(c){ c.classList.remove('hit'); });
+      el.classList.add('hit'); setTimeout(function(){ el.classList.remove('hit'); },1600);
+      try{ history.replaceState(null,'','#'+a.dataset.cat); }catch(x){}
+    });
+  });
+  if('IntersectionObserver' in window){
+    var cats=[].slice.call(document.querySelectorAll('.wcat[id]'));
+    var io=new IntersectionObserver(function(es){
+      if(Date.now()<lock) return;
+      es.forEach(function(en){ if(en.isIntersecting) mark(en.target.id); });
+    },{rootMargin:'-64px 0px -70% 0px',threshold:0});
+    cats.forEach(function(c){ io.observe(c); });
+  }
+})();
+</script>"""
+
+
 def render_all():
     days = load_days()
     index = items_index(days)
@@ -835,7 +882,7 @@ def render_all():
               '<div id="mylist"></div>',
               kicker='<div class="kicker">No login &middot; kept in this browser</div>', extra_js=MY_JS)
     weekly = page("ADUX Daily · Weekly", "This Week", "weekly", render_weeks(load_weeks(), index, counts),
-                  kicker='<div class="kicker">What moved the room &middot; every Monday</div>')
+                  kicker='<div class="kicker">What moved the room &middot; every Monday</div>', extra_js=WEEK_JS)
     return daily, my, weekly, index
 
 
