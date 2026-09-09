@@ -1,32 +1,8 @@
-#!/usr/bin/env python3
-"""Render every data/YYYY-MM-DD.json into the HMI Daily archive page.
-  python3 build.py            -> fragment (Claude Artifact)
-  python3 build.py standalone -> full document -> index.html
-"""
-import json, os, sys, glob, html
-from datetime import date as _date
-
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "data")
-
-# fallback panel colours, keyed by category
-# one hue per category — pill colour and photo-fallback panel
-CAT = {
-    "micromobility": "#E5342A",   # the desk's own beat rides the red
-    "cockpit":       "#7B5CF0",
-    "interaction":   "#17A472",
-    "ai":            "#DB3A9C",
-    "design":        "#E07A18",
-    "visual":        "#2E6BE6",   # graphic / 2D / motion graphics
-    "industrial":    "#B08900",   # product & industrial design, CMF
-}
-DEFAULT_CAT = "#5B5750"
-
-
-def cat_colour(tag):
-    return CAT.get((tag or "").strip().lower(), DEFAULT_CAT)
-
-CSS = """
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADUX Daily · Weekly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
+</head><body><style>
 :root{
   --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
   --rule:#111110; --hair:#111110; --red:#E5342A; --onred:#FFFFFF;
@@ -407,194 +383,15 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 .foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
 .foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
 .foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
-"""
-
-
-def esc(s): return html.escape(s, quote=False)
-
-
-HEART_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>')
-
-
-def site_cfg():
-    try:
-        return json.load(open(os.path.join(HERE, "site.json")))
-    except Exception:
-        return {}
-
-
-def load_likes():
-    """likes.json is a snapshot of the shared heart counts, refreshed by the runner."""
-    try:
-        return json.load(open(os.path.join(HERE, "likes.json"))).get("counts", {})
-    except Exception:
-        return {}
-
-
-def slug(tag):
-    return "".join(ch for ch in (tag or "").lower() if ch.isalpha())
-
-
-def item_id(d, i):
-    return "%s-%d" % (d, i + 1)
-
-
-def photo(it, kind):
-    if it.get("img"):
-        return '<figure class="ph ph-%s"><img src="%s" alt="" loading="lazy"></figure>' % (
-            kind, esc(it["img"]))
-    return ('<figure class="ph ph-%s fb" style="background:%s;color:#fff">'
-            '<span>%s</span></figure>') % (
-        kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")))
-
-
-def heart(iid):
-    return ('<button type="button" class="heart" data-id="{id}" aria-pressed="false" '
-            'aria-label="Like">{svg}<span class="cnt"></span></button>').format(id=iid, svg=HEART_SVG)
-
-
-def article(it, kind, photo_on=True, date="", iid=""):
-    langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
-                    for k in ("en", "zh", "ko") if it.get(k))
-    return (
-        '<article class="a-{k}" data-tag="{slug}" data-id="{id}">{ph}'
-        '<span class="tagrow" style="--cat:{c}">'
-        '<span class="tag">{tag}</span></span>'
-        '<h3 class="hl">{t}</h3>{langs}'
-        '<span class="acts"><a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>{heart}</span>'
-        '<span class="adate">{date}</span></article>'
-    ).format(k=kind, ph=photo(it, kind) if photo_on else "", c=cat_colour(it.get("tag")),
-             date=date, id=iid, heart=heart(iid) if iid else "",
-             slug=slug(it.get("tag", "")),
-             tag=esc(it.get("tag", "News")), t=esc(it["t"]),
-             langs=langs, url=esc(it["url"]), src=esc(it["src"]))
-
-
-def load_days():
-    files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
-    days = []
-    for f in files:
-        d = os.path.basename(f)[:-5]
-        days.append((d, json.load(open(f))))
-    return days
-
-
-def items_index(days):
-    """Flat index of every story — the My page and Weekly page render from this."""
-    out = []
-    for d, items in days:
-        for i, it in enumerate(items):
-            out.append({
-                "id": item_id(d, i), "date": d, "tag": it.get("tag", "News"),
-                "t": it["t"], "en": it.get("en", ""), "zh": it.get("zh", ""), "ko": it.get("ko", ""),
-                "src": it["src"], "url": it["url"], "img": it.get("img", ""),
-            })
-    return out
-
-
-def render_days(days):
-    body = []
-    for d, items in days:
-        y, m, dd = (int(x) for x in d.split("-"))
-        lead = article(items[0], "lead", date=d, iid=item_id(d, 0)) if items else ""
-        duo = ""
-        if len(items) > 2:
-            duo = ('<div class="duo">%s%s</div>' %
-                   (article(items[1], "duo", date=d, iid=item_id(d, 1)),
-                    article(items[2], "duotx", photo_on=False, date=d, iid=item_id(d, 2))))
-        mid = "".join(article(it, "mid", date=d, iid=item_id(d, i)) for i, it in enumerate(items) if 3 <= i < 5)
-        side = "".join(article(it, "side", date=d, iid=item_id(d, i)) for i, it in enumerate(items) if 5 <= i < 8)
-        foot = ""
-        if items[8:]:
-            foot = '<div class="rest">%s</div>' % "".join(
-                article(it, "foot", date=d, iid=item_id(d, i)) for i, it in enumerate(items) if i >= 8)
-        band = ('<div class="band">'
-                '<div class="col lead">{lead}{duo}</div>'
-                '<div class="col mid">{mid}</div>'
-                '<div class="col side">{side}</div>'
-                '</div>').format(lead=lead, duo=duo, mid=mid, side=side)
-        body.append(
-            '<section class="day" id="d{d}">{band}{foot}</section>'.format(
-                d=d, band=band, foot=foot)
-        )
-    return "".join(body)
-
-
-# ---------------------------------------------------------------- weekly
-WEEKLY = os.path.join(HERE, "weekly")
-
-
-def load_weeks():
-    files = sorted(glob.glob(os.path.join(WEEKLY, "*.json")), reverse=True)
-    return [json.load(open(f)) for f in files]
-
-
-def render_weeks(weeks, index, counts):
-    byid = {it["id"]: it for it in index}
-    out = []
-    for w in weeks:
-        wid = w.get("week", "")
-        title = w.get("title", {})
-        intro = w.get("intro", {})
-        tl = "".join('<p class="tx %s">%s</p>' % (k, esc(title[k])) for k in ("en", "zh", "ko") if title.get(k))
-        il = "".join('<p class="tx %s">%s</p>' % (k, esc(intro[k])) for k in ("en", "zh", "ko") if intro.get(k))
-        cats = []
-        for c in w.get("cats", []):
-            tag = c.get("tag", "")
-            txt = "".join('<p class="tx %s">%s</p>' % (k, esc(c[k])) for k in ("en", "zh", "ko") if c.get(k))
-            lis = []
-            for iid in c.get("items", []):
-                it = byid.get(iid)
-                if not it:
-                    continue
-                lis.append('<li><a href="index.html#d%s" data-id="%s">%s</a><span class="who">%s</span></li>' % (
-                    it["date"], iid, esc(it["t"]), esc(it["src"])))
-            cats.append('<div class="wcat"><span class="tagrow" style="--cat:%s"><span class="tag">%s</span></span>%s<ul>%s</ul></div>' % (
-                cat_colour(tag), esc(tag), txt, "".join(lis)))
-        # most loved: explicit list in the file, else computed from the like snapshot
-        top = w.get("top") or []
-        if not top:
-            wk_ids = [it["id"] for it in index if w.get("from", "") <= it["date"] <= w.get("to", "9999")]
-            ranked = sorted(((counts.get(i, 0), i) for i in wk_ids), reverse=True)
-            top = [{"id": i, "n": n} for n, i in ranked[:5] if n > 0]
-        tops = []
-        for t in top:
-            it = byid.get(t["id"]) if isinstance(t, dict) else byid.get(t)
-            if not it:
-                continue
-            n = t.get("n", counts.get(it["id"], 0)) if isinstance(t, dict) else counts.get(it["id"], 0)
-            tops.append('<li><a href="%s" target="_blank" rel="noopener">%s</a><span class="n">%s</span></li>' % (
-                esc(it["url"]), esc(it["t"]), ("&#9829; %d" % n) if n else ""))
-        topblock = ('<div class="wtop"><h3>%s Most loved this week</h3><ol>%s</ol></div>' % (HEART_SVG, "".join(tops))) if tops else ""
-        out.append(
-            '<section class="week" id="{wid}"><div class="dayhead"><h2>{wid}</h2><span class="rule"></span>'
-            '<span class="meta">{frm} &ndash; {to}</span></div>'
-            '<div class="wtitle">{tl}</div><div class="wintro">{il}</div>'
-            '<div class="wcats">{cats}</div>{top}</section>'.format(
-                wid=esc(wid), frm=esc(w.get("from", "")), to=esc(w.get("to", "")),
-                tl=tl, il=il, cats="".join(cats), top=topblock))
-    if not out:
-        out.append('<div class="empty"><div class="big">Coming Monday</div>'
-                   '<p class="tx en">The first weekly roundup lands next Monday at 10:00.</p>'
-                   '<p class="tx zh">首期周报将于下周一 10:00 发布。</p>'
-                   '<p class="tx ko">첫 위클리 요약은 다음 주 월요일 10:00에 나옵니다.</p></div>')
-    return "".join(out)
-
-
-# ---------------------------------------------------------------- page shell
-HEAD = """<title>{title}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
-<style>{css}</style>
+</style>
 <div class="sheet" id="top">
 <div class="shell">
   <div class="top">
     <span class="wordmark">ADUX&nbsp;DAILY</span>
     <nav class="topnav" aria-label="Sections">
-      <a href="index.html"{c_daily}>Daily</a>
-      <a href="weekly.html"{c_weekly}>Weekly</a>
-      <a href="my.html"{c_my}>My &#9829;<span class="badge" id="mybadge"></span></a>
+      <a href="index.html">Daily</a>
+      <a href="weekly.html" aria-current="page">Weekly</a>
+      <a href="my.html">My &#9829;<span class="badge" id="mybadge"></span></a>
     </nav>
     <span class="ctrls">
       <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
@@ -619,11 +416,9 @@ HEAD = """<title>{title}</title>
     </span>
   </div>
   <header class="masthead">
-    <h1>{h1}</h1>{kicker}
+    <h1>This Week</h1><div class="kicker">What moved the room &middot; every Monday</div>
   </header>
-"""
-
-FOOT = """
+<section class="week" id="2026-W36"><div class="dayhead"><h2>2026-W36</h2><span class="rule"></span><span class="meta">2026-08-31 &ndash; 2026-09-04</span></div><div class="wtitle"><p class="tx en">The week the button won: Ive, Kia, VW and Lexus all retreat from glass — while BYD and Mercedes bet on one giant screen</p><p class="tx zh">按键胜出的一周：Ive、起亚、大众、雷克萨斯纷纷从玻璃面板后撤，比亚迪与奔驰却押注一整块巨屏</p><p class="tx ko">버튼이 이긴 주: 아이브·기아·VW·렉서스는 유리에서 물러나고, BYD와 메르세데스는 초대형 한 장짜리 화면에 베팅</p></div><div class="wintro"><p class="tx en">Five editions, 80 stories. The through-line was the cockpit's touch reckoning: Jony Ive said touch doesn't belong in cars the same week Kia, VW and Lexus shipped hard controls back into their dashboards, while Chinese brands and Mercedes answered screen fatigue with fewer, bigger displays. Off the road, AI moved into back seats and dishwashers, PRINT dropped its 2026 Type Report, and IFA's oddest hardware came from the smallest categories.</p><p class="tx zh">五期、80条。主线是座舱触控的清算：Jony Ive 说触控不属于汽车的同一周，起亚、大众与雷克萨斯把实体控件重新放回仪表台，而中国品牌和奔驰则用更少、更大的屏幕回应'屏幕疲劳'。路外，AI 进了后座和洗碗机，PRINT 发布 2026 年度字体报告，IFA 最有意思的硬件反而来自最小的品类。</p><p class="tx ko">5개 에디션, 80건. 관통 주제는 콕핏 터치의 심판이었다. 조니 아이브가 '터치는 차에 어울리지 않는다'고 말한 같은 주에 기아·VW·렉서스가 물리 조작계를 대시보드에 되돌렸고, 중국 브랜드와 메르세데스는 '화면 피로'에 더 적고 더 큰 화면으로 답했다. 도로 밖에서는 AI가 뒷좌석과 식기세척기에 들어왔고, PRINT가 2026 타입 리포트를 냈으며, IFA에서 가장 흥미로운 하드웨어는 가장 작은 카테고리에서 나왔다.</p></div><div class="wcats"><div class="wcat"><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><p class="tx en">Two camps, clearly drawn. VW's ID. Polo and BYD's Sealion 08 keep physical buttons; Mercedes' electric C-Class and Denza N8 go the other way with one dashboard-wide strip. Lexus NX's disappearing haptic buttons and the Corvette's button deletion show the middle ground is shrinking. Watch: BMW's China-only long i3 adapting Neue Klasse, and Ferrari's retro-instrument EV cabin.</p><p class="tx zh">两大阵营泾渭分明：大众 ID. Polo 和比亚迪海狮 08 保留实体按键；奔驰纯电 C 级与腾势 N8 反其道而行，用一条贯穿仪表台的巨屏。雷克萨斯 NX 的'隐形'触觉按键和科尔维特删掉按键，说明中间地带正在收窄。关注：BMW 中国专属长轴 i3 对 Neue Klasse 的本地化，以及法拉利的复古仪表 EV 座舱。</p><p class="tx ko">두 진영이 또렷이 갈렸다. VW ID. 폴로와 BYD 씨라이언 08은 물리 버튼을 지켰고, 메르세데스 전기 C-클래스와 덴자 N8은 대시보드 전체를 가로지르는 한 장짜리 스트립으로 반대로 갔다. 렉서스 NX의 사라지는 햅틱 버튼과 콜벳의 버튼 삭제는 중간 지대가 좁아지고 있음을 보여준다. 주목: 노이에 클라쎄를 중국용으로 다듬은 BMW 롱휠베이스 i3, 페라리의 레트로 계기 EV 캐빈.</p><ul><li><a href="index.html#d2026-09-01" data-id="2026-09-01-2">Mercedes heard 'too many screens' — and built one giant one</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-2">Inside the ID. Polo: VW fixes the cockpit</a><span class="who">Autobics</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-1">BYD's Sealion 08 cabin: Ocean Aesthetics, buttons kept</a><span class="who">CarNewsChina</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-1">Lexus NX: the buttons that vanish into the dash</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-2">Denza N8: a 1.1-meter screen, controls in the door handle</a><span class="who">CarNewsChina</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-3">The 2026 Corvette trades buttons for screens</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-4">BMW stretches the i3 — and its cabin — for China</a><span class="who">CarNewsChina</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-6">What Ferrari is really doing with its EV interior</a><span class="who">Autoblog</span></li></ul></div><div class="wcat"><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><p class="tx en">Jony Ive's 'touch doesn't belong in cars' set the tone; Kia's Pleos Connect rebalancing and Cadillac's freeform-UI update were the practical follow-through. Beyond cars: Miele's dishwasher that photographs the load and decides, Bugatti tuning an engine's sound for three years, and in-car gaming synced to the cabin — interfaces that sense and act rather than ask.</p><p class="tx zh">Jony Ive 的'触控不属于汽车'定下基调；起亚 Pleos Connect 的触控/实体再平衡与凯迪拉克自由式 UI 更新是落地。汽车之外：美诺拍照判断脏污自动选程序的洗碗机、布加迪花三年调校发动机声浪、与座舱联动的车内游戏——界面在感知并行动，而不是发问。</p><p class="tx ko">조니 아이브의 '터치는 차에 어울리지 않는다'가 분위기를 잡았고, 기아 Pleos Connect의 터치/물리 재조정과 캐딜락 프리폼 UI 업데이트가 실무적 후속이었다. 차 밖에서는 세척물을 촬영해 스스로 코스를 고르는 밀레 식기세척기, 3년간 엔진 사운드를 조율한 부가티, 캐빈과 동기화된 차내 게임—묻지 않고 감지해 행동하는 인터페이스들.</p><ul><li><a href="index.html#d2026-09-01" data-id="2026-09-01-1">Jony Ive: touch controls don't belong in cars</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-5">Kia fixes what drivers hate most</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-16">Cadillac loosens up its freeform UI</a><span class="who">Automotive Interiors World</span></li><li><a href="index.html#d2026-09-03" data-id="2026-09-03-5">Miele's dishwasher looks, then decides</a><span class="who">Yanko Design</span></li><li><a href="index.html#d2026-09-04" data-id="2026-09-04-1">Bugatti tunes its V16 to sound dirty</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-03" data-id="2026-09-03-1">In-car gaming: the cabin is the console</a><span class="who">Automotive Interiors World</span></li><li><a href="index.html#d2026-09-04" data-id="2026-09-04-5">Lenovo's laptop rolls from 14 to 17 inches</a><span class="who">Yanko Design</span></li></ul></div><div class="wcat"><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><p class="tx en">AI arrived as a quiet passenger: Waymo's Ojai carries Gemini summoned only by a tap, Geely's off-road AI reads terrain, Plaud's earbuds turn meetings into drafted emails. The debate story was TWA defending AI illustration in a branding job — the clearest articulation yet of where studios draw the line.</p><p class="tx zh">AI 以安静乘客的姿态到来：Waymo Ojai 的 Gemini 只在轻触时被唤起，吉利越野 AI 读取地形，Plaud 耳机把会议变成草拟好的邮件。争议在 TWA 为品牌项目中的 AI 插画辩护——迄今对'工作室的底线在哪'最清晰的一次表述。</p><p class="tx ko">AI는 조용한 동승자로 들어왔다. 웨이모 Ojai의 Gemini는 탭해야만 불려 나오고, 지리의 오프로드 AI는 지형을 읽고, Plaud 이어버드는 회의를 이메일 초안으로 바꾼다. 논쟁거리는 브랜딩 프로젝트의 AI 일러스트를 옹호한 TWA—스튜디오가 어디에 선을 긋는지에 대한 가장 또렷한 진술.</p><ul><li><a href="index.html#d2026-09-02" data-id="2026-09-02-3">Waymo puts Gemini in the back seat</a><span class="who">Waymo</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-7">Geely's AI learns to read terrain off-road</a><span class="who">CarNewsChina</span></li><li><a href="index.html#d2026-09-04" data-id="2026-09-04-3">Plaud One: meetings in, emails out</a><span class="who">Yanko Design</span></li><li><a href="index.html#d2026-09-03" data-id="2026-09-03-3">TWA defends its AI illustration system</a><span class="who">Creative Boom</span></li></ul></div><div class="wcat"><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><p class="tx en">The two-wheel dashboard is the story: Chigee asks whether CarPlay-class displays are now essential kit, Kamax traces gauges-to-TFT, and Second White's VtoV 2000 restyles the shared scooter as a grown-up product. Plus a stair-climbing delivery dog for the last ten meters.</p><p class="tx zh">两轮仪表是主题：Chigee 追问 CarPlay 级显示屏是否已成必需品，Kamax 梳理从指针到 TFT 的演进，Second White 的 VtoV 2000 把共享滑板车重塑为'成年'产品。另有爬楼梯的送货机器狗解决最后十米。</p><p class="tx ko">두 바퀴의 계기판이 이야기의 중심. Chigee는 CarPlay급 디스플레이가 필수 장비가 됐는지 묻고, Kamax는 바늘에서 TFT까지의 흐름을 정리했으며, Second White의 VtoV 2000은 공유 킥보드를 '어른스러운' 제품으로 다시 그렸다. 마지막 10 m를 위한 계단 오르는 배달 로봇개도.</p><ul><li><a href="index.html#d2026-08-31" data-id="2026-08-31-4">Smart displays on two wheels: essential or luxury?</a><span class="who">Chigee</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-5">From needles to pixels: the moto dashboard's arc</a><span class="who">Kamax</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-5">VtoV 2000: the e-scooter grows up</a><span class="who">designboom</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-8">A robot dog that carries packages up your stairs</a><span class="who">Yanko Design</span></li></ul></div><div class="wcat"><span class="tagrow" style="--cat:#E07A18"><span class="tag">Design</span></span><p class="tx en">Car bodies are un-melting: ID. Tiguan, the 2028 Sportage and Scout's two-mood Traveler all trade EV-blob curves for upright, square-lamped stances. Elsewhere Foster + Partners' Norton plinths, Darius Ou's type-as-system, Heller reopening 'Separated at Birth', and Gary Chang's 24-room 32 m² flat.</p><p class="tx zh">车身正在'解冻'：ID. Tiguan、2028 款 Sportage 与 Scout 双风格 Traveler 都用挺拔、方灯的姿态取代 EV 的圆润肥皂造型。此外：Foster + Partners 的 Norton 展台、Darius Ou 的'字体即系统'、Heller 重开'孪生设计'档案、张智强 32 m² 变 24 间的公寓。</p><p class="tx ko">차체가 '녹은 비누'에서 벗어나고 있다. ID. 티구안, 2028 스포티지, 스카우트의 두 가지 무드 트래블러 모두 EV 특유의 둥근 곡선 대신 직립·사각 램프 자세를 택했다. 그 밖에 포스터+파트너스의 노턴 진열대, 다리우스 오우의 '시스템으로서의 서체', 헬러가 다시 연 '쌍둥이 디자인' 파일, 32 m²를 24개 방으로 바꾸는 게리 창의 집.</p><ul><li><a href="index.html#d2026-09-02" data-id="2026-09-02-15">ID. Tiguan stops pretending it's an ID.4</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-04" data-id="2026-09-04-4">2028 Sportage: a smaller Telluride</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-09-04" data-id="2026-09-04-2">Scout's two Travelers: plaid vs denim</a><span class="who">Carscoops</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-6">Foster + Partners puts Norton bikes on plinths</a><span class="who">Dezeen</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-6">Darius Ou builds type systems from sci-fi and G-code</a><span class="who">Creative Boom</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-8">Influence or plagiarism? Heller reopens the file</a><span class="who">PRINT Magazine</span></li><li><a href="index.html#d2026-09-03" data-id="2026-09-03-10">32 square meters, 24 rooms</a><span class="who">designboom</span></li></ul></div><div class="wcat"><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><p class="tx en">PRINT's 2026 Type Report was the read of the week. Around it: George Hardie's five-decade retrospective, GTA 6's Extended Look as craft at scale, Es Devlin staging 500 artisans in Venice, and a run of illustrators (Spurio, Hirji, Son, Yakovleva) making the case for the sketchbook as practice.</p><p class="tx zh">PRINT 2026 年度字体报告是本周必读。周边：George Hardie 五十年回顾展、GTA 6 Extended Look 展示的规模化工艺、Es Devlin 在威尼斯为 500 位匠人搭台，以及一批插画师（Spurio、Hirji、Son、Yakovleva）为'速写本即实践'立论。</p><p class="tx ko">PRINT 2026 타입 리포트가 이번 주의 필독. 주변으로는 조지 하디 50년 회고전, 대규모 장인정신으로 읽은 GTA 6 익스텐디드 룩, 베니스에서 장인 500명을 무대에 세운 에스 데블린, 그리고 스케치북이 곧 실천임을 보여준 일러스트레이터들(스푸리오·히르지·손·야코블레바).</p><ul><li><a href="index.html#d2026-08-31" data-id="2026-08-31-9">PRINT's 2026 Type Report</a><span class="who">PRINT Magazine</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-9">George Hardie: five decades past Hipgnosis</a><span class="who">PRINT Magazine</span></li><li><a href="index.html#d2026-08-31" data-id="2026-08-31-8">What GTA 6's Extended Look says about craft at scale</a><span class="who">Creative Boom</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-12">Es Devlin's 'Island of Light' for 500 craft artists</a><span class="who">designboom</span></li><li><a href="index.html#d2026-09-03" data-id="2026-09-03-7">Lorena Spurio draws to find what she loves</a><span class="who">Creative Boom</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-11">Ayong Son quit agency life to draw five things a day</a><span class="who">Creative Boom</span></li><li><a href="index.html#d2026-09-04" data-id="2026-09-04-10">Varya Yakovleva's sketchbooks saved her</a><span class="who">Creative Boom</span></li></ul></div><div class="wcat"><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><p class="tx en">IFA week favored objects that show their mechanism: a CD player with its transport on display, MB&amp;F's clock shipped as 222 parts, a screenless camera that ejects e-paper prints, Orphea's 13-key pocket piano. VW's ID. California Cruise and the Lume Ranger trailer took mobility indoors.</p><p class="tx zh">IFA 周偏爱'露出机构'的物件：把走带机构摆在明面上的 CD 机、以 222 个零件出货的 MB&amp;F 时钟、弹出电子纸照片的无屏相机、Orphea 13 键口袋钢琴。大众 ID. California Cruise 与 Lume Ranger 拖挂把出行搬进了室内。</p><p class="tx ko">IFA 주간은 메커니즘을 드러내는 물건들의 편이었다. 트랜스포트를 내보인 CD 플레이어, 222개 부품으로 배송되는 MB&amp;F 시계, 전자종이 인화를 뱉어내는 화면 없는 카메라, Orphea 13건반 포켓 피아노. VW ID. 캘리포니아 크루즈와 Lume Ranger 트레일러는 모빌리티를 실내로 끌어들였다.</p><ul><li><a href="index.html#d2026-09-03" data-id="2026-09-03-14">A CD player that shows its work</a><span class="who">Yanko Design</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-15">MB&amp;F ships a clock as 222 loose parts</a><span class="who">Yanko Design</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-16">A digital camera that ejects photos like film</a><span class="who">Yanko Design</span></li><li><a href="index.html#d2026-09-02" data-id="2026-09-02-12">Orphea: a 13-key piano for your pocket</a><span class="who">designboom</span></li><li><a href="index.html#d2026-09-01" data-id="2026-09-01-14">VW's first electric camper: ID. California Cruise</a><span class="who">Yanko Design</span></li><li><a href="index.html#d2026-09-03" data-id="2026-09-03-15">Lume Ranger: teak in, aluminum out</a><span class="who">Yanko Design</span></li></ul></div></div></section>
   <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
 </div>
@@ -631,9 +426,7 @@ FOOT = """
   <span class="wordmark">ADUX Daily</span>
   <span class="note">Curated by Claude</span>
 </div></footer>
-"""
-
-JS = r"""<script>
+<script>window.ADUX_LIKE_API="";</script><script>
 (function(){
   var root=document.documentElement;
   var btns=[].slice.call(document.querySelectorAll('.langsw button'));
@@ -747,142 +540,7 @@ JS = r"""<script>
       }).catch(function(){});
     }
   }
-  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,badge:badge,heartSvg:'%HEART%'};
+  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,badge:badge,heartSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>'};
   badge(); wire(document);
 })();
-</script>"""
-
-
-def page(title, h1, active, body, kicker="", extra_js=""):
-    api = site_cfg().get("like_api", "")
-    cur = lambda k: ' aria-current="page"' if k == active else ""
-    return (HEAD.format(title=esc(title), css=CSS, h1=h1, kicker=kicker,
-                        c_daily=cur("daily"), c_weekly=cur("weekly"), c_my=cur("my"))
-            + body + FOOT
-            + '<script>window.ADUX_LIKE_API=%s;</script>' % json.dumps(api)
-            + JS.replace("%HEART%", HEART_SVG.replace("'", "\\'"))
-            + extra_js)
-
-
-FILTERS = """  <div class="fwrap"><nav class="filters" aria-label="Category filter">
-    <button type="button" data-f="" aria-pressed="true">All</button>
-    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
-    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
-    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
-    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
-    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
-    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
-    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
-  </nav></div>
-"""
-
-MY_JS = r"""<script>
-(function(){
-  var host=document.getElementById('mylist'); if(!host) return;
-  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  var COL={micromobility:'#E5342A',cockpit:'#7B5CF0',interaction:'#17A472',ai:'#DB3A9C',design:'#E07A18',visual:'#2E6BE6',industrial:'#B08900'};
-  function card(it){
-    var s=(it.tag||'').toLowerCase().replace(/[^a-z]/g,''), c=COL[s]||'#5B5750';
-    var ph=it.img?'<figure class="ph ph-foot"><img src="'+esc(it.img)+'" alt="" loading="lazy"></figure>'
-                 :'<figure class="ph ph-foot fb" style="background:'+c+';color:#fff"><span>'+esc(it.tag)+'</span></figure>';
-    var tx=['en','zh','ko'].map(function(k){ return it[k]?'<p class="tx '+k+'">'+esc(it[k])+'</p>':''; }).join('');
-    return '<article class="a-foot" data-tag="'+s+'" data-id="'+esc(it.id)+'">'+ph+
-      '<span class="tagrow" style="--cat:'+c+'"><span class="tag">'+esc(it.tag)+'</span></span>'+
-      '<h3 class="hl">'+esc(it.t)+'</h3>'+tx+
-      '<span class="acts"><a class="src" href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.src)+' &rarr;</a>'+
-      '<button type="button" class="heart" data-id="'+esc(it.id)+'" aria-pressed="true" aria-label="Unlike">'+window.ADUX.heartSvg+'<span class="cnt"></span></button></span>'+
-      '<span class="adate">'+esc(it.date)+'</span></article>';
-  }
-  function empty(){
-    if(!items&&Object.keys(window.ADUX.likes()).length){
-      return '<div class="empty"><div class="big">Archive index unavailable</div>'+
-        '<p class="tx en">Your hearts are safe on this device — reload to try again.</p>'+
-        '<p class="tx zh">你的收藏仍保存在本设备上——请刷新重试。</p>'+
-        '<p class="tx ko">하트는 이 기기에 그대로 저장돼 있어요. 새로고침해서 다시 시도해 주세요.</p></div>';
-    }
-    return '<div class="empty"><div class="big">Nothing here yet</div>'+
-      '<p class="tx en">Tap the heart on any story and it will be kept here — on this device, no login needed.</p>'+
-      '<p class="tx zh">点一下任意文章的心形，它就会保存在这里——仅在本设备上，无需登录。</p>'+
-      '<p class="tx ko">기사 옆 하트를 누르면 여기에 모입니다. 이 기기에만 저장되고 로그인은 필요 없어요.</p></div>';
-  }
-  var items=null;
-  function draw(){
-    var likes=window.ADUX.likes();
-    var ids=Object.keys(likes).sort(function(a,b){ return likes[b]-likes[a]; });
-    var clr=document.getElementById('clearall'); if(clr) clr.hidden=!ids.length;
-    if(!items||!ids.length){ host.innerHTML=empty(); host.className=''; return; }
-    var by={}; items.forEach(function(it){ by[it.id]=it; });
-    var html=ids.map(function(id){ return by[id]?card(by[id]):''; }).join('');
-    host.className='grid'; host.innerHTML=html||empty();
-    window.ADUX.wire(host);
-  }
-  fetch('items.json',{cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(j){ items=j; draw(); }).catch(function(){ draw(); });
-  document.addEventListener('adux:like',function(e){ if(!e.detail.on){ var a=host.querySelector('article[data-id="'+e.detail.id+'"]'); if(a){ a.remove(); } if(!host.querySelector('article')) draw(); } });
-  var clr=document.getElementById('clearall');
-  if(clr) clr.addEventListener('click',function(){ window.ADUX.save({}); window.ADUX.badge(); draw(); });
-})();
-</script>"""
-
-
-def render_all():
-    days = load_days()
-    index = items_index(days)
-    counts = load_likes()
-    daily = page("ADUX Daily", "Latest News", "daily", FILTERS + render_days(days))
-    my = page("ADUX Daily · My", "My &#9829;", "my",
-              '<div class="dayhead" style="margin-top:22px"><h2>Saved on this device</h2><span class="rule"></span>'
-              '<button type="button" class="clearbtn" id="clearall" hidden>Clear all</button></div>'
-              '<div id="mylist"></div>',
-              kicker='<div class="kicker">No login &middot; kept in this browser</div>', extra_js=MY_JS)
-    weekly = page("ADUX Daily · Weekly", "This Week", "weekly", render_weeks(load_weeks(), index, counts),
-                  kicker='<div class="kicker">What moved the room &middot; every Monday</div>')
-    return daily, my, weekly, index
-
-
-def standalone(frag, lang="en"):
-    return ('<!doctype html><html lang="%s"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width,initial-scale=1">' % lang
-            + frag.replace("<style>", "</head><body><style>", 1) + "</body></html>")
-
-
-def refresh_likes():
-    """Pull the shared heart counts into likes.json (runner only — needs network)."""
-    api = site_cfg().get("like_api", "")
-    if not api:
-        print("likes: no like_api configured"); return
-    import urllib.request
-    try:
-        with urllib.request.urlopen(api.rstrip("/") + "/top?n=1000", timeout=20) as r:
-            data = json.load(r)
-        json.dump({"updated": _date.today().isoformat(), "counts": data.get("counts", {})},
-                  open(os.path.join(HERE, "likes.json"), "w"), indent=0)
-        print("likes: %d ids" % len(data.get("counts", {})))
-    except Exception as e:
-        print("likes: fetch failed, keeping old snapshot:", e)
-
-
-if __name__ == "__main__":
-    args = sys.argv[1:]
-    # the runner refreshes the shared-count snapshot on every rebuild
-    if "--likes" in args or os.environ.get("GITHUB_ACTIONS"):
-        refresh_likes()
-    _files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
-    latest = os.path.basename(_files[0])[:-5] if _files else ""
-    daily, my, weekly, index = render_all()
-    if "standalone" in args:
-        doc = standalone(daily)
-        open(os.path.join(HERE, "index.html"), "w").write(doc)
-        print("wrote index.html")
-        # a dated copy gives every edition its own path — webview caches
-        # that ignore query strings can never serve yesterday's page
-        if latest:
-            dated = latest.replace("-", "") + ".html"
-            open(os.path.join(HERE, dated), "w").write(doc)
-            print("wrote", dated)
-        open(os.path.join(HERE, "my.html"), "w").write(standalone(my))
-        open(os.path.join(HERE, "weekly.html"), "w").write(standalone(weekly))
-        json.dump(index, open(os.path.join(HERE, "items.json"), "w"), ensure_ascii=False, separators=(",", ":"))
-        print("wrote my.html, weekly.html, items.json (%d items)" % len(index))
-    else:
-        open(os.path.join(HERE, "artifact.html"), "w").write(daily)
-        print("wrote artifact.html")
+</script></body></html>

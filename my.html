@@ -1,32 +1,8 @@
-#!/usr/bin/env python3
-"""Render every data/YYYY-MM-DD.json into the HMI Daily archive page.
-  python3 build.py            -> fragment (Claude Artifact)
-  python3 build.py standalone -> full document -> index.html
-"""
-import json, os, sys, glob, html
-from datetime import date as _date
-
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "data")
-
-# fallback panel colours, keyed by category
-# one hue per category — pill colour and photo-fallback panel
-CAT = {
-    "micromobility": "#E5342A",   # the desk's own beat rides the red
-    "cockpit":       "#7B5CF0",
-    "interaction":   "#17A472",
-    "ai":            "#DB3A9C",
-    "design":        "#E07A18",
-    "visual":        "#2E6BE6",   # graphic / 2D / motion graphics
-    "industrial":    "#B08900",   # product & industrial design, CMF
-}
-DEFAULT_CAT = "#5B5750"
-
-
-def cat_colour(tag):
-    return CAT.get((tag or "").strip().lower(), DEFAULT_CAT)
-
-CSS = """
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADUX Daily · My</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
+</head><body><style>
 :root{
   --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
   --rule:#111110; --hair:#111110; --red:#E5342A; --onred:#FFFFFF;
@@ -407,194 +383,15 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 .foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
 .foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
 .foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
-"""
-
-
-def esc(s): return html.escape(s, quote=False)
-
-
-HEART_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>')
-
-
-def site_cfg():
-    try:
-        return json.load(open(os.path.join(HERE, "site.json")))
-    except Exception:
-        return {}
-
-
-def load_likes():
-    """likes.json is a snapshot of the shared heart counts, refreshed by the runner."""
-    try:
-        return json.load(open(os.path.join(HERE, "likes.json"))).get("counts", {})
-    except Exception:
-        return {}
-
-
-def slug(tag):
-    return "".join(ch for ch in (tag or "").lower() if ch.isalpha())
-
-
-def item_id(d, i):
-    return "%s-%d" % (d, i + 1)
-
-
-def photo(it, kind):
-    if it.get("img"):
-        return '<figure class="ph ph-%s"><img src="%s" alt="" loading="lazy"></figure>' % (
-            kind, esc(it["img"]))
-    return ('<figure class="ph ph-%s fb" style="background:%s;color:#fff">'
-            '<span>%s</span></figure>') % (
-        kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")))
-
-
-def heart(iid):
-    return ('<button type="button" class="heart" data-id="{id}" aria-pressed="false" '
-            'aria-label="Like">{svg}<span class="cnt"></span></button>').format(id=iid, svg=HEART_SVG)
-
-
-def article(it, kind, photo_on=True, date="", iid=""):
-    langs = "".join('<p class="tx %s">%s</p>' % (k, esc(it[k]))
-                    for k in ("en", "zh", "ko") if it.get(k))
-    return (
-        '<article class="a-{k}" data-tag="{slug}" data-id="{id}">{ph}'
-        '<span class="tagrow" style="--cat:{c}">'
-        '<span class="tag">{tag}</span></span>'
-        '<h3 class="hl">{t}</h3>{langs}'
-        '<span class="acts"><a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>{heart}</span>'
-        '<span class="adate">{date}</span></article>'
-    ).format(k=kind, ph=photo(it, kind) if photo_on else "", c=cat_colour(it.get("tag")),
-             date=date, id=iid, heart=heart(iid) if iid else "",
-             slug=slug(it.get("tag", "")),
-             tag=esc(it.get("tag", "News")), t=esc(it["t"]),
-             langs=langs, url=esc(it["url"]), src=esc(it["src"]))
-
-
-def load_days():
-    files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
-    days = []
-    for f in files:
-        d = os.path.basename(f)[:-5]
-        days.append((d, json.load(open(f))))
-    return days
-
-
-def items_index(days):
-    """Flat index of every story — the My page and Weekly page render from this."""
-    out = []
-    for d, items in days:
-        for i, it in enumerate(items):
-            out.append({
-                "id": item_id(d, i), "date": d, "tag": it.get("tag", "News"),
-                "t": it["t"], "en": it.get("en", ""), "zh": it.get("zh", ""), "ko": it.get("ko", ""),
-                "src": it["src"], "url": it["url"], "img": it.get("img", ""),
-            })
-    return out
-
-
-def render_days(days):
-    body = []
-    for d, items in days:
-        y, m, dd = (int(x) for x in d.split("-"))
-        lead = article(items[0], "lead", date=d, iid=item_id(d, 0)) if items else ""
-        duo = ""
-        if len(items) > 2:
-            duo = ('<div class="duo">%s%s</div>' %
-                   (article(items[1], "duo", date=d, iid=item_id(d, 1)),
-                    article(items[2], "duotx", photo_on=False, date=d, iid=item_id(d, 2))))
-        mid = "".join(article(it, "mid", date=d, iid=item_id(d, i)) for i, it in enumerate(items) if 3 <= i < 5)
-        side = "".join(article(it, "side", date=d, iid=item_id(d, i)) for i, it in enumerate(items) if 5 <= i < 8)
-        foot = ""
-        if items[8:]:
-            foot = '<div class="rest">%s</div>' % "".join(
-                article(it, "foot", date=d, iid=item_id(d, i)) for i, it in enumerate(items) if i >= 8)
-        band = ('<div class="band">'
-                '<div class="col lead">{lead}{duo}</div>'
-                '<div class="col mid">{mid}</div>'
-                '<div class="col side">{side}</div>'
-                '</div>').format(lead=lead, duo=duo, mid=mid, side=side)
-        body.append(
-            '<section class="day" id="d{d}">{band}{foot}</section>'.format(
-                d=d, band=band, foot=foot)
-        )
-    return "".join(body)
-
-
-# ---------------------------------------------------------------- weekly
-WEEKLY = os.path.join(HERE, "weekly")
-
-
-def load_weeks():
-    files = sorted(glob.glob(os.path.join(WEEKLY, "*.json")), reverse=True)
-    return [json.load(open(f)) for f in files]
-
-
-def render_weeks(weeks, index, counts):
-    byid = {it["id"]: it for it in index}
-    out = []
-    for w in weeks:
-        wid = w.get("week", "")
-        title = w.get("title", {})
-        intro = w.get("intro", {})
-        tl = "".join('<p class="tx %s">%s</p>' % (k, esc(title[k])) for k in ("en", "zh", "ko") if title.get(k))
-        il = "".join('<p class="tx %s">%s</p>' % (k, esc(intro[k])) for k in ("en", "zh", "ko") if intro.get(k))
-        cats = []
-        for c in w.get("cats", []):
-            tag = c.get("tag", "")
-            txt = "".join('<p class="tx %s">%s</p>' % (k, esc(c[k])) for k in ("en", "zh", "ko") if c.get(k))
-            lis = []
-            for iid in c.get("items", []):
-                it = byid.get(iid)
-                if not it:
-                    continue
-                lis.append('<li><a href="index.html#d%s" data-id="%s">%s</a><span class="who">%s</span></li>' % (
-                    it["date"], iid, esc(it["t"]), esc(it["src"])))
-            cats.append('<div class="wcat"><span class="tagrow" style="--cat:%s"><span class="tag">%s</span></span>%s<ul>%s</ul></div>' % (
-                cat_colour(tag), esc(tag), txt, "".join(lis)))
-        # most loved: explicit list in the file, else computed from the like snapshot
-        top = w.get("top") or []
-        if not top:
-            wk_ids = [it["id"] for it in index if w.get("from", "") <= it["date"] <= w.get("to", "9999")]
-            ranked = sorted(((counts.get(i, 0), i) for i in wk_ids), reverse=True)
-            top = [{"id": i, "n": n} for n, i in ranked[:5] if n > 0]
-        tops = []
-        for t in top:
-            it = byid.get(t["id"]) if isinstance(t, dict) else byid.get(t)
-            if not it:
-                continue
-            n = t.get("n", counts.get(it["id"], 0)) if isinstance(t, dict) else counts.get(it["id"], 0)
-            tops.append('<li><a href="%s" target="_blank" rel="noopener">%s</a><span class="n">%s</span></li>' % (
-                esc(it["url"]), esc(it["t"]), ("&#9829; %d" % n) if n else ""))
-        topblock = ('<div class="wtop"><h3>%s Most loved this week</h3><ol>%s</ol></div>' % (HEART_SVG, "".join(tops))) if tops else ""
-        out.append(
-            '<section class="week" id="{wid}"><div class="dayhead"><h2>{wid}</h2><span class="rule"></span>'
-            '<span class="meta">{frm} &ndash; {to}</span></div>'
-            '<div class="wtitle">{tl}</div><div class="wintro">{il}</div>'
-            '<div class="wcats">{cats}</div>{top}</section>'.format(
-                wid=esc(wid), frm=esc(w.get("from", "")), to=esc(w.get("to", "")),
-                tl=tl, il=il, cats="".join(cats), top=topblock))
-    if not out:
-        out.append('<div class="empty"><div class="big">Coming Monday</div>'
-                   '<p class="tx en">The first weekly roundup lands next Monday at 10:00.</p>'
-                   '<p class="tx zh">首期周报将于下周一 10:00 发布。</p>'
-                   '<p class="tx ko">첫 위클리 요약은 다음 주 월요일 10:00에 나옵니다.</p></div>')
-    return "".join(out)
-
-
-# ---------------------------------------------------------------- page shell
-HEAD = """<title>{title}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
-<style>{css}</style>
+</style>
 <div class="sheet" id="top">
 <div class="shell">
   <div class="top">
     <span class="wordmark">ADUX&nbsp;DAILY</span>
     <nav class="topnav" aria-label="Sections">
-      <a href="index.html"{c_daily}>Daily</a>
-      <a href="weekly.html"{c_weekly}>Weekly</a>
-      <a href="my.html"{c_my}>My &#9829;<span class="badge" id="mybadge"></span></a>
+      <a href="index.html">Daily</a>
+      <a href="weekly.html">Weekly</a>
+      <a href="my.html" aria-current="page">My &#9829;<span class="badge" id="mybadge"></span></a>
     </nav>
     <span class="ctrls">
       <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
@@ -619,11 +416,9 @@ HEAD = """<title>{title}</title>
     </span>
   </div>
   <header class="masthead">
-    <h1>{h1}</h1>{kicker}
+    <h1>My &#9829;</h1><div class="kicker">No login &middot; kept in this browser</div>
   </header>
-"""
-
-FOOT = """
+<div class="dayhead" style="margin-top:22px"><h2>Saved on this device</h2><span class="rule"></span><button type="button" class="clearbtn" id="clearall" hidden>Clear all</button></div><div id="mylist"></div>
   <a class="morebar" href="#top">Back to top &uarr;</a>
 </div>
 </div>
@@ -631,9 +426,7 @@ FOOT = """
   <span class="wordmark">ADUX Daily</span>
   <span class="note">Curated by Claude</span>
 </div></footer>
-"""
-
-JS = r"""<script>
+<script>window.ADUX_LIKE_API="";</script><script>
 (function(){
   var root=document.documentElement;
   var btns=[].slice.call(document.querySelectorAll('.langsw button'));
@@ -747,36 +540,10 @@ JS = r"""<script>
       }).catch(function(){});
     }
   }
-  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,badge:badge,heartSvg:'%HEART%'};
+  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,badge:badge,heartSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>'};
   badge(); wire(document);
 })();
-</script>"""
-
-
-def page(title, h1, active, body, kicker="", extra_js=""):
-    api = site_cfg().get("like_api", "")
-    cur = lambda k: ' aria-current="page"' if k == active else ""
-    return (HEAD.format(title=esc(title), css=CSS, h1=h1, kicker=kicker,
-                        c_daily=cur("daily"), c_weekly=cur("weekly"), c_my=cur("my"))
-            + body + FOOT
-            + '<script>window.ADUX_LIKE_API=%s;</script>' % json.dumps(api)
-            + JS.replace("%HEART%", HEART_SVG.replace("'", "\\'"))
-            + extra_js)
-
-
-FILTERS = """  <div class="fwrap"><nav class="filters" aria-label="Category filter">
-    <button type="button" data-f="" aria-pressed="true">All</button>
-    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
-    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
-    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
-    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
-    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
-    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
-    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
-  </nav></div>
-"""
-
-MY_JS = r"""<script>
+</script><script>
 (function(){
   var host=document.getElementById('mylist'); if(!host) return;
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
@@ -821,68 +588,4 @@ MY_JS = r"""<script>
   var clr=document.getElementById('clearall');
   if(clr) clr.addEventListener('click',function(){ window.ADUX.save({}); window.ADUX.badge(); draw(); });
 })();
-</script>"""
-
-
-def render_all():
-    days = load_days()
-    index = items_index(days)
-    counts = load_likes()
-    daily = page("ADUX Daily", "Latest News", "daily", FILTERS + render_days(days))
-    my = page("ADUX Daily · My", "My &#9829;", "my",
-              '<div class="dayhead" style="margin-top:22px"><h2>Saved on this device</h2><span class="rule"></span>'
-              '<button type="button" class="clearbtn" id="clearall" hidden>Clear all</button></div>'
-              '<div id="mylist"></div>',
-              kicker='<div class="kicker">No login &middot; kept in this browser</div>', extra_js=MY_JS)
-    weekly = page("ADUX Daily · Weekly", "This Week", "weekly", render_weeks(load_weeks(), index, counts),
-                  kicker='<div class="kicker">What moved the room &middot; every Monday</div>')
-    return daily, my, weekly, index
-
-
-def standalone(frag, lang="en"):
-    return ('<!doctype html><html lang="%s"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width,initial-scale=1">' % lang
-            + frag.replace("<style>", "</head><body><style>", 1) + "</body></html>")
-
-
-def refresh_likes():
-    """Pull the shared heart counts into likes.json (runner only — needs network)."""
-    api = site_cfg().get("like_api", "")
-    if not api:
-        print("likes: no like_api configured"); return
-    import urllib.request
-    try:
-        with urllib.request.urlopen(api.rstrip("/") + "/top?n=1000", timeout=20) as r:
-            data = json.load(r)
-        json.dump({"updated": _date.today().isoformat(), "counts": data.get("counts", {})},
-                  open(os.path.join(HERE, "likes.json"), "w"), indent=0)
-        print("likes: %d ids" % len(data.get("counts", {})))
-    except Exception as e:
-        print("likes: fetch failed, keeping old snapshot:", e)
-
-
-if __name__ == "__main__":
-    args = sys.argv[1:]
-    # the runner refreshes the shared-count snapshot on every rebuild
-    if "--likes" in args or os.environ.get("GITHUB_ACTIONS"):
-        refresh_likes()
-    _files = sorted(glob.glob(os.path.join(DATA, "*.json")), reverse=True)
-    latest = os.path.basename(_files[0])[:-5] if _files else ""
-    daily, my, weekly, index = render_all()
-    if "standalone" in args:
-        doc = standalone(daily)
-        open(os.path.join(HERE, "index.html"), "w").write(doc)
-        print("wrote index.html")
-        # a dated copy gives every edition its own path — webview caches
-        # that ignore query strings can never serve yesterday's page
-        if latest:
-            dated = latest.replace("-", "") + ".html"
-            open(os.path.join(HERE, dated), "w").write(doc)
-            print("wrote", dated)
-        open(os.path.join(HERE, "my.html"), "w").write(standalone(my))
-        open(os.path.join(HERE, "weekly.html"), "w").write(standalone(weekly))
-        json.dump(index, open(os.path.join(HERE, "items.json"), "w"), ensure_ascii=False, separators=(",", ":"))
-        print("wrote my.html, weekly.html, items.json (%d items)" % len(index))
-    else:
-        open(os.path.join(HERE, "artifact.html"), "w").write(daily)
-        print("wrote artifact.html")
+</script></body></html>

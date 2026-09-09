@@ -1,0 +1,66 @@
+{
+ "week": "2026-W36",
+ "from": "2026-08-31",
+ "to": "2026-09-04",
+ "title": {
+  "en": "The week the button won: Ive, Kia, VW and Lexus all retreat from glass — while BYD and Mercedes bet on one giant screen",
+  "zh": "按键胜出的一周：Ive、起亚、大众、雷克萨斯纷纷从玻璃面板后撤，比亚迪与奔驰却押注一整块巨屏",
+  "ko": "버튼이 이긴 주: 아이브·기아·VW·렉서스는 유리에서 물러나고, BYD와 메르세데스는 초대형 한 장짜리 화면에 베팅"
+ },
+ "intro": {
+  "en": "Five editions, 80 stories. The through-line was the cockpit's touch reckoning: Jony Ive said touch doesn't belong in cars the same week Kia, VW and Lexus shipped hard controls back into their dashboards, while Chinese brands and Mercedes answered screen fatigue with fewer, bigger displays. Off the road, AI moved into back seats and dishwashers, PRINT dropped its 2026 Type Report, and IFA's oddest hardware came from the smallest categories.",
+  "zh": "五期、80条。主线是座舱触控的清算：Jony Ive 说触控不属于汽车的同一周，起亚、大众与雷克萨斯把实体控件重新放回仪表台，而中国品牌和奔驰则用更少、更大的屏幕回应'屏幕疲劳'。路外，AI 进了后座和洗碗机，PRINT 发布 2026 年度字体报告，IFA 最有意思的硬件反而来自最小的品类。",
+  "ko": "5개 에디션, 80건. 관통 주제는 콕핏 터치의 심판이었다. 조니 아이브가 '터치는 차에 어울리지 않는다'고 말한 같은 주에 기아·VW·렉서스가 물리 조작계를 대시보드에 되돌렸고, 중국 브랜드와 메르세데스는 '화면 피로'에 더 적고 더 큰 화면으로 답했다. 도로 밖에서는 AI가 뒷좌석과 식기세척기에 들어왔고, PRINT가 2026 타입 리포트를 냈으며, IFA에서 가장 흥미로운 하드웨어는 가장 작은 카테고리에서 나왔다."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Two camps, clearly drawn. VW's ID. Polo and BYD's Sealion 08 keep physical buttons; Mercedes' electric C-Class and Denza N8 go the other way with one dashboard-wide strip. Lexus NX's disappearing haptic buttons and the Corvette's button deletion show the middle ground is shrinking. Watch: BMW's China-only long i3 adapting Neue Klasse, and Ferrari's retro-instrument EV cabin.",
+   "zh": "两大阵营泾渭分明：大众 ID. Polo 和比亚迪海狮 08 保留实体按键；奔驰纯电 C 级与腾势 N8 反其道而行，用一条贯穿仪表台的巨屏。雷克萨斯 NX 的'隐形'触觉按键和科尔维特删掉按键，说明中间地带正在收窄。关注：BMW 中国专属长轴 i3 对 Neue Klasse 的本地化，以及法拉利的复古仪表 EV 座舱。",
+   "ko": "두 진영이 또렷이 갈렸다. VW ID. 폴로와 BYD 씨라이언 08은 물리 버튼을 지켰고, 메르세데스 전기 C-클래스와 덴자 N8은 대시보드 전체를 가로지르는 한 장짜리 스트립으로 반대로 갔다. 렉서스 NX의 사라지는 햅틱 버튼과 콜벳의 버튼 삭제는 중간 지대가 좁아지고 있음을 보여준다. 주목: 노이에 클라쎄를 중국용으로 다듬은 BMW 롱휠베이스 i3, 페라리의 레트로 계기 EV 캐빈.",
+   "items": ["2026-09-01-2", "2026-08-31-2", "2026-08-31-1", "2026-09-02-1", "2026-09-02-2", "2026-08-31-3", "2026-09-01-4", "2026-09-01-6"]
+  },
+  {
+   "tag": "Interaction",
+   "en": "Jony Ive's 'touch doesn't belong in cars' set the tone; Kia's Pleos Connect rebalancing and Cadillac's freeform-UI update were the practical follow-through. Beyond cars: Miele's dishwasher that photographs the load and decides, Bugatti tuning an engine's sound for three years, and in-car gaming synced to the cabin — interfaces that sense and act rather than ask.",
+   "zh": "Jony Ive 的'触控不属于汽车'定下基调；起亚 Pleos Connect 的触控/实体再平衡与凯迪拉克自由式 UI 更新是落地。汽车之外：美诺拍照判断脏污自动选程序的洗碗机、布加迪花三年调校发动机声浪、与座舱联动的车内游戏——界面在感知并行动，而不是发问。",
+   "ko": "조니 아이브의 '터치는 차에 어울리지 않는다'가 분위기를 잡았고, 기아 Pleos Connect의 터치/물리 재조정과 캐딜락 프리폼 UI 업데이트가 실무적 후속이었다. 차 밖에서는 세척물을 촬영해 스스로 코스를 고르는 밀레 식기세척기, 3년간 엔진 사운드를 조율한 부가티, 캐빈과 동기화된 차내 게임—묻지 않고 감지해 행동하는 인터페이스들.",
+   "items": ["2026-09-01-1", "2026-09-01-5", "2026-09-02-16", "2026-09-03-5", "2026-09-04-1", "2026-09-03-1", "2026-09-04-5"]
+  },
+  {
+   "tag": "AI",
+   "en": "AI arrived as a quiet passenger: Waymo's Ojai carries Gemini summoned only by a tap, Geely's off-road AI reads terrain, Plaud's earbuds turn meetings into drafted emails. The debate story was TWA defending AI illustration in a branding job — the clearest articulation yet of where studios draw the line.",
+   "zh": "AI 以安静乘客的姿态到来：Waymo Ojai 的 Gemini 只在轻触时被唤起，吉利越野 AI 读取地形，Plaud 耳机把会议变成草拟好的邮件。争议在 TWA 为品牌项目中的 AI 插画辩护——迄今对'工作室的底线在哪'最清晰的一次表述。",
+   "ko": "AI는 조용한 동승자로 들어왔다. 웨이모 Ojai의 Gemini는 탭해야만 불려 나오고, 지리의 오프로드 AI는 지형을 읽고, Plaud 이어버드는 회의를 이메일 초안으로 바꾼다. 논쟁거리는 브랜딩 프로젝트의 AI 일러스트를 옹호한 TWA—스튜디오가 어디에 선을 긋는지에 대한 가장 또렷한 진술.",
+   "items": ["2026-09-02-3", "2026-08-31-7", "2026-09-04-3", "2026-09-03-3"]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "The two-wheel dashboard is the story: Chigee asks whether CarPlay-class displays are now essential kit, Kamax traces gauges-to-TFT, and Second White's VtoV 2000 restyles the shared scooter as a grown-up product. Plus a stair-climbing delivery dog for the last ten meters.",
+   "zh": "两轮仪表是主题：Chigee 追问 CarPlay 级显示屏是否已成必需品，Kamax 梳理从指针到 TFT 的演进，Second White 的 VtoV 2000 把共享滑板车重塑为'成年'产品。另有爬楼梯的送货机器狗解决最后十米。",
+   "ko": "두 바퀴의 계기판이 이야기의 중심. Chigee는 CarPlay급 디스플레이가 필수 장비가 됐는지 묻고, Kamax는 바늘에서 TFT까지의 흐름을 정리했으며, Second White의 VtoV 2000은 공유 킥보드를 '어른스러운' 제품으로 다시 그렸다. 마지막 10 m를 위한 계단 오르는 배달 로봇개도.",
+   "items": ["2026-08-31-4", "2026-08-31-5", "2026-09-02-5", "2026-09-01-8"]
+  },
+  {
+   "tag": "Design",
+   "en": "Car bodies are un-melting: ID. Tiguan, the 2028 Sportage and Scout's two-mood Traveler all trade EV-blob curves for upright, square-lamped stances. Elsewhere Foster + Partners' Norton plinths, Darius Ou's type-as-system, Heller reopening 'Separated at Birth', and Gary Chang's 24-room 32 m² flat.",
+   "zh": "车身正在'解冻'：ID. Tiguan、2028 款 Sportage 与 Scout 双风格 Traveler 都用挺拔、方灯的姿态取代 EV 的圆润肥皂造型。此外：Foster + Partners 的 Norton 展台、Darius Ou 的'字体即系统'、Heller 重开'孪生设计'档案、张智强 32 m² 变 24 间的公寓。",
+   "ko": "차체가 '녹은 비누'에서 벗어나고 있다. ID. 티구안, 2028 스포티지, 스카우트의 두 가지 무드 트래블러 모두 EV 특유의 둥근 곡선 대신 직립·사각 램프 자세를 택했다. 그 밖에 포스터+파트너스의 노턴 진열대, 다리우스 오우의 '시스템으로서의 서체', 헬러가 다시 연 '쌍둥이 디자인' 파일, 32 m²를 24개 방으로 바꾸는 게리 창의 집.",
+   "items": ["2026-09-02-15", "2026-09-04-4", "2026-09-04-2", "2026-08-31-6", "2026-09-02-6", "2026-09-02-8", "2026-09-03-10"]
+  },
+  {
+   "tag": "Visual",
+   "en": "PRINT's 2026 Type Report was the read of the week. Around it: George Hardie's five-decade retrospective, GTA 6's Extended Look as craft at scale, Es Devlin staging 500 artisans in Venice, and a run of illustrators (Spurio, Hirji, Son, Yakovleva) making the case for the sketchbook as practice.",
+   "zh": "PRINT 2026 年度字体报告是本周必读。周边：George Hardie 五十年回顾展、GTA 6 Extended Look 展示的规模化工艺、Es Devlin 在威尼斯为 500 位匠人搭台，以及一批插画师（Spurio、Hirji、Son、Yakovleva）为'速写本即实践'立论。",
+   "ko": "PRINT 2026 타입 리포트가 이번 주의 필독. 주변으로는 조지 하디 50년 회고전, 대규모 장인정신으로 읽은 GTA 6 익스텐디드 룩, 베니스에서 장인 500명을 무대에 세운 에스 데블린, 그리고 스케치북이 곧 실천임을 보여준 일러스트레이터들(스푸리오·히르지·손·야코블레바).",
+   "items": ["2026-08-31-9", "2026-09-02-9", "2026-08-31-8", "2026-09-01-12", "2026-09-03-7", "2026-09-02-11", "2026-09-04-10"]
+  },
+  {
+   "tag": "Industrial",
+   "en": "IFA week favored objects that show their mechanism: a CD player with its transport on display, MB&F's clock shipped as 222 parts, a screenless camera that ejects e-paper prints, Orphea's 13-key pocket piano. VW's ID. California Cruise and the Lume Ranger trailer took mobility indoors.",
+   "zh": "IFA 周偏爱'露出机构'的物件：把走带机构摆在明面上的 CD 机、以 222 个零件出货的 MB&F 时钟、弹出电子纸照片的无屏相机、Orphea 13 键口袋钢琴。大众 ID. California Cruise 与 Lume Ranger 拖挂把出行搬进了室内。",
+   "ko": "IFA 주간은 메커니즘을 드러내는 물건들의 편이었다. 트랜스포트를 내보인 CD 플레이어, 222개 부품으로 배송되는 MB&F 시계, 전자종이 인화를 뱉어내는 화면 없는 카메라, Orphea 13건반 포켓 피아노. VW ID. 캘리포니아 크루즈와 Lume Ranger 트레일러는 모빌리티를 실내로 끌어들였다.",
+   "items": ["2026-09-03-14", "2026-09-01-15", "2026-09-01-16", "2026-09-02-12", "2026-09-01-14", "2026-09-03-15"]
+  }
+ ]
+}
