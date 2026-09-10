@@ -999,14 +999,20 @@ def refresh_likes():
     if not api:
         print("likes: no like_api configured"); return
     import urllib.request
+    path = os.path.join(HERE, "likes.json")
     try:
-        with urllib.request.urlopen(api.rstrip("/") + "/top?n=1000", timeout=20) as r:
+        req = urllib.request.Request(api.rstrip("/") + "/top?n=1000", headers={
+            "User-Agent": "Mozilla/5.0 (ADUX Daily build)", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as r:
             data = json.load(r)
         json.dump({"updated": _date.today().isoformat(), "counts": data.get("counts", {})},
-                  open(os.path.join(HERE, "likes.json"), "w"), indent=0)
+                  open(path, "w"), indent=0)
         print("likes: %d ids" % len(data.get("counts", {})))
     except Exception as e:
         print("likes: fetch failed, keeping old snapshot:", e)
+        if not os.path.exists(path):
+            json.dump({"updated": _date.today().isoformat(), "counts": {}, "error": str(e)},
+                      open(path, "w"), indent=0)
 
 
 if __name__ == "__main__":
