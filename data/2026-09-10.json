@@ -6,7 +6,9 @@
   "zh": "理想确认旗舰纯电SUV i9将于9月16日发布，为继Mega Home之后'家'系列第二款车型。座舱核心是旋转座椅：第二排可转向面对第三排，形成客厅式对坐布局；车长5,225 mm、轴距3,168 mm，前150 kW/后250 kW双电机，120 kWh电池（欣旺达与宁德时代电芯），CLTC续航目标800 km以上。",
   "ko": "리오토가 플래그십 순수전기 SUV i9를 9월 16일 공개한다고 확인했다. Mega Home에 이은 '홈' 시리즈 두 번째 모델. 캐빈의 핵심은 2열이 돌아 3열과 마주 보는 회전 시트—라운지식 대면 배치다. 전장 5,225 mm, 휠베이스 3,168 mm, 전 150 kW/후 250 kW 모터, 120 kWh 배터리(Sunwoda·CATL 셀)로 CLTC 800 km 이상을 노린다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/09/li-auto-announces-its-new-flagship-electric-suv-i9-set-for-september-16-debut/"
+  "url": "https://carnewschina.com/2026/09/09/li-auto-announces-its-new-flagship-electric-suv-i9-set-for-september-16-debut/",
+  "img": "assets/2026-09-10-1.png",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/e59bbee78987-87-e1788935723634.png"
  },
  {
   "tag": "Visual",
@@ -15,7 +17,9 @@
   "zh": "AMV BBDO为健力士做的新战役把'Lovely'里的V换成了在瓶身上待了160多年的竖琴，让标志变成一个字形。竖琴本身一笔未改，改变的只是它的角色。Creative Boom认为这是最聪明的一种焕新——把传承当作字体来复用而不是重画——并引用AMV的George Hackforth-Jones：'最好的点子往往就在眼前。'",
   "ko": "AMV BBDO의 새 기네스 캠페인은 'Lovely'의 V를 160년 넘게 병에 붙어 있던 하프로 바꿔, 로고를 글자 하나로 쓴다. 하프는 한 획도 안 바뀌었고 역할만 바뀌었다. Creative Boom은 이를 가장 영리한 리프레시—유산을 다시 그리지 않고 타이포그래피로 재활용—로 읽으며 AMV의 조지 핵포스-존스를 인용한다. '최고의 아이디어는 종종 눈앞에 있다.'",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/this-clever-design-trick-by-guinness-means-it-can-modernise-without-any-need-for-a-new-logo/"
+  "url": "https://www.creativeboom.com/inspiration/this-clever-design-trick-by-guinness-means-it-can-modernise-without-any-need-for-a-new-logo/",
+  "img": "assets/2026-09-10-2.webp",
+  "img_src": "https://media.creativeboom.com/8ca346a9-b87e-45b1-81a9-c187b3f7f95f/conversions/bb13dc5dc3e5007961dbead6d385cc58e82ed809-medium.webp"
  },
  {
   "tag": "AI",
@@ -24,7 +28,9 @@
   "zh": "Yanko从苹果发布会挑出的亮点不是健康传感器，而是Watch Series 12的Live Rewind：双击表冠，手表即显示过去15秒对话的字幕，由S11芯片的Secure Exclave本地转写，原始音频即删、只留文字。Siri Recap把整段对话总结成标题和要点；可限定仅工作时段启用，保存的摘要七天后自动删除，9月18日发售，399美元起。",
   "ko": "Yanko가 애플 이벤트에서 고른 건 건강 센서가 아니라 Watch Series 12의 Live Rewind. 크라운을 두 번 누르면 직전 15초 대화가 자막으로 뜬다. S11 칩의 Secure Exclave에서 전사하고 원음은 지우고 텍스트만 남긴다. Siri Recap은 대화 전체를 제목과 핵심 포인트로 요약하며, 근무시간에만 켜두거나 저장 요약을 7일 뒤 자동 삭제할 수 있다. 9월 18일 출시, 399달러부터.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/09/apples-coolest-watch-feature-has-nothing-to-do-with-health-it-lets-you-rewind-time/"
+  "url": "https://www.yankodesign.com/2026/09/09/apples-coolest-watch-feature-has-nothing-to-do-with-health-it-lets-you-rewind-time/",
+  "img": "assets/2026-09-10-3.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/apples-coolest-watch-feature-has-nothing-to-do-with-health-it-lets-you-rewind-time/apple_watch_live_recap_1.jpeg"
  },
  {
   "tag": "Interaction",
@@ -33,7 +39,9 @@
   "zh": "苹果首款折叠屏iPhone Duo（1,999美元，10月23日）把5.4英寸外屏与7.6英寸内屏做成相同比例，展开时内容是放大而非重排。Yanko的设计观察：5级钛合金中框、非对称轮廓让手自然知道往哪边开；纳米纹理内屏隐藏折痕；Face ID装不下改用侧键Touch ID；取消SIM卡槽；iOS 27把Dock改为竖排、灵动岛移到屏幕边缘。姿态包括笔记本支架、相机架与床头时钟。",
   "ko": "애플 첫 폴더블 iPhone Duo(1,999달러, 10월 23일)는 5.4인치 커버와 7.6인치 내부 화면을 같은 비율로 맞춰, 펼칠 때 콘텐츠가 재배치되지 않고 확대된다. Yanko의 디자인 노트: 그레이드 5 티타늄 프레임에 어느 쪽으로 열리는지 손이 아는 비대칭 프로파일, 주름을 감추는 나노 텍스처 내부 패널, Face ID가 안 들어가 측면 버튼 Touch ID, SIM 트레이 삭제, iOS 27은 독을 세로로, 다이내믹 아일랜드를 화면 가장자리로 옮겼다. 노트북 거치·카메라 리그·머리맡 시계 자세도 지원.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/09/the-iphone-duo-just-killed-the-dynamic-island-the-sim-tray-and-the-demand-for-an-ipad-mini/"
+  "url": "https://www.yankodesign.com/2026/09/09/the-iphone-duo-just-killed-the-dynamic-island-the-sim-tray-and-the-demand-for-an-ipad-mini/",
+  "img": "assets/2026-09-10-4.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/the-iphone-duo-just-killed-the-dynamic-island-the-sim-tray-and-the-demand-for-an-ipad-mini/iphone_duo_1.jpeg"
  },
  {
   "tag": "Micromobility",
@@ -43,7 +51,9 @@
   "ko": "Motorcycle.com의 2026 Ténéré 700 World Raid(12,999달러) 첫 시승. 분할형 23 L 알루미늄 탱크, 46 mm 풀 어저스터블 KYB 포크, 새 6축 IMU의 린 감응 ABS·트랙션·슬라이드 컨트롤이 호평. 디자이너용 HMI 메모: 전용 Mode 버튼으로 파워 2모드와 ABS·TCS 각 3단계를 고르지만 키를 껐다 켜면 전부 온로드 설정으로 되돌아가, 오프로드 라이더는 정차할 때마다 계기판에서 다시 맞춰야 한다. 점수 90.5%.",
   "src": "Motorcycle.com",
   "url": "https://www.motorcycle.com/bikes/manufacturer/yamaha/2026-yamaha-tenere-700-world-raid-review-first-ride-44669425",
-  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/08/13/11521/2026-yamaha-tenere-700-world-raid-review-first-ride.jpg?size=720x845&nocrop=1"
+  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/08/13/11521/2026-yamaha-tenere-700-world-raid-review-first-ride.jpg?size=720x845&nocrop=1",
+  "img": "assets/2026-09-10-5.jpg",
+  "img_src": "https://cdn-fastly.motorcycle.com/media/2026/08/13/11521/2026-yamaha-tenere-700-world-raid-review-first-ride.jpg?size=720x845&nocrop=1"
  },
  {
   "tag": "Cockpit",
@@ -53,7 +63,9 @@
   "ko": "2세대 다치아 스프링은 생산지를 중국에서 슬로베니아로 옮기고 르노 AmpR Small 플랫폼(Twingo E-Tech·R5와 공유)을 쓴다. 150 mm 길고 180 mm 넓어져 전장 3,850 mm, 4인승, 80마력 모터와 27.5 kWh LFP로 WLTP 250 km. 실내는 전 트림 7인치 디지털 클러스터, Journey 트림 10.1인치 터치스크린, 기본 Expression은 화면 대신 폰 거치대, 그리고 컬러 액센트로 살린 당당한 하드 플라스틱.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/new-dacia-spring/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Dacia-Spring-main-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Dacia-Spring-main-1024x576.jpg",
+  "img": "assets/2026-09-10-6.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Dacia-Spring-main-1024x576.jpg"
  },
  {
   "tag": "Design",
@@ -62,7 +74,9 @@
   "zh": "工信部申报信息曝光长城长轴距坦克700，对标仰望U8L：车长5,445 mm、宽2,126 mm、轴距3,150 mm，整备质量最高3,480 kg，2+2+2布局，第二排独立座椅。设计元素包括侧开式对开尾门、封闭式备胎罩、车顶扰流板与20/22英寸轮圈；动力为2.0T Hi4-Z插混（纯电续航190 km）或3.0T双涡轮V6。",
   "ko": "MIIT 신고 자료로 GWM의 롱휠베이스 탱크 700이 드러났다. 양왕 U8L을 겨냥해 전장 5,445 mm, 전폭 2,126 mm, 휠베이스 3,150 mm, 최대 3,480 kg, 2열 캡틴 시트의 2+2+2 배치. 옆으로 열리는 리어 반 도어, 밀폐형 스페어 타이어 커버, 루프 스포일러, 20·22인치 휠이 디자인 포인트. 파워트레인은 전기 190 km의 2.0T Hi4-Z 플러그인 하이브리드 또는 3.0T 트윈터보 V6.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/09/gwms-5-4-meter-tank-700-surfaces-with-6-seats-to-challenge-yangwang-u8/"
+  "url": "https://carnewschina.com/2026/09/09/gwms-5-4-meter-tank-700-surfaces-with-6-seats-to-challenge-yangwang-u8/",
+  "img": "assets/2026-09-10-7.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/1200x0_1_autohomecar__chxpwgqgc_sadvs3aamwqvtgx5a817-large-1484x900.jpg"
  },
  {
   "tag": "Design",
@@ -72,7 +86,9 @@
   "ko": "제쿠 J5·J7('테무 레인지로버'라 불리는)에 대해 레인지로버 총괄 마틴 림퍼트는 소송 얘기 대신, 베끼기는 '럭셔리 세계에서 우리 디자인이 영감을 준다는 신호'라고 답했다. 전략은 계속 진화해 원조가 앞서 있는 것. '최고 중의 최고'를 찾는 고객은 신생 브랜드가 흉내 못 낼 50년 디자인 계보에 돈을 낸다는 얘기.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/range-rover-take-on-chinese-copies/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/OMODAJAECOO-CarFest-2025-gallery-1-copy-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/OMODAJAECOO-CarFest-2025-gallery-1-copy-1024x576.jpg",
+  "img": "assets/2026-09-10-8.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/OMODAJAECOO-CarFest-2025-gallery-1-copy-1024x576.jpg"
  },
  {
   "tag": "Visual",
@@ -81,7 +97,9 @@
   "zh": "为劳埃德银行赞助的英国自行车协会国家系列赛与锦标赛，Form工作室避开笨拙的双标志组合，把两个品牌塞进字形里：在协会原有字体Anton基础上定制部分字母，让其曲线呼应协会的'Vic'标志与劳埃德的马。两套子识别随之而来——面向社交媒体更鲜亮有力的系列赛，以及取自冠军衫红白蓝的锦标赛。",
   "ko": "로이즈가 후원하는 브리티시 사이클링 내셔널 시리즈·챔피언십을 위해 스튜디오 Form은 어색한 두 로고 조합 대신 두 브랜드를 글자 안에 넣었다. 협회 서체인 Anton을 커스텀해 일부 글자의 곡선이 협회 심볼 'Vic'과 로이즈의 말을 닮게 한 것. 소셜용으로 더 밝고 강한 시리즈, 챔피언 저지의 빨강·하양·파랑을 쓴 챔피언십, 두 하위 아이덴티티가 뒤따른다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/how-form-solved-the-classic-two-logo-lockup-problem-for-british-cycling/"
+  "url": "https://www.creativeboom.com/inspiration/how-form-solved-the-classic-two-logo-lockup-problem-for-british-cycling/",
+  "img": "assets/2026-09-10-9.webp",
+  "img_src": "https://media.creativeboom.com/2c23806d-91bb-4dd5-9455-9073cf02288e/conversions/9ab9052a49f11c4bb94523108c0d714aa0f615d8-medium.webp"
  },
  {
   "tag": "Visual",
@@ -99,7 +117,9 @@
   "zh": "Hasan & Partners为赫尔辛基旧火车工厂（如今是餐厅、剧场和画廊）做的新识别，核心是他们在车厢上找到的一个标记：指示维修人员安全起吊位置的吊装符号，被锐化成一个'T'，同时呼应建筑的三角天窗。字标借鉴芬兰列车编号样式，色板从工厂自身的标记和吊车取砖红、芥黄与灰蓝，口号是'Your Next Stop'。",
   "ko": "Hasan & Partners가 레스토랑·극장·갤러리로 바뀐 헬싱키 옛 기차 공장을 리브랜딩하며, 객차에 실제로 찍혀 있던 표식을 로고로 삼았다. 정비사에게 안전한 잭업 지점을 알리던 리프팅 기호를 'T'로 다듬었고, 건물의 삼각 천창도 겹쳐 읽힌다. 로고타입은 핀란드 열차 번호 표기에서, 벽돌 빨강·머스터드·회청은 공장의 표식과 크레인에서 가져왔다. 태그라인은 'Your Next Stop'.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/all-aboard-helsinkis-old-train-factory-new-identity/"
+  "url": "https://www.creativeboom.com/inspiration/all-aboard-helsinkis-old-train-factory-new-identity/",
+  "img": "assets/2026-09-10-11.webp",
+  "img_src": "https://media.creativeboom.com/431e5752-a3fb-4547-b180-b267ef9dee79/conversions/89b42ae868c6930a1436f7a3c420cd2c8ed289cd-medium.webp"
  },
  {
   "tag": "Visual",
@@ -108,7 +128,9 @@
   "zh": "巴黎插画师Sarah Martinon以壁纸尺度绘制繁密的植物、建筑与梦境图案，再让它们走出纸面：香奈儿2025冬季星辰短片（Gordon von Steiner执导）让Lulu Tenney在她画作的动画版中漂浮，爱马仕把它们搬进卢加诺橱窗和飞马夏季广告，Christian Lacroix Maison、Arte与Lalique紧随其后。带Biba气息的手绘正是奢侈品牌想要的——因为机器画不出来。",
   "ko": "파리 일러스트레이터 사라 마르티농은 식물·건축·몽환적 패턴을 벽지 크기로 빽빽이 그린 뒤 종이 밖으로 내보낸다. 샤넬 2025 윈터 콘스텔레이션 필름(고든 폰 슈타이너 연출)에서는 룰루 테니가 그녀의 드로잉 애니메이션 속을 떠다녔고, 에르메스는 루가노 쇼윈도와 나는 말 여름 캠페인에 썼으며 크리스찬 라크르와 메종·Arte·랄리크가 뒤를 이었다. 비바 풍의 손맛—기계가 못 그리기에 럭셔리 하우스가 찾는다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/how-sarah-martinons-drawings-escaped-the-page-to-dress-bodies-rooms-and-a-chanel-film/"
+  "url": "https://www.creativeboom.com/inspiration/how-sarah-martinons-drawings-escaped-the-page-to-dress-bodies-rooms-and-a-chanel-film/",
+  "img": "assets/2026-09-10-12.webp",
+  "img_src": "https://media.creativeboom.com/b47cc9d7-3de2-4e36-bbd6-2cd0cbd56275/conversions/73a05162cacd727e835e2074a36b13c06e025e78-medium.webp"
  },
  {
   "tag": "Design",
@@ -117,7 +139,9 @@
   "zh": "designboom与iF设计奖合作的专题认为，室内正从固定布局转向用户可重组的空间，并列举2026年获奖作品：Martinelli Luce与HABITS按压弹性膜调光的Grammoluce灯、永山祐子为日式住宅设计的隔音可移动Relation Wall、Studio Doruk Bicer基于移动模块的49 m²模块之家、Maya Arquitetura可重构的Samba书架、JFR Studio数字与实体融合的HyperTank空间、Yule Space的森林书阁。可适应性、触感与自然是贯穿的主线。",
   "ko": "designboom이 iF 디자인 어워드와 함께 쓴 피처는 실내가 고정 배치에서 사용자가 재구성하는 공간으로 옮겨간다고 본다. 2026 수상작들이 근거다. 탄성 막을 눌러 밝기를 조절하는 Martinelli Luce×HABITS의 Grammoluce 램프, 나가야마 유코의 방음 이동 벽 Relation Wall, 이동 모듈로 짠 Studio Doruk Bicer의 49 m² 모듈러 홈, Maya Arquitetura의 재구성 선반 Samba, JFR Studio의 디지털-물리 공간 HyperTank, Yule Space의 Forest Book Loft. 적응성·촉감·자연이 관통 주제.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/future-interior-design-human-behavior-if-design-award/"
+  "url": "https://www.designboom.com/design/future-interior-design-human-behavior-if-design-award/",
+  "img": "assets/2026-09-10-13.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/09/if-design-award-FB.jpg"
  },
  {
   "tag": "Design",
@@ -126,7 +150,9 @@
   "zh": "巴黎设计周9月10日至19日举行，覆盖玛黑区、圣日耳曼德佩、歌剧院区与巴士底约350个场馆，Maison&Objet展会撑起前五天（9月10–14日）。designboom的指南把展内展外的亮点——值得绕道的展览、开放陈列室与装置——梳理成一张地图，无论身在现场还是远程关注本周的CMF与家具信号都用得上。",
   "ko": "파리 디자인 위크가 9월 10~19일 마레·생제르맹데프레·오페라·바스티유 4개 지구, 약 350개 장소에서 열린다. 메종&오브제 페어가 첫 닷새(9월 10~14일)를 떠받친다. designboom 가이드는 페어 안팎의 볼거리—돌아갈 가치가 있는 전시, 오픈 쇼룸, 설치—를 지도처럼 정리했다. 현장에 있든, 이번 주 CMF·가구 신호를 멀리서 좇든 유용하다.",
   "src": "designboom",
-  "url": "https://www.designboom.com/design/designboom-guide-paris-design-week-2026-highlights-maisonobjet/"
+  "url": "https://www.designboom.com/design/designboom-guide-paris-design-week-2026-highlights-maisonobjet/",
+  "img": "assets/2026-09-10-14.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/07/designboom-guide-paris-design-week-highlights-maison-objet-2026-1200.jpg"
  },
  {
   "tag": "Industrial",
@@ -135,7 +161,9 @@
   "zh": "透明外壳的Game Boy总是止步于屏幕；Louis Huang的Arduview把屏幕本身也做透明。透明OLED叠在透明电路板上、装进透明外壳，你能看着像素点亮，同时一眼望穿芯片、橙色铜排线、按键弹片和USB-C口。信用卡大小、50克，基于开源Arduboy平台，预装400款游戏，没有应用商店、配对或账号。",
   "ko": "투명 케이스 게임보이는 늘 화면에서 멈췄다. 루이스 황의 Arduview는 화면까지 투명하게 만든다. 투명 OLED가 투명 기판 위, 투명 셸 안에 있어 픽셀이 켜지는 걸 보면서 칩·주황 구리 플렉스 케이블·버튼 돔·USB-C 포트까지 그대로 들여다본다. 신용카드 크기 50 g, 오픈소스 Arduboy 기반, 게임 400개 내장, 앱스토어·페어링·계정 없음.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/09/clear-shell-game-boys-never-made-the-screen-transparent-arduview-did/"
+  "url": "https://www.yankodesign.com/2026/09/09/clear-shell-game-boys-never-made-the-screen-transparent-arduview-did/",
+  "img": "assets/2026-09-10-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/clear-shell-game-boys-never-made-the-screen-transparent-arduview-did/arduview-see-through-handheld-console-05.jpg"
  },
  {
   "tag": "Industrial",
@@ -144,6 +172,8 @@
   "zh": "Mauricio Romano的瓦楞纸时钟没有指针：隐藏的磁铁推动手风琴式折叠圆盘上的单个褶皱张开或合拢来标示小时，'它不是告诉你时间，而是让你去察觉时间'。深红、钴蓝、青绿和赤陶色版本用彩色绳悬挂。十年前作为学生时期关于联觉与形状的研究草图，由他的三角形Geometry Clock演化而来，目前只存在于Instagram。",
   "ko": "마우리시오 로마노의 골판지 시계에는 바늘이 없다. 숨은 자석이 아코디언처럼 접힌 원반의 주름 하나하나를 열고 닫아 시각을 표시한다. '시간을 알려주기보다, 주의를 기울이면 알아차리게 하는 시계.' 진홍·코발트·청록·테라코타 버전이 색 끈에 매달린다. 10년 전 공감각과 형태를 다룬 학생 스케치에서 시작해 삼각형 기반 Geometry Clock을 거쳐 왔고, 아직은 인스타그램에만 있다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/08/the-paper-clock-that-hides-its-hands-in-plain-sight/"
+  "url": "https://www.yankodesign.com/2026/09/08/the-paper-clock-that-hides-its-hands-in-plain-sight/",
+  "img": "assets/2026-09-10-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/the-paper-clock-that-hides-its-hands-in-plain-sight/corrugated-00.jpg"
  }
 ]
