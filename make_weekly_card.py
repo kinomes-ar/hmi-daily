@@ -18,7 +18,10 @@ def clip(s, max_bytes):
     out = s
     while len(out.encode()) > max_bytes and out:
         out = out[:-1]
-    best = max(out.rfind(ch) for ch in ENDS)
+    import re
+    best = -1
+    for m in re.finditer(r"[%s](?!\d)" % re.escape(ENDS), out):
+        best = m.start()
     if best >= int(len(out) * 0.45):
         return out[:best + 1]
     return out.rstrip(" ,、，—-") + "…"

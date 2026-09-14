@@ -1,0 +1,72 @@
+{
+ "week": "2026-W37",
+ "from": "2026-09-07",
+ "to": "2026-09-11",
+ "title": {
+  "en": "Apple folds, Audi un-melts, and the copy debate cuts both ways: Range Rover shrugs at Jaecoo while an Xpeng gets dressed as a Range Rover",
+  "zh": "苹果折叠、奥迪'解冻'，模仿之争双向发生：揽胜对捷途一笑置之，小鹏却被改成了揽胜",
+  "ko": "애플은 접고, 아우디는 각을 되찾고, 카피 논쟁은 양방향으로: 레인지로버는 제쿠에 어깨를 으쓱, 샤오펑은 레인지로버 옷을 입다"
+ },
+ "intro": {
+  "en": "Five editions, 80 stories, and the room's hearts went to the iPhone Duo. Apple's event set the interaction agenda — a foldable whose Dynamic Island turns sideways, a watch that rewinds 15 seconds of conversation, a phone with a real aperture — while the cars answered with restraint: Audi's boxy A2 revival, Polestar's Formula 2030 and a Dacia Spring that still gets a proper cluster. Motorcycles carried the HMI critique (Ténéré settings that reset, Z900RS switchgear nobody can read), and branding delivered the week's most-shared ideas: Guinness turning its harp into a letter, Form hiding two logos in one typeface, and a first English guide to Japanese type.",
+  "zh": "五期、80条，本周的红心给了iPhone Duo。苹果发布会定下了交互议程——灵动岛横过来的折叠屏、能回放15秒对话的手表、有真实光圈的手机——汽车这边则以克制作答：奥迪方正的A2复活、Polestar Formula 2030、连仪表都不省的达契亚Spring。摩托车承担了HMI批评（会重置的Ténéré设定、没人看得懂的Z900RS开关组），而品牌设计贡献了本周传播最广的点子：健力士把竖琴变成字母、Form把两个标志藏进一套字体，以及第一本英文日文排版指南。",
+  "ko": "5개 에디션, 80건, 이번 주 하트는 iPhone Duo에 몰렸다. 애플 이벤트가 인터랙션 의제를 잡았다—다이내믹 아일랜드가 옆으로 눕는 폴더블, 대화 15초를 되감는 시계, 진짜 조리개를 단 폰—그리고 자동차는 절제로 답했다. 각진 아우디 A2 부활, 폴스타 포뮬러 2030, 계기판만큼은 제대로 넣은 다치아 스프링. 모터사이클이 HMI 비판을 떠맡았고(리셋되는 테네레 설정, 아무도 못 읽는 Z900RS 스위치기어), 브랜딩은 가장 많이 공유된 아이디어를 냈다. 하프를 글자로 바꾼 기네스, 서체 하나에 로고 둘을 숨긴 Form, 첫 영문 일본어 타이포 가이드."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Cabins got calmer and boxier. Audi's A2 e-tron pairs an 11.9-inch cluster with a 12.8-inch curved screen and a Fidlock magnetic rail for accessories; the Dacia Spring proves a €20k EV can still ship a real 7-inch cluster; Li Auto's i9 puts rotating face-to-face seats in a six-seater. Counter-currents: the electric E-Class keeps a dashboard-wide display even as Carscoops notes passenger screens 'hardly get used', and Xiaomi's Skynomad adds a pop-up roof to the cabin brief.",
+   "zh": "座舱更安静、更方正。奥迪A2 e-tron把11.9英寸仪表与12.8英寸曲面屏搭配Fidlock磁吸配件导轨；达契亚Spring证明2万欧元的电动车也能配真正的7英寸仪表；理想i9在六座车里放进可旋转对坐的座椅。反向潮流：纯电E级仍保留贯穿式大屏，尽管Carscoops指出副驾屏幕'几乎没人用'；小米天际游牧把弹出式车顶写进了座舱需求。",
+   "ko": "캐빈은 더 차분하고 각져졌다. 아우디 A2 e-tron은 11.9인치 클러스터와 12.8인치 커브드 화면에 Fidlock 자석 레일을 짝지었고, 다치아 스프링은 2만 유로 EV도 진짜 7인치 클러스터를 넣을 수 있음을 보였으며, 리오토 i9는 6인승에 회전 대면 시트를 넣었다. 역류도 있다. 전기 E-클래스는 조수석 화면이 '거의 안 쓰인다'는 Carscoops 지적에도 풀와이드 디스플레이를 유지하고, 샤오미 스카이노마드는 팝업 루프를 캐빈 과제에 추가했다.",
+   "items": ["2026-09-09-1", "2026-09-10-6", "2026-09-10-1", "2026-09-09-6", "2026-09-09-7", "2026-09-08-2", "2026-09-07-2"]
+  },
+  {
+   "tag": "Interaction",
+   "en": "The iPhone Duo took the week's most hearts: matching aspect ratios so content scales instead of reflowing, an asymmetric frame that tells your hand which way it opens, the Dynamic Island moved to the edge. Around it, Hyundai's data flywheel (fleet data training the cockpit via OTA), Xiaomi's 18 Fold arriving days before Apple, and two motorcycle reviews that read like HMI audits: the Ténéré 700's settings that revert on key-off and the Z900RS SE's 'confusing' switchgear.",
+   "zh": "iPhone Duo拿下本周最多红心：内外屏同比例，内容放大而非重排；非对称中框告诉手往哪边开；灵动岛移到屏幕边缘。周边有现代的数据飞轮（车队数据经OTA训练座舱）、抢在苹果前几天发布的小米18 Fold，以及两篇读起来像HMI审计的摩托车评测：Ténéré 700断电即重置的设定，Z900RS SE'令人困惑'的开关组。",
+   "ko": "iPhone Duo가 이번 주 가장 많은 하트를 받았다. 콘텐츠가 재배치되지 않고 확대되도록 맞춘 화면 비율, 어느 쪽으로 여는지 손이 아는 비대칭 프레임, 가장자리로 옮긴 다이내믹 아일랜드. 주변엔 현대차의 데이터 플라이휠(플릿 데이터가 OTA로 콕핏을 학습), 애플보다 며칠 먼저 온 샤오미 18 폴드, 그리고 HMI 감사처럼 읽히는 모터사이클 리뷰 둘—키를 끄면 되돌아가는 테네레 700 설정, '헷갈리는' Z900RS SE 스위치기어.",
+   "items": ["2026-09-10-4", "2026-09-09-4", "2026-09-09-10", "2026-09-10-5", "2026-09-11-4", "2026-09-07-4"]
+  },
+  {
+   "tag": "AI",
+   "en": "AI showed up as restraint and as a passenger. Apple's Live Rewind transcribes the last 15 seconds on-device and deletes the audio; Batten and Kamp's orchid-carrying robot removed its cameras on purpose (and earned a heart); Ford's 'Grey Beards' story was the counter-argument — 350 rehired experts fixed what data alone could not. Yanko's IFA roundup summed up the hardware mood: companionship over performance, on-device over cloud.",
+   "zh": "AI以'克制'与'乘客'两种姿态出现。苹果Live Rewind在设备端转写最近15秒并删除音频；Batten and Kamp驮兰花的机器人刻意去掉了摄像头（还收获一颗心）；福特'灰胡子'的故事是反面论证——350位返聘专家修好了数据修不好的问题。Yanko的IFA盘点概括了硬件情绪：陪伴优先于性能，端侧优先于云端。",
+   "ko": "AI는 절제로, 그리고 동승자로 나타났다. 애플 Live Rewind는 마지막 15초를 기기에서 전사하고 음성은 지우며, 배튼 앤 캠프의 난초 로봇은 일부러 카메라를 뺐다(하트도 받았다). 포드의 '그레이 비어드' 이야기는 반론이었다—재고용된 전문가 350명이 데이터만으로 못 고친 걸 고쳤다. Yanko의 IFA 총정리는 하드웨어 분위기를 요약한다. 성능보다 동반, 클라우드보다 기기 안.",
+   "items": ["2026-09-10-3", "2026-09-09-11", "2026-09-09-3", "2026-09-11-3", "2026-09-08-3", "2026-09-07-3"]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "A strong two-wheel week: Aston Martin and Brough Superior's AMB 002 (carbon over a 5 kg titanium backbone, 300 units), KTM's 690 Rally with a 4.2-inch TFT in a rally tower, a 2027 SV650 confirmed with ride-by-wire and a TFT, and a 2027 Diavel V4 S with Skyhook suspension in the CARB paperwork. The Ténéré World Raid first ride is the one to read for dashboard logic.",
+   "zh": "两轮表现强势：阿斯顿·马丁与Brough Superior的AMB 002（碳纤维车身配5 kg钛合金脊梁，限量300台）、拉力塔里嵌4.2英寸TFT的KTM 690 Rally、确认配电子油门与TFT的2027款SV650，以及CARB文件里带Skyhook悬架的2027款Diavel V4 S。想看仪表逻辑，读Ténéré World Raid的首试。",
+   "ko": "두 바퀴가 강했던 주. 애스턴마틴·브로우 슈피리어의 AMB 002(5 kg 티타늄 백본 위 카본, 300대), 랠리 타워에 4.2인치 TFT를 박은 KTM 690 Rally, 라이드 바이 와이어와 TFT가 확인된 2027 SV650, CARB 서류에 Skyhook 서스펜션이 드러난 2027 디아벨 V4 S. 계기판 논리를 보려면 테네레 월드 레이드 첫 시승기를 읽을 것.",
+   "items": ["2026-09-11-1", "2026-09-09-5", "2026-09-09-9", "2026-09-11-7", "2026-09-10-5"]
+  },
+  {
+   "tag": "Design",
+   "en": "The copy debate cut both ways: Range Rover's boss called Jaecoo's look-alikes 'a compliment' the same week Avatr's T09 filing looked like a Yangwang U8 and Xpeng GX owners were dressing their cars as Range Rovers. Bodies kept un-melting — Polestar's Formula 2030, Smart #2, Tank 700 LWB, Kia PV7 — and Counter-Print's merch book earned a heart. designboom's iF feature on adaptable interiors was the most-loved read.",
+   "zh": "模仿之争双向发生：揽胜老板称捷途的相似设计'是种恭维'，同一周阿维塔T09的申报图像极了仰望U8，小鹏GX车主则把车改成揽胜。车身继续'解冻'——Polestar Formula 2030、smart #2、坦克700长轴版、起亚PV7——Counter-Print的周边书收获一颗心。designboom与iF合作的'可适应室内'专题是最受喜爱的阅读。",
+   "ko": "카피 논쟁은 양방향이었다. 레인지로버 수장이 제쿠의 닮은꼴을 '칭찬'이라 한 그 주에 아바타 T09 신고 이미지는 양왕 U8처럼 보였고, 샤오펑 GX 오너들은 차를 레인지로버로 꾸몄다. 차체는 계속 각을 되찾았다—폴스타 포뮬러 2030, 스마트 #2, 탱크 700 LWB, 기아 PV7—그리고 카운터프린트의 머천다이즈 책이 하트를 받았다. designboom×iF의 적응형 인테리어 피처는 가장 사랑받은 읽을거리.",
+   "items": ["2026-09-10-8", "2026-09-11-6", "2026-09-08-1", "2026-09-09-8", "2026-09-10-7", "2026-09-08-5", "2026-09-10-13", "2026-09-11-10"]
+  },
+  {
+   "tag": "Visual",
+   "en": "Branding had its best week of the month. Guinness turned its harp into the V of 'LoVely' without touching the logo; Form hid British Cycling and Lloyds inside one customised Anton; PRINT's Type Tuesday reviewed J Type 101, the first English guide to Japanese typography; Hasan & Partners built Helsinki's Train Factory identity from a carriage safety mark; ONBOX let 100 guests paint Bar Supernova's wordmark; and Mother Design pushed Keen away from minimalist-wellness sameness.",
+   "zh": "品牌设计迎来本月最佳一周。健力士不改标志就把竖琴变成'LoVely'里的V；Form把英国自行车协会与劳埃德藏进一套定制Anton；PRINT的Type Tuesday评介了首本英文日文排版指南《J Type 101》；Hasan & Partners用车厢安全标记做出赫尔辛基火车工厂的识别；ONBOX让100位客人画出Bar Supernova的字标；Mother Design把Keen推离极简健康风的千篇一律。",
+   "ko": "브랜딩이 이달 최고의 한 주를 보냈다. 기네스는 로고를 건드리지 않고 하프를 'LoVely'의 V로 만들었고, Form은 커스텀 Anton 하나에 브리티시 사이클링과 로이즈를 숨겼으며, PRINT Type Tuesday는 첫 영문 일본어 타이포 가이드 『J Type 101』을 다뤘다. Hasan & Partners는 객차 안전 표식으로 헬싱키 트레인 팩토리 아이덴티티를 지었고, ONBOX는 손님 100명에게 Bar Supernova 워드마크를 그리게 했으며, Mother Design은 Keen을 미니멀 웰니스의 획일성에서 떼어냈다.",
+   "items": ["2026-09-10-2", "2026-09-10-9", "2026-09-09-2", "2026-09-10-11", "2026-09-09-13", "2026-09-11-2", "2026-09-08-4"]
+  },
+  {
+   "tag": "Industrial",
+   "en": "Objects that show their workings: Arduview's see-through handheld, Esoteric's belt-less magnetic turntable, a paper clock with no hands, KOVR's snap-on switch covers, IKEA × Xbox furniture and the iPhone 18 Pro's six-blade mechanical aperture — a decade of fake bokeh replaced by glass.",
+   "zh": "露出机构的物件：Arduview透明掌机、Esoteric无皮带磁驱唱机、没有指针的纸时钟、KOVR卡扣式开关面盖、宜家×Xbox家具，以及iPhone 18 Pro的六叶机械光圈——十年的软件虚化被真正的玻璃取代。",
+   "ko": "작동 원리를 드러내는 물건들. 투명한 Arduview 휴대용 게임기, 벨트 없는 자기 구동 에소테릭 턴테이블, 바늘 없는 종이 시계, 딸깍 끼우는 KOVR 스위치 커버, 이케아×Xbox 가구, 그리고 iPhone 18 Pro의 6엽 기계식 조리개—10년의 가짜 보케를 유리가 대체했다.",
+   "items": ["2026-09-10-15", "2026-09-08-11", "2026-09-10-16", "2026-09-09-15", "2026-09-08-6", "2026-09-11-8"]
+  }
+ ],
+ "top": [
+  {"id": "2026-09-10-4", "n": 2},
+  {"id": "2026-09-08-5", "n": 1},
+  {"id": "2026-09-09-11", "n": 1},
+  {"id": "2026-09-10-13", "n": 1}
+ ]
+}
