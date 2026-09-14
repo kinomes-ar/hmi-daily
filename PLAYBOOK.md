@@ -17,8 +17,11 @@ job is to research, write, validate, and push.** Never touch the workflow files,
 
 * The edition date is **today in Asia/Shanghai (UTC+8)**: `TZ=Asia/Shanghai date +%F`.
 * Weekdays only (Mon–Fri). If it is Saturday/Sunday, stop and do nothing.
-* If `data/<today>.json` already exists in the repo, the edition was already published:
-  stop and do nothing.
+* If `data/<today>.json` already exists in the repo, the edition was already published.
+  Do not write anything; instead run the **self-check** and report its result:
+  `python3 check_edition.py data/<today>.json`, then `git push --dry-run origin HEAD:main`
+  (this proves the push credential works without changing the repo), then WebFetch
+  `https://hmi.supermatrix.app/` and confirm it shows today's edition.
 * If a weekday since the last edition was skipped (e.g. an outage), do **not** backfill
   a separate file; just include the strongest stories from those days in today's edition.
 * On **Monday**, also produce the weekly summary (Section 7) after the daily edition.
