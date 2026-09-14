@@ -21,7 +21,10 @@ job is to research, write, validate, and push.** Never touch the workflow files,
   Do not write anything; instead run the **self-check** and report its result:
   `python3 check_edition.py data/<today>.json`, then `git push --dry-run origin HEAD:main`
   (this proves the push credential works without changing the repo), then WebFetch
-  `https://hmi.supermatrix.app/` and confirm it shows today's edition.
+  `https://hmi.supermatrix.app/` and confirm it shows today's edition, and finally
+  WebFetch `https://www.carscoops.com/`, `https://www.creativeboom.com/` and
+  `https://www.yankodesign.com/` and report whether the news sources are reachable
+  (if they are not, say so loudly: the environment's network access must be set to Full).
 * If a weekday since the last edition was skipped (e.g. an outage), do **not** backfill
   a separate file; just include the strongest stories from those days in today's edition.
 * On **Monday**, also produce the weekly summary (Section 7) after the daily edition.
@@ -179,6 +182,9 @@ git push origin HEAD:main
   and say so clearly in your final message.
 * After the push, wait ~3 minutes and confirm with WebFetch that
   `https://hmi.supermatrix.app/<YYYYMMDD>.html` exists (the Action rebuilds the site).
+  If that host is unreachable from the sandbox, confirm instead via the GitHub API
+  (`https://api.github.com/repos/kinomes-ar/hmi-daily/actions/runs?per_page=3`) that the
+  "Fetch images and rebuild" and "Push card to WeCom" runs succeeded.
   The WeCom card is sent by the other Action automatically; do not send it yourself.
 * Never run `cp data/*.json` style bulk copies, never force-push, never amend published
   commits.
