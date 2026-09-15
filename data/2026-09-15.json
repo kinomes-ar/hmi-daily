@@ -7,7 +7,9 @@
   "ko": "스파이샷 일주일 만에 기아가 하노버 IAA 상용차쇼에서 양산형 PV7을 공개했다. 전장 5,350 mm, 휠베이스 3,500 mm로 PV5보다 한 체급 크다. 콕핏은 9.9인치 클러스터와 14.6인치 터치스크린에 안드로이드 기반 Pleos Connect와 Gleo AI 비서를 얹고, 2스포크 휠의 실물 스위치와 화면 아래 버튼 열을 남겼다. 롱레일 이지 리무브 시트는 밀거나 떼어 7·9·11인승이 된다. 71.5 또는 96.2 kWh로 WLTP 460 km 이상. 2027년 하반기 한국·유럽 출시.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/kia-pv7-debut/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Kia-PV7-main-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Kia-PV7-main-1024x576.jpg",
+  "img": "assets/2026-09-15-1.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Kia-PV7-main-1024x576.jpg"
  },
  {
   "tag": "Interaction",
@@ -17,7 +19,9 @@
   "ko": "Car Design News의 티모 길겐이 폭스바겐 그룹 최고품질책임자 안드레아스 크레프에게 콕핏 품질의 새 정의를 물었다. 잣대는 그가 미국에서 들은 한마디, '쉽지 않으면 고장난 것'. 방법은 중국식이다. 출시 때 '완성된' HMI를 고정하는 대신 먼저 내놓고 몇 주마다 OTA로 다듬는다. 폭스바겐은 '로컬 포 로컬'로 개발하되 전 세계에서 읽히는 하나의 인터랙션 모델을 유지한다. 예시는 ID. 폴로 GTI 실내.",
   "src": "Car Design News",
   "url": "https://www.cardesignnews.com/ux/volkswagens-changing-view-of-ux/2732615",
-  "img_url": "https://image.cardesignnews.com/2730920.webp?imageId=2730920&width=960&height=548&format=jpg"
+  "img_url": "https://image.cardesignnews.com/2730920.webp?imageId=2730920&width=960&height=548&format=jpg",
+  "img": "assets/2026-09-15-2.jpg",
+  "img_src": "https://image.cardesignnews.com/2730920.webp?imageId=2730920&width=960&height=548&format=jpg"
  },
  {
   "tag": "Visual",
@@ -26,7 +30,9 @@
   "zh": "五角设计Samar Maakaroun团队为多哈设计区（Msheireb Downtown Doha的一部分）里两个隔街相望的空间做了一对标识：创客空间Mada（青绿色）与活动空间Sada（橙色）。阿拉伯语中Mada意为'范围、可能'，Sada意为'回声'，字标用近乎相同的字形镜像重排，让一个看起来像另一个的回声；两者都沿用DDD标志里的D，其余字形取自Msheireb的建筑。",
   "ko": "펜타그램 사마르 마카룬 팀이 도하 디자인 디스트릭트(므셰이렙 다운타운 도하의 일부)에서 마주 보는 두 공간의 쌍둥이 아이덴티티를 그렸다. 메이커 공간 Mada(터콰이즈)와 이벤트 공간 Sada(오렌지). 아랍어로 Mada는 '범위·가능성', Sada는 '메아리'이며, 워드마크는 거의 같은 글자꼴을 뒤집고 재배열해 하나가 다른 하나의 메아리로 읽히게 했다. 둘 다 DDD 심벌의 D를 쓰고 나머지 글자는 므셰이렙 건축에서 따왔다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/pentagrams-twin-logos-for-doha-design-district-are-a-masterclass-in-crafting-a-sub-brand/"
+  "url": "https://www.creativeboom.com/inspiration/pentagrams-twin-logos-for-doha-design-district-are-a-masterclass-in-crafting-a-sub-brand/",
+  "img": "assets/2026-09-15-3.webp",
+  "img_src": "https://media.creativeboom.com/ba5aeabe-299e-4239-abd1-5a4fa211e86c/conversions/2e1924abbd8b35bb4c74b0dcfaf8992f1b34b98e-large.webp"
  },
  {
   "tag": "AI",
@@ -35,7 +41,9 @@
   "zh": "Flowtica的Verso是一块磁吸在手机MagSafe背面的电子纸触控板，厚6.5 mm，接管OLED不擅长的活：五麦克风阵列录会议，转写成带待办的摘要，长按按钮还能追问内容。日历、待办和摘要在反射式屏幕上无需解锁即可读，低功耗让续航约72小时。售价299美元。设计思路：把常显、瞥一眼的信息层放到纸感墨水屏上，其余交给手机。",
   "ko": "Flowtica의 Verso는 폰 뒷면 맥세이프에 붙는 전자종이 터치 패널이다. 두께 6.5 mm로 OLED가 서툰 일을 맡는다. 5개 마이크 어레이로 회의를 녹음해 액션 아이템이 담긴 요약으로 옮기고, 버튼을 누른 채 후속 질문도 받는다. 캘린더·할 일·요약은 폰을 풀지 않아도 반사형 화면에서 읽히고, 배터리는 약 72시간. 299달러. 늘 켜 두고 흘끗 보는 층은 종이 같은 잉크에, 나머지는 폰에 두라는 설계다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/14/phone-screens-are-too-busy-for-notes-verso-handles-them-on-the-back/"
+  "url": "https://www.yankodesign.com/2026/09/14/phone-screens-are-too-busy-for-notes-verso-handles-them-on-the-back/",
+  "img": "assets/2026-09-15-4.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/phone-screens-are-too-busy-for-notes-verso-handles-them-on-the-back/flowtica-verso-09.jpg"
  },
  {
   "tag": "Cockpit",
@@ -44,7 +52,9 @@
   "zh": "继上周预告后，比亚迪腾势N8L纯电版9月14日上市，售价29.98万至32.98万元，比插混便宜2万。车长5,200 mm，六座2+2+2布局，二排独立座椅、三排可滑动；座舱六屏联动：仪表、中控、副驾屏、后排屏、AR-HUD与流媒体后视镜，DiClaw智能体处理多步指令、行程规划与智能家居。130.15 kWh刀片电池、800 V，10%到97%约9分钟，CLTC续航960 km；208升前备箱带排水阀。",
   "ko": "지난주 예고에 이어 BYD 덴자 N8L BEV가 9월 14일 출시됐다. 29만 9,800~32만 9,800위안으로 PHEV보다 2만 위안 싸다. 전장 5,200 mm 6인승 2+2+2, 2열 독립 시트에 3열은 밀린다. 실내는 클러스터·센터·조수석·뒷좌석 화면·AR-HUD·스트리밍 룸미러의 6화면 연동이고, DiClaw 에이전트가 다단계 명령·일정·스마트홈을 맡는다. 130.15 kWh 블레이드 배터리, 800 V, 10→97% 약 9분, CLTC 960 km. 208 L 프렁크엔 배수 밸브가 있다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/14/denza-n8l-bev-launches-with-130-kwh-battery-that-can-be-fully-charged-in-9-minutes/"
+  "url": "https://carnewschina.com/2026/09/14/denza-n8l-bev-launches-with-130-kwh-battery-that-can-be-fully-charged-in-9-minutes/",
+  "img": "assets/2026-09-15-5.png",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/e59bbee78987-107-e1789390035555.png"
  },
  {
   "tag": "Interaction",
@@ -54,7 +64,9 @@
   "ko": "WardsAuto가 J.D. 파워의 2026 미국 멀티미디어 품질·만족도 조사를 전했다. 구매 90일 차 오너 7만 8,000명 이상을 조사한 결과 멀티미디어가 전체 문제의 4분의 1, 상위 5개 불만만 100대당 42.4건으로 유일하게 전년보다 나빠졌다. 고장은 하드웨어가 아니라 '시스템 복잡성, 소프트웨어 성능, 연결성'이다. 내비게이션은 17점 오른 933점(1,000점 만점). 앞선 브랜드는 더 단순한 화면과 매번 똑같이 움직이는 소프트웨어를 함께 갖췄다.",
   "src": "WardsAuto",
   "url": "https://www.wardsauto.com/news/vehicle-infotainment-remains-a-pain-point-for-drivers-jd-power/829971/",
-  "img_url": "https://imgproxy.divecdn.com/19rwxeBzoGvnuDl-5kiIC-HTChDl74IPCUT5TCljfY8/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDktMDlfYXRfMi41MC4zNFBNLnBuZw==.webp"
+  "img_url": "https://imgproxy.divecdn.com/19rwxeBzoGvnuDl-5kiIC-HTChDl74IPCUT5TCljfY8/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDktMDlfYXRfMi41MC4zNFBNLnBuZw==.webp",
+  "img": "assets/2026-09-15-6.webp",
+  "img_src": "https://imgproxy.divecdn.com/19rwxeBzoGvnuDl-5kiIC-HTChDl74IPCUT5TCljfY8/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjYtMDktMDlfYXRfMi41MC4zNFBNLnBuZw==.webp"
  },
  {
   "tag": "Design",
@@ -64,7 +76,9 @@
   "ko": "폭스바겐이 2013~2016년 XL1의 전기 후계작 Mission Efficiency를 예고했다. 이번 주 공개 뒤 볼프스부르크에서 빈까지 약 800 km 기록 주행에 나선다. 실루엣은 다시 XL1의 물방울형—발광 VW 엠블럼이 박힌 전폭 라이트바, 뒷바퀴 커버까지 흐르는 측면, 앞보다 눈에 띄게 좁은 뒤 트랙, 뒤쪽의 라이트 스트립과 빛나는 배지. '대부분 양산 기술에 기반'한 일상용 차라지만 주행거리·배터리·양산 계획은 미공개.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/vw-mission-efficiency-teaser/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/VW-Mission-Efficiency-teaser-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/VW-Mission-Efficiency-teaser-1024x576.jpg",
+  "img": "assets/2026-09-15-7.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/VW-Mission-Efficiency-teaser-1024x576.jpg"
  },
  {
   "tag": "Micromobility",
@@ -74,7 +88,9 @@
   "ko": "산마리노 GP에서 아프릴리아 레이싱이 RS-GP26에 '페를라 비앙카' 올화이트 원오프 리버리를 입혔다. 피아지오 그룹 스쿠터 브랜드 베스파 80주년 기념이다. 그래픽은 소매에 Piaggio Vespa 로고가 있던 질 빌뇌브의 1981년 모나코 GP 레이싱 슈트에서 왔고, 빌뇌브 헤리티지 브랜드 GV27과 함께 만들었다. 원본 슈트는 개러지 앞에 전시됐고 크루도 흰 유니폼을 입었다. 단색 리버리가 복잡한 그리드에서 어떤 그라데이션보다 잘 읽힌다.",
   "src": "Motorcycle.com",
   "url": "https://www.motorcycle.com/bikes/s-aprilia-debuts-perla-bianca-livery-celebrating-80-years-of-vespa-44671531",
-  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/14/14175/s-aprilia-debuts-perla-bianca-livery-celebrating-80-years-of-vespa.jpg?size=720x845&nocrop=1"
+  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/14/14175/s-aprilia-debuts-perla-bianca-livery-celebrating-80-years-of-vespa.jpg?size=720x845&nocrop=1",
+  "img": "assets/2026-09-15-8.jpg",
+  "img_src": "https://cdn-fastly.motorcycle.com/media/2026/09/14/14175/s-aprilia-debuts-perla-bianca-livery-celebrating-80-years-of-vespa.jpg?size=720x845&nocrop=1"
  },
  {
   "tag": "Visual",
@@ -84,7 +100,9 @@
   "ko": "네덜란드 디자이너 실반 힐레브란트가 125년 된 유화 물감 브랜드 렘브란트를 로고를 바꾸지 않고 다듬었다. 로고타입은 교체 대신 다시 그리고 커닝을 조정해 테스트했고, 기능적 텍스트는 Suisse International, 헤리티지 표현은 Suisse Neu가 맡는다. 검정·금·오프화이트에 버건디·그린·웜 그레이가 더해졌다. 새 배지는 렘브란트 에칭의 원형 마크에서 왔고, 코리 마틴의 사진은 실제 안료에 로고를 찍어 넣었다. 기존 포장을 소진하도록 단계적으로 전개한다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/sylvan-hillebrand-rembrandt-graphic-design-project-140926",
-  "img_url": "https://m.itsnicethat.com/original_images/Sylvan-Hillebrand-Rembrandt-Graphic-Design-ItsNiceThat-6.jpg"
+  "img_url": "https://m.itsnicethat.com/original_images/Sylvan-Hillebrand-Rembrandt-Graphic-Design-ItsNiceThat-6.jpg",
+  "img": "assets/2026-09-15-9.jpg",
+  "img_src": "https://m.itsnicethat.com/original_images/Sylvan-Hillebrand-Rembrandt-Graphic-Design-ItsNiceThat-6.jpg"
  },
  {
   "tag": "Visual",
@@ -93,7 +111,9 @@
   "zh": "It's Nice That圣保罗通讯员Elaine Ramos梳理该市酒吧与餐厅品牌从几何极简转向温暖手作怀旧：Estúdio Caxa为Bar Exquisito做的集市招牌字体与柔版套印错位、Estúdio Arado为Duas Irmãs手绘的椭圆肖像、Estúdio Sarau为Bar Ovo的石印酒标框饰、Flora Carvalho为Suei做的'融化'七十年代笔刷字、Biabum为Salva Bar的孔版印章、PS2为Bar Aperitivo的橄榄形O。论点：在被地产不断重建的城市里，设计师在制造'真实感'的符号。",
   "ko": "It's Nice That의 상파울루 통신원 엘라이니 하무스가 이 도시 바·레스토랑 브랜딩이 기하학적 미니멀리즘에서 따뜻한 수작업 노스탤지어로 옮겨간 흐름을 짚었다. Estúdio Caxa의 시장 간판 서체와 플렉소 핀 어긋남(Bar Exquisito), Estúdio Arado의 손그림 타원 초상(Duas Irmãs), Estúdio Sarau의 석판 라벨 프레임(Bar Ovo), Flora Carvalho의 '녹아내린' 70년대 붓글씨(Suei), Biabum의 리소 스탬프(Salva Bar), PS2의 올리브 모양 O(Bar Aperitivo). 요지는 부동산이 계속 다시 짓는 도시에서 디자이너가 '진짜다움'의 기호를 제조한다는 것.",
   "src": "It's Nice That",
-  "url": "https://www.itsnicethat.com/features/the-view-from-sao-paulo-retro-bar-and-restaurant-branding-graphic-design-140926"
+  "url": "https://www.itsnicethat.com/features/the-view-from-sao-paulo-retro-bar-and-restaurant-branding-graphic-design-140926",
+  "img": "assets/2026-09-15-10.png",
+  "img_src": "https://m.itsnicethat.com/original_images/TVF_Meta_WGRsslO.png?class=w1440"
  },
  {
   "tag": "Visual",
@@ -102,7 +122,9 @@
   "zh": "信用管理公司Lowell的'Say It Over a Drink'不投广告牌，而是在英国酒吧、咖啡馆和餐厅铺了25款插画杯垫，每张印一句提示，如'最近在想债务的事？''你最大的钱的烦恼是什么？'。五位插画师James Cluer、Emily Birch、Sam Peel、Ery Burns、Becky Mann画了算命师、空钱包、推硬币上坡的人，风格松弛多彩。逻辑是'语境胜过冲击'：禁忌话题在人们本来就在聊天的地方、在一个会被翻来翻去的圆形物件上被提起。",
   "ko": "채권관리 회사 로웰의 'Say It Over a Drink'는 옥외광고 대신 영국 펍·카페·레스토랑에 일러스트 코스터 25종을 깔았다. 각 코스터엔 '요즘 빚이 마음에 걸리나요?' '가장 큰 돈 걱정은?' 같은 질문 하나. 제임스 클루어, 에밀리 버치, 샘 필, 에리 번스, 베키 만 다섯 일러스트레이터가 점쟁이, 빈 지갑, 동전을 언덕 위로 미는 사람을 느슨하고 알록달록한 두들로 그렸다. 논리는 '임팩트보다 맥락'—금기 주제를 사람들이 이미 대화 중인 자리, 손에서 뒤집어 보는 둥근 물건 위에서 꺼낸다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/why-beer-mats-beat-billboards-when-you-want-to-crack-a-social-taboo/"
+  "url": "https://www.creativeboom.com/inspiration/why-beer-mats-beat-billboards-when-you-want-to-crack-a-social-taboo/",
+  "img": "assets/2026-09-15-11.webp",
+  "img_src": "https://media.creativeboom.com/cefd7311-7aef-4193-ab9f-dffb3bbb1255/conversions/500c851ac9f43a456c33921ea8a1e5de4993b90f-medium.webp"
  },
  {
   "tag": "Design",
@@ -111,7 +133,9 @@
   "zh": "设计师Lucas Angelo的Xiaomi Horizon是一台把原研哉2021年超椭圆（n=3）标志当真的概念MPV：整个车尾就是一块发光的方圆形尾门，轮圈也是方圆形，车头是'瀑布格栅'——一整排微小发光方块沿车鼻阶梯式渐隐。Yanko指出它不会量产，小米已有Skynomad当家用车；但它是一次干净的练习：一个品牌形状能在车身上推多远而不至于不像车。未展示内饰。",
   "ko": "디자이너 루카스 안젤로의 샤오미 Horizon은 하라 켄야의 2021년 초타원(n=3) 로고를 말 그대로 차로 만든 콘셉트 MPV다. 리어 전체가 빛나는 스쿼클 테일게이트이고 휠도 스쿼클, 앞은 작은 발광 사각형이 코를 따라 계단식으로 사라지는 '캐스케이드 그릴'이다. 샤오미가 이미 스카이노마드를 패밀리카로 둔 만큼 양산은 없겠지만, 브랜드 형상 하나를 차가 차로 읽히는 한계까지 밀어 보는 깔끔한 습작이다. 실내는 공개되지 않았다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/13/a-designer-turned-xiaomis-logo-into-a-multi-utility-vehicle-concept/"
+  "url": "https://www.yankodesign.com/2026/09/13/a-designer-turned-xiaomis-logo-into-a-multi-utility-vehicle-concept/",
+  "img": "assets/2026-09-15-12.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/auto-draft/xiaomi_horizon_1.jpeg"
  },
  {
   "tag": "Industrial",
@@ -121,7 +145,9 @@
   "ko": "콘스탄틴 그리치치가 알레시를 위해 디자인한 KG01 그라인더는 샌드블라스트 마감의 절삭 알루미늄 원통으로, 윗부분이 팔각으로 바뀐다. 그 전환이 인터페이스의 전부다. 라벨도 그래픽도 대비 소재도 없이 각진 구간이 '여기를 잡고 돌려라'라고 말한다. 알레시는 샌드블라스트를 '뜻밖의 촉각적 즐거움'이라 부른다. 소금·후추·향신료용, 90유로(약 104달러). 손이 가는 자리에 정확히 기하 변화를 두면 형태가 어포던스를 떠맡는다.",
   "src": "Core77",
   "url": "https://www.core77.com/posts/145353/Konstantin-Grcics-Industrial-Looking-Grinder-for-Alessi",
-  "img_url": "https://s3files.core77.com/blog/images/1849816_81_145353_lGtuTK6Ox.jpg"
+  "img_url": "https://s3files.core77.com/blog/images/1849816_81_145353_lGtuTK6Ox.jpg",
+  "img": "assets/2026-09-15-13.jpg",
+  "img_src": "https://s3files.core77.com/blog/images/1849816_81_145353_lGtuTK6Ox.jpg"
  },
  {
   "tag": "Industrial",
@@ -131,7 +157,9 @@
   "ko": "도쿄 VOID Inc.가 2026 런던 디자인 페스티벌에 Animism Objects를 들고 온다. 수백 년 된 일본 공예 셋에서 각각 나온 세 가지 마감의 라우드스피커 컬렉션이다. 와시 종이는 섬유질의 무광 표면을, 아이조메 쪽염색은 겹겹의 색 깊이를, 야키스기 태우기는 삼나무를 검게 그을려 질감과 내구성을 더한다. 크리에이티브 디렉션 키루타 와타루(Ochill), 제품 디자인 요시무라 조(BREND), 음향 우에히라 치아키(I/O STUDIO). 마감별 10세트, 총 30대 한정이며 만든 흔적을 일부러 남겼다.",
   "src": "designboom",
   "url": "https://www.designboom.com/technology/three-centuries-old-japanese-craft-traditions-loudspeaker-collection-animism-objects/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/three-japanese-craft-traditions-loudspeaker-collection-animism-objects-designboom-500.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/three-japanese-craft-traditions-loudspeaker-collection-animism-objects-designboom-500.jpg",
+  "img": "assets/2026-09-15-14.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/09/three-japanese-craft-traditions-loudspeaker-collection-animism-objects-designboom-500.jpg"
  },
  {
   "tag": "Micromobility",
@@ -141,7 +169,9 @@
   "ko": "스웨덴 RGNT가 레트로 전기 로드스터를 Street Scrambler로 바꿨다. 18인치 앞바퀴에 2.5인치 온오프로드 타이어, 뒤는 17×3인치, 핸들바는 높고 넓게, 차고 20 mm 상승, 지상고 260 mm, 시트고 830 mm. 콕핏은 애플 카플레이·안드로이드 오토를 지원하는 3인치 원형 디스플레이를 유지한다. 46 kW 허브 모터, 540 Nm, 최고 135 km/h, 0–100 km/h 3.9초. 8.3 또는 10.1 kWh로 139·170 km, Type 2 충전 1.8 kW 또는 옵션 6 kW. 유럽 9,495유로부터, 미국은 2027년 9,995달러.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/09/09/rgnts-85-mph-retro-electric-motorcycle-just-got-a-scrambler-makeover/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/09/RGBT-Scrambler-head.jpg"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/09/RGBT-Scrambler-head.jpg",
+  "img": "assets/2026-09-15-15.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/09/RGBT-Scrambler-head.jpg"
  },
  {
   "tag": "AI",
@@ -150,6 +180,8 @@
   "zh": "Adobe九月更新把生成放进了时间线。Premiere Pro新的Generative Media工具用项目自身的参考帧生成视频填补空缺，生成可用语音指挥节奏的音效，测试版还能从最长15秒画面生成分层环境音，或生成带速度与循环控制的原创音乐；模型可选Firefly、Google Veo、Kling、Runway和Luma。Enhance Audio可分别控制对白、音乐、环境声；After Effects加入能整理图层、编写表达式的AI助手。9月8日发布。",
   "ko": "어도비의 9월 업데이트는 생성을 편집 타임라인 안으로 넣었다. 프리미어 프로의 새 Generative Media 도구는 프로젝트의 참조 프레임으로 빈 구간을 채울 영상을 만들고, 목소리로 타이밍을 지시하는 효과음을 생성하며, 베타로는 최대 15초 영상에서 겹겹의 앰비언스를, 템포·루프 제어가 있는 음악을 만든다. 모델은 Firefly, Google Veo, Kling, Runway, Luma 중 선택. Enhance Audio는 대사·음악·앰비언스를 따로 다루고, 애프터 이펙트엔 레이어를 정리하고 익스프레션을 써 주는 AI 어시스턴트가 생겼다. 9월 8일 발표.",
   "src": "Adobe Blog",
-  "url": "https://blog.adobe.com/en/publish/2026/09/08/generate-create-directly-in-your-timeline-with-new-ai-powered-innovations-in-premiere-after-effects"
+  "url": "https://blog.adobe.com/en/publish/2026/09/08/generate-create-directly-in-your-timeline-with-new-ai-powered-innovations-in-premiere-after-effects",
+  "img": "assets/2026-09-15-16.jpg",
+  "img_src": "https://blog.adobe.com/en/publish/2026/09/08/media_19475357dd8b6391f4e7de0f88deffeb727ef56dc.jpg?width=1200&#x26;format=pjpg&#x26;optimize=medium"
  }
 ]
