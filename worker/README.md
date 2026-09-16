@@ -39,6 +39,20 @@ That's it. Hearts on the site start syncing on the next rebuild.
 | POST   | `/skip`   | `{id, on, cid}`     | `{id, count}`  ("not for me"; clears that client's heart) |
 | POST   | `/counts` | `{ids:[…]}` (≤200)  | `{counts:{id:n}, skips:{id:n}}` |
 | GET    | `/top`    | `?n=1000`           | `{counts:{id:n}, skips:{id:n}}` |
+| GET    | `/feishu/preview` | `?date=` or `?week=` | the Feishu card JSON (no send) |
+| GET    | `/feishu/status`  |                     | what was sent today            |
+
+## Feishu (Lark) delivery
+The same Worker posts the daily card to a Feishu group by itself — no GitHub secrets, no Mac.
+1. Feishu group → Settings → Bots → Add bot → **Custom bot** → name `ADUX Daily` → turn on
+   **Signature verification** → copy the **Webhook URL** and the **Secret**.
+2. Worker → *Settings* → *Variables and Secrets* → add **Secret** `FEISHU_WEBHOOK` (the URL) and
+   **Secret** `FEISHU_SECRET` (the signing secret) → Deploy.
+3. Worker → *Settings* → *Triggers* → *Cron Triggers* → **Add** → expression `*/30 2-9 * * 1-5`
+   (every 30 min, 10:00–17:59 Beijing, weekdays) → Save.
+Each tick sends today's edition once it is on the site (KV key `sent:<date>` prevents repeats);
+on Mondays it also sends last week's weekly card (`sentw:<week>`).
+Check: `https://<worker>/feishu/status` and `https://<worker>/feishu/preview?date=YYYY-MM-DD`.
 
 ## Updating the Worker
 Paste the new `worker.js` over the old one (Worker → **Edit code** → replace all → **Deploy**).

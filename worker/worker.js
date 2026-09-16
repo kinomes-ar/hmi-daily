@@ -11,7 +11,24 @@
  * Keys:  c:<id>        running heart count        v:<cid>:<id>  "1" while this client's heart is on
  *        s:<id>        running skip count         w:<cid>:<id>  "1" while this client's skip is on
  * A client is either hearting or skipping a story, never both: turning one on clears the other.
+ *
+ * ---- Feishu (Lark) delivery, driven by a Cron Trigger ----
+ *   Cron  "30-minute ticks, 02:00-09:59 UTC, Mon-Fri" (expression: every 30 min 2-9 UTC weekdays)  every 30 min, 10:00-17:59 Beijing, weekdays
+ *   Each tick: if data/<today>.json exists on the site and "sent:<today>" is not in KV,
+ *   build an interactive card (5 featured stories, trilingual, + the rest as links, with
+ *   heart / not-for-me counts) and POST it to the Feishu custom-bot webhook. On Mondays
+ *   the previous ISO week's weekly/<week>.json is sent the same way ("sentw:<week>").
+ *   Secrets (Worker → Settings → Variables and Secrets):
+ *     FEISHU_WEBHOOK  https://open.feishu.cn/open-apis/bot/v2/hook/...
+ *     FEISHU_SECRET   the bot's signing secret (optional; leave unset if signing is off)
+ *   GET /feishu/preview?date=YYYY-MM-DD   returns the card JSON (no sending), for checks
+ *   GET /feishu/preview?week=YYYY-Www     same for the weekly card
  */
+
+const SITE = "https://hmi.supermatrix.app";
+const NUM = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
+const GROUPS = [["cockpit", "interaction"], ["ai"], ["design", "visual", "industrial"]];
+const CARD_LIMIT = 28000; // bytes of card JSON; Feishu caps interactive cards around 30 KB
 
 const ORIGINS = ["https://hmi.supermatrix.app", "http://localhost", "http://127.0.0.1"];
 const ID_RE = /^\d{4}-\d{2}-\d{2}-\d{1,2}$/;
@@ -74,12 +91,236 @@ async function toggle(env, kind, id, cid, on) {
   return count;
 }
 
+// ---------------------------------------------------------------- Feishu card
+function beijingDate(d = new Date()) {
+  return new Date(d.getTime() + 8 * 3600 * 1000).toISOString().slice(0, 10);
+}
+function beijingWeekday(d = new Date()) {
+  return new Date(d.getTime() + 8 * 3600 * 1000).getUTCDay(); // 0 Sun .. 6 Sat
+}
+function isoWeekOf(dateStr) {
+  const d = new Date(dateStr + "T00:00:00Z");
+  const day = (d.getUTCDay() + 6) % 7; // Mon = 0
+  d.setUTCDate(d.getUTCDate() - day + 3); // Thursday of this week
+  const y = d.getUTCFullYear();
+  const jan4 = new Date(Date.UTC(y, 0, 4));
+  const wk = 1 + Math.round(((d - jan4) / 86400000 - 3 + ((jan4.getUTCDay() + 6) % 7)) / 7);
+  return y + "-W" + String(wk).padStart(2, "0");
+}
+function prevWeekId(todayStr) {
+  const d = new Date(todayStr + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() - 7);
+  return isoWeekOf(d.toISOString().slice(0, 10));
+}
+
+async function siteJson(path) {
+  const r = await fetch(SITE + "/" + path + "?t=" + Date.now(), { headers: { "Cache-Control": "no-cache" } });
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error("site " + r.status + " for " + path);
+  return r.json();
+}
+
+function pickFeatured(items, n = 5) {
+  const feats = items.length ? [0] : [];
+  for (const g of GROUPS) {
+    for (let i = 0; i < items.length; i++) {
+      if (feats.includes(i)) continue;
+      if (g.includes(String(items[i].tag || "").trim().toLowerCase())) { feats.push(i); break; }
+    }
+    if (feats.length >= n) break;
+  }
+  for (let i = 0; feats.length < Math.min(n, items.length); i++) if (!feats.includes(i)) feats.push(i);
+  return feats.sort((a, b) => a - b);
+}
+
+function clip(s, max) {
+  s = String(s || "");
+  if (s.length <= max) return s;
+  let out = s.slice(0, max);
+  const m = out.match(/^[\s\S]*[。．.!?！？…](?!\d)/);
+  if (m && m[0].length >= max * 0.45) return m[0];
+  return out.replace(/[\s,、，—-]+$/, "") + "…";
+}
+
+function md(s) {
+  // keep Feishu markdown from misreading titles
+  return String(s || "").replace(/\[/g, "［").replace(/\]/g, "］");
+}
+
+function reactions(counts, skips, id) {
+  const l = counts[id] || 0, s = skips[id] || 0;
+  const parts = [];
+  if (l) parts.push("❤" + l);
+  if (s) parts.push("✕" + s);
+  return parts.length ? "  " + parts.join(" ") : "";
+}
+
+function dailyCard(date, items, counts, skips, cap) {
+  const feats = pickFeatured(items);
+  const els = [];
+  feats.forEach((i, k) => {
+    const it = items[i];
+    els.push({ tag: "markdown", content:
+      `**${NUM[i]} [${md(it.t)}](${it.url})**  <font color="grey">${md(it.tag)} · ${md(it.src)}${reactions(counts, skips, `${date}-${i + 1}`)}</font>\n` +
+      `**EN** ${clip(it.en, cap)}\n**中** ${clip(it.zh, cap)}\n**한** ${clip(it.ko, cap)}` });
+    if (k < feats.length - 1) els.push({ tag: "hr" });
+  });
+  const rest = items.map((it, i) => [i, it]).filter(([i]) => !feats.includes(i));
+  if (rest.length) {
+    els.push({ tag: "hr" });
+    els.push({ tag: "markdown", content: "**MORE**\n" + rest.map(([i, it]) =>
+      `${NUM[i]} [${md(it.t)}](${it.url}) <font color="grey">${md(it.src)}${reactions(counts, skips, `${date}-${i + 1}`)}</font>`).join("\n") });
+  }
+  els.push({ tag: "hr" });
+  els.push({ tag: "markdown", content: `📑 [Full archive · hmi.supermatrix.app](${SITE}/${date.replace(/-/g, "")}.html)   ❤ heart · ✕ not for me — they steer next week's picks` });
+  return {
+    schema: "2.0",
+    config: { wide_screen_mode: true, update_multi: true },
+    header: { title: { tag: "plain_text", content: "ADUX Daily · " + date }, template: "red" },
+    body: { elements: els },
+  };
+}
+
+function weeklyCard(w, index, counts, skips, cap) {
+  const els = [];
+  const t = w.title || {}, intro = w.intro || {};
+  els.push({ tag: "markdown", content: `**${md(t.en || "")}**\n${md(t.zh || "")}\n${md(t.ko || "")}` });
+  els.push({ tag: "markdown", content: `**EN** ${clip(intro.en, cap * 2)}\n**中** ${clip(intro.zh, cap * 2)}\n**한** ${clip(intro.ko, cap * 2)}` });
+  els.push({ tag: "hr" });
+  for (const c of w.cats || []) {
+    els.push({ tag: "markdown", content: `**${md(c.tag)}** ${clip(c.en, cap)}\n<font color="grey">中</font> ${clip(c.zh, cap)}\n<font color="grey">한</font> ${clip(c.ko, cap)}` });
+  }
+  const line = (tp, mark) => {
+    const it = index[tp.id];
+    return it ? `· [${md(it.t)}](${it.url}) ${mark}${tp.n}` : "";
+  };
+  const top = (w.top || []).map((tp) => line(tp, "❤")).filter(Boolean);
+  const sk = ((w.feedback || {}).skipped || []).map((tp) => line(tp, "✕")).filter(Boolean);
+  if (top.length || sk.length) {
+    els.push({ tag: "hr" });
+    let s = "";
+    if (top.length) s += "**❤ Most loved**\n" + top.join("\n") + "\n";
+    if (sk.length) s += "**✕ Not for us**\n" + sk.join("\n");
+    els.push({ tag: "markdown", content: s.trim() });
+  }
+  const acts = ((w.feedback || {}).actions) || {};
+  if (acts.en) {
+    els.push({ tag: "hr" });
+    els.push({ tag: "markdown", content: `**↻ Next week**\n**EN** ${clip(acts.en, cap * 2)}\n**中** ${clip(acts.zh, cap * 2)}\n**한** ${clip(acts.ko, cap * 2)}` });
+  }
+  els.push({ tag: "hr" });
+  els.push({ tag: "markdown", content: `📑 [Full weekly · hmi.supermatrix.app](${SITE}/weekly.html#${w.week})` });
+  return {
+    schema: "2.0",
+    config: { wide_screen_mode: true, update_multi: true },
+    header: { title: { tag: "plain_text", content: `ADUX Weekly · ${w.week}  (${w.from} – ${w.to})` }, template: "red" },
+    body: { elements: els },
+  };
+}
+
+function fitCard(build) {
+  for (const cap of [10000, 600, 450, 340, 260, 200, 150, 110]) {
+    const card = build(cap);
+    if (new TextEncoder().encode(JSON.stringify(card)).length <= CARD_LIMIT) return card;
+  }
+  return build(80);
+}
+
+async function feishuSign(secret, ts) {
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(ts + "\n" + secret),
+    { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const sig = await crypto.subtle.sign("HMAC", key, new Uint8Array(0));
+  return btoa(String.fromCharCode(...new Uint8Array(sig)));
+}
+
+async function feishuSend(env, card) {
+  if (!env.FEISHU_WEBHOOK) throw new Error("FEISHU_WEBHOOK not set");
+  const body = { msg_type: "interactive", card };
+  if (env.FEISHU_SECRET) {
+    const ts = String(Math.floor(Date.now() / 1000));
+    body.timestamp = ts;
+    body.sign = await feishuSign(env.FEISHU_SECRET, ts);
+  }
+  const r = await fetch(env.FEISHU_WEBHOOK, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const txt = await r.text();
+  let j = {};
+  try { j = JSON.parse(txt); } catch {}
+  const ok = r.ok && ((j.code === 0) || (j.StatusCode === 0));
+  if (!ok) throw new Error("feishu " + r.status + " " + txt.slice(0, 200));
+  return j;
+}
+
+async function liveCounts(env) {
+  const [counts, skips] = await Promise.all([listCounts(env, "c:", 1000), listCounts(env, "s:", 1000)]);
+  return { counts, skips };
+}
+
+async function buildDaily(env, date) {
+  const items = await siteJson("data/" + date + ".json");
+  if (!items) return null;
+  const { counts, skips } = await liveCounts(env);
+  return fitCard((cap) => dailyCard(date, items, counts, skips, cap));
+}
+
+async function buildWeekly(env, week) {
+  const w = await siteJson("weekly/" + week + ".json");
+  if (!w) return null;
+  const all = (await siteJson("items.json")) || [];
+  const index = {};
+  for (const it of all) index[it.id] = it;
+  const { counts, skips } = await liveCounts(env);
+  return fitCard((cap) => weeklyCard(w, index, counts, skips, cap));
+}
+
+async function runCron(env) {
+  const today = beijingDate();
+  const log = [];
+  if (!(await env.LIKES.get("sent:" + today))) {
+    const card = await buildDaily(env, today);
+    if (card) {
+      await feishuSend(env, card);
+      await env.LIKES.put("sent:" + today, new Date().toISOString(), { expirationTtl: 60 * 86400 });
+      log.push("daily " + today + " sent");
+    } else log.push("daily " + today + " not published yet");
+  } else log.push("daily " + today + " already sent");
+  if (beijingWeekday() === 1) {
+    const week = prevWeekId(today);
+    if (!(await env.LIKES.get("sentw:" + week))) {
+      const card = await buildWeekly(env, week);
+      if (card) {
+        await feishuSend(env, card);
+        await env.LIKES.put("sentw:" + week, new Date().toISOString(), { expirationTtl: 60 * 86400 });
+        log.push("weekly " + week + " sent");
+      } else log.push("weekly " + week + " not published yet");
+    } else log.push("weekly " + week + " already sent");
+  }
+  return log;
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(runCron(env).then((l) => console.log(l.join("; "))).catch((e) => console.error("cron: " + e.message)));
+  },
+
   async fetch(req, env) {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors(req) });
 
-    if (req.method === "GET" && url.pathname === "/") return json(req, { ok: true, v: 2 });
+    if (req.method === "GET" && url.pathname === "/") return json(req, { ok: true, v: 3, feishu: !!env.FEISHU_WEBHOOK });
+
+    if (req.method === "GET" && url.pathname === "/feishu/preview") {
+      try {
+        const week = url.searchParams.get("week");
+        const card = week ? await buildWeekly(env, week) : await buildDaily(env, url.searchParams.get("date") || beijingDate());
+        if (!card) return json(req, { error: "not published" }, 404);
+        return json(req, { bytes: new TextEncoder().encode(JSON.stringify(card)).length, card });
+      } catch (e) { return json(req, { error: e.message }, 500); }
+    }
+
+    if (req.method === "GET" && url.pathname === "/feishu/status") {
+      const today = beijingDate();
+      return json(req, { today, sent: await env.LIKES.get("sent:" + today), weekly: beijingWeekday() === 1 ? await env.LIKES.get("sentw:" + prevWeekId(today)) : null, webhook: !!env.FEISHU_WEBHOOK });
+    }
 
     if (req.method === "GET" && url.pathname === "/top") {
       const n = Math.min(parseInt(url.searchParams.get("n") || "1000", 10) || 1000, 1000);
