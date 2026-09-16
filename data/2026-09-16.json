@@ -7,7 +7,9 @@
   "ko": "폭스바겐이 월요일 예고한 XL1의 전기 후계작 Mission Efficiency를 공개했다. 54.9 kWh 한 번 충전으로 볼프스부르크에서 빈까지 1,278 km를 6.89 kWh/100 km로 달렸다. 전장 4,775 mm 2+2 쿠페의 Cd는 0.158, 뒷바퀴는 덮였고 뒤에는 발광 로고가 박힌 전폭 라이트 스트립이다. 핵심은 센터 디스플레이가 없다는 것. 폰이나 태블릿을 기계식 레일에 끼워 무선 연결하고, 작은 전자종이가 공조를 보여주며, 휴대용 블루투스 스피커가 오디오를 대신한다. 헤드레스트는 3D 프린팅 TPU 격자다.",
   "src": "Volkswagen Newsroom",
   "url": "https://www.volkswagen-newsroom.com/en/press-releases/mission-efficiency-volkswagen-presents-the-worlds-most-efficient-near-production-electric-car-20691",
-  "img_url": "https://uploads.vw-mms.de/system/production/images/vwn/088/602/images/6bbad4db65128abad2997fb4800415cd65086d86/DB2026AU00680_web_1600.jpg"
+  "img_url": "https://uploads.vw-mms.de/system/production/images/vwn/088/602/images/6bbad4db65128abad2997fb4800415cd65086d86/DB2026AU00680_web_1600.jpg",
+  "img": "assets/2026-09-16-1.jpg",
+  "img_src": "https://uploads.vw-mms.de/system/production/images/vwn/088/602/images/6bbad4db65128abad2997fb4800415cd65086d86/DB2026AU00680_web_1600.jpg"
  },
  {
   "tag": "Interaction",
@@ -17,7 +19,9 @@
   "ko": "GM이 2027 실버라도·시에라 1500용 새 인터페이스를 공개했다. 애플 카플레이와 안드로이드 오토가 GM 자체 UI 위 플로팅 창에서 돌아가, 폰을 투사하는 동안에도 공조·볼륨·주행거리와 트레일러링 패널이 화면에 남는다. GM은 '전기·가솔린·디젤을 아우르는 하나의 확장형 기반'이라 설명했고, Electrek은 2023년 EV에서 뺀 폰 프로젝션이 돌아올 신호로 읽는다. GM은 밝힐 계획이 없다고 했다. 폰에는 창을, 차에는 틀을 남기는 절충이다.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/09/15/is-gms-new-software-a-sign-that-it-will-bring-carplay-back-to-its-electric-cars/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/09/Apple_CarPlay_Split_Home_View_Screen_Projections_Trailering.png"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/09/Apple_CarPlay_Split_Home_View_Screen_Projections_Trailering.png",
+  "img": "assets/2026-09-16-2.png",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/09/Apple_CarPlay_Split_Home_View_Screen_Projections_Trailering.png"
  },
  {
   "tag": "Visual",
@@ -27,7 +31,9 @@
   "ko": "It's Nice That의 폴 무어가 위키백과 25년의 시각 역사를 짚었다. 비외른 스메스타드가 2000년 그린 일본어·아르메니아어·체로키어·클링온 글자의 퍼즐 구체부터, 커뮤니티 회원 조너선 페레이라가 스케치하고 샤론 박이 움직인 2026년 베이비 글로브 마스코트까지. 책으로 만든 콧수염 지네 Wikipede는 만우절 농담 뒤 굿즈가 됐다. Vector 2022 개편은 9만 단어의 논쟁을 거쳐 일부러 '거의 티 나지 않게' 남겼다. 일관성이 신뢰를 만든다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/features/wikipedia-graphic-design-spotlight-150926",
-  "img_url": "https://m.itsnicethat.com/original_images/WYiR_SocialTile_v2.png"
+  "img_url": "https://m.itsnicethat.com/original_images/WYiR_SocialTile_v2.png",
+  "img": "assets/2026-09-16-3.png",
+  "img_src": "https://m.itsnicethat.com/original_images/WYiR_SocialTile_v2.png"
  },
  {
   "tag": "AI",
@@ -36,7 +42,9 @@
   "zh": "Canva于9月15日推出ProSuite，把设计/修图/排版的Affinity、动效的Cavalry、数据可视化的Flourish和AI生图的Leonardo打包，新增100余项功能。Affinity终于有了带偏移、缓动和曲线控制的混合工具，另有更简单的蒙版、3D模型支持、INDD导入、应用内脚本和Claude连接器；Cavalry场景可在Canva里改文字和颜色而动画保持锁定。Affinity与Cavalry继续免费。",
   "ko": "캔바가 9월 15일 ProSuite를 출시했다. 디자인·사진·레이아웃의 Affinity, 모션의 Cavalry, 데이터 시각화의 Flourish, AI 이미지 생성의 Leonardo를 묶고 100개 넘는 기능을 더했다. Affinity에는 바이어스·이징·커브 제어가 있는 블렌드 도구, 단순해진 마스크, 3D 모델 지원, INDD 불러오기, 앱 내 스크립팅, Claude 커넥터가 들어갔다. Cavalry 장면은 애니메이션을 잠근 채 캔바 안에서 글자와 색을 바꿀 수 있다. 두 앱은 계속 무료다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/news/canva-launches-prosuite-bringing-affinity-cavalry-flourish-and-leonardo-together-with-more-than-new-100-features/"
+  "url": "https://www.creativeboom.com/news/canva-launches-prosuite-bringing-affinity-cavalry-flourish-and-leonardo-together-with-more-than-new-100-features/",
+  "img": "assets/2026-09-16-4.webp",
+  "img_src": "https://media.creativeboom.com/aa959a20-0901-43fb-8541-0dd86ed6890d/conversions/c2fbc848935751bb4d74f78b8a2a1a6cb50ad50b-medium.webp"
  },
  {
   "tag": "Cockpit",
@@ -46,7 +54,9 @@
   "ko": "두바이의 고객이 아내에게 바치는 원오프 팬텀 익스텐디드를 주문했다. 전복 껍데기를 쓴 첫 롤스로이스로, 그 청록 무지갯빛이 벌새 깃털을 대신한다. 벌새 한 마리는 전복과 자개 53조각, 식물 장면은 84조각으로 피크닉 테이블과 뒷좌석 사이 워터폴 패널에 상감됐다. 개발 9개월, 여섯 번의 수정, 상감 45시간. 크렘 라이트 가죽에 모카신·탄 인서트, 시셸 카펫, 애시 버 목재와 실버 버치. 외장은 와일드베리와 화이트 샌즈 투톤에 손으로 그린 벌새 코치라인이다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/rolls-royce-phantom-hummingbird/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Rolls-Royce-Phantom-Hummingbird-main-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Rolls-Royce-Phantom-Hummingbird-main-1024x576.jpg",
+  "img": "assets/2026-09-16-5.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Rolls-Royce-Phantom-Hummingbird-main-1024x576.jpg"
  },
  {
   "tag": "Micromobility",
@@ -56,7 +66,9 @@
   "ko": "세그웨이 MUXI Pro 카고 e바이크는 750 W 직구동 리어 허브 모터(80 Nm), 최대 117 km 주행의 716 Wh 배터리, 자동 변속 9단 전자 구동계를 갖췄다. 회생제동, 내리막 제어, 언덕 출발 보조, 트랙션 컨트롤은 모터 쪽에서 처리한다. 20×3인치 타이어의 스텝스루 프레임은 190 kg을 싣고, 옵션 동승 키트는 54 kg까지 태운다. 콕핏은 내비 탑재 컬러 TFT에 애플 Find My, GPS, 근접 AirLock, OTA를 앱으로 지원한다. 1,999.99달러, 9월 22일부터 미국 판매.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/09/15/segways-new-28-mph-muxi-pro-cargo-e-bike-gets-automatic-shifting-and-regen-braking/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/09/segway-muxi-pro-cargo-e-bike-header.jpg"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/09/segway-muxi-pro-cargo-e-bike-header.jpg",
+  "img": "assets/2026-09-16-6.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/09/segway-muxi-pro-cargo-e-bike-header.jpg"
  },
  {
   "tag": "Cockpit",
@@ -65,7 +77,9 @@
   "zh": "东风岚图梦想家9旗舰MPV 9月22日上市，预售42.99万至52.99万元，48小时收获3万可退订单。车长5,325 mm、轴距3,200 mm，座舱运行华为HarmonySpace 6；二排零重力座椅带机械按摩、可旋转与三排对坐，配冰箱、可收折屏幕和小桌板，三排玻璃可调光。华为乾崑ADS 5.0读取37个传感器，含一颗896线激光雷达。120 kWh纯电版CLTC续航701 km，1.5T插混纯电300 km，均为800 V。",
   "ko": "둥펑 보야 드림 9 플래그십 MPV가 9월 22일 출시된다. 42만 9,900~52만 9,900위안, 48시간 만에 환불 가능 주문 3만 건. 전장 5,325 mm, 휠베이스 3,200 mm에 화웨이 HarmonySpace 6 콕핏을 얹었다. 2열은 기계식 마사지가 있는 제로 그래비티 시트가 돌아 3열과 마주 보고, 냉장고·접이식 화면·트레이 테이블이 있으며 3열 유리는 밝기가 조절된다. 화웨이 첸쿤 ADS 5.0이 896라인 라이다 등 37개 센서를 읽는다. 120 kWh BEV는 CLTC 701 km.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/15/voyah-dream-9-flagship-mpv-with-701-km-range-set-to-launch-on-september-22/"
+  "url": "https://carnewschina.com/2026/09/15/voyah-dream-9-flagship-mpv-with-701-km-range-set-to-launch-on-september-22/",
+  "img": "assets/2026-09-16-7.png",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/e59bbee78987-110-e1789454207654.png"
  },
  {
   "tag": "Design",
@@ -75,7 +89,9 @@
   "ko": "Car Design News의 프레디 홈스가 하노버 IAA 상용차쇼의 흐름을 정리했다. 전기 트럭이 승용차의 얼굴을 얻었다. 날카로운 DRL과 시그니처 라이트바(MAN eTGX, 볼보 FH 에어로 일렉트릭, 카메라 미러의 유럽형 테슬라 세미), 그리고 거주 공간으로 설계된 캡. 스카니아 CR20은 100% 재생 커튼과 조절식 앰비언트 조명, DAF는 폭 90 cm 침대와 조명 수납, MAN은 시야용 풋웰 패널을 더했다. 실내는 낮고 넓은 대시에 디지털 클러스터와 중앙 터치스크린 하나, 센터 콘솔 없음, 돌빛 중립 CMF가 공통이다.",
   "src": "Car Design News",
   "url": "https://www.cardesignnews.com/cars/iaa-transportation-2026-key-launches-and-design-trends/2734878",
-  "img_url": "https://image.cardesignnews.com/2735790.webp"
+  "img_url": "https://image.cardesignnews.com/2735790.webp",
+  "img": "assets/2026-09-16-8.webp",
+  "img_src": "https://image.cardesignnews.com/2735790.webp"
  },
  {
   "tag": "Visual",
@@ -85,7 +101,9 @@
   "ko": "카이로 스튜디오 Ntsal이 제18회 파노라마 오브 더 유러피언 필름의 아이덴티티에서 시간을 압축하고 늘일 수 있는 것으로 다뤘다. 눌리고 늘어난 타임라인처럼 읽히는 만화경 패턴이 두 가지 단순한 동작에서 생성되고, 포스터·인쇄물·인터랙티브 상영 체크리스트가 한 시스템에서 나온다. 헤드라인 서체 NT Panorama Naskh는 아랍어 신문 서예와 옛 포스터 크레딧에서 왔다. 디자인 디렉터 나르딘 셰누다는 '손노동으로만 잡히는 거친 맛'을 원했다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/ntsal-panorama-of-the-european-film-graphic-design-project-150926",
-  "img_url": "https://m.itsnicethat.com/original_images/Ntsal_Cairo_Panorama_of_the_European_Film_2025_Poster.jpg?class=w1080"
+  "img_url": "https://m.itsnicethat.com/original_images/Ntsal_Cairo_Panorama_of_the_European_Film_2025_Poster.jpg?class=w1080",
+  "img": "assets/2026-09-16-9.jpg",
+  "img_src": "https://m.itsnicethat.com/original_images/Ntsal_Cairo_Panorama_of_the_European_Film_2025_Poster.jpg?class=w1080"
  },
  {
   "tag": "Visual",
@@ -94,7 +112,9 @@
   "zh": "安特卫普机构WeWantMore重做了比利时气泡水BRU（水源在Stoumont，可追溯到17世纪），核心只有一个判断：这瓶水是在餐桌上被打量，而不是超市货架。透明玻璃瓶配深海军蓝标签与蓝色旋盖，跃鹿徽记简化为雕塑感剪影，多彩装饰字体被克制的留白包围，口号'有些东西就该在餐桌上'。启示：并非每件产品都在争夺购物者的一瞥，要为它真正被看见的场合设计。",
   "ko": "안트베르펜 에이전시 WeWantMore가 17세기 스투몽 샘물에서 시작된 벨기에 탄산수 BRU를 하나의 판단 위에 다시 그렸다. 이 병은 마트 진열대가 아니라 레스토랑 테이블에서 평가된다. 투명 유리병에 짙은 네이비 라벨과 파란 스크루 캡, 도약하는 사슴 엠블럼은 조각적 실루엣으로 단순화했고, 다채로운 장식 레터링을 절제된 여백이 감싼다. 슬로건은 '어떤 것은 그저 테이블 위에 있어야 한다'. 실제로 보이는 자리를 위해 설계하라는 교훈이다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/news/what-wewantmores-redesign-of-brus-bottles-can-teach-us-about-packaging-design-in-2026/"
+  "url": "https://www.creativeboom.com/news/what-wewantmores-redesign-of-brus-bottles-can-teach-us-about-packaging-design-in-2026/",
+  "img": "assets/2026-09-16-10.webp",
+  "img_src": "https://media.creativeboom.com/02ab366f-4408-401a-9cbc-5c016cddb8af/conversions/2a918533e99cb2a9dff2fff407df69b2d142c186-medium.webp"
  },
  {
   "tag": "Visual",
@@ -103,7 +123,9 @@
   "zh": "PRINT的Type Tuesday专栏（Deb Aldrich撰文）介绍Typeverything上一季发布的粗体展示字体Graphics：灵感来自七十年代迪斯科海报与最早的数字字体。结构为单线宽、模块化，字形厚重紧凑，被一块块负空间打断，远看是整块标题，近看是几何零件。适合海报、书封、标志和大标题，属于'未来看起来时髦、图形化、充满可能'的年代，却以当代的锐利度绘制。",
   "ko": "PRINT의 Type Tuesday(데브 올드리치)가 Typeverything이 지난 시즌 낸 볼드 디스플레이 서체 Graphics를 다뤘다. 1970년대 디스코 포스터와 초기 디지털 레터링을 잇는다. 구조는 모노라인에 모듈형이고, 두툼하고 빽빽한 글자꼴 사이에 네거티브 스페이스가 박혀 멀리서는 한 덩어리 헤드라인, 가까이서는 기하학적 부품으로 읽힌다. 포스터·책 표지·로고·헤드라인용으로, '미래가 그루비하고 가능성으로 가득해 보이던' 시대를 오늘의 선명함으로 그렸다.",
   "src": "PRINT Magazine",
-  "url": "https://www.printmag.com/type-tuesday/beach-blankets-bell-bottoms-bold-type/"
+  "url": "https://www.printmag.com/type-tuesday/beach-blankets-bell-bottoms-bold-type/",
+  "img": "assets/2026-09-16-11.jpg",
+  "img_src": "https://i0.wp.com/www.printmag.com/wp-content/uploads/2026/09/image-1-16.png?w=1808&quality=80&ssl=1"
  },
  {
   "tag": "Visual",
@@ -113,7 +135,9 @@
   "ko": "로스앤젤레스 작가 헌터 하비가 알록달록한 인물화에서 서체가 의미를 짊어지는 '텍스트 페인팅'으로 옮겨 갔다. 간판, TV, 파티, 엿들은 대화에서 주운 짧고 미완의 문구를 충실히 재현한 Helvetica, Impact, 옛 마이크로소프트 슬라이드 폰트, 불법복제 경고 밈 글자로 짜고, 무광 비닐 플라쉐 물감에 에어브러시와 마스킹으로 그려 범퍼 스티커나 옥외광고처럼 읽히게 한다. Helvetica는 '믿음직하고 권위 있게', Impact는 '대담하고 뻔뻔해 진지하게 받기 어렵게'. 농담인지 선언인지는 일부러 흐려 둔다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/hunter-harvey-art-discover-150926",
-  "img_url": "https://m.itsnicethat.com/original_images/hunter-harvey-art-itsnicethat-9.jpg"
+  "img_url": "https://m.itsnicethat.com/original_images/hunter-harvey-art-itsnicethat-9.jpg",
+  "img": "assets/2026-09-16-12.jpg",
+  "img_src": "https://m.itsnicethat.com/original_images/hunter-harvey-art-itsnicethat-9.jpg"
  },
  {
   "tag": "Design",
@@ -123,7 +147,9 @@
   "ko": "베를린 YONT 스튜디오가 KaDeWe 안에 35 m²의 아날로그 청취실 'Not a Passenger'를 지었다. 나밀리아의 Passenger 컬렉션을 위해 텔레콤 일렉트로닉 비츠, 웻 레그와 함께 만들었고 9월 15~27일 연다. 업사이클 자동차 시트 여섯 개가 방사형 원으로 놓이고, 가운데엔 에폭시와 고광택 핑크 자동차 도료를 입힌 스티로폼 덩어리 넷이 있다. 둘은 카세트 플레이어와 헤드폰을, 하나는 전신 거울 겸 탈의실을, 하나는 향수병 후크가 달린 선반을 맡는다. 케이블은 일부러 드러냈다. 테이프 140개.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/analog-sound-installation-yont-studio-berlin-kadewe/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/yont-studio_designboom_600.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/yont-studio_designboom_600.jpg",
+  "img": "assets/2026-09-16-13.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/09/yont-studio_designboom_600.jpg"
  },
  {
   "tag": "Industrial",
@@ -132,7 +158,9 @@
   "zh": "HDL Automation的Fanora控制终端是一块壁挂或桌面的智能家居面板，形似半开的折扇。机身为喷砂阳极氧化6063铝合金；八颗CNC机械按键带砂面纹理沿弧线排布，可按用户设定激光刻字，从窗帘、音乐到整屋场景。转轴处一枚手工雕刻的和田玉坠藏着运动与温度传感器，让自动化响应房间实况而非固定时间表；触控屏在人靠近时才亮起。一瞥即知的那一层是实体的，屏幕只是例外。",
   "ko": "HDL 오토메이션의 Fanora 컨트롤 터미널은 반쯤 펼친 접부채 모양의 벽걸이 겸 탁상 스마트홈 패널이다. 몸체는 샌드블라스트 아노다이징 6063 알루미늄, 호를 따라 모래 질감의 CNC 기계식 버튼 여덟 개가 놓이고 커튼·음악·방 전체 장면 등 사용자가 정한 기능을 레이저로 새긴다. 축의 손조각 허톈 옥 펜던트에 모션·온도 센서가 숨어 자동화가 방의 상태에 반응하고, 터치 화면은 다가갈 때만 깨어난다. 흘끗 보는 층은 실물, 화면은 예외다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/15/smart-home-panels-look-like-tech-fanora-looks-like-fine-craft/"
+  "url": "https://www.yankodesign.com/2026/09/15/smart-home-panels-look-like-tech-fanora-looks-like-fine-craft/",
+  "img": "assets/2026-09-16-14.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/smart-home-panels-look-like-tech-fanora-looks-like-fine-craft/fanora-control-terminal-06.jpg"
  },
  {
   "tag": "Industrial",
@@ -141,7 +169,9 @@
   "zh": "Yanko Design把九台迷你PC与苹果127×127×50 mm的Mac mini并排：方形铝盒已成品类默认。Geekom A9 Max每个方向都在8 mm之内，华硕PN55为130×130×34，微星Cubi NUC AI+ 3MG缩到119.6×115.2×37.5，联想ThinkCentre neo Ultra Gen 2以195×191×108追Mac Studio。苹果靠集成与散热布局得到这个形状，其他人则'靠共识，或者靠备忘录'。",
   "ko": "Yanko Design이 애플의 127×127×50 mm 맥 미니 옆에 미니 PC 아홉 대를 세웠다. 정사각 알루미늄 상자는 이 카테고리의 기본형이 됐다. 긱컴 A9 Max는 모든 축이 8 mm 이내, 에이수스 PN55는 130×130×34, MSI Cubi NUC AI+ 3MG는 119.6×115.2×37.5, 레노버 ThinkCentre neo Ultra Gen 2는 195×191×108로 맥 스튜디오를 좇는다. 애플은 통합과 열 배치로 이 형태에 도달했고 나머지는 '합의로, 혹은 메모로' 도달했다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/15/the-mac-mini-form-factor-is-so-perfect-literally-everyone-is-copying-it/"
+  "url": "https://www.yankodesign.com/2026/09/15/the-mac-mini-form-factor-is-so-perfect-literally-everyone-is-copying-it/",
+  "img": "assets/2026-09-16-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/the-mac-mini-form-factor-is-so-perfect-literally-everyone-is-copying-it/mac_mini_design_template_1.jpeg"
  },
  {
   "tag": "Micromobility",
