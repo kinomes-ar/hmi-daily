@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build the Monday WeCom card from weekly/<week>.json.
   python3 make_weekly_card.py 2026-W36
-Trilingual intro + one line per category (EN, then 中/한 clipped) + most-loved list.
+Trilingual intro + one line per category (EN, then 中/한 clipped) + most-loved / not-for-us lists
++ "what changes next week" (from weekly/<week>.json feedback.actions).
 Stays under WeCom's 4096-byte markdown limit by shrinking caps.
 """
 import json, os, sys
@@ -63,6 +64,22 @@ def assemble(w, idx, counts, cap_intro, cap_cat, n_top):
                 continue
             n = tp.get("n", 0) if isinstance(tp, dict) else counts.get(tp, 0)
             body += "· [%s](%s)%s\n" % (it["t"], it["url"], (" ❤%d" % n) if n else "")
+    # least wanted
+    sk = (w.get("feedback") or {}).get("skipped") or []
+    if sk and n_top:
+        lines = []
+        for tp in sk[:3]:
+            it = idx.get(tp.get("id"))
+            if it and tp.get("n"):
+                lines.append("· [%s](%s) ✕%d" % (it["t"], it["url"], tp["n"]))
+        if lines:
+            body += "\n**✕ Not for us**\n" + "\n".join(lines) + "\n"
+    # what changes next week
+    acts = (w.get("feedback") or {}).get("actions") or {}
+    if acts.get("en"):
+        body += "\n━━━━━━━\n**↻ Next week**\n> **EN** %s\n" % clip(acts["en"], min(cap_cat + 60, 260))
+        if cap_cat >= 120:
+            body += "> **中** %s\n> **한** %s\n" % (clip(acts.get("zh", ""), min(cap_cat, 150)), clip(acts.get("ko", ""), min(cap_cat, 150)))
     body += "\n━━━━━━━\n[📑 Full weekly · %s](%s/weekly.html#%s)" % (
         SITE.replace("https://", ""), SITE, w["week"])
     return body
@@ -70,7 +87,8 @@ def assemble(w, idx, counts, cap_intro, cap_cat, n_top):
 
 def build(w, idx, counts):
     for cap_intro, cap_cat, n_top in ((400, 300, 5), (320, 240, 5), (260, 200, 5), (220, 170, 3),
-                                      (180, 140, 3), (150, 120, 3), (130, 100, 3), (110, 90, 0), (90, 70, 0)):
+                                      (180, 140, 3), (150, 120, 3), (120, 120, 3), (100, 120, 0),
+                                      (130, 100, 3), (110, 90, 0), (90, 70, 0)):
         c = assemble(w, idx, counts, cap_intro, cap_cat, n_top)
         if len(c.encode()) <= LIMIT:
             return c, (cap_intro, cap_cat)

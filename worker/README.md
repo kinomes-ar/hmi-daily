@@ -1,4 +1,4 @@
-# ADUX Daily — hearts backend (Cloudflare Worker, free tier)
+# ADUX Daily — reactions backend (hearts + "not for me") (Cloudflare Worker, free tier)
 
 One-time setup, ~5 minutes, all in the Cloudflare dashboard. No CLI, no token.
 
@@ -36,7 +36,12 @@ That's it. Hearts on the site start syncing on the next rebuild.
 | Method | Path      | Body / query        | Returns              |
 |--------|-----------|---------------------|----------------------|
 | POST   | `/like`   | `{id, on, cid}`     | `{id, count}`        |
-| POST   | `/counts` | `{ids:[…]}` (≤200)  | `{counts:{id:n}}`    |
-| GET    | `/top`    | `?n=1000`           | `{counts:{id:n}}`    |
+| POST   | `/skip`   | `{id, on, cid}`     | `{id, count}`  ("not for me"; clears that client's heart) |
+| POST   | `/counts` | `{ids:[…]}` (≤200)  | `{counts:{id:n}, skips:{id:n}}` |
+| GET    | `/top`    | `?n=1000`           | `{counts:{id:n}, skips:{id:n}}` |
+
+## Updating the Worker
+Paste the new `worker.js` over the old one (Worker → **Edit code** → replace all → **Deploy**).
+Existing heart counts are kept; skips use separate keys (`s:`/`w:`).
 
 `id` = `YYYY-MM-DD-<story number>` (the site's `data-id`); `cid` = a random per-browser id the site generates, so one browser counts once per story.

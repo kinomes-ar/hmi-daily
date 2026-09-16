@@ -56,9 +56,20 @@ figures, executive moves); pricing-only or regulation/policy-only stories; recal
 releases with no design substance; anything older than ~3 days unless it is an evergreen
 deep-dive feature; stories already covered in a previous edition (Section 3).
 
-**Balance per edition (16 stories):** roughly 3–4 Cockpit/Interaction, 1–2 Micromobility,
-1–2 AI, 4–5 Visual, 3–4 Design/Industrial. Adjust to what the day actually offers, but
-never fewer than 2 HMI stories and 3 Visual stories.
+**Balance per edition (16 stories) — set by the team's reactions.** Readers can heart a story
+or mark it "not for me" (eye icon). Before researching, run
+
+```
+python3 feedback.py --fetch --brief      # (--fetch needs the Worker; if it fails, run without it)
+```
+
+and follow what it prints: the **quota per group** (HMI = Cockpit+Interaction, Micromobility,
+AI, Visual, Product = Design+Industrial; base 4·2·2·4·4, moved ±1 by the last three weeks of
+hearts minus skips, always totalling 16), the **sources to favour / deprioritise**, and the
+lists of what the team hearted and skipped — read those lists for the *kind* of story
+(subject, depth, angle) to find more of / avoid. ±1 per group is fine when the day is thin,
+but never fewer than 3 HMI stories or 3 Visual stories. The rules are printed in
+`feedback.py`'s docstring; do not invent others.
 
 **Ordering:** item 1 is the lead — the single most important HMI/cockpit story of the day
 (fall back to the strongest story of any beat). Then order by importance, but make sure
@@ -166,14 +177,17 @@ From the repository root:
 
 ```bash
 TODAY=$(TZ=Asia/Shanghai date +%F)
+python3 feedback.py --fetch --brief            # (already done in step 1 — quotas and source notes)
 python3 check_edition.py data/$TODAY.json     # schema, tags, lengths, domains, dedupe
 python3 make_card.py $TODAY                   # -> outbox/card.json (must print bytes <= 4096)
 python3 build.py standalone                   # regenerates index.html, YYYYMMDD.html, my.html, weekly.html, items.json
-git add data/$TODAY.json outbox/card.json index.html $(echo $TODAY | tr -d -).html my.html weekly.html items.json
+git add data/$TODAY.json outbox/card.json likes.json index.html $(echo $TODAY | tr -d -).html my.html weekly.html items.json
 git -c user.name=kinomes-ar -c user.email=kinomeartemis@gmail.com commit -m "ADUX Daily $TODAY"
 git push origin HEAD:main
 ```
 
+* `feedback.py --fetch` rewrites `likes.json`; commit it together with the edition (add
+  `likes.json` to the `git add` line) so the site's weekly stats stay current.
 * Fix every problem `check_edition.py` reports before continuing (it exits non-zero).
 * If `make_card.py` says the card is too large, shorten the longest summaries or titles.
 * Push **directly to `main`** (all history is authored by kinomes-ar, so the push check
@@ -195,8 +209,11 @@ On Mondays, after the daily edition is pushed, summarise **last week** (Mon–Fr
 previous ISO week) from the five `data/` files of that week.
 
 1. Week id = ISO week of last Friday, e.g. `2026-W37`; `from`/`to` = that Monday/Friday.
-2. Read the five data files and `likes.json` (`counts` keyed by item id
-   `YYYY-MM-DD-N`, N is 1-based position in the day's file). Hearts = what the team loved.
+2. Run `python3 feedback.py --fetch --week <week>` — it prints JSON with the week's reaction
+   stats per category and source, `top` (most hearted), `skipped` (most "not for me"),
+   `next_quotas` and `quota_notes` (what the rule decided for next week), `favour` /
+   `deprioritise` sources. Read the five data files for the content itself. Hearts = what the
+   team loved, skips = what it does not want more of.
 3. Write `weekly/<week>.json`:
 
 ```json
@@ -209,7 +226,11 @@ previous ISO week) from the five `data/` files of that week.
    {"tag": "Interaction", ...}, {"tag": "AI", ...}, {"tag": "Micromobility", ...},
    {"tag": "Visual", ...}, {"tag": "Design", ...}, {"tag": "Industrial", ...}
  ],
- "top": [{"id": "2026-09-10-4", "n": 2}, {"id": "2026-09-08-5", "n": 1}]
+ "top": [{"id": "2026-09-10-4", "n": 2}, {"id": "2026-09-08-5", "n": 1}],
+ "feedback": {
+   "skipped": [{"id": "2026-09-10-15", "n": 2}],
+   "actions": {"en": "...", "zh": "...", "ko": "..."}
+ }
 }
 ```
 
@@ -219,14 +240,24 @@ previous ISO week) from the five `data/` files of that week.
    * One `cats` entry per tag that had stories, in the order above; each `en` 60–110 words
      naming companies, products and what specifically was talked about, plus `items`
      (the ids of the stories it refers to, 3–8 each). `zh`/`ko` are equivalents.
-   * `top`: hearts ranked, up to 5, only n>0.
+   * `top`: hearts ranked, up to 5, only n>0 — copy from `feedback.py --week`.
+   * `feedback.skipped`: the `skipped` list from `feedback.py --week` (up to 5, only n>0).
+   * `feedback.actions`: 2–4 sentences per language that (a) say what the team hearted and
+     skipped this week, in plain words (categories, kinds of story, sources), (b) state the
+     concrete consequence for next week — the `next_quotas` numbers and any source that is
+     favoured or deprioritised, quoting `quota_notes` — and (c) if reactions were too few to
+     move anything, say so and that base quotas apply. Same facts in EN / 中 / 한. This text is
+     shown on the weekly page and in the Monday card, so it must be honest and specific.
+   * Also mention the most-hearted and most-skipped story in `intro`.
+   The site computes the per-category / per-source tables itself from `likes.json`; you only
+   write the words.
 4. Build and push:
 
 ```bash
 python3 make_weekly_card.py <week>            # -> outbox/card.json (<= 4096 bytes)
 python3 build.py standalone
 printf '\n' >> data/<last Friday>.json         # touches a data file so the rebuild Action runs
-git add weekly/<week>.json outbox/card.json weekly.html index.html items.json data/<last Friday>.json
+git add weekly/<week>.json likes.json outbox/card.json weekly.html index.html items.json data/<last Friday>.json
 git -c user.name=kinomes-ar -c user.email=kinomeartemis@gmail.com commit -m "ADUX Weekly <week>"
 git push origin HEAD:main
 ```
@@ -234,6 +265,7 @@ git push origin HEAD:main
 ## 8. Final message of the run
 
 End with a short trilingual report (EN / 中 / 한, three lines each at most): edition date,
-number of stories, the five featured titles, anything skipped or degraded (e.g. a source
+number of stories, the quotas used (from `feedback.py`), the five featured titles, anything
+skipped or degraded (e.g. a source
 unreachable, an image pinned manually, a PR opened instead of a direct push). If nothing
 could be published, say exactly which step failed and what was tried.

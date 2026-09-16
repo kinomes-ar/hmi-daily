@@ -112,6 +112,22 @@ def main(path):
         warns.append("only %d Visual stories (want 4-5)" % vis)
     if tags and tags[0] not in HMI:
         warns.append("lead story is %s — prefer a Cockpit/Interaction lead when one exists" % tags[0])
+    # quotas set by the team's reactions (feedback.py); ±1 per group is tolerated
+    try:
+        sys.path.insert(0, HERE)
+        import feedback
+        hearts, skips, _ = feedback.load_snapshot()
+        date = os.path.basename(path)[:-5]
+        rows = feedback.stories(feedback.editions(before=date)[-feedback.WINDOW:], hearts, skips)
+        q, _notes = feedback.quotas(rows)
+        have = {g: 0 for g in q}
+        for t in tags:
+            have[feedback.group_of(t)] += 1
+        for g in q:
+            if abs(have[g] - q[g]) > 1:
+                warns.append("quota: %s has %d stories, feedback.py asked for %d (run: python3 feedback.py --brief)" % (g, have[g], q[g]))
+    except Exception as e:
+        warns.append("could not check quotas: %s" % e)
 
     if not errs:
         try:

@@ -390,6 +390,27 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 .heart[aria-pressed="true"] svg{fill:currentColor}
 .heart.pop{transform:scale(1.25)}
 .heart .cnt:empty{display:none}
+.skip{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted); opacity:.55;
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, opacity .12s, transform .12s;
+}
+.skip svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.skip:hover{opacity:1; color:var(--ink)}
+.skip[aria-pressed="true"]{opacity:1; color:var(--ink)}
+.skip.pop{transform:scale(1.2)}
+.skip .cnt:empty{display:none}
+article.skipped .ph, article.skipped .tx{display:none}
+article.skipped .hl{opacity:.4; text-decoration:line-through; text-decoration-thickness:1px}
+article.skipped .tagrow{opacity:.4}
+article.skipped .acts .src{opacity:.4}
+.myhead{margin-top:34px}
+.hidlist{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px}
+.hidlist li{display:flex; align-items:center; gap:12px; font-size:13px; color:var(--muted)}
+.hidlist li a{color:var(--muted); text-decoration:none; text-decoration:line-through}
+.hidlist li a:hover{color:var(--ink)}
+.hidlist .skip{opacity:1; color:var(--ink)}
 
 /* ---- uniform grid (My page, Weekly picks) ---- */
 .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px; padding-top:26px}
@@ -454,6 +475,22 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 .wtop li a{color:var(--ink); text-decoration:none; font-size:14px; line-height:1.3; flex:1}
 .wtop li a:hover{color:var(--red)}
 .wtop li .n{font-size:10px; font-weight:700; color:var(--muted); letter-spacing:.06em; white-space:nowrap}
+.wtop.wskip h3 svg{fill:none; stroke:var(--ink); stroke-linecap:round}
+.wtop.wskip li::before{color:var(--muted)}
+.wfb{margin-top:34px; padding-top:22px; border-top:1px solid var(--ink)}
+.wfb h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 12px}
+.wfb .fbgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px 34px}
+.wfb table{width:100%; border-collapse:collapse; font-size:12.5px}
+.wfb th{text-align:left; font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:0 0 6px; border-bottom:1px solid var(--ink)}
+.wfb th.num, .wfb td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+.wfb td{padding:6px 0; border-bottom:1px solid var(--hair); vertical-align:baseline}
+.wfb td .bar{display:inline-block; height:7px; border-radius:2px; vertical-align:middle; margin-right:6px}
+.wfb td .bar.l{background:var(--red)}
+.wfb td .bar.s{background:var(--muted); opacity:.55}
+.wfb .fbnote{font-size:11px; color:var(--muted); margin-top:8px}
+.wact{margin-top:26px; padding:18px 20px; background:var(--shade); border-radius:6px}
+.wact h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 10px}
+.wact .tx{max-width:none; font-size:14px; line-height:1.65}
 
 .foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
 .foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
@@ -465,6 +502,7 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 def esc(s): return html.escape(s, quote=False)
 
 
+SKIP_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>')
 HEART_SVG = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>')
 
 
@@ -476,11 +514,13 @@ def site_cfg():
 
 
 def load_likes():
-    """likes.json is a snapshot of the shared heart counts, refreshed by the runner."""
+    """likes.json is a snapshot of the shared reaction counts, refreshed by the runner.
+    Returns (hearts, skips) as {id: n}."""
     try:
-        return json.load(open(os.path.join(HERE, "likes.json"))).get("counts", {})
+        j = json.load(open(os.path.join(HERE, "likes.json")))
+        return j.get("counts", {}), j.get("skips", {})
     except Exception:
-        return {}
+        return {}, {}
 
 
 def slug(tag):
@@ -502,7 +542,10 @@ def photo(it, kind):
 
 def heart(iid):
     return ('<button type="button" class="heart" data-id="{id}" aria-pressed="false" '
-            'aria-label="Like">{svg}<span class="cnt"></span></button>').format(id=iid, svg=HEART_SVG)
+            'aria-label="Like">{svg}<span class="cnt"></span></button>'
+            '<button type="button" class="skip" data-id="{id}" aria-pressed="false" '
+            'aria-label="Not for me" title="Not for me">{skip}<span class="cnt"></span></button>'
+            ).format(id=iid, svg=HEART_SVG, skip=SKIP_SVG)
 
 
 def article(it, kind, photo_on=True, date="", iid=""):
@@ -638,7 +681,54 @@ def load_weeks():
     return [json.load(open(f)) for f in files]
 
 
-def render_weeks(weeks, index, counts):
+def week_stats(w, index, counts, skips):
+    """Per-category / per-source reaction stats for one week, computed from the snapshot."""
+    frm, to = w.get("from", ""), w.get("to", "9999")
+    items = [it for it in index if frm <= it["date"] <= to]
+    cats, srcs = {}, {}
+    for it in items:
+        for key, bucket in ((it["tag"], cats), (it["src"], srcs)):
+            b = bucket.setdefault(key, {"n": 0, "l": 0, "s": 0})
+            b["n"] += 1; b["l"] += counts.get(it["id"], 0); b["s"] += skips.get(it["id"], 0)
+    tl = sum(counts.get(it["id"], 0) for it in items)
+    ts = sum(skips.get(it["id"], 0) for it in items)
+    return {"items": len(items), "likes": tl, "skips": ts, "cats": cats, "srcs": srcs}
+
+
+def render_feedback(w, index, counts, skips):
+    st = week_stats(w, index, counts, skips)
+    if not st["items"]:
+        return ""
+    order = ["Cockpit", "Interaction", "AI", "Micromobility", "Visual", "Design", "Industrial"]
+    mx = max([1] + [max(b["l"], b["s"]) for b in st["cats"].values()])
+    def row(name, b):
+        return ('<tr><td>%s</td><td class="num">%d</td>'
+                '<td class="num"><span class="bar l" style="width:%dpx"></span>%d</td>'
+                '<td class="num"><span class="bar s" style="width:%dpx"></span>%d</td></tr>') % (
+            esc(name), b["n"], int(60 * b["l"] / mx), b["l"], int(60 * b["s"] / mx), b["s"])
+    crows = "".join(row(t, st["cats"][t]) for t in order if t in st["cats"])
+    crows += "".join(row(t, b) for t, b in sorted(st["cats"].items()) if t not in order)
+    srcs = sorted(st["srcs"].items(), key=lambda kv: (-(kv[1]["l"] + kv[1]["s"]), -kv[1]["n"], kv[0]))
+    srows = "".join(row(t, b) for t, b in [x for x in srcs if x[1]["l"] or x[1]["s"]][:10])
+    if not srows:
+        srows = '<tr><td colspan="4" class="fbnote">No reactions from the team yet</td></tr>'
+    hdr = '<tr><th>%s</th><th class="num">Stories</th><th class="num">&#9829; Loved</th><th class="num">&#10005; Not for me</th></tr>'
+    body = ('<div class="wfb"><h3>Reactions this week &middot; %d stories &middot; %d &#9829; &middot; %d &#10005;</h3>'
+            '<div class="fbgrid"><table>%s%s</table><table>%s%s</table></div>'
+            '<p class="fbnote tx en">Hearts and "not for me" are counted across the whole team (one vote per device). They steer next week: see below.</p>'
+            '<p class="fbnote tx zh">红心与"不想看"按全团队统计（每台设备一票），并用于调整下周选题，见下文。</p>'
+            '<p class="fbnote tx ko">하트와 "보고 싶지 않음"은 팀 전체 기준(기기당 1표)으로 집계되며, 다음 주 선정에 반영됩니다. 아래 참고.</p>'
+            '</div>') % (st["items"], st["likes"], st["skips"], hdr % "Category", crows, hdr % "Source", srows)
+    fb = w.get("feedback") or {}
+    acts = fb.get("actions") or {}
+    if any(acts.get(k) for k in ("en", "zh", "ko")):
+        body += ('<div class="wact"><h3>What changes next week</h3>%s</div>' %
+                 "".join('<p class="tx %s">%s</p>' % (k, esc(acts[k])) for k in ("en", "zh", "ko") if acts.get(k)))
+    return body
+
+
+def render_weeks(weeks, index, counts, skips=None):
+    skips = skips or {}
     byid = {it["id"]: it for it in index}
     out = []
     for w in weeks:
@@ -677,6 +767,19 @@ def render_weeks(weeks, index, counts):
             tops.append('<li><a href="%s" target="_blank" rel="noopener">%s</a><span class="n">%s</span></li>' % (
                 esc(it["url"]), esc(it["t"]), ("&#9829; %d" % n) if n else ""))
         topblock = ('<div class="wtop"><h3>%s Most loved this week</h3><ol>%s</ol></div>' % (HEART_SVG, "".join(tops))) if tops else ""
+        # least wanted: computed from the skip snapshot
+        wk_ids = [it["id"] for it in index if w.get("from", "") <= it["date"] <= w.get("to", "9999")]
+        worst = sorted(((skips.get(i, 0), i) for i in wk_ids), reverse=True)
+        skl = []
+        for n, i in worst[:5]:
+            if n <= 0 or i not in byid:
+                continue
+            it = byid[i]
+            skl.append('<li><a href="%s" target="_blank" rel="noopener">%s</a><span class="n">&#10005; %d</span></li>' % (
+                esc(it["url"]), esc(it["t"]), n))
+        if skl:
+            topblock += '<div class="wtop wskip"><h3>%s Not for us this week</h3><ol>%s</ol></div>' % (SKIP_SVG, "".join(skl))
+        topblock += render_feedback(w, index, counts, skips)
         out.append(
             '<section class="week" id="{wid}"><div class="dayhead"><h2>{wid}</h2><span class="rule"></span>'
             '<span class="meta">{frm} &ndash; {to}</span></div>'
@@ -811,10 +914,14 @@ JS = r"""<script>
     });
   });
 
-  /* ---- hearts: local list (My page) + shared counts (Worker API) ---- */
+  /* ---- reactions: hearts + "not for me" — local lists (My page) + shared counts (Worker API) ---- */
   var API=(window.ADUX_LIKE_API||'').replace(/\/+$/,'');
-  function loadLikes(){ try{ return JSON.parse(localStorage.getItem('adux-likes')||'{}')||{}; }catch(e){ return {}; } }
-  function saveLikes(o){ try{ localStorage.setItem('adux-likes',JSON.stringify(o)); }catch(e){} }
+  function loadJ(k){ try{ return JSON.parse(localStorage.getItem(k)||'{}')||{}; }catch(e){ return {}; } }
+  function saveJ(k,o){ try{ localStorage.setItem(k,JSON.stringify(o)); }catch(e){} }
+  function loadLikes(){ return loadJ('adux-likes'); }
+  function saveLikes(o){ saveJ('adux-likes',o); }
+  function loadSkips(){ return loadJ('adux-skips'); }
+  function saveSkips(o){ saveJ('adux-skips',o); }
   function cid(){
     try{
       var c=localStorage.getItem('adux-cid');
@@ -831,35 +938,64 @@ JS = r"""<script>
     var b=document.getElementById('mybadge'); if(!b) return;
     var n=Object.keys(loadLikes()).length; b.textContent=n?String(n):'';
   }
-  function setCount(id,n){
-    [].forEach.call(document.querySelectorAll('.heart[data-id="'+id+'"] .cnt'),function(c){ c.textContent=n>0?String(n):''; });
+  function setCount(sel,id,n){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"] .cnt'),function(c){ c.textContent=n>0?String(n):''; });
+  }
+  function setPressed(sel,id,on){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"]'),function(x){ x.setAttribute('aria-pressed',String(on)); });
+  }
+  function setHidden(id,on){
+    [].forEach.call(document.querySelectorAll('article[data-id="'+id+'"]'),function(a){ a.classList.toggle('skipped',!!on); });
+  }
+  function bump(btn,d){
+    var c=btn.querySelector('.cnt'); var n=parseInt(c&&c.textContent||'0',10)||0; return Math.max(0,n+d);
+  }
+  function toggleLike(h){
+    var id=h.dataset.id, cur=loadLikes(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveLikes(cur); badge(); setPressed('.heart',id,on);
+    if(on){ var sk=loadSkips(); if(sk[id]){ delete sk[id]; saveSkips(sk); setPressed('.skip',id,false); setHidden(id,false);
+      var sb=document.querySelector('.skip[data-id="'+id+'"]'); if(sb) setCount('.skip',id,bump(sb,-1)); } }
+    h.classList.add('pop'); setTimeout(function(){ h.classList.remove('pop'); },160);
+    setCount('.heart',id,bump(h,on?1:-1));
+    post('/like',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.heart',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:like',{detail:{id:id,on:on}}));
+  }
+  function toggleSkip(b){
+    var id=b.dataset.id, cur=loadSkips(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveSkips(cur); setPressed('.skip',id,on); setHidden(id,on);
+    if(on){ var lk=loadLikes(); if(lk[id]){ delete lk[id]; saveLikes(lk); badge(); setPressed('.heart',id,false);
+      var hb=document.querySelector('.heart[data-id="'+id+'"]'); if(hb) setCount('.heart',id,bump(hb,-1)); } }
+    b.classList.add('pop'); setTimeout(function(){ b.classList.remove('pop'); },160);
+    setCount('.skip',id,bump(b,on?1:-1));
+    post('/skip',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.skip',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:skip',{detail:{id:id,on:on}}));
   }
   function wire(scope){
-    var likes=loadLikes();
+    var likes=loadLikes(), skips=loadSkips();
     var hearts=[].slice.call((scope||document).querySelectorAll('.heart[data-id]'));
+    var sks=[].slice.call((scope||document).querySelectorAll('.skip[data-id]'));
     hearts.forEach(function(h){
       if(h.dataset.wired) return; h.dataset.wired='1';
       h.setAttribute('aria-pressed',String(!!likes[h.dataset.id]));
-      h.addEventListener('click',function(){
-        var id=h.dataset.id, cur=loadLikes(), on=!cur[id];
-        if(on) cur[id]=Date.now(); else delete cur[id];
-        saveLikes(cur); badge();
-        [].forEach.call(document.querySelectorAll('.heart[data-id="'+id+'"]'),function(x){ x.setAttribute('aria-pressed',String(on)); });
-        h.classList.add('pop'); setTimeout(function(){ h.classList.remove('pop'); },160);
-        var c=h.querySelector('.cnt'); var n=parseInt(c&&c.textContent||'0',10)||0;
-        setCount(id, Math.max(0,n+(on?1:-1)));
-        post('/like',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount(id,r.count); }).catch(function(){});
-        document.dispatchEvent(new CustomEvent('adux:like',{detail:{id:id,on:on}}));
-      });
+      h.addEventListener('click',function(){ toggleLike(h); });
     });
-    var ids=[]; hearts.forEach(function(h){ if(ids.indexOf(h.dataset.id)<0) ids.push(h.dataset.id); });
+    sks.forEach(function(b){
+      if(b.dataset.wired) return; b.dataset.wired='1';
+      b.setAttribute('aria-pressed',String(!!skips[b.dataset.id]));
+      if(skips[b.dataset.id]) setHidden(b.dataset.id,true);
+      b.addEventListener('click',function(){ toggleSkip(b); });
+    });
+    var ids=[]; hearts.concat(sks).forEach(function(h){ if(ids.indexOf(h.dataset.id)<0) ids.push(h.dataset.id); });
     for(var i=0;i<ids.length;i+=150){
       post('/counts',{ids:ids.slice(i,i+150)}).then(function(r){
-        var c=(r&&r.counts)||{}; Object.keys(c).forEach(function(k){ setCount(k,c[k]); });
+        var c=(r&&r.counts)||{}; Object.keys(c).forEach(function(k){ setCount('.heart',k,c[k]); });
+        var sk=(r&&r.skips)||{}; Object.keys(sk).forEach(function(k){ setCount('.skip',k,sk[k]); });
       }).catch(function(){});
     }
   }
-  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,badge:badge,heartSvg:'%HEART%'};
+  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,skips:loadSkips,saveSkips:saveSkips,badge:badge,heartSvg:'%HEART%',skipSvg:'%SKIP%'};
   badge(); wire(document);
 })();
 </script>"""
@@ -872,7 +1008,7 @@ def page(title, h1, active, body, kicker="", extra_js="", bottom=""):
                         c_daily=cur("daily"), c_weekly=cur("weekly"), c_my=cur("my"))
             + body + bottom + FOOT
             + '<script>window.ADUX_LIKE_API=%s;</script>' % json.dumps(api)
-            + JS.replace("%HEART%", HEART_SVG.replace("'", "\\'"))
+            + JS.replace("%HEART%", HEART_SVG.replace("'", "\\'")).replace("%SKIP%", SKIP_SVG.replace("'", "\\'"))
             + extra_js)
 
 
@@ -902,7 +1038,8 @@ MY_JS = r"""<script>
       '<span class="tagrow" style="--cat:'+c+'"><span class="tag">'+esc(it.tag)+'</span></span>'+
       '<h3 class="hl">'+esc(it.t)+'</h3>'+tx+
       '<span class="acts"><a class="src" href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.src)+' &rarr;</a>'+
-      '<button type="button" class="heart" data-id="'+esc(it.id)+'" aria-pressed="true" aria-label="Unlike">'+window.ADUX.heartSvg+'<span class="cnt"></span></button></span>'+
+      '<button type="button" class="heart" data-id="'+esc(it.id)+'" aria-pressed="true" aria-label="Unlike">'+window.ADUX.heartSvg+'<span class="cnt"></span></button>'+
+      '<button type="button" class="skip" data-id="'+esc(it.id)+'" aria-pressed="false" aria-label="Not for me" title="Not for me">'+window.ADUX.skipSvg+'<span class="cnt"></span></button></span>'+
       '<span class="adate">'+esc(it.date)+'</span></article>';
   }
   function empty(){
@@ -928,10 +1065,24 @@ MY_JS = r"""<script>
     host.className='grid'; host.innerHTML=html||empty();
     window.ADUX.wire(host);
   }
-  fetch('items.json',{cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(j){ items=j; draw(); }).catch(function(){ draw(); });
+  var hh=document.getElementById('hidhead'), hl=document.getElementById('hidlist');
+  function drawHidden(){
+    if(!hh||!hl) return;
+    var sk=window.ADUX.skips(); var ids=Object.keys(sk).sort(function(a,b){ return sk[b]-sk[a]; });
+    hh.hidden=!ids.length; if(!ids.length){ hl.innerHTML=''; return; }
+    var by={}; (items||[]).forEach(function(it){ by[it.id]=it; });
+    hl.innerHTML=ids.map(function(id){ var it=by[id]; if(!it) return '';
+      return '<li><button type="button" class="skip" data-id="'+esc(id)+'" aria-pressed="true" aria-label="Restore" title="Restore">'+window.ADUX.skipSvg+'<span class="cnt"></span></button>'+
+        '<a href="'+esc(it.date.replace(/-/g,''))+'.html">'+esc(it.t)+'</a><span class="who">'+esc(it.src)+'</span></li>'; }).join('');
+    window.ADUX.wire(hl);
+  }
+  fetch('items.json',{cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(j){ items=j; draw(); drawHidden(); }).catch(function(){ draw(); drawHidden(); });
   document.addEventListener('adux:like',function(e){ if(!e.detail.on){ var a=host.querySelector('article[data-id="'+e.detail.id+'"]'); if(a){ a.remove(); } if(!host.querySelector('article')) draw(); } });
+  document.addEventListener('adux:skip',function(e){ var a=host.querySelector('article[data-id="'+e.detail.id+'"]'); if(a&&e.detail.on){ a.remove(); if(!host.querySelector('article')) draw(); } drawHidden(); });
   var clr=document.getElementById('clearall');
   if(clr) clr.addEventListener('click',function(){ window.ADUX.save({}); window.ADUX.badge(); draw(); });
+  var ch=document.getElementById('clearhid');
+  if(ch) ch.addEventListener('click',function(){ window.ADUX.saveSkips({}); drawHidden(); });
 })();
 </script>"""
 
@@ -966,7 +1117,7 @@ WEEK_JS = r"""<script>
 def render_all():
     days = load_days()
     index = items_index(days)
-    counts = load_likes()
+    counts, skips = load_likes()
     dates = [d for d, _ in days]
     daily = {}
     for d, items in days:
@@ -980,9 +1131,12 @@ def render_all():
     my = page("ADUX Daily · My", "My &#9829;", "my",
               '<div class="dayhead" style="margin-top:22px"><h2>Saved on this device</h2><span class="rule"></span>'
               '<button type="button" class="clearbtn" id="clearall" hidden>Clear all</button></div>'
-              '<div id="mylist"></div>',
+              '<div id="mylist"></div>'
+              '<div class="dayhead myhead" id="hidhead" hidden><h2>Not for me</h2><span class="rule"></span>'
+              '<button type="button" class="clearbtn" id="clearhid">Restore all</button></div>'
+              '<ul class="hidlist" id="hidlist"></ul>',
               kicker='<div class="kicker">No login &middot; kept in this browser</div>', extra_js=MY_JS)
-    weekly = page("ADUX Daily · Weekly", "This Week", "weekly", render_weeks(load_weeks(), index, counts),
+    weekly = page("ADUX Daily · Weekly", "This Week", "weekly", render_weeks(load_weeks(), index, counts, skips),
                   kicker='<div class="kicker">What moved the room &middot; every Monday</div>', extra_js=WEEK_JS)
     return daily, my, weekly, index
 
@@ -1005,13 +1159,13 @@ def refresh_likes():
             "User-Agent": "Mozilla/5.0 (ADUX Daily build)", "Accept": "application/json"})
         with urllib.request.urlopen(req, timeout=20) as r:
             data = json.load(r)
-        json.dump({"updated": _date.today().isoformat(), "counts": data.get("counts", {})},
-                  open(path, "w"), indent=0)
-        print("likes: %d ids" % len(data.get("counts", {})))
+        json.dump({"updated": _date.today().isoformat(), "counts": data.get("counts", {}),
+                   "skips": data.get("skips", {})}, open(path, "w"), indent=0)
+        print("likes: %d hearted ids, %d skipped ids" % (len(data.get("counts", {})), len(data.get("skips", {}))))
     except Exception as e:
         print("likes: fetch failed, keeping old snapshot:", e)
         if not os.path.exists(path):
-            json.dump({"updated": _date.today().isoformat(), "counts": {}, "error": str(e)},
+            json.dump({"updated": _date.today().isoformat(), "counts": {}, "skips": {}, "error": str(e)},
                       open(path, "w"), indent=0)
 
 
