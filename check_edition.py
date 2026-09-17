@@ -10,7 +10,7 @@ import glob, json, os, re, sys, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-TAGS = {"Cockpit", "Interaction", "AI", "Design", "Visual", "Industrial", "Micromobility"}
+TAGS = {"Cockpit", "Interaction", "AI", "Design", "Visual", "Industrial", "Micromobility", "Motion"}
 HMI = {"Cockpit", "Interaction"}
 BLOCK = ("guideautoweb", "msn.com", "yahoo.com", "news.google", "newsbreak", "flipboard",
          "medium.com", "linkedin.com", "facebook.com", "x.com", "twitter.com", "reddit.com",
@@ -69,6 +69,11 @@ def main(path):
         if it["tag"] not in TAGS:
             errs.append("%s bad tag %r" % (p, it["tag"]))
         tags.append(it["tag"])
+        b = it.get("blurb", "")
+        if not b:
+            warns.append("%s missing blurb (one-line EN takeaway for the chat card)" % p)
+        elif not (50 <= len(b) <= 100):
+            warns.append("%s blurb length %d (want 60-95)" % (p, len(b)))
         for k, (lo, hi) in LIMITS.items():
             L = len(it[k])
             if L < lo:
@@ -86,6 +91,10 @@ def main(path):
         seen.add(u.rstrip("/"))
         if u.rstrip("/") in past_urls:
             errs.append("%s url already published in a previous edition: %s" % (p, u))
+        if it["tag"] == "Motion" and not it.get("video"):
+            errs.append("%s Motion story needs a video link" % p)
+        if it.get("video") and not str(it["video"]).startswith("https://"):
+            errs.append("%s video must be an https URL" % p)
         if any(k in host for k in PIN_IMG) and not it.get("img_url"):
             errs.append("%s %s needs a pinned img_url (bot-walled site)" % (p, host))
         if it.get("img") or it.get("img_src"):
@@ -104,6 +113,9 @@ def main(path):
         if not re.search(r"[가-힣]", it["ko"]):
             errs.append("%s ko is not Korean" % p)
 
+    picks = sum(1 for it in items if isinstance(it, dict) and it.get("pick") is True)
+    if picks != 5:
+        warns.append("%d stories have \"pick\": true (the chat card wants exactly 5)" % picks)
     hmi = sum(1 for t in tags if t in HMI)
     vis = sum(1 for t in tags if t == "Visual")
     if hmi < 2:

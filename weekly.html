@@ -89,6 +89,7 @@ html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
 html[data-filter="design"] article:not([data-tag="design"]){display:none}
 html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
 html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
+html[data-filter="motion"] article:not([data-tag="motion"]){display:none}
 html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
 html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
 html[data-filter] .day article{border:0; padding:0}
@@ -366,6 +367,12 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 .heart[aria-pressed="true"] svg{fill:currentColor}
 .heart.pop{transform:scale(1.25)}
 .heart .cnt:empty{display:none}
+a.vid{display:block; position:relative; color:inherit}
+.ph{position:relative}
+.ph .play{position:absolute; left:50%; top:50%; width:46px; height:46px; margin:-23px 0 0 -23px; border-radius:50%;
+  background:rgba(17,17,16,.72); display:flex; align-items:center; justify-content:center; pointer-events:none}
+.ph .play svg{width:22px; height:22px; fill:#fff; margin-left:3px}
+.vlink{margin-top:0}
 .skip{
   appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
   display:inline-flex; align-items:center; gap:5px; color:var(--muted); opacity:.55;

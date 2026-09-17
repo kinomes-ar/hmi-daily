@@ -19,6 +19,7 @@ CAT = {
     "design":        "#E07A18",
     "visual":        "#2E6BE6",   # graphic / 2D / motion graphics
     "industrial":    "#B08900",   # product & industrial design, CMF
+    "motion":        "#0FA3B1",   # motion design, title sequences, brand films, UI animation
 }
 DEFAULT_CAT = "#5B5750"
 
@@ -113,6 +114,7 @@ html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
 html[data-filter="design"] article:not([data-tag="design"]){display:none}
 html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
 html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
+html[data-filter="motion"] article:not([data-tag="motion"]){display:none}
 html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
 html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
 html[data-filter] .day article{border:0; padding:0}
@@ -390,6 +392,12 @@ html[data-filter] .col.side .acts{justify-content:flex-start}
 .heart[aria-pressed="true"] svg{fill:currentColor}
 .heart.pop{transform:scale(1.25)}
 .heart .cnt:empty{display:none}
+a.vid{display:block; position:relative; color:inherit}
+.ph{position:relative}
+.ph .play{position:absolute; left:50%; top:50%; width:46px; height:46px; margin:-23px 0 0 -23px; border-radius:50%;
+  background:rgba(17,17,16,.72); display:flex; align-items:center; justify-content:center; pointer-events:none}
+.ph .play svg{width:22px; height:22px; fill:#fff; margin-left:3px}
+.vlink{margin-top:0}
 .skip{
   appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
   display:inline-flex; align-items:center; gap:5px; color:var(--muted); opacity:.55;
@@ -531,13 +539,22 @@ def item_id(d, i):
     return "%s-%d" % (d, i + 1)
 
 
+PLAY_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>'
+
+
 def photo(it, kind):
     if it.get("img"):
-        return '<figure class="ph ph-%s"><img src="%s" alt="" loading="lazy"></figure>' % (
-            kind, esc(it["img"]))
-    return ('<figure class="ph ph-%s fb" style="background:%s;color:#fff">'
-            '<span>%s</span></figure>') % (
-        kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")))
+        fig = '<figure class="ph ph-%s"><img src="%s" alt="" loading="lazy">%s</figure>' % (
+            kind, esc(it["img"]), '<span class="play">%s</span>' % PLAY_SVG if it.get("video") else "")
+    else:
+        fig = ('<figure class="ph ph-%s fb" style="background:%s;color:#fff">'
+               '<span>%s</span>%s</figure>') % (
+            kind, cat_colour(it.get("tag")), esc(it.get("tag", "News")),
+            '<span class="play">%s</span>' % PLAY_SVG if it.get("video") else "")
+    if it.get("video"):
+        return '<a class="vid" href="%s" target="_blank" rel="noopener" aria-label="Watch the video">%s</a>' % (
+            esc(it["video"]), fig)
+    return fig
 
 
 def heart(iid):
@@ -556,10 +573,11 @@ def article(it, kind, photo_on=True, date="", iid=""):
         '<span class="tagrow" style="--cat:{c}">'
         '<span class="tag">{tag}</span></span>'
         '<h3 class="hl">{t}</h3>{langs}'
-        '<span class="acts"><a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>{heart}</span>'
+        '<span class="acts"><a class="src" href="{url}" target="_blank" rel="noopener">{src} &rarr;</a>{vid}{heart}</span>'
         '<span class="adate">{date}</span></article>'
     ).format(k=kind, ph=photo(it, kind) if photo_on else "", c=cat_colour(it.get("tag")),
              date=date, id=iid, heart=heart(iid) if iid else "",
+             vid=('<a class="src vlink" href="%s" target="_blank" rel="noopener">&#9654; Watch</a>' % esc(it["video"])) if it.get("video") else "",
              slug=slug(it.get("tag", "")),
              tag=esc(it.get("tag", "News")), t=esc(it["t"]),
              langs=langs, url=esc(it["url"]), src=esc(it["src"]))
@@ -699,7 +717,7 @@ def render_feedback(w, index, counts, skips):
     st = week_stats(w, index, counts, skips)
     if not st["items"]:
         return ""
-    order = ["Cockpit", "Interaction", "AI", "Micromobility", "Visual", "Design", "Industrial"]
+    order = ["Cockpit", "Interaction", "AI", "Micromobility", "Visual", "Motion", "Design", "Industrial"]
     mx = max([1] + [max(b["l"], b["s"]) for b in st["cats"].values()])
     def row(name, b):
         return ('<tr><td>%s</td><td class="num">%d</td>'
@@ -1021,6 +1039,7 @@ FILTERS = """  <div class="fwrap"><nav class="filters" aria-label="Category filt
     <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
     <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
     <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
+    <button type="button" data-f="motion" style="--cat:#0FA3B1" aria-pressed="false">Motion</button>
   </nav></div>
 """
 
@@ -1028,7 +1047,7 @@ MY_JS = r"""<script>
 (function(){
   var host=document.getElementById('mylist'); if(!host) return;
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  var COL={micromobility:'#E5342A',cockpit:'#7B5CF0',interaction:'#17A472',ai:'#DB3A9C',design:'#E07A18',visual:'#2E6BE6',industrial:'#B08900'};
+  var COL={micromobility:'#E5342A',cockpit:'#7B5CF0',interaction:'#17A472',ai:'#DB3A9C',design:'#E07A18',visual:'#2E6BE6',industrial:'#B08900',motion:'#0FA3B1'};
   function card(it){
     var s=(it.tag||'').toLowerCase().replace(/[^a-z]/g,''), c=COL[s]||'#5B5750';
     var ph=it.img?'<figure class="ph ph-foot"><img src="'+esc(it.img)+'" alt="" loading="lazy"></figure>'

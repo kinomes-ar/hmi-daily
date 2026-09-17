@@ -15,8 +15,8 @@
  * ---- Feishu (Lark) delivery, driven by a Cron Trigger ----
  *   Cron  "30-minute ticks, 02:00-09:59 UTC, Mon-Fri" (expression: every 30 min 2-9 UTC weekdays)  every 30 min, 10:00-17:59 Beijing, weekdays
  *   Each tick: if data/<today>.json exists on the site and "sent:<today>" is not in KV,
- *   build an interactive card (5 featured stories, trilingual, + the rest as links, with
- *   heart / not-for-me counts) and POST it to the Feishu custom-bot webhook. On Mondays
+ *   build a compact interactive card (the five picks: title link + one-line EN blurb; the
+ *   site carries all 16 stories in three languages) and POST it to the Feishu webhook. On Mondays
  *   the previous ISO week's weekly/<week>.json is sent the same way ("sentw:<week>").
  *   Secrets (Worker → Settings → Variables and Secrets):
  *     FEISHU_WEBHOOK  https://open.feishu.cn/open-apis/bot/v2/hook/...
@@ -27,7 +27,7 @@
 
 const SITE = "https://hmi.supermatrix.app";
 const NUM = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
-const GROUPS = [["cockpit", "interaction"], ["ai"], ["design", "visual", "industrial"]];
+const GROUPS = [["cockpit", "interaction"], ["ai"], ["design", "visual", "industrial", "motion"]];
 const CARD_LIMIT = 28000; // bytes of card JSON; Feishu caps interactive cards around 30 KB
 
 const ORIGINS = ["https://hmi.supermatrix.app", "http://localhost", "http://127.0.0.1"];
@@ -133,6 +133,33 @@ function pickFeatured(items, n = 5) {
   return feats.sort((a, b) => a - b);
 }
 
+// The chat card shows the five stories with the most visual / brand appeal — the kind the team
+// screenshots: beautiful UI and graphic work, famous brands and studios. The routine marks them
+// with "pick": true; older editions fall back to a taste heuristic.
+const TAG_W = { motion: 3.2, visual: 3, interaction: 3, cockpit: 2.5, design: 2, ai: 2, micromobility: 1.5, industrial: 1 };
+const BRANDS = /\b(apple|iphone|ipad|google|pixel|samsung|sony|nintendo|nike|adidas|ikea|lego|porsche|ferrari|lamborghini|bmw|mercedes|audi|volkswagen|vw|tesla|rivian|lucid|polestar|volvo|rolls-royce|bentley|aston martin|jaguar|land rover|range rover|hyundai|kia|genesis|toyota|lexus|honda|nissan|mazda|xiaomi|huawei|byd|nio|xpeng|li auto|zeekr|ducati|honda|yamaha|kawasaki|harley|segway|ninebot|figma|adobe|canva|pentagram|dieter rams|jony ive|lovefrom|openai|dyson|leica|braun|muji|teenage engineering|nothing)\b/i;
+const PRETTY_SRC = /creative boom|it's nice that|designboom|print|dezeen|car design news|yanko|motionographer|stash|art of the title|vimeo/i;
+
+function pickCard(items, n = 5) {
+  const marked = items.map((it, i) => [it, i]).filter(([it]) => it.pick === true).map(([, i]) => i);
+  if (marked.length) return marked.slice(0, n);
+  const scored = items.map((it, i) => {
+    const tag = String(it.tag || "").toLowerCase();
+    const text = (it.t || "") + " " + (it.src || "");
+    let s = (TAG_W[tag] || 1) + (16 - i) / 16;
+    if (BRANDS.test(text)) s += 1.5;
+    if (PRETTY_SRC.test(it.src || "")) s += 0.8;
+    return { i, s, tag };
+  }).sort((a, b) => b.s - a.s);
+  const out = [], perTag = {};
+  for (const x of scored) {
+    if ((perTag[x.tag] || 0) >= 2) continue;
+    out.push(x.i); perTag[x.tag] = (perTag[x.tag] || 0) + 1;
+    if (out.length >= n) break;
+  }
+  return out.sort((a, b) => a - b);
+}
+
 function clip(s, max) {
   s = String(s || "");
   if (s.length <= max) return s;
@@ -155,24 +182,41 @@ function reactions(counts, skips, id) {
   return parts.length ? "  " + parts.join(" ") : "";
 }
 
-function dailyCard(date, items, counts, skips, cap) {
-  const feats = pickFeatured(items);
-  const els = [];
-  feats.forEach((i, k) => {
-    const it = items[i];
-    els.push({ tag: "markdown", content:
-      `**${NUM[i]} [${md(it.t)}](${it.url})**  <font color="grey">${md(it.tag)} · ${md(it.src)}${reactions(counts, skips, `${date}-${i + 1}`)}</font>\n` +
-      `**EN** ${clip(it.en, cap)}\n**中** ${clip(it.zh, cap)}\n**한** ${clip(it.ko, cap)}` });
-    if (k < feats.length - 1) els.push({ tag: "hr" });
-  });
-  const rest = items.map((it, i) => [i, it]).filter(([i]) => !feats.includes(i));
-  if (rest.length) {
-    els.push({ tag: "hr" });
-    els.push({ tag: "markdown", content: "**MORE**\n" + rest.map(([i, it]) =>
-      `${NUM[i]} [${md(it.t)}](${it.url}) <font color="grey">${md(it.src)}${reactions(counts, skips, `${date}-${i + 1}`)}</font>`).join("\n") });
+function firstSentence(s, max) {
+  s = String(s || "").trim();
+  const m = s.match(/^[\s\S]*?[.!?](?=\s|$)/);
+  let one = m && m[0].length >= 40 ? m[0] : s;
+  if (one.length <= max) return one;
+  // too long for one line: cut at the last clause boundary, else at a word
+  const head = one.slice(0, max);
+  let best = -1;
+  for (const sep of [", ", "; ", " — ", ": ", " – "]) {
+    const p = head.lastIndexOf(sep);
+    if (p > best) best = p;
   }
-  els.push({ tag: "hr" });
-  els.push({ tag: "markdown", content: `📑 [Full archive · hmi.supermatrix.app](${SITE}/${date.replace(/-/g, "")}.html)   ❤ heart · ✕ not for me — they steer next week's picks` });
+  if (best >= max * 0.55) return head.slice(0, best).replace(/[\s,;:—–-]+$/, "") + "…";
+  const w = head.lastIndexOf(" ");
+  return head.slice(0, w > max * 0.6 ? w : max).replace(/[\s,;:—–-]+$/, "") + "…";
+}
+
+function blurb(it, cap) {
+  // one-line takeaway: the routine writes `blurb` (EN, <= 90 chars); older editions fall back to the first sentence
+  return it.blurb ? clip(it.blurb, cap) : firstSentence(it.en, cap);
+}
+
+function dailyCard(date, items, counts, skips, cap) {
+  // five picks with the most visual / brand appeal (see pickCard), each as a title link + one EN line
+  const feats = pickCard(items);
+  const lines = feats.map((i) => {
+    const it = items[i];
+    const watch = it.video ? ` [▶ Watch](${it.video})` : "";
+    return `**[${md(it.t)}](${it.url})**${watch} <font color="grey">${md(it.tag)} · ${md(it.src)}${reactions(counts, skips, `${date}-${i + 1}`)}</font>\n${blurb(it, cap)}`;
+  });
+  const els = [
+    { tag: "markdown", content: lines.join("\n\n") },
+    { tag: "hr" },
+    { tag: "markdown", content: `[All ${items.length} stories →](${SITE}/${date.replace(/-/g, "")}.html)` },
+  ];
   return {
     schema: "2.0",
     config: { wide_screen_mode: true, update_multi: true },
@@ -184,12 +228,9 @@ function dailyCard(date, items, counts, skips, cap) {
 function weeklyCard(w, index, counts, skips, cap) {
   const els = [];
   const t = w.title || {}, intro = w.intro || {};
-  els.push({ tag: "markdown", content: `**${md(t.en || "")}**\n${md(t.zh || "")}\n${md(t.ko || "")}` });
-  els.push({ tag: "markdown", content: `**EN** ${clip(intro.en, cap * 2)}\n**中** ${clip(intro.zh, cap * 2)}\n**한** ${clip(intro.ko, cap * 2)}` });
+  els.push({ tag: "markdown", content: `**${md(t.en || "")}**\n${clip(intro.en, cap * 2)}` });
   els.push({ tag: "hr" });
-  for (const c of w.cats || []) {
-    els.push({ tag: "markdown", content: `**${md(c.tag)}** ${clip(c.en, cap)}\n<font color="grey">中</font> ${clip(c.zh, cap)}\n<font color="grey">한</font> ${clip(c.ko, cap)}` });
-  }
+  els.push({ tag: "markdown", content: (w.cats || []).map((c) => `**${md(c.tag)}** ${clip(c.en, cap)}`).join("\n") });
   const line = (tp, mark) => {
     const it = index[tp.id];
     return it ? `· [${md(it.t)}](${it.url}) ${mark}${tp.n}` : "";
@@ -206,10 +247,10 @@ function weeklyCard(w, index, counts, skips, cap) {
   const acts = ((w.feedback || {}).actions) || {};
   if (acts.en) {
     els.push({ tag: "hr" });
-    els.push({ tag: "markdown", content: `**↻ Next week**\n**EN** ${clip(acts.en, cap * 2)}\n**中** ${clip(acts.zh, cap * 2)}\n**한** ${clip(acts.ko, cap * 2)}` });
+    els.push({ tag: "markdown", content: `**↻ Next week** ${clip(acts.en, cap * 2)}` });
   }
   els.push({ tag: "hr" });
-  els.push({ tag: "markdown", content: `📑 [Full weekly · hmi.supermatrix.app](${SITE}/weekly.html#${w.week})` });
+  els.push({ tag: "markdown", content: `[Full weekly →](${SITE}/weekly.html#${w.week})` });
   return {
     schema: "2.0",
     config: { wide_screen_mode: true, update_multi: true },
@@ -219,7 +260,7 @@ function weeklyCard(w, index, counts, skips, cap) {
 }
 
 function fitCard(build) {
-  for (const cap of [10000, 600, 450, 340, 260, 200, 150, 110]) {
+  for (const cap of [120, 100, 85, 70]) {
     const card = build(cap);
     if (new TextEncoder().encode(JSON.stringify(card)).length <= CARD_LIMIT) return card;
   }

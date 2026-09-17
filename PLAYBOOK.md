@@ -50,6 +50,11 @@ Readers are automotive & micromobility HMI/UX designers and graphic designers.
 5. **Product / industrial design & architecture-as-design-thinking** — gadgets, furniture,
    exhibitions, concept objects. Tag `Industrial` (products) or `Design` (vehicles' exterior
    design, design studios, exhibitions, design news in general).
+6. **Motion design** — title sequences, brand films and idents, motion identity systems,
+   UI/HMI animation reels, kinetic type, 3D/motion studio work, car launch films worth
+   studying for their motion language. Tag `Motion`. **Aim for 1–2 per edition** (they count
+   inside the Visual quota). Every Motion story must carry a `video` link (Vimeo, YouTube,
+   or the studio's own player) so readers can press play.
 
 **Always exclude:** paywalled articles; pure business news (earnings, funding, sales
 figures, executive moves); pricing-only or regulation/policy-only stories; recalls; press
@@ -89,6 +94,7 @@ aggregators, syndications, Google News, MSN, Yahoo, guideautoweb, newsbreak, etc
 | Graphic / branding / type | creativeboom.com, printmag.com, itsnicethat.com, designboom.com (design/art), dezeen.com (design), brandnew (underconsideration.com/brandnew — only if not paywalled that day) |
 | Product / industrial | yankodesign.com, designboom.com (technology/design), dezeen.com, core77.com |
 | AI / tools | figma.com/blog, figma release notes (releasebot.io/updates/figma), adobe.com/blog, theverge.com (design/AI tool stories only), yankodesign.com tech |
+| Motion / video | motionographer.com, stashmedia.tv, artofthetitle.com, itsnicethat.com (animation), creativeboom.com (motion), vimeo.com (Staff Picks — link the Vimeo page), studio sites (buck.co, ordinaryfolk.co, giantant.ca, manvsmachine.com, tendril.ca, dia.tv), brand films on the brand's own YouTube/newsroom |
 
 **How to read the web from the cloud session:** use the `WebFetch` tool (and `WebSearch`
 for discovery). Plain `curl`/`python requests` to news sites is blocked by the sandbox
@@ -136,6 +142,10 @@ No hype adjectives, no "revolutionary". Do not moralise. Never mention "our team
 * `t` — English title, 25–58 characters, headline style, usually `Subject: hook`
   (e.g. `Nissan Pixo: a Twingo in a boxier suit`, `Form hides two logos inside one typeface`).
 * `en` — 2–4 sentences, 280–520 characters. Facts first, then a one-clause design read.
+* `blurb` — **one-line EN takeaway, 60–95 characters**, one clause or sentence, no trailing
+  period: the single fact a designer should remember (e.g. `No centre screen: a phone clips to a
+  rail, an e-paper strip shows climate`). It is what the chat card shows under the title, so
+  make it stand on its own.
 * `zh` — natural Simplified Chinese, 90–200 characters, same facts (not a word-for-word
   translation; write it as a Chinese editor would). Use full-width punctuation.
 * `ko` — natural Korean in 문어체 (‑다/‑했다 endings), 120–260 characters, same facts.
@@ -154,6 +164,8 @@ A JSON array of exactly 16 objects, in publication order, `ensure_ascii=False`, 
   "tag": "Cockpit",
   "t": "Nissan Pixo: a Twingo in a boxier suit",
   "en": "Nissan has confirmed the Pixo, an A-segment electric city car ...",
+  "blurb": "Twingo E-Tech underneath, squared-off lights and a 10-inch screen for about €19,500",
+  "pick": true,
   "zh": "日产确认Pixo——面向欧洲的A级纯电城市小车 ...",
   "ko": "닛산이 유럽용 A세그먼트 전기 시티카 Pixo를 확인했다. ...",
   "src": "Carscoops",
@@ -163,8 +175,16 @@ A JSON array of exactly 16 objects, in publication order, `ensure_ascii=False`, 
 ]
 ```
 
-* `tag` ∈ `Cockpit | Interaction | AI | Design | Visual | Industrial | Micromobility`
+* `tag` ∈ `Cockpit | Interaction | AI | Design | Visual | Motion | Industrial | Micromobility`
   (exact spelling, capitalised).
+* `pick` — set `"pick": true` on **exactly five** stories: the ones with the most visual and
+  brand appeal, the kind the team screenshots and forwards — beautiful UI or graphic work,
+  famous brands and studios (Apple, Porsche, Pentagram, Nike, Xiaomi …), striking cockpit or
+  identity reveals. Not "important" — *desirable to look at*. These five are the chat card;
+  spread them across at least three tags. Everything else has no `pick` key.
+* `video` (optional, **required for `Motion`**) — direct link to the playable video (a Vimeo or
+  YouTube page, or the studio's own player page). The site shows a play badge and a ▶ Watch
+  link; the chat card links it too.
 * `img_url` (optional) — pinned lead-image URL; required for carscoops.com,
   motorcycle.com, wardsauto.com items, optional elsewhere. `img_from` (optional) — a
   different page to pull the image from if the original page has none.
