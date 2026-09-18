@@ -23,6 +23,8 @@
  *     FEISHU_SECRET   the bot's signing secret (optional; leave unset if signing is off)
  *   GET /feishu/preview?date=YYYY-MM-DD   returns the card JSON (no sending), for checks
  *   GET /feishu/preview?week=YYYY-Www     same for the weekly card
+ *   GET /feishu/status                    what was sent today + the last cron tick's result
+ *   GET /feishu/run?key=<FEISHU_SECRET>   run the cron logic now (sends only what is unsent)
  */
 
 const SITE = "https://hmi.supermatrix.app";
@@ -313,34 +315,131 @@ async function buildWeekly(env, week) {
   return fitCard((cap) => weeklyCard(w, index, counts, skips, cap));
 }
 
-async function runCron(env) {
-  const today = beijingDate();
+async function runCron(env, opts = {}) {
+  const today = opts.date || beijingDate();
   const log = [];
-  if (!(await env.LIKES.get("sent:" + today))) {
-    const card = await buildDaily(env, today);
-    if (card) {
-      await feishuSend(env, card);
-      await env.LIKES.put("sent:" + today, new Date().toISOString(), { expirationTtl: 60 * 86400 });
-      log.push("daily " + today + " sent");
-    } else log.push("daily " + today + " not published yet");
-  } else log.push("daily " + today + " already sent");
-  if (beijingWeekday() === 1) {
-    const week = prevWeekId(today);
+  if (opts.what !== "weekly") {
+    if (opts.force) await env.LIKES.delete("sent:" + today);
+    if (!(await env.LIKES.get("sent:" + today))) {
+      const card = await buildDaily(env, today);
+      if (card) {
+        await feishuSend(env, card);
+        await env.LIKES.put("sent:" + today, new Date().toISOString(), { expirationTtl: 60 * 86400 });
+        log.push("daily " + today + " sent");
+      } else log.push("daily " + today + " is not on the site yet");
+    } else log.push("daily " + today + " already sent");
+  }
+  const week = opts.what === "weekly" || opts.what === "both" ? (opts.week || prevWeekId(today))
+    : (!opts.what && beijingWeekday() === 1 ? prevWeekId(today) : null);
+  if (week) {
+    if (opts.force) await env.LIKES.delete("sentw:" + week);
     if (!(await env.LIKES.get("sentw:" + week))) {
       const card = await buildWeekly(env, week);
       if (card) {
         await feishuSend(env, card);
         await env.LIKES.put("sentw:" + week, new Date().toISOString(), { expirationTtl: 60 * 86400 });
         log.push("weekly " + week + " sent");
-      } else log.push("weekly " + week + " not published yet");
+      } else log.push("weekly " + week + " is not on the site yet");
     } else log.push("weekly " + week + " already sent");
   }
   return log;
 }
 
+const PUBLISH_HTML = `<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADUX Daily — Publish</title>
+<style>
+:root{--ground:#E3E2DD;--ink:#111110;--muted:#6A6862;--red:#E5342A;--hair:#c9c8c2}
+@media(prefers-color-scheme:dark){:root{--ground:#111110;--ink:#EDEBE4;--muted:#918D83;--red:#FF4A3D;--hair:#37362f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;padding:28px 20px 60px}
+.wrap{max-width:560px;margin:0 auto}
+h1{font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 4px}
+.sub{color:var(--muted);font-size:13px;margin:0 0 24px}
+label{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:16px 0 6px}
+input{width:100%;padding:11px 12px;font:inherit;color:var(--ink);background:transparent;border:1px solid var(--hair);border-radius:8px}
+input:focus{outline:none;border-color:var(--ink)}
+.row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+button{flex:1;min-width:150px;padding:13px 16px;font:inherit;font-weight:600;cursor:pointer;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--ground)}
+button.ghost{background:transparent;color:var(--ink)}
+button:disabled{opacity:.45;cursor:default}
+pre{margin-top:22px;padding:14px;border:1px solid var(--hair);border-radius:8px;white-space:pre-wrap;word-break:break-word;font-size:13px;min-height:22px}
+.ok{color:var(--red);font-weight:600}
+.st{margin-top:22px;padding-top:16px;border-top:1px solid var(--hair);font-size:13px;color:var(--muted)}
+.st b{color:var(--ink);font-weight:600}
+a{color:var(--red)}
+</style></head><body><div class="wrap">
+<h1>ADUX Daily</h1>
+<p class="sub">Send the card to the Feishu group by hand. Safe to press twice — it skips what was already sent.</p>
+
+<label for="k">Publish key</label>
+<input id="k" type="password" placeholder="your key" autocomplete="off">
+<label for="d">Edition date</label>
+<input id="d" type="date">
+
+<div class="row">
+  <button id="go">Publish this edition</button>
+  <button id="wk" class="ghost">Publish weekly</button>
+</div>
+<div class="row">
+  <button id="force" class="ghost">Send again (force)</button>
+  <button id="prev" class="ghost">Preview only</button>
+</div>
+
+<pre id="out"></pre>
+<div class="st" id="status">…</div>
+</div>
+<script>
+var $ = function(id){ return document.getElementById(id); };
+function bj(){ var d = new Date(Date.now() + 8*3600*1000); return d.toISOString().slice(0,10); }
+$('d').value = bj();
+try{ $('k').value = localStorage.getItem('adux-key') || ''; }catch(e){}
+function say(t, ok){ $('out').innerHTML = ok ? '<span class="ok">' + t + '</span>' : t; }
+function busy(b){ ['go','wk','force','prev'].forEach(function(i){ $(i).disabled = b; }); }
+function call(params){
+  var k = $('k').value.trim();
+  if(!k){ say('Type the publish key first.'); return; }
+  try{ localStorage.setItem('adux-key', k); }catch(e){}
+  busy(true); say('Working…');
+  var q = '?key=' + encodeURIComponent(k) + '&date=' + encodeURIComponent($('d').value);
+  Object.keys(params).forEach(function(p){ q += '&' + p + '=' + encodeURIComponent(params[p]); });
+  fetch('/feishu/run' + q).then(function(r){ return r.json(); }).then(function(j){
+    if(j.error){ say('Error: ' + j.error); }
+    else if(j.ok){ say((j.log||[]).join('\\n'), true); }
+    else { say('Failed: ' + (j.error || JSON.stringify(j))); }
+    busy(false); load();
+  }).catch(function(e){ say('Network error: ' + e.message); busy(false); });
+}
+$('go').onclick = function(){ call({}); };
+$('wk').onclick = function(){ call({what:'weekly'}); };
+$('force').onclick = function(){ call({force:'1'}); };
+$('prev').onclick = function(){ window.open('/feishu/preview?date=' + $('d').value, '_blank'); };
+function load(){
+  fetch('/feishu/status?date=' + $('d').value).then(function(r){ return r.json(); }).then(function(s){
+    var t = s.sent ? 'sent at <b>' + new Date(s.sent).toLocaleString() + '</b>' : '<b>not sent yet</b>';
+    var last = s.lastTick ? ('<br>last check ' + new Date(s.lastTick.at).toLocaleString() + ' — ' + (s.lastTick.ok ? (s.lastTick.log||[]).join('; ') : 'ERROR ' + s.lastTick.error)) : '';
+    $('status').innerHTML = s.today + ': ' + t + last;
+  }).catch(function(){ $('status').textContent = 'status unavailable'; });
+}
+$('d').onchange = load;
+load();
+</script></body></html>`;
+
+async function cronTick(env, how, opts) {
+  const at = new Date().toISOString();
+  try {
+    const log = await runCron(env, opts);
+    await env.LIKES.put("cron:last", JSON.stringify({ at, how, ok: true, log }));
+    return { ok: true, log };
+  } catch (e) {
+    await env.LIKES.put("cron:last", JSON.stringify({ at, how, ok: false, error: String(e && e.message || e) }));
+    return { ok: false, error: String(e && e.message || e) };
+  }
+}
+
 export default {
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(runCron(env).then((l) => console.log(l.join("; "))).catch((e) => console.error("cron: " + e.message)));
+    ctx.waitUntil(cronTick(env, "cron " + (event && event.cron)));
   },
 
   async fetch(req, env) {
@@ -359,8 +458,29 @@ export default {
     }
 
     if (req.method === "GET" && url.pathname === "/feishu/status") {
-      const today = beijingDate();
-      return json(req, { today, sent: await env.LIKES.get("sent:" + today), weekly: beijingWeekday() === 1 ? await env.LIKES.get("sentw:" + prevWeekId(today)) : null, webhook: !!env.FEISHU_WEBHOOK });
+      const today = url.searchParams.get("date") || beijingDate();
+      let last = null;
+      try { last = JSON.parse(await env.LIKES.get("cron:last")); } catch {}
+      return json(req, { today, sent: await env.LIKES.get("sent:" + today), weekly: await env.LIKES.get("sentw:" + prevWeekId(today)),
+        webhook: !!env.FEISHU_WEBHOOK, signed: !!env.FEISHU_SECRET, lastTick: last });
+    }
+
+    // manual trigger (same logic as the cron; skips anything already sent unless force=1)
+    if (req.method === "GET" && url.pathname === "/feishu/run") {
+      const key = url.searchParams.get("key") || "";
+      const ok = (env.PUBLISH_KEY && key === env.PUBLISH_KEY) || (env.FEISHU_SECRET && key === env.FEISHU_SECRET);
+      if (!ok) return json(req, { error: "wrong key" }, 403);
+      return json(req, await cronTick(env, "manual", {
+        force: url.searchParams.get("force") === "1",
+        date: url.searchParams.get("date") || "",
+        week: url.searchParams.get("week") || "",
+        what: url.searchParams.get("what") || "",
+      }));
+    }
+
+    // one-button publish page — bookmark it, type the key once
+    if (req.method === "GET" && url.pathname === "/publish") {
+      return new Response(PUBLISH_HTML, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
     }
 
     if (req.method === "GET" && url.pathname === "/top") {

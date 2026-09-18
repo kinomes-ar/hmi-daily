@@ -52,6 +52,14 @@ The same Worker posts the daily card to a Feishu group by itself — no GitHub s
    (every 30 min, 10:00–17:59 Beijing, weekdays) → Save.
 Each tick sends today's edition once it is on the site (KV key `sent:<date>` prevents repeats);
 on Mondays it also sends last week's weekly card (`sentw:<week>`).
+Cloudflare's cron uses 1 = Sunday for the day-of-week field, so write weekdays as `MON-FRI`
+(`*/30 2-9 * * MON-FRI`), not `1-5`. Check the "Next" time it shows: it must land on a weekday.
+
+## Publishing by hand
+Add one more **Secret** `PUBLISH_KEY` with a word you will remember, then open
+`https://<worker>/publish` — type the key once (it is kept in that browser) and press
+**Publish this edition**. It sends only what has not gone out yet; **Send again (force)**
+re-sends, **Publish weekly** sends last week's roundup, **Preview only** shows the card JSON.
 Check: `https://<worker>/feishu/status` and `https://<worker>/feishu/preview?date=YYYY-MM-DD`.
 
 ## Updating the Worker
