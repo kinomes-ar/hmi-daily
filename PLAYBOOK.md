@@ -31,7 +31,11 @@ job is to research, write, validate, and push.** Never touch the workflow files,
 
 ## 1. Editorial brief (what the readers want)
 
-Readers are automotive & micromobility HMI/UX designers and graphic designers.
+Readers are the **DC Advanced UX team** at Segway-Ninebot. They ship vehicle HMI in the end,
+but they are the *advanced* team: they are hired for taste and for what is coming next, so the
+edition is weighted toward **experience design, graphics, artistic and motion work, real-time /
+game graphics, and new technology** — not toward routine industry news. When two stories are
+equally relevant, pick the one that is more beautiful, more crafted, or more technically new.
 
 **Core beats, in priority order**
 
@@ -42,9 +46,11 @@ Readers are automotive & micromobility HMI/UX designers and graphic designers.
 2. **Micromobility** — e-scooters, e-bikes, motorcycles, helmets and rider gear, their
    displays/apps. Tag `Micromobility`. Segway-Ninebot competitors (Xiaomi, NIU, Yadea,
    Ather, Ola, Gogoro, Bird/Lime) are especially relevant.
-3. **2D graphic design** — branding/identity, typography, type releases, posters, packaging,
-   editorial design, motion graphics. Tag `Visual`. The team loves typography and branding
-   deep-dives (e.g. PRINT type reports, Japanese type guides, branding dictionaries).
+3. **Graphics, typography and art direction** — branding/identity, typography, type releases,
+   posters, packaging, editorial design, exhibition graphics, artists and illustrators whose
+   work a UI designer would steal from. Tag `Visual`. The team loves typography and branding
+   deep-dives (e.g. PRINT type reports, Japanese type guides, branding dictionaries) and
+   anything genuinely beautiful.
 4. **AI in design tools / products** — Figma, Adobe, generative UI, on-device assistants,
    AI-in-car agents, design-tool releases. Tag `AI`.
 5. **Product / industrial design & architecture-as-design-thinking** — gadgets, furniture,
@@ -55,6 +61,15 @@ Readers are automotive & micromobility HMI/UX designers and graphic designers.
    studying for their motion language. Tag `Motion`. **Aim for 1–2 per edition** (they count
    inside the Visual quota). Every Motion story must carry a `video` link (Vimeo, YouTube,
    or the studio's own player) so readers can press play.
+7. **Real-time / game graphics and new technology** — game art direction and UI (HUDs,
+   menus, diegetic interfaces), engine and rendering news (Unreal, Unity, Godot, WebGPU,
+   Three.js), shaders and technical art, virtual production, real-time VFX, creative coding
+   and generative art, XR / spatial interfaces, and new display, projection, haptics or
+   sensing technology shown as a working demo. Tag `Realtime`. **Aim for 2 per edition.**
+   Judge these as a designer would: what does it look like, and what does it make possible
+   for an interface? Add a `video` link whenever there is a reel or demo to watch. Game
+   *business* news (sales, studio layoffs, release dates) is not a story; the art, the tech
+   and the interface are.
 
 **Always exclude:** paywalled articles; pure business news (earnings, funding, sales
 figures, executive moves); pricing-only or regulation/policy-only stories; recalls; press
@@ -68,19 +83,19 @@ or mark it "not for me" (eye icon). Before researching, run
 python3 feedback.py --fetch --brief      # (--fetch needs the Worker; if it fails, run without it)
 ```
 
-and follow what it prints: the **quota per group** (HMI = Cockpit+Interaction, Micromobility,
-AI, Visual, Product = Design+Industrial; base 4·2·2·4·4, moved ±1 by the last three weeks of
-hearts minus skips, always totalling 16), the **sources to favour / deprioritise**, and the
-lists of what the team hearted and skipped — read those lists for the *kind* of story
-(subject, depth, angle) to find more of / avoid. ±1 per group is fine when the day is thin,
-but never fewer than 3 HMI stories or 3 Visual stories. The rules are printed in
-`feedback.py`'s docstring; do not invent others.
+and follow what it prints: the **quota per group** — HMI = Cockpit+Interaction (4),
+Micromobility (2), AI (2), Visual = Visual+Motion (4), Realtime (2), Product = Design+Industrial
+(2) — moved ±1 by the last three weeks of hearts minus skips, always totalling 16. Also follow
+the **sources to favour / deprioritise** and the lists of what the team hearted and skipped —
+read those lists for the *kind* of story (subject, depth, angle) to find more of / avoid.
+±1 per group is fine when the day is thin, but never fewer than 3 HMI stories or 3 Visual
+stories. The rules are printed in `feedback.py`'s docstring; do not invent others.
 
 **Ordering:** item 1 is the lead — the single most important HMI/cockpit story of the day
 (fall back to the strongest story of any beat). Then order by importance, but make sure
-the strongest Cockpit/Interaction, the strongest AI, and the strongest Visual/Design/
-Industrial story all appear within the first ~6 items — the card features item 1 plus the
-first story of each of those groups (`make_card.py`).
+the strongest Cockpit/Interaction, the strongest AI, and the strongest Visual/Motion/
+Realtime/Design story all appear within the first ~6 items — the WeCom card features item 1
+plus the first story of each of those groups (`make_card.py`).
 
 ## 2. Sources
 
@@ -94,6 +109,7 @@ aggregators, syndications, Google News, MSN, Yahoo, guideautoweb, newsbreak, etc
 | Graphic / branding / type | creativeboom.com, printmag.com, itsnicethat.com, designboom.com (design/art), dezeen.com (design), brandnew (underconsideration.com/brandnew — only if not paywalled that day) |
 | Product / industrial | yankodesign.com, designboom.com (technology/design), dezeen.com, core77.com |
 | AI / tools | figma.com/blog, figma release notes (releasebot.io/updates/figma), adobe.com/blog, theverge.com (design/AI tool stories only), yankodesign.com tech |
+| Real-time / game / new tech | 80.lv, gamedeveloper.com, artofthetitle.com (game titles), unrealengine.com/news, unity.com/blog, developer.nvidia.com/blog, godotengine.org/news, webkit.org & chrome developers (WebGPU), threejs.org, shadertoy (notable works), siggraph.org, ArtStation blog, Digital Foundry (tech analysis, not reviews), studio sites (Territory Studio, Ash Thorp, Perception, Sarofsky) |
 | Motion / video | motionographer.com, stashmedia.tv, artofthetitle.com, itsnicethat.com (animation), creativeboom.com (motion), vimeo.com (Staff Picks — link the Vimeo page), studio sites (buck.co, ordinaryfolk.co, giantant.ca, manvsmachine.com, tendril.ca, dia.tv), brand films on the brand's own YouTube/newsroom |
 
 **How to read the web from the cloud session:** use the `WebFetch` tool (and `WebSearch`
@@ -175,14 +191,14 @@ A JSON array of exactly 16 objects, in publication order, `ensure_ascii=False`, 
 ]
 ```
 
-* `tag` ∈ `Cockpit | Interaction | AI | Design | Visual | Motion | Industrial | Micromobility`
+* `tag` ∈ `Cockpit | Interaction | AI | Design | Visual | Motion | Realtime | Industrial | Micromobility`
   (exact spelling, capitalised).
 * `pick` — set `"pick": true` on **exactly five** stories: the ones with the most visual and
   brand appeal, the kind the team screenshots and forwards — beautiful UI or graphic work,
-  famous brands and studios (Apple, Porsche, Pentagram, Nike, Xiaomi …), striking cockpit or
-  identity reveals. Not "important" — *desirable to look at*. These five are the chat card;
+  game art and real-time demos, famous brands and studios (Apple, Porsche, Pentagram, Nike,
+  Xiaomi, Unreal …), striking cockpit or identity reveals. Not "important" — *desirable to look at*. These five are the chat card;
   spread them across at least three tags. Everything else has no `pick` key.
-* `video` (optional, **required for `Motion`**) — direct link to the playable video (a Vimeo or
+* `video` (optional, **required for `Motion`**, expected for `Realtime` when a reel exists) — direct link to the playable video (a Vimeo or
   YouTube page, or the studio's own player page). The site shows a play badge and a ▶ Watch
   link; the chat card links it too.
 * `img_url` (optional) — pinned lead-image URL; required for carscoops.com,

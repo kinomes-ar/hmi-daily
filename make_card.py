@@ -16,7 +16,7 @@ LIMIT = 4096
 N_FEATURED = 5
 HERE = os.path.dirname(os.path.abspath(__file__))
 NUM = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
-GROUPS = [("cockpit", "interaction"), ("ai",), ("design", "visual", "industrial", "motion")]
+GROUPS = [("cockpit", "interaction"), ("ai",), ("design", "visual", "industrial", "motion", "realtime")]
 ENDS = "。．.!?！？…"
 
 

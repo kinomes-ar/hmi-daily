@@ -7,8 +7,9 @@
 
 Rules are deterministic and printed with the result so the weekly summary can explain them.
 
-  Groups (16 stories):  HMI = Cockpit+Interaction, Micromobility, AI, Visual = Visual+Motion, Product = Design+Industrial
-  Base quotas:          HMI 4 · Micromobility 2 · AI 2 · Visual 4 · Product 4
+  Groups (16 stories):  HMI = Cockpit+Interaction, Micromobility, AI, Visual = Visual+Motion,
+                        Realtime (game graphics / engines / shaders), Product = Design+Industrial
+  Base quotas:          HMI 4 · Micromobility 2 · AI 2 · Visual 4 · Realtime 2 · Product 2
   Signal window:        the 15 most recent editions before today (~3 weeks)
   Score per group:      net = hearts - skips ; rate = net / stories
   Quota moves:          need >= 5 reactions in the window, else base quotas.
@@ -25,9 +26,9 @@ import glob, json, os, sys, datetime as dt
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 GROUPS = [("HMI", ("Cockpit", "Interaction")), ("Micromobility", ("Micromobility",)), ("AI", ("AI",)),
-          ("Visual", ("Visual", "Motion")), ("Product", ("Design", "Industrial"))]
-BASE = {"HMI": 4, "Micromobility": 2, "AI": 2, "Visual": 4, "Product": 4}
-FLOOR = {"HMI": 3, "Micromobility": 1, "AI": 1, "Visual": 3, "Product": 1}
+          ("Visual", ("Visual", "Motion")), ("Realtime", ("Realtime",)), ("Product", ("Design", "Industrial"))]
+BASE = {"HMI": 4, "Micromobility": 2, "AI": 2, "Visual": 4, "Realtime": 2, "Product": 2}
+FLOOR = {"HMI": 3, "Micromobility": 1, "AI": 1, "Visual": 3, "Realtime": 1, "Product": 1}
 WINDOW = 15
 
 

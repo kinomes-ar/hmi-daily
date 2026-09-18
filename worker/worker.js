@@ -29,7 +29,7 @@
 
 const SITE = "https://hmi.supermatrix.app";
 const NUM = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
-const GROUPS = [["cockpit", "interaction"], ["ai"], ["design", "visual", "industrial", "motion"]];
+const GROUPS = [["cockpit", "interaction"], ["ai"], ["design", "visual", "industrial", "motion", "realtime"]];
 const CARD_LIMIT = 28000; // bytes of card JSON; Feishu caps interactive cards around 30 KB
 
 const ORIGINS = ["https://hmi.supermatrix.app", "http://localhost", "http://127.0.0.1"];
@@ -138,9 +138,9 @@ function pickFeatured(items, n = 5) {
 // The chat card shows the five stories with the most visual / brand appeal — the kind the team
 // screenshots: beautiful UI and graphic work, famous brands and studios. The routine marks them
 // with "pick": true; older editions fall back to a taste heuristic.
-const TAG_W = { motion: 3.2, visual: 3, interaction: 3, cockpit: 2.5, design: 2, ai: 2, micromobility: 1.5, industrial: 1 };
-const BRANDS = /\b(apple|iphone|ipad|google|pixel|samsung|sony|nintendo|nike|adidas|ikea|lego|porsche|ferrari|lamborghini|bmw|mercedes|audi|volkswagen|vw|tesla|rivian|lucid|polestar|volvo|rolls-royce|bentley|aston martin|jaguar|land rover|range rover|hyundai|kia|genesis|toyota|lexus|honda|nissan|mazda|xiaomi|huawei|byd|nio|xpeng|li auto|zeekr|ducati|honda|yamaha|kawasaki|harley|segway|ninebot|figma|adobe|canva|pentagram|dieter rams|jony ive|lovefrom|openai|dyson|leica|braun|muji|teenage engineering|nothing)\b/i;
-const PRETTY_SRC = /creative boom|it's nice that|designboom|print|dezeen|car design news|yanko|motionographer|stash|art of the title|vimeo/i;
+const TAG_W = { motion: 3.2, realtime: 3.2, visual: 3, interaction: 3, cockpit: 2.5, design: 2, ai: 2, micromobility: 1.5, industrial: 1 };
+const BRANDS = /\b(apple|iphone|ipad|google|pixel|samsung|sony|nintendo|unreal|unity|epic games|nvidia|valve|playstation|xbox|fromsoftware|naughty dog|nike|adidas|ikea|lego|porsche|ferrari|lamborghini|bmw|mercedes|audi|volkswagen|vw|tesla|rivian|lucid|polestar|volvo|rolls-royce|bentley|aston martin|jaguar|land rover|range rover|hyundai|kia|genesis|toyota|lexus|honda|nissan|mazda|xiaomi|huawei|byd|nio|xpeng|li auto|zeekr|ducati|honda|yamaha|kawasaki|harley|segway|ninebot|figma|adobe|canva|pentagram|dieter rams|jony ive|lovefrom|openai|dyson|leica|braun|muji|teenage engineering|nothing)\b/i;
+const PRETTY_SRC = /creative boom|it's nice that|designboom|print|dezeen|car design news|yanko|motionographer|stash|art of the title|vimeo|80\.lv|unreal|unity|game developer|digital foundry/i;
 
 function pickCard(items, n = 5) {
   const marked = items.map((it, i) => [it, i]).filter(([it]) => it.pick === true).map(([, i]) => i);

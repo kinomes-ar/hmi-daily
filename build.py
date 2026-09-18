@@ -20,6 +20,7 @@ CAT = {
     "visual":        "#2E6BE6",   # graphic / 2D / motion graphics
     "industrial":    "#B08900",   # product & industrial design, CMF
     "motion":        "#0FA3B1",   # motion design, title sequences, brand films, UI animation
+    "realtime":      "#8A2BE2",   # game graphics, engines, shaders, real-time rendering, XR
 }
 DEFAULT_CAT = "#5B5750"
 
@@ -115,6 +116,7 @@ html[data-filter="design"] article:not([data-tag="design"]){display:none}
 html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
 html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
 html[data-filter="motion"] article:not([data-tag="motion"]){display:none}
+html[data-filter="realtime"] article:not([data-tag="realtime"]){display:none}
 html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
 html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
 html[data-filter] .day article{border:0; padding:0}
@@ -717,7 +719,7 @@ def render_feedback(w, index, counts, skips):
     st = week_stats(w, index, counts, skips)
     if not st["items"]:
         return ""
-    order = ["Cockpit", "Interaction", "AI", "Micromobility", "Visual", "Motion", "Design", "Industrial"]
+    order = ["Cockpit", "Interaction", "AI", "Micromobility", "Visual", "Motion", "Realtime", "Design", "Industrial"]
     mx = max([1] + [max(b["l"], b["s"]) for b in st["cats"].values()])
     def row(name, b):
         return ('<tr><td>%s</td><td class="num">%d</td>'
@@ -1040,6 +1042,7 @@ FILTERS = """  <div class="fwrap"><nav class="filters" aria-label="Category filt
     <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
     <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
     <button type="button" data-f="motion" style="--cat:#0FA3B1" aria-pressed="false">Motion</button>
+    <button type="button" data-f="realtime" style="--cat:#8A2BE2" aria-pressed="false">Realtime</button>
   </nav></div>
 """
 
@@ -1047,7 +1050,7 @@ MY_JS = r"""<script>
 (function(){
   var host=document.getElementById('mylist'); if(!host) return;
   function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  var COL={micromobility:'#E5342A',cockpit:'#7B5CF0',interaction:'#17A472',ai:'#DB3A9C',design:'#E07A18',visual:'#2E6BE6',industrial:'#B08900',motion:'#0FA3B1'};
+  var COL={micromobility:'#E5342A',cockpit:'#7B5CF0',interaction:'#17A472',ai:'#DB3A9C',design:'#E07A18',visual:'#2E6BE6',industrial:'#B08900',motion:'#0FA3B1',realtime:'#8A2BE2'};
   function card(it){
     var s=(it.tag||'').toLowerCase().replace(/[^a-z]/g,''), c=COL[s]||'#5B5750';
     var ph=it.img?'<figure class="ph ph-foot"><img src="'+esc(it.img)+'" alt="" loading="lazy"></figure>'

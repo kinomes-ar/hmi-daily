@@ -10,7 +10,7 @@ import glob, json, os, re, sys, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
-TAGS = {"Cockpit", "Interaction", "AI", "Design", "Visual", "Industrial", "Micromobility", "Motion"}
+TAGS = {"Cockpit", "Interaction", "AI", "Design", "Visual", "Industrial", "Micromobility", "Motion", "Realtime"}
 HMI = {"Cockpit", "Interaction"}
 BLOCK = ("guideautoweb", "msn.com", "yahoo.com", "news.google", "newsbreak", "flipboard",
          "medium.com", "linkedin.com", "facebook.com", "x.com", "twitter.com", "reddit.com",
