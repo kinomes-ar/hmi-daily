@@ -1,0 +1,19 @@
+{
+  // ADUX Daily — reactions backend + Feishu delivery.
+  // Cloudflare deploys this Worker automatically on every push to main (Workers Builds).
+  // Secrets are NOT listed here and are not touched by a deploy; set them in the dashboard:
+  //   FEISHU_WEBHOOK  the Feishu custom-bot webhook URL
+  //   FEISHU_SECRET   the bot's signing secret
+  //   PUBLISH_KEY     the word that unlocks /publish
+  "name": "adux-likes",
+  "main": "worker/worker.js",
+  "compatibility_date": "2026-09-01",
+  "kv_namespaces": [
+    { "binding": "LIKES", "id": "bb919ccec6854883a0af5493822e6fc3" }
+  ],
+  "triggers": {
+    // every 30 min, 10:00–17:59 Beijing, weekdays (Cloudflare counts 1 = Sunday, so spell the days)
+    "crons": ["*/30 2-9 * * MON-FRI"]
+  },
+  "observability": { "enabled": true }
+}
