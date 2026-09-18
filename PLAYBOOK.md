@@ -2,7 +2,7 @@
 
 You are producing **ADUX Daily**, a weekday design digest for the DC Advanced UX (ADUX)
 team at Segway-Ninebot. It goes out as a WeCom markdown card and is archived at
-https://hmi.supermatrix.app (this repository, GitHub Pages). Everything below is the
+https://insight.supermatrix.app (this repository, GitHub Pages). Everything below is the
 complete procedure. Work autonomously, do not ask questions, finish with a push to `main`.
 
 Everything in this repo is already wired: pushing `data/<date>.json` triggers
@@ -21,7 +21,7 @@ job is to research, write, validate, and push.** Never touch the workflow files,
   Do not write anything; instead run the **self-check** and report its result:
   `python3 check_edition.py data/<today>.json`, then `git push --dry-run origin HEAD:main`
   (this proves the push credential works without changing the repo), then WebFetch
-  `https://hmi.supermatrix.app/` and confirm it shows today's edition, and finally
+  `https://insight.supermatrix.app/` and confirm it shows today's edition, and finally
   WebFetch `https://www.carscoops.com/`, `https://www.creativeboom.com/` and
   `https://www.yankodesign.com/` and report whether the news sources are reachable
   (if they are not, say so loudly: the environment's network access must be set to Full).
@@ -231,7 +231,7 @@ git push origin HEAD:main
   main is refused; in that case push the branch, open a PR titled `ADUX Daily <date>`,
   and say so clearly in your final message.
 * After the push, wait ~3 minutes and confirm with WebFetch that
-  `https://hmi.supermatrix.app/<YYYYMMDD>.html` exists (the Action rebuilds the site).
+  `https://insight.supermatrix.app/<YYYYMMDD>.html` exists (the Action rebuilds the site).
   If that host is unreachable from the sandbox, confirm instead via the GitHub API
   (`https://api.github.com/repos/kinomes-ar/hmi-daily/actions/runs?per_page=3`) that the
   "Fetch images and rebuild" and "Push card to WeCom" runs succeeded.

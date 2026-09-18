@@ -8,7 +8,7 @@ Stays under WeCom's 4096-byte markdown limit by shrinking caps.
 import json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SITE = "https://hmi.supermatrix.app"
+SITE = "https://insight.supermatrix.app"
 LIMIT = 4096
 ENDS = "。．.!?！？…"
 

@@ -27,12 +27,12 @@
  *   GET /feishu/run?key=<FEISHU_SECRET>   run the cron logic now (sends only what is unsent)
  */
 
-const SITE = "https://hmi.supermatrix.app";
+const SITE = "https://insight.supermatrix.app";
 const NUM = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
 const GROUPS = [["cockpit", "interaction"], ["ai"], ["design", "visual", "industrial", "motion", "realtime"]];
 const CARD_LIMIT = 28000; // bytes of card JSON; Feishu caps interactive cards around 30 KB
 
-const ORIGINS = ["https://hmi.supermatrix.app", "http://localhost", "http://127.0.0.1"];
+const ORIGINS = ["https://insight.supermatrix.app", "http://localhost", "http://127.0.0.1"];
 const ID_RE = /^\d{4}-\d{2}-\d{2}-\d{1,2}$/;
 const CID_RE = /^[a-z0-9]{8,40}$/;
 

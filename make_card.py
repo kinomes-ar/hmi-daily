@@ -10,7 +10,7 @@ than dropping a featured slot. Everything else lists as linked headlines.
 """
 import json, os, sys
 
-SITE = "https://hmi.supermatrix.app"
+SITE = "https://insight.supermatrix.app"
 SEP = "\n━━━━━━━\n\n"
 LIMIT = 4096
 N_FEATURED = 5
