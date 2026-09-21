@@ -1,0 +1,188 @@
+{
+ "week": "2026-W38",
+ "from": "2026-09-14",
+ "to": "2026-09-18",
+ "title": {
+  "en": "Buttons come back at Volvo and VW, China stretches the HUD to 43 inches, and a notepad on the back of a phone takes the week's hearts",
+  "zh": "沃尔沃与大众让按键回归，中国把HUD拉到43英寸，一块贴在手机背面的记事本拿下本周最多红心",
+  "ko": "볼보와 폭스바겐이 버튼을 되살리고, 중국은 HUD를 43인치까지 늘렸으며, 폰 뒷면의 메모장이 이번 주 하트를 가져갔다"
+ },
+ "intro": {
+  "en": "Five editions, 80 stories, 15 hearts and 9 skips. The week's arc was reduction: Volvo's Thomas Ingenlath promised tactile controls, each with its own shape; the ID.3 GTI put a button strip back under its 12.9-inch screen; VW's Mission Efficiency dropped the centre screen for a phone on a rail. China pulled the other way, with Li Auto's 29-inch 6K i9 screen, ArcFox's 43.3-inch HUD in place of a cluster and BYD's 26-inch AR-HUD on the Formula S. The most-hearted story was Verso, an AI notepad clipped to the back of a phone (two hearts). Skips were spread one each across nine stories, led by Figma's Weave tools and a run of Industrial objects: Omnibite's joint, the Hublot Balloon Dog, Rimowa's pencil case.",
+  "zh": "五期、80条、15颗红心、9次“不想看”。本周的主线是做减法：沃尔沃的Thomas Ingenlath承诺每个按键都有自己的形状；ID.3 GTI把按键条放回12.9英寸屏幕下方；大众Mission Efficiency干脆取消中控屏，改为导轨上的手机。中国则朝相反方向走：理想i9的29英寸6K屏、极狐阿尔法T7用43.3英寸HUD取代仪表、比亚迪方程豹Formula S的26英寸AR-HUD。本周红心最多的是Verso——夹在手机背面的AI记事本（2颗）。“不想看”分散在9条上，各1次，排在最前的是Figma的Weave工具，其后是一串工业设计物件：Omnibite接头、宇舶气球狗、Rimowa铅笔箱。",
+  "ko": "5개 에디션, 80건, 하트 15개, '보고 싶지 않음' 9개. 이번 주의 흐름은 덜어내기였다. 볼보의 토마스 잉겐라트는 버튼마다 고유한 형태를 약속했고, ID.3 GTI는 12.9인치 화면 아래에 버튼 줄을 되돌렸으며, 폭스바겐 미션 이피션시는 센터 화면을 빼고 레일 위의 폰으로 대체했다. 중국은 반대로 갔다. 리오토 i9의 29인치 6K 화면, 클러스터 대신 43.3인치 HUD를 단 아크폭스 알파 T7, BYD 포뮬러 S의 26인치 AR-HUD. 가장 많은 하트는 폰 뒷면에 끼우는 AI 메모장 Verso(2개)에 갔다. 스킵은 9건에 하나씩 흩어졌고 피그마의 위브 도구가 첫 줄, 그 뒤로 옴니바이트 조인트, 위블로 벌룬 독, 리모와 연필 케이스 같은 산업 디자인 오브젝트가 이어졌다."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Cabins argued about how much screen is enough. Volvo confirmed physical controls, each with a unique shape, previewed by a spring 2027 show car; the ID.3 GTI restored a climate button strip and a volume knob; VW's Mission Efficiency has no centre screen at all, only a phone rail and an e-paper climate strip. Chinese launches went the other way: Li Auto's i9 with a 29-inch 6K screen and seats that turn, BYD's Formula S with a 26-inch AR-HUD and bolt-on rails, Geely's Zhanjian 700 with five screens and a fridge, Voyah's Dream 9 on HarmonySpace 6. Kia's PV7 van carried a 14.6-inch display.",
+   "zh": "座舱在争论“多少屏幕才够”。沃尔沃确认实体按键回归，每个都有独特形状，2027年春的展车先行预告；ID.3 GTI恢复了空调按键条和音量旋钮；大众Mission Efficiency干脆没有中控屏，只有手机导轨和一条电子纸空调条。中国新车走向另一端：理想i9的29英寸6K屏与可旋转座椅、比亚迪Formula S的26英寸AR-HUD与可拆装导轨、吉利战舰700的五块屏和冰箱、岚图梦想家9的鸿蒙座舱6。起亚PV7厢式车配14.6英寸屏。",
+   "ko": "캐빈은 화면이 얼마면 충분한지를 두고 갈렸다. 볼보는 버튼마다 고유한 형태를 가진 물리 조작계를 확정하고 2027년 봄 쇼카로 예고했고, ID.3 GTI는 공조 버튼 줄과 볼륨 노브를 되돌렸으며, 폭스바겐 미션 이피션시는 센터 화면 없이 폰 레일과 전자종이 공조 띠만 뒀다. 중국 신차는 반대였다. 29인치 6K 화면과 회전 시트의 리오토 i9, 26인치 AR-HUD와 볼트온 레일의 BYD 포뮬러 S, 화면 다섯 개와 냉장고를 넣은 지리 잔젠 700, 하모니스페이스 6를 얹은 보야 드림 9. 기아 PV7 밴은 14.6인치 화면을 실었다.",
+   "items": [
+    "2026-09-18-1",
+    "2026-09-18-2",
+    "2026-09-16-1",
+    "2026-09-17-1",
+    "2026-09-18-7",
+    "2026-09-18-10",
+    "2026-09-16-7",
+    "2026-09-15-1"
+   ]
+  },
+  {
+   "tag": "Interaction",
+   "en": "Three hearts and no skips made Interaction the week's best-rated beat. GM's 2027 Silverado interface keeps CarPlay in a window so climate and trailering stay on screen; ArcFox's Alpha T7 replaces the cluster with a 43.3-inch HUD; BYD moved the Atto 2's shifter to the column. VW's UX chief gave the rule 'if it's not easy, it's broken', while JD Power reported infotainment as the only quality area still getting worse. Maserati will run Huawei's HarmonyOS cockpit and Qiankun ADS, VW's turn signal now triggers lane changes, and Yanko's bop-tug-press lamps showed what a switch can feel like.",
+   "zh": "3颗红心、0次“不想看”，交互类是本周评价最高的板块。通用2027款Silverado界面把CarPlay放进窗口，空调与拖车信息常驻屏幕；极狐阿尔法T7用43.3英寸HUD取代仪表；比亚迪元UP把换挡移到方向柱。大众UX负责人给出“不简单就是坏的”法则，J.D. Power则报告车机是唯一还在变差的质量项。玛莎拉蒂将采用华为鸿蒙座舱与乾崑ADS，大众转向灯现在能触发变道，Yanko那组拍、拉、按的灯具则展示了开关可以有的手感。",
+   "ko": "하트 3개에 스킵 0으로 인터랙션이 이번 주 최고 평가 부문이었다. GM의 2027 실버라도 인터페이스는 카플레이를 창 안에 두어 공조와 견인 정보를 화면에 남기고, 아크폭스 알파 T7은 클러스터를 43.3인치 HUD로 대체했으며, BYD는 아토 2의 변속 레버를 칼럼으로 옮겼다. 폭스바겐 UX 책임자는 '쉽지 않으면 고장'이라는 규칙을 내놨고, J.D. 파워는 인포테인먼트가 유일하게 나빠지는 품질 항목이라고 보고했다. 마세라티는 화웨이 하모니OS 콕핏과 첸쿤 ADS를 쓰고, 폭스바겐 방향지시등은 차선 변경을 시작하며, 얀코의 두드리고 당기고 누르는 램프는 스위치의 촉감을 보여줬다.",
+   "items": [
+    "2026-09-16-2",
+    "2026-09-17-2",
+    "2026-09-18-5",
+    "2026-09-15-2",
+    "2026-09-15-6",
+    "2026-09-18-11",
+    "2026-09-14-4",
+    "2026-09-14-8"
+   ]
+  },
+  {
+   "tag": "AI",
+   "en": "AI split the room: three hearts, three skips. Verso, the notepad that clips to the back of a phone, was the week's most-hearted story; Figma's Weave tools and Hyundai's Atria driving stack were skipped, as was SIVO.GO's on-device sound alerts. In tools, Premiere and After Effects now generate video, sound and music inside the timeline, and Canva bundled Affinity and Cavalry into ProSuite. Hardware went small and odd: Snap's $2,195 Specs with a 51-degree view, PolyMO's $50 pet that sickens when you scroll, and Jitrainno's Echo frame that paints what you say.",
+   "zh": "AI类意见分裂：3颗红心、3次“不想看”。夹在手机背面的记事本Verso是本周红心最多的故事；Figma的Weave工具、现代Atria驾驶方案和SIVO.GO的端侧声音提醒被标记“不想看”。工具方面，Premiere与After Effects可在时间线内直接生成视频、声音与音乐，Canva把Affinity和Cavalry打包进ProSuite。硬件走向小而怪：Snap售价2195美元、视场51度的Specs眼镜，刷手机就会生病的50美元电子宠物PolyMO，以及会把你说的话画出来的Jitrainno Echo画框。",
+   "ko": "AI는 의견이 갈렸다. 하트 3개, 스킵 3개. 폰 뒷면에 끼우는 메모장 Verso가 이번 주 최다 하트였고, 피그마의 위브 도구와 현대의 아트리아 주행 스택, SIVO.GO의 온디바이스 소리 알림은 스킵됐다. 도구 쪽에선 프리미어와 애프터 이펙트가 타임라인 안에서 영상·소리·음악을 생성하고, 캔바는 어피니티와 캐벌리를 프로스위트로 묶었다. 하드웨어는 작고 기묘해졌다. 51도 시야의 2,195달러 스냅 스펙스, 스크롤하면 아픈 50달러 펫 PolyMO, 말하면 그림을 그리는 지트라이노 에코 액자.",
+   "items": [
+    "2026-09-15-4",
+    "2026-09-17-3",
+    "2026-09-17-14",
+    "2026-09-18-12",
+    "2026-09-15-16",
+    "2026-09-16-4",
+    "2026-09-18-3",
+    "2026-09-17-9"
+   ]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "Three hearts, no skips, and the rule now gives the beat two extra slots. Stark's VARG SM Sköll, 500 blacked-out supermotos with titanium parts, took a heart; Segway's MUXI Pro cargo e-bike shifts itself and regens; Royal Enfield's Flying Flea C6 went global at €5,990 with October deliveries; Rivian's ALSO TM-B finally shipped with pedal-by-wire and a touchscreen. RGNT's Street Scrambler kept a 3-inch round dash, AGV's Pista GP R3 shell is built to let go in a crash, the REV-1 hydrogen concept revives BMW's 1934 R7, and Strutt's EV¹ is a $7,500 personal EV that refuses to be called a wheelchair.",
+   "zh": "3颗红心、0次“不想看”，规则据此给微出行多加两个位置。Stark VARG SM Sköll——500台黑化钛件滑胎车——拿到一颗红心；赛格威MUXI Pro货运电助力车能自动换挡并动能回收；皇家恩菲尔德Flying Flea C6以5990欧元走向全球，10月交付；Rivian的ALSO TM-B终于交付，线控踏板加触摸屏。RGNT Street Scrambler保留3英寸圆形仪表，AGV Pista GP R3的壳体设计为撞击时脱离，REV-1氢能概念复活了宝马1934年的R7，Strutt EV¹则是一台拒绝被称作轮椅的7500美元个人电动车。",
+   "ko": "하트 3개, 스킵 0. 규칙에 따라 이 부문은 두 자리를 더 받는다. 티타늄 부품을 단 500대 한정 블랙 슈퍼모토 스타크 VARG SM 스쾰이 하트를 받았고, 세그웨이 MUXI 프로 카고 e바이크는 스스로 변속하고 회생제동을 한다. 로열 엔필드 플라잉 플리 C6는 5,990유로에 글로벌 출시돼 10월 인도되고, 리비안의 ALSO TM-B는 페달 바이 와이어와 터치스크린을 달고 드디어 출하됐다. RGNT 스트리트 스크램블러는 3인치 원형 계기판을 지켰고, AGV 피스타 GP R3 셸은 충돌 시 분리되도록 설계됐으며, REV-1 수소 콘셉트는 BMW의 1934년 R7을 되살렸고, 스트럿 EV¹은 휠체어로 불리길 거부하는 7,500달러 개인 EV다.",
+   "items": [
+    "2026-09-16-16",
+    "2026-09-16-6",
+    "2026-09-18-8",
+    "2026-09-17-13",
+    "2026-09-15-15",
+    "2026-09-14-5",
+    "2026-09-18-15",
+    "2026-09-17-7"
+   ]
+  },
+  {
+   "tag": "Visual",
+   "en": "Seventeen stories, two hearts, two skips. PRINT's Type Tuesday on a 1970s disco face with modern edges was hearted; It's Nice That's BFI London Film Festival letters of projected light and its Banana Art Book were skipped, which is why that source now needs a clearly strong story to run. Pentagram delivered twice: Mada and Sada's echoing logos for Doha and MoN Takanawa's spiral that spells M, O and N in Dinamo's Walter Neue. Wikipedia at 25 was profiled as designed not to look designed, DeafCity Hub traced letters from signing hands, and Bru's bottles were drawn for the table rather than the shelf.",
+   "zh": "17条、2颗红心、2次“不想看”。PRINT“字体星期二”里那款带现代棱角的70年代迪斯科字体获得红心；It's Nice That的BFI伦敦电影节投影光字母和《香蕉艺术书》被标记“不想看”，因此这个来源今后只在故事明显出色时采用。五角设计交出两件：多哈Mada与Sada相互呼应的标志，以及MoN Takanawa那条用Dinamo Walter Neue拼出M、O、N的螺旋。维基百科25周年被形容为“设计得不像设计”，DeafCity Hub的字母从手语手势描摹而来，BRU的瓶子为餐桌而非货架而画。",
+   "ko": "17건, 하트 2개, 스킵 2개. 프린트의 타입 튜즈데이가 다룬 현대적 각을 가진 1970년대 디스코 서체가 하트를 받았고, 잇츠 나이스 댓의 BFI 런던 영화제 투사광 글자와 바나나 아트 북은 스킵됐다. 그래서 이 매체는 이제 확실히 강한 기사일 때만 싣는다. 펜타그램은 두 건을 냈다. 도하의 서로 메아리치는 Mada와 Sada 로고, 그리고 디나모의 Walter Neue로 M·O·N을 그리는 MoN 다카나와의 나선. 25주년 위키피디아는 '디자인된 티가 나지 않게 디자인된' 사례로 조명됐고, 데프시티 허브는 수어 손동작에서 글자를 따왔으며, 브루의 병은 선반이 아니라 식탁을 위해 그려졌다.",
+   "items": [
+    "2026-09-16-11",
+    "2026-09-17-4",
+    "2026-09-18-14",
+    "2026-09-15-3",
+    "2026-09-18-4",
+    "2026-09-16-3",
+    "2026-09-17-10",
+    "2026-09-16-10"
+   ]
+  },
+  {
+   "tag": "Motion",
+   "en": "The new Motion beat opened with one story: Tendril and Builders Club's ten surreal launch films for Meta's AI glasses, 3D vignettes that sell the product as fashion with gradients, pearlescent surfaces and one gag per film. No reactions yet; the beat stays inside the Visual quota and every Motion story carries a video link.",
+   "zh": "新增的动态设计板块以一条开场：Tendril与Builders Club为Meta AI眼镜制作的十支超现实发布短片——用渐变、珠光表面和每支一个笑点，把产品当时装来卖。尚无反应记录；该板块继续计入Visual配额，且每条动态故事都附视频链接。",
+   "ko": "새 모션 부문은 한 건으로 열렸다. 텐드릴과 빌더스 클럽이 메타 AI 글래스를 위해 만든 초현실 론칭 필름 열 편으로, 그러데이션과 진주광 표면, 편당 한 개의 개그로 제품을 패션처럼 판다. 아직 반응은 없다. 이 부문은 비주얼 배정 안에 들어가며 모든 모션 기사에는 영상 링크가 붙는다.",
+   "items": [
+    "2026-09-18-9"
+   ]
+  },
+  {
+   "tag": "Design",
+   "en": "Eleven stories and one heart, for designboom's Starck interview on 'less materiality, more humanity'. The copy debate ran both ways: an Xpeng GX in China was dressed as a Range Rover while Yangwang's Rolls-Royce rivals broke cover. VW brought the XL1 back as the Mission Efficiency EV, Porsche's 550 J shrank a Spyder to 80 percent with Taycan switchgear, and Xiaomi Horizon turned Kenya Hara's squircle into a tailgate. Car Design News read IAA Transportation as sharp faces over calm truck cabs, and Core77 asked why the aero look faded in the 1990s and why EV range is bringing it back.",
+   "zh": "11条、1颗红心——给了designboom对Starck的专访：“少一点物质，多一点人性”。模仿之争双向发生：中国一台小鹏GX被改装成揽胜，而仰望对标劳斯莱斯的车型现身谍照。大众以Mission Efficiency电动车复活XL1，保时捷550 J把Spyder缩到八成并用上Taycan开关，小米Horizon把原研哉的方圆形变成尾门。Car Design News把IAA商用车展总结为“锐利的脸、安静的驾驶室”，Core77则追问空气动力学外形为何在90年代退场、又为何被电动车续航重新召回。",
+   "ko": "11건, 하트 1개. 하트는 디자인붐의 스타르크 인터뷰 '물질은 덜, 인간성은 더'에 갔다. 카피 논쟁은 양방향이었다. 중국의 샤오펑 GX가 레인지로버 옷을 입었고, 양왕의 롤스로이스 경쟁 모델은 위장 상태로 포착됐다. 폭스바겐은 XL1을 미션 이피션시 EV로 되살렸고, 포르쉐 550 J는 스파이더를 80%로 줄이며 타이칸 스위치를 썼으며, 샤오미 호라이즌은 하라 켄야의 스쿼클을 테일게이트로 만들었다. 카 디자인 뉴스는 IAA 상용차 쇼를 '날카로운 얼굴, 차분한 캐빈'으로 읽었고, 코어77은 에어로 룩이 1990년대에 왜 사라졌고 EV 주행거리가 왜 다시 불러오는지를 물었다.",
+   "items": [
+    "2026-09-14-9",
+    "2026-09-14-6",
+    "2026-09-14-7",
+    "2026-09-15-7",
+    "2026-09-17-12",
+    "2026-09-15-12",
+    "2026-09-16-8",
+    "2026-09-18-16"
+   ]
+  },
+  {
+   "tag": "Industrial",
+   "en": "Twelve stories, no hearts, three skips: the only negative category this week. Omnibite's three-axis joint for raw branches, the Hublot × Koons Balloon Dog at 42 mm and Rimowa's $3,100 case for 120 Faber-Castell pencils were all marked 'not for me'. What did not draw skips was the interface-adjacent work: Fanora's smart-home panel with eight real buttons and a jade sensor, Konstantin Grcic's KG01 grinder whose octagon tells you where to twist, TRA:CE's coin-sized scanner that reads CMF off a surface, and the nine mini PCs that all borrowed the Mac mini silhouette.",
+   "zh": "12条、0颗红心、3次“不想看”，本周唯一的负分类别。Omnibite的三轴原木接头、42毫米的宇舶×昆斯气球狗、Rimowa为120支辉柏嘉铅笔做的3100美元箱子都被标记“不想看”。没有被跳过的是那些贴近界面的作品：Fanora带八个实体按键和玉石传感器的智能家居面板、Konstantin Grcic用八边形提示旋拧方向的KG01研磨器、能直接读取表面CMF的硬币大小扫描仪TRA:CE，以及九台集体借用Mac mini轮廓的迷你主机。",
+   "ko": "12건, 하트 0, 스킵 3. 이번 주 유일한 마이너스 카테고리다. 생가지를 잇는 옴니바이트의 3축 조인트, 42mm 위블로×쿤스 벌룬 독, 파버카스텔 연필 120자루를 위한 3,100달러 리모와 케이스가 모두 '보고 싶지 않음'을 받았다. 스킵을 피한 것은 인터페이스에 가까운 작업이었다. 진짜 버튼 여덟 개와 옥 센서를 단 파노라의 스마트홈 패널, 팔각형이 돌릴 방향을 알려주는 콘스탄틴 그리치치의 KG01 그라인더, 표면에서 CMF를 읽는 동전 크기 스캐너 TRA:CE, 그리고 맥 미니 실루엣을 빌린 미니 PC 아홉 대.",
+   "items": [
+    "2026-09-17-16",
+    "2026-09-18-6",
+    "2026-09-18-13",
+    "2026-09-16-14",
+    "2026-09-15-13",
+    "2026-09-17-5",
+    "2026-09-16-15"
+   ]
+  }
+ ],
+ "top": [
+  {
+   "id": "2026-09-15-4",
+   "n": 2
+  },
+  {
+   "id": "2026-09-16-1",
+   "n": 1
+  },
+  {
+   "id": "2026-09-16-2",
+   "n": 1
+  },
+  {
+   "id": "2026-09-16-11",
+   "n": 1
+  },
+  {
+   "id": "2026-09-16-16",
+   "n": 1
+  }
+ ],
+ "feedback": {
+  "skipped": [
+   {
+    "id": "2026-09-17-3",
+    "n": 1
+   },
+   {
+    "id": "2026-09-17-4",
+    "n": 1
+   },
+   {
+    "id": "2026-09-17-6",
+    "n": 1
+   },
+   {
+    "id": "2026-09-17-14",
+    "n": 1
+   },
+   {
+    "id": "2026-09-17-16",
+    "n": 1
+   }
+  ],
+  "actions": {
+   "en": "Hearts went to Interaction, Micromobility and Cockpit stories (Verso's notepad, VW's screenless Mission Efficiency, GM's split-screen CarPlay, PRINT's disco type, Stark's blacked-out supermoto) and the sources behind them: Yanko Design, CarNewsChina and Electrek. Skips landed on Industrial objects (Omnibite, Hublot × Koons, Rimowa), three AI items (Figma Weave, Hyundai Atria, SIVO.GO) and two It's Nice That pieces. So this week the rule sets Micromobility at 4 ('best net rate +0.18 per story: 3 hearts, 0 skips' and '>= 20 reactions and still the clear favourite'), Product at 1 and Visual at 3 ('taken from the largest discretionary group to keep 16'), with HMI 4, AI 2 and the new Realtime beat at 2. Yanko Design, CarNewsChina, Electrek, Creative Boom and designboom are favoured; It's Nice That runs at most once per edition and only for a clearly strong story.",
+   "zh": "红心集中在交互、微出行与座舱类（Verso记事本、大众无屏的Mission Efficiency、通用分屏CarPlay、PRINT的迪斯科字体、Stark黑化滑胎车）及其来源：Yanko Design、CarNewsChina和Electrek。“不想看”落在工业设计物件（Omnibite、宇舶×昆斯、Rimowa）、三条AI（Figma Weave、现代Atria、SIVO.GO）和两条It's Nice That上。因此本周规则把微出行设为4条（“净评分最高，每条+0.18：3红心、0不想看”，且“反应数≥20仍是明显最爱”），产品类降为1条、Visual降为3条（“从最大的可调组中扣除以保持16条”），HMI保持4、AI保持2，新设的实时图形板块为2。优先来源：Yanko Design、CarNewsChina、Electrek、Creative Boom、designboom；It's Nice That每期最多一条，且仅限明显出色的故事。",
+   "ko": "하트는 인터랙션·마이크로모빌리티·콕핏 기사(Verso 메모장, 화면 없는 폭스바겐 미션 이피션시, GM의 분할 화면 카플레이, 프린트의 디스코 서체, 스타크의 블랙 슈퍼모토)와 그 출처인 얀코 디자인, 카뉴스차이나, 일렉트렉에 갔다. 스킵은 산업 디자인 오브젝트(옴니바이트, 위블로×쿤스, 리모와), AI 세 건(피그마 위브, 현대 아트리아, SIVO.GO), 잇츠 나이스 댓 두 건에 몰렸다. 그래서 이번 주 규칙은 마이크로모빌리티를 4로 올리고('순평점 최고, 건당 +0.18: 하트 3, 스킵 0', '반응 20개 이상에도 여전히 확실한 선호'), 프로덕트를 1, 비주얼을 3으로 내렸다('16을 맞추기 위해 가장 큰 재량 그룹에서 차감'). HMI 4, AI 2, 새 리얼타임 부문 2는 유지된다. 얀코 디자인, 카뉴스차이나, 일렉트렉, 크리에이티브 붐, 디자인붐을 우선하고, 잇츠 나이스 댓은 에디션당 최대 한 건, 확실히 강한 기사일 때만 싣는다."
+  }
+ }
+}
