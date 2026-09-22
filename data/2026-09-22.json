@@ -48,7 +48,9 @@
   "ko": "폴란드 개발자 파베우 시들로프스키의 저크오프는 블루투스 광고 신호를 듣고 근처의 카메라 달린 AI 안경을 알려준다. 레이밴 메타, 오클리 메타, 스냅 스펙터클스는 경고 대상이고 퀘스트나 비전 프로 같은 헤드셋은 기록만 한다. 감지 결과는 '가능·유력·확실' 세 단계로 나뉘며 제조사 ID, 광고 서비스, 신호 세기, 대략의 거리를 근거로 보여준다. 사이팅스 화면은 모든 기기를 신호 타임라인으로 기록하고, 내 기기는 화이트리스트에 넣을 수 있으며 로그는 CSV로 내보낸다. 신뢰도 등급이 있는 근접 경고는 '무언가 나를 감지하고 있다'는 인터페이스의 좋은 본보기다.",
   "src": "designboom",
   "url": "https://www.designboom.com/technology/zuckoff-bluetooth-smart-glasses-nearby-pawel-szydlowski/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/zuckoff-bluetooth-smart-glasses-nearby-pawel-szydlowski-designboom-500.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/zuckoff-bluetooth-smart-glasses-nearby-pawel-szydlowski-designboom-500.jpg",
+  "img": "assets/2026-09-22-4.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/09/zuckoff-bluetooth-smart-glasses-nearby-pawel-szydlowski-designboom-500.jpg"
  },
  {
   "tag": "Realtime",
