@@ -1,0 +1,172 @@
+[
+ {
+  "tag": "Interaction",
+  "t": "Ioniq V: a 27-inch 4K screen, a HUD instead of a cluster",
+  "en": "Beijing Hyundai has opened pre-sales for the Ioniq V, a China-only electric fastback launching September 29 at 119,900–139,900 yuan. The 'Nebula Wrap-around' cabin is built around one ultra-thin 27-inch 4K display on a Snapdragon 8295, with Baidu's Ernie and ByteDance's Doubao behind the voice assistant; a 'Cyber Eye' head-up display stands in for the cluster. Frameless doors and a sealed nose outside; 4,900 mm long, 2,900 mm wheelbase, 53.5 or 66.8 kWh CATL LFP, 520–650 km CLTC.",
+  "blurb": "Hyundai's China EV drops the cluster for a HUD and one 27-inch 4K slab on Snapdragon 8295",
+  "pick": true,
+  "zh": "北京现代Ioniq V开启预售，9月29日上市，预售价11.99万至13.99万元。“星云环抱”座舱围绕一块超薄27英寸4K屏展开，芯片为高通8295，语音接入百度文心与字节豆包；“Cyber Eye”抬头显示直接取代仪表盘。无框车门、封闭前脸，车长4900毫米、轴距2900毫米，宁德时代53.5或66.8千瓦时磷酸铁锂电池，CLTC续航520至650公里。",
+  "ko": "베이징현대가 중국 전용 전기 패스트백 아이오닉 V의 사전 판매를 시작했다. 9월 29일 출시하며 11만 9,900~13만 9,900위안이다. '네뷸라 랩어라운드' 실내는 스냅드래곤 8295 위의 초박형 27인치 4K 디스플레이 하나가 중심이고, 바이두 어니와 바이트댄스 두바오가 음성 비서를 맡는다. 계기판 대신 '사이버 아이' 헤드업 디스플레이를 쓴다. 전장 4,900mm, 휠베이스 2,900mm, CATL LFP 53.5 또는 66.8kWh로 CLTC 520~650km를 간다.",
+  "src": "CarNewsChina",
+  "url": "https://carnewschina.com/2026/09/22/hyundai-to-launch-ioniq-v-in-china-on-september-29-pre-sale-price-starting-from-17600-usd/"
+ },
+ {
+  "tag": "Visual",
+  "t": "McLaren's new wordmark comes from a 1920s garage sign",
+  "en": "McLaren has replaced its mixed-case wordmark with an all-caps one drawn from the sign above the Remuera, Auckland service station run by Bruce McLaren's parents, where he rebuilt a 1929 Austin Seven. A custom typeface, McLaren Sans, comes with it; the tell is a horizontal bar under the C. The Speedmark and Speedy Kiwi stay. The palette adds Ember, Midnight, Anthracite, Colnbrook and Mist to Papaya, all pulled from one photo of Bruce on a single-seater's tyre. The McL 6GT already wears it; the W1 may be the last car with the old mark.",
+  "blurb": "All caps, a bar under the C, seven colours from one photo; the Speedmark stays",
+  "pick": true,
+  "zh": "迈凯伦启用全新字标：由大小写混排改为全大写，字形源自布鲁斯·迈凯伦父母在奥克兰Remuera经营的加油站招牌，他曾在那里改装1929年的奥斯汀七型。配套定制字体McLaren Sans，辨识点是字母C下方的一道横线。Speedmark徽标与奇异鸟标记保留。色板在Papaya橙之外新增Ember、Midnight、Anthracite、Colnbrook和Mist，全部取自布鲁斯坐在赛车轮胎上的一张照片。McL 6GT已率先采用。",
+  "ko": "맥라렌이 대소문자를 섞던 워드마크를 전부 대문자로 바꿨다. 글자꼴은 브루스 맥라렌의 부모가 오클랜드 레무에라에서 운영하던 주유소 간판에서 따왔다. 그가 1929년식 오스틴 세븐을 손보던 곳이다. 전용 서체 맥라렌 산스가 함께 나왔고 C 아래의 가로선이 식별 포인트다. 스피드마크와 키위 엠블럼은 그대로다. 팔레트에는 파파야 외에 엠버, 미드나이트, 앤스러사이트, 콜른브룩, 미스트가 더해졌는데 모두 브루스가 싱글시터 타이어에 앉은 사진 한 장에서 뽑았다. McL 6GT가 먼저 달았다.",
+  "src": "Carscoops",
+  "url": "https://www.carscoops.com/2026/09/mclaren-new-logo/",
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/McLaren-New-Wordmark-and-Logo-main-2-1024x576.jpg"
+ },
+ {
+  "tag": "Realtime",
+  "t": "DLSS 5: a neural pass that relights the game frame",
+  "en": "Nvidia has shipped DLSS 5 '3D-guided neural rendering' in NBA 2K27 for GeForce RTX 50 GPUs. The model takes the engine's finished colour frame and motion vectors and adds subsurface skin, hair and foliage transmission, contact shadows and layered material response, strictly one frame in and one frame out, so it stays temporally stable and keeps the scanned player faces intact. Artists tune it with Structure and Tone intensity sliders, semantic masks and per-asset engine masks. It now runs on a single GPU up to 4K, five times faster than in March.",
+  "blurb": "Neural pass adds skin, hair and contact shadows over the engine frame, live in NBA 2K27",
+  "pick": true,
+  "video": "https://www.youtube.com/watch?v=58FagrSqC4M",
+  "zh": "英伟达在《NBA 2K27》中正式推出DLSS 5“3D引导神经渲染”，面向GeForce RTX 50系列。模型以引擎输出的彩色帧和运动矢量为输入，补上皮肤次表面散射、发丝与树叶透光、接触阴影和多层材质响应，严格一帧进一帧出，因而时间上稳定，也不会改动扫描而来的球员面孔。美术可用结构强度与色调强度滑杆、语义蒙版和按资产的引擎蒙版来调校。现在单卡即可跑到4K，比3月快了五倍。",
+  "ko": "엔비디아가 지포스 RTX 50 시리즈용 DLSS 5 '3D 가이드 뉴럴 렌더링'을 NBA 2K27에 먼저 넣었다. 모델은 엔진이 완성한 컬러 프레임과 모션 벡터를 받아 피부의 서브서피스, 머리카락과 잎의 투과광, 접촉 그림자, 다층 재질 반응을 얹는다. 한 프레임이 들어가면 한 프레임이 나오는 구조라 시간적으로 안정적이고 스캔한 선수 얼굴도 그대로 남는다. 아티스트는 구조·톤 강도 슬라이더, 시맨틱 마스크, 에셋별 엔진 마스크로 조절한다. 3월보다 다섯 배 빨라져 GPU 한 장으로 4K까지 돈다.",
+  "src": "NVIDIA",
+  "url": "https://www.nvidia.com/en-us/geforce/news/dlss-5-3d-guided-neural-rendering/"
+ },
+ {
+  "tag": "Design",
+  "t": "MSCHF bends a Lexus into a loop and twists another",
+  "en": "MSCHF's 'Motomorphosis' puts two full-scale Lexus sculptures in Chelsea Industrial, New York, from September 24 to 26 during Armory Week. Circle Car bends an RZ 450e into a continuous ring, nose meeting tail with the wheels spread around the rim; Twisted Car wrings an RX 450h+ through a long spiral around an invisible axis, panel lines and lamps following the twist. The collective calls them 'Form Cars': squash-and-stretch and smear frames from animation made permanent in sheet metal.",
+  "blurb": "Squash-and-stretch made permanent: an RZ bent into a ring, an RX wrung into a spiral",
+  "pick": true,
+  "zh": "MSCHF的“Motomorphosis”把两台1:1雷克萨斯雕塑搬进纽约Chelsea Industrial，9月24日至26日随军械库艺术周展出。Circle Car把RZ 450e整车弯成闭环，车头接车尾，车轮沿外圈分布；Twisted Car把RX 450h+绕着一条看不见的轴线拧成长螺旋，腰线与灯组随之扭转。团队称之为“Form Cars”：把动画里的挤压拉伸和拖影帧永久固化在钣金上。",
+  "ko": "MSCHF의 '모토모포시스'가 실물 크기 렉서스 조각 두 점을 뉴욕 첼시 인더스트리얼에 세운다. 아모리 위크 기간인 9월 24일부터 26일까지다. 서클 카는 RZ 450e를 앞코와 꽁무니가 맞닿는 고리로 구부리고 바퀴를 바깥 테두리에 배치했다. 트위스티드 카는 RX 450h+를 보이지 않는 축을 따라 긴 나선으로 비틀어 캐릭터 라인과 램프가 함께 돌아간다. 팀은 이를 '폼 카'라 부른다. 애니메이션의 스쿼시 앤 스트레치와 스미어 프레임을 판금에 영구히 고정한 것이다.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/design/mschf-bends-twists-lexus-cars-surreal-sculptures-new-york-motomorphosis/",
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/mschf-lexus-twisted-circle-cars-designboom-600.jpg"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Hongqi Tiangong 07: 17.3-inch screen, a lie-flat seat",
+  "en": "FAW's Hongqi has opened pre-sales for the Tiangong 07, a 5,000 mm electric sedan on a 3,000 mm wheelbase at 169,900–199,900 yuan. The cockpit pairs an 8.88-inch cluster with a 17.3-inch centre screen on Qualcomm's 8397 chip running Lingxi Cockpit 6.0; the passenger seat adjusts sixteen ways with heat, ventilation and massage and reclines into a 1.6 m bed under a 1.87 m² glass roof, with 18 Bose speakers. 800 V, 75–85 kWh LFP, up to 730 km CLTC, 10–80% in about 12 minutes.",
+  "blurb": "8.88-inch cluster, 17.3-inch screen on Qualcomm 8397, and a passenger seat that becomes a bed",
+  "zh": "一汽红旗天工07开启预售，车长5000毫米、轴距3000毫米，预售价16.99万至19.99万元。座舱为8.88英寸仪表加17.3英寸中控屏，高通8397芯片运行灵犀座舱6.0；副驾座椅十六向电动调节，带加热、通风和按摩，放平后是1.6米的床，头顶1.87平方米天幕，音响为18扬声器Bose。800V平台，75至85千瓦时磷酸铁锂电池，CLTC最高730公里，10%到80%约12分钟。",
+  "ko": "FAW 훙치가 전장 5,000mm, 휠베이스 3,000mm의 전기 세단 톈궁 07의 사전 판매를 시작했다. 가격은 16만 9,900~19만 9,900위안이다. 콕핏은 8.88인치 계기판과 17.3인치 센터 스크린을 퀄컴 8397 칩 위의 링시 콕핏 6.0으로 돌린다. 조수석은 16방향 전동 조절에 열선, 통풍, 마사지를 갖추고 1.87㎡ 글라스 루프 아래에서 1.6m 침대로 펼쳐지며 보스 18스피커가 붙는다. 800V, 75~85kWh LFP로 CLTC 최대 730km, 10~80% 충전은 12분 안팎이다.",
+  "src": "CarNewsChina",
+  "url": "https://carnewschina.com/2026/09/22/faws-hongqi-tiangong-07-opens-pre-sales-in-china-800-v-architecture-starting-from-25000-usd/"
+ },
+ {
+  "tag": "AI",
+  "t": "Comu Action Pro: a 7 mm recorder that writes the follow-up",
+  "en": "Comu's Action Pro is a 7 mm-thick recorder that snaps magnetically to the back of a phone, with a small OLED strip, six far-field microphones that pick up voices from 7 m away and up to 70 hours of recording per charge. It transcribes and summarises in 113 languages with speaker labels; a dedicated hardware button triggers 'The 30 Minutes After', turning a meeting into action items, a follow-up email, documents and task lists. $179.99; basic transcription is unlimited, premium tiers run $10 and $29.99 a month.",
+  "blurb": "Six mics, 70 hours, 113 languages and one physical button that drafts the follow-up email",
+  "zh": "Comu Action Pro是一块7毫米厚的录音器，磁吸在手机背面，带一条小OLED屏、六个远场麦克风（7米内拾音）和单次充电最长70小时的录音。支持113种语言的转写与摘要，能区分说话人；一颗实体按键触发“会后30分钟”流程，把会议变成待办、跟进邮件、文档和任务清单。售价179.99美元，基础转写不限量，高级版每月10美元或29.99美元。一键生成会后动作，是车内语音备忘的好范式。",
+  "ko": "코무 액션 프로는 두께 7mm의 녹음기로 스마트폰 뒷면에 자석으로 붙는다. 작은 OLED 창, 7m 밖 목소리까지 잡는 원거리 마이크 여섯 개, 한 번 충전으로 최대 70시간 녹음을 갖췄다. 113개 언어로 전사와 요약을 하고 화자도 구분한다. 전용 물리 버튼을 누르면 '회의 후 30분' 기능이 회의를 할 일 목록, 후속 이메일, 문서, 태스크 리스트로 바꿔 준다. 가격은 179.99달러이며 기본 전사는 무제한, 유료 등급은 월 10달러와 29.99달러다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/09/22/this-slim-ai-note-taker-lets-you-stay-focused-in-meetings-without-tying-up-your-phone/"
+ },
+ {
+  "tag": "Micromobility",
+  "t": "Giugiaro and Lapo Elkann make the Topolino a speedster",
+  "en": "Lapo Elkann and Fabrizio Giugiaro's GFG Style have built two one-off Fiat Topolinos, keeping the stock 6 kW motor, 5.5 kWh battery and 75 km range. Top.L ('Love') is a roofless speedster with a low wraparound screen, rope in place of doors, matte aquamarine paint, 500-style LED lamps and leather-and-Alcantara trim in the same blue-green. Top.J ('Joy') seats four under a cloth canopy with tube doors, a livery after Gianni Agnelli's Ferrari 166 MM and terry-cloth seats; its rear bench faces backwards, legs over the bumper, which pushes it from L6e into L7e.",
+  "blurb": "Two one-off 8 hp quadricycles: a rope-doored speedster and a four-seater with a backwards bench",
+  "pick": true,
+  "zh": "拉波·埃尔坎与法布里齐奥·乔治亚罗的GFG Style打造了两台独一无二的菲亚特Topolino，动力仍是原厂6千瓦电机、5.5千瓦时电池和75公里续航。Top.L（Love）是无顶Speedster：低矮环绕风挡、用绳索代替车门、哑光湖蓝漆、500风格LED灯，内饰是同色皮革加Alcantara。Top.J（Joy）在布篷下坐四人，管状车门，涂装致敬阿涅利的法拉利166 MM；后排长凳朝后、腿悬在保险杠外，因此从L6e升级到L7e注册。",
+  "ko": "라포 엘칸과 파브리치오 주지아로의 GFG 스타일이 피아트 토폴리노 원오프 두 대를 만들었다. 6kW 모터, 5.5kWh 배터리, 75km 주행거리는 순정 그대로다. Top.L(러브)은 지붕 없는 스피드스터로 낮은 랩어라운드 스크린, 문 대신 로프, 무광 아쿠아마린 도장, 500 스타일 LED 램프에 같은 색 가죽과 알칸타라 실내를 갖췄다. Top.J(조이)는 천 캐노피 아래 4인승이며 튜브 도어, 잔니 아녤리의 페라리 166 MM을 따른 리버리, 테리 원단 시트가 특징이다. 뒷좌석 벤치가 뒤를 보고 다리는 범퍼 밖으로 나가 L7e로 등록해야 한다.",
+  "src": "Carscoops",
+  "url": "https://www.carscoops.com/2026/09/fiat-topolino-speedster/",
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Fiat-Topolino-GFG-Style-Top-L-1-1024x576.jpg"
+ },
+ {
+  "tag": "Realtime",
+  "t": "How Studio Orange makes 3D read as hand-drawn anime",
+  "en": "80 Level points to a new Class Creatives and Hobbes Sakuga breakdown of Studio Orange, the Tokyo studio behind Land of the Lustrous, Beastars and Trigun Stampede. The video walks through how Orange blends 2D and 3D workflows: algorithmic camera work, traditional anime key-frame drawing discipline applied to 3D characters, and timing borrowed from Western animation, so CG reads as hand-drawn rather than as a Pixar-style render. For anyone stylising real-time characters or UI mascots, a compact reference on line, timing and camera.",
+  "blurb": "Algorithmic cameras and anime key-frame discipline on 3D rigs, from the Beastars studio",
+  "video": "https://www.youtube.com/watch?v=W117QR-9OHc",
+  "zh": "80 Level推荐了Class Creatives与Hobbes Sakuga新发布的Studio Orange制作流程解析，这家东京工作室出品了《宝石之国》《BEASTARS》和《TRIGUN STAMPEDE》。视频拆解Orange如何融合2D与3D：算法化的镜头运动、把传统原画的关键帧纪律用在3D角色上、借鉴欧美动画的节奏，让CG看起来像手绘而非皮克斯式渲染。对做实时角色或UI吉祥物风格化的人，这是一份关于线条、节奏与镜头的紧凑参考。",
+  "ko": "80 레벨이 클래스 크리에이티브스와 홉스 사쿠가가 새로 공개한 스튜디오 오렌지 제작 파이프라인 분석을 소개했다. 도쿄의 이 스튜디오는 '보석의 나라', 'BEASTARS', '트라이건 스탬피드'를 만들었다. 영상은 알고리즘 기반 카메라 워크, 전통 원화의 키프레임 규율을 3D 캐릭터에 적용하는 방식, 서구 애니메이션에서 빌린 타이밍이 합쳐져 CG가 픽사식 렌더가 아니라 손그림처럼 읽히는 과정을 짚는다. 실시간 캐릭터나 UI 마스코트를 스타일라이즈할 때 선, 타이밍, 카메라를 다룬 압축된 참고 자료다.",
+  "src": "80 Level",
+  "url": "https://80.lv/articles/how-anime-studio-behind-beastars-trigun-stampede-makes-3d-animation-look-2d"
+ },
+ {
+  "tag": "Visual",
+  "t": "Culture House: a C and an H fold into a house-shaped frame",
+  "en": "Studio Blackburn has branded Culture House, a four-floor venue in Riverside Sunderland with a 360-degree immersive gallery, rooftop sky garden, green-screen and podcast studios and children's play zones. The mark folds a C and an H into a house outline; that outline becomes a frame that opens to release the initials, animates the type and structures a modular wayfinding system. Yellow, red, blue and green sit on a monochrome base matched to the building's materials, across signage, barcoded digital passes, banners, the website and merchandise.",
+  "blurb": "One house-shaped frame carries the logo, the animated type and the wayfinding system",
+  "zh": "Studio Blackburn为桑德兰河畔的Culture House做了品牌识别。这座四层文化场馆有360度沉浸式展厅、屋顶空中花园、绿幕和播客工作室以及儿童游戏区。标志把C和H折成一个房子轮廓；这个轮廓既是释放首字母的取景框，也驱动动态字体，并构成模块化导视系统。黄、红、蓝、绿四色叠在与建筑材料呼应的黑白底子上，用于标识、带条码的数字通行证、横幅、网站和周边。",
+  "ko": "스튜디오 블랙번이 선덜랜드 리버사이드의 4층 문화 공간 컬처 하우스의 아이덴티티를 만들었다. 360도 몰입형 갤러리, 옥상 스카이 가든, 그린 스크린과 팟캐스트 스튜디오, 어린이 놀이 구역이 있다. 마크는 C와 H를 접어 집 모양 윤곽을 만든다. 이 윤곽은 이니셜을 드러내는 프레임이 되고, 타이포그래피 애니메이션을 이끌며, 모듈형 길찾기 체계의 뼈대가 된다. 노랑, 빨강, 파랑, 초록이 건물 재료에 맞춘 흑백 바탕 위에 올라가 사이니지, 바코드 디지털 패스, 배너, 웹사이트, 굿즈에 쓰인다.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/work/studio-blackburn-gives-sunderland-a-new-living-room-with-its-identity-for-culture-house/"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Grounded: van cabins from a CNC'd material 'alphabet'",
+  "en": "Detroit's Grounded RV fits out GM BrightDrop, Harbinger and Ford Transit vans as coffee shops, mobile dental clinics, pop-up tech classrooms and, for Portland Police, the first electric command vehicles in the US. Chief product officer Nadia Meyer, an industrial designer and third-generation mechanical engineer, works from a small library of recycled plastics, homogeneous panels, aluminium composite walls and PET acoustic panels; CNC machining carves handles straight into the panels, so a fleet can leave in a month. 'A very Bauhausian builder,' she says: form follows function.",
+  "blurb": "A Detroit upfitter carves handles into recycled panels so a van fleet ships in a month",
+  "zh": "底特律的Grounded RV把通用BrightDrop、Harbinger和福特Transit厢式车改装成咖啡店、移动牙科诊所、快闪科技课堂，以及为波特兰警局打造的美国首批电动指挥车。首席产品官Nadia Meyer是工业设计师兼第三代机械工程师，用一套精简的材料库工作：回收塑料、均质板材、铝塑复合墙板和PET吸音板；CNC直接在板材上铣出把手，一批车队一个月就能交付。她自称“很包豪斯的建造者”：形式追随功能。",
+  "ko": "디트로이트의 그라운디드 RV는 GM 브라이트드롭, 하빈저, 포드 트랜짓 밴을 커피숍, 이동 치과, 팝업 기술 교실로 꾸미고 포틀랜드 경찰에는 미국 첫 전기 지휘 차량을 납품한다. 최고제품책임자 나디아 마이어는 산업 디자이너이자 3대째 기계공학자로, 재활용 플라스틱, 균질 패널, 알루미늄 복합 벽재, PET 흡음 패널로 이루어진 작은 재료 라이브러리로 일한다. CNC로 패널에 손잡이를 바로 파내기 때문에 차량 한 무리를 한 달 안에 내보낸다. 그는 스스로를 '매우 바우하우스적인 빌더'라 부른다. 형태는 기능을 따른다.",
+  "src": "Car Design News",
+  "url": "https://www.cardesignnews.com/interiors/industrial-design-cues-inform-new-approach-to-commercial-vehicle-interiors/2738862"
+ },
+ {
+  "tag": "AI",
+  "t": "Googlebook: wiggle the cursor and Gemini appears",
+  "en": "Google has opened pre-orders for the Googlebook, its Gemini-first Android laptop line from Acer, ASUS, Dell, HP and Lenovo, from $899, shipping October 4 in the US and October 5 in six more countries. The interaction ideas are the story: Magic Pointer summons Gemini with a quick wiggle of the cursor and acts on whatever is under it, from turning a web page into a calendar entry to combining images without uploading them; Rambler cleans dictation into structured notes and switches language mid-sentence; Create My Widget builds a widget from a description.",
+  "blurb": "A cursor wiggle summons Gemini on whatever is under it; from $899, shipping October 4",
+  "zh": "谷歌开放Googlebook预订，这是宏碁、华硕、戴尔、惠普和联想推出的Gemini优先的安卓笔记本系列，899美元起，10月4日美国发货，10月5日到加拿大、英国等六国。看点在交互：Magic Pointer只需快速晃动光标即可召唤Gemini，直接对光标下的内容操作，比如把网页变成日程，或不用上传就合成图片；Rambler把口述整理成结构化笔记，还能句中切换语言；Create My Widget按描述生成自定义小组件。",
+  "ko": "구글이 에이서, 에이수스, 델, HP, 레노버가 만드는 제미나이 중심의 안드로이드 노트북 구글북 사전 주문을 열었다. 899달러부터이며 미국은 10월 4일, 캐나다·영국 등 여섯 나라는 10월 5일에 출하한다. 핵심은 인터랙션이다. 매직 포인터는 커서를 살짝 흔들면 제미나이를 불러 커서 아래 내용에 바로 작업한다. 웹페이지를 캘린더 일정으로 바꾸거나 업로드 없이 이미지를 합친다. 램블러는 받아쓰기를 정리된 노트로 다듬고 문장 중간에 언어를 바꿔도 따라오며, 크리에이트 마이 위젯은 설명만으로 위젯을 만든다.",
+  "src": "Google",
+  "url": "https://blog.google/products-and-platforms/devices/googlebook/googlebook-built-in-intelligence/"
+ },
+ {
+  "tag": "Design",
+  "t": "BYD's next Seagull: 425 mm longer, LiDAR on the roof",
+  "en": "BYD general manager Zhang Zhuo has released official sketches of the second-generation Seagull, nicknamed 'Great Seagull'. It grows to 4,205 mm on a 2,650 mm wheelbase, 425 mm longer than today's car and only 65 mm short of a Dolphin, with trident-shaped lamps front and rear, sharper surfacing, a lower glass line and 16-inch eight-spoke wheels. The cabin gets a floating screen, a column shifter behind a two-spoke wheel and a large centre tunnel; a roof LiDAR feeds DiPilot 300. A 95 kW motor and 30 or 39.2 kWh LFP packs give 320–420 km CLTC.",
+  "blurb": "BYD's best-seller grows 425 mm, gains trident lamps, a column shifter and a roof LiDAR",
+  "zh": "比亚迪总经理张卓公布了第二代海鸥的官方设计草图，新车被称为“大海鸥”。车长增至4205毫米、轴距2650毫米，比现款长425毫米，只比海豚短65毫米；前后三叉戟造型灯组、更锐利的曲面、更低的窗线和16英寸八辐轮圈。座舱换成悬浮屏、双辐方向盘后的怀挡和宽大的中央通道，车顶激光雷达对应DiPilot 300。95千瓦电机，30或39.2千瓦时磷酸铁锂电池，CLTC续航320至420公里。",
+  "ko": "BYD 총경리 장줘가 '그레이트 시걸'로 불리는 2세대 시걸의 공식 스케치를 공개했다. 전장 4,205mm, 휠베이스 2,650mm로 현행보다 425mm 길어졌고 돌핀보다 겨우 65mm 짧다. 앞뒤 삼지창 모양 램프, 더 날카로운 면 처리, 낮아진 글라스 라인, 16인치 8스포크 휠이 특징이다. 실내는 플로팅 스크린, 2스포크 휠 뒤의 컬럼 시프터, 넓은 센터 터널을 갖췄고 루프 라이다는 디파일럿 300에 연결된다. 95kW 모터에 30 또는 39.2kWh LFP 배터리로 CLTC 320~420km를 간다.",
+  "src": "CarNewsChina",
+  "url": "https://carnewschina.com/2026/09/22/design-sketches-of-the-second-gen-byd-seagull-were-revealed-in-china/"
+ },
+ {
+  "tag": "Realtime",
+  "t": "AMD: 500M animated triangles ray traced in 1.7 GB",
+  "en": "AMD Fellow Holger Gruen has written up the tetrahedral-cage technique from his High-Performance Graphics 2026 paper. Instead of rebuilding a BVH for every animated mesh, dense geometry is wrapped in a small deformable cage of tetrahedra; the cage moves, the mesh and its BVH stay static, and rays are warped back into the rest pose before intersection. In a demo with 25,000 wind-blown plants, about 500 million animated triangles per frame ray trace at 60+ fps at 1080p on a Radeon RX 9070 XT, using 1.7 GB and 3.3 ms of BVH updates against up to 80 GB and 300 ms conventionally.",
+  "blurb": "Deform a cage, not the mesh: 1.7 GB and 3.3 ms instead of 80 GB and 300 ms per frame",
+  "zh": "AMD院士Holger Gruen撰文介绍了他在High-Performance Graphics 2026论文中的四面体笼技术。不再为每个动画网格重建BVH，而是把高密度几何体包进一个小型可变形四面体笼：笼子动，网格和BVH保持静态，光线在求交前被反变换回静止姿态。在含2.5万株随风摆动植物的演示中，每帧约5亿个动画三角形在Radeon RX 9070 XT上以1080p、60帧以上光线追踪，BVH占1.7GB、每帧更新3.3毫秒，传统做法最多需要80GB和300毫秒。",
+  "ko": "AMD 펠로 홀거 그륀이 하이 퍼포먼스 그래픽스 2026 논문의 사면체 케이지 기법을 글로 정리했다. 애니메이션되는 메시마다 BVH를 다시 짓는 대신 조밀한 지오메트리를 작은 변형 케이지에 넣는다. 케이지만 움직이고 메시와 BVH는 정적으로 남으며, 광선은 교차 계산 전에 정지 자세로 되돌린다. 바람에 흔들리는 식물 2만 5천 그루의 데모에서 프레임당 약 5억 개의 애니메이션 삼각형을 라데온 RX 9070 XT로 1080p 60fps 이상에서 레이 트레이싱했다. BVH는 1.7GB, 갱신은 3.3ms로 기존 방식의 최대 80GB와 300ms에 비교된다.",
+  "src": "AMD GPUOpen",
+  "url": "https://gpuopen.com/learn/how-tetrahedral-cages-significantly-reduce-bvh-memory-usage/"
+ },
+ {
+  "tag": "Visual",
+  "t": "Menslies: ten years of Beijing club posters, grids off",
+  "en": "Beijing studio Menslies, run by designers and DJs Haojun Pan and Yenk, marks ten years of posters for China's club scene with a retrospective at WarmUp in Kyoto until September 27. Long the in-house designers for the venue Zhao Dai, the pair drop rigid grids for improvised, worn-in layouts: digital work made to read as analogue, finished with what Haojun calls 'painting the dragon and dotting its eyes', one last unplanned move that adds a raw, human note. Each poster is checked on phone, laptop and iPad, 'like reviewing a mastered track on different stereos'.",
+  "blurb": "Zhao Dai's house designers drop the grid; a Kyoto retrospective runs until September 27",
+  "zh": "北京工作室Menslies由设计师兼DJ潘浩君与Yenk主理，以一场在京都WarmUp举办、展至9月27日的回顾展纪念他们为中国俱乐部场景做海报的十年。两人长期担任招待所（Zhao Dai）的驻场设计师，放弃严格网格，改用即兴、带磨损感的版式：数字制作却要读出模拟质感，最后一步是潘浩君所说的“画龙点睛”，一个计划之外的动作带来粗粝的人味。每张海报都在手机、笔记本和iPad上检查，“像在不同音响上审听母带”。",
+  "ko": "디자이너 겸 DJ 판하오쥔과 옌크가 이끄는 베이징 스튜디오 멘슬리스가 중국 클럽 신을 위해 포스터를 만든 10년을 교토 웜업의 회고전으로 정리한다. 전시는 9월 27일까지다. 오랫동안 클럽 자오다이의 하우스 디자이너였던 둘은 엄격한 그리드를 버리고 즉흥적이고 낡은 느낌의 레이아웃을 택한다. 디지털로 만들되 아날로그처럼 읽히게 하고, 마지막에는 판하오쥔이 '화룡점정'이라 부르는 계획에 없던 손질로 거친 사람 냄새를 더한다. 포스터는 폰, 노트북, 아이패드에서 각각 확인한다.",
+  "src": "It's Nice That",
+  "url": "https://www.itsnicethat.com/articles/menslies-ten-years-of-posters-graphic-design-project-220926"
+ },
+ {
+  "tag": "Micromobility",
+  "t": "Carbon Noir redraws the tuk-tuk as a hard-bodied mini EV",
+  "en": "Designer Carbon Noir's 'Cyberpunk 2077 Auto Rickshaw' concept keeps the three-wheel footprint and handlebar steering of India's auto rickshaw but swaps the fabric-over-frame body for a solid hardbody with LED lamps front and rear and a two-tone green scheme. Seating moves from one driver plus a rear bench to a conventional 2+2; the left side gets front and rear doors while the right keeps only a safety bar, and with the rear engine gone there is a usable boot. Fully electric, it reads as 'a Renault Twizy dialled back'.",
+  "blurb": "Handlebar steering stays, the canvas body goes: a 2+2 hardbody rickshaw with LED lamps",
+  "zh": "设计师Carbon Noir的“赛博朋克2077三轮车”概念保留了印度机动三轮车的三轮布局与把手转向，但把帆布蒙皮车身换成硬壳车体，前后LED灯组，双色绿涂装。座位从“一名司机加后排长凳”改为常规2+2；左侧有前后车门，右侧只留一根安全杆；后置发动机取消后，多出一个可用的行李厢。纯电驱动，整体像“收敛版的雷诺Twizy”。",
+  "ko": "디자이너 카본 누아르의 '사이버펑크 2077 오토 릭샤' 콘셉트는 인도 삼륜 택시의 세 바퀴 구성과 핸들바 조향은 남기고 천을 씌운 프레임 차체를 단단한 하드보디로 바꿨다. 앞뒤 LED 램프와 투톤 그린 도장이 들어갔다. 좌석은 운전자 한 명과 뒷벤치 대신 일반적인 2+2 배열이다. 왼쪽에는 앞뒤 도어가, 오른쪽에는 안전 바만 있고 뒤쪽 엔진이 사라진 자리에 쓸 만한 트렁크가 생겼다. 완전 전동이며 '한 단계 눌러 놓은 르노 트위지'처럼 읽힌다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/09/22/someone-designed-indias-humble-tuk-tuk-as-a-modern-day-renault-style-mini-ev/"
+ },
+ {
+  "tag": "Realtime",
+  "t": "Bevy's Solari path tracer: one ReSTIR for all light",
+  "en": "Bevy contributor JMS55 has rewritten Solari, the Rust engine's real-time path tracer, for Bevy 0.20. Separate ReSTIR passes for direct and indirect lighting collapse into one unified kernel: up to three bounces plus temporal resampling, then spatial resampling and shading, which improves light from nearby emissive surfaces and makes shadows fully unbiased. After testing against DLSS Ray Reconstruction 4.5 the author leaves ReSTIR off by default, since the denoiser handles the noise; shadow lag on moving objects drops by sampling visibility against last frame's acceleration structure.",
+  "blurb": "Unified ReSTIR, unbiased shadows, and ReSTIR off by default because DLSS-RR 4.5 denoises it",
+  "zh": "Bevy贡献者JMS55为Bevy 0.20重写了这款Rust引擎的实时路径追踪器Solari。原本分开的直接光与间接光ReSTIR通道合并为一个统一内核：最多三次反弹加时间重采样，再做空间重采样与着色，改善了近处自发光表面的照明，阴影也做到完全无偏。在与DLSS光线重建4.5对比测试后，作者默认关闭ReSTIR，因为降噪器已能处理噪点；移动物体的阴影滞后通过对上一帧加速结构采样可见性而减少。",
+  "ko": "베비 기여자 JMS55가 러스트 엔진의 실시간 패스 트레이서 솔라리를 베비 0.20용으로 다시 썼다. 직접광과 간접광을 따로 돌리던 ReSTIR 패스를 하나의 통합 커널로 합쳤다. 최대 세 번 바운스에 시간적 리샘플링, 이어서 공간적 리샘플링과 셰이딩 순서로, 가까운 발광면의 조명이 좋아지고 그림자는 완전히 비편향이 됐다. DLSS 레이 리컨스트럭션 4.5와 비교한 뒤 작성자는 ReSTIR를 기본으로 꺼 두었다. 디노이저가 노이즈를 충분히 처리하기 때문이다. 움직이는 물체의 그림자 지연은 이전 프레임의 가속 구조로 가시성을 샘플링해 줄였다.",
+  "src": "JMS55",
+  "url": "https://jms55.github.io/posts/2026-09-18-solari-bevy-0-20/"
+ }
+]
