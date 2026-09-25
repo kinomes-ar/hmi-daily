@@ -9,7 +9,9 @@
   "ko": "2026년 10월부터 BMW 운영체제 X에 하이웨이 어시스턴트나 하이웨이·시티 어시스턴트를 갖춘 BMW 차량에 '드라이버 어시스턴스가 통합된 BMW 맵스'가 배포된다. 경로 안내, 차량이 인식한 주변 환경, 작동 중인 보조 기능이 센터 디스플레이의 3D 화면 하나에 그려지고 차량은 실제 차선과 도로 높이에 정확히 놓인다. BMW가 Mapbox 데이터로 자체 개발해 지도, 센서, AI를 결합했으며 2027년 독일에서 내비게이션 연동 도심 반자율주행이 뒤따른다. 테슬라식 인지 시각화가 독일 브랜드의 지도에 들어왔다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/bmws-new-3d-maps-show-you-what-the-car-sees-while-it-drives/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/P90652816_highRes-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/P90652816_highRes-1024x576.jpg",
+  "img": "assets/2026-09-25-1.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/P90652816_highRes-1024x576.jpg"
  },
  {
   "tag": "Cockpit",
@@ -31,7 +33,9 @@
   "zh": "9月24日，Adobe把Photoshop、Lightroom、Express和Firefly接入Google Gemini，面向全球所有套餐开放：一句提示词即可给照片重打光、调色，生成符合品牌规范的社交内容或改模板。同日，Adobe的Claude插件扩展到80多项工具，覆盖Acrobat、Express、Photoshop、Illustrator、Premiere、Lightroom、InDesign和Stock，新增Acrobat页面整理与涂黑、交互式PDF编辑器、文档审阅技能，以及基于图层的Express编辑器——改文字、颜色、字体不必整图重生成。创意套件正在变成其他助手可调用的工具箱。",
   "ko": "어도비가 9월 24일 포토샵, 라이트룸, 익스프레스, 파이어플라이를 구글 제미나이 안에 넣었다. 전 세계 모든 요금제에서 프롬프트 한 줄로 사진의 조명과 색을 손보고 브랜드에 맞는 소셜 콘텐츠를 만들거나 템플릿을 고칠 수 있다. 같은 날 클로드용 어도비 플러그인은 아크로뱃, 익스프레스, 포토샵, 일러스트레이터, 프리미어, 라이트룸, 인디자인, 스톡을 아우르는 80개 이상의 도구로 늘었다. 아크로뱃 페이지 정리와 문서 가리기, 대화형 PDF 편집기, 문서 검토 스킬, 전체를 다시 생성하지 않고 글자·색·서체만 바꾸는 레이어 기반 익스프레스 편집기가 더해졌다. 크리에이티브 제품군이 다른 비서들이 호출하는 도구 상자로 바뀌고 있다.",
   "src": "Adobe",
-  "url": "https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude"
+  "url": "https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude",
+  "img": "assets/2026-09-25-3.jpg",
+  "img_src": "https://blog.adobe.com/en/publish/2026/09/24/media_150b784ac116ab0312114fc41e21dbf3cb1e204ef.jpg?width=1200&#x26;format=pjpg&#x26;optimize=medium"
  },
  {
   "tag": "Motion",
@@ -43,7 +47,9 @@
   "ko": "투모로 뷰로가 만든 애스턴마틴 발렌 론칭 필름은 엔진을 편집자로 삼았다. 150대 한정, 838마력 V12 슈퍼카의 점화, 변속, 회전수 상승이 하나하나 카메라 이동과 컷, 속도 변화에 대응해 녹음이 영상의 리듬을 정한다. 풀 CG로 만든 차는 아무것도 없는 무향실에 놓이고, 거대한 와이드 숏과 헤링본 카본, 얇은 램프, 가로로 이어진 리어 라이트 바를 파고드는 클로즈업이 교차한다. 디자인 브리지 앤 파트너스와 협업했고 사운드는 솔터 스튜디오와 젤리그 사운드가 맡았다. 제품을 자기 소리에 맞춰 움직이려는 이들에게 좋은 참고 자료다.",
   "src": "Stash",
   "url": "https://www.stashmedia.tv/outrageous-muscle-tomorrow-bureau-launches-the-aston-martin-valen-supercar/",
-  "video": "https://vimeo.com/1229587369"
+  "video": "https://vimeo.com/1229587369",
+  "img": "assets/2026-09-25-4.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Aston-Martin-Valen-Launch-film-by-Tomorrow-Bureau-_-STASH-MAGAZINE8.jpg"
  },
  {
   "tag": "Realtime",
@@ -54,7 +60,9 @@
   "zh": "9月24日的Connect大会上，Meta展示了VR Glasses：约100克的镁合金镜框（比Quest 3轻五倍）只承载显示屏、Scrabble棋子大小的饼干镜片、摄像头和音频，算力、电池与存储移到用光纤线连接的口袋算力盒。双目2412×2288微OLED，最高120Hz，37像素/度，水平视场70°且周边开放，支持Dolby Vision与全彩透视。眼睛和手就是控制器，可在真实桌面上钉住多块虚拟面板。售价1299.99美元，2027年春上市。第一款像眼镜而不像面罩的头显。",
   "ko": "메타가 9월 24일 커넥트에서 VR 글래스를 공개했다. 약 100g의 마그네슘 합금 프레임(퀘스트 3의 5분의 1 무게)에는 디스플레이, 스크래블 타일 크기의 팬케이크 렌즈, 카메라, 오디오만 들어가고 연산·배터리·저장 장치는 광 케이블로 연결되는 주머니 크기의 퍽으로 옮겼다. 양안 2412×2288 마이크로 OLED가 최대 120Hz로 구동돼 각도당 37픽셀, 수평 시야 70°를 내며 주변 시야는 열려 있다. 돌비 비전과 풀컬러 패스스루를 지원하고 눈과 손이 컨트롤러다. 실제 책상 위에 가상 패널을 고정할 수 있다. 1,299.99달러, 2027년 봄 출시. 바이저가 아니라 안경 모양을 한 첫 헤드셋이다.",
   "src": "Dezeen",
-  "url": "https://www.dezeen.com/2026/09/24/meta-vr-glasses-audio-ai-glasses-connect-2026/"
+  "url": "https://www.dezeen.com/2026/09/24/meta-vr-glasses-audio-ai-glasses-connect-2026/",
+  "img": "assets/2026-09-25-5.jpg",
+  "img_src": "https://static.dezeen.com/uploads/2026/09/meta-vr-glasses-ray-ban-audio-connect-2026-design_dezeen_2364_hero.jpg"
  },
  {
   "tag": "Interaction",
@@ -64,7 +72,9 @@
   "zh": "Rain Noe在Core77撰文指出，沃尔沃EX30的座舱是用“极简”包装的成本削减：方向盘后没有仪表，车速要看中控屏；没有抬头显示可选；大灯、雨刮、后视镜甚至手套箱都进了触摸屏，方向盘上是电容触控，门板扬声器换成一根条形音箱。沃尔沃自己的说法——“单一屏幕让驾驶者周围更显宽敞，同时节省材料”——就是证据。对当下屏幕优先座舱的一记反驳，而且对象正是以安全立身的品牌。",
   "ko": "레인 노가 코어77에 쓴 글은 볼보 EX30의 실내가 원가 절감을 미니멀리즘으로 포장했다고 주장한다. 스티어링 휠 뒤에 계기판이 없어 속도를 센터 스크린에서 읽어야 하고, 헤드업 디스플레이 옵션도 없다. 헤드라이트, 와이퍼, 거울, 심지어 글러브박스까지 터치스크린으로 들어갔고, 휠에는 정전식 패드, 도어 스피커 대신 사운드바 하나가 달렸다. '화면 하나로 운전자 주변에 여유를 만들고 재료도 아낀다'는 볼보의 말이 증거다. 안전으로 이름을 쌓은 브랜드를 향한, 화면 우선 실내에 대한 날카로운 반론이다.",
   "src": "Core77",
-  "url": "https://www.core77.com/posts/145443/Cost-Cutting-Disguised-as-Minimalism-Volvos-EX30-Dashboard-Goes-Too-Far"
+  "url": "https://www.core77.com/posts/145443/Cost-Cutting-Disguised-as-Minimalism-Volvos-EX30-Dashboard-Goes-Too-Far",
+  "img": "assets/2026-09-25-6.jpg",
+  "img_src": "https://s3files.core77.com/blog/images/lead_n_spotlight/1850995_lead_400_145443_.jpg"
  },
  {
   "tag": "Micromobility",
@@ -75,7 +85,9 @@
   "ko": "트라이엄프가 어린이용 전동 오프로드 시리즈 TXP에 큰 모델 둘을 더했다. 7~11세용 TXP-20은 1,600W, 최고 시속 24마일, 43kg에 125mm 에어 포크와 115mm 모노쇽을 갖췄고, 11세 이상용 TXP-24는 2,000W, 27마일, 48kg에 앞 160mm·뒤 154mm 완전 에어 조절식 서스펜션을 쓴다. 둘 다 FOC 브러시리스 모터와 공구 없이 빼는 IPX7 배터리를 쓰며, 시트와 머드가드를 떼면 앉아 타는 익스플로어에서 서서 타는 트라이얼로 바뀌는 2-in-1 구조다. 3,495달러와 3,995달러로 딜러에서 주문을 받고 있으며 크리스마스 전에 인도된다. 어른 바이크처럼 정리된 미니 모토 디자인이다.",
   "src": "Motorcycle.com",
   "url": "https://www.motorcycle.com/bikes/news/triumph-expands-off-road-e-bike-family-with-txp-20-and-txp-24-models-44672029",
-  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/24/14371/triumph-expands-off-road-e-bike-family-with-txp-20-and-txp-24-models.jpg?size=720x845&nocrop=1"
+  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/24/14371/triumph-expands-off-road-e-bike-family-with-txp-20-and-txp-24-models.jpg?size=720x845&nocrop=1",
+  "img": "assets/2026-09-25-7.jpg",
+  "img_src": "https://cdn-fastly.motorcycle.com/media/2026/09/24/14371/triumph-expands-off-road-e-bike-family-with-txp-20-and-txp-24-models.jpg?size=720x845&nocrop=1"
  },
  {
   "tag": "Visual",
@@ -87,7 +99,9 @@
   "ko": "스위스 화가 르네 레비의 '셉템버'가 9월 23일부터 11월 15일까지 런던 헤이워드 갤러리의 브루탈리즘 파사드를 덮는다. 형광 초록, 분홍, 파랑, 주황의 붓질을 건물 외벽 광고에 쓰이는 산업용 메시 위에 그려, 갤러리의 튀어나온 창 위아래 두 장으로 걸었다. 그래서 건물의 '눈'이 구도의 일부가 된다. 붓자국은 화가의 팔이 닿는 크기를 유지하고, 메시는 거리와 각도, 햇빛에 따라 다르게 읽힌다. 헤이워드와 오데마 피게 컨템포러리가 공동 의뢰했으며 후자가 2012년 이후 처음 의뢰한 회화 작업이다.",
   "src": "designboom",
   "url": "https://www.designboom.com/art/renee-levi-transforms-hayward-gallery-facade-in-audemars-piguet-contemporary-commission/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/renee-levi-transforms-hayward-gallery-facade-in-audemars-piguet-contemporary-commission-designboom-17.jpeg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/09/renee-levi-transforms-hayward-gallery-facade-in-audemars-piguet-contemporary-commission-designboom-17.jpeg",
+  "img": "assets/2026-09-25-8.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/09/renee-levi-transforms-hayward-gallery-facade-in-audemars-piguet-contemporary-commission-designboom-17.jpeg"
  },
  {
   "tag": "Cockpit",
@@ -97,7 +111,9 @@
   "zh": "大众安徽的ID. Unyx 09开启预售，起价19.99万元，10月底上市：车长5081毫米，轴距3030毫米的纯电溜背轿车。座舱把85英寸AR抬头显示、独立仪表和一块大尺寸悬浮中控触屏放在一起，配AI语音助手、一体式头枕运动座椅、无线充电与隐藏杯架。智驾基于750 TOPS的图灵芯片和VLA模型，26个传感器支持高速与城区NOA及AI泊车；91.96 kWh磷酸铁锂电池，5C快充，CLTC续航755公里。中国对手纷纷取消仪表，大众却保留了它。",
   "ko": "폭스바겐 안후이가 ID. 유닉스 09의 사전 판매를 199,900위안(약 29,400달러)에 시작했다. 전장 5,081mm, 휠베이스 3,030mm의 전기 패스트백으로 10월 말 출시된다. 실내에는 85인치 AR 헤드업 디스플레이와 별도의 계기판, 큼직한 플로팅 센터 터치스크린이 함께 놓이고 AI 어시스턴트, 일체형 헤드레스트 스포츠 시트, 무선 충전, 숨은 컵홀더가 더해진다. 주행 보조는 750 TOPS 튜링 칩과 VLA 모델, 센서 26개로 고속·도심 NOA와 AI 주차를 지원한다. 91.96kWh LFP 배터리, 5C 충전, CLTC 755km. 중국 경쟁사들이 계기판을 없애는 사이 폭스바겐은 남겼다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/24/volkswagens-new-5c-charging-id-unyx-09-opens-pre-sale-in-china-starting-from-29400-usd/"
+  "url": "https://carnewschina.com/2026/09/24/volkswagens-new-5c-charging-id-unyx-09-opens-pre-sale-in-china-starting-from-29400-usd/",
+  "img": "assets/2026-09-25-9.png",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/e59bbee78987-175-e1790239428243.png"
  },
  {
   "tag": "Realtime",
@@ -108,7 +124,9 @@
   "ko": "도쿄 게임쇼(9월 17~20일)에서 삼성과 NC는 부스 입구를 엘리베이터 모양으로 만들고 그 안에 85인치 스페이셜 사이니지를 세워 RPG '아스트레 오라티오'의 캐릭터를 거의 실물 크기의 무안경 3D로 보여줬다. 깊이감은 삼성의 3D 플레이트 층이 만든다. 일부 관람객은 유리 뒤에 소품이 있다고 여겼다가 두께 52mm, 무게 49kg의 VESA 마운트 패널 한 장임을 알아챘다. 32인치 모델은 49.4mm, 8.5kg이다. 콘텐츠 교체는 파일만 바꾸면 되므로 같은 화면이 디오라마 없이 매장 쇼윈도나 대기열에도 쓰인다. 평면 디스플레이에서 깊이를 고민하는 이들이 볼 만하다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/09/24/samsungs-85-inch-screen-made-convention-visitors-think-it-was-real/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/09/samsungs-85-inch-screen-made-convention-visitors-think-it-was-real/samsung-spatial-signage-tokyo-game-show-2026-01.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/09/samsungs-85-inch-screen-made-convention-visitors-think-it-was-real/samsung-spatial-signage-tokyo-game-show-2026-01.jpg",
+  "img": "assets/2026-09-25-10.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/samsungs-85-inch-screen-made-convention-visitors-think-it-was-real/samsung-spatial-signage-tokyo-game-show-2026-01.jpg"
  },
  {
   "tag": "AI",
@@ -119,7 +137,9 @@
   "ko": "메타의 새 레이밴 메타 오디오 글래스는 카메라를 아예 뺐다. 클럽마스터와 버뱅크 두 스타일의 43g 프레임에 더 얇은 다리, 조절식 코받침, 도수 렌즈 지원, 오픈이어 지향성 스피커를 갖췄고 호출어로 깨우는 메타 AI가 통화, 메시지, 실시간 번역, 웹 검색을 맡는다. 카메라가 없어 배터리는 12시간 가며, 메타는 안경이 호출어만 듣고 녹화하지 않는다고 강조한다. 10월 13일 349달러부터 출시되고, 메타가 연말까지 내놓겠다는 100종 이상의 AI 안경 중 하나다. 얼굴 카메라보다 음성 전용 웨어러블이 더 깔끔한 과제이고 차량 음성 인터페이스에도 더 가깝다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/09/24/ray-ban-meta-audio-glasses-launched-without-the-controversial-camera/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/09/ray-ban-meta-audio-glasses-launched-without-the-pervert-camera/Ray-Ban-Meta-Audio-Glasses-1.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/09/ray-ban-meta-audio-glasses-launched-without-the-pervert-camera/Ray-Ban-Meta-Audio-Glasses-1.jpg",
+  "img": "assets/2026-09-25-11.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/ray-ban-meta-audio-glasses-launched-without-the-pervert-camera/Ray-Ban-Meta-Audio-Glasses-1.jpg"
  },
  {
   "tag": "Micromobility",
@@ -131,7 +151,9 @@
   "src": "Motorcycle.com",
   "url": "https://www.motorcycle.com/bikes/news/stark-varg-sm-breaks-14-year-old-track-record-on-1923-banked-oval-44672011",
   "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/23/19211/stark-varg-sm-breaks-14-year-old-track-record-on-1923-banked-oval.jpg?size=720x845&nocrop=1",
-  "video": "https://www.youtube.com/watch?v=9ewg46OvQSE"
+  "video": "https://www.youtube.com/watch?v=9ewg46OvQSE",
+  "img": "assets/2026-09-25-12.jpg",
+  "img_src": "https://cdn-fastly.motorcycle.com/media/2026/09/23/19211/stark-varg-sm-breaks-14-year-old-track-record-on-1923-banked-oval.jpg?size=720x845&nocrop=1"
  },
  {
   "tag": "Realtime",
@@ -141,7 +163,9 @@
   "zh": "3D艺术家Tk_Armakar的场景——扶手椅上点烟的女子——看起来像画布而非渲染图：效果来自Blender 5.2的Paint着色器与抖动的组合，面部和手部用遮罩限定为细小笔触，背景区域则是宽大笔触，让笔法尺度随视线落点而变化。概念源自画家Joviano Costa。80 Level把它与其他绘画感实时作品并列（Frankie Povarchik的哈尔风格场景、SouthernShotty的绘画质感贴图教程）。按区域控制笔触大小，是做风格化UI或菜单场景的可用配方。",
   "ko": "3D 아티스트 Tk_Armakar가 만든, 안락의자에서 담배에 불을 붙이는 여성 장면은 렌더가 아니라 캔버스처럼 읽힌다. 블렌더 5.2의 페인트 셰이더에 디더링을 더하고, 얼굴과 손은 마스크로 작은 붓질을, 배경은 넓은 붓질을 주어 시선이 닿는 곳마다 붓의 크기가 달라진다. 콘셉트는 작가 조비아노 코스타의 그림을 따랐다. 80 레벨은 이를 프랭키 포바르치크의 하울 스타일 환경, 서던쇼티의 회화풍 텍스처 튜토리얼 같은 다른 회화적 실시간 작업과 나란히 놓았다. 영역별 붓 크기 조절은 양식화된 UI나 메뉴 장면에 바로 쓸 수 있는 방법이다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/check-out-this-fascinating-3d-model-that-looks-like-an-oil-painting"
+  "url": "https://80.lv/articles/check-out-this-fascinating-3d-model-that-looks-like-an-oil-painting",
+  "img": "assets/2026-09-25-13.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50372/images/6ab58242802bf/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -152,7 +176,9 @@
   "ko": "우한의 일러스트레이터 우신린의 시리즈 '비잉 위드 마이셀프'는 고독을 기분이 아니라 자신과 맺는 능동적 관계로 다룬다. 집안의 방과 자연 풍경을 상징적인 사물과 작은 변형으로 다시 연출하고, 부엌 한구석에 행성과 별을 앉힌다. 기법은 평면 색면에 가는 선과 종이 질감을 얹은 것이고, 팔레트는 차분한 파랑, 초록, 연보라다. 세 점이 3x3 국제 일러스트레이션 연감에서 메리트상을 받았고 호주 잡지 프랭키가 한 점을 A3 포스터로 실었다. 온보딩이나 앰비언트 화면에 옮겨도 어울릴 절제된 일러스트 체계다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/work/being-with-myself-wu-xinlin-illustrated-series-provides-a-compellingly-original-take-on-solitude/",
-  "img_url": "https://media.creativeboom.com/b9add27a-adc8-4f6b-9216-d0a834539700/conversions/881fee6b5fd67ae0b82a2156b29a2a2cad969250-medium.webp"
+  "img_url": "https://media.creativeboom.com/b9add27a-adc8-4f6b-9216-d0a834539700/conversions/881fee6b5fd67ae0b82a2156b29a2a2cad969250-medium.webp",
+  "img": "assets/2026-09-25-14.webp",
+  "img_src": "https://media.creativeboom.com/b9add27a-adc8-4f6b-9216-d0a834539700/conversions/881fee6b5fd67ae0b82a2156b29a2a2cad969250-medium.webp"
  },
  {
   "tag": "Realtime",
@@ -162,7 +188,9 @@
   "zh": "育碧蒙彼利埃的高级3D美术兼Substance专家Loic Anquetil向80 Level讲解了他为Substance 3D Assets制作的24款锈蚀材质“签名合集”。他先拍摄真实锈蚀以捕捉微观变化，在Designer里快速试做，再把成功的方案程序化重建；“Coarse Rust Pitting”是结构底层，其他材质在其上叠加以表现时间与暴露程度，自定义噪波都由Designer基础噪波衍生。他的建议：把Designer当工具箱，拆开并改造现成材质，先研究结构再谈颜色。适用于任何CMF或磨损材质库的干净方法。",
   "ko": "유비소프트 몽펠리에의 시니어 3D 아티스트이자 서브스턴스 전문가 로익 앙크틸이 서브스턴스 3D 애셋용으로 만든 24종 녹 재질 시그니처 컬렉션의 과정을 80 레벨에 풀어놓았다. 실제 부식을 촬영해 미세한 변화를 담고, 디자이너에서 빠르게 시안을 만든 뒤 잘된 것을 절차적으로 다시 지었다. '코어스 러스트 피팅'이 구조의 바탕이 되고 나머지는 그 위에 겹쳐 시간과 노출을 보여주며, 커스텀 노이즈는 디자이너의 기본 노이즈에서 파생했다. 그의 조언은 디자이너를 도구 상자로 여겨 기존 재질을 열어 뜯어보고, 색보다 구조를 먼저 보라는 것이다. CMF나 마모 라이브러리에 그대로 쓸 만한 방법이다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/desirable-patina-how-to-make-realistic-rust-in-3d"
+  "url": "https://80.lv/articles/desirable-patina-how-to-make-realistic-rust-in-3d",
+  "img": "assets/2026-09-25-15.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50274/images/6ab4397265ef1/contain_1200x630.jpg"
  },
  {
   "tag": "Industrial",
@@ -173,6 +201,8 @@
   "ko": "플로랑 포르타의 MAD-5 콘셉트는 83.8×84.4mm 알루미늄 음악 플레이어에 클립을 단 것으로, 핵심은 화면의 위치다. OLED 띠가 앞쪽 모서리를 따라 달려 주머니나 스트랩에 끼우면 화면이 가슴이 아니라 착용자의 눈을 향한다. 조작부는 버튼 두 개와 틴에이지 엔지니어링 TP-7에 경의를 표한, 돌아가지 않는 각인된 동심원 조그 디스크뿐이다. 각인된 사양판에는 1337mAh 배터리가 적혀 있고, USB DAC 모드로 노트북의 오디오 인터페이스가 된다. 데스크 독을 약속한 콘셉트 단계지만, 모서리 화면이라는 발상은 남길 만하다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/09/24/teenage-engineering-meets-ipod-shuffle-this-music-player-puts-the-screen-where-your-eyes-actually-are/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/09/auto-draft/mad5_hifi_player_1.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/09/auto-draft/mad5_hifi_player_1.jpg",
+  "img": "assets/2026-09-25-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/auto-draft/mad5_hifi_player_1.jpg"
  }
 ]
