@@ -150,7 +150,7 @@ def main(path):
             b = len(c.encode())
             print("card: %d / 4096 bytes (cap %s)" % (b, cap))
             if b > 4096:
-                errs.append("card too large even at minimum cap — shorten summaries")
+                warns.append("card would exceed 4096 bytes (informational: WeCom cards are no longer sent)")
         except Exception as e:
             warns.append("could not size the card: %s" % e)
 

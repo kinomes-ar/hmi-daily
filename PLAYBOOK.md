@@ -6,10 +6,14 @@ https://insight.supermatrix.app (this repository, GitHub Pages). Everything belo
 complete procedure. Work autonomously, do not ask questions, finish with a push to `main`.
 
 Everything in this repo is already wired: pushing `data/<date>.json` triggers
-`.github/workflows/publish.yml` (image fetch + site rebuild) and pushing
-`outbox/card.json` triggers `.github/workflows/wecom.yml` (WeCom webhook). **Your only
-job is to research, write, validate, and push.** Never touch the workflow files, secrets,
+`.github/workflows/publish.yml` (image fetch + site rebuild). **Your only job is to
+research, write, validate, and push.** Never touch the workflow files, secrets,
 `likes.json`, `assets/`, or `CNAME`.
+
+**WeCom cards are no longer sent (decided 2026-09-28).** Do not run `make_card.py` or
+`make_weekly_card.py`, and never commit or push `outbox/card.json`: pushing that file is
+what triggers `.github/workflows/wecom.yml`. The `pick` flags and `blurb` lines are still
+written because the site uses them.
 
 ---
 
@@ -215,9 +219,8 @@ From the repository root:
 TODAY=$(TZ=Asia/Shanghai date +%F)
 python3 feedback.py --fetch --brief            # (already done in step 1 — quotas and source notes)
 python3 check_edition.py data/$TODAY.json     # schema, tags, lengths, domains, dedupe
-python3 make_card.py $TODAY                   # -> outbox/card.json (must print bytes <= 4096)
 python3 build.py standalone                   # regenerates index.html, YYYYMMDD.html, my.html, weekly.html, items.json
-git add data/$TODAY.json outbox/card.json likes.json index.html $(echo $TODAY | tr -d -).html my.html weekly.html items.json
+git add data/$TODAY.json likes.json index.html $(echo $TODAY | tr -d -).html my.html weekly.html items.json
 git -c user.name=kinomes-ar -c user.email=kinomeartemis@gmail.com commit -m "ADUX Daily $TODAY"
 git push origin HEAD:main
 ```
@@ -225,7 +228,7 @@ git push origin HEAD:main
 * `feedback.py --fetch` rewrites `likes.json`; commit it together with the edition (add
   `likes.json` to the `git add` line) so the site's weekly stats stay current.
 * Fix every problem `check_edition.py` reports before continuing (it exits non-zero).
-* If `make_card.py` says the card is too large, shorten the longest summaries or titles.
+  Its `card:` size line is informational only now that no card is sent.
 * Push **directly to `main`** (all history is authored by kinomes-ar, so the push check
   allows it). Do not create a `claude/...` branch or a pull request unless the push to
   main is refused; in that case push the branch, open a PR titled `ADUX Daily <date>`,
@@ -234,8 +237,7 @@ git push origin HEAD:main
   `https://insight.supermatrix.app/<YYYYMMDD>.html` exists (the Action rebuilds the site).
   If that host is unreachable from the sandbox, confirm instead via the GitHub API
   (`https://api.github.com/repos/kinomes-ar/hmi-daily/actions/runs?per_page=3`) that the
-  "Fetch images and rebuild" and "Push card to WeCom" runs succeeded.
-  The WeCom card is sent by the other Action automatically; do not send it yourself.
+  "Fetch images and rebuild" run succeeded. No "Push card to WeCom" run should appear.
 * Never run `cp data/*.json` style bulk copies, never force-push, never amend published
   commits.
 
@@ -283,17 +285,16 @@ previous ISO week) from the five `data/` files of that week.
      concrete consequence for next week — the `next_quotas` numbers and any source that is
      favoured or deprioritised, quoting `quota_notes` — and (c) if reactions were too few to
      move anything, say so and that base quotas apply. Same facts in EN / 中 / 한. This text is
-     shown on the weekly page and in the Monday card, so it must be honest and specific.
+     shown on the weekly page, so it must be honest and specific.
    * Also mention the most-hearted and most-skipped story in `intro`.
    The site computes the per-category / per-source tables itself from `likes.json`; you only
    write the words.
 4. Build and push:
 
 ```bash
-python3 make_weekly_card.py <week>            # -> outbox/card.json (<= 4096 bytes)
 python3 build.py standalone
 printf '\n' >> data/<last Friday>.json         # touches a data file so the rebuild Action runs
-git add weekly/<week>.json likes.json outbox/card.json weekly.html index.html items.json data/<last Friday>.json
+git add weekly/<week>.json likes.json weekly.html index.html items.json data/<last Friday>.json
 git -c user.name=kinomes-ar -c user.email=kinomeartemis@gmail.com commit -m "ADUX Weekly <week>"
 git push origin HEAD:main
 ```
