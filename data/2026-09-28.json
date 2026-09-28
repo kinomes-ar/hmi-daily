@@ -9,7 +9,9 @@
   "ko": "제네시스가 GV90 실내 스크린의 세부를 공개했다. 23.6인치 와이드 OLED(584×219mm, 3840×1440)가 주차 시 브러시리스 모터와 랙앤피니언으로 90mm 솟아 24.6인치 패널을 드러내며 시야 면적이 약 70% 늘고, 차가 움직이면 곧바로 내려간다. 소음은 40dB 이하, 내구 시험은 10만 회다. 주변에는 25인치 HUD, 운전석과 조수석 메뉴 바를 분리한 플레오스 커넥트, 물리 단축 버튼, 180도 회전하는 앞좌석이 있다. 승강 스크린을 주차 모드의 기능으로 설계한 사례다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/genesis-gv90-shows-how-massive-display-grows-even-bigger-for-the-ultimate-in-car-movie-theater/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Original-6816-redefiningspacewiththegenesisgv90rsquosluxuryhometheater-1-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Original-6816-redefiningspacewiththegenesisgv90rsquosluxuryhometheater-1-1024x576.jpg",
+  "img": "assets/2026-09-28-1.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Original-6816-redefiningspacewiththegenesisgv90rsquosluxuryhometheater-1-1024x576.jpg"
  },
  {
   "tag": "Cockpit",
@@ -19,7 +21,9 @@
   "zh": "比亚迪方程豹在Ti 9上市前公开了座舱：这台5270毫米的旗舰SUV配30英寸悬浮中控屏、液晶仪表和HUD，换挡拨杆置于方向盘后，中央通道在无线充电板和双杯架旁保留了一组实体控制键。展车为白色内饰配金色饰件，A柱和顶棚包覆麂皮，门板极简，扶手冰箱可供第二排使用，提供三种座椅布局。插混系统综合400千瓦，纯电续航310公里。",
   "ko": "BYD의 오프로드 브랜드 팡청바오가 중국 출시를 앞두고 전장 5,270mm 플래그십 SUV Ti 9의 실내를 공개했다. 30인치 플로팅 센터 스크린 아래 LCD 계기판과 HUD를 두고, 변속 레버는 스티어링 휠 뒤 컬럼식으로 옮겼으며, 센터 터널에는 무선 충전 패드와 컵홀더 옆에 물리 조작 블록을 남겼다. 전시차는 흰색 실내에 금색 포인트, 필러와 천장은 스웨이드, 2열용 냉장고가 암레스트에 있다. 시트 배치는 세 가지, 플러그인 하이브리드 합산 400kW, 전기 주행 310km다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/25/byd-fang-cheng-bao-ti-9-revealed-interior-ahead-of-launch-in-china/"
+  "url": "https://carnewschina.com/2026/09/25/byd-fang-cheng-bao-ti-9-revealed-interior-ahead-of-launch-in-china/",
+  "img": "assets/2026-09-28-2.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/byd_fang_cheng_bao_ti_9_interior_webhook_1500x900_q85_1790312732.jpg"
  },
  {
   "tag": "Motion",
@@ -31,7 +35,9 @@
   "ko": "위저즈 오브 더 코스트의 10월 2일 발매 세트 '리얼리티 프랙처'를 위해 파리 스튜디오 유닛 모션 디자인이 예고편을 네 장의 스테인드글라스 벽화로 구성했다. 제이스의 과거, 변화, 부상, 최후의 대결을 기존 카드 아트에서 납선의 제약 안으로 다시 그렸다. 후디니 프로시저럴 시스템이 유리 조각을 생성해 관리하고, 전용 셰이더가 유리의 두께와 역광 색을 만들며, 카메라는 세트처럼 벽화 사이를 통과한다. 목소리는 놀런 노스다. 평면 그래픽 언어를 빛과 부피가 있는 화면으로 바꾼 참고 사례다.",
   "src": "Stash",
   "url": "https://www.stashmedia.tv/unit-motion-design-fractures-reality-in-new-mtg-trailer/",
-  "video": "https://vimeo.com/1226653643"
+  "video": "https://vimeo.com/1226653643",
+  "img": "assets/2026-09-28-3.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Magic-The-Gathering-Fractured-Reality-trailer-by-Unit-Motion-Design-_-STASH-MAGAZINE9.jpg"
  },
  {
   "tag": "AI",
@@ -52,7 +58,9 @@
   "zh": "长安马自达新款CX-6e放弃了马自达“少屏多键”的座舱哲学：26.45英寸5K屏从中控延伸至副驾，实体按键极少；50英寸HUD标配，100英寸选装。车顶激光雷达、3个毫米波雷达、11个摄像头和12个超声波传感器支撑“高阶L2”，覆盖高速变道、城市环岛、掉头等200多个场景。激光雷达版起售价145,900元（约21,700美元），提供纯电和增程版本。曾为物理旋钮辩护的品牌，在中国全面走向玻璃屏。",
   "ko": "창안과 함께 중국에서 만드는 마쓰다 CX-6e 부분변경 모델이 마쓰다 특유의 '스크린은 작게, 버튼은 많이' 실내를 버렸다. 26.45인치 5K 디스플레이가 센터에서 조수석까지 이어지고 물리 스위치는 최소화됐으며, 50인치 HUD가 기본, 100인치가 옵션이다. 루프 라이다와 레이더 3개, 카메라 11개, 초음파 센서 12개가 고속도로 차선 변경부터 도심 회전교차로와 유턴까지 200여 개 상황을 다루는 '고급 L2'를 받친다. 라이다 트림은 145,900위안(약 21,700달러)부터로 EV와 EREV로 나온다. 다이얼을 옹호하던 브랜드가 중국에서는 전면 유리로 갔다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/27/mazda-cx-6e-refreshed-with-lidar-self-driving-launches-at-21700-usd-in-china/"
+  "url": "https://carnewschina.com/2026/09/27/mazda-cx-6e-refreshed-with-lidar-self-driving-launches-at-21700-usd-in-china/",
+  "img": "assets/2026-09-28-5.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/ez60_r.jpg"
  },
  {
   "tag": "Visual",
@@ -63,7 +71,9 @@
   "zh": "Design Bridge and Partners把都灵糖果老牌Leone的现役生产线改造成2000平方米、14个主题区的“幸福工厂”。外立面从陶土屋瓦过渡到糖果条纹外墙，金色手写体像糖霜一样涂在墙上；2022年包装系统里的草莓、榛子和紫罗兰被放大到建筑尺度，配以手绘招牌字。动线不靠屏幕：带窥孔的压花糖模、贴标抽屉组成的香精药房、亚克力柜中的档案产品。一套包装设计从货架走进了空间。",
   "ko": "디자인 브리지 앤 파트너스가 토리노의 사탕 회사 레오네의 실제 생산 라인을 14개 주제 구역, 2,000㎡의 체험 공간 '해피니스 팩토리'로 바꿨다. 외관은 테라코타 기와에서 사탕 줄무늬 외장으로 이어지고 금색 필기체는 아이싱처럼 얹혔으며, 2022년 포장 시스템의 딸기, 헤이즐넛, 제비꽃이 건축 규모로 확대되어 손으로 그린 간판 글씨와 함께 놓였다. 안내는 화면 대신 구멍 뚫린 엠보싱 사탕 틀, 라벨 붙은 향료 서랍의 약방, 아크릴 속 아카이브 제품으로 이뤄진다. 포장 시스템이 선반을 떠나 공간이 됐다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/work/design-bridge-and-partners-turns-leones-turin-sweet-factory-into-a-willy-wonka-world/"
+  "url": "https://www.creativeboom.com/work/design-bridge-and-partners-turns-leones-turin-sweet-factory-into-a-willy-wonka-world/",
+  "img": "assets/2026-09-28-6.webp",
+  "img_src": "https://media.creativeboom.com/e5a4bf73-4a80-4758-952f-94acf11f77c9/conversions/7c74383ee675c565a50a5bca3686d8344ec2bb36-medium.webp"
  },
  {
   "tag": "Realtime",
@@ -74,7 +84,9 @@
   "zh": "概念总监Volodymyr Donchenko花了数年在Unreal Engine 5中打造Gridscape——受《黑客帝国：觉醒》启发的悬浮飞行器飞行体验：浓雾笼罩的废弃都市由数百万个实例化资产组成，用Nanite、Lumen、MegaLights、Ultra Dynamic Sky和EasyFog渲染，再以LUT调色。资产来自3ds Max与Corona旧档以及Blender（Zen Sets、NOVA程序纹理），散布靠蓝图驱动，地图采用World Partition。配乐由他本人创作，还自制散热装置让RTX 4090笔记本撑住。一个人回应Epic的技术演示。",
   "ko": "컨셉 디렉터 볼로디미르 돈첸코가 수년에 걸쳐 언리얼 엔진 5로 '매트릭스 어웨이큰스'에서 영감을 받은 호버크래프트 비행 체험 '그리드스케이프'를 만들었다. 안개에 잠긴 버려진 도시는 수백만 개의 인스턴스 에셋으로 이뤄지고 나나이트와 루멘, 메가라이츠, 울트라 다이내믹 스카이, 이지포그로 렌더링한 뒤 LUT로 색을 입혔다. 에셋은 3ds 맥스와 코로나 아카이브, 젠 세츠와 NOVA를 쓴 블렌더에서 왔고 배치는 블루프린트, 맵은 월드 파티션을 쓴다. 음악도 직접 썼고 RTX 4090 노트북용 냉각 장치를 손수 만들었다. 에픽의 기술 데모에 대한 1인 답변이다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/how-to-create-futuristic-hovercraft-flight-simulator-inspired-by-matrix"
+  "url": "https://80.lv/articles/how-to-create-futuristic-hovercraft-flight-simulator-inspired-by-matrix",
+  "img": "assets/2026-09-28-7.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50387/images/6ab6bf75f1bcc/contain_1200x630.jpg"
  },
  {
   "tag": "Cockpit",
@@ -84,7 +96,9 @@
   "zh": "继上周的设计草图之后，CarNewsChina拿到了第二代比亚迪海鸥的座舱：驾驶员仪表被取消，行车信息移到抬高的悬浮中控屏；换挡改为怀挡，方向盘改为双辐。中央出风口下方保留一排实体按键，抬高的中央桥架放两个杯架和无线充电板，下方留有开放储物；翼形门把手换成常规拉手。车长增至4205毫米、轴距2650毫米，由四座改为五座；后驱和前备厢均为首次出现。特斯拉式布局进入比亚迪最便宜的车型。",
   "ko": "지난주 디자인 스케치에 이어 카뉴스차이나가 2세대 BYD 시걸의 실내를 확보했다. 운전석 계기판이 사라지고 주행 정보는 높게 띄운 플로팅 센터 스크린으로 옮겨가며, 변속 레버는 컬럼 스토크로, 스티어링 휠은 2스포크로 바뀐다. 중앙 송풍구 아래 물리 버튼이 한 줄 남고, 높인 브리지에는 컵홀더 두 개와 무선 충전 패드, 그 아래 개방형 수납이 있으며 날개 모양 도어 손잡이는 일반 손잡이가 됐다. 차체는 휠베이스 2,650mm에 전장 4,205mm로 커져 5인승이 됐고 후륜구동과 프렁크가 새로 더해졌다. 테슬라식 배치가 BYD의 가장 싼 차에 들어온다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/25/second-gen-byd-seagull-cabin-revealed-as-ev-grows-into-a-4-2-meter-five-seat-hatchback/"
+  "url": "https://carnewschina.com/2026/09/25/second-gen-byd-seagull-cabin-revealed-as-ev-grows-into-a-4-2-meter-five-seat-hatchback/",
+  "img": "assets/2026-09-28-8.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/create-image-in-image_webhook_1350x810_q85_1790306424.jpg"
  },
  {
   "tag": "Design",
@@ -94,7 +108,9 @@
   "zh": "小米汽车设计负责人李田原（Sawyer Li）——曾是首位进入宝马慕尼黑总部的中国设计师——向CarNewsChina讲解Skynomad系列：N70 SUV、风阻0.255的N90跨界车，以及带电动升顶座舱的N90 Max。他主张用双眼式大灯取代一字灯“机器人脸”，通过机盖角度、风挡过渡和尾部几何打磨出安静的曲面，并让前排座椅旋转成客厅布局。他对HMI的看法：技术不必总是可见，它退后一步，需要时再出现。",
   "ko": "BMW 뮌헨 본사에 들어간 첫 중국인 디자이너였던 샤오미 오토 디자인 총괄 리톈위안(소여 리)이 카뉴스차이나에 스카이노마드 제품군을 설명했다. N70 SUV, 공기저항계수 0.255의 N90 크로스오버, 전동 팝업 루프 캐빈을 갖춘 N90 맥스다. 그는 한 줄 램프의 '로봇 얼굴' 대신 두 눈 같은 헤드램프를, 보닛 각도와 윈드실드 전환부, 후면 형상을 다듬어 얻는 차분한 면을, 라운지 배치로 회전하는 앞좌석을 내세운다. HMI에 대한 그의 말은 이렇다. 기술은 늘 보일 필요가 없고, 뒤로 물러나 있다가 필요할 때 나타난다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/09/25/xiaomi-auto-head-of-design-explains-the-skynomad-lineup/"
+  "url": "https://carnewschina.com/2026/09/25/xiaomi-auto-head-of-design-explains-the-skynomad-lineup/",
+  "img": "assets/2026-09-28-9.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/09/xiaomi_design_skynomad-1500x844.jpg"
  },
  {
   "tag": "Cockpit",
@@ -104,7 +120,9 @@
   "zh": "Car Design News试驾了e-208 GTI——281马力的纯电小钢炮复刻了205 GTI的符号：红色地毯，座椅、方向盘和仪表台上的红色条纹，炭灰仿皮拼黑红千鸟格的分体座椅。换挡拨杆坐在带金属罩的独立凹槽里，中控触摸屏有清晰的锚点，只是踏板略挤。车外，车身降低30毫米，前轮距加宽56毫米，红线勾勒轮拱，爪痕尾灯以亮黑框住。售价35,000英镑起。传承靠材质而非屏幕来表达。",
   "ko": "카 디자인 뉴스가 205 GTI의 단서를 되살린 281마력 전기 핫해치 e-208 GTI를 시승했다. 붉은 카펫, 시트와 휠, 계기판의 붉은 줄무늬, 차콜 인조가죽에 검정과 빨강 하운드투스 직물을 짝지은 분할 시트가 그것이다. 변속 셀렉터는 금속 덮개를 두른 독립 홈에 앉고, 터치스크린은 명확한 기준점을 갖췄지만 페달 간격은 좁다. 외관은 차고가 30mm 낮아지고 앞 트레드가 56mm 넓어졌으며, 붉은 선이 휠아치를 두르고 발톱 테일램프는 유광 검정 틀로 감쌌다. 35,000파운드부터다. 유산을 화면이 아니라 소재로 다뤘다.",
   "src": "Car Design News",
-  "url": "https://www.cardesignnews.com/cars/design-driven-peugeot-e-208-gti/2742040"
+  "url": "https://www.cardesignnews.com/cars/design-driven-peugeot-e-208-gti/2742040",
+  "img": "assets/2026-09-28-10.jpg",
+  "img_src": "https://image.cardesignnews.com/2742048.jpg?imageId=2742048&x=0&y=19.72&cropw=100&croph=71.67&panox=0&panoy=19.72&panow=100&panoh=71.67&width=1200&height=683"
  },
  {
   "tag": "Industrial",
@@ -114,7 +132,9 @@
   "zh": "Sacreblue Studio的Alex Dufetel做了一台智能灯光控制台：实心胡桃木机身里装着四支电动推子。用旋钮选定房间，推子会自动滑到该房间灯光当前的位置；在手机上调暗，实体推子也随之移动，硬件永远不会“说谎”。四个按键存储预设，含义随所选房间改变。旋钮与推子帽为CNC铝件。借自调音台的电动推子，是“屏幕与旋钮共享控制”这一座舱难题目前最干净的答案。",
   "ko": "사크르블루 스튜디오의 알렉스 뒤페텔이 통호두나무 몸체에 모터 페이더 네 개를 넣은 스마트홈 조명 컨트롤러를 만들었다. 로터리 노브로 방을 고르면 페이더가 그 방 조명의 현재 값으로 스스로 미끄러지고, 휴대전화로 밝기를 낮추면 물리 슬라이더가 따라 움직여 하드웨어가 상태를 속이지 않는다. 버튼 네 개는 선택된 방에 따라 의미가 바뀌는 프리셋을 담는다. 노브와 페이더 캡은 CNC 가공 알루미늄이다. 믹싱 콘솔에서 가져온 모터 페이더는 화면과 노브가 제어를 나눠 갖는 모든 콕핏의 문제에 대한 가장 깔끔한 답이다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/27/this-walnut-console-has-faders-that-move-themselves-to-match-your-lights/"
+  "url": "https://www.yankodesign.com/2026/09/27/this-walnut-console-has-faders-that-move-themselves-to-match-your-lights/",
+  "img": "assets/2026-09-28-11.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/this-walnut-console-has-faders-that-move-themselves-to-match-your-lights/physical-console-smart-lights-05.jpg"
  },
  {
   "tag": "Visual",
@@ -124,7 +144,9 @@
   "zh": "Uncommon为The Ordinary做的“元素周期寓言”拿下D&AD黑铅笔：一张“什么都没有”的周期表，收录elixir、age-defying、flawless等49个美妆营销词，每一个都经科学家核查、确认没有科学含义，以冷峻的单色字体排成元素格。户外投放既有单个元素也有整张表；Olivia De Camps执导的发布片让被催眠的学生一边做冰滚一边念咒般背诵这些词，致敬苹果《1984》。成效：网站流量11.8倍。一套严格的排版系统撑起了整个战役。",
   "ko": "언커먼이 디 오디너리를 위해 만든 '주기율 우화'가 D&AD 블랙 펜슬을 받았다. 'elixir', 'age-defying', 'flawless' 같은 뷰티 마케팅 단어 49개를 과학자와 검증해 과학적 의미가 없음을 확인한 뒤, 차가운 단색 서체의 원소 타일로 짠 '아무것도 없는' 주기율표다. 옥외 광고는 원소 하나짜리와 전체 표로 나갔고, 올리비아 드 캉이 연출한 론칭 필름은 최면에 걸린 학생들이 아이스 롤링을 하며 단어를 읊는 장면으로 애플 '1984'에 눈짓한다. 성과는 사이트 트래픽 11.8배다. 엄격한 타이포그래피 체계 하나로 캠페인 전체를 끌고 갔다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/insight/beauty-brands-were-writing-ai-slop-before-ai-heres-how-uncommon-won-a-dad-black-pencil-for-calling-it-out/"
+  "url": "https://www.creativeboom.com/insight/beauty-brands-were-writing-ai-slop-before-ai-heres-how-uncommon-won-a-dad-black-pencil-for-calling-it-out/",
+  "img": "assets/2026-09-28-12.webp",
+  "img_src": "https://media.creativeboom.com/71b8fe8a-2e18-40cd-b3f9-5dc844a3c5f3/conversions/654f1ea4f092f45e68df06091dbe040ccbc02a14-medium.webp"
  },
  {
   "tag": "Realtime",
@@ -134,7 +156,9 @@
   "zh": "材质公司colormass在library.colormass.com免费开放177种扫描材质，个人与商业项目均可使用：木材、玻璃、漆面、陶瓷、合成革、牛仔布、亚麻、棉、粘胶，以及树叶、泥土等有机材质。每种材质由公司自研的SVBRDF扫描台采集——高显色LED下的移动平台配工业相机——再处理成每种8张PBR贴图，以TIFF交付，适用于任何基于物理的渲染器。对CMF工作而言，这些是真实织物与表面，可直接放进Unreal、Blender或Substance场景。",
   "ko": "소재 기업 컬러매스가 library.colormass.com에서 스캔한 소재 177종을 개인과 상업 용도 모두 무료로 풀었다. 목재, 유리, 도료, 세라믹, 합성피혁, 데님, 리넨, 면, 비스코스, 그리고 잎과 흙 같은 유기 소재다. 각 소재는 고연색 LED 아래 이동 테이블과 산업용 카메라로 이뤄진 자체 SVBRDF 장비로 촬영한 뒤 소재당 8장의 PBR 맵으로 가공해 TIFF로 제공되며 어떤 물리 기반 렌더러에도 쓸 수 있다. CMF 작업에서 이는 그려낸 근사치가 아니라 실제 직물과 마감이며 언리얼, 블렌더, 서브스턴스 장면에 바로 들어간다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/get-these-177-svbrdf-scanned-textures-for-free"
+  "url": "https://80.lv/articles/get-these-177-svbrdf-scanned-textures-for-free",
+  "img": "assets/2026-09-28-13.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50381/images/6ab68ec7ec1eb/contain_1200x630.jpg"
  },
  {
   "tag": "Micromobility",
@@ -144,7 +168,9 @@
   "zh": "Motion Rivalry的REACH是一台3.5英寸、阳光下可读的运动码表，顶部开源接口可扣接模块：24GHz毫米波后视雷达（5–30米）、1080p60摄像头、1–2公里对讲机和风速计。装在自行车上，它仅凭运动数据估算踏频与功率，无需外接传感器；底部可编程RGB灯带显示训练区间，骑行数据以FIT、GPX或CSV导出并同步Strava。同一主机可换到赛艇、皮划艇和滑翔伞。Kickstarter售价359美元，标价599美元。滑板车仪表可以借鉴这种配件轨道思路。",
   "ko": "모션 라이벌리의 REACH는 햇빛 아래서도 읽히는 3.5인치 스포츠 컴퓨터로, 상단의 오픈소스 커넥터에 모듈을 끼운다. 24GHz 밀리미터파 후방 레이더(5~30m), 1080p60 카메라, 1~2km 무전기, 풍속계가 있다. 자전거에서는 외부 센서 없이 움직임만으로 케이던스와 파워를 추정하고, 바닥의 RGB 띠가 훈련 구간을 보여주며, 기록은 FIT, GPX, CSV로 스트라바에 보낸다. 같은 본체를 조정, 카약, 패러글라이딩에 옮겨 쓸 수 있다. 킥스타터 가격은 359달러, 정가는 599달러다. 스쿠터 계기판이 배울 만한 액세서리 레일 방식이다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/09/25/reach-is-a-modular-sports-gps-computer-built-to-snap-into-any-sport/"
+  "url": "https://www.yankodesign.com/2026/09/25/reach-is-a-modular-sports-gps-computer-built-to-snap-into-any-sport/",
+  "img": "assets/2026-09-28-14.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/09/reach-is-a-modular-gps-sports-computer-built-to-snap-into-any-sport/REACH-Worlds-First-Modular-Multi-Sport-GPS-Computer-hero.jpg"
  },
  {
   "tag": "Cockpit",
@@ -155,7 +181,9 @@
   "ko": "알파 로메오가 아메리카스컵 요트팀 루나 로사의 색을 유럽 라인업 주니어, 토날레, 줄리아, 스텔비오에 입혔다. 주니어와 토날레는 회색에 유광 검정 장식과 붉은 줄무늬, 18인치 또는 20인치 검정 다이아몬드 컷 3스포크 휠을 쓰고, 줄리아와 스텔비오는 안팎에 카본을 두른 올블랙이거나 흰색, 에트나 레드로 나온다. 네 차종 모두 루나 로사 글자가 든 붉은 줄무늬의 검정·회색 3D 니트 직물, 붉은 엠블럼, 알루미늄 페달, 앰비언트 조명, 전용 디지털 계기판 그래픽을 공유한다. 콰드리폴리오는 제외된다. 도장을 넘어 계기판 테마까지 닿는 CMF 패키지다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/09/alfa-romeo-edizione-luna-rossa/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/alfa-romeo-edizione-luna-rossa-copya-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/alfa-romeo-edizione-luna-rossa-copya-1024x576.jpg",
+  "img": "assets/2026-09-28-15.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/alfa-romeo-edizione-luna-rossa-copya-1024x576.jpg"
  },
  {
   "tag": "Micromobility",
@@ -166,6 +194,8 @@
   "ko": "두카티 2027년형 물티스트라다 V4 파이크스 피크는 기계적으로는 아무것도, 그래픽으로는 모든 것을 바꿨다. 모토GP와 월드 슈퍼바이크 머신에서 가져온 검정 바탕의 빨강·흰색 도장, 두카티 코르세 표기, 사이드 패널의 1번 레이싱 플레이트 모티프가 더해졌다. 스포츠 투어링 기함이 레이스 바이크 옷을 입은 셈이며 두카티 팩토리 메이드 프로그램으로 추가 개인화도 된다. 레이싱 아이덴티티가 공도용 바이크의 패널 분할선 위로 어떻게 옮겨지는지, 플레이트 위치와 탱크 이음선을 따르는 줄무늬, 검정으로 남는 부위를 보여주는 깔끔한 사례다.",
   "src": "Motorcycle.com",
   "url": "https://www.motorcycle.com/bikes/new-model-preview/s-2027-ducati-multistrada-v4-pikes-peak-receives-racing-inspired-livery-44672038",
-  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/24/16341/s-2027-ducati-multistrada-v4-pikes-peak-receives-racing-inspired-livery.jpg?size=720x845&nocrop=1"
+  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/09/24/16341/s-2027-ducati-multistrada-v4-pikes-peak-receives-racing-inspired-livery.jpg?size=720x845&nocrop=1",
+  "img": "assets/2026-09-28-16.jpg",
+  "img_src": "https://cdn-fastly.motorcycle.com/media/2026/09/24/16341/s-2027-ducati-multistrada-v4-pikes-peak-receives-racing-inspired-livery.jpg?size=720x845&nocrop=1"
  }
 ]
