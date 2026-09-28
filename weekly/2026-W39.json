@@ -1,0 +1,181 @@
+{
+ "week": "2026-W39",
+ "from": "2026-09-21",
+ "to": "2026-09-25",
+ "title": {
+  "en": "China stacks HUDs to 88 inches, Renault and Bentley keep the dials, and Night City's hand-built adverts take the week's hearts",
+  "zh": "中国把HUD堆到88英寸，雷诺与宾利留住旋钮，手工搭建的夜之城广告拿下本周最多红心",
+  "ko": "중국은 HUD를 88인치까지 쌓고, 르노와 벤틀리는 다이얼을 지켰으며, 손으로 지은 나이트 시티의 광고가 이번 주 하트를 가져갔다"
+ },
+ "intro": {
+  "en": "Five editions, 80 stories, 8 hearts and a single skip. The week's arc ran in two directions at once. China kept stacking glass: Xpeng's G9L with an 88-inch AR-HUD, Hyundai's Ioniq V with a HUD in place of a cluster, Denza's 50-inch HUD, VW's ID. Unyx 09 at 85 inches. Europe answered with restraint: Bentley's Torcal kept its knurled switches, Renault's 8 Gordini concept ran six dials and no screen, and Core77 called the EX30's minimalism cost-cutting. The most-hearted story was 80 Level's Night City interview, Cyberpunk's adverts built by hand (two hearts); Realtime took three hearts in all. The only skip went to PRINT's Fonts & AI conference notice. Across every beat the question was the same: what a screen should be allowed to replace.",
+  "zh": "五期、80条、8颗红心、1次“不想看”。本周的主线同时朝两个方向走。中国继续堆玻璃：小鹏G9L的88英寸AR-HUD、现代Ioniq V用HUD取代仪表、腾势Z9S的50英寸HUD、大众ID. Unyx 09的85英寸。欧洲以克制回应：宾利Torcal留住滚花开关，雷诺8 Gordini概念车只有六个表盘没有屏幕，Core77把EX30的极简称作降本。红心最多的是80 Level的夜之城访谈——《赛博朋克2077》的广告全靠手工搭建（2颗）；实时图形板块共拿下3颗。唯一的“不想看”给了PRINT的Fonts & AI会议预告。各个板块问的都是同一个问题：屏幕被允许取代什么。",
+  "ko": "5개 에디션, 80건, 하트 8개, 스킵 1개. 이번 주의 흐름은 두 방향으로 동시에 흘렀다. 중국은 계속 유리를 쌓았다. 88인치 AR-HUD의 샤오펑 G9L, 클러스터 대신 HUD를 둔 현대 아이오닉 V, 덴자의 50인치 HUD, 85인치의 폭스바겐 ID. 우닉스 09. 유럽은 절제로 답했다. 벤틀리 토르칼은 널링 스위치를 지켰고, 르노 8 고르디니 컨셉은 화면 없이 다이얼 여섯 개를 달았으며, 코어77은 EX30의 미니멀리즘을 원가 절감이라 불렀다. 가장 많은 하트는 사이버펑크의 광고를 손으로 지은 나이트 시티 인터뷰(80 레벨, 2개)에 갔고 리얼타임 부문이 총 3개를 받았다. 유일한 스킵은 프린트의 폰트 & AI 콘퍼런스 공지였다. 모든 부문이 같은 질문을 던졌다. 화면이 무엇을 대체해도 되는가."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Twelve cabins, one heart (Ceer's EXOBOT). The HUD became the cluster: Xpeng's G9L heads to Paris with an 88-inch AR-HUD and a 21.4-inch ceiling screen, Denza's Z9S pairs a 50-inch HUD with a floating 17.3-inch display, VW's ID. Unyx 09 runs an 85-inch AR-HUD beside a separate cluster. Ceer's EXOBOT, from a blank-sheet Saudi OEM, went maximalist with a 48-inch 8K strip and a 160-degree yoke. The counter-current: Bentley's Torcal keeps knurled switches and skips a passenger screen, Changan's Nevo Q06 ships real buttons under a 15.6-inch screen, Renault's 8 Gordini concept has six dials and no screen, and FAW's TL.X truck lets the AI glow through fabric.",
+   "zh": "12个座舱，1颗红心（Ceer EXOBOT）。HUD正在变成仪表：小鹏G9L带着88英寸AR-HUD和21.4英寸顶棚屏奔赴巴黎，腾势Z9S把50英寸HUD与悬浮17.3英寸屏搭配，大众ID. Unyx 09在独立仪表旁放了85英寸AR-HUD。沙特白纸起家的Ceer EXOBOT走极繁路线：48英寸8K长条屏加160度行程的轭式方向盘。逆流的一边：宾利Torcal留住滚花开关、不设副驾屏，长安启源Q06在15.6英寸屏下保留实体按键，雷诺8 Gordini概念车六个表盘、没有屏幕，一汽解放TL.X卡车让AI从织物后面发光。",
+   "ko": "캐빈 12건에 하트 1개(시어 엑소봇). HUD가 클러스터가 됐다. 샤오펑 G9L은 88인치 AR-HUD와 21.4인치 천장 화면을 달고 파리로 가고, 덴자 Z9S는 50인치 HUD에 플로팅 17.3인치 화면을 짝지었으며, 폭스바겐 ID. 우닉스 09는 별도 클러스터 옆에 85인치 AR-HUD를 둔다. 백지에서 출발한 사우디 시어의 엑소봇은 48인치 8K 스트립과 160도 요크로 맥시멀리즘을 택했다. 반대 흐름도 있다. 벤틀리 토르칼은 널링 스위치를 지키고 조수석 화면을 뺐고, 창안 네보 Q06은 15.6인치 화면 아래 실제 버튼을 실었으며, 르노 8 고르디니 컨셉은 화면 없이 다이얼 여섯 개, FAW TL.X 트럭은 직물 뒤에서 AI가 빛난다.",
+   "items": [
+    "2026-09-21-1",
+    "2026-09-22-2",
+    "2026-09-24-1",
+    "2026-09-24-2",
+    "2026-09-25-2",
+    "2026-09-25-9",
+    "2026-09-22-7",
+    "2026-09-24-8"
+   ]
+  },
+  {
+   "tag": "Interaction",
+   "en": "Seven stories, one heart, for the new Tucson: Hyundai's first SUV on Pleos keeps clicky wheel buttons under a tablet screen and reverses itself out of a tight bay. The Ioniq V for China drops the cluster for a HUD and a single 27-inch 4K slab on Snapdragon 8295. BMW Maps will draw route, sensor view and active assistants in one 3D map from October; the ID. Cross ships a Golf Mk1 retro cluster theme; Porsche makes 11 kW wireless charging a Cayenne option. Core77 argued the EX30's no-cluster, no-HUD minimalism is cost-cutting, and Yanko weighed the Z Fold8's eight-slot taskbar against the iPhone Duo.",
+   "zh": "7条，1颗红心，给了新途胜：现代首款搭载Pleos的SUV在平板屏下保留了手感清脆的方向盘按键，还能自己倒出狭窄车位。中国版Ioniq V取消仪表，改用HUD加一块27英寸4K整屏，芯片为骁龙8295。BMW Maps从10月起把路线、传感器视图和工作中的辅助功能画进同一幅3D地图；ID. Cross出厂即带高尔夫Mk1复古仪表主题；保时捷把11千瓦无线充电列为Cayenne选装。Core77认为EX30无仪表、无HUD的极简其实是降本，Yanko则把Z Fold8的八格任务栏与iPhone Duo作了比较。",
+   "ko": "7건에 하트 1개, 신형 투싼에 갔다. 플레오스를 얹은 현대의 첫 SUV는 태블릿 화면 아래 딸깍이는 휠 버튼을 남기고 좁은 주차칸에서 스스로 후진해 나온다. 중국용 아이오닉 V는 클러스터를 빼고 HUD와 스냅드래곤 8295 위의 27인치 4K 화면 한 장으로 갔다. BMW 맵스는 10월부터 경로와 센서 뷰, 작동 중인 보조 기능을 3D 지도 하나에 그리고, ID. 크로스는 골프 Mk1 레트로 클러스터 테마를 싣고 나오며, 포르쉐는 11kW 무선 충전을 카이엔 옵션으로 넣었다. 코어77은 클러스터도 HUD도 없는 EX30의 미니멀리즘을 원가 절감이라 했고, 얀코는 Z 폴드8의 8칸 태스크바를 아이폰 듀오와 견줬다.",
+   "items": [
+    "2026-09-22-1",
+    "2026-09-23-1",
+    "2026-09-25-1",
+    "2026-09-22-12",
+    "2026-09-21-9",
+    "2026-09-25-6",
+    "2026-09-24-11"
+   ]
+  },
+  {
+   "tag": "AI",
+   "en": "Ten AI stories drew no hearts and the week's only skip, PRINT's notice for the Fonts & AI conference. The tool news was integration: Adobe put Photoshop, Lightroom, Express and Firefly inside Gemini and 80 tools inside Claude; Googlebook summons Gemini with a cursor wiggle, from $899. Hardware went small and single-purpose: Lapis One, a $499 desk box that only runs agents; MATE, a sticky note that sets its own alarm from handwriting; Comu's 7 mm recorder that drafts the follow-up; Ray-Ban Meta Audio glasses at 43 g with no camera. ZuckOff and SweepLED, two ways to spot cameras in a room, were the counter-programming.",
+   "zh": "10条AI，0颗红心，本周唯一的“不想看”也在这里：PRINT的Fonts & AI会议预告。工具新闻的关键词是整合：Adobe把Photoshop、Lightroom、Express和Firefly放进Gemini，80个工具接入Claude；Googlebook晃动光标即可召唤Gemini，899美元起。硬件走向小而专：只跑智能体的499美元桌面盒子Lapis One、看懂手写就自动设闹钟的便签MATE、会写跟进邮件的7毫米录音笔Comu、43克无摄像头的Ray-Ban Meta Audio眼镜。ZuckOff和SweepLED是反向节目：两种在房间里找出摄像头的办法。",
+   "ko": "AI 10건은 하트를 받지 못했고 이번 주 유일한 스킵인 프린트의 폰트 & AI 콘퍼런스 공지가 여기 있었다. 도구 소식은 통합이었다. 어도비는 포토샵, 라이트룸, 익스프레스, 파이어플라이를 제미나이에, 도구 80개를 클로드에 넣었고, 구글북은 커서를 흔들면 제미나이가 나타나며 899달러부터다. 하드웨어는 작고 단일 목적으로 갔다. 에이전트만 돌리는 499달러 데스크 박스 라피스 원, 손글씨로 알람을 스스로 맞추는 메모지 MATE, 후속 메일을 써 주는 7mm 녹음기 코무, 카메라 없는 43g 레이밴 메타 오디오 안경. 방 안의 카메라를 찾는 두 방법 ZuckOff와 SweepLED는 반대편 프로그램이었다.",
+   "items": [
+    "2026-09-25-3",
+    "2026-09-23-11",
+    "2026-09-21-2",
+    "2026-09-21-12",
+    "2026-09-23-6",
+    "2026-09-22-4",
+    "2026-09-25-11",
+    "2026-09-24-5"
+   ]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "Eleven stories, one heart, for Honda's Onitsuka Tiger collaboration: a mid-size sports bike in Tiger Yellow with sneaker stripes at the SS27 show in Milan. Honda had a busy week, with its first e-MTB and an SH Mode 125 that trades dials for a 4.2-inch colour TFT and USB-C. Ducati's Desmo450 SM brought fall detection and an X-Link app to a 109 kg supermoto; KTM's 450 Rally Replica stacks roadbook, controls and LED in a carbon tower; Kawasaki's Ninja H2 returned to Europe with a two-mode dash. Stark's Sköll beat an Audi R8 LMS on a 1923 oval, and Giugiaro turned the Topolino into a rope-doored speedster.",
+   "zh": "11条，1颗红心，给了本田与鬼塚虎的合作：米兰SS27秀场上一台虎黄色、带运动鞋条纹的中型运动摩托。本田这周很忙：首款电动山地车，以及把表盘换成4.2英寸彩色TFT和USB-C的SH Mode 125。杜卡迪Desmo450 SM给109公斤的滑胎车配上跌倒检测和X-Link应用；KTM 450 Rally Replica把路书、控制器和LED叠进碳纤维导航塔；川崎Ninja H2带着双模式仪表重返欧洲。Stark Sköll在1923年的椭圆赛道上跑赢奥迪R8 LMS，乔治亚罗把Topolino改成绳索车门的speedster。",
+   "ko": "11건에 하트 1개, 혼다와 오니츠카 타이거의 협업에 갔다. 밀라노 SS27 쇼에 나온 스니커 줄무늬의 타이거 옐로 미드사이즈 스포츠 바이크다. 혼다는 첫 e-MTB와 다이얼 대신 4.2인치 컬러 TFT와 USB-C를 넣은 SH 모드 125로 바쁜 한 주를 보냈다. 두카티 데스모450 SM은 109kg 슈퍼모토에 낙차 감지와 X-링크 앱을 더했고, KTM 450 랠리 레플리카는 로드북과 조작계, LED를 카본 타워에 쌓았으며, 가와사키 닌자 H2는 2모드 계기판으로 유럽에 돌아왔다. 스타크 스콜은 1923년 오벌에서 아우디 R8 LMS를 이겼고, 주지아로는 토폴리노를 로프 도어 스피드스터로 바꿨다.",
+   "items": [
+    "2026-09-24-4",
+    "2026-09-22-6",
+    "2026-09-24-12",
+    "2026-09-21-7",
+    "2026-09-22-14",
+    "2026-09-25-12",
+    "2026-09-23-7",
+    "2026-09-21-13"
+   ]
+  },
+  {
+   "tag": "Visual",
+   "en": "Twelve Visual stories, one heart, for designboom's interview with Aarke on why minimalism feels cold when it is empty of narrative. Branding led: McLaren's new all-caps wordmark comes from a 1920s garage sign, Studio Blackburn folded a C and an H into a house-shaped frame for Culture House, Rethink turned a YWCA hotel into Hotel Willo's looping willow, and Odds gave Alaena a Snellen-chart, Colorplan-blue identity. Type came from September's drop: Exemplar in 370 languages, a jumbo Peignot, a 14-style Brunel. In art, a 30 m gold ouroboros hung under the High Line and Renée Levi wrapped the Hayward in fluorescent strokes.",
+   "zh": "12条视觉类，1颗红心，给了designboom对Aarke的访谈——“空无叙事的极简会显得冰冷”。品牌是主角：迈凯伦全大写的新字标源自1920年代的车库招牌，Studio Blackburn把C和H折成房子形的框架送给Culture House，Rethink把一家YWCA酒店变成Hotel Willo的环形柳枝，Odds用视力表微字和Colorplan蓝为Alaena做了识别。字体来自九月新字发布：370种语言的Exemplar、超大号Peignot、14字重的Brunel。艺术方面，一条30米金色衔尾蛇悬在高线公园下方，Renée Levi用荧光笔触包裹海沃德美术馆。",
+   "ko": "비주얼 12건에 하트 1개, 서사가 비면 미니멀리즘은 차갑다는 아르케 인터뷰(디자인붐)에 갔다. 브랜딩이 앞장섰다. 맥라렌의 새 대문자 워드마크는 1920년대 차고 간판에서 왔고, 스튜디오 블랙번은 컬처 하우스를 위해 C와 H를 집 모양 프레임으로 접었으며, 리싱크는 YWCA 호텔을 호텔 윌로의 감기는 버드나무로 바꿨고, 오즈는 알라에나에 시력표 마이크로 타입과 컬러플랜 블루를 줬다. 서체는 9월 신작에서 왔다. 370개 언어의 이그젬플러, 점보 페뇨, 14스타일 브루넬. 미술에서는 30m 금빛 우로보로스가 하이라인 아래 걸렸고 르네 레비가 헤이워드를 형광 붓질로 감쌌다.",
+   "items": [
+    "2026-09-21-6",
+    "2026-09-23-2",
+    "2026-09-23-9",
+    "2026-09-24-10",
+    "2026-09-22-11",
+    "2026-09-21-3",
+    "2026-09-21-14",
+    "2026-09-25-8"
+   ]
+  },
+  {
+   "tag": "Motion",
+   "en": "Four Motion pieces, one heart, for Monografo's La Revuelta titles: a drum chasing the host, painted in Procreate and animated in Procreate Dreams with no storyboard. Yeti Pictures made 81 seconds of black-and-white 3D New York with data overlays for Motion Plus Design; Ordinary Folk turned a Burle Marx pavement pattern into the motif of Rio 40°, a flat-colour 2D short; Tomorrow Bureau's Aston Martin Valen film let the V12 cut the edit, mapping ignitions and shifts to camera moves in an anechoic CG space. Four different answers to the same question: what drives the timing.",
+   "zh": "4条动态设计，1颗红心，给了Monografo的《La Revuelta》片头：一只鼓追着主持人跑，用Procreate绘制、Procreate Dreams制作动画，没有分镜。Yeti Pictures为Motion Plus Design做了81秒带数据叠层的黑白3D纽约；Ordinary Folk把布雷·马克斯的人行道图案变成平涂2D短片《Rio 40°》的动态母题；Tomorrow Bureau的阿斯顿·马丁Valen影片让V12来剪辑，点火与换挡对应消声CG空间里的镜头运动。四种不同答案，回答同一个问题：节奏由什么驱动。",
+   "ko": "모션 4건에 하트 1개, 모노그라포의 '라 레부엘타' 타이틀에 갔다. 드럼이 진행자를 쫓는 이 작품은 프로크리에이트로 그리고 프로크리에이트 드림스로 움직였으며 스토리보드가 없었다. 예티 픽처스는 모션 플러스 디자인을 위해 데이터 오버레이가 얹힌 81초의 흑백 3D 뉴욕을 만들었고, 오디너리 포크는 부를리 마르스의 보도 패턴을 플랫 컬러 2D 단편 '리우 40°'의 모티프로 삼았으며, 투모로 뷰로의 애스턴마틴 발렌 필름은 무향 CG 공간에서 점화와 변속을 카메라 이동에 맞춰 V12가 편집을 맡게 했다. 타이밍을 무엇이 이끄는가라는 같은 질문에 대한 네 가지 답이다.",
+   "items": [
+    "2026-09-24-6",
+    "2026-09-22-3",
+    "2026-09-22-13",
+    "2026-09-25-4"
+   ]
+  },
+  {
+   "tag": "Realtime",
+   "en": "Eighteen Realtime stories and three hearts, the week's best-rated beat. 80 Level's interview on how Cyberpunk's Night City was built by hand, one advert at a time, took two; DE9 Parts, Richie Hawtin's 120 techno loops as a web instrument, took one. Rendering moved: NVIDIA's DLSS 5 adds a neural relighting pass over the engine frame, AMD ray traces 500 million animated triangles in 1.7 GB with tetrahedral cages, Bevy's Solari unifies ReSTIR. Hardware: Meta's 100 g VR glasses with 5K micro-OLED per eye, Samsung's 85-inch glasses-free 3D Plate at TGS. Studio Orange explained making 3D read as anime, and a SIGGRAPH crowd pick let users cut and peel a body in real time.",
+   "zh": "18条实时图形，3颗红心，本周评价最高的板块。80 Level关于《赛博朋克2077》夜之城如何一条广告一条广告手工搭建的访谈拿下2颗；把Richie Hawtin的120段techno循环做成网页乐器的DE9 Parts拿下1颗。渲染在前进：英伟达DLSS 5在引擎画面上叠加神经重光照，AMD用四面体笼以1.7GB光追5亿动态三角形，Bevy的Solari统一了ReSTIR。硬件：Meta每眼5K micro-OLED的100克VR眼镜，三星在TGS展出的85英寸裸眼3D Plate。Studio Orange讲解如何让3D读起来像手绘动画，SIGGRAPH人气之选让用户实时切开、剥开一具身体。",
+   "ko": "리얼타임 18건에 하트 3개, 이번 주 최고 평가 부문이다. 사이버펑크의 나이트 시티를 광고 하나씩 손으로 지은 이야기를 다룬 80 레벨 인터뷰가 2개, 리치 호틴의 테크노 루프 120개를 웹 악기로 만든 DE9 파츠가 1개를 받았다. 렌더링이 움직였다. 엔비디아 DLSS 5는 엔진 프레임 위에 신경망 재조명 패스를 더하고, AMD는 사면체 케이지로 5억 개의 움직이는 삼각형을 1.7GB에서 레이트레이싱하며, 베비의 솔라리는 ReSTIR를 통합했다. 하드웨어로는 눈당 5K 마이크로 OLED를 쓴 100g 메타 VR 안경과 TGS의 삼성 85인치 무안경 3D 플레이트가 있었다. 스튜디오 오렌지는 3D를 애니메이션처럼 읽히게 하는 법을 설명했고, 시그라프 관객상은 실시간으로 몸을 자르고 벗겨 보게 했다.",
+   "items": [
+    "2026-09-21-4",
+    "2026-09-24-9",
+    "2026-09-23-3",
+    "2026-09-23-13",
+    "2026-09-25-5",
+    "2026-09-25-10",
+    "2026-09-22-8",
+    "2026-09-23-8"
+   ]
+  },
+  {
+   "tag": "Design",
+   "en": "Four Design stories, no reactions. MSCHF bent a Lexus RZ into a ring and wrung an RX into a spiral for Motomorphosis in New York; BYD's second-generation Seagull sketches showed a car 425 mm longer with trident lamps, a column shifter and a roof LiDAR; Nissan's Z Kaze concept brought back the T-top in Pacific Teal on Nismo LMGT2 wheels; Homme Plissé Issey Miyake dressed dancers in Matisse's The Snail at Tate Modern. Two of the four were cars treated as sculpture, which is where this beat has been leaning all month.",
+   "zh": "4条设计类，没有任何反应。MSCHF为纽约的Motomorphosis把一台雷克萨斯RZ弯成圆环、把一台RX拧成螺旋；比亚迪第二代海鸥草图显示车身加长425毫米，配三叉戟灯、怀挡和车顶激光雷达；日产Z Kaze概念车让T型顶篷以太平洋青色回归，搭Nismo LMGT2轮毂；Homme Plissé Issey Miyake让舞者在泰特现代穿上马蒂斯的《蜗牛》。四条里有两条是把汽车当雕塑，这也是本板块整个月的倾向。",
+   "ko": "디자인 4건, 반응은 없었다. MSCHF는 뉴욕 모토모포시스를 위해 렉서스 RZ를 고리로 구부리고 RX를 나선으로 비틀었고, BYD 2세대 시걸 스케치는 425mm 길어진 차체에 트라이던트 램프, 컬럼 시프터, 루프 라이다를 보여줬으며, 닛산 Z 카제 컨셉은 니스모 LMGT2 휠 위에 퍼시픽 틸의 T탑을 되살렸고, 옴므 플리세 이세이 미야케는 테이트 모던에서 무용수에게 마티스의 '달팽이'를 입혔다. 넷 중 둘은 조각으로 다룬 자동차였고, 이 부문은 한 달 내내 그쪽으로 기울어 있다.",
+   "items": [
+    "2026-09-23-4",
+    "2026-09-23-12",
+    "2026-09-24-7",
+    "2026-09-21-15"
+   ]
+  },
+  {
+   "tag": "Industrial",
+   "en": "Only two Industrial stories after the previous week's skips on that beat, and no reactions on either. KitchenAid's Luminaire mixer puts an LED under a fluted glass bowl so the ridges bend light into a glow rather than glare, for $699.99. MAD-5 is a Shuffle-sized music player with an OLED strip on its front lip, so the screen faces the wearer when clipped, with a TP-7-style jog disc and a 1,337 mAh battery. Both are objects whose interface is a material decision, which is the kind of Industrial story that survived the quota cut.",
+   "zh": "上周该板块被多次“不想看”之后，本周只有2条工业设计，且都没有反应。KitchenAid Luminaire搅拌机把LED放在竖纹玻璃碗下方，让棱纹把光折成柔和的辉光而非眩光，售价699.99美元。MAD-5是一台Shuffle大小的音乐播放器，OLED条带位于前唇，夹在身上时屏幕正对佩戴者，配TP-7式点动转盘和1337毫安时电池。两者的界面都是一次材料决策，这正是配额削减后留下来的那类工业设计故事。",
+   "ko": "지난주 이 부문에 스킵이 몰린 뒤 인더스트리얼은 2건뿐이었고 반응도 없었다. 키친에이드 루미네어 믹서는 세로 홈이 난 유리 볼 아래 LED를 두어 홈이 빛을 눈부심 대신 은은한 광으로 굴절시키며 699.99달러다. MAD-5는 셔플 크기의 음악 플레이어로 앞쪽 가장자리에 OLED 띠를 둬 클립으로 끼우면 화면이 착용자를 향하고, TP-7식 조그 디스크와 1,337mAh 배터리를 갖췄다. 둘 다 인터페이스가 곧 소재의 결정인 물건이며, 할당 축소 뒤에도 살아남는 종류의 인더스트리얼 기사다.",
+   "items": [
+    "2026-09-22-10",
+    "2026-09-25-16"
+   ]
+  }
+ ],
+ "top": [
+  {
+   "id": "2026-09-21-4",
+   "n": 2
+  },
+  {
+   "id": "2026-09-21-6",
+   "n": 1
+  },
+  {
+   "id": "2026-09-22-1",
+   "n": 1
+  },
+  {
+   "id": "2026-09-22-2",
+   "n": 1
+  },
+  {
+   "id": "2026-09-24-4",
+   "n": 1
+  }
+ ],
+ "feedback": {
+  "skipped": [
+   {
+    "id": "2026-09-24-5",
+    "n": 1
+   }
+  ],
+  "actions": {
+   "en": "Eight hearts and one skip this week, too few on their own to move much. Hearts went to Realtime (Night City's hand-built adverts, twice; DE9 Parts), Cockpit and Interaction (Ceer's EXOBOT, the new Tucson on Pleos), Micromobility (Honda × Onitsuka Tiger), Visual (Aarke) and Motion (Monografo's La Revuelta); the sources behind them were 80 Level, Electrek, Carscoops, Honda, designboom, Creative Boom and Stash. The only skip was PRINT's Fonts & AI conference notice. Over the three-week window the rule sets HMI at 6 ('best net rate +0.17 per story: 10 hearts, 1 skips' and '>= 20 reactions and still the clear favourite'), Product at 1 and Visual at 3 ('taken from the largest discretionary group to keep 16'); Micromobility, AI and Realtime stay at 2. Yanko Design, designboom, CarNewsChina, Creative Boom, Electrek and 80 Level are favoured; It's Nice That runs at most once per edition and only for a clearly strong story.",
+   "zh": "本周8颗红心、1次“不想看”，单看本周不足以改变太多。红心给了实时图形（手工搭建的夜之城广告2颗、DE9 Parts）、座舱与交互（Ceer EXOBOT、搭载Pleos的新途胜）、微出行（本田×鬼塚虎）、视觉（Aarke）和动态设计（Monografo的La Revuelta），来源是80 Level、Electrek、Carscoops、本田、designboom、Creative Boom和Stash。唯一的“不想看”是PRINT的Fonts & AI会议预告。按三周窗口计算，规则把HMI设为6（“净评分最高，每条+0.17：10红心、1不想看”，且“反应数≥20仍是明显最爱”），产品类1条、Visual 3条（“从最大的可调组中扣除以保持16条”）；微出行、AI和实时图形保持2条。优先来源：Yanko Design、designboom、CarNewsChina、Creative Boom、Electrek、80 Level；It's Nice That每期最多一条，且仅限明显出色的故事。",
+   "ko": "이번 주는 하트 8개, 스킵 1개로 그것만으로는 크게 바뀌지 않는다. 하트는 리얼타임(손으로 지은 나이트 시티 광고 2개, DE9 파츠), 콕핏과 인터랙션(시어 엑소봇, 플레오스를 얹은 신형 투싼), 마이크로모빌리티(혼다×오니츠카 타이거), 비주얼(아르케), 모션(모노그라포의 라 레부엘타)에 갔고, 출처는 80 레벨, 일렉트렉, 카스쿱스, 혼다, 디자인붐, 크리에이티브 붐, 스태시였다. 유일한 스킵은 프린트의 폰트 & AI 콘퍼런스 공지였다. 3주 창으로 계산한 규칙은 HMI를 6으로('순평점 최고, 건당 +0.17: 하트 10, 스킵 1', '반응 20개 이상에도 여전히 확실한 선호'), 프로덕트를 1, 비주얼을 3으로('16을 맞추기 위해 가장 큰 재량 그룹에서 차감') 정하고, 마이크로모빌리티, AI, 리얼타임은 2를 유지한다. 얀코 디자인, 디자인붐, 카뉴스차이나, 크리에이티브 붐, 일렉트렉, 80 레벨을 우선하고, 잇츠 나이스 댓은 에디션당 최대 한 건, 확실히 강한 기사일 때만 싣는다."
+  }
+ }
+}
