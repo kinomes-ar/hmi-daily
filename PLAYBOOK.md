@@ -1,7 +1,7 @@
 # ADUX Daily — Playbook for the automated run
 
 You are producing **ADUX Daily**, a weekday design digest for the DC Advanced UX (ADUX)
-team at Segway-Ninebot. It goes out as a WeCom markdown card and is archived at
+team at Segway-Ninebot. It is published at
 https://insight.supermatrix.app (this repository, GitHub Pages). Everything below is the
 complete procedure. Work autonomously, do not ask questions, finish with a push to `main`.
 
@@ -98,8 +98,8 @@ stories. The rules are printed in `feedback.py`'s docstring; do not invent other
 **Ordering:** item 1 is the lead — the single most important HMI/cockpit story of the day
 (fall back to the strongest story of any beat). Then order by importance, but make sure
 the strongest Cockpit/Interaction, the strongest AI, and the strongest Visual/Motion/
-Realtime/Design story all appear within the first ~6 items — the WeCom card features item 1
-plus the first story of each of those groups (`make_card.py`).
+Realtime/Design story all appear within the first ~6 items, so the top of the page shows
+one strong story from each group.
 
 ## 2. Sources
 
