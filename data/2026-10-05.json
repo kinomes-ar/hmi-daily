@@ -9,7 +9,9 @@
   "ko": "카스쿱스가 포착한 2027 푸조 208 스파이샷에 하이퍼스퀘어가 처음으로 양산 차체에 실렸다. 네 개의 원형 구멍에 조작 버튼을 넣은 직사각형 스티어 바이 와이어 조향 장치가 대형 클러스터와 STLA 스마트 콕핏 기반의 새 중앙 화면을 마주한다. 전기 전용으로 출발하는 이 해치는 STLA One 플랫폼에 분리형 '클로' 램프와 205를 떠올리는 각진 글라스하우스를 갖추고 2027년 하반기에 나온다. 10월 12일 파리 모터쇼에서 푸조는 폴리곤 컨셉 옆에 하이퍼스퀘어 시뮬레이터 두 대를 놓아 차가 나오기 전에 이 배치를 체험하게 한다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/10/peugeot-208-scoop/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/10/New-Peugeot-208-Electric-Scoop-SH-Proshots-main-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/10/New-Peugeot-208-Electric-Scoop-SH-Proshots-main-1024x576.jpg",
+  "img": "assets/2026-10-05-1.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/10/New-Peugeot-208-Electric-Scoop-SH-Proshots-main-1024x576.jpg"
  },
  {
   "tag": "Cockpit",
@@ -19,7 +21,9 @@
   "zh": "一汽-大众ID. Aura T6开始交付，车长4811毫米，起售价12.99万元。座舱没有走整块大屏路线，而是保留大众三层式布局：10.25英寸仪表、悬浮式15.6英寸中控屏（支持CarPlay、HiCar和CarLink）加25.8英寸AR-HUD，由20 TOPS的4纳米座舱芯片驱动。智驾用地平线征程6H（420 TOPS）加车顶激光雷达，支持高速与城区NOA。后置单电机228马力，59.9或77.5千瓦时磷酸铁锂电池，CLTC续航540至660公里，充电约22分钟。",
   "ko": "이치-폭스바겐이 길이 4,811mm의 전기 SUV ID. 아우라 T6 인도를 시작했다. 시작 가격은 12만 9,900위안(약 1만 9,400달러)이다. 실내는 한 장짜리 대형 화면 대신 폭스바겐식 3층 구성을 지켰다. 10.25인치 클러스터, 카플레이·하이카·카링크를 지원하는 15.6인치 플로팅 중앙 화면, 25.8인치 AR 헤드업 디스플레이가 20 TOPS의 4nm 칩 위에서 돈다. 420 TOPS의 호라이즌 저니 6H와 루프 라이다가 고속·도심 NOA를 맡는다. 228마력 후륜 모터, 59.9 또는 77.5kWh LFP 배터리, CLTC 540~660km, 충전 22분이다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/10/02/volkswagen-id-aura-t6-began-deliveries-in-china-with-660-km-of-range/"
+  "url": "https://carnewschina.com/2026/10/02/volkswagen-id-aura-t6-began-deliveries-in-china-with-660-km-of-range/",
+  "img": "assets/2026-10-05-2.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/10/volkswagen_id_aura_t6_deliveries-1500x844.jpg"
  },
  {
   "tag": "Realtime",
@@ -31,7 +35,9 @@
   "ko": "80 레벨이 넷이즈 마블 라이벌즈 아트팀의 리드 일곱 명을 만났다. 아트 디렉터 디노 마부터 리드 VFX 아티스트 펑웨이펑까지다. 캐릭터는 레퍼런스, 컨셉, 모델링, 리깅, VFX, 코스튬 변형 순서로 만들어지고, 어떤 버전이든 실루엣, 로고, 상징 무기, 색 조합이라는 네 가지 기준점을 지킨다. 룩은 비사실적 렌더링에 PBR 하이라이트를 섞은 자체 셰이더에서 나와 표면이 평면적인 붓질 느낌을 유지한다. 건물은 자동 절단 도구로 콘크리트와 목재 단면으로 나뉘고, 파편은 물리 연산 대신 VFX로 떨어져 모든 플랫폼에서 가볍게 돈다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/inside-marvel-rivals-character-art-vfx-destruction-pipeline",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50485/images/6ac0237657631/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50485/images/6ac0237657631/contain_1200x630.jpg",
+  "img": "assets/2026-10-05-3.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50485/images/6ac0237657631/contain_1200x630.jpg"
  },
  {
   "tag": "AI",
@@ -41,7 +47,9 @@
   "zh": "Neurable新款One耳机把12个EEG电极藏进耳罩，从“按次测”改为全天持续读取脑电。App把信号转成数周的专注、冥想和睡眠趋势，“Smart Brain Breaks”会在状态下滑前提醒你休息。声学部分是40毫米铍振膜、六麦克风主动降噪与通透模式，续航22小时，开EEG则12小时。相比早先与Master & Dynamic合作的MW75 Neuro更轻，传感器从外面看不见。售价499美元。",
   "ko": "뉴러블의 새 원 헤드폰은 이어 쿠션 안에 EEG 전극 12개를 숨기고 세션 단위가 아니라 하루 내내 뇌파를 읽는다. 앱은 신호를 몇 주 단위의 집중, 명상, 수면 추세로 바꾸고, 스마트 브레인 브레이크 기능이 능률이 떨어지기 전에 쉬라고 알린다. 음향은 40mm 베릴륨 드라이버, ANC와 주변음 모드용 마이크 여섯 개, 배터리는 22시간, EEG를 켜면 12시간이다. 마스터 앤 다이내믹과 만든 이전 MW75 뉴로보다 가볍고 센서는 밖에서 보이지 않는다. 가격은 499달러다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/10/02/improved-neurable-one-anc-headphones-actively-track-brain-activity-while-sounding-great/"
+  "url": "https://www.yankodesign.com/2026/10/02/improved-neurable-one-anc-headphones-actively-track-brain-activity-while-sounding-great/",
+  "img": "assets/2026-10-05-4.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/improved-neurable-one-anc-headphones-actively-track-brain-activity-while-sounding-great/Neurable-One-Headphones-4.jpg"
  },
  {
   "tag": "Design",
@@ -53,7 +61,9 @@
   "ko": "시트로엥이 10월 11일 파리 모터쇼에서 2CV 컨셉을 공개한다. 양산은 2028년, 보조금 전 가격은 1만 5,000유로 미만으로 브랜드에서 가장 싼 차가 된다. 티저는 원형 실루엣을 지키면서 세부를 옮겨 왔다. 골이 진 보닛, 반원형 LED 헤드램프, 불룩한 펜더, C필러에 박힌 방향지시등, 빛나는 더블 셰브런이다. 유럽연합의 새 저가 전기차 규정에 맞춰 만든 소형 전기차 전용 플랫폼을 쓰며 피아트와 공유한다. 스탠드의 두 번째 컨셉은 아직 비밀이고 실내는 공개되지 않았다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/10/citroen-2cv-teasers/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/10/Citroen-2CV-Concept-Teasers-main-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/10/Citroen-2CV-Concept-Teasers-main-1024x576.jpg",
+  "img": "assets/2026-10-05-5.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/10/Citroen-2CV-Concept-Teasers-main-1024x576.jpg"
  },
  {
   "tag": "Visual",
@@ -65,7 +75,9 @@
   "ko": "그래픽 디자이너 미하엘라 즈데뉴코바와 제품 디자이너 마레크 코우노우스키가 MK 디자이너스 이름으로 꽃을 입력 데이터로 삼은 꽃병 세 개를 만들었다. 작약, 백합, 튤립을 제너러티브 코드에 통과시켜 추상 패턴을 얻고, 이를 위해 설계한 도자기 형태에 옮겼다. 자연의 형태에서 디지털 코드로, 다시 물리적 사물로 이어지는 순서다. 꽃 선택도 개인적이다. 각자 하나, 둘이 함께 하나를 골랐고 서로 꽃다발을 선물하던 습관에서 나왔다. 그래픽 시스템과 제품 형태를 따로 입히지 않고 함께 설계한 깔끔한 사례다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/generative-code-patterns-mm-collective-ceramic-flower-vases-mk-designers/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/generative-code-patterns-mm-collective-ceramic-flower-vases-mk-designers-designboom-1800-2.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/generative-code-patterns-mm-collective-ceramic-flower-vases-mk-designers-designboom-1800-2.jpg",
+  "img": "assets/2026-10-05-6.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/10/generative-code-patterns-mm-collective-ceramic-flower-vases-mk-designers-designboom-1800-2.jpg"
  },
  {
   "tag": "Micromobility",
@@ -75,7 +87,9 @@
   "zh": "Rivian孵化的ALSO开始交付4500美元的TM-B首发版，此前因零部件更换及电池与大功率USB-C充电认证而延期。早期车主称赞线控踏板的DreamRide驱动，以及一个并非油门的拇指键：踩踏时短暂把助力推到最大，借此绕开美国各州的电动自行车规则。一位车主在高助力、爬坡加逆风的极端测试中只跑了30英里，远低于按低助力算出的100英里宣传值。可换上层车架和软件调校的助力依然是卖点。",
   "ko": "리비안에서 분사한 올소가 부품 변경과 배터리·고출력 USB-C 충전 인증 문제로 미뤄졌던 4,500달러짜리 TM-B 런치 에디션 인도를 시작했다. 초기 구매자들은 페달 바이 와이어 방식의 드림라이드 구동계와 스로틀이 아닌 엄지 버튼을 호평한다. 페달을 밟는 동안만 어시스트를 최대로 올리는 방식으로 주별로 다른 전기자전거 규정을 피한다. 한 구매자가 고출력 어시스트, 언덕, 맞바람의 최악 조건에서 측정한 주행거리는 30마일로, 저출력 기준인 100마일 광고치와 거리가 멀다. 교체형 상부 프레임과 소프트웨어 조정 어시스트는 여전히 핵심 세일즈 포인트다.",
   "src": "Electrek",
-  "url": "https://electrek.co/2026/10/04/rivians-delayed-also-e-bikes-are-finally-arriving-to-first-customers-with-mixed-early-feedback/"
+  "url": "https://electrek.co/2026/10/04/rivians-delayed-also-e-bikes-are-finally-arriving-to-first-customers-with-mixed-early-feedback/",
+  "img": "assets/2026-10-05-7.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2025/11/ride-also-tm-b-header-1.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Interaction",
@@ -86,7 +100,9 @@
   "ko": "카스쿱스의 호주 시승기에서 창안 딥알 S07(4만 7,990호주달러부터)은 HMI 감사 보고서처럼 읽힌다. 15.6인치 중앙 화면은 정면에 두거나 운전자 또는 동승자 쪽으로 돌릴 수 있어 고정식 세로·가로 화면의 경쟁차보다 낫다고 평가받았지만, 계기판은 아예 없다. 태블릿 같은 UI는 빠르고 선명하며 아래로 쓸어내리면 단축키와 공조가 나오지만, 터치로 송풍구 방향을 맞추는 일은 여전히 번거롭다. 탑승 시 AI 음성이 인사하고(끌 수 있다), 운전자 모니터는 잔소리가 잦으며 원페달 모드와 회생 패들이 없다. 오렌지 스티치가 들어간 검은 합성 가죽이 실내를 끌어올린다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/10/deepal-s07-electric-review/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Deepal-S07-review-Aus-1024x576.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/09/Deepal-S07-review-Aus-1024x576.jpg",
+  "img": "assets/2026-10-05-8.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/09/Deepal-S07-review-Aus-1024x576.jpg"
  },
  {
   "tag": "Motion",
@@ -98,7 +114,9 @@
   "src": "Stash",
   "url": "https://www.stashmedia.tv/transitional-flow-watch-hitoshi-moritas-mesmerizing-new-short-film-shiritori/",
   "video": "https://vimeo.com/1231622682",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Shiritori-Animated-Short-Film-by-Hitoshi-Morita-STASH-MAGAZINE2-1920x1080.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Shiritori-Animated-Short-Film-by-Hitoshi-Morita-STASH-MAGAZINE2-1920x1080.jpg",
+  "img": "assets/2026-10-05-9.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/Shiritori-Animated-Short-Film-by-Hitoshi-Morita-STASH-MAGAZINE2-1920x1080.jpg"
  },
  {
   "tag": "Cockpit",
@@ -108,7 +126,9 @@
   "zh": "CarNewsChina预告：10月12日开幕的巴黎车展将有20个中国品牌参展，带来7款全球首发。座舱看点是领克07 GT——车长4848毫米的插混旅行车，配15.4英寸中控屏、95英寸AR-HUD和23只哈曼卡顿扬声器。其他全球首发：车长仅2764毫米的双座smart #2、吉利星越EM-i、理想i6、面向出口的三排版小鹏G9L、885马力的极氪9X，以及车长5252毫米的零跑D19轿车。比亚迪、长安、奇瑞等则带来欧洲阵容。",
   "ko": "카뉴스차이나의 프리뷰에 따르면 10월 12일 개막하는 파리 모터쇼에 중국 브랜드 20곳이 나오고 월드 프리미어가 7종이다. 실내의 주인공은 링크앤코 07 GT다. 길이 4,848mm의 플러그인 하이브리드 왜건에 15.4인치 화면, 95인치 AR 헤드업 디스플레이, 하만카돈 스피커 23개를 넣었다. 그 외 첫 공개는 길이 2,764mm의 2인승 스마트 #2, 지리 몬자로 EM-i, 리오토 i6, 수출용 3열을 갖춘 샤오펑 G9L, 885마력 지커 9X, 길이 5,252mm의 립모터 D19 세단이다. BYD, 창안, 체리 등은 유럽 라인업을 들고 온다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/10/02/what-to-expect-from-chinese-car-brands-at-the-paris-auto-show-2026/"
+  "url": "https://carnewschina.com/2026/10/02/what-to-expect-from-chinese-car-brands-at-the-paris-auto-show-2026/",
+  "img": "assets/2026-10-05-10.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/10/geely_monjaro_em-i-1-1500x844.jpg"
  },
  {
   "tag": "Realtime",
@@ -120,7 +140,9 @@
   "ko": "스냅틱은 2007년에 버려진 노트북 안이 무대인 물리 퍼즐 플랫포머다. 얼굴 없는 주인공 아논은 구슬로 변해 표면에 자석처럼 붙으며, 캐시 파일과 채팅 기록을 뒤져 와이파이 비밀번호를 찾아 옛 친구들과 다시 연결하려 한다. 개발자 히스 로저스는 PS1 게임, 프루티거 에어로, 홈 비디오를 참조로 들며 이 프로젝트가 무엇보다 모션 그래픽과 그래픽 디자인이라고 말한다. 메뉴, 폴더, 메신저 창이 곧 레벨 아트다. 6만 달러 킥스타터 목표는 6시간 만에 달성되고 이틀 만에 240%를 넘었다. 스팀 PC판은 날짜 미정, 콘솔은 스트레치 골이다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/this-puzzle-platformer-takes-you-inside-laptop-for-dose-of-pure-y2k-web-nostalgia",
-  "video": "https://www.youtube.com/watch?v=rgUqQMal0Uo"
+  "video": "https://www.youtube.com/watch?v=rgUqQMal0Uo",
+  "img": "assets/2026-10-05-11.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50480/images/6abfbc7c5eabc/contain_1200x630.jpg"
  },
  {
   "tag": "Micromobility",
@@ -131,7 +153,9 @@
   "ko": "BSA가 골드 스타 650에 버밍엄 블루와 브루클랜즈 블랙 두 색을 더했는데 이름값을 한다. 블루는 탱크, 사이드 패널, 펜더를 덮고 흰 스트라이프로 끊어지며 1861년의 버밍엄 스몰 암스 컴퍼니를 가리킨다. 블랙은 크롬과 금색 핀스트라이프를 두르고 브루클랜즈 서킷을 가리킨다. 1937년 6월 월 핸들리가 BSA 엠파이어 스타로 시속 107.57마일의 최고 랩을 돌아 우승하며 100마일 랩에 주는 골드 스타 배지를 받았고, 양산차 이름이 여기서 나왔다. 기계는 그대로다. 652cc 수랭 단기통, 6,500rpm에서 45마력, 5단 변속기다.",
   "src": "RideApart",
   "url": "https://www.rideapart.com/news/810154/bsa-gold-star-650-new-colors-birmingham-blue-brooklands-black/",
-  "img_url": "https://cdn.motor1.com/images/mgl/xqOKzv/s1/new-bsa-gold-star-paint-job-has-a-much-cooler-backstory-than-you-d-expect.jpg"
+  "img_url": "https://cdn.motor1.com/images/mgl/xqOKzv/s1/new-bsa-gold-star-paint-job-has-a-much-cooler-backstory-than-you-d-expect.jpg",
+  "img": "assets/2026-10-05-12.jpg",
+  "img_src": "https://cdn.motor1.com/images/mgl/xqOKzv/s1/new-bsa-gold-star-paint-job-has-a-much-cooler-backstory-than-you-d-expect.jpg"
  },
  {
   "tag": "AI",
@@ -141,7 +165,9 @@
   "zh": "Freckle与设计工作室Body Shop合作，面向7至13岁儿童：3.1英寸屏幕、粗大的彩色实体键，运行ClayOS，没有浏览器、应用商店、社交媒体和流媒体视频。有的功能是：与家长批准的联系人通话短信、与附近Freckle对讲、碰一碰支付、迷你地图、安全区提醒，以及能识别植物与昆虫的“发现相机”，它连接着一套把孩子推向户外的任务系统。售价199美元加每月25美元套餐，2026年12月发货。当需求是“少看屏幕”时，AI助手该长什么样——这是一份紧凑的答卷。",
   "ko": "프레클은 디자인 스튜디오 바디 숍과 함께 7~13세용으로 만든 전화기다. 3.1인치 화면과 두툼한 색깔 버튼을 중심으로 브라우저, 앱 스토어, 소셜 미디어, 스트리밍 영상이 없는 클레이OS를 돌린다. 있는 것은 승인된 연락처와의 통화와 문자, 근처 프레클과의 무전, 탭 결제, 미니맵, 안전 구역 알림, 그리고 식물과 곤충을 알아보는 디스커버리 카메라다. 이 카메라는 아이를 밖으로 내보내는 퀘스트 시스템과 이어진다. 가격은 199달러에 월 25달러 요금제, 2026년 12월 출하다. 화면 시간을 줄이라는 브리프를 받은 AI 비서가 어떤 모습인지 보여주는 압축된 연구다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/10/03/more-freedom-without-the-scroll-a-phone-kids-actually-want-outside/"
+  "url": "https://www.yankodesign.com/2026/10/03/more-freedom-without-the-scroll-a-phone-kids-actually-want-outside/",
+  "img": "assets/2026-10-05-13.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/more-freedom-without-the-scroll-a-phone-kids-actually-want-outside/freckle-01.jpg"
  },
  {
   "tag": "Micromobility",
@@ -151,7 +177,9 @@
   "zh": "Ride1Up的Prodigy V2 Eco把德国Brose TF Sprinter中置电机（扭矩传感器、90牛·米）装进一辆1295美元的Class 3通勤车，这个价位通常只能买到轮毂电机。36V、504瓦时电池用三星电芯；其余配置为100毫米可锁死前叉、27.5英寸轮组、180毫米双活塞液压碟刹、9速microSHIFT Advent传动、集成车灯、全包挡泥板和承重40磅的后货架，提供低跨和高跨两种车架。预售几周后发货。Electrek的判断：扭矩感应中置电机那种安静、线性的助力感，才是这个价格真正买到的东西。",
   "ko": "라이드1업의 프로디지 V2 에코는 토크 센서와 90Nm을 갖춘 독일 브로제 TF 스프린터 미드 드라이브를 1,295달러짜리 클래스 3 통근용 자전거에 넣었다. 보통 허브 모터만 살 수 있는 가격이다. 36V 504Wh 배터리는 삼성 셀을 쓰고, 나머지는 100mm 락아웃 포크, 27.5인치 휠, 180mm 2피스톤 유압 브레이크, 9단 마이크로시프트 어드벤트 구동계, 일체형 조명, 풀 펜더, 40파운드 뒷짐받이이며 스텝스루와 스텝오버 프레임이 있다. 예약 판매분은 몇 주 안에 출고된다. 일렉트렉의 평은 이렇다. 토크 센싱 미드 드라이브의 조용하고 비례적인 어시스트 감각이 이 가격이 사 주는 기능이다.",
   "src": "Electrek",
-  "url": "https://electrek.co/2026/10/02/ride1up-just-launched-a-28-mph-german-mid-drive-e-bike-for-an-insanely-low-1295/"
+  "url": "https://electrek.co/2026/10/02/ride1up-just-launched-a-28-mph-german-mid-drive-e-bike-for-an-insanely-low-1295/",
+  "img": "assets/2026-10-05-14.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2023/09/ride1up-prodigy-v2-header.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Visual",
@@ -161,7 +189,9 @@
   "zh": "Rui Pu学数字媒体出身，曾在字节跳动工作，后在伦敦坎伯韦尔读插画硕士，这种混合在作品里看得见：直接、略带超现实、一秒读懂的画面，素材来自网络文化与日常观察。暖色渐变、高饱和配色和厚重肌理托着手绘人物叠在照片拼贴之上，用Procreate和Photoshop完成。为Apple、Spotify、Nike、《纽约时报》和《彭博商业周刊》等客户工作时，她会与艺术总监一起推进多个方向；个人创作则从堆叠收藏的图片开始，直到某个东西浮现。“我希望人们立刻感受到幽默、荒诞或一点讽刺。”",
   "ko": "루이 푸는 디지털 미디어를 공부하고 바이트댄스에서 일한 뒤 런던 캠버웰에서 일러스트레이션 석사를 마쳤고, 그 조합이 작업에 드러난다. 인터넷 문화와 일상 관찰에서 가져온, 직설적이고 조금 초현실적이며 1초 안에 읽히는 이미지다. 따뜻한 그러데이션, 채도 높은 팔레트, 두꺼운 질감이 사진 콜라주 위에 손으로 그린 인물을 얹는다. 애플, 스포티파이, 나이키, 뉴욕 타임스, 블룸버그 비즈니스위크와는 아트 디렉터와 여러 방향을 함께 발전시키고, 개인 작업은 저장해 둔 이미지를 쌓아 무언가 나타날 때까지 간다. \"유머, 부조리, 약간의 풍자를 곧바로 느끼길 바란다.\"",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/work/rui-pu-makes-graphic-illustrations-that-are-direct-a-little-weird-and-sure-to-bring-a-grin-to-your-face/"
+  "url": "https://www.creativeboom.com/work/rui-pu-makes-graphic-illustrations-that-are-direct-a-little-weird-and-sure-to-bring-a-grin-to-your-face/",
+  "img": "assets/2026-10-05-15.webp",
+  "img_src": "https://media.creativeboom.com/27bd6cc4-0374-4d71-8deb-04b67cb9b7f2/conversions/b316c6cf27d8113240173da9b4fdf332bf4581f4-medium.webp"
  },
  {
   "tag": "Micromobility",
@@ -172,6 +202,8 @@
   "ko": "알파인스타스의 2027 레이싱 스포츠 컬렉션은 미사일 V3 원피스·투피스 슈트(1,429.95달러)가 이끈다. AAA 등급 1.3mm 플렉스 플러스 소가죽, 미리 굽힌 레이싱 핏, 어깨·팔꿈치·무릎의 DFS ST 외장 프로텍터를 노출 솔기 없이 봉제했고, 낮은 천공 스피드 험프는 S-R10 헬멧과 맞물리게 다듬었다. 두 슈트 모두 테크에어 10과 테크에어 5 플라즈마에 대응하고 테크에어 7x 커넥터를 갖췄다. 그 아래로 캘리버 V2 가죽 재킷(679.95달러), 자카 V2와 에어로셸 방수 재킷(379.95달러와 299.95달러), 패스터 V3 플라즈마 드라이스타 장갑(124.95달러)이 있다.",
   "src": "RideApart",
   "url": "https://www.rideapart.com/news/810364/2027-alpinestars-debuts-motorcycle-gear-racing-sport-collection/",
-  "img_url": "https://cdn.motor1.com/images/mgl/ko8ljB/s1/alpinestars-2027-racing-sport-collection.jpg"
+  "img_url": "https://cdn.motor1.com/images/mgl/ko8ljB/s1/alpinestars-2027-racing-sport-collection.jpg",
+  "img": "assets/2026-10-05-16.jpg",
+  "img_src": "https://cdn.motor1.com/images/mgl/ko8ljB/s1/alpinestars-2027-racing-sport-collection.jpg"
  }
 ]
