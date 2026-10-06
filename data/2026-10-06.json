@@ -8,7 +8,9 @@
   "ko": "카 디자인 뉴스가 현대차 유럽 수석 디자이너 에두아르도 라미레즈와 제품 총괄 크리스토퍼 매키넌을 만나 5세대 투싼을 이야기했다. 17인치 플레오스 커넥트 화면과 칼럼 시프터를 갖췄지만 목표는 '기능 개수 경쟁'을 줄이는 것이었다. 어린이 잔류 감지와 트레일러 후진 보조는 고객 클리닉에서 나왔고, 매키넌은 시선을 떼지 않고 미러를 조정할 수 있어야 하며 '첫 100야드 안에 차를 이해해야 한다'고 말한다. 이중 유리가 실내를 고치처럼 감싸고, 후면의 깊게 성형한 '패드 숄더'는 금형을 여러 번 고쳐 완성했다.",
   "src": "Car Design News",
   "url": "https://www.cardesignnews.com/cars/hyundai-talks-tucson-and-intuitive-design/2746634",
-  "img_url": "https://image.cardesignnews.com/2746898.webp?imageId=2746898&width=960&height=548&format=jpg"
+  "img_url": "https://image.cardesignnews.com/2746898.webp?imageId=2746898&width=960&height=548&format=jpg",
+  "img": "assets/2026-10-06-1.jpg",
+  "img_src": "https://image.cardesignnews.com/2746898.webp?imageId=2746898&width=960&height=548&format=jpg"
  },
  {
   "tag": "Interaction",
@@ -18,7 +20,9 @@
   "zh": "现代Ioniq 3在英国开售，含3750英镑补贴后起价18495英镑，是欧洲首款搭载Pleos Connect的车型——基于Android Automotive，手机式应用加可自定义主页。中控屏按配置为12.9或14.6英寸，仪表屏为选装，入门版没有传统仪表。车长4155毫米，400V平台，42或61千瓦时电池对应WLTP续航213或308英里，风阻系数0.263，支持Digital Key 2、即插即充和V2L。仅在欧洲销售，没有美国计划。",
   "ko": "현대차가 아이오닉 3를 영국에서 보조금 3,750파운드를 포함해 1만 8,495파운드부터 판매한다. 유럽에서 플레오스 커넥트를 처음 적용한 차로, 안드로이드 오토모티브 기반에 스마트폰식 앱과 사용자 정의 홈 화면을 갖췄다. 중앙 화면은 트림에 따라 12.9인치 또는 14.6인치이고, 운전자 디스플레이는 옵션이라 기본형에는 전통적인 클러스터가 없다. 길이 4,155mm의 '에어로 해치'는 400V 플랫폼에 42 또는 61kWh 배터리를 얹어 WLTP 213 또는 308마일을 달린다. 공기저항계수 0.263, 디지털 키 2, 플러그 앤 차지, V2L을 지원하며 유럽 전용이다.",
   "src": "Electrek",
-  "url": "https://electrek.co/2026/10/05/hyundai-ioniq-3-offers-308-miles-range-starts-at-25000/"
+  "url": "https://electrek.co/2026/10/05/hyundai-ioniq-3-offers-308-miles-range-starts-at-25000/",
+  "img": "assets/2026-10-06-2.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Hyundai-IONIQ-3-UK-price.jpeg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Visual",
@@ -29,7 +33,9 @@
   "zh": "Pentagram合伙人Luke Powell与Jody Hudson-Powell为游戏支付公司Xsolla做了新品牌，核心概念是“Xsolla档案馆”：一个堆满游戏文物的临界空间，口号“All the things”。几何星形吉祥物Sol是完整绑定的3D角色，带一套行为逻辑，像UI助手一样反应，其剪影嵌进字标和图标分类系统。字体用方正怪诞体Pilat；系统分B2B用的明亮工业感浅色模式和面向玩家的电影感深色模式，拟物3D素材致敬Frutiger Aero、Wii时代的主机菜单和《THX 1138》。",
   "ko": "펜타그램 파트너 루크 파월과 조디 허드슨 파월이 게임 결제 기업 엑솔라의 브랜드를 '엑솔라 아카이브'라는 개념으로 다시 만들었다. 게임 유물이 쌓인 경계적 공간이며 태그라인은 'All the things'다. 기하학적 별 모양 마스코트 솔은 완전히 리깅된 3D 캐릭터로, 행동 세트를 갖춰 UI 어시스턴트처럼 반응하고 실루엣이 워드마크와 아이콘 분류 체계에 들어간다. 서체는 사각 그로테스크 필라트이고, B2B용 밝은 인더스트리얼 라이트 모드와 게이머용 영화적 다크 모드로 나뉜다. 스큐어모픽 3D 요소는 프루티거 에어로, Wii 시대 콘솔 메뉴, 영화 THX 1138을 참조했다.",
   "src": "It's Nice That",
-  "url": "https://www.itsnicethat.com/articles/luke-powell-judy-hudson-powell-xsolla-pentagram-graphic-design-project-051026"
+  "url": "https://www.itsnicethat.com/articles/luke-powell-judy-hudson-powell-xsolla-pentagram-graphic-design-project-051026",
+  "img": "assets/2026-10-06-3.png",
+  "img_src": "https://m.itsnicethat.com/original_images/pentagram-xsolla-graphic-design-itsnicethat-8.png?class=w1440"
  },
  {
   "tag": "Realtime",
@@ -41,7 +47,9 @@
   "ko": "'벅샷 룰렛' 개발자 마이크 클루브니카가 20명 넘는 인디 개발자와 잼을 열고 그 결과물을 10월 1일 볼륨.아트로 공개했다. 브라우저에서 무료로 즐기거나 내려받을 수 있다. 25개 이상의 볼륨 컨트롤이 각각 다르게 작동해, 슬라이더의 조작법을 알아내는 것 자체가 게임이 된다. 다듬어진 플래시 게임 같은 외형에, 레딧의 r/baduibattles에서 영감을 얻어 6월부터 8월까지 두 달 만에 만들었다. 실제 볼륨 컨트롤을 설계하는 사람에게는 직접 만져볼 수 있는 어포던스 실패 사례집이다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/buckshot-roulette-dev-unveils-weird-collection-of-minigames-you-ll-get-hooked-on",
-  "video": "https://www.youtube.com/watch?v=UjKoHXbyc_U"
+  "video": "https://www.youtube.com/watch?v=UjKoHXbyc_U",
+  "img": "assets/2026-10-06-4.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50514/images/6ac3dfce8d6f5/contain_1200x630.jpg"
  },
  {
   "tag": "AI",
@@ -52,7 +60,9 @@
   "ko": "스텔란티스가 '웨이브 기반 STLA 오토드라이브'를 실은 피아트 500e와 마세라티 그레칼레 프로토타입을 공개했다. 고속도로와 도심에서 손을 떼고 문에서 문까지 달리는 레벨 2++ 시스템이다. 웨이브의 엔드 투 엔드 AI 드라이버는 카메라 중심에 레이더를 더하고 라이다는 선택 사양이며, 고정밀 지도가 필요 없어 비용과 브랜드 간 확장이 쉽다고 설명한다. 현재의 핸즈프리 액티브 드라이빙 어시스트는 북미 도로 20만 마일만 지원한다. 새 시스템의 첫 양산차는 2028년 북미에서 나온다. 핸즈프리 전환 시 운전자가 보게 될 화면은 아직 공개되지 않았다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2026/10/fiat-maserati-autonomous-prototypes/",
-  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/10/Maserati-Fiat-Hands-Free-Prototype-1024x578.jpg"
+  "img_url": "https://www.carscoops.com/wp-content/uploads/2026/10/Maserati-Fiat-Hands-Free-Prototype-1024x578.jpg",
+  "img": "assets/2026-10-06-5.jpg",
+  "img_src": "https://www.carscoops.com/wp-content/uploads/2026/10/Maserati-Fiat-Hands-Free-Prototype-1024x578.jpg"
  },
  {
   "tag": "Micromobility",
@@ -63,7 +73,9 @@
   "zh": "Brabus、藤原浩的Fragment Design与DAB Motors在洛杉矶ComplexCon发布限量10台的Urban E。原版的深色车身和彩色点缀换成严格的黑白配：前挡泥板、底护板、电机盖和尾翼露出碳纤维，白色碳纤维轮罩、白色Brembo卡钳、白色菱格皮革座椅。动力不变：27千瓦电机、轮端最大475牛米，72V、7.1千瓦时电池，城市续航约150公里，极速120公里/小时。仪表仍是2.8英寸LCD。售价5万美元，欧洲含税53550欧元。",
   "ko": "브라부스, 후지와라 히로시의 프래그먼트 디자인, DAB 모터스가 로스앤젤레스 컴플렉스콘에서 10대 한정 어반 E를 선보였다. 기본형의 어두운 차체와 컬러 포인트 대신 흑백만 쓴다. 앞 펜더, 벨리 팬, 모터 커버, 리어 윙렛에 카본을 노출하고, 흰색 카본 휠 커버와 흰색 브렘보 캘리퍼, 흰색 퀼팅 가죽 시트를 더했다. 구동계는 그대로다. 27kW 모터로 휠 토크 최대 475Nm, 72V 7.1kWh 배터리로 도심 약 150km, 최고 120km/h다. 계기판은 여전히 2.8인치 LCD다. 가격은 5만 달러, 유럽은 부가세 포함 5만 3,550유로다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/10/05/this-50000-brabus-electric-motorcycle-gives-urban-riders-a-rare-fragment-design-experience/"
+  "url": "https://www.yankodesign.com/2026/10/05/this-50000-brabus-electric-motorcycle-gives-urban-riders-a-rare-fragment-design-experience/",
+  "img": "assets/2026-10-06-6.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/this-50000-brabus-electric-motorcycle-gives-urban-riders-a-rare-fragment-design-experience/BRABUS-URBAN-E-FRAGMENT-EDITION.jpg"
  },
  {
   "tag": "Interaction",
@@ -74,7 +86,9 @@
   "ko": "구글 지도가 맥라렌 포뮬러 1 머신 모양의 3D 주행 아바타를 한시적으로 추가했다. 파란 내비게이션 화살표를 대체하며, 스마트폰뿐 아니라 안드로이드 오토와 애플 카플레이를 통해 차량 화면에도 표시된다. 설정의 '내 차량, 주행 아바타'에서 고르며 서버 단에서 순차 배포 중이다. '미국 그랑프리를 기념하는 공식 팀 아바타, 2026년 11월 23일까지'라는 안내가 붙었고, 10월 22일부터 25일까지 열리는 라스베이거스 레이스에 맞췄다. 내비 마커의 스폰서 스킨은 작은 변화지만 브랜드 제휴가 차량 내 지도 UI까지 들어온 사례다.",
   "src": "9to5Google",
   "url": "https://9to5google.com/2026/10/05/google-maps-now-lets-you-turn-your-car-into-a-mclaren-f1/",
-  "img_url": "https://9to5google.com/wp-content/uploads/sites/4/2026/10/google-maps-mclaren-1.jpg?quality=82&strip=all&w=1600"
+  "img_url": "https://9to5google.com/wp-content/uploads/sites/4/2026/10/google-maps-mclaren-1.jpg?quality=82&strip=all&w=1600",
+  "img": "assets/2026-10-06-7.jpg",
+  "img_src": "https://9to5google.com/wp-content/uploads/sites/4/2026/10/google-maps-mclaren-1.jpg?quality=82&strip=all&w=1600"
  },
  {
   "tag": "Micromobility",
@@ -85,7 +99,9 @@
   "ko": "벤다 다크 플래그 950은 948cc 16밸브 V4 크루저로, 9,000rpm에서 108.8마력과 85Nm를 내며 벨트 구동, 슬리퍼 클러치, 공회전 시 실린더 휴지 기능을 갖췄다. 사양표는 스마트폰 같다. 3.6인치 TFT 계기판에 800니트 밝기와 120도 시야각을 명시했고, 크루즈 컨트롤과 USB-A, USB-C 포트가 있다. 길고 낮은 차체는 휠베이스 1,590mm, 시트고 690mm, 포워드 컨트롤에 앞 320mm 브렘보 더블 디스크를 쓴다. 옵시디언 블랙, 글리머링 화이트, 버건디 레드, 마운틴 실버, 프리즘 그레이의 다섯 색상이다. 11월 3일 EICMA에서 공개되고 11월 말 유럽 딜러에 들어가며 가격은 미정이다.",
   "src": "Visordown",
   "url": "https://www.visordown.com/news/benda-dark-flag-950-packs-109bhp-v4-power-cruiser",
-  "img_url": "https://www.visordown.com/sites/default/files/2026-10/benda-dark-flag-01.jpg"
+  "img_url": "https://www.visordown.com/sites/default/files/2026-10/benda-dark-flag-01.jpg",
+  "img": "assets/2026-10-06-8.jpg",
+  "img_src": "https://www.visordown.com/sites/default/files/2026-10/benda-dark-flag-01.jpg"
  },
  {
   "tag": "Motion",
@@ -96,7 +112,9 @@
   "ko": "케이트 렌쇼 루이스의 손그림 단편 '비지 바디스'가 2026 선댄스 공식 선정과 슬램댄스 애니메이션 단편 심사위원 대상을 거쳐 비메오에 공개됐다. 작은 생물 노동자들이 거대한 사람 손 아래에서 가정 공장을 돌리며 빨간 고무장갑을 만들고 정체 모를 생선 제품을 포장한다. 참치 샌드위치의 '손으로 만듦' 스티커에서 출발한 루브 골드버그 장치다. 모든 프레임을 디지털로 그린 뒤 스크린 인쇄와 잉크젯을 섞어 약 2인치 너비로 인쇄했고, 빨강·초록·노랑의 팔레트는 스크린의 제약에서 나왔다. 디지털 채색은 아리우스 지아이가 맡았다.",
   "src": "Motionographer",
   "url": "https://motionographer.com/news/busy-bodies-hand-drawn-printmaking-vimeo/",
-  "video": "https://vimeo.com/1224458759"
+  "video": "https://vimeo.com/1224458759",
+  "img": "assets/2026-10-06-9.jpg",
+  "img_src": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/BusyBodies_02.jpg?fit=1200%2C900&#038;quality=89&#038;ssl=1"
  },
  {
   "tag": "Industrial",
@@ -107,7 +125,9 @@
   "zh": "New Matter的Sudo SP-01是一台只做一件事的音乐播放器：2.73英寸320×320触摸屏下方是一枚实体转轮，机身103.5×58.6×8.5毫米，四角外露六角螺丝便于维修。Sudo OS是扁平列表——播放列表、艺人、专辑、歌曲，没有任何算法推荐；正在播放界面以专辑封面做背景。64GB存储、microSD最高1TB、20小时以上续航，USB-C、3.5毫米耳机口和蓝牙。四色：银、玄武岩、森林绿、橘。预计售价249美元，50美元可退预订，2027年四季度起发往美、加、英、澳、新西兰。目前只有渲染图。",
   "ko": "뉴 매터의 수도 SP-01은 한 가지 일만 하는 음악 플레이어다. 2.73인치 320×320 터치스크린 아래에 촉각 휠을 두고, 103.5×58.6×8.5mm 본체 모서리에 수리용 육각 나사를 드러냈다. 수도 OS는 재생목록, 아티스트, 앨범, 곡의 평면 목록이며 알고리즘 추천이 없다. 재생 화면은 앨범 아트를 배경으로 쓴다. 64GB 저장공간, 최대 1TB 마이크로SD, 20시간 이상 배터리, USB-C, 3.5mm 단자, 블루투스를 갖췄다. 색상은 실버, 바솔트, 포레스트, 탠저린이다. 예상 가격 249달러, 환불 가능한 50달러 예약금, 2027년 4분기부터 미국·캐나다·영국·호주·뉴질랜드에 출하한다. 아직은 렌더링뿐이다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/10/02/this-249-player-brings-back-the-ipod-wheel-and-with-it-the-lost-art-of-owning-your-music/"
+  "url": "https://www.yankodesign.com/2026/10/02/this-249-player-brings-back-the-ipod-wheel-and-with-it-the-lost-art-of-owning-your-music/",
+  "img": "assets/2026-10-06-10.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/auto-draft/sudo_music_player_1.jpg"
  },
  {
   "tag": "Interaction",
@@ -117,7 +137,9 @@
   "zh": "Google日本Gboard团队的第15款“玩笑但能用”的键盘：键帽装在环形传送带上，绕着高高的蓝色框架里的滚轮转动——手指固定不动，看着想要的字母转过来时按下去。每条传送带载29个键，可输大小写。10月1日发布，呼应101键标准而非愚人节，不销售，但公开了开源图纸供自制。看似胡闹，却是一次干净的规则反转：控件移向手指，而这正是方向盘上盲操输入要解决的问题。",
   "ko": "구글 재팬 지보드 팀이 열다섯 번째 '농담이지만 작동하는' 키보드를 만들었다. 키캡이 높은 파란 프레임 속 롤러를 도는 순환 컨베이어 벨트에 실려 움직이고, 손가락은 한 곳에 둔 채 원하는 글자가 지나갈 때 누른다. 벨트 하나에 29개 키가 실리며 대소문자를 모두 입력한다. 101키 표준에 빗대 10월 1일에 발표했고 판매하지 않지만 제작자용 오픈소스 도면을 공개했다. 우스꽝스럽지만 규칙을 깔끔하게 뒤집었다. 손이 키로 가는 대신 키가 손가락으로 온다는 점은 스티어링 휠 위의 눈을 떼지 않는 입력이 풀어야 할 바로 그 문제다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/10/02/googles-fix-for-one-handed-typing-is-a-rolling-belt-of-letters/"
+  "url": "https://www.yankodesign.com/2026/10/02/googles-fix-for-one-handed-typing-is-a-rolling-belt-of-letters/",
+  "img": "assets/2026-10-06-11.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/googles-fix-for-one-handed-typing-is-a-rolling-belt-of-letters/gboard-conveyor-belt-concept-05.jpg"
  },
  {
   "tag": "AI",
@@ -127,7 +149,9 @@
   "zh": "出门问问TicNote是一只围绕单个实体录音键而非菜单设计的腕上设备：长按录对话，双击记一条最长60秒的灵感，录音中再按一下即可标记重点。离线可用，不需要手机，17种语言实时转写，录音在配套应用里生成AI摘要和思维导图；官方称连续录音超过24小时、本地可存200小时。售价249美元，首发199美元。屏幕尺寸和材质尚未公布，手腕上的录音也绕不开知情同意的问题。",
   "ko": "몹보이의 틱노트는 메뉴 대신 물리 녹음 버튼 하나를 중심으로 설계한 손목 기기다. 길게 누르면 대화를 녹음하고, 두 번 누르면 최대 60초의 짧은 메모를 남기며, 녹음 중 다시 누르면 중요한 대목을 표시한다. 휴대폰 없이 오프라인으로 작동하고 17개 언어를 실시간 전사하며, 동반 앱에서 AI 요약과 마인드맵을 만든다. 연속 녹음 24시간 이상, 로컬 저장 200시간을 주장한다. 가격은 249달러, 출시가는 199달러다. 화면 크기와 소재는 아직 공개되지 않았고, 손목에서 녹음한다는 점은 당연히 동의 문제를 남긴다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/10/02/mobvoi-ticnote-smartwatch-has-one-button-and-its-built-to-remember-what-you-often-forget/"
+  "url": "https://www.yankodesign.com/2026/10/02/mobvoi-ticnote-smartwatch-has-one-button-and-its-built-to-remember-what-you-often-forget/",
+  "img": "assets/2026-10-06-12.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/mobvoi-ticnote-smartwatch-has-one-button-and-its-built-to-remember-what-you-often-forget/Mobvoi-TicNote-Watch-Smartwatch.jpg"
  },
  {
   "tag": "Visual",
@@ -138,7 +162,9 @@
   "zh": "斯德哥尔摩工作室Malmsten Hellberg为NonStop Entertainment在北欧发行的阿涅斯·瓦尔达全集设计了39张海报与传单，每张25×70厘米，各用一款不同的法国字体厂205TF字体，从片名到版权行全用这一款。名单包括Andersen、Helvetius、Cardone、Yorick、Thelo、Molitor、Seabirds、Plaax、Immortel Colera、Muoto、Pinokio、Beretta Sans、Louize、Gando、Garaje、Milling、Exposure、Salmanazar等，粉彩配色按片种区分。一张海报一款字体，就是全部的识别系统。",
   "ko": "스톡홀름 스튜디오 말름스텐 헬베리가 논스톱 엔터테인먼트의 아녜스 바르다 전작 북유럽 개봉을 위해 포스터와 전단 39종을 디자인했다. 각 25×70cm이며 프랑스 활자 제작소 205TF의 서로 다른 서체 하나씩을 골라 저작권 문구까지 모든 글자를 그 서체로 짰다. 안데르센, 헬베티우스, 카르도네, 요릭, 텔로, 몰리토르, 시버즈, 플락스, 이모르텔 콜레라, 무오토, 피노키오, 베레타 산스, 루이즈, 간도, 가라주, 밀링, 익스포저, 살마나자르, 앨범 산스, 바세티카 등이 쓰였고 파스텔 팔레트를 장르별로 나눠 입혔다. 포스터 한 장에 서체 하나, 그것이 아이덴티티의 전부다.",
   "src": "Fonts In Use",
-  "url": "https://fontsinuse.com/uses/80010/agnes-varda-posters"
+  "url": "https://fontsinuse.com/uses/80010/agnes-varda-posters",
+  "img": "assets/2026-10-06-13.jpg",
+  "img_src": "https://cards.fontsinuse.com/cardshot?s=twitter&t=use&url=https://fontsinuse.com/uses/80010/agnes-varda-posters&k=cc4af90588f4d00337c424300c5cd462&v=d07d077d"
  },
  {
   "tag": "Realtime",
@@ -148,7 +174,9 @@
   "zh": "创意总监兼技术美术Ronan Mahon为Adobe做了一支短片，用作“从CAD数据到数字孪生、再到产品视觉”网络研讨会的开场。一台咖啡机退回成技术图纸，再由材质、图形和灯光逐层重建，接着在同一产品上切换配色、表面处理和设置。Mahon以Adobe提供的STEP模型建模并展UV，在Substance 3D Painter里用Adobe自家配色和Substance 3D Assets素材库材质上色，动画和渲染在Unreal Engine中完成。从线稿到材质的这套过渡，可以直接拿来做CMF配置器。",
   "ko": "크리에이티브 디렉터 겸 테크니컬 아티스트 로넌 마혼이 어도비를 위해 단편 영상을 만들었다. CAD 데이터를 디지털 트윈으로 옮겨 제품 비주얼을 만드는 웨비나의 오프닝이다. 커피 머신이 기술 도면으로 되돌아갔다가 재질, 그래픽, 조명을 거쳐 다시 조립되고, 같은 제품 위에서 색상과 마감, 설정을 바꿔 보여준다. 마혼은 어도비가 제공한 STEP 모델로 모델링과 UV 작업을 하고, 서브스턴스 3D 페인터에서 어도비의 컬러웨이와 서브스턴스 3D 애셋 재질로 텍스처를 입힌 뒤 언리얼 엔진에서 애니메이션과 렌더링을 마쳤다. 선 도면에서 재질로 넘어가는 전환은 CMF 컨피규레이터에 그대로 쓸 수 있는 언어다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/watch-a-coffee-machine-rebuilt-from-a-technical-drawing-in-this-short-film"
+  "url": "https://80.lv/articles/watch-a-coffee-machine-rebuilt-from-a-technical-drawing-in-this-short-film",
+  "img": "assets/2026-10-06-14.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50461/images/6abeabba2d8f7/contain_1200x630.jpg"
  },
  {
   "tag": "Micromobility",
@@ -159,7 +187,9 @@
   "ko": "두카티 2027 물티스트라다 V4 S 그랜드 투어는 투어링 키트를 공장에서 모두 장착한다. 60리터 동색 사이드 케이스, 열선 그립과 시트, 키리스 연료 캡, LED 보조등, 다이내믹 방향지시등, 센터 스탠드를 갖추고, 프레임과 스윙암, 핸들바를 검게 칠한 전용 레드 리버리를 입는다. 라이더 보조 장비는 투어러 중 가장 풍부하다. 앞뒤 레이더로 어댑티브 크루즈와 사각지대, 전방 충돌 경고를 제공하고, 스카이훅 EVO 반능동 서스펜션과 10km/h 이하에서 차고를 최대 30mm 낮추는 자동 하강 장치를 더했으며, 모두 내비게이션이 있는 6.5인치 TFT에 표시된다. 170마력 V4 그란투리스모, 3만 995달러, 11월 유럽과 12월 미국에 출시된다.",
   "src": "Motorcycle.com",
   "url": "https://www.motorcycle.com/bikes/new-model-preview/s-2027-ducati-multistrada-v4-s-grand-tour-first-look-gallery-44672281",
-  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/10/02/17181/s-2027-ducati-multistrada-v4-s-grand-tour-first-look-gallery.jpg?size=720x845&nocrop=1"
+  "img_url": "https://cdn-fastly.motorcycle.com/media/2026/10/02/17181/s-2027-ducati-multistrada-v4-s-grand-tour-first-look-gallery.jpg?size=720x845&nocrop=1",
+  "img": "assets/2026-10-06-15.jpg",
+  "img_src": "https://cdn-fastly.motorcycle.com/media/2026/10/02/17181/s-2027-ducati-multistrada-v4-s-grand-tour-first-look-gallery.jpg?size=720x845&nocrop=1"
  },
  {
   "tag": "Visual",
@@ -169,6 +199,8 @@
   "zh": "为2026年Fjällräven Classic UK——从Great Langdale到Muncaster、三天50公里、约200名徒步者参加——Miscellaneous Adventures的Emma与Andrew Groves制作了五面大幅贴布横幅，挂在Langdale的榛木杆上。横幅用家用缝纫机缝制，材料是边角料和捐赠的装备面料，包括Fjällräven自家的绿色G-1000，配色为黄、酒红、绿、棕、黑、红。流程从风景速写到手绘纸样再到手裁布料，大块别针固定、小块胶粘，最后贴布缝合；山、河、湖、林被简化成远处也能读懂的几何形。",
   "ko": "그레이트 랭데일에서 먼캐스터까지 사흘간 50km를 걷는 약 200명의 트레킹 행사 피엘라벤 클래식 UK 2026을 위해, 미셀러니어스 어드벤처스의 엠마와 앤드루 그로브스가 대형 아플리케 천 배너 다섯 장을 만들어 랭데일의 개암나무 장대에 걸었다. 가정용 재봉틀로 자투리와 기증받은 장비 원단을 꿰맸고, 피엘라벤의 초록 G-1000도 들어갔다. 색은 노랑, 버건디, 초록, 황갈색, 검정, 빨강이다. 풍경 스케치에서 손으로 그린 종이 본, 손으로 자른 천으로 이어졌고, 큰 조각은 핀으로, 작은 조각은 풀로 고정한 뒤 박음질했다. 산과 강, 호수, 숲을 멀리서도 읽히는 기하 도형으로 줄였다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/work/behold-these-giant-fabric-banners-that-prove-brands-as-big-as-fjallraven-are-betting-on-human-made/"
+  "url": "https://www.creativeboom.com/work/behold-these-giant-fabric-banners-that-prove-brands-as-big-as-fjallraven-are-betting-on-human-made/",
+  "img": "assets/2026-10-06-16.webp",
+  "img_src": "https://media.creativeboom.com/a85730f9-56bd-494a-8262-008ff8764aaa/conversions/a7207d01b85a0536d382978dff1d6476836cab56-medium.webp"
  }
 ]
