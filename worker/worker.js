@@ -261,12 +261,16 @@ function weeklyCard(w, index, counts, skips, cap) {
   };
 }
 
-function fitCard(build) {
-  for (const cap of [120, 100, 85, 70]) {
+function fitCard(build, caps) {
+  // Daily blurbs stay short (~120). Weekly category blurbs are 500–650 chars in the
+  // JSON, so try larger caps first — cards were landing at ~3 KB of a 28 KB budget
+  // and looked "cut off" mid-sentence in Feishu.
+  const ladder = caps || [120, 100, 85, 70];
+  for (const cap of ladder) {
     const card = build(cap);
     if (new TextEncoder().encode(JSON.stringify(card)).length <= CARD_LIMIT) return card;
   }
-  return build(80);
+  return build(ladder[ladder.length - 1]);
 }
 
 async function feishuSign(secret, ts) {
@@ -312,7 +316,7 @@ async function buildWeekly(env, week) {
   const index = {};
   for (const it of all) index[it.id] = it;
   const { counts, skips } = await liveCounts(env);
-  return fitCard((cap) => weeklyCard(w, index, counts, skips, cap));
+  return fitCard((cap) => weeklyCard(w, index, counts, skips, cap), [520, 400, 300, 200, 120]);
 }
 
 async function runCron(env, opts = {}) {
