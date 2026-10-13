@@ -13,7 +13,26 @@ research, write, validate, and push.** Never touch the workflow files, secrets,
 **WeCom cards are no longer sent (decided 2026-09-28).** Do not run `make_card.py` or
 `make_weekly_card.py`, and never commit or push `outbox/card.json`: pushing that file is
 what triggers `.github/workflows/wecom.yml`. The `pick` flags and `blurb` lines are still
-written because the site uses them.
+written because the site uses them. The Feishu team card is posted by the Cloudflare
+Worker after the site updates — do not send Feishu cards yourself.
+
+### Finish order (hard — do not reorder)
+
+Research that never reaches `main` is a failed run. The Feishu bot only posts when
+today's file is on the site. Keep this order:
+
+1. **Budget the research.** Aim for ≤25 page fetches. Prefer CarNewsChina, Yanko,
+   Electrek, 80 Level, Creative Boom, designboom, Carscoops, STASH / Motionographer.
+2. **Write** `data/<today>.json` (target 16 stories, never fewer than 12) as soon as
+   you have a valid set. Do not keep browsing after the file validates.
+3. **Validate** with `python3 check_edition.py data/<today>.json` and fix every ERROR.
+4. **Build** with `python3 build.py standalone`, then **commit and**
+   `git push origin HEAD:main` (Section 6).
+5. **Confirm** `https://insight.supermatrix.app/<YYYYMMDD>.html` or that the
+   "Fetch images and rebuild" Action succeeded.
+
+If time or tool limits are tight, ship a thinner but valid edition (12–14 stories)
+rather than dying mid-search with no file on `main`.
 
 ---
 
@@ -200,8 +219,14 @@ A JSON array of exactly 16 objects, in publication order, `ensure_ascii=False`, 
 * `pick` — set `"pick": true` on **exactly five** stories: the ones with the most visual and
   brand appeal, the kind the team screenshots and forwards — beautiful UI or graphic work,
   game art and real-time demos, famous brands and studios (Apple, Porsche, Pentagram, Nike,
-  Xiaomi, Unreal …), striking cockpit or identity reveals. Not "important" — *desirable to look at*. These five are the chat card;
+  Xiaomi, Unreal …), striking cockpit or identity reveals. Not "important" — *desirable to look at*. These five are the **Feishu chat card**;
   spread them across at least three tags. Everything else has no `pick` key.
+  **Concept / auto-show days:** when Peugeot, Stellantis, major OEMs, or show concepts
+  ship a clear new control or display idea (steer-by-wire wheels, disappearing centre
+  screens, HUDs, physical buttons returning, cluster redesigns), put **at least one** of
+  those Cockpit/Interaction stories in the five picks — ahead of a merely pretty Visual
+  story if the card would otherwise miss the HMI hook. The team is ADUX; inspiration from
+  new vehicle interfaces is the point of the card.
 * `video` (optional, **required for `Motion`**, expected for `Realtime` when a reel exists) — direct link to the playable video (a Vimeo or
   YouTube page, or the studio's own player page). The site shows a play badge and a ▶ Watch
   link; the chat card links it too.
