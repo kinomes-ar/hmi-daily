@@ -1,0 +1,724 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADUX Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
+</head><body><style>
+:root{
+  --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
+  --rule:#111110; --hair:#111110; --red:#E5342A; --onred:#FFFFFF;
+  --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+    --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
+    --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+  --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
+  --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,-apple-system,BlinkMacSystemFont,Arial,"PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+.sheet{max-width:1180px; margin:0 auto}
+.shell{max-width:1180px; margin:0 auto; padding:0 34px}
+@media (max-width:700px){ .shell{padding:0 20px} }
+
+.top{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:22px 0 6px; flex-wrap:wrap;
+  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+}
+@media (max-width:700px){
+  .top{gap:12px; padding:18px 0 4px}
+}
+.top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
+.masthead{padding:46px 0 36px; text-align:center; border-bottom:1px solid var(--ink)}
+.masthead h1{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
+  text-transform:uppercase; text-wrap:balance;
+}
+.masthead .kicker{
+  margin-top:9px; font-size:9.5px; font-weight:600; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--muted);
+}
+@media (max-width:700px){ .masthead{padding:30px 0 22px} }
+
+/* ---- category filter ---- */
+.fwrap{border-bottom:1px solid var(--ink); display:none}
+@media (max-width:700px){ .fwrap{display:block} }
+.filters{
+  display:flex; gap:22px; justify-content:center; align-items:center; flex-wrap:wrap;
+  padding:14px 0;
+}
+.filters button{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; padding:0; white-space:nowrap;
+  transition:color .12s;
+}
+.filters button:hover{color:var(--red)}
+.filters button[aria-pressed="true"]{
+  background:var(--ink); color:var(--ground);
+  padding:7px 14px; font-weight:700;
+}
+.filters button[data-f]:not([data-f=""])[aria-pressed="true"]{
+  background:var(--cat); color:#fff;
+}
+@media (max-width:700px){
+  .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
+           -webkit-overflow-scrolling:touch; padding:12px 20px; gap:20px;
+           margin-left:-20px; margin-right:-20px;
+           scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+}
+
+/* ---- filtered view: one uniform grid ---- */
+html[data-filter="micromobility"] article:not([data-tag="micromobility"]){display:none}
+html[data-filter="cockpit"] article:not([data-tag="cockpit"]){display:none}
+html[data-filter="interaction"] article:not([data-tag="interaction"]){display:none}
+html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
+html[data-filter="design"] article:not([data-tag="design"]){display:none}
+html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
+html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
+html[data-filter="motion"] article:not([data-tag="motion"]){display:none}
+html[data-filter="realtime"] article:not([data-tag="realtime"]){display:none}
+html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
+html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
+html[data-filter] .day article{border:0; padding:0}
+html[data-filter] .ph{aspect-ratio:3/2}
+html[data-filter] .hl{font-size:19px; line-height:1.18}
+html[data-filter] .tx{font-size:12.5px}
+html[data-filter] .col.side ~ *{text-align:left}
+html[data-filter] .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
+html[data-filter] article{text-align:left}
+
+/* ---- date band ---- */
+.day{padding:6px 0 12px}
+.day + .day{padding-top:34px}
+.day + .day{border-top:2px solid var(--ink)}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:24px}
+.dayhead h2{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; text-transform:uppercase;
+}
+.dayhead .rule{flex:1; height:1px; background:var(--hair)}
+.dayhead .meta{
+  font-size:9.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap;
+}
+
+/* ---- newspaper grid: lead | middle | narrow rail ---- */
+.band{
+  display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
+}
+.col{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
+.col:first-child{padding-left:0; border-left:0}
+.col:last-child{padding-right:0}
+.col.mid,.col.side{display:grid; gap:24px; align-content:start}
+.col.mid > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.col.side{text-align:center}
+.col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
+.col.side .tx{margin-left:auto; margin-right:auto}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.duo{
+  display:grid; grid-template-columns:1fr 1.25fr; gap:0;
+  border-top:1px solid var(--hair); margin-top:28px;
+}
+.duo > article{padding:22px 0 0}
+.duo > article + article{border-left:1px solid var(--hair); padding-left:24px; margin-left:24px}
+.a-duo .hl{font-size:19px; line-height:1.18}
+.a-duotx .hl{font-size:clamp(21px,2.2vw,27px); line-height:1.12}
+.ph-duo{aspect-ratio:4/3}
+
+/* ---- lower well: ragged newsprint columns ---- */
+.rest{
+  columns:4; column-gap:28px; column-rule:1px solid var(--hair);
+  border-top:1px solid var(--ink); padding-top:22px; margin-top:6px;
+}
+.rest > article{break-inside:avoid; padding:0 0 26px; margin-bottom:2px;
+  border-bottom:1px solid var(--hair)}
+.rest .ph{aspect-ratio:auto}
+.rest .ph.fb{aspect-ratio:4/5}
+.a-foot .hl{font-size:17px; line-height:1.2}
+@media (max-width:980px){
+  .band{grid-template-columns:1.3fr 1fr}
+  .col.side{grid-column:1 / -1; grid-template-columns:1fr 1fr 1fr;
+            border-left:0; padding:16px 0 0; border-top:1px solid var(--hair)}
+  .col.side > article + article{border-top:0; border-left:1px solid var(--hair);
+            padding-top:0; padding-left:18px}
+  .duo{grid-template-columns:1fr}
+  .duo > article + article{border-left:0; padding-left:0; margin-left:0;
+    border-top:1px solid var(--hair); margin-top:20px}
+  .rest{columns:2}
+}
+@media (max-width:660px){
+  .day{columns:2; column-gap:20px; column-rule:1px solid var(--hair)}
+  .band,.col.mid,.col.side,.duo,.rest{display:contents}
+  .col{padding:0; border:0}
+  .col.lead{display:block; column-span:all; padding:22px 0 28px}
+  .col.mid > article,.col.side > article,.duo > article,.rest > article{
+    display:block; break-inside:avoid; text-align:left;
+    border-top:1px solid var(--ink); border-bottom:0; border-left:0;
+    padding:14px 0 24px; margin:0;
+  }
+  .col.side .tagrow{margin:0 0 10px; display:inline-flex; justify-content:flex-start}
+}
+
+/* ---- photos ---- */
+.ph{margin:0 0 14px; overflow:hidden; background:var(--shade)}
+.ph img{width:100%; height:100%; object-fit:cover}
+.ph-lead{aspect-ratio:16/9}
+.ph-mid{aspect-ratio:4/3}
+.ph-side{aspect-ratio:1/1}
+.ph-foot{aspect-ratio:3/2}
+.ph.fb{display:flex; align-items:flex-end; padding:10px}
+.ph.fb span{
+  font-family:"Archivo Black",Impact,sans-serif; text-transform:uppercase;
+  line-height:.86; letter-spacing:-.02em; word-break:break-word;
+}
+.ph-lead.fb span{font-size:clamp(26px,3.6vw,44px)}
+.ph-mid.fb span{font-size:21px}
+.ph-side.fb span{font-size:15px}
+.ph-foot.fb span{font-size:19px}
+
+/* ---- pills ---- */
+.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:10px}
+.tag{
+  display:inline-flex; align-items:center;
+  background:transparent; color:var(--ink);
+  border:1.5px solid var(--cat,var(--red));
+  font-size:10px; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
+  padding:6px 13px; border-radius:999px; line-height:1;
+}
+
+/* ---- headlines & text ---- */
+.hl{
+  font-family:"Noto Serif Display","Times New Roman","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; margin:0 0 10px;
+  line-height:1.08; letter-spacing:-.01em; text-wrap:balance;
+}
+.a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
+.a-mid .hl{font-size:clamp(20px,2.2vw,26px); line-height:1.14}
+.a-side .hl{font-size:17px; line-height:1.2}
+.tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
+.tx.en{display:block}
+html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
+html[data-lang="zh"] .tx.zh{display:block}
+html[data-lang="ko"] .tx.ko{display:block}
+.a-lead .tx{font-size:14px; line-height:1.6; color:var(--muted)}
+.a-mid .tx{font-size:13px; line-height:1.55; color:var(--muted)}
+.a-foot .tx,.a-side .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+/* the reference runs headline-only in the narrow cells; keep that in English,
+   but show the translated line when a reader picks 中文 / 한국어 */
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-mid .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
+@media (max-width:660px){
+  .hl{font-weight:600}
+  .a-lead .hl{font-size:34px; line-height:1.04}
+  .a-lead .tx{font-size:15.5px}
+  .a-mid .hl,.a-side .hl,.a-foot .hl{font-size:20px; line-height:1.18}
+  .a-mid .tx{font-size:14px}
+  .ph-mid,.ph-side,.ph-foot{aspect-ratio:auto}
+  .ph-mid.fb,.ph-side.fb,.ph-foot.fb{aspect-ratio:4/5}
+  .tag{font-size:9.5px; padding:6px 12px}
+  .filters button{font-size:10.5px}
+  .src{font-size:10px}
+}
+
+.ctrls{position:relative}
+.menubtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink);
+  border-radius:999px; width:34px; height:28px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center; color:var(--ink);
+}
+.menubtn:hover{background:var(--shade)}
+.menubtn svg{width:14px; height:14px; display:block}
+.menu{
+  position:absolute; right:0; top:calc(100% + 10px); z-index:60;
+  background:var(--ground); border:1px solid var(--ink);
+  padding:16px; display:grid; gap:14px; min-width:216px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.menu[hidden]{display:none}
+.menu-team{
+  border-top:1px solid var(--hair); padding-top:13px; display:grid; gap:6px;
+}
+.menu-team .dedication{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
+  font-size:13px; color:var(--ink); text-transform:none; letter-spacing:0;
+}
+.menu-team .team-names{
+  font-size:10.5px; font-weight:600; letter-spacing:.05em; color:var(--muted);
+  text-transform:uppercase; line-height:1.7;
+}
+.menu .mlabel{
+  display:block; font-size:9px; font-weight:700; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:7px;
+}
+.langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
+.langsw button{flex:1 1 0}
+.langsw button{
+  appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
+  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  padding:5px 10px; line-height:1.4; text-align:center; white-space:nowrap;
+}
+.langsw button + button{border-left:1px solid var(--ink)}
+.langsw button[aria-pressed="true"]{background:var(--red); color:var(--onred)}
+.langsw button:hover:not([aria-pressed="true"]){background:var(--shade)}
+.themesw{
+  appearance:none; cursor:pointer; font:inherit; font-size:9.5px; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; padding:5px 12px; line-height:1.4;
+  border:1px solid var(--ink); border-radius:999px;
+  background:transparent; color:var(--ink);
+}
+.themesw:hover{background:var(--shade)}
+.top .ctrls{display:flex; align-items:center; gap:10px}
+.src{
+  display:inline-block; margin-top:9px; color:var(--red); text-decoration:none;
+  font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  border-bottom:1px solid transparent; padding-bottom:1px;
+}
+.src:hover,.src:focus-visible{border-bottom-color:var(--red)}
+.adate{
+  display:block; margin-top:7px; font-size:9px; font-weight:600;
+  letter-spacing:.14em; color:var(--muted); font-variant-numeric:tabular-nums;
+}
+.col.side .adate{text-align:center}
+@media (max-width:660px){ .col.side .adate{text-align:left} }
+:focus-visible{outline:2px solid var(--red); outline-offset:3px}
+
+.morebar{
+  display:block; margin:26px 0 8px; padding:15px; border-radius:999px;
+  background:var(--ink); color:var(--ground); text-decoration:none; text-align:center;
+  font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+}
+.morebar:hover{background:var(--red); color:#fff}
+/* ---- edition date bar + calendar ---- */
+.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin:34px 0 4px; padding-top:22px; border-top:1px solid var(--ink); position:relative}
+.datebar a,.datebar button{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  padding:6px 12px; line-height:1.4; text-decoration:none; display:inline-flex; align-items:center; gap:6px;
+}
+.datebar a:hover,.datebar button:hover{background:var(--shade)}
+.datebar a[aria-disabled="true"]{opacity:.3; pointer-events:none}
+.datebar .arrow{padding:6px 10px}
+.datebar .cur{font-variant-numeric:tabular-nums; letter-spacing:.1em}
+.datebar .cur svg{width:13px; height:13px; display:block; stroke:currentColor; stroke-width:1.8; fill:none}
+.cal{
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
+  background:var(--ground); border:1px solid var(--ink); padding:14px; width:292px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.cal[hidden]{display:none}
+.calhead{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px}
+.calhead .mon{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+.calhead button{appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); width:28px; height:24px; font:inherit; font-size:12px; line-height:1; padding:0}
+.calhead button:hover{background:var(--shade)}
+.calgrid{display:grid; grid-template-columns:repeat(7,1fr); gap:3px}
+.calgrid .wd{font-size:8.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:center; padding:3px 0 5px}
+.calgrid .d{aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:12px;
+  color:var(--muted); border-radius:999px; text-decoration:none; font-variant-numeric:tabular-nums}
+.calgrid .d.has{color:var(--ink); font-weight:700; border:1.5px solid var(--ink)}
+.calgrid .d.has:hover{background:var(--ink); color:var(--ground)}
+.calgrid .d.now{background:var(--red); color:var(--onred); border-color:var(--red)}
+.calgrid .d.off{opacity:.35}
+.calfoot{margin-top:10px; padding-top:9px; border-top:1px solid var(--hair); display:flex; justify-content:space-between;
+  font-size:9px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.calfoot a{color:var(--red); text-decoration:none}
+
+/* ---- top nav (Daily / Weekly / My) ---- */
+.topnav{display:flex; gap:18px; align-items:center}
+.topnav a{color:var(--ink); text-decoration:none; padding-bottom:2px; border-bottom:1.5px solid transparent}
+.topnav a:hover{color:var(--red)}
+.topnav a[aria-current="page"]{border-bottom-color:var(--red)}
+.topnav .badge{
+  display:inline-block; min-width:16px; padding:1px 5px; margin-left:4px; border-radius:999px;
+  background:var(--red); color:var(--onred); font-size:9px; text-align:center; line-height:1.4;
+}
+.topnav .badge:empty{display:none}
+
+/* ---- hearts ---- */
+.acts{display:flex; align-items:center; gap:14px; margin-top:9px}
+.acts .src{margin-top:0}
+.col.side .acts{justify-content:center}
+@media (max-width:660px){ .col.side .acts{justify-content:flex-start} }
+html[data-filter] .col.side .acts{justify-content:flex-start}
+.heart{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted);
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, transform .12s;
+}
+.heart svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round}
+.heart:hover{color:var(--red)}
+.heart[aria-pressed="true"]{color:var(--red)}
+.heart[aria-pressed="true"] svg{fill:currentColor}
+.heart.pop{transform:scale(1.25)}
+.heart .cnt:empty{display:none}
+a.vid{display:block; position:relative; color:inherit}
+.ph{position:relative}
+.ph .play{position:absolute; left:50%; top:50%; width:46px; height:46px; margin:-23px 0 0 -23px; border-radius:50%;
+  background:rgba(17,17,16,.72); display:flex; align-items:center; justify-content:center; pointer-events:none}
+.ph .play svg{width:22px; height:22px; fill:#fff; margin-left:3px}
+.vlink{margin-top:0}
+.skip{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted); opacity:.55;
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, opacity .12s, transform .12s;
+}
+.skip svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.skip:hover{opacity:1; color:var(--ink)}
+.skip[aria-pressed="true"]{opacity:1; color:var(--ink)}
+.skip.pop{transform:scale(1.2)}
+.skip .cnt:empty{display:none}
+article.skipped .ph, article.skipped .tx{display:none}
+article.skipped .hl{opacity:.4; text-decoration:line-through; text-decoration-thickness:1px}
+article.skipped .tagrow{opacity:.4}
+article.skipped .acts .src{opacity:.4}
+.myhead{margin-top:34px}
+.hidlist{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px}
+.hidlist li{display:flex; align-items:center; gap:12px; font-size:13px; color:var(--muted)}
+.hidlist li a{color:var(--muted); text-decoration:none; text-decoration:line-through}
+.hidlist li a:hover{color:var(--ink)}
+.hidlist .skip{opacity:1; color:var(--ink)}
+
+/* ---- uniform grid (My page, Weekly picks) ---- */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px; padding-top:26px}
+.grid article{text-align:left}
+.grid .ph{aspect-ratio:3/2}
+.grid .hl{font-size:19px; line-height:1.18}
+.grid .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+.grid .tagrow{margin-left:0; margin-right:0}
+.empty{padding:60px 0 40px; text-align:center; color:var(--muted); font-size:14px; line-height:1.7}
+.empty .tx{margin:0 auto}
+.empty .big{font-family:"Archivo Black",Impact,sans-serif; font-size:clamp(24px,4vw,40px); color:var(--ink); text-transform:uppercase; line-height:1; margin-bottom:14px}
+.clearbtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  padding:5px 12px; line-height:1.4;
+}
+.clearbtn:hover{background:var(--shade)}
+
+/* ---- weekly ---- */
+.week{padding:6px 0 12px}
+.week + .week{padding-top:34px; border-top:2px solid var(--ink)}
+.wtitle{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; font-size:clamp(26px,3.6vw,40px); line-height:1.08; letter-spacing:-.01em;
+  margin:0 0 14px; text-wrap:balance;
+}
+.wintro .tx{max-width:70ch; font-size:15px; line-height:1.65}
+.wtabs{position:sticky; top:0; z-index:20; background:var(--ground); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:26px}
+.wtabs .filters{padding:12px 0}
+.wtabs .filters a{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px; text-decoration:none;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600; letter-spacing:.13em; text-transform:uppercase;
+  padding:7px 14px; white-space:nowrap; transition:color .12s, background .12s;
+}
+.wtabs .filters a:hover{color:var(--red)}
+.wtabs .filters a[aria-current="true"]{background:var(--cat); color:#fff; font-weight:700}
+@media (max-width:700px){
+  .wtabs .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; -webkit-overflow-scrolling:touch;
+    padding:10px 20px; gap:14px; margin-left:-20px; margin-right:-20px; scrollbar-width:none}
+  .wtabs .filters::-webkit-scrollbar{display:none}
+}
+.wcat{scroll-margin-top:64px; border-radius:6px; transition:background .35s, box-shadow .35s}
+.wcat.hit{background:var(--shade); box-shadow:0 0 0 12px var(--shade)}
+.wcat.hit .tag{background:var(--cat); color:#fff}
+.wcats{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0 34px}
+.wcat{padding:22px 0 24px; border-bottom:1px solid var(--hair); break-inside:avoid}
+.wcat .tx{max-width:none; font-size:13.5px; line-height:1.6}
+.wcat ul{list-style:none; margin:12px 0 0; padding:0; display:grid; gap:7px}
+.wcat li{display:flex; align-items:baseline; gap:10px; font-size:13px; line-height:1.35}
+.wcat li a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--hair)}
+.wcat li a:hover{color:var(--red); border-bottom-color:var(--red)}
+.wcat li .who{font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); white-space:nowrap}
+.wtop{margin-top:30px}
+.wtop h3{
+  font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.06em; text-transform:uppercase;
+  margin:0 0 4px; display:flex; align-items:center; gap:8px;
+}
+.wtop h3 svg{width:15px; height:15px; fill:var(--red); stroke:var(--red); stroke-width:1.8}
+.wtop ol{list-style:none; margin:0; padding:0; counter-reset:n; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:0 28px}
+.wtop li{counter-increment:n; display:flex; gap:12px; align-items:baseline; padding:12px 0; border-bottom:1px solid var(--hair)}
+.wtop li::before{content:counter(n,decimal-leading-zero); font-family:"Archivo Black",Impact,sans-serif; font-size:18px; color:var(--red); line-height:1}
+.wtop li a{color:var(--ink); text-decoration:none; font-size:14px; line-height:1.3; flex:1}
+.wtop li a:hover{color:var(--red)}
+.wtop li .n{font-size:10px; font-weight:700; color:var(--muted); letter-spacing:.06em; white-space:nowrap}
+.wtop.wskip h3 svg{fill:none; stroke:var(--ink); stroke-linecap:round}
+.wtop.wskip li::before{color:var(--muted)}
+.wfb{margin-top:34px; padding-top:22px; border-top:1px solid var(--ink)}
+.wfb h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 12px}
+.wfb .fbgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px 34px}
+.wfb table{width:100%; border-collapse:collapse; font-size:12.5px}
+.wfb th{text-align:left; font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:0 0 6px; border-bottom:1px solid var(--ink)}
+.wfb th.num, .wfb td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+.wfb td{padding:6px 0; border-bottom:1px solid var(--hair); vertical-align:baseline}
+.wfb td .bar{display:inline-block; height:7px; border-radius:2px; vertical-align:middle; margin-right:6px}
+.wfb td .bar.l{background:var(--red)}
+.wfb td .bar.s{background:var(--muted); opacity:.55}
+.wfb .fbnote{font-size:11px; color:var(--muted); margin-top:8px}
+.wact{margin-top:26px; padding:18px 20px; background:var(--shade); border-radius:6px}
+.wact h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 10px}
+.wact .tx{max-width:none; font-size:14px; line-height:1.65}
+
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
+.foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
+.foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
+.foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
+</style>
+<div class="sheet" id="top">
+<div class="shell">
+  <div class="top">
+    <span class="wordmark">ADUX&nbsp;DAILY</span>
+    <nav class="topnav" aria-label="Sections">
+      <a href="index.html" aria-current="page">Daily</a>
+      <a href="weekly.html">Weekly</a>
+      <a href="my.html">My &#9829;<span class="badge" id="mybadge"></span></a>
+    </nav>
+    <span class="ctrls">
+      <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
+        <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <div><span class="mlabel">Language</span>
+          <span class="langsw" role="group" aria-label="Language">
+            <button type="button" data-set="en" aria-pressed="false">EN</button>
+            <button type="button" data-set="zh" aria-pressed="false">中文</button>
+            <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+          </span>
+        </div>
+        <div><span class="mlabel">Theme</span>
+          <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
+        </div>
+        <div class="menu-team">
+          <span class="dedication">for DC Advanced UX Team.</span>
+          <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim<br>Jisu &middot; Katey &middot; Anna</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <header class="masthead">
+    <h1>Latest News</h1>
+  </header>
+  <div class="fwrap"><nav class="filters" aria-label="Category filter">
+    <button type="button" data-f="" aria-pressed="true">All</button>
+    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
+    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
+    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
+    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
+    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
+    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
+    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
+    <button type="button" data-f="motion" style="--cat:#0FA3B1" aria-pressed="false">Motion</button>
+    <button type="button" data-f="realtime" style="--cat:#8A2BE2" aria-pressed="false">Realtime</button>
+  </nav></div>
+<section class="day" id="d2026-10-15"><div class="band"><div class="col lead"><article class="a-lead" data-tag="cockpit" data-id="2026-10-15-1"><figure class="ph ph-lead fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">2CV: comic UI on a cylinder, Radioën unclips</h3><p class="tx en">Car and Driver's look at Citroën's Paris 2CV concept zeroes in on the cabin. There is no conventional dashboard: a cylinder off the column holds an 8.0-inch touchscreen and a thin display at the windshield base, both running comic-book, hand-drawn graphics for climate, speed and navigation. The sound system hangs underneath like a classic radio, unclips, and doubles as a portable speaker. A wicker basket replaces the centre console; yellow plaid deck-chair seats and lanterns around the fabric sunroof finish the picnic mood. Door straps replace handles. It previews a sub-€15,000 EV for 2028, with a Fourgonnette van sibling.</p><p class="tx zh">Car and Driver看巴黎雪铁龙2CV概念车，重点在座舱。没有传统仪表台：转向柱伸出的圆柱装着8.0英寸触屏和风挡底部细条显示，界面都是漫画手绘风，覆盖空调、车速和导航。音响像老式收音机挂在下方，可拆下当便携音箱。可拆柳条篮代替中控，黄格纹躺椅式座椅，织物天窗边缘挂着小灯笼。门上用拉带代替把手。概念车预告2028年低于1.5万欧元的电动车；厢式Fourgonnette共用同一前脸。</p><p class="tx ko">카앤드라이버가 파리 시트로엥 2CV 콘셉트 실내를 짚는다. 일반 대시가 없다. 컬럼에서 나온 원기둥에 8.0인치 터치와 윈드실드 아래 얇은 디스플레이가 있고, 공조·속도·내비 모두 만화 손그림 UI다. 사운드는 클래식 라디오처럼 아래에 걸려 떼어 휴대 스피커가 된다. 센터 콘솔 대신 고리버켓, 노란 체크 데크체어 시트, 패브릭 선루프 가장자리의 작은 랜턴. 도어는 손잡이 대신 스트랩. 2028년 1만 5천 유로 미만 EV를 예고하고, 포고네트 밴도 같은 앞모습을 쓴다.</p><span class="acts"><a class="src" href="https://www.caranddriver.com/news/a74108677/citroen-2cv-concept-revealed/" target="_blank" rel="noopener">Car and Driver &rarr;</a><button type="button" class="heart" data-id="2026-10-15-1" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-1" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><div class="duo"><article class="a-duo" data-tag="cockpit" data-id="2026-10-15-2"><figure class="ph ph-duo fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">GV90: a popup OLED that grows when you park</h3><p class="tx en">Genesis's GV90 deep dive centres on a variable popup OLED: while driving it is a 23.6-inch panel that merges cluster, navigation and media; parked, it rises 90 mm to 24.6 inches for a cinema view. Closing the door powers the car on. A Motion Column Shifter ticks to 2 o'clock, the Crystal Sphere Controller rotates to show controls, and dashboard tweeter covers part sideways — choreography instead of a start button. Front seats swivel 180 degrees into a lounge. The stack runs Pleos Connect with Gleo AI. LG supplies the display, a 13.2-inch rear OLED, an eight-inch console touch screen and the CCU.</p><p class="tx zh">捷尼赛思GV90深潜的核心是可变弹出式OLED：行驶时是23.6英寸，合并仪表、导航和媒体；停车后升起90毫米，变成24.6英寸影院屏。关上车门即通电。运动式换挡杆转到2点钟，Crystal Sphere旋钮翻出操控面，仪表板高音罩向两侧分开——用编排代替一键启动。前排座椅可转180度围成沙龙。系统跑Pleos Connect与Gleo AI。LG提供这块屏、13.2英寸后排OLED、八英寸中控触屏和中央通信单元。</p><p class="tx ko">제네시스 GV90 딥다이브의 중심은 가변 팝업 OLED다. 주행 중에는 클러스터·내비·미디어가 합쳐진 23.6인치이고, 주차하면 90mm 올라가 24.6인치 시네마가 된다. 문을 닫으면 시동이 걸린다. 모션 컬럼 시프터가 2시로 가고, 크리스탈 스피어가 돌아가 조작면을 드러내며, 대시 트위터 커버가 옆으로 열린다. 시작 버튼 대신 안무다. 앞좌석은 180도 돌아 라운지가 된다. Pleos Connect와 Gleo AI가 돌고, LG가 디스플레이·13.2인치 후석 OLED·8인치 콘솔 터치·CCU를 넣는다.</p><span class="acts"><a class="src" href="https://newsroom.genesis.com/gv90-deep-dive-part-1-inside-the-genesis-experience/" target="_blank" rel="noopener">Genesis &rarr;</a><button type="button" class="heart" data-id="2026-10-15-2" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-2" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-duotx" data-tag="interaction" data-id="2026-10-15-3"><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">Google Play for cars: layout fits the screen shape</h3><p class="tx en">Google is rolling out a redesigned Play store for cars with Google built-in. The layout adapts to each cabin's display shape, orientation and size, with parked-versus-driving collections for audio, video and games. New apps include STARZ, Firefox, Ludo King and JioHotstar. Starting with YouTube, you can watch while parked and keep listening with background audio as soon as you shift into drive, with a Premium subscription. The update reaches more than 100 models across 16 brands, including the next Chevrolet Silverado and GMC Sierra centre screens.</p><p class="tx zh">谷歌为内置Google的车机推出重新设计的Play商店。布局随每辆车屏幕的形状、方向和尺寸变化，并按停车与行驶分出音频、视频和游戏合集。新应用包括STARZ、Firefox、Ludo King和JioHotstar。YouTube起，停车时可看视频，挂入D挡后立刻切成后台音频继续听，需Premium订阅。更新覆盖16个品牌100多款车，包括下一代雪佛兰Silverado和GMC Sierra的中控屏。</p><p class="tx ko">구글이 Google 빌트인 차량용 Play 스토어를 다시 짠다. 레이아웃이 차마다 화면 모양·방향·크기에 맞추고, 주차와 주행용으로 오디오·비디오·게임 컬렉션을 나눈다. STARZ, Firefox, Ludo King, JioHotstar가 들어온다. YouTube부터는 주차 중 시청하다 D로 넣으면 바로 백그라운드 오디오로 이어지며 Premium이 필요하다. 16개 브랜드 100대 이상, 다음 쉐보레 실버라도와 GMC 시에라 센터 스크린에도 간다.</p><span class="acts"><a class="src" href="https://blog.google/products-and-platforms/platforms/android/cars-with-google-built-in-google-play-updates/" target="_blank" rel="noopener">Google &rarr;</a><button type="button" class="heart" data-id="2026-10-15-3" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-3" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article></div></div><div class="col mid"><article class="a-mid" data-tag="cockpit" data-id="2026-10-15-4"><figure class="ph ph-mid fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">Type 01: one 24-inch OLED and a soundbar mirror</h3><p class="tx en">InCar's cabin walkthrough of Jaguar's Type 01 puts a single 24-inch OLED across the dash for instruments and infotainment, with a separate 7-inch console pad for climate and audio and 7-inch portrait screens for the rear. A Meridian Immersive Sound System packs 38 speakers, including a full-width panoramic soundbar at the base of the windscreen that also houses ClearSight, the camera rear-view display. Front seats add Sensory Audio haptics. Controls and storage stay hidden until needed. Orders open January 2027; a figure around $130,000 has been rumoured.</p><p class="tx zh">InCar走进捷豹Type 01座舱：仪表台上是一整块24英寸OLED，兼顾仪表与信息娱乐；另有7英寸中控触屏管空调和音响，后排各有7英寸竖屏。Meridian沉浸音响共38只扬声器，风挡底部通长全景音响条里还藏着ClearSight摄像头后视屏。前排座椅带Sensory Audio触感。操控与储物用时才露出。2027年1月开订，传闻约13万美元。</p><p class="tx ko">InCar가 재규어 Type 01 실내를 살핀다. 대시에 계기와 인포를 합친 24인치 OLED 하나, 공조·오디오용 7인치 콘솔 패드, 뒷좌석 7인치 세로 화면. Meridian 몰입 사운드는 스피커 38개이고, 윈드실드 아래 전폭 사운드바에 ClearSight 카메라 후방 디스플레이가 들어간다. 앞좌석에는 Sensory Audio 햅틱. 조작과 수납은 필요할 때만 드러난다. 2027년 1월 주문, 약 13만 달러가 거론된다.</p><span class="acts"><a class="src" href="https://www.incarmag.co.uk/articles/video-jaguar-type-01" target="_blank" rel="noopener">InCar &rarr;</a><button type="button" class="heart" data-id="2026-10-15-4" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-4" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-mid" data-tag="interaction" data-id="2026-10-15-5"><figure class="ph ph-mid fb" style="background:#17A472;color:#fff"><span>Interaction</span></figure><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">Seagull Gen2: no cluster, buttons stay under the pad</h3><p class="tx en">BYD's second-generation Seagull, due 20 October, stretches to 4,205 mm with a 2,650 mm wheelbase and puts LiDAR on the roof. Inside, the traditional instrument cluster is gone; a larger central touchscreen takes the dash, while selected physical buttons remain for quick use. A wireless charging pad and a roomy console bin sit under a minimalist two-spoke wheel. Power is a 95 kW motor on a second-generation LFP Blade battery with flash charging. The cabin reads as a small-EV bet: more glass for software, fewer gauges, and hard keys where the thumbs still expect them.</p><p class="tx zh">比亚迪第二代海鸥计划10月20日上市，车长4205毫米、轴距2650毫米，车顶装激光雷达。传统仪表消失，更大的中控触屏占住仪表台，同时保留部分实体按键。无线充电板和宽敞中控储物在极简双辐方向盘下方。动力是95千瓦电机，配第二代磷酸铁锂刀片电池并支持闪充。这是小型电动车的赌注：软件多占玻璃，表少，拇指仍碰到实体键。</p><p class="tx ko">BYD 2세대 씨걸이 10월 20일 출시 예정이다. 길이 4205mm, 축거 2650mm, 지붕에 라이다. 전통 클러스터는 없고 더 큰 센터 터치가 대시를 맡으며, 빠른 조작용 물리 버튼은 남긴다. 무선 충전 패드와 넓은 콘솔 수납이 미니멀 2스포크 휠 아래 있다. 95kW 모터에 2세대 LFP 블레이드와 플래시 충전. 소형 EV의 내기: 소프트웨어용 유리는 늘리고 계기는 줄이되, 엄지가 찾는 하드 키는 남긴다.</p><span class="acts"><a class="src" href="https://carnewschina.com/2026/10/14/second-generation-byd-seagull-set-for-october-20-launch-with-lidar-and-expanded-dimensions/" target="_blank" rel="noopener">CarNewsChina &rarr;</a><button type="button" class="heart" data-id="2026-10-15-5" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-5" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article></div><div class="col side"><article class="a-side" data-tag="micromobility" data-id="2026-10-15-6"><figure class="ph ph-side fb" style="background:#E5342A;color:#fff"><span>Micromobility</span></figure><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><h3 class="hl">Xyber Air: TFT with nav, calls and auto brightness</h3><p class="tx en">Segway's Xyber Air, on sale from 27 October at $1,999.99, keeps the original Xyber's angular frame and X-shaped lights in an 84 lb street package. A full-colour TFT shows navigation, ride metrics, battery, calls and music, and dims or brightens with ambient light. Riders pick Class 1, 2 or 3 in the app (Hybrid where legal), with a 750 W motor, 80 Nm peak torque and a 48 V 717 Wh pack rated up to 58 miles. AirLock, Apple Find My, GPS Lost Mode and OTA updates cover the display, battery and controllers. Traction control, hill descent and hill-start assist sit under UL 2271 and 2849.</p><p class="tx zh">九号Xyber Air自10月27日起售，建议零售价1999.99美元，保留原版棱角车架与X形灯，整车84磅偏街道。全彩TFT显示导航、骑行数据、电量、来电和音乐，并随环境光自动调亮。App可选Class 1、2或3（合法地区有Hybrid），750瓦电机、峰值80牛米，48伏717瓦时电池标称续航58英里。AirLock、Apple查找、GPS丢失模式和OTA覆盖屏幕、电池与控制器。牵引力控制、下坡缓降和坡道起步辅助，并通过UL 2271与2849。</p><p class="tx ko">세그웨이 Xyber Air는 10월 27일부터 1,999.99달러. 오리지널의 각진 프레임과 X형 램프를 84파운드 스트리트 패키지로 남긴다. 풀컬러 TFT에 내비·주행·배터리·통화·음악이 뜨고 주변광에 맞춰 밝기가 바뀐다. 앱에서 Class 1·2·3(합법 시 Hybrid), 750W 모터, 피크 80Nm, 48V 717Wh로 최대 58마일. AirLock, Apple Find My, GPS Lost Mode, OTA가 디스플레이·배터리·컨트롤러를 덮는다. TCS·힐 디센트·힐스타트에 UL 2271·2849.</p><span class="acts"><a class="src" href="https://store.segway.com/hub/news/segway-xyber-air/" target="_blank" rel="noopener">Segway &rarr;</a><button type="button" class="heart" data-id="2026-10-15-6" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-6" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-side" data-tag="micromobility" data-id="2026-10-15-7"><figure class="ph ph-side fb" style="background:#E5342A;color:#fff"><span>Micromobility</span></figure><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><h3 class="hl">Zero DS: 436.5 km on one sealed charge</h3><p class="tx en">Zero Motorcycles took the Guinness title for longest journey by electric motorcycle on a single charge: 436.5 km from the French Alps to the Mediterranean on a production Zero DS with the optional 3.6 kWh Power Tank, for 19.2 kWh total. The charge port was sealed; dual GPS trackers and a Guinness adjudicator signed off. Two sibling bikes also beat the old 310.7 km mark — an SR/S to 350 km and a DSR/X to 384 km — on public roads overnight at about 52 km/h. Custom ride modes and regeneration were part of the plan, not special hardware.</p><p class="tx zh">Zero拿下电动摩托车单次充电最长行程吉尼斯纪录：量产Zero DS加选装3.6千瓦时Power Tank、总计19.2千瓦时，从法意阿尔卑斯骑到地中海，436.5公里。充电口封条，双GPS与吉尼斯裁判核验。另两台量产车也打破旧纪录310.7公里——SR/S到350公里，DSR/X到384公里——夜间公道路上约52公里/小时。自定义骑行模式与动能回收是策略，不是特制硬件。</p><p class="tx ko">제로가 전기 오토바이 단충전 최장 거리 기네스 타이틀을 가져갔다. 양산 Zero DS에 옵션 3.6kWh Power Tank로 총 19.2kWh, 프랑스 알프스에서 지중해까지 436.5km. 충전구를 봉인하고 GPS 두 대와 기네스 심판이 확인했다. SR/S 350km, DSR/X 384km도 옛 기록 310.7km를 넘겼다. 야간 공도, 약 52km/h. 커스텀 라이드 모드와 회생은 전략이지 특제 하드웨어가 아니다.</p><span class="acts"><a class="src" href="https://zeromotorcycles.com/stories/guinness-world-records-title" target="_blank" rel="noopener">Zero Motorcycles &rarr;</a><button type="button" class="heart" data-id="2026-10-15-7" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-7" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-side" data-tag="ai" data-id="2026-10-15-8"><figure class="ph ph-side fb" style="background:#DB3A9C;color:#fff"><span>AI</span></figure><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">Schneider thermostat: translucent face, wakes nearby</h3><p class="tx en">Schneider Electric's Smart Thermostat for Apple Home Collection uses a translucent display that brightens as you approach and dims in the dark. Adaptive Temperature in the Home app reads iPhone presence to preheat or precool without schedules; Clean Energy Guidance shows when the local grid is cleaner. Tap-to-pair NFC works even unpowered, with Matter over Thread and end-to-end encryption in Apple Home. Optional Room Sensors add temperature and humidity per room. Apple lists $199.95 for the thermostat and $39.95 for a sensor; Schneider says U.S. and Canada Apple Store availability begins early 2027.</p><p class="tx zh">施耐德为Apple Home Collection做的智能温控器用半透明屏，走近变亮、暗处变暗。Home应用的自适应温度根据iPhone是否在家预热或预冷，无需排程；清洁能源指引显示本地电网更干净的时段。未通电也能NFC一碰配对，走Matter over Thread，并在Apple Home端到端加密。可选房间传感器补温湿度。苹果标价温控器199.95美元、传感器39.95美元；施耐德称美加Apple Store最早2027年初开卖。</p><p class="tx ko">슈나이더의 Apple Home Collection 스마트 온도조절기는 반투명 디스플레이로, 다가가면 밝아지고 어두운 방에서는 줄어든다. Home 앱 Adaptive Temperature가 iPhone 재실로 예열·예냉하고, Clean Energy Guidance가 그리드가 더 깨끗할 때를 보여준다. 전원 없이도 NFC 탭 페어링, Matter over Thread, Apple Home 종단 암호화. 룸 센서는 온·습도를 더한다. 온도조절기 199.95달러, 센서 39.95달러. 슈나이더는 미·캐나다 Apple Store가 2027년 초라고 했다.</p><span class="acts"><a class="src" href="https://www.se.com/us/en/about-us/newsroom/news/press-releases/Schneider-Electric-and-Apple-introduce-new-Smart-Thermostat-for-Apple-Home-Collection-and-Power-Mount-for-Apple-HomeView-6ace285bd7d9c046b800dc00/" target="_blank" rel="noopener">Schneider Electric &rarr;</a><button type="button" class="heart" data-id="2026-10-15-8" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-8" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article></div></div><div class="rest"><article class="a-foot" data-tag="ai" data-id="2026-10-15-9"><figure class="ph ph-foot fb" style="background:#DB3A9C;color:#fff"><span>AI</span></figure><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">Figma agent: guidelines, skills, follow on canvas</h3><p class="tx en">Figma's design agent is generally available with clearer instruction-following and longer tasks. Library owners upload markdown guidelines so the agent respects tokens and usage rules; teammates can follow another person's agent on the canvas. Uber's design-systems team uses Community skills like /create-anatomy and /create-color to document variant-heavy components in an afternoon. Granola pulls meeting feedback onto the file via a connector. Atlassian slots animated illustrations into components and lets the agent iterate easing inside design-system variables. Full seats on Professional and up get the agent.</p><p class="tx zh">Figma设计代理正式可用，更跟指令、能跑更长任务。库负责人上传markdown指南，让代理遵守令牌与用法；同事可在画布上跟随他人的代理。Uber设计系统团队用社区技能如/create-anatomy、/create-color，一下午把多变体组件写成文档。Granola经连接器把会议反馈拉进文件。Atlassian把动态插画放进组件槽，并让代理在设计系统变量内迭代缓动。Professional及以上完整席位可用，部分教育版与有限Starter也可。</p><p class="tx ko">피그마 디자인 에이전트가 정식 출시됐다. 지시를 더 잘 따르고 긴 작업을 견딘다. 라이브러리 주인이 마크다운 가이드라인을 올려 토큰·사용 규칙을 지키게 하고, 동료 에이전트를 캔버스에서 따라갈 수 있다. Uber 디자인 시스템 팀은 /create-anatomy, /create-color 같은 Community 스킬로 변체 많은 컴포넌트 문서를 오후에 낸다. Granola는 커넥터로 회의 피드백을 파일에 붙인다. Atlassian은 모션 일러스트를 슬롯에 넣고 에이전트가 디자인 시스템 변수 안에서 이징을 다듬게 한다. Professional 이상 Full 시트, 일부 Education·제한 Starter.</p><span class="acts"><a class="src" href="https://www.figma.com/blog/3-ways-product-designers-use-the-figma-agent/" target="_blank" rel="noopener">Figma &rarr;</a><button type="button" class="heart" data-id="2026-10-15-9" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-9" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-15-10"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Pictoplasma: two dots typed as a face</h3><p class="tx en">Vilnius studio andstudio rebranded Berlin's Pictoplasma character festival around pareidolia. They adapted Lift Type's Melun into Pictoplasma Melun with a ct ligature and a two-dot eyes glyph, so the identity is typed rather than drawn on top — letters as body, dots as face. Layouts and colours change per city; the type and dots stay. Motion designer Greta Griniūtė built an energetic system from those parts alone. Two holes in festival tents, a two-dot tattoo booth and stickers on street objects extend the face into the venue. Tickets for the 2026 Berlin edition sold out six weeks early.</p><p class="tx zh">维尔纽斯的andstudio用面孔错觉重塑柏林角色设计节Pictoplasma。他们把Lift Type的Melun改成Pictoplasma Melun，加ct连字和一对眼睛字形，身份完全靠打字完成，不加手绘——字母是身体，两点是脸。城市换版式与颜色，字体和点不变。动效设计师Greta Griniūtė只靠这些零件做出利落动效。帐篷挖两个洞、两点纹身摊、街上贴纸，把脸延伸到现场。2026柏林场票提前六周售罄。</p><p class="tx ko">빌뉴스 andstudio가 베를린 캐릭터 페스티벌 Pictoplasma를 파레이돌리아로 리브랜드했다. Lift Type Melun을 Pictoplasma Melun으로 다듬어 ct 리거처와 눈 두 점 글리프를 넣어, 위에 그리지 않고 타이핑만으로 정체성을 만든다. 글자는 몸, 점은 얼굴. 도시마다 레이아웃·색은 바뀌고 타입과 점은 고정. 모션 디자이너 Greta Griniūtė가 그 요소만으로 시스템을 짰다. 텐트 구멍 둘, 두 점 타투 부스, 거리 스티커가 얼굴을 현장으로 뻗는다. 2026 베를린 티켓은 여섯 주 일찍 매진됐다.</p><span class="acts"><a class="src" href="https://www.creativeboom.com/work/how-two-simple-dots-gave-pictoplasma-a-face-after-20-years-of-neutral-design/" target="_blank" rel="noopener">Creative Boom &rarr;</a><button type="button" class="heart" data-id="2026-10-15-10" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-10" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-15-11"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Pohoda: a, e and s that flip to the line edge</h3><p class="tx en">Bratislava duo Andrej &amp; Andrej give Slovakia's Pohoda Festival its third major identity for the 30th year: a new logo, colour system and a rounded geometric display typeface reinterpreted from pre-2010 lettering. Lowercase a, e and s share capital height and can sit on the top or bottom of the line, so each artist name becomes its own lettering composition. The twin-baby mark returns as a 3D model with Matej Martinec, then as an inflatable sculpture and a clear keyring. Gradients, candy colours and navy-stripe memories layer the system; merch was made with Linda Straková in a GOTS factory in Portugal.</p><p class="tx zh">布拉迪斯拉发双人组Andrej &amp; Andrej为斯洛伐克Pohoda音乐节三十周年做第三次大改版：新标志、色彩系统和一款圆润几何展示字体，源自2010年前的手写感。小写a、e、s与大写同高，可贴齐行顶或行底，每位艺人名字都成独立字构图。双胞胎宝宝标志与Matej Martinec做成3D，再变成充气雕塑和透明钥匙扣。渐变、糖果色与海军条纹记忆叠进系统；周边与Linda Straková在葡萄牙GOTS工厂制作。</p><p class="tx ko">브라티슬라바 Andrej &amp; Andrej가 슬로바키아 Pohoda 페스티벌 30주에 세 번째 대형 아이덴티티를 준다. 새 로고·색·둥근 기하 디스플레이 서체는 2010년 이전 레터링을 다시 읽은 것. 소문자 a·e·s는 대문자 높이를 공유하고 행의 위나 아래에 붙일 수 있어, 아티스트 이름마다 독립 레터링이 된다. 쌍둥이 아기 마크는 Matej Martinec과 3D로 돌아와 풍선 조각과 투명 키링이 된다. 그라데이션·캔디 컬러·네이비 스트라이프 기억이 겹치고, 머천은 Linda Straková와 포르투갈 GOTS 공장에서 만들었다.</p><span class="acts"><a class="src" href="https://www.itsnicethat.com/articles/andrej-and-andrej-pohoda-festival-30th-anniversary-graphic-design-project-141026" target="_blank" rel="noopener">It's Nice That &rarr;</a><button type="button" class="heart" data-id="2026-10-15-11" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-11" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-15-12"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Kuda: KU over DA, a custom Naira, no gradients</h3><p class="tx en">Barkas repositions Nigerian digital bank Kuda around 'More Life', with a stamp-like wordmark stacking KU over DA in thick geometric letters drawn from Nigerian art and architecture. Personal banking sits in deep purple, Business in black. A custom Naira sign and the Kuda Moderna typeface cut against conservative bank typography; the layout grid stays modular. Documentary photos from local shooters and hand-drawn Lagos traffic scenes replace soft gradients and smiling mascots. Motion carries the city's rhythm. The bank reports higher openings, reactivations and deposits after the shift from challenger pastels.</p><p class="tx zh">Barkas把尼日利亚数字银行Kuda重定位到“More Life”：厚几何字把KU叠在DA上，像印章，灵感来自尼日利亚艺术与建筑。个人银行用深紫，企业用黑。定制奈拉符号和Kuda Moderna字体对抗保守银行排版，版式网格保持模块化。本地摄影师的纪实照片和手绘拉各斯堵车场景，取代柔和渐变与微笑吉祥物。动效带上城市节奏。银行称开户、唤醒与存款在告别挑战者马卡龙色后上升。</p><p class="tx ko">Barkas가 나이지리아 디지털 뱅크 Kuda를 ‘More Life’로 옮긴다. 두꺼운 기하 글자로 KU를 DA 위에 찍듯 쌓고, 나이지리아 예술·건축에서 가져왔다. 개인은 짙은 보라, 비즈니스는 검정. 커스텀 나이라 기호와 Kuda Moderna가 보수적 은행 타이포를 깨고, 레이아웃은 모듈 그리드. 로컬 사진의 다큐와 손그림 라고스 교통 장면이 부드러운 그라데이션·웃는 마스코트를 대체한다. 모션은 도시 리듬. 챌린저 파스텔을 버린 뒤 개설·재활성·예금이 늘었다고 한다.</p><span class="acts"><a class="src" href="https://www.itsnicethat.com/articles/barkas-kuda-graphic-design-project-131026" target="_blank" rel="noopener">It's Nice That &rarr;</a><button type="button" class="heart" data-id="2026-10-15-12" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-12" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="motion" data-id="2026-10-15-13"><a class="vid" href="https://www.stashmedia.tv/dixonbaxi-lead-adc-in-the-search-for-whats-next/" target="_blank" rel="noopener" aria-label="Watch the video"><figure class="ph ph-foot fb" style="background:#0FA3B1;color:#fff"><span>Motion</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></figure></a><span class="tagrow" style="--cat:#0FA3B1"><span class="tag">Motion</span></span><h3 class="hl">ADC Cube: DixonBaxi lets the award misbehave</h3><p class="tx en">DixonBaxi's launch film for the Art Directors Club 106th Annual Awards treats the ADC Cube as the thing that must erupt. Across the campaign the Cube stretches, fractures, multiplies and misbehaves; colours clash and type flips from delicate to feral before finding new tension. Zelig Sound built a bespoke sonic bed for nerve and friction. Creative director Tassia Swulinska frames it as the work before applause: wrong turns, breakthroughs and the refusal to sit still. Entries are open, with deadlines through March 2027.</p><p class="tx zh">DixonBaxi为艺术指导俱乐部第106届年奖做的发布片，把ADC立方体当成必须炸开的东西。立方体拉伸、碎裂、增殖、失控；颜色互相冲撞，字体从精致翻到野性，再找到新的张力。Zelig Sound做了定制声景，抓住紧张与摩擦。创意总监Tassia Swulinska说这是掌声之前的工作：走错路、突然突破、拒绝静止。即日起征集，截点延至2027年3月。</p><p class="tx ko">DixonBaxi의 ADC 106회 연례상 론칭 필름은 ADC 큐브를 터져야 할 대상으로 다룬다. 캠페인 전반에서 큐브가 늘어나고 깨지고 증식하며 말을 듣지 않는다. 색이 부딪히고 타이포가 섬세에서 야성으로 뒤집힌 뒤 새 긴장을 찾는다. Zelig Sound가 신경과 마찰용 사운드를 짰다. CD Tassia Swulinska는 박수 이전의 일, 잘못된 길과 돌파, 가만히 있지 않음이라고 말한다. 응모는 열려 있고 마감은 2027년 3월까지다.</p><span class="acts"><a class="src" href="https://www.stashmedia.tv/dixonbaxi-lead-adc-in-the-search-for-whats-next/" target="_blank" rel="noopener">Stash &rarr;</a><a class="src vlink" href="https://www.stashmedia.tv/dixonbaxi-lead-adc-in-the-search-for-whats-next/" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-15-13" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-13" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="realtime" data-id="2026-10-15-14"><figure class="ph ph-foot fb" style="background:#8A2BE2;color:#fff"><span>Realtime</span></figure><span class="tagrow" style="--cat:#8A2BE2"><span class="tag">Realtime</span></span><h3 class="hl">Chroma Space: paint after the light hits the form</h3><p class="tx en">ColgArt's Chroma Space is a Photoshop CEP panel with a real-time Three.js viewport that puts a chosen colour on a lit 3D shape, so you see highlight, core shadow and bounce before it hits the canvas. Image-based environment lighting rebuilds from sky, horizon and ground colours. The eyedropper samples the rendered view, including lit highlights, and syncs both ways with Photoshop's foreground and background. Updates throttle to share the GPU with Photoshop. Pro adds a time-of-day slider plus materials such as depth fog, reflectivity and toon shading.</p><p class="tx zh">ColgArt的Chroma Space是Photoshop CEP面板，内嵌实时Three.js视口，把所选颜色铺在受光的三维形体上，下笔前先看到高光、固有阴影和反光。基于图像的环境光按天空、地平线与地面色重建。吸管可从渲染视图取样，包括受光高光，并与Photoshop前景/背景双向同步。更新节流，与Photoshop共享GPU。Pro版有一天时刻滑条，以及景深雾、反射、卡通着色等材质。</p><p class="tx ko">ColgArt의 Chroma Space는 Photoshop CEP 패널이다. 실시간 Three.js 뷰포트가 고른 색을 조명 받는 3D 형태에 올려, 캔버스에 쓰기 전에 하이라이트·코어 섀도·바운스를 보여준다. 이미지 기반 환경광이 하늘·지평선·지면 색으로 다시 짜인다. 스포이드는 렌더 뷰에서 하이라이트까지 샘플하고 Photoshop 전·배경과 양방향 동기화한다. 업데이트는 스로틀되어 GPU를 Photoshop과 나눈다. Pro는 시간대 슬라이더와 안개·반사·툰 셰이딩 재질을 더한다.</p><span class="acts"><a class="src" href="https://80.lv/articles/color-picker-for-photoshop-that-lets-you-see-hues-on-3d-shapes-before-painting-them" target="_blank" rel="noopener">80 Level &rarr;</a><button type="button" class="heart" data-id="2026-10-15-14" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-14" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="realtime" data-id="2026-10-15-15"><figure class="ph ph-foot fb" style="background:#8A2BE2;color:#fff"><span>Realtime</span></figure><span class="tagrow" style="--cat:#8A2BE2"><span class="tag">Realtime</span></span><h3 class="hl">Locodrome: free MetaHuman face and body in UE</h3><p class="tx en">Unreal filmmaker Anthony Koithra released Locodrome Character Animation Tool, a free editor utility widget for animating MetaHuman face and body in-engine. It replaces his earlier MetaHuman Animation Tool, rebuilt with an interface that switches between Face and Body from the selected Control Rig, and works with the UE5 Mannequin and Reallusion's CC4 MetaHuman rig. Features came from animator feedback and an Epic MegaGrant. LCAT is free on FAB and Gumroad; Koithra says it is payback to the Unreal community after going full-time indie.</p><p class="tx zh">虚幻电影人Anthony Koithra发布了Locodrome角色动画工具，免费编辑器实用控件，可在引擎内驱动MetaHuman脸与身体。它取代早前的MetaHuman Animation Tool，按所选Control Rig在Face与Body界面间切换，并兼容UE5人偶与Reallusion的CC4 MetaHuman绑定。功能来自动画师反馈与Epic MegaGrant。LCAT在FAB和Gumroad免费；Koithra说这是全职独立后对虚幻社区的回馈。</p><p class="tx ko">언리얼 필름메이커 Anthony Koithra가 Locodrome Character Animation Tool을 냈다. 엔진 안에서 MetaHuman 얼굴·몸을 돌리는 무료 에디터 유틸리티 위젯이다. 이전 MetaHuman Animation Tool을 다시 짜, 고른 Control Rig에 따라 Face와 Body UI를 바꾸고 UE5 마네킹과 Reallusion CC4 MetaHuman 릭도 받는다. 애니메이터 피드백과 Epic MegaGrant가 들어갔다. FAB·Gumroad 무료. Koithra는 풀타임 인디가 된 뒤 언리얼 커뮤니티에 갚는 길이라고 했다.</p><span class="acts"><a class="src" href="https://80.lv/articles/grab-this-updated-metahuman-animation-tool-for-free" target="_blank" rel="noopener">80 Level &rarr;</a><button type="button" class="heart" data-id="2026-10-15-15" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-15" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article><article class="a-foot" data-tag="industrial" data-id="2026-10-15-16"><figure class="ph ph-foot fb" style="background:#B08900;color:#fff"><span>Industrial</span></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">Weather100: e-paper that ranks today vs a century</h3><p class="tx en">Weather100's e-paper panels show one local metric above a circled ranking against what the company calls a century of history, plus a short explanation — not a dashboard of graphs. The 10.2-inch Pro ($179.99) sits in a machined white metal frame with stand, wall or magnetic mounts; a 4.2-inch Mini is $79.99. Screens refresh each morning over Wi-Fi between 7 and 8 a.m. Physical controls hide the text or rotate the panel. The first year of data is included, then $12 a year; without renewal the devices ask to subscribe. Rankings are context, not warnings.</p><p class="tx zh">Weather100的电子纸屏把一个本地指标放在圆圈排名上方，对照公司所称的百年气候史，再加一句说明——不是图表仪表盘。10.2英寸Pro售179.99美元，白色金属机加工边框，可桌面、壁挂或磁吸；4.2英寸Mini为79.99美元。每天早晨7到8点经Wi-Fi刷新。实体键可藏说明或旋转屏幕。首年数据免费，之后每年12美元；不续费就提示订阅。排名是语境，不是预警。</p><p class="tx ko">Weather100 전자잉크는 지역 지표 하나와 원형 순위, 짧은 설명을 보여 준다. 회사 말로는 100년 기상과 비교하며, 그래프 대시보드가 아니다. 10.2인치 Pro는 179.99달러, 절삭 화이트 메탈 프레임에 스탠드·벽·자석 장착. 4.2인치 Mini는 79.99달러. 매일 아침 7–8시 Wi-Fi로 갱신. 물리 키로 설명을 숨기거나 화면을 돌린다. 첫해 데이터 포함, 이후 연 12달러. 갱신 없으면 구독 안내. 순위는 맥락이지 경보가 아니다.</p><span class="acts"><a class="src" href="https://www.yankodesign.com/2026/10/14/weather100s-e-paper-displays-give-daily-weather-a-century-of-context/" target="_blank" rel="noopener">Yanko Design &rarr;</a><button type="button" class="heart" data-id="2026-10-15-16" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-15-16" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-15</span></article></div></section><div class="datebar"><a class="arrow" href="20261014.html" aria-label="Previous edition">&larr;</a><button type="button" class="cur" id="calbtn" aria-expanded="false" aria-haspopup="dialog"><svg viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 7h12M5 1.5v3M11 1.5v3"/></svg>Thu 15 Oct 2026</button><a class="arrow" aria-disabled="true">&rarr;</a><div class="cal" id="cal" hidden role="dialog" aria-label="Pick an edition"></div></div>
+  <a class="morebar" href="#top">Back to top &uarr;</a>
+</div>
+</div>
+<footer class="foot"><div class="shell foot-grid">
+  <span class="wordmark">ADUX Daily</span>
+  <span class="note">Curated by Claude</span>
+</div></footer>
+<script>window.ADUX_LIKE_API="https://adux-likes.kinomeartemis.workers.dev";</script><script>
+(function(){
+  var root=document.documentElement;
+  var btns=[].slice.call(document.querySelectorAll('.langsw button'));
+  var sw=document.getElementById('themesw');
+  var mb=document.getElementById('menubtn'), menu=document.getElementById('menu');
+
+  /* ---- language: stored choice, else the device language ---- */
+  function applyLang(l,store){
+    root.setAttribute('data-lang',l);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    if(store){try{localStorage.setItem('hmi-lang',l);}catch(e){}}
+  }
+  var lang=null;
+  try{lang=localStorage.getItem('hmi-lang');}catch(e){}
+  if(['en','zh','ko'].indexOf(lang)<0){
+    var nav=(navigator.language||'en').toLowerCase();
+    lang=nav.indexOf('ko')===0?'ko':nav.indexOf('zh')===0?'zh':'en';
+  }
+  applyLang(lang,false);
+  btns.forEach(function(b){b.addEventListener('click',function(){applyLang(b.dataset.set,true);});});
+
+  /* ---- theme ---- */
+  function systemDark(){
+    try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}
+  }
+  function label(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    if(sw) sw.textContent=dark?'Light':'Dark';
+  }
+  var th=null;
+  try{th=localStorage.getItem('hmi-theme');}catch(e){}
+  if(th==='dark'||th==='light'){ root.setAttribute('data-theme',th); }
+  label();
+  if(sw) sw.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('hmi-theme',next);}catch(e){}
+    label();
+  });
+
+  /* ---- hamburger ---- */
+  function setMenu(open){
+    if(!menu||!mb) return;
+    menu.hidden=!open;
+    mb.setAttribute('aria-expanded',String(open));
+  }
+  if(mb) mb.addEventListener('click',function(e){e.stopPropagation(); setMenu(menu.hidden);});
+  document.addEventListener('click',function(e){
+    if(menu&&!menu.hidden&&!menu.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
+
+  /* ---- category filter ---- */
+  var fbtns=[].slice.call(document.querySelectorAll('.filters button'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      if(b.dataset.f){ root.setAttribute('data-filter',b.dataset.f); }
+      else{ root.removeAttribute('data-filter'); }
+      fbtns.forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); });
+    });
+  });
+
+  /* ---- reactions: hearts + "not for me" — local lists (My page) + shared counts (Worker API) ---- */
+  var API=(window.ADUX_LIKE_API||'').replace(/\/+$/,'');
+  function loadJ(k){ try{ return JSON.parse(localStorage.getItem(k)||'{}')||{}; }catch(e){ return {}; } }
+  function saveJ(k,o){ try{ localStorage.setItem(k,JSON.stringify(o)); }catch(e){} }
+  function loadLikes(){ return loadJ('adux-likes'); }
+  function saveLikes(o){ saveJ('adux-likes',o); }
+  function loadSkips(){ return loadJ('adux-skips'); }
+  function saveSkips(o){ saveJ('adux-skips',o); }
+  function cid(){
+    try{
+      var c=localStorage.getItem('adux-cid');
+      if(!c){ c=Math.random().toString(36).slice(2,10)+Date.now().toString(36); localStorage.setItem('adux-cid',c); }
+      return c;
+    }catch(e){ return 'anon'; }
+  }
+  function post(path,body){
+    if(!API||!window.fetch) return Promise.reject(new Error('no api'));
+    return fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){ return r.json(); });
+  }
+  function badge(){
+    var b=document.getElementById('mybadge'); if(!b) return;
+    var n=Object.keys(loadLikes()).length; b.textContent=n?String(n):'';
+  }
+  function setCount(sel,id,n){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"] .cnt'),function(c){ c.textContent=n>0?String(n):''; });
+  }
+  function setPressed(sel,id,on){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"]'),function(x){ x.setAttribute('aria-pressed',String(on)); });
+  }
+  function setHidden(id,on){
+    [].forEach.call(document.querySelectorAll('article[data-id="'+id+'"]'),function(a){ a.classList.toggle('skipped',!!on); });
+  }
+  function bump(btn,d){
+    var c=btn.querySelector('.cnt'); var n=parseInt(c&&c.textContent||'0',10)||0; return Math.max(0,n+d);
+  }
+  function toggleLike(h){
+    var id=h.dataset.id, cur=loadLikes(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveLikes(cur); badge(); setPressed('.heart',id,on);
+    if(on){ var sk=loadSkips(); if(sk[id]){ delete sk[id]; saveSkips(sk); setPressed('.skip',id,false); setHidden(id,false);
+      var sb=document.querySelector('.skip[data-id="'+id+'"]'); if(sb) setCount('.skip',id,bump(sb,-1)); } }
+    h.classList.add('pop'); setTimeout(function(){ h.classList.remove('pop'); },160);
+    setCount('.heart',id,bump(h,on?1:-1));
+    post('/like',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.heart',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:like',{detail:{id:id,on:on}}));
+  }
+  function toggleSkip(b){
+    var id=b.dataset.id, cur=loadSkips(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveSkips(cur); setPressed('.skip',id,on); setHidden(id,on);
+    if(on){ var lk=loadLikes(); if(lk[id]){ delete lk[id]; saveLikes(lk); badge(); setPressed('.heart',id,false);
+      var hb=document.querySelector('.heart[data-id="'+id+'"]'); if(hb) setCount('.heart',id,bump(hb,-1)); } }
+    b.classList.add('pop'); setTimeout(function(){ b.classList.remove('pop'); },160);
+    setCount('.skip',id,bump(b,on?1:-1));
+    post('/skip',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.skip',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:skip',{detail:{id:id,on:on}}));
+  }
+  function wire(scope){
+    var likes=loadLikes(), skips=loadSkips();
+    var hearts=[].slice.call((scope||document).querySelectorAll('.heart[data-id]'));
+    var sks=[].slice.call((scope||document).querySelectorAll('.skip[data-id]'));
+    hearts.forEach(function(h){
+      if(h.dataset.wired) return; h.dataset.wired='1';
+      h.setAttribute('aria-pressed',String(!!likes[h.dataset.id]));
+      h.addEventListener('click',function(){ toggleLike(h); });
+    });
+    sks.forEach(function(b){
+      if(b.dataset.wired) return; b.dataset.wired='1';
+      b.setAttribute('aria-pressed',String(!!skips[b.dataset.id]));
+      if(skips[b.dataset.id]) setHidden(b.dataset.id,true);
+      b.addEventListener('click',function(){ toggleSkip(b); });
+    });
+    var ids=[]; hearts.concat(sks).forEach(function(h){ if(ids.indexOf(h.dataset.id)<0) ids.push(h.dataset.id); });
+    for(var i=0;i<ids.length;i+=150){
+      post('/counts',{ids:ids.slice(i,i+150)}).then(function(r){
+        var c=(r&&r.counts)||{}; Object.keys(c).forEach(function(k){ setCount('.heart',k,c[k]); });
+        var sk=(r&&r.skips)||{}; Object.keys(sk).forEach(function(k){ setCount('.skip',k,sk[k]); });
+      }).catch(function(){});
+    }
+  }
+  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,skips:loadSkips,saveSkips:saveSkips,badge:badge,heartSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>',skipSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>'};
+  badge(); wire(document);
+})();
+</script><script>window.ADUX_DATES=["2026-10-15", "2026-10-14", "2026-10-13", "2026-10-12", "2026-10-09", "2026-10-06", "2026-10-05", "2026-10-02", "2026-10-01", "2026-09-30", "2026-09-29", "2026-09-28", "2026-09-25", "2026-09-24", "2026-09-23", "2026-09-22", "2026-09-21", "2026-09-18", "2026-09-17", "2026-09-16", "2026-09-15", "2026-09-14", "2026-09-11", "2026-09-10", "2026-09-09", "2026-09-08", "2026-09-07", "2026-09-04", "2026-09-03", "2026-09-02", "2026-09-01", "2026-08-31", "2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-21"];window.ADUX_CUR="2026-10-15";</script><script>
+(function(){
+  var btn=document.getElementById('calbtn'), cal=document.getElementById('cal'); if(!btn||!cal) return;
+  var dates=window.ADUX_DATES||[], cur=window.ADUX_CUR||'', latest=dates[0]||'';
+  var has={}; dates.forEach(function(d){ has[d]=1; });
+  var y=parseInt(cur.slice(0,4),10), m=parseInt(cur.slice(5,7),10)-1;
+  var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function pad(n){ return (n<10?'0':'')+n; }
+  function draw(){
+    var first=new Date(y,m,1), start=(first.getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+    var h='<div class="calhead"><button type="button" data-go="-1" aria-label="Previous month">&lsaquo;</button>'+
+      '<span class="mon">'+MON[m]+' '+y+'</span><button type="button" data-go="1" aria-label="Next month">&rsaquo;</button></div>'+
+      '<div class="calgrid">'+['Mo','Tu','We','Th','Fr','Sa','Su'].map(function(w){ return '<span class="wd">'+w+'</span>'; }).join('');
+    for(var i=0;i<start;i++) h+='<span class="d off"></span>';
+    for(var d=1;d<=days;d++){
+      var iso=y+'-'+pad(m+1)+'-'+pad(d);
+      if(has[iso]) h+='<a class="d has'+(iso===cur?' now':'')+'" href="'+iso.replace(/-/g,'')+'.html">'+d+'</a>';
+      else h+='<span class="d">'+d+'</span>';
+    }
+    h+='</div><div class="calfoot"><span>'+dates.length+' editions</span><a href="'+latest.replace(/-/g,'')+'.html">Latest &rarr;</a></div>';
+    cal.innerHTML=h;
+    [].forEach.call(cal.querySelectorAll('[data-go]'),function(b){
+      b.addEventListener('click',function(e){ e.stopPropagation(); m+=parseInt(b.dataset.go,10); if(m<0){m=11;y--;} if(m>11){m=0;y++;} draw(); });
+    });
+  }
+  function open(o){ cal.hidden=!o; btn.setAttribute('aria-expanded',String(o)); if(o){ y=parseInt(cur.slice(0,4),10); m=parseInt(cur.slice(5,7),10)-1; draw(); } }
+  btn.addEventListener('click',function(e){ e.stopPropagation(); open(cal.hidden); });
+  document.addEventListener('click',function(e){ if(!cal.hidden&&!cal.contains(e.target)) open(false); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') open(false);
+    if(e.target&&/input|textarea/i.test(e.target.tagName)) return;
+    var i=dates.indexOf(cur);
+    if(e.key==='ArrowLeft'&&i+1<dates.length) location.href=dates[i+1].replace(/-/g,'')+'.html';
+    if(e.key==='ArrowRight'&&i>0) location.href=dates[i-1].replace(/-/g,'')+'.html';
+  });
+})();
+</script></body></html>
