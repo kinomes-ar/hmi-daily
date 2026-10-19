@@ -16,19 +16,6 @@
  {
   "tag": "Cockpit",
   "pick": true,
-  "t": "Tang EV: a 35.4-inch strip, then a 30-inch pad",
-  "blurb": "A 35.4-inch cowl replaces the cluster and HUD, with a 30-inch pad below",
-  "en": "BYD showed the Giant Screen UI on the third-generation Tang EV, ahead of a Q4 launch in China. A 35.4-inch cowl display under the windshield replaces the cluster and the head-up display, holding speed, status and navigation in one fixed band. A 30-inch touchscreen spans the centre and the passenger side. Map, media and vehicle windows can be resized and tiled. An animated companion, Xiao Mianbao, changes expression as it greets people. The upper display does not rotate.",
-  "zh": "比亚迪在第三代唐EV上展示了“巨幕UI”，中国市场计划第四季度上市。挡风玻璃下沿是一块35.4英寸的远程仪表屏，同时取代传统仪表和抬头显示，速度、状态和导航固定在同一条横带上。下方30英寸触控屏横跨中控与副驾，地图、媒体和车辆信息可以缩放并排。动画形象“小面包”会打招呼并换表情。与早期比亚迪可旋转中控不同，上方这块屏不转。",
-  "ko": "BYD가 3세대 탕 EV에 자이언트 스크린 UI를 공개했다. 중국 출시는 4분기다. 윈드실드 아래 35.4인치 카울 디스플레이가 클러스터와 헤드업을 대신하고, 속도·상태·내비게이션을 고정된 가로 밴드에 둔다. 아래 30인치 터치스크린은 중앙과 동승석을 가로지른다. 지도, 미디어, 차량 창은 크기를 바꾸고 타일로 붙일 수 있다. 애니메이션 동반자 샤오몐바오는 인사하며 표정을 바꾼다. 예전 BYD 회전 화면과 달리 위쪽 디스플레이는 돌지 않는다.",
-  "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/10/16/byd-unveils-modular-widescreen-ui-on-3rd-gen-tang-ev-ahead-of-q4-launch/",
-  "img": "assets/2026-10-19-1.jpg",
-  "img_src": "https://carnewschina.com/wp-content/uploads/2026/10/overlay-image-2-onto-image-1-1_webhook_1500x900_q85_1792132509.jpg"
- },
- {
-  "tag": "Cockpit",
-  "pick": true,
   "t": "Mission S: five dials, and the phone is the map",
   "blurb": "Five analog dials over a digital layer, and a MagSafe phone instead of a screen",
   "en": "Porsche's Mission S, shown 15 October, is a mid-engine concept above the 911, and it has no centre screen. Five round analog gauges sit behind the wheel, rev counter in the middle, with digital displays layered behind them. The gauges move with the drive mode. Push-pull controls handle comfort and driving functions. Navigation is a retractable Apple MagSafe phone holder. There is no passenger display. Style Porsche says the direction is for later production cars, and those cars will not be electric.",
@@ -105,6 +92,18 @@
   "img_src": "https://media.mbusa.com/storage/media/thumbnails/IYjSCd5V9x9kEqlsWUH3VVQhErmiu1my4S06ZyGj_thumb.jpg"
  },
  {
+  "tag": "Cockpit",
+  "t": "Tang EV: a 35.4-inch strip, then a 30-inch pad",
+  "blurb": "A 35.4-inch cowl replaces the cluster and HUD, with a 30-inch pad below",
+  "en": "BYD showed the Giant Screen UI on the third-generation Tang EV, ahead of a Q4 launch in China. A 35.4-inch cowl display under the windshield replaces the cluster and the head-up display, holding speed, status and navigation in one fixed band. A 30-inch touchscreen spans the centre and the passenger side. Map, media and vehicle windows can be resized and tiled. An animated companion, Xiao Mianbao, changes expression as it greets people. The upper display does not rotate.",
+  "zh": "比亚迪在第三代唐EV上展示了“巨幕UI”，中国市场计划第四季度上市。挡风玻璃下沿是一块35.4英寸的远程仪表屏，同时取代传统仪表和抬头显示，速度、状态和导航固定在同一条横带上。下方30英寸触控屏横跨中控与副驾，地图、媒体和车辆信息可以缩放并排。动画形象“小面包”会打招呼并换表情。与早期比亚迪可旋转中控不同，上方这块屏不转。",
+  "ko": "BYD가 3세대 탕 EV에 자이언트 스크린 UI를 공개했다. 중국 출시는 4분기다. 윈드실드 아래 35.4인치 카울 디스플레이가 클러스터와 헤드업을 대신하고, 속도·상태·내비게이션을 고정된 가로 밴드에 둔다. 아래 30인치 터치스크린은 중앙과 동승석을 가로지른다. 지도, 미디어, 차량 창은 크기를 바꾸고 타일로 붙일 수 있다. 애니메이션 동반자 샤오몐바오는 인사하며 표정을 바꾼다. 예전 BYD 회전 화면과 달리 위쪽 디스플레이는 돌지 않는다.",
+  "src": "CarNewsChina",
+  "url": "https://carnewschina.com/2026/10/16/byd-unveils-modular-widescreen-ui-on-3rd-gen-tang-ev-ahead-of-q4-launch/",
+  "img": "assets/2026-10-19-1.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/10/overlay-image-2-onto-image-1-1_webhook_1500x900_q85_1792132509.jpg"
+ },
+ {
   "tag": "Interaction",
   "t": "ADHD ONE: 19 keys, the iPhone stays in a pocket",
   "blurb": "Nineteen keys and an OLED, Bluetooth to the iPhone, no cellular of its own",
@@ -163,7 +162,8 @@
   "src": "designboom",
   "url": "https://www.designboom.com/design/dennis-vanderbroeck-settings-moments-together-spatial-design-fashion-performance-interview/",
   "img": "assets/2026-10-19-12.jpg",
-  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/10/dennis-vanderbroeck-settings-moments-together-spatial-design-fashion-performance-interview-designboom-1200-1.jpg"
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/10/dennis-vanderbroeck-settings-moments-together-spatial-design-fashion-performance-interview-designboom-1200-1.jpg",
+  "pick": true
  },
  {
   "tag": "Visual",

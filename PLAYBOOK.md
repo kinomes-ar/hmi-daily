@@ -21,8 +21,10 @@ Worker after the site updates — do not send Feishu cards yourself.
 Research that never reaches `main` is a failed run. The Feishu bot only posts when
 today's file is on the site. Keep this order:
 
-1. **Budget the research.** Aim for ≤25 page fetches. Prefer CarNewsChina, Yanko,
-   Electrek, 80 Level, Creative Boom, designboom, Carscoops, STASH / Motionographer.
+1. **Budget the research.** Aim for ≤25 page fetches. Prefer STASH / Motionographer,
+   Creative Boom, It's Nice That, designboom, 80 Level, Yanko, then cockpit sources.
+   CarNewsChina is a check, not a default: open it only to see whether a Chinese
+   automaker actually shipped a new interface idea.
 2. **Write** `data/<today>.json` (target 16 stories, never fewer than 12) as soon as
    you have a valid set. Do not keep browsing after the file validates.
 3. **Validate** with `python3 check_edition.py data/<today>.json` and fix every ERROR.
@@ -127,11 +129,20 @@ read those lists for the *kind* of story (subject, depth, angle) to find more of
 ±1 per group is fine when the day is thin, but never fewer than 3 HMI stories or 3 Visual
 stories. The rules are printed in `feedback.py`'s docstring; do not invent others.
 
-**Ordering:** item 1 is the lead — the single most important HMI/cockpit story of the day
-(fall back to the strongest story of any beat). Then order by importance, but make sure
-the strongest Cockpit/Interaction, the strongest AI, and the strongest Visual/Motion/
-Realtime/Design story all appear within the first ~6 items, so the top of the page shows
-one strong story from each group.
+**Ordering:** item 1 is the lead — the picture everyone would tap. Prefer a GUI, a motion
+piece, or a cockpit idea with a new control. Fall back to the strongest story of any beat.
+
+**Chinese automakers are not the lead** (BYD, Denza, Yangwang, Geely, Zeekr, Galaxy,
+Chery, Jetour, NIO, Xpeng, Li Auto, Xiaomi EV, Aito, Luxeed, Avatr, Deepal, Changan,
+Hongqi, GAC, Aion, Leapmotor, and the same kind of flagship). Another wide screen, another
+HUD size, another range figure stays off item 1 and off the five Feishu picks. It may
+still run lower in the edition when there is a real interface detail. It becomes the lead
+or a pick only when the idea is actually new — a control or a graphic that is not the
+usual Chinese flagship stack.
+
+Then order by what you would open, and make sure the strongest Cockpit/Interaction, the
+strongest AI, and the strongest Visual/Motion/Realtime story all appear within the first
+~6 items.
 
 ## 2. Sources
 
@@ -235,12 +246,11 @@ A JSON array of exactly 16 objects, in publication order, `ensure_ascii=False`, 
   game art and real-time demos, famous brands and studios (Apple, Porsche, Pentagram, Nike,
   Xiaomi, Unreal …), striking cockpit or identity reveals. Not "important" — *desirable to look at*. These five are the **Feishu chat card**;
   spread them across at least three tags. Everything else has no `pick` key.
-  **Concept / auto-show days:** when Peugeot, Stellantis, major OEMs, or show concepts
-  ship a clear new control or display idea (steer-by-wire wheels, disappearing centre
-  screens, HUDs, physical buttons returning, cluster redesigns), put **at least one** of
-  those Cockpit/Interaction stories in the five picks — ahead of a merely pretty Visual
-  story if the card would otherwise miss the HMI hook. The team is ADUX; inspiration from
-  new vehicle interfaces is the point of the card.
+  **Concept / auto-show days:** when Peugeot, Stellantis, or another non-routine show
+  concept ships a clear new control or display idea (steer-by-wire wheels, disappearing
+  centre screens, a cluster that actually changes shape), put **at least one** of those
+  Cockpit/Interaction stories in the five picks. A Chinese automaker's bigger screen does
+  not qualify. The team is ADUX; the card is for an interface worth stealing, not a spec.
 * `video` (optional, **required for `Motion`**, expected for `Realtime` when a reel exists) — direct link to the playable video (a Vimeo or
   YouTube page, or the studio's own player page). The site shows a play badge and a ▶ Watch
   link; the chat card links it too.
