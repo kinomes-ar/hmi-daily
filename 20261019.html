@@ -1,0 +1,724 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADUX Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
+</head><body><style>
+:root{
+  --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
+  --rule:#111110; --hair:#111110; --red:#E5342A; --onred:#FFFFFF;
+  --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+    --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
+    --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+  --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
+  --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,-apple-system,BlinkMacSystemFont,Arial,"PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+.sheet{max-width:1180px; margin:0 auto}
+.shell{max-width:1180px; margin:0 auto; padding:0 34px}
+@media (max-width:700px){ .shell{padding:0 20px} }
+
+.top{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:22px 0 6px; flex-wrap:wrap;
+  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+}
+@media (max-width:700px){
+  .top{gap:12px; padding:18px 0 4px}
+}
+.top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
+.masthead{padding:46px 0 36px; text-align:center; border-bottom:1px solid var(--ink)}
+.masthead h1{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
+  text-transform:uppercase; text-wrap:balance;
+}
+.masthead .kicker{
+  margin-top:9px; font-size:9.5px; font-weight:600; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--muted);
+}
+@media (max-width:700px){ .masthead{padding:30px 0 22px} }
+
+/* ---- category filter ---- */
+.fwrap{border-bottom:1px solid var(--ink); display:none}
+@media (max-width:700px){ .fwrap{display:block} }
+.filters{
+  display:flex; gap:22px; justify-content:center; align-items:center; flex-wrap:wrap;
+  padding:14px 0;
+}
+.filters button{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; padding:0; white-space:nowrap;
+  transition:color .12s;
+}
+.filters button:hover{color:var(--red)}
+.filters button[aria-pressed="true"]{
+  background:var(--ink); color:var(--ground);
+  padding:7px 14px; font-weight:700;
+}
+.filters button[data-f]:not([data-f=""])[aria-pressed="true"]{
+  background:var(--cat); color:#fff;
+}
+@media (max-width:700px){
+  .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
+           -webkit-overflow-scrolling:touch; padding:12px 20px; gap:20px;
+           margin-left:-20px; margin-right:-20px;
+           scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+}
+
+/* ---- filtered view: one uniform grid ---- */
+html[data-filter="micromobility"] article:not([data-tag="micromobility"]){display:none}
+html[data-filter="cockpit"] article:not([data-tag="cockpit"]){display:none}
+html[data-filter="interaction"] article:not([data-tag="interaction"]){display:none}
+html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
+html[data-filter="design"] article:not([data-tag="design"]){display:none}
+html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
+html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
+html[data-filter="motion"] article:not([data-tag="motion"]){display:none}
+html[data-filter="realtime"] article:not([data-tag="realtime"]){display:none}
+html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
+html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
+html[data-filter] .day article{border:0; padding:0}
+html[data-filter] .ph{aspect-ratio:3/2}
+html[data-filter] .hl{font-size:19px; line-height:1.18}
+html[data-filter] .tx{font-size:12.5px}
+html[data-filter] .col.side ~ *{text-align:left}
+html[data-filter] .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
+html[data-filter] article{text-align:left}
+
+/* ---- date band ---- */
+.day{padding:6px 0 12px}
+.day + .day{padding-top:34px}
+.day + .day{border-top:2px solid var(--ink)}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:24px}
+.dayhead h2{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; text-transform:uppercase;
+}
+.dayhead .rule{flex:1; height:1px; background:var(--hair)}
+.dayhead .meta{
+  font-size:9.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap;
+}
+
+/* ---- newspaper grid: lead | middle | narrow rail ---- */
+.band{
+  display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
+}
+.col{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
+.col:first-child{padding-left:0; border-left:0}
+.col:last-child{padding-right:0}
+.col.mid,.col.side{display:grid; gap:24px; align-content:start}
+.col.mid > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.col.side{text-align:center}
+.col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
+.col.side .tx{margin-left:auto; margin-right:auto}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.duo{
+  display:grid; grid-template-columns:1fr 1.25fr; gap:0;
+  border-top:1px solid var(--hair); margin-top:28px;
+}
+.duo > article{padding:22px 0 0}
+.duo > article + article{border-left:1px solid var(--hair); padding-left:24px; margin-left:24px}
+.a-duo .hl{font-size:19px; line-height:1.18}
+.a-duotx .hl{font-size:clamp(21px,2.2vw,27px); line-height:1.12}
+.ph-duo{aspect-ratio:4/3}
+
+/* ---- lower well: ragged newsprint columns ---- */
+.rest{
+  columns:4; column-gap:28px; column-rule:1px solid var(--hair);
+  border-top:1px solid var(--ink); padding-top:22px; margin-top:6px;
+}
+.rest > article{break-inside:avoid; padding:0 0 26px; margin-bottom:2px;
+  border-bottom:1px solid var(--hair)}
+.rest .ph{aspect-ratio:auto}
+.rest .ph.fb{aspect-ratio:4/5}
+.a-foot .hl{font-size:17px; line-height:1.2}
+@media (max-width:980px){
+  .band{grid-template-columns:1.3fr 1fr}
+  .col.side{grid-column:1 / -1; grid-template-columns:1fr 1fr 1fr;
+            border-left:0; padding:16px 0 0; border-top:1px solid var(--hair)}
+  .col.side > article + article{border-top:0; border-left:1px solid var(--hair);
+            padding-top:0; padding-left:18px}
+  .duo{grid-template-columns:1fr}
+  .duo > article + article{border-left:0; padding-left:0; margin-left:0;
+    border-top:1px solid var(--hair); margin-top:20px}
+  .rest{columns:2}
+}
+@media (max-width:660px){
+  .day{columns:2; column-gap:20px; column-rule:1px solid var(--hair)}
+  .band,.col.mid,.col.side,.duo,.rest{display:contents}
+  .col{padding:0; border:0}
+  .col.lead{display:block; column-span:all; padding:22px 0 28px}
+  .col.mid > article,.col.side > article,.duo > article,.rest > article{
+    display:block; break-inside:avoid; text-align:left;
+    border-top:1px solid var(--ink); border-bottom:0; border-left:0;
+    padding:14px 0 24px; margin:0;
+  }
+  .col.side .tagrow{margin:0 0 10px; display:inline-flex; justify-content:flex-start}
+}
+
+/* ---- photos ---- */
+.ph{margin:0 0 14px; overflow:hidden; background:var(--shade)}
+.ph img{width:100%; height:100%; object-fit:cover}
+.ph-lead{aspect-ratio:16/9}
+.ph-mid{aspect-ratio:4/3}
+.ph-side{aspect-ratio:1/1}
+.ph-foot{aspect-ratio:3/2}
+.ph.fb{display:flex; align-items:flex-end; padding:10px}
+.ph.fb span{
+  font-family:"Archivo Black",Impact,sans-serif; text-transform:uppercase;
+  line-height:.86; letter-spacing:-.02em; word-break:break-word;
+}
+.ph-lead.fb span{font-size:clamp(26px,3.6vw,44px)}
+.ph-mid.fb span{font-size:21px}
+.ph-side.fb span{font-size:15px}
+.ph-foot.fb span{font-size:19px}
+
+/* ---- pills ---- */
+.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:10px}
+.tag{
+  display:inline-flex; align-items:center;
+  background:transparent; color:var(--ink);
+  border:1.5px solid var(--cat,var(--red));
+  font-size:10px; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
+  padding:6px 13px; border-radius:999px; line-height:1;
+}
+
+/* ---- headlines & text ---- */
+.hl{
+  font-family:"Noto Serif Display","Times New Roman","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; margin:0 0 10px;
+  line-height:1.08; letter-spacing:-.01em; text-wrap:balance;
+}
+.a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
+.a-mid .hl{font-size:clamp(20px,2.2vw,26px); line-height:1.14}
+.a-side .hl{font-size:17px; line-height:1.2}
+.tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
+.tx.en{display:block}
+html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
+html[data-lang="zh"] .tx.zh{display:block}
+html[data-lang="ko"] .tx.ko{display:block}
+.a-lead .tx{font-size:14px; line-height:1.6; color:var(--muted)}
+.a-mid .tx{font-size:13px; line-height:1.55; color:var(--muted)}
+.a-foot .tx,.a-side .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+/* the reference runs headline-only in the narrow cells; keep that in English,
+   but show the translated line when a reader picks 中文 / 한국어 */
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-mid .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
+@media (max-width:660px){
+  .hl{font-weight:600}
+  .a-lead .hl{font-size:34px; line-height:1.04}
+  .a-lead .tx{font-size:15.5px}
+  .a-mid .hl,.a-side .hl,.a-foot .hl{font-size:20px; line-height:1.18}
+  .a-mid .tx{font-size:14px}
+  .ph-mid,.ph-side,.ph-foot{aspect-ratio:auto}
+  .ph-mid.fb,.ph-side.fb,.ph-foot.fb{aspect-ratio:4/5}
+  .tag{font-size:9.5px; padding:6px 12px}
+  .filters button{font-size:10.5px}
+  .src{font-size:10px}
+}
+
+.ctrls{position:relative}
+.menubtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink);
+  border-radius:999px; width:34px; height:28px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center; color:var(--ink);
+}
+.menubtn:hover{background:var(--shade)}
+.menubtn svg{width:14px; height:14px; display:block}
+.menu{
+  position:absolute; right:0; top:calc(100% + 10px); z-index:60;
+  background:var(--ground); border:1px solid var(--ink);
+  padding:16px; display:grid; gap:14px; min-width:216px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.menu[hidden]{display:none}
+.menu-team{
+  border-top:1px solid var(--hair); padding-top:13px; display:grid; gap:6px;
+}
+.menu-team .dedication{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
+  font-size:13px; color:var(--ink); text-transform:none; letter-spacing:0;
+}
+.menu-team .team-names{
+  font-size:10.5px; font-weight:600; letter-spacing:.05em; color:var(--muted);
+  text-transform:uppercase; line-height:1.7;
+}
+.menu .mlabel{
+  display:block; font-size:9px; font-weight:700; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:7px;
+}
+.langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
+.langsw button{flex:1 1 0}
+.langsw button{
+  appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
+  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  padding:5px 10px; line-height:1.4; text-align:center; white-space:nowrap;
+}
+.langsw button + button{border-left:1px solid var(--ink)}
+.langsw button[aria-pressed="true"]{background:var(--red); color:var(--onred)}
+.langsw button:hover:not([aria-pressed="true"]){background:var(--shade)}
+.themesw{
+  appearance:none; cursor:pointer; font:inherit; font-size:9.5px; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; padding:5px 12px; line-height:1.4;
+  border:1px solid var(--ink); border-radius:999px;
+  background:transparent; color:var(--ink);
+}
+.themesw:hover{background:var(--shade)}
+.top .ctrls{display:flex; align-items:center; gap:10px}
+.src{
+  display:inline-block; margin-top:9px; color:var(--red); text-decoration:none;
+  font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  border-bottom:1px solid transparent; padding-bottom:1px;
+}
+.src:hover,.src:focus-visible{border-bottom-color:var(--red)}
+.adate{
+  display:block; margin-top:7px; font-size:9px; font-weight:600;
+  letter-spacing:.14em; color:var(--muted); font-variant-numeric:tabular-nums;
+}
+.col.side .adate{text-align:center}
+@media (max-width:660px){ .col.side .adate{text-align:left} }
+:focus-visible{outline:2px solid var(--red); outline-offset:3px}
+
+.morebar{
+  display:block; margin:26px 0 8px; padding:15px; border-radius:999px;
+  background:var(--ink); color:var(--ground); text-decoration:none; text-align:center;
+  font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+}
+.morebar:hover{background:var(--red); color:#fff}
+/* ---- edition date bar + calendar ---- */
+.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin:34px 0 4px; padding-top:22px; border-top:1px solid var(--ink); position:relative}
+.datebar a,.datebar button{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  padding:6px 12px; line-height:1.4; text-decoration:none; display:inline-flex; align-items:center; gap:6px;
+}
+.datebar a:hover,.datebar button:hover{background:var(--shade)}
+.datebar a[aria-disabled="true"]{opacity:.3; pointer-events:none}
+.datebar .arrow{padding:6px 10px}
+.datebar .cur{font-variant-numeric:tabular-nums; letter-spacing:.1em}
+.datebar .cur svg{width:13px; height:13px; display:block; stroke:currentColor; stroke-width:1.8; fill:none}
+.cal{
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
+  background:var(--ground); border:1px solid var(--ink); padding:14px; width:292px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.cal[hidden]{display:none}
+.calhead{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px}
+.calhead .mon{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+.calhead button{appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); width:28px; height:24px; font:inherit; font-size:12px; line-height:1; padding:0}
+.calhead button:hover{background:var(--shade)}
+.calgrid{display:grid; grid-template-columns:repeat(7,1fr); gap:3px}
+.calgrid .wd{font-size:8.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:center; padding:3px 0 5px}
+.calgrid .d{aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:12px;
+  color:var(--muted); border-radius:999px; text-decoration:none; font-variant-numeric:tabular-nums}
+.calgrid .d.has{color:var(--ink); font-weight:700; border:1.5px solid var(--ink)}
+.calgrid .d.has:hover{background:var(--ink); color:var(--ground)}
+.calgrid .d.now{background:var(--red); color:var(--onred); border-color:var(--red)}
+.calgrid .d.off{opacity:.35}
+.calfoot{margin-top:10px; padding-top:9px; border-top:1px solid var(--hair); display:flex; justify-content:space-between;
+  font-size:9px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.calfoot a{color:var(--red); text-decoration:none}
+
+/* ---- top nav (Daily / Weekly / My) ---- */
+.topnav{display:flex; gap:18px; align-items:center}
+.topnav a{color:var(--ink); text-decoration:none; padding-bottom:2px; border-bottom:1.5px solid transparent}
+.topnav a:hover{color:var(--red)}
+.topnav a[aria-current="page"]{border-bottom-color:var(--red)}
+.topnav .badge{
+  display:inline-block; min-width:16px; padding:1px 5px; margin-left:4px; border-radius:999px;
+  background:var(--red); color:var(--onred); font-size:9px; text-align:center; line-height:1.4;
+}
+.topnav .badge:empty{display:none}
+
+/* ---- hearts ---- */
+.acts{display:flex; align-items:center; gap:14px; margin-top:9px}
+.acts .src{margin-top:0}
+.col.side .acts{justify-content:center}
+@media (max-width:660px){ .col.side .acts{justify-content:flex-start} }
+html[data-filter] .col.side .acts{justify-content:flex-start}
+.heart{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted);
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, transform .12s;
+}
+.heart svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round}
+.heart:hover{color:var(--red)}
+.heart[aria-pressed="true"]{color:var(--red)}
+.heart[aria-pressed="true"] svg{fill:currentColor}
+.heart.pop{transform:scale(1.25)}
+.heart .cnt:empty{display:none}
+a.vid{display:block; position:relative; color:inherit}
+.ph{position:relative}
+.ph .play{position:absolute; left:50%; top:50%; width:46px; height:46px; margin:-23px 0 0 -23px; border-radius:50%;
+  background:rgba(17,17,16,.72); display:flex; align-items:center; justify-content:center; pointer-events:none}
+.ph .play svg{width:22px; height:22px; fill:#fff; margin-left:3px}
+.vlink{margin-top:0}
+.skip{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted); opacity:.55;
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, opacity .12s, transform .12s;
+}
+.skip svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.skip:hover{opacity:1; color:var(--ink)}
+.skip[aria-pressed="true"]{opacity:1; color:var(--ink)}
+.skip.pop{transform:scale(1.2)}
+.skip .cnt:empty{display:none}
+article.skipped .ph, article.skipped .tx{display:none}
+article.skipped .hl{opacity:.4; text-decoration:line-through; text-decoration-thickness:1px}
+article.skipped .tagrow{opacity:.4}
+article.skipped .acts .src{opacity:.4}
+.myhead{margin-top:34px}
+.hidlist{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px}
+.hidlist li{display:flex; align-items:center; gap:12px; font-size:13px; color:var(--muted)}
+.hidlist li a{color:var(--muted); text-decoration:none; text-decoration:line-through}
+.hidlist li a:hover{color:var(--ink)}
+.hidlist .skip{opacity:1; color:var(--ink)}
+
+/* ---- uniform grid (My page, Weekly picks) ---- */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px; padding-top:26px}
+.grid article{text-align:left}
+.grid .ph{aspect-ratio:3/2}
+.grid .hl{font-size:19px; line-height:1.18}
+.grid .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+.grid .tagrow{margin-left:0; margin-right:0}
+.empty{padding:60px 0 40px; text-align:center; color:var(--muted); font-size:14px; line-height:1.7}
+.empty .tx{margin:0 auto}
+.empty .big{font-family:"Archivo Black",Impact,sans-serif; font-size:clamp(24px,4vw,40px); color:var(--ink); text-transform:uppercase; line-height:1; margin-bottom:14px}
+.clearbtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  padding:5px 12px; line-height:1.4;
+}
+.clearbtn:hover{background:var(--shade)}
+
+/* ---- weekly ---- */
+.week{padding:6px 0 12px}
+.week + .week{padding-top:34px; border-top:2px solid var(--ink)}
+.wtitle{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; font-size:clamp(26px,3.6vw,40px); line-height:1.08; letter-spacing:-.01em;
+  margin:0 0 14px; text-wrap:balance;
+}
+.wintro .tx{max-width:70ch; font-size:15px; line-height:1.65}
+.wtabs{position:sticky; top:0; z-index:20; background:var(--ground); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:26px}
+.wtabs .filters{padding:12px 0}
+.wtabs .filters a{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px; text-decoration:none;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600; letter-spacing:.13em; text-transform:uppercase;
+  padding:7px 14px; white-space:nowrap; transition:color .12s, background .12s;
+}
+.wtabs .filters a:hover{color:var(--red)}
+.wtabs .filters a[aria-current="true"]{background:var(--cat); color:#fff; font-weight:700}
+@media (max-width:700px){
+  .wtabs .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; -webkit-overflow-scrolling:touch;
+    padding:10px 20px; gap:14px; margin-left:-20px; margin-right:-20px; scrollbar-width:none}
+  .wtabs .filters::-webkit-scrollbar{display:none}
+}
+.wcat{scroll-margin-top:64px; border-radius:6px; transition:background .35s, box-shadow .35s}
+.wcat.hit{background:var(--shade); box-shadow:0 0 0 12px var(--shade)}
+.wcat.hit .tag{background:var(--cat); color:#fff}
+.wcats{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0 34px}
+.wcat{padding:22px 0 24px; border-bottom:1px solid var(--hair); break-inside:avoid}
+.wcat .tx{max-width:none; font-size:13.5px; line-height:1.6}
+.wcat ul{list-style:none; margin:12px 0 0; padding:0; display:grid; gap:7px}
+.wcat li{display:flex; align-items:baseline; gap:10px; font-size:13px; line-height:1.35}
+.wcat li a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--hair)}
+.wcat li a:hover{color:var(--red); border-bottom-color:var(--red)}
+.wcat li .who{font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); white-space:nowrap}
+.wtop{margin-top:30px}
+.wtop h3{
+  font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.06em; text-transform:uppercase;
+  margin:0 0 4px; display:flex; align-items:center; gap:8px;
+}
+.wtop h3 svg{width:15px; height:15px; fill:var(--red); stroke:var(--red); stroke-width:1.8}
+.wtop ol{list-style:none; margin:0; padding:0; counter-reset:n; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:0 28px}
+.wtop li{counter-increment:n; display:flex; gap:12px; align-items:baseline; padding:12px 0; border-bottom:1px solid var(--hair)}
+.wtop li::before{content:counter(n,decimal-leading-zero); font-family:"Archivo Black",Impact,sans-serif; font-size:18px; color:var(--red); line-height:1}
+.wtop li a{color:var(--ink); text-decoration:none; font-size:14px; line-height:1.3; flex:1}
+.wtop li a:hover{color:var(--red)}
+.wtop li .n{font-size:10px; font-weight:700; color:var(--muted); letter-spacing:.06em; white-space:nowrap}
+.wtop.wskip h3 svg{fill:none; stroke:var(--ink); stroke-linecap:round}
+.wtop.wskip li::before{color:var(--muted)}
+.wfb{margin-top:34px; padding-top:22px; border-top:1px solid var(--ink)}
+.wfb h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 12px}
+.wfb .fbgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px 34px}
+.wfb table{width:100%; border-collapse:collapse; font-size:12.5px}
+.wfb th{text-align:left; font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:0 0 6px; border-bottom:1px solid var(--ink)}
+.wfb th.num, .wfb td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+.wfb td{padding:6px 0; border-bottom:1px solid var(--hair); vertical-align:baseline}
+.wfb td .bar{display:inline-block; height:7px; border-radius:2px; vertical-align:middle; margin-right:6px}
+.wfb td .bar.l{background:var(--red)}
+.wfb td .bar.s{background:var(--muted); opacity:.55}
+.wfb .fbnote{font-size:11px; color:var(--muted); margin-top:8px}
+.wact{margin-top:26px; padding:18px 20px; background:var(--shade); border-radius:6px}
+.wact h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 10px}
+.wact .tx{max-width:none; font-size:14px; line-height:1.65}
+
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
+.foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
+.foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
+.foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
+</style>
+<div class="sheet" id="top">
+<div class="shell">
+  <div class="top">
+    <span class="wordmark">ADUX&nbsp;DAILY</span>
+    <nav class="topnav" aria-label="Sections">
+      <a href="index.html" aria-current="page">Daily</a>
+      <a href="weekly.html">Weekly</a>
+      <a href="my.html">My &#9829;<span class="badge" id="mybadge"></span></a>
+    </nav>
+    <span class="ctrls">
+      <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
+        <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <div><span class="mlabel">Language</span>
+          <span class="langsw" role="group" aria-label="Language">
+            <button type="button" data-set="en" aria-pressed="false">EN</button>
+            <button type="button" data-set="zh" aria-pressed="false">中文</button>
+            <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+          </span>
+        </div>
+        <div><span class="mlabel">Theme</span>
+          <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
+        </div>
+        <div class="menu-team">
+          <span class="dedication">for DC Advanced UX Team.</span>
+          <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim<br>Jisu &middot; Katey &middot; Anna</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <header class="masthead">
+    <h1>Latest News</h1>
+  </header>
+  <div class="fwrap"><nav class="filters" aria-label="Category filter">
+    <button type="button" data-f="" aria-pressed="true">All</button>
+    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
+    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
+    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
+    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
+    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
+    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
+    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
+    <button type="button" data-f="motion" style="--cat:#0FA3B1" aria-pressed="false">Motion</button>
+    <button type="button" data-f="realtime" style="--cat:#8A2BE2" aria-pressed="false">Realtime</button>
+  </nav></div>
+<section class="day" id="d2026-10-19"><div class="band"><div class="col lead"><article class="a-lead" data-tag="cockpit" data-id="2026-10-19-1"><figure class="ph ph-lead fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">Tang EV: a 35.4-inch strip, then a 30-inch pad</h3><p class="tx en">BYD showed the Giant Screen UI on the third-generation Tang EV, ahead of a Q4 launch in China. A 35.4-inch cowl display under the windshield replaces the cluster and the head-up display, holding speed, status and navigation in one fixed band. A 30-inch touchscreen spans the centre and the passenger side. Map, media and vehicle windows can be resized and tiled. An animated companion, Xiao Mianbao, changes expression as it greets people. The upper display does not rotate.</p><p class="tx zh">比亚迪在第三代唐EV上展示了“巨幕UI”，中国市场计划第四季度上市。挡风玻璃下沿是一块35.4英寸的远程仪表屏，同时取代传统仪表和抬头显示，速度、状态和导航固定在同一条横带上。下方30英寸触控屏横跨中控与副驾，地图、媒体和车辆信息可以缩放并排。动画形象“小面包”会打招呼并换表情。与早期比亚迪可旋转中控不同，上方这块屏不转。</p><p class="tx ko">BYD가 3세대 탕 EV에 자이언트 스크린 UI를 공개했다. 중국 출시는 4분기다. 윈드실드 아래 35.4인치 카울 디스플레이가 클러스터와 헤드업을 대신하고, 속도·상태·내비게이션을 고정된 가로 밴드에 둔다. 아래 30인치 터치스크린은 중앙과 동승석을 가로지른다. 지도, 미디어, 차량 창은 크기를 바꾸고 타일로 붙일 수 있다. 애니메이션 동반자 샤오몐바오는 인사하며 표정을 바꾼다. 예전 BYD 회전 화면과 달리 위쪽 디스플레이는 돌지 않는다.</p><span class="acts"><a class="src" href="https://carnewschina.com/2026/10/16/byd-unveils-modular-widescreen-ui-on-3rd-gen-tang-ev-ahead-of-q4-launch/" target="_blank" rel="noopener">CarNewsChina &rarr;</a><button type="button" class="heart" data-id="2026-10-19-1" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-1" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><div class="duo"><article class="a-duo" data-tag="cockpit" data-id="2026-10-19-2"><figure class="ph ph-duo fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">Mission S: five dials, and the phone is the map</h3><p class="tx en">Porsche's Mission S, shown 15 October, is a mid-engine concept above the 911, and it has no centre screen. Five round analog gauges sit behind the wheel, rev counter in the middle, with digital displays layered behind them. The gauges move with the drive mode. Push-pull controls handle comfort and driving functions. Navigation is a retractable Apple MagSafe phone holder. There is no passenger display. Style Porsche says the direction is for later production cars, and those cars will not be electric.</p><p class="tx zh">保时捷10月15日展示的Mission S是911之上的中置概念车，中控没有屏幕。方向盘后是五只圆形模拟仪表，转速表居中，数字显示叠在后面，读起来有纵深。仪表位置随驾驶模式移动。舒适和驾驶功能用推拉开关，Sport Chrono时钟同时有模拟和数字。导航是可收起的苹果MagSafe手机支架。没有副驾屏。Style Porsche说这个方向会进入以后的量产车，而且那些车不会是纯电。</p><p class="tx ko">포르쉐가 10월 15일 공개한 미션 S는 911 위의 미드십 콘셉트이고 센터 스크린이 없다. 휠 뒤에 원형 아날로그 게이지 다섯 개가 있고 중앙은 타코미터이며, 디지털 표시는 그 뒤에 겹친다. 게이지는 드라이브 모드에 따라 움직인다. 편의와 주행은 밀고 당기는 조작이다. 내비게이션은 수납형 애플 맥세이프 폰 홀더다. 동승석 화면은 없다. 스타일 포르쉐는 이 방향을 이후 양산차에 쓰겠다고 했고, 그 차들은 전기차가 아니다.</p><span class="acts"><a class="src" href="https://www.motor1.com/news/812133/porsche-mission-s-concept-debut-details/" target="_blank" rel="noopener">Motor1 &rarr;</a><button type="button" class="heart" data-id="2026-10-19-2" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-2" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-duotx" data-tag="motion" data-id="2026-10-19-3"><span class="tagrow" style="--cat:#0FA3B1"><span class="tag">Motion</span></span><h3 class="hl">R.EVISITED: a watch under Arctic ice, in black</h3><p class="tx en">Studio River in Paris posted R.EVISITED, a spec study of luxury-watch ads rather than a client film. A Hublot lies under Arctic ice while a translucent jellyfish circles it. The picture stays black and white until the ice breaks and the watch rises. Paul Maurin and Maxime Isoard handled the Houdini simulation, the modelling and the light. Keyvan Nourian edited, composited, designed the titles and made the sound. The studio treats the still frames as time continuing while nothing seems to move.</p><p class="tx zh">巴黎Studio River发布了规格片R.EVISITED，研究的是奢侈腕表广告的画面语言，不是客户成片。一块宇舶被压在北极冰下，半透明水母绕着它转。画面保持黑白，直到冰裂开，表升到水面。Houdini模拟、建模和灯光是Paul Maurin与Maxime Isoard。Keyvan Nourian负责剪辑、合成、片头，也做了声音。工作室把静止的画面写成：看起来不动的时候，时间仍在继续。</p><p class="tx ko">파리의 스튜디오 리베르가 스펙 필름 R.EVISITED를 올렸다. 고객 납품이 아니라 럭셔리 워치 광고의 화면 언어를 연구한 작업이다. 위블로가 북극 얼음 아래에 있고, 반투명한 해파리가 그 주위를 돈다. 화면은 흑백으로 유지되다가 얼음이 갈라지고 시계가 수면으로 올라온다. 후디니 시뮬레이션과 모델링, 라이팅은 폴 모랭과 막심 이소아르다. 케반 누리안이 편집, 합성, 타이틀, 사운드를 맡았다. 스튜디오는 멈춰 보이는 프레임에서도 시간은 계속된다고 적었다.</p><span class="acts"><a class="src" href="https://www.stashmedia.tv/jellyfish-on-ice-studio-river-wades-into-the-cg-watch-wars/" target="_blank" rel="noopener">Stash &rarr;</a><a class="src vlink" href="https://www.stashmedia.tv/jellyfish-on-ice-studio-river-wades-into-the-cg-watch-wars/" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-19-3" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-3" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article></div></div><div class="col mid"><article class="a-mid" data-tag="ai" data-id="2026-10-19-4"><a class="vid" href="https://www.stashmedia.tv/frame-explores-our-planet-for-ege-carpets-x-gensler/" target="_blank" rel="noopener" aria-label="Watch the video"><figure class="ph ph-mid fb" style="background:#DB3A9C;color:#fff"><span>AI</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></figure></a><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">FRAME: five models, and they keep 95 percent</h3><p class="tx en">FRAME co-founder Anders Schroder, in a note posted 18 October, described Our Planet, a carpet film for Ege and Gensler. Patterns come from topography, bird routes and irrigation fields, and they were not to be drawn literally. FRAME directed every shot. Image and motion came from Nano Banana, Flux, Midjourney, Kling and Seedance, and most shots pass through several models. He says the studio holds about 95 percent of the result, and a tweak will not repeat the same movement.</p><p class="tx zh">FRAME联合创始人Anders Schroder在10月18日的文章里讲了Our Planet，这是给Ege与Gensler的地毯影片。纹样来自地形、鸟类路线和灌溉田，要求不是照着画。每一镜由FRAME导演。画面和运动来自Nano Banana、Flux、Midjourney、Kling和Seedance，多数镜头要过好几套模型。他说工作室大约控制结果的95%，改一处并不能复现同一段运动。</p><p class="tx ko">FRAME 공동 설립자 안데르스 슈뢰더가 10월 18일 글에서 에게와 겐슬러의 카펫 필름 아워 플래닛을 설명했다. 문양은 지형, 철새 경로, 관개 밭에서 왔고, 그대로 그리라는 요구는 아니었다. 모든 샷은 FRAME이 디렉션했다. 이미지와 움직임은 나노 바나나, 플럭스, 미드저니, 클링, 시던스에서 나왔고, 대부분 샷은 여러 모델을 지난다. 그는 결과의 약 95퍼센트를 스튜디오가 쥐고, 한 군데를 고쳐도 같은 움직임이 반복되지 않는다고 했다.</p><span class="acts"><a class="src" href="https://www.stashmedia.tv/frame-explores-our-planet-for-ege-carpets-x-gensler/" target="_blank" rel="noopener">Stash &rarr;</a><a class="src vlink" href="https://www.stashmedia.tv/frame-explores-our-planet-for-ege-carpets-x-gensler/" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-19-4" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-4" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-mid" data-tag="realtime" data-id="2026-10-19-5"><figure class="ph ph-mid fb" style="background:#8A2BE2;color:#fff"><span>Realtime</span></figure><span class="tagrow" style="--cat:#8A2BE2"><span class="tag">Realtime</span></span><h3 class="hl">Signal: Prague mapped for four nights, then gone</h3><p class="tx en">Signal Festival's fourteenth edition, Dream On!, ran 15–18 October in Prague. Co-founder Martin Pošta told designboom the mapped works are meant to vanish: four nights, then the facade is only a facade. Commissions include an X Kinetic Techno Sculpture by Gábor Kitzinger, András László Nagy and Rozi Mákó, and Playmodes' Signes in the new Signal Space under Old Town Market Hall. Laterna Magika performed in black at the old wastewater plant, so only the lit body and the projection read.</p><p class="tx zh">Signal Festival第十四届Dream On!于10月15日至18日在布拉格举行。联合创始人Martin Pošta说，投影只存在四个晚上，之后立面恢复原样。委托包括三人合作的X Kinetic Techno Sculpture，以及Playmodes在老城市场大厅下Signal Space里的Signes。Laterna Magika穿黑色演出，只让被照亮的身体和投影可读。</p><p class="tx ko">시그널 페스티벌 14회 드림 온!이 10월 15일부터 18일까지 프라하에서 열렸다. 공동 설립자 마르틴 포슈타는 디자인붐에, 매핑 작업은 사라지도록 만든다고 했다. 나흘이 지나면 파사드는 다시 파사드다. 올해에는 가보르 키칭거, 언드라시 라슬로 너지, 로지 마코의 X 키네틱 테크노 스컬프처와, 구시가지 시장 홀 아래 시그널 스페이스의 플레이모드 시뉴가 있다. 라테르나 마기카는 옛 하수 처리장에서 검은 의상으로, 빛나는 몸과 프로젝션만 읽히게 했다.</p><span class="acts"><a class="src" href="https://www.designboom.com/art/projection-mapping-and-performances-make-the-night-come-alive-at-signal-festival/" target="_blank" rel="noopener">designboom &rarr;</a><button type="button" class="heart" data-id="2026-10-19-5" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-5" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article></div><div class="col side"><article class="a-side" data-tag="industrial" data-id="2026-10-19-6"><figure class="ph ph-side fb" style="background:#B08900;color:#fff"><span>Industrial</span></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">FTC-1: a knob lifts the lens 30 mm, level stays</h3><p class="tx en">Lachlan Fysh's FTC-1 is a 6×7 that corrects converging verticals without a view camera. A knob turns a TR8 lead screw, and the lens rises up to 30 mm while the body stays level. Side shift is 15 mm. The back turns between portrait and landscape on magnetic detents. Aluminium plates stiffen the core. Tilt is baked into a printed lens cone, not left as an axis that can drift. It weighs 1.1 kg, costs 1,200 Australian dollars, and won Gold for cameras at the 2025 International Design Awards.</p><p class="tx zh">Lachlan Fysh的FTC-1是一台6×7相机，不用大画幅机身就能校正垂直线汇聚。旋钮带动TR8丝杆，就是桌面3D打印机常用的那种，镜头最多上升30毫米，机身保持水平。横向移轴15毫米。后背靠磁吸定位在横竖构图之间转动。核心和三脚架底座用CNC铝板加硬。镜头锥是打印的，倾斜角做进锥体里，而不是留一根会漂的轴。重1.1公斤，售价1200澳元。它拿了2025年国际设计奖相机类金奖。</p><p class="tx ko">라클런 피시의 FTC-1은 뷰 카메라 없이 수직선 수렴을 고치는 6×7이다. 노브가 데스크톱 3D 프린터의 TR8 리드 스크루를 돌리고, 바디는 수평인 채 렌즈가 최대 30mm 올라간다. 측면 시프트는 15mm다. 백은 자석 디텐트로 세로와 가로를 오간다. 알루미늄 판이 코어를 굳힌다. 틸트는 흔들리는 축 대신 출력한 렌즈 콘에 넣는다. 무게 1.1kg, 1,200호주 달러이며, 2025 인터내셔널 디자인 어워드 카메라 부문 골드를 받았다.</p><span class="acts"><a class="src" href="https://www.yankodesign.com/2026/10/18/this-3d-printed-film-camera-can-manipulate-perspective-for-perfect-skyscraper-shots/" target="_blank" rel="noopener">Yanko Design &rarr;</a><button type="button" class="heart" data-id="2026-10-19-6" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-6" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-side" data-tag="cockpit" data-id="2026-10-19-7"><figure class="ph ph-side fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">AMG GT SUV: 14 inches, angled, three rotaries</h3><p class="tx en">Mercedes-AMG's GT SUV, revealed 17 October, sits the driver low and angles a 14-inch multimedia display toward that seat, beside a 10.2-inch driver display meant to read as one unit. A 14-inch passenger screen is optional. On the GT 63, and as an option on the GT 55, three console rotaries set response, cornering and traction. Cluster styles include Classic, Pure and Trip. MBUX on MB.OS keeps a Virtual Assistant on the Zero Layer, and Track Pace can put corner angles in the head-up display.</p><p class="tx zh">梅赛德斯-AMG于10月17日发布GT SUV。驾驶席坐得很低，14英寸多媒体屏朝向驾驶者，旁边10.2英寸驾驶显示要和它读成一整块。14英寸副驾屏可选。GT 63标配、GT 55选装的中控有三只旋钮，分别调响应、弯中姿态和牵引力。仪表样式包括Classic、Pure和Trip。MB.OS上的MBUX把虚拟助手放在Zero Layer。Track Pace可以把弯角显示在抬头显示里。</p><p class="tx ko">메르세데스-AMG가 10월 17일 GT SUV를 공개했다. 운전자는 낮게 앉고, 14인치 화면은 그 시트를 향한다. 10.2인치 운전자 디스플레이는 한 덩어리로 읽힌다. 14인치 동승석 화면은 선택이다. 콘솔 로터리 세 개가 반응, 코너링, 트랙션을 정한다. 클러스터에는 클래식, 퓨어, 트립이 있다. MBUX는 제로 레이어에 가상 어시스턴트를 두고, 트랙 페이스는 코너 각을 헤드업에 넣는다.</p><span class="acts"><a class="src" href="https://media.mbusa.com/news/high-tech-suv-with-sports-car-dna-the-new-mercedes-amg-gt-suv" target="_blank" rel="noopener">Mercedes-Benz &rarr;</a><button type="button" class="heart" data-id="2026-10-19-7" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-7" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-side" data-tag="interaction" data-id="2026-10-19-8"><a class="vid" href="https://www.youtube.com/watch?v=iahWN18jeBo" target="_blank" rel="noopener" aria-label="Watch the video"><figure class="ph ph-side fb" style="background:#17A472;color:#fff"><span>Interaction</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></figure></a><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">ADHD ONE: 19 keys, the iPhone stays in a pocket</h3><p class="tx en">Kevin Noki in Cologne printed ADHD ONE, a brick handset for answering a call without opening the iPhone. It has no cellular radio. A Qualcomm QCC3024 module uses the hands-free profile, and a Raspberry Pi Pico runs the keys. Nineteen buttons sit under a small OLED. Grilles come as Classic, Holes or Stripes, and the antenna as Retro, Slim, Screw, or none. STL files, Gerbers and firmware are on his site for personal use. The iPhone still has to stay in Bluetooth range.</p><p class="tx zh">科隆的Kevin Noki打印了砖头听筒ADHD ONE，用来接电话而不必打开iPhone。它没有蜂窝通信。高通QCC3024模块走免提协议，树莓派Pico管按键。小OLED下面是19个实体键。格栅有Classic、Holes、Stripes，天线有Retro、Slim、Screw，也可以不要。STL、Gerber和固件放在他的网站上，仅限个人使用。iPhone仍须留在蓝牙范围内。</p><p class="tx ko">쾰른의 케빈 노키가 아이폰을 열지 않고 전화를 받게 벽돌 핸드셋 ADHD ONE을 출력했다. 셀룰러는 없다. 퀄컴 QCC3024가 핸즈프리 프로파일을 쓰고, 라즈베리 파이 피코가 키를 돌린다. 작은 OLED 아래 물리 버튼이 19개다. 그릴은 클래식, 홀, 스트라이프이고, 안테나는 레트로, 슬림, 스크루이거나 없다. STL, 거버, 펌웨어는 개인용으로 그의 사이트에 있다. 아이폰은 블루투스 범위 안에 있어야 한다.</p><span class="acts"><a class="src" href="https://www.designboom.com/technology/anti-distraction-handset-device-3d-printed-brick-phone-kevin-noki/" target="_blank" rel="noopener">designboom &rarr;</a><a class="src vlink" href="https://www.youtube.com/watch?v=iahWN18jeBo" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-19-8" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-8" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article></div></div><div class="rest"><article class="a-foot" data-tag="ai" data-id="2026-10-19-9"><figure class="ph ph-foot fb" style="background:#DB3A9C;color:#fff"><span>AI</span></figure><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">Ato: an orange button, a knob, no screen at all</h3><p class="tx en">Boostep's new Ato, posted 17 October, is a tabletop assistant for older adults shaped like a radio. The cream housing is about 5.5 inches tall, with a woven face, one orange button and a dimpled volume knob. Press and talk. There is no display. Family set reminders in a phone app; the person at home hears them. Ato says it stores selected facts but not recordings. It cannot call emergency services. USB-C, no battery, Wi-Fi required. Hardware is 179 dollars, with deliveries in February 2027.</p><p class="tx zh">Boostep为Ato做的新版本于10月17日见刊，是给年长者的桌面助手，外形像收音机。奶油色外壳高约5.5英寸，编织面板、一颗橙色按键，侧面旋钮边缘有凹点。按下就开始说。没有屏幕。家人用手机应用设定提醒，家里的人用听的。Ato称会存下选定的事实，但不保留录音。它不能呼叫急救。USB-C供电，没有电池，需要Wi-Fi。硬件179美元，2027年2月交付。</p><p class="tx ko">부스텝의 새 Ato가 10월 17일 글에 나왔다. 라디오처럼 생긴 탁상 어시스턴트다. 높이 약 5.5인치, 짜임 면, 주황 버튼 하나, 딤플 있는 볼륨 노브. 누르고 말하면 된다. 화면은 없다. 가족은 앱으로 알림을 보내고, 집에 있는 사람은 듣는다. 사실은 저장하고 녹음은 남기지 않는다. 응급 전화는 할 수 없다. USB-C, 배터리 없음. 179달러, 인도는 2027년 2월이다.</p><span class="acts"><a class="src" href="https://www.yankodesign.com/2026/10/17/atos-radio-inspired-ai-assistant-trades-touchscreens-for-a-button-and-knob/" target="_blank" rel="noopener">Yanko Design &rarr;</a><button type="button" class="heart" data-id="2026-10-19-9" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-9" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="micromobility" data-id="2026-10-19-10"><figure class="ph ph-foot fb" style="background:#E5342A;color:#fff"><span>Micromobility</span></figure><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><h3 class="hl">Spiny 2: the roller lifts off when you stop</h3><p class="tx en">Spiny's second friction-drive kit, covered 16 October, packs motor and battery into 2.2 kg that clicks on after the mounts are fitted. Sensors drop the roller onto the rear tyre about 0.25 seconds after pedalling starts, and lift it when pedalling stops. The US version is 250 W nominal, 750 W peak, assisting to 20 mph. Other markets stop at 250 W and 25 km/h. The 266 Wh pack charges by USB-C and is rated IP65. Rear-suspension bikes are excluded. Kickstarter deliveries are estimated for April 2027.</p><p class="tx zh">Electrek于10月16日写了Spiny第二代摩擦驱动。电机和电池合成2.2公斤，支架装好后卡上自行车。开始踩踏约0.25秒后滚轮压到后胎，停止就抬起，滑行时不拖胎。美国版标称250瓦、峰值750瓦，助力到20英里/时。其他市场停在250瓦和25公里/时。电池266瓦时，USB-C充电，防护IP65。后避震车排除在外。Kickstarter交付预计2027年4月。</p><p class="tx ko">10월 16일 보도된 스파이니 2세대 마찰 구동은 모터와 배터리를 2.2kg에 넣고, 마운트 뒤에 자전거에 클릭한다. 페달링 약 0.25초 뒤 롤러가 뒷타이어에 붙고, 멈추면 들려 끌리지 않는다. 미국형은 정격 250W, 피크 750W, 시속 20마일까지다. 다른 시장은 250W와 시속 25km다. 266Wh 팩은 USB-C 충전, IP65다. 리어 서스펜션 자전거는 빠진다. 킥스타터 인도는 2027년 4월 예정이다.</p><span class="acts"><a class="src" href="https://electrek.co/2026/10/16/this-cool-accessory-turns-your-bike-electric-in-just-three-seconds/" target="_blank" rel="noopener">Electrek &rarr;</a><button type="button" class="heart" data-id="2026-10-19-10" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-10" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-19-11"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Peace + Chaos: one shop, two opposing rooms</h3><p class="tx en">Saint of Athens and Manos Kypritidis split the Peace + Chaos flagship in Thessaloniki into two kinds of room. Peace uses neutral colour, natural materials, straight lines and diffused light. Chaos takes a show's backstage: high contrast, layered texture, broken geometry, harder light. Giagkos Papadopoulos photographed a plan where the two languages share one shop, rather than sitting as a backdrop behind the clothes.</p><p class="tx zh">Saint of Athens与Manos Kypritidis把塞萨洛尼基的Peace + Chaos旗舰店分成两种房间。Peace用中性色、天然材料、直线和漫射光。Chaos取后台：高对比、叠层肌理、碎裂几何和更硬的光。Giagkos Papadopoulos拍下的平面里，两种语言共用一间店，而不是衣服后面的布景。</p><p class="tx ko">세인트 오브 아테네와 마노스 키프리티디스는 테살로니키의 피스 + 카오스 플래그십을 두 종류의 방으로 나눴다. 피스는 뉴트럴 색, 천연 재료, 직선, 확산광이다. 카오스는 쇼의 백스테이지로, 고대비, 겹친 질감, 부서진 기하, 더 센 빛이다. 지아그코스 파파도풀로스가 찍은 평면에서 두 언어는 옷 뒤 배경이 아니라 한 가게를 나눈다.</p><span class="acts"><a class="src" href="https://www.designboom.com/architecture/saint-of-athens-peace-chaos-boutique-monochromatic-high-contrast-zones-thessaloniki/" target="_blank" rel="noopener">designboom &rarr;</a><button type="button" class="heart" data-id="2026-10-19-11" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-11" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-19-12"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Vanderbroeck: tracks under the Miu Miu seats</h3><p class="tx en">Dennis Vanderbroeck, interviewed 18 October, treats a set as something that has to be used twice. For Miu Miu Spring/Summer 2027 at the Palais d'Iéna, floor tracks carried modular bleachers and a narrow catwalk, the audience as close as a 1990s show. The room is due to be reset for Alice Diop's exhibition, 21–25 October. Diesel's show used a rigid scaffold, with performers cutting through the crowd.</p><p class="tx zh">Dennis Vanderbroeck在10月18日的访谈里，把布景当成必须用两次的东西。Miu Miu 2027春夏在巴黎Iéna宫，地板轨道托着模块化看台和窄天桥，观众坐得很近，像1990年代的秀。同一空间将在10月21日至25日为Alice Diop的展览重排。Diesel那场用了刚性脚手架，表演者从人群中切过去。</p><p class="tx ko">데니스 판데르브루크는 10월 18일 인터뷰에서 세트를 두 번 써야 하는 것으로 다룬다. 팔레 디에나의 미우미우 2027 봄여름은 바닥 트랙이 모듈 관람석과 좁은 캣워크를 받쳐, 1990년대 쇼처럼 관객이 가까이 앉았다. 같은 방은 10월 21일부터 25일 알리스 디오프의 전시를 위해 다시 깔린다. 디젤 쇼는 단단한 비계였고, 퍼포머가 군중을 갈랐다.</p><span class="acts"><a class="src" href="https://www.designboom.com/design/dennis-vanderbroeck-settings-moments-together-spatial-design-fashion-performance-interview/" target="_blank" rel="noopener">designboom &rarr;</a><button type="button" class="heart" data-id="2026-10-19-12" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-12" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-19-13"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">STRATA: lab parts keep the project name on them</h3><p class="tx en">Ruben Moutinho's The Form That Remained, published 16 October, builds objects from discarded research prototypes and keeps their names: SHESOIL, AUTONOVA, LIVIA, BRIVA, ACTIVA, UNIKA. The process he calls STRATA cuts, stacks and fuses parts from a single project so the joints stay visible. Lab colours and surface treatments remain. The pieces are one-offs, and the archive is whatever a finished experiment left on the bench.</p><p class="tx zh">Ruben Moutinho的The Form That Remained于10月16日发表，用丢弃的研究原型做物体，并留下名字：SHESOIL、AUTONOVA、LIVIA、BRIVA、ACTIVA、UNIKA。他称为STRATA的做法把同一项目的零件切开、叠放并熔在一起，接缝仍然看得见。实验室的颜色和表面处理留着。作品是孤品，材料就是做完的实验留在台子上的东西。</p><p class="tx ko">루벤 모우티뉴의 더 폼 댓 리메인드는 10월 16일 공개됐다. 버려진 연구 프로토타입으로 물건을 만들며 이름을 남긴다. SHESOIL, AUTONOVA, LIVIA, BRIVA, ACTIVA, UNIKA. STRATA라 부른 공정은 한 프로젝트의 부품을 자르고 쌓고 녹여 이음이 보이게 둔다. 실험실의 색과 표면은 남고, 작품은 단 하나다. 재료는 끝난 실험이 작업대에 남긴 것이다.</p><span class="acts"><a class="src" href="https://www.designboom.com/art/laboratory-waste-art-discarded-research-prototypes-sculptural-objects-ruben-moutinho/" target="_blank" rel="noopener">designboom &rarr;</a><button type="button" class="heart" data-id="2026-10-19-13" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-13" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-19-14"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Silva: clubs shot in white light, makeup off</h3><p class="tx en">On 16 October designboom ran a chapter of Giovanna Silva's NIGHTSWIMMING, from a 2014 Venice Biennale commission. She photographed Italian discotheques, then rooms in Berlin, London, Paris and Barcelona, some empty and some full. Many frames use white light, which she says makes the club look clinical, without its makeup. Light, she writes, does most of the work, and a full room erases the architecture. Among the rooms: Cocoricò in Riccione and Ritter Butzke in Berlin.</p><p class="tx zh">designboom于10月16日刊出Giovanna Silva著作NIGHTSWIMMING的一章，源自2014年威尼斯双年展的委托。她先拍意大利迪斯科，再拍柏林、伦敦、巴黎和巴塞罗那，有的空、有的满。许多画面用白光。她说白光让俱乐部像诊所，是卸了妆的样子。她写道，光承担大部分工作，人满的房间会把建筑擦掉。其中有里乔内的Cocoricò和柏林的Ritter Butzke。</p><p class="tx ko">디자인붐이 10월 16일 조반나 실바의 나이트스위밍 한 장을 실었다. 2014 베니스 비엔날레 커미션에서 시작했다. 이탈리아 디스코텍을 찍고, 베를린, 런던, 파리, 바르셀로나를 찍었다. 빈 방도 있고 찬 방도 있다. 많은 프레임은 백색광이다. 그녀는 백색광이 클럽을 화장 없는 진료실처럼 만든다고 했다. 빛의 일이 대부분이고, 사람이 찬 방은 건축을 지운다. 리초네의 코코리코와 베를린의 리터 부츠케가 있다.</p><span class="acts"><a class="src" href="https://www.designboom.com/architecture/nightswimming-giovanna-silva-discotheques-light-nightlife-guest-essay/" target="_blank" rel="noopener">designboom &rarr;</a><button type="button" class="heart" data-id="2026-10-19-14" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-14" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="realtime" data-id="2026-10-19-15"><figure class="ph ph-foot fb" style="background:#8A2BE2;color:#fff"><span>Realtime</span></figure><span class="tagrow" style="--cat:#8A2BE2"><span class="tag">Realtime</span></span><h3 class="hl">Flipping Is Hard: a brick phone, no checkpoints</h3><p class="tx en">Elegant Horse Studios released Flipping Is Hard on Steam on 16 October. Flippy is a Nokia-like brick with no legs. You flip it, and the vibration motor jumps. Trashlands is piled from old hardware: a storm drain, a cardboard fort, a fridge, a recycling core. The default mode has no checkpoints. Up to 16 people share a lobby. A Help Beam can catch a fall, and it also throws the helper sideways. The demo drew more than 100,000 players. Launch price is 14.99 dollars.</p><p class="tx zh">立陶宛Elegant Horse Studios于10月16日在Steam发行Flipping Is Hard。玩家是没有腿的诺基亚式砖头手机Flippy。移动靠翻转，振动马达负责跳。Trashlands由旧硬件堆成：排水管、纸板堡、冰箱、回收核心。默认模式没有检查点。最多16人共用一个大厅。Help Beam能接住坠落，也会把施救者甩向侧面。演示超过10万名玩家。首发价14.99美元。</p><p class="tx ko">리투아니아의 엘레건트 호스 스튜디오가 10월 16일 스팀에 플리핑 이즈 하드를 냈다. 플리피는 다리가 없는 노키아형 벽돌이다. 플립으로 움직이고, 진동 모터로 뛴다. 트래시랜드는 옛 하드웨어를 쌓은 배수구, 종이 요새, 냉장고, 재활용 코어다. 기본 모드에는 체크포인트가 없다. 최대 16명이 로비를 쓴다. 헬프 빔은 낙하를 받아 주지만 돕는 사람도 옆으로 튕긴다. 데모는 10만 명이 넘었다. 출시가는 14.99달러다.</p><span class="acts"><a class="src" href="https://80.lv/articles/getting-over-it-meets-nokia-nostalgia-in-new-indie-game-flipping-is-hard" target="_blank" rel="noopener">80 Level &rarr;</a><button type="button" class="heart" data-id="2026-10-19-15" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-15" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article><article class="a-foot" data-tag="micromobility" data-id="2026-10-19-16"><a class="vid" href="https://vimeo.com/1235347593" target="_blank" rel="noopener" aria-label="Watch the video"><figure class="ph ph-foot fb" style="background:#E5342A;color:#fff"><span>Micromobility</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></figure></a><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><h3 class="hl">Burgsinn: a log pile that charges the e-bikes</h3><p class="tx en">ToB.Studio's rest station in Burgsinn, published 17 October, is shaped like a stack of logs beside Germany's D9 cycle route. Cut niches hold seats and doors under a green roof. Untreated rough-sawn larch wraps a timber frame detailed to come apart. The brief includes e-bike chargers, a repair and wash point, digital information screens, and an accessible toilet and shower. It opens on four sides and sits on one concrete slab. Benjamin Brückner photographed it.</p><p class="tx zh">ToB.Studio在德国布格辛的骑行休息站于10月17日发表，外形像D9自行车道旁的一堆圆木。体积上切出的壁龛放座位、门和服务点，上面是绿色屋顶。未经处理的粗锯落叶松包着预制木框架，节点做成可以拆开。任务书里有电动自行车充电、维修和清洗点、数字信息屏，以及无障碍厕所和淋浴。建筑四面打开，坐在一块混凝土板上，这块板同时是基础、防洪槛和地面。摄影是Benjamin Brückner。</p><p class="tx ko">토브.스튜디오의 부르크진 휴식소가 10월 17일 공개됐다. 독일 D9 자전거 길 옆의 통나무 더미처럼 생겼다. 파낸 니치에 좌석과 문이 있고 위는 녹색 지붕이다. 처리하지 않은 거친 낙엽송이 해체 가능한 목구조를 감싼다. 전기자전거 충전, 수리와 세척, 디지털 정보 화면, 무장애 화장실과 샤워가 있다. 네 면으로 열리고 콘크리트 슬래브 하나에 앉는다. 사진은 베냐민 브뤼크너다.</p><span class="acts"><a class="src" href="https://www.designboom.com/architecture/tob-studio-timber-bike-station-germany-stacked-log-pile/" target="_blank" rel="noopener">designboom &rarr;</a><a class="src vlink" href="https://vimeo.com/1235347593" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-19-16" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-19-16" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-19</span></article></div></section><div class="datebar"><a class="arrow" href="20261016.html" aria-label="Previous edition">&larr;</a><button type="button" class="cur" id="calbtn" aria-expanded="false" aria-haspopup="dialog"><svg viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 7h12M5 1.5v3M11 1.5v3"/></svg>Mon 19 Oct 2026</button><a class="arrow" aria-disabled="true">&rarr;</a><div class="cal" id="cal" hidden role="dialog" aria-label="Pick an edition"></div></div>
+  <a class="morebar" href="#top">Back to top &uarr;</a>
+</div>
+</div>
+<footer class="foot"><div class="shell foot-grid">
+  <span class="wordmark">ADUX Daily</span>
+  <span class="note">Curated by Claude</span>
+</div></footer>
+<script>window.ADUX_LIKE_API="https://adux-likes.kinomeartemis.workers.dev";</script><script>
+(function(){
+  var root=document.documentElement;
+  var btns=[].slice.call(document.querySelectorAll('.langsw button'));
+  var sw=document.getElementById('themesw');
+  var mb=document.getElementById('menubtn'), menu=document.getElementById('menu');
+
+  /* ---- language: stored choice, else the device language ---- */
+  function applyLang(l,store){
+    root.setAttribute('data-lang',l);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    if(store){try{localStorage.setItem('hmi-lang',l);}catch(e){}}
+  }
+  var lang=null;
+  try{lang=localStorage.getItem('hmi-lang');}catch(e){}
+  if(['en','zh','ko'].indexOf(lang)<0){
+    var nav=(navigator.language||'en').toLowerCase();
+    lang=nav.indexOf('ko')===0?'ko':nav.indexOf('zh')===0?'zh':'en';
+  }
+  applyLang(lang,false);
+  btns.forEach(function(b){b.addEventListener('click',function(){applyLang(b.dataset.set,true);});});
+
+  /* ---- theme ---- */
+  function systemDark(){
+    try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}
+  }
+  function label(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    if(sw) sw.textContent=dark?'Light':'Dark';
+  }
+  var th=null;
+  try{th=localStorage.getItem('hmi-theme');}catch(e){}
+  if(th==='dark'||th==='light'){ root.setAttribute('data-theme',th); }
+  label();
+  if(sw) sw.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('hmi-theme',next);}catch(e){}
+    label();
+  });
+
+  /* ---- hamburger ---- */
+  function setMenu(open){
+    if(!menu||!mb) return;
+    menu.hidden=!open;
+    mb.setAttribute('aria-expanded',String(open));
+  }
+  if(mb) mb.addEventListener('click',function(e){e.stopPropagation(); setMenu(menu.hidden);});
+  document.addEventListener('click',function(e){
+    if(menu&&!menu.hidden&&!menu.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
+
+  /* ---- category filter ---- */
+  var fbtns=[].slice.call(document.querySelectorAll('.filters button'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      if(b.dataset.f){ root.setAttribute('data-filter',b.dataset.f); }
+      else{ root.removeAttribute('data-filter'); }
+      fbtns.forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); });
+    });
+  });
+
+  /* ---- reactions: hearts + "not for me" — local lists (My page) + shared counts (Worker API) ---- */
+  var API=(window.ADUX_LIKE_API||'').replace(/\/+$/,'');
+  function loadJ(k){ try{ return JSON.parse(localStorage.getItem(k)||'{}')||{}; }catch(e){ return {}; } }
+  function saveJ(k,o){ try{ localStorage.setItem(k,JSON.stringify(o)); }catch(e){} }
+  function loadLikes(){ return loadJ('adux-likes'); }
+  function saveLikes(o){ saveJ('adux-likes',o); }
+  function loadSkips(){ return loadJ('adux-skips'); }
+  function saveSkips(o){ saveJ('adux-skips',o); }
+  function cid(){
+    try{
+      var c=localStorage.getItem('adux-cid');
+      if(!c){ c=Math.random().toString(36).slice(2,10)+Date.now().toString(36); localStorage.setItem('adux-cid',c); }
+      return c;
+    }catch(e){ return 'anon'; }
+  }
+  function post(path,body){
+    if(!API||!window.fetch) return Promise.reject(new Error('no api'));
+    return fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){ return r.json(); });
+  }
+  function badge(){
+    var b=document.getElementById('mybadge'); if(!b) return;
+    var n=Object.keys(loadLikes()).length; b.textContent=n?String(n):'';
+  }
+  function setCount(sel,id,n){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"] .cnt'),function(c){ c.textContent=n>0?String(n):''; });
+  }
+  function setPressed(sel,id,on){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"]'),function(x){ x.setAttribute('aria-pressed',String(on)); });
+  }
+  function setHidden(id,on){
+    [].forEach.call(document.querySelectorAll('article[data-id="'+id+'"]'),function(a){ a.classList.toggle('skipped',!!on); });
+  }
+  function bump(btn,d){
+    var c=btn.querySelector('.cnt'); var n=parseInt(c&&c.textContent||'0',10)||0; return Math.max(0,n+d);
+  }
+  function toggleLike(h){
+    var id=h.dataset.id, cur=loadLikes(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveLikes(cur); badge(); setPressed('.heart',id,on);
+    if(on){ var sk=loadSkips(); if(sk[id]){ delete sk[id]; saveSkips(sk); setPressed('.skip',id,false); setHidden(id,false);
+      var sb=document.querySelector('.skip[data-id="'+id+'"]'); if(sb) setCount('.skip',id,bump(sb,-1)); } }
+    h.classList.add('pop'); setTimeout(function(){ h.classList.remove('pop'); },160);
+    setCount('.heart',id,bump(h,on?1:-1));
+    post('/like',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.heart',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:like',{detail:{id:id,on:on}}));
+  }
+  function toggleSkip(b){
+    var id=b.dataset.id, cur=loadSkips(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveSkips(cur); setPressed('.skip',id,on); setHidden(id,on);
+    if(on){ var lk=loadLikes(); if(lk[id]){ delete lk[id]; saveLikes(lk); badge(); setPressed('.heart',id,false);
+      var hb=document.querySelector('.heart[data-id="'+id+'"]'); if(hb) setCount('.heart',id,bump(hb,-1)); } }
+    b.classList.add('pop'); setTimeout(function(){ b.classList.remove('pop'); },160);
+    setCount('.skip',id,bump(b,on?1:-1));
+    post('/skip',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.skip',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:skip',{detail:{id:id,on:on}}));
+  }
+  function wire(scope){
+    var likes=loadLikes(), skips=loadSkips();
+    var hearts=[].slice.call((scope||document).querySelectorAll('.heart[data-id]'));
+    var sks=[].slice.call((scope||document).querySelectorAll('.skip[data-id]'));
+    hearts.forEach(function(h){
+      if(h.dataset.wired) return; h.dataset.wired='1';
+      h.setAttribute('aria-pressed',String(!!likes[h.dataset.id]));
+      h.addEventListener('click',function(){ toggleLike(h); });
+    });
+    sks.forEach(function(b){
+      if(b.dataset.wired) return; b.dataset.wired='1';
+      b.setAttribute('aria-pressed',String(!!skips[b.dataset.id]));
+      if(skips[b.dataset.id]) setHidden(b.dataset.id,true);
+      b.addEventListener('click',function(){ toggleSkip(b); });
+    });
+    var ids=[]; hearts.concat(sks).forEach(function(h){ if(ids.indexOf(h.dataset.id)<0) ids.push(h.dataset.id); });
+    for(var i=0;i<ids.length;i+=150){
+      post('/counts',{ids:ids.slice(i,i+150)}).then(function(r){
+        var c=(r&&r.counts)||{}; Object.keys(c).forEach(function(k){ setCount('.heart',k,c[k]); });
+        var sk=(r&&r.skips)||{}; Object.keys(sk).forEach(function(k){ setCount('.skip',k,sk[k]); });
+      }).catch(function(){});
+    }
+  }
+  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,skips:loadSkips,saveSkips:saveSkips,badge:badge,heartSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>',skipSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>'};
+  badge(); wire(document);
+})();
+</script><script>window.ADUX_DATES=["2026-10-19", "2026-10-16", "2026-10-15", "2026-10-14", "2026-10-13", "2026-10-12", "2026-10-09", "2026-10-06", "2026-10-05", "2026-10-02", "2026-10-01", "2026-09-30", "2026-09-29", "2026-09-28", "2026-09-25", "2026-09-24", "2026-09-23", "2026-09-22", "2026-09-21", "2026-09-18", "2026-09-17", "2026-09-16", "2026-09-15", "2026-09-14", "2026-09-11", "2026-09-10", "2026-09-09", "2026-09-08", "2026-09-07", "2026-09-04", "2026-09-03", "2026-09-02", "2026-09-01", "2026-08-31", "2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-21"];window.ADUX_CUR="2026-10-19";</script><script>
+(function(){
+  var btn=document.getElementById('calbtn'), cal=document.getElementById('cal'); if(!btn||!cal) return;
+  var dates=window.ADUX_DATES||[], cur=window.ADUX_CUR||'', latest=dates[0]||'';
+  var has={}; dates.forEach(function(d){ has[d]=1; });
+  var y=parseInt(cur.slice(0,4),10), m=parseInt(cur.slice(5,7),10)-1;
+  var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function pad(n){ return (n<10?'0':'')+n; }
+  function draw(){
+    var first=new Date(y,m,1), start=(first.getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+    var h='<div class="calhead"><button type="button" data-go="-1" aria-label="Previous month">&lsaquo;</button>'+
+      '<span class="mon">'+MON[m]+' '+y+'</span><button type="button" data-go="1" aria-label="Next month">&rsaquo;</button></div>'+
+      '<div class="calgrid">'+['Mo','Tu','We','Th','Fr','Sa','Su'].map(function(w){ return '<span class="wd">'+w+'</span>'; }).join('');
+    for(var i=0;i<start;i++) h+='<span class="d off"></span>';
+    for(var d=1;d<=days;d++){
+      var iso=y+'-'+pad(m+1)+'-'+pad(d);
+      if(has[iso]) h+='<a class="d has'+(iso===cur?' now':'')+'" href="'+iso.replace(/-/g,'')+'.html">'+d+'</a>';
+      else h+='<span class="d">'+d+'</span>';
+    }
+    h+='</div><div class="calfoot"><span>'+dates.length+' editions</span><a href="'+latest.replace(/-/g,'')+'.html">Latest &rarr;</a></div>';
+    cal.innerHTML=h;
+    [].forEach.call(cal.querySelectorAll('[data-go]'),function(b){
+      b.addEventListener('click',function(e){ e.stopPropagation(); m+=parseInt(b.dataset.go,10); if(m<0){m=11;y--;} if(m>11){m=0;y++;} draw(); });
+    });
+  }
+  function open(o){ cal.hidden=!o; btn.setAttribute('aria-expanded',String(o)); if(o){ y=parseInt(cur.slice(0,4),10); m=parseInt(cur.slice(5,7),10)-1; draw(); } }
+  btn.addEventListener('click',function(e){ e.stopPropagation(); open(cal.hidden); });
+  document.addEventListener('click',function(e){ if(!cal.hidden&&!cal.contains(e.target)) open(false); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') open(false);
+    if(e.target&&/input|textarea/i.test(e.target.tagName)) return;
+    var i=dates.indexOf(cur);
+    if(e.key==='ArrowLeft'&&i+1<dates.length) location.href=dates[i+1].replace(/-/g,'')+'.html';
+    if(e.key==='ArrowRight'&&i>0) location.href=dates[i-1].replace(/-/g,'')+'.html';
+  });
+})();
+</script></body></html>
