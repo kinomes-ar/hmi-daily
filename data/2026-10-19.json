@@ -2,6 +2,18 @@
  {
   "tag": "Cockpit",
   "pick": true,
+  "t": "Roadster: it flies, then drives the ceiling",
+  "blurb": "Stuck to the ramp at 2 g, then a kick-flip: steer-by-wire yoke, seats in the tub",
+  "en": "Tesla's next Roadster, shown in Waco on 15 October, drove up a ramp stuck to the ceiling, flipped, and flew over a Model 3, Model Y, Cybertruck, Semi and Cybercab. A SpaceX fan underneath pulls up to 2 g; ten cold-gas nozzles and 600 litres of air do the flip. Lars Moravy called the move a kick-flip. Two seats are molded into the tub, and the yoke, brake and throttle are steer-by-wire. The Rocket trim that flies is invite-only and not legal on public roads. The demo car was driven remotely.",
+  "zh": "10月15日在韦科，特斯拉下一代Roadster贴着坡道开上天花板，翻身，再飞过Model 3、Model Y、Cybertruck、Semi和Cybercab。车底SpaceX风扇提供最多2 g吸力；十个冷气喷嘴和600升空气完成翻转。Lars Moravy称这一下是kick-flip。两张座椅直接嵌进车体，方向盘、刹车和油门都是线控。能飞的Rocket版仅限邀请，且不能上公路。演示车是远程开的。",
+  "ko": "10월 15일 웨이코에서 테슬라의 다음 로드스터는 램프 천장에 붙어 올라간 뒤 뒤집혀, 모델 3·모델 Y·사이버트럭·세미·사이버캡 위를 날았다. 바닥의 스페이스X 팬이 최대 2g로 붙들고, 냉가스 노즐 열 개와 공기 600리터가 플립을 만든다. 라스 모라비는 이 동작을 킥플립이라 불렀다. 좌석 둘은 차체에 묻히고, 요크·브레이크·스로틀은 스티어 바이 와이어다. 나는 로켓 트림은 초대 전용이고 공도 불가다. 데모 차는 원격으로 몰았다.",
+  "src": "The Verge",
+  "url": "https://www.theverge.com/transportation/1012552/tesla-roadster-next-gen-reveal-elon-musk",
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Roadster_94.jpg?quality=90&strip=all&crop=0%2C5.1234106207928%2C100%2C89.753178758414&w=1200"
+ },
+ {
+  "tag": "Cockpit",
+  "pick": true,
   "t": "Tang EV: a 35.4-inch strip, then a 30-inch pad",
   "blurb": "A 35.4-inch cowl replaces the cluster and HUD, with a 30-inch pad below",
   "en": "BYD showed the Giant Screen UI on the third-generation Tang EV, ahead of a Q4 launch in China. A 35.4-inch cowl display under the windshield replaces the cluster and the head-up display, holding speed, status and navigation in one fixed band. A 30-inch touchscreen spans the centre and the passenger side. Map, media and vehicle windows can be resized and tiled. An animated companion, Xiao Mianbao, changes expression as it greets people. The upper display does not rotate.",
@@ -68,7 +80,6 @@
  },
  {
   "tag": "Industrial",
-  "pick": true,
   "t": "FTC-1: a knob lifts the lens 30 mm, level stays",
   "blurb": "30 mm of rise and 15 mm of shift on a 1.1 kg 6×7, no tilt in the body",
   "en": "Lachlan Fysh's FTC-1 is a 6×7 that corrects converging verticals without a view camera. A knob turns a TR8 lead screw, and the lens rises up to 30 mm while the body stays level. Side shift is 15 mm. The back turns between portrait and landscape on magnetic detents. Aluminium plates stiffen the core. Tilt is baked into a printed lens cone, not left as an axis that can drift. It weighs 1.1 kg, costs 1,200 Australian dollars, and won Gold for cameras at the 2025 International Design Awards.",
@@ -187,18 +198,5 @@
   "url": "https://80.lv/articles/getting-over-it-meets-nokia-nostalgia-in-new-indie-game-flipping-is-hard",
   "img": "assets/2026-10-19-15.jpg",
   "img_src": "https://cdn.80.lv/api/upload/meta/50663/images/6ad2878ee9e33/contain_1200x630.jpg"
- },
- {
-  "tag": "Micromobility",
-  "t": "Burgsinn: a log pile that charges the e-bikes",
-  "blurb": "Untreated larch, cut niches, and e-bike charge points on the D9 route",
-  "en": "ToB.Studio's rest station in Burgsinn, published 17 October, is shaped like a stack of logs beside Germany's D9 cycle route. Cut niches hold seats and doors under a green roof. Untreated rough-sawn larch wraps a timber frame detailed to come apart. The brief includes e-bike chargers, a repair and wash point, digital information screens, and an accessible toilet and shower. It opens on four sides and sits on one concrete slab. Benjamin Brückner photographed it.",
-  "zh": "ToB.Studio在德国布格辛的骑行休息站于10月17日发表，外形像D9自行车道旁的一堆圆木。体积上切出的壁龛放座位、门和服务点，上面是绿色屋顶。未经处理的粗锯落叶松包着预制木框架，节点做成可以拆开。任务书里有电动自行车充电、维修和清洗点、数字信息屏，以及无障碍厕所和淋浴。建筑四面打开，坐在一块混凝土板上，这块板同时是基础、防洪槛和地面。摄影是Benjamin Brückner。",
-  "ko": "토브.스튜디오의 부르크진 휴식소가 10월 17일 공개됐다. 독일 D9 자전거 길 옆의 통나무 더미처럼 생겼다. 파낸 니치에 좌석과 문이 있고 위는 녹색 지붕이다. 처리하지 않은 거친 낙엽송이 해체 가능한 목구조를 감싼다. 전기자전거 충전, 수리와 세척, 디지털 정보 화면, 무장애 화장실과 샤워가 있다. 네 면으로 열리고 콘크리트 슬래브 하나에 앉는다. 사진은 베냐민 브뤼크너다.",
-  "src": "designboom",
-  "url": "https://www.designboom.com/architecture/tob-studio-timber-bike-station-germany-stacked-log-pile/",
-  "video": "https://vimeo.com/1235347593",
-  "img": "assets/2026-10-19-16.jpg",
-  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/10/tob-studio-burgsinn-cycling-rest-station-germany-designboom-1200-1.jpg"
  }
 ]

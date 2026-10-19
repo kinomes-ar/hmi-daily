@@ -56,9 +56,19 @@ rather than dying mid-search with no file on `main`.
 
 Readers are the **DC Advanced UX team** at Segway-Ninebot. They ship vehicle HMI in the end,
 but they are the *advanced* team: they are hired for taste and for what is coming next, so the
-edition is weighted toward **experience design, graphics, artistic and motion work, real-time /
-game graphics, and new technology** — not toward routine industry news. When two stories are
-equally relevant, pick the one that is more beautiful, more crafted, or more technically new.
+edition is weighted toward **graphic design, motion, UI and GUI** — screens, type, identity,
+title sequences, game interfaces — and only then toward cabin hardware. Routine industry news
+(a launch date, a range, a price) is not a story. When two stories are equally relevant, pick
+the one a designer would screenshot and send without being asked.
+
+**The picture everyone already saw (hard).** Before filling quotas, name the visual from the
+last few days that people were already talking about: a car that flies, a UI filmed in one
+take, a typeface or title sequence that flooded timelines. That story **leads**, even when the
+spec sheet is thin, the price is missing, or it looks like a stunt. Find the interface inside
+it (yoke, steer-by-wire, how the demo was driven, the motion, the graphic). Skipping it because
+it is "not a proper cabin story" is a failed edition. The miss to remember: Tesla's Roadster
+demo on 15–16 Oct 2026 — upside down on a ramp, then a cold-gas flip — was the image of the
+week and did not make the 16th or the 19th.
 
 **Core beats, in priority order**
 
@@ -81,8 +91,8 @@ equally relevant, pick the one that is more beautiful, more crafted, or more tec
    design, design studios, exhibitions, design news in general).
 6. **Motion design** — title sequences, brand films and idents, motion identity systems,
    UI/HMI animation reels, kinetic type, 3D/motion studio work, car launch films worth
-   studying for their motion language. Tag `Motion`. **Aim for 1–2 per edition** (they count
-   inside the Visual quota). Every Motion story must carry a `video` link (Vimeo, YouTube,
+   studying for their motion language. Tag `Motion`. **At least 2 per edition, aim for 3**
+   (they count inside the Visual quota). Every Motion story must carry a `video` link (Vimeo, YouTube,
    or the studio's own player) so readers can press play.
 7. **Real-time / game graphics and new technology** — game art direction and UI (HUDs,
    menus, diegetic interfaces), engine and rendering news (Unreal, Unity, Godot, WebGPU,
@@ -106,9 +116,12 @@ or mark it "not for me" (eye icon). Before researching, run
 python3 feedback.py --fetch --brief      # (--fetch needs the Worker; if it fails, run without it)
 ```
 
-and follow what it prints: the **quota per group** — HMI = Cockpit+Interaction (4),
-Micromobility (2), AI (2), Visual = Visual+Motion (4), Realtime (2), Product = Design+Industrial
-(2) — moved ±1 by the last three weeks of hearts minus skips, always totalling 16. Also follow
+and follow what it prints. **Base mix (set 2026-10-19, after the team said the edition
+felt like a newsletter):** HMI = Cockpit+Interaction (4, and each one must be a screen, a
+control or a GUI — not a launch), Micromobility (1), AI (2, design tools and interfaces),
+Visual = Visual+Motion (6, with at least 2 Motion), Realtime (2, game UI, shaders, a frame
+worth stealing), Product = Design+Industrial (1). Hearts and skips still move a group by ±1,
+always totalling 16. Also follow
 the **sources to favour / deprioritise** and the lists of what the team hearted and skipped —
 read those lists for the *kind* of story (subject, depth, angle) to find more of / avoid.
 ±1 per group is fine when the day is thin, but never fewer than 3 HMI stories or 3 Visual
@@ -173,9 +186,10 @@ after a concept, hands-on after a reveal) — say so in the summary.
 ## 4. Writing
 
 Each story has an English title and a summary in three languages: **EN → 中文 (简体) →
-한국어**. Write like a sharp design editor, not a press release. Lead with the design
-detail a designer would want to know (sizes, layouts, what changed, why it matters);
-include concrete specs (screen inches, resolution, materials, typeface names, dates).
+한국어**. Write like someone forwarding a picture in chat, not like a newsletter. The Feishu card
+is a title plus one line; if it reads as "X unveils Y with a Z-inch screen", nobody taps.
+First sentence is what you see. Specs come after (screen inches, resolution, materials,
+typeface names). No "announced", "unveiled", "the company said" in `t` or `blurb`.
 No hype adjectives, no "revolutionary". Do not moralise. Never mention "our team".
 
 * `t` — English title, 25–58 characters, headline style, usually `Subject: hook`
@@ -230,9 +244,14 @@ A JSON array of exactly 16 objects, in publication order, `ensure_ascii=False`, 
 * `video` (optional, **required for `Motion`**, expected for `Realtime` when a reel exists) — direct link to the playable video (a Vimeo or
   YouTube page, or the studio's own player page). The site shows a play badge and a ▶ Watch
   link; the chat card links it too.
-* `img_url` (optional) — pinned lead-image URL; required for carscoops.com,
-  motorcycle.com, wardsauto.com items, optional elsewhere. `img_from` (optional) — a
-  different page to pull the image from if the original page has none.
+* `img_url` (optional) — **this is how a thumbnail is chosen.** If it is set, the fetcher
+  downloads that URL and ignores the page. If it is omitted, the GitHub Action takes the
+  page's `og:image`, which is often a logo, a bad crop, or the wrong frame. There is no
+  upload: the value has to be a direct `https` image URL the action can fetch, usually
+  another still from the same story (the UI, the flying car, the poster). Pin one whenever
+  the default crop would make someone scroll past. Required for carscoops.com,
+  motorcycle.com, wardsauto.com. `img_from` (optional) — a different page to pull the
+  image from if the original page has none.
 * Do **not** add `img` / `img_src`; the GitHub Action fills those in and commits them.
 * Only today's file is new. Never rewrite or reformat older data files.
 

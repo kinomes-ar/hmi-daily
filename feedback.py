@@ -9,13 +9,15 @@ Rules are deterministic and printed with the result so the weekly summary can ex
 
   Groups (16 stories):  HMI = Cockpit+Interaction, Micromobility, AI, Visual = Visual+Motion,
                         Realtime (game graphics / engines / shaders), Product = Design+Industrial
-  Base quotas:          HMI 4 · Micromobility 2 · AI 2 · Visual 4 · Realtime 2 · Product 2
+  Base quotas:          HMI 4 · Micromobility 1 · AI 2 · Visual 6 · Realtime 2 · Product 1
+                        (2026-10-19: more graphic design, motion, UI/GUI; less newsletter)
   Signal window:        the 15 most recent editions before today (~3 weeks)
   Score per group:      net = hearts - skips ; rate = net / stories
   Quota moves:          need >= 5 reactions in the window, else base quotas.
                         best-rate group (rate > 0)  -> +1 ; worst-rate group (rate < 0) -> -1
                         with >= 20 reactions the best group may take +2
-                        if no group is negative, the +1 is paid by Product/Visual (lowest rate first)
+                        if no group is negative, the +1 is paid by AI/Realtime (lowest rate first),
+                        never by cutting Visual — graphic, motion and GUI are the floor the team asked for
                         floors: HMI >= 3, Visual >= 3, others >= 1 ; cap: base + 2 ; total always 16
   Sources:              >= 3 stories in window: skips >= 2 and skips > hearts -> "deprioritise"
                         hearts >= 2 and hearts > skips -> "favour"
@@ -27,8 +29,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 GROUPS = [("HMI", ("Cockpit", "Interaction")), ("Micromobility", ("Micromobility",)), ("AI", ("AI",)),
           ("Visual", ("Visual", "Motion")), ("Realtime", ("Realtime",)), ("Product", ("Design", "Industrial"))]
-BASE = {"HMI": 4, "Micromobility": 2, "AI": 2, "Visual": 4, "Realtime": 2, "Product": 2}
-FLOOR = {"HMI": 3, "Micromobility": 1, "AI": 1, "Visual": 3, "Realtime": 1, "Product": 1}
+BASE = {"HMI": 4, "Micromobility": 1, "AI": 2, "Visual": 6, "Realtime": 2, "Product": 1}
+FLOOR = {"HMI": 3, "Micromobility": 1, "AI": 1, "Visual": 4, "Realtime": 1, "Product": 1}
 WINDOW = 15
 
 
@@ -126,14 +128,14 @@ def quotas(rows):
         if taken < moves:
             q[name] -= 1; taken += 1
     if taken < moves:
-        # nobody is negative: pay from the big discretionary groups (Product, Visual), lowest rate first —
-        # never from the core beats (HMI, Micromobility, AI) unless the team actually skipped them
-        pool = sorted([(n, x) for n, x in ranked if n in ("Product", "Visual") and n != best[0]],
+        # nobody is negative: pay from AI/Realtime, lowest rate first.
+        # Do not raid Visual — the team asked for more graphic design, motion, UI and GUI.
+        pool = sorted([(n, x) for n, x in ranked if n in ("AI", "Realtime") and n != best[0]],
                       key=lambda kv: kv[1]["rate"])
         for name, x in pool:
             while taken < moves and q[name] > FLOOR[name]:
                 q[name] -= 1; taken += 1
-                notes.append("%s -1 (no group is negative; taken from the largest discretionary group to keep 16)." % name)
+                notes.append("%s -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays)." % name)
     if taken < moves:  # nobody can give: undo
         q = dict(BASE); notes.append("floors reached: base quotas apply.")
     assert sum(q.values()) == 16, q
