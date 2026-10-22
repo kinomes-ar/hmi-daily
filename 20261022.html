@@ -1,0 +1,724 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADUX Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Serif+Display:wdth,wght@62.5..100,400..700&display=swap">
+</head><body><style>
+:root{
+  --ground:#E3E2DD; --paper:#E3E2DD; --ink:#111110; --muted:#6A6862;
+  --rule:#111110; --hair:#111110; --red:#E5342A; --onred:#FFFFFF;
+  --footer:#151513; --footer-ink:#E3E2DD; --shade:#D7D6D0;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+    --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
+    --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111110; --paper:#111110; --ink:#EDEBE4; --muted:#918D83;
+  --rule:#EDEBE4; --hair:#EDEBE4; --red:#FF4A3D; --onred:#141412;
+  --footer:#080807; --footer-ink:#EDEBE4; --shade:#1E1D1A;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,-apple-system,BlinkMacSystemFont,Arial,"PingFang SC","Hiragino Sans GB","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+.sheet{max-width:1180px; margin:0 auto}
+.shell{max-width:1180px; margin:0 auto; padding:0 34px}
+@media (max-width:700px){ .shell{padding:0 20px} }
+
+.top{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:22px 0 6px; flex-wrap:wrap;
+  font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+}
+@media (max-width:700px){
+  .top{gap:12px; padding:18px 0 4px}
+}
+.top .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:15px; letter-spacing:.02em}
+.masthead{padding:46px 0 36px; text-align:center; border-bottom:1px solid var(--ink)}
+.masthead h1{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(36px,7.6vw,78px); line-height:.9; letter-spacing:-.035em;
+  text-transform:uppercase; text-wrap:balance;
+}
+.masthead .kicker{
+  margin-top:9px; font-size:9.5px; font-weight:600; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--muted);
+}
+@media (max-width:700px){ .masthead{padding:30px 0 22px} }
+
+/* ---- category filter ---- */
+.fwrap{border-bottom:1px solid var(--ink); display:none}
+@media (max-width:700px){ .fwrap{display:block} }
+.filters{
+  display:flex; gap:22px; justify-content:center; align-items:center; flex-wrap:wrap;
+  padding:14px 0;
+}
+.filters button{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; padding:0; white-space:nowrap;
+  transition:color .12s;
+}
+.filters button:hover{color:var(--red)}
+.filters button[aria-pressed="true"]{
+  background:var(--ink); color:var(--ground);
+  padding:7px 14px; font-weight:700;
+}
+.filters button[data-f]:not([data-f=""])[aria-pressed="true"]{
+  background:var(--cat); color:#fff;
+}
+@media (max-width:700px){
+  .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
+           -webkit-overflow-scrolling:touch; padding:12px 20px; gap:20px;
+           margin-left:-20px; margin-right:-20px;
+           scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+}
+
+/* ---- filtered view: one uniform grid ---- */
+html[data-filter="micromobility"] article:not([data-tag="micromobility"]){display:none}
+html[data-filter="cockpit"] article:not([data-tag="cockpit"]){display:none}
+html[data-filter="interaction"] article:not([data-tag="interaction"]){display:none}
+html[data-filter="ai"] article:not([data-tag="ai"]){display:none}
+html[data-filter="design"] article:not([data-tag="design"]){display:none}
+html[data-filter="visual"] article:not([data-tag="visual"]){display:none}
+html[data-filter="industrial"] article:not([data-tag="industrial"]){display:none}
+html[data-filter="motion"] article:not([data-tag="motion"]){display:none}
+html[data-filter="realtime"] article:not([data-tag="realtime"]){display:none}
+html[data-filter] .band,html[data-filter] .col,html[data-filter] .duo,html[data-filter] .rest{display:contents}
+html[data-filter] .day{padding-top:26px; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px}
+html[data-filter] .day article{border:0; padding:0}
+html[data-filter] .ph{aspect-ratio:3/2}
+html[data-filter] .hl{font-size:19px; line-height:1.18}
+html[data-filter] .tx{font-size:12.5px}
+html[data-filter] .col.side ~ *{text-align:left}
+html[data-filter] .tagrow{margin-left:0; margin-right:0; justify-content:flex-start}
+html[data-filter] article{text-align:left}
+
+/* ---- date band ---- */
+.day{padding:6px 0 12px}
+.day + .day{padding-top:34px}
+.day + .day{border-top:2px solid var(--ink)}
+.dayhead{display:flex; align-items:baseline; gap:14px; margin-bottom:24px}
+.dayhead h2{
+  font-family:"Archivo Black",Impact,sans-serif; margin:0;
+  font-size:clamp(17px,2.1vw,22px); letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums; text-transform:uppercase;
+}
+.dayhead .rule{flex:1; height:1px; background:var(--hair)}
+.dayhead .meta{
+  font-size:9.5px; font-weight:700; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap;
+}
+
+/* ---- newspaper grid: lead | middle | narrow rail ---- */
+.band{
+  display:grid; grid-template-columns:1.62fr 1fr .78fr; gap:0;
+}
+.col{padding:22px 26px 30px; border-left:1px solid var(--hair); min-width:0}
+.col:first-child{padding-left:0; border-left:0}
+.col:last-child{padding-right:0}
+.col.mid,.col.side{display:grid; gap:24px; align-content:start}
+.col.mid > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.col.side{text-align:center}
+.col.side .tagrow{margin-left:auto; margin-right:auto; display:flex; justify-content:center}
+.col.side .tx{margin-left:auto; margin-right:auto}
+.col.side > article + article{border-top:1px solid var(--hair); padding-top:24px}
+.duo{
+  display:grid; grid-template-columns:1fr 1.25fr; gap:0;
+  border-top:1px solid var(--hair); margin-top:28px;
+}
+.duo > article{padding:22px 0 0}
+.duo > article + article{border-left:1px solid var(--hair); padding-left:24px; margin-left:24px}
+.a-duo .hl{font-size:19px; line-height:1.18}
+.a-duotx .hl{font-size:clamp(21px,2.2vw,27px); line-height:1.12}
+.ph-duo{aspect-ratio:4/3}
+
+/* ---- lower well: ragged newsprint columns ---- */
+.rest{
+  columns:4; column-gap:28px; column-rule:1px solid var(--hair);
+  border-top:1px solid var(--ink); padding-top:22px; margin-top:6px;
+}
+.rest > article{break-inside:avoid; padding:0 0 26px; margin-bottom:2px;
+  border-bottom:1px solid var(--hair)}
+.rest .ph{aspect-ratio:auto}
+.rest .ph.fb{aspect-ratio:4/5}
+.a-foot .hl{font-size:17px; line-height:1.2}
+@media (max-width:980px){
+  .band{grid-template-columns:1.3fr 1fr}
+  .col.side{grid-column:1 / -1; grid-template-columns:1fr 1fr 1fr;
+            border-left:0; padding:16px 0 0; border-top:1px solid var(--hair)}
+  .col.side > article + article{border-top:0; border-left:1px solid var(--hair);
+            padding-top:0; padding-left:18px}
+  .duo{grid-template-columns:1fr}
+  .duo > article + article{border-left:0; padding-left:0; margin-left:0;
+    border-top:1px solid var(--hair); margin-top:20px}
+  .rest{columns:2}
+}
+@media (max-width:660px){
+  .day{columns:2; column-gap:20px; column-rule:1px solid var(--hair)}
+  .band,.col.mid,.col.side,.duo,.rest{display:contents}
+  .col{padding:0; border:0}
+  .col.lead{display:block; column-span:all; padding:22px 0 28px}
+  .col.mid > article,.col.side > article,.duo > article,.rest > article{
+    display:block; break-inside:avoid; text-align:left;
+    border-top:1px solid var(--ink); border-bottom:0; border-left:0;
+    padding:14px 0 24px; margin:0;
+  }
+  .col.side .tagrow{margin:0 0 10px; display:inline-flex; justify-content:flex-start}
+}
+
+/* ---- photos ---- */
+.ph{margin:0 0 14px; overflow:hidden; background:var(--shade)}
+.ph img{width:100%; height:100%; object-fit:cover}
+.ph-lead{aspect-ratio:16/9}
+.ph-mid{aspect-ratio:4/3}
+.ph-side{aspect-ratio:1/1}
+.ph-foot{aspect-ratio:3/2}
+.ph.fb{display:flex; align-items:flex-end; padding:10px}
+.ph.fb span{
+  font-family:"Archivo Black",Impact,sans-serif; text-transform:uppercase;
+  line-height:.86; letter-spacing:-.02em; word-break:break-word;
+}
+.ph-lead.fb span{font-size:clamp(26px,3.6vw,44px)}
+.ph-mid.fb span{font-size:21px}
+.ph-side.fb span{font-size:15px}
+.ph-foot.fb span{font-size:19px}
+
+/* ---- pills ---- */
+.tagrow{display:inline-flex; align-items:center; gap:7px; margin-bottom:10px}
+.tag{
+  display:inline-flex; align-items:center;
+  background:transparent; color:var(--ink);
+  border:1.5px solid var(--cat,var(--red));
+  font-size:10px; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
+  padding:6px 13px; border-radius:999px; line-height:1;
+}
+
+/* ---- headlines & text ---- */
+.hl{
+  font-family:"Noto Serif Display","Times New Roman","Iowan Old Style",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; margin:0 0 10px;
+  line-height:1.08; letter-spacing:-.01em; text-wrap:balance;
+}
+.a-lead .hl{font-size:clamp(30px,3.9vw,44px); line-height:1.05; margin-bottom:12px}
+.a-mid .hl{font-size:clamp(20px,2.2vw,26px); line-height:1.14}
+.a-side .hl{font-size:17px; line-height:1.2}
+.tx{display:none; margin:0; max-width:60ch; color:var(--ink)}
+.tx.en{display:block}
+html[data-lang="zh"] .tx.en,html[data-lang="ko"] .tx.en{display:none}
+html[data-lang="zh"] .tx.zh{display:block}
+html[data-lang="ko"] .tx.ko{display:block}
+.a-lead .tx{font-size:14px; line-height:1.6; color:var(--muted)}
+.a-mid .tx{font-size:13px; line-height:1.55; color:var(--muted)}
+.a-foot .tx,.a-side .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+/* the reference runs headline-only in the narrow cells; keep that in English,
+   but show the translated line when a reader picks 中文 / 한국어 */
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-side .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-mid .tx,
+html:not([data-lang="zh"]):not([data-lang="ko"]) .a-foot .tx{display:none}
+@media (max-width:660px){
+  .hl{font-weight:600}
+  .a-lead .hl{font-size:34px; line-height:1.04}
+  .a-lead .tx{font-size:15.5px}
+  .a-mid .hl,.a-side .hl,.a-foot .hl{font-size:20px; line-height:1.18}
+  .a-mid .tx{font-size:14px}
+  .ph-mid,.ph-side,.ph-foot{aspect-ratio:auto}
+  .ph-mid.fb,.ph-side.fb,.ph-foot.fb{aspect-ratio:4/5}
+  .tag{font-size:9.5px; padding:6px 12px}
+  .filters button{font-size:10.5px}
+  .src{font-size:10px}
+}
+
+.ctrls{position:relative}
+.menubtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink);
+  border-radius:999px; width:34px; height:28px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center; color:var(--ink);
+}
+.menubtn:hover{background:var(--shade)}
+.menubtn svg{width:14px; height:14px; display:block}
+.menu{
+  position:absolute; right:0; top:calc(100% + 10px); z-index:60;
+  background:var(--ground); border:1px solid var(--ink);
+  padding:16px; display:grid; gap:14px; min-width:216px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.menu[hidden]{display:none}
+.menu-team{
+  border-top:1px solid var(--hair); padding-top:13px; display:grid; gap:6px;
+}
+.menu-team .dedication{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,serif; font-style:italic;
+  font-size:13px; color:var(--ink); text-transform:none; letter-spacing:0;
+}
+.menu-team .team-names{
+  font-size:10.5px; font-weight:600; letter-spacing:.05em; color:var(--muted);
+  text-transform:uppercase; line-height:1.7;
+}
+.menu .mlabel{
+  display:block; font-size:9px; font-weight:700; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:7px;
+}
+.langsw{display:flex; gap:0; border:1px solid var(--ink); border-radius:999px; overflow:hidden}
+.langsw button{flex:1 1 0}
+.langsw button{
+  appearance:none; border:0; background:transparent; color:var(--ink); cursor:pointer;
+  font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  padding:5px 10px; line-height:1.4; text-align:center; white-space:nowrap;
+}
+.langsw button + button{border-left:1px solid var(--ink)}
+.langsw button[aria-pressed="true"]{background:var(--red); color:var(--onred)}
+.langsw button:hover:not([aria-pressed="true"]){background:var(--shade)}
+.themesw{
+  appearance:none; cursor:pointer; font:inherit; font-size:9.5px; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase; padding:5px 12px; line-height:1.4;
+  border:1px solid var(--ink); border-radius:999px;
+  background:transparent; color:var(--ink);
+}
+.themesw:hover{background:var(--shade)}
+.top .ctrls{display:flex; align-items:center; gap:10px}
+.src{
+  display:inline-block; margin-top:9px; color:var(--red); text-decoration:none;
+  font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  border-bottom:1px solid transparent; padding-bottom:1px;
+}
+.src:hover,.src:focus-visible{border-bottom-color:var(--red)}
+.adate{
+  display:block; margin-top:7px; font-size:9px; font-weight:600;
+  letter-spacing:.14em; color:var(--muted); font-variant-numeric:tabular-nums;
+}
+.col.side .adate{text-align:center}
+@media (max-width:660px){ .col.side .adate{text-align:left} }
+:focus-visible{outline:2px solid var(--red); outline-offset:3px}
+
+.morebar{
+  display:block; margin:26px 0 8px; padding:15px; border-radius:999px;
+  background:var(--ink); color:var(--ground); text-decoration:none; text-align:center;
+  font-size:10px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+}
+.morebar:hover{background:var(--red); color:#fff}
+/* ---- edition date bar + calendar ---- */
+.datebar{display:flex; align-items:center; justify-content:center; gap:10px; margin:34px 0 4px; padding-top:22px; border-top:1px solid var(--ink); position:relative}
+.datebar a,.datebar button{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  padding:6px 12px; line-height:1.4; text-decoration:none; display:inline-flex; align-items:center; gap:6px;
+}
+.datebar a:hover,.datebar button:hover{background:var(--shade)}
+.datebar a[aria-disabled="true"]{opacity:.3; pointer-events:none}
+.datebar .arrow{padding:6px 10px}
+.datebar .cur{font-variant-numeric:tabular-nums; letter-spacing:.1em}
+.datebar .cur svg{width:13px; height:13px; display:block; stroke:currentColor; stroke-width:1.8; fill:none}
+.cal{
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform:translateX(-50%); z-index:70;
+  background:var(--ground); border:1px solid var(--ink); padding:14px; width:292px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); text-align:left;
+}
+.cal[hidden]{display:none}
+.calhead{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px}
+.calhead .mon{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+.calhead button{appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); width:28px; height:24px; font:inherit; font-size:12px; line-height:1; padding:0}
+.calhead button:hover{background:var(--shade)}
+.calgrid{display:grid; grid-template-columns:repeat(7,1fr); gap:3px}
+.calgrid .wd{font-size:8.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); text-align:center; padding:3px 0 5px}
+.calgrid .d{aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:12px;
+  color:var(--muted); border-radius:999px; text-decoration:none; font-variant-numeric:tabular-nums}
+.calgrid .d.has{color:var(--ink); font-weight:700; border:1.5px solid var(--ink)}
+.calgrid .d.has:hover{background:var(--ink); color:var(--ground)}
+.calgrid .d.now{background:var(--red); color:var(--onred); border-color:var(--red)}
+.calgrid .d.off{opacity:.35}
+.calfoot{margin-top:10px; padding-top:9px; border-top:1px solid var(--hair); display:flex; justify-content:space-between;
+  font-size:9px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.calfoot a{color:var(--red); text-decoration:none}
+
+/* ---- top nav (Daily / Weekly / My) ---- */
+.topnav{display:flex; gap:18px; align-items:center}
+.topnav a{color:var(--ink); text-decoration:none; padding-bottom:2px; border-bottom:1.5px solid transparent}
+.topnav a:hover{color:var(--red)}
+.topnav a[aria-current="page"]{border-bottom-color:var(--red)}
+.topnav .badge{
+  display:inline-block; min-width:16px; padding:1px 5px; margin-left:4px; border-radius:999px;
+  background:var(--red); color:var(--onred); font-size:9px; text-align:center; line-height:1.4;
+}
+.topnav .badge:empty{display:none}
+
+/* ---- hearts ---- */
+.acts{display:flex; align-items:center; gap:14px; margin-top:9px}
+.acts .src{margin-top:0}
+.col.side .acts{justify-content:center}
+@media (max-width:660px){ .col.side .acts{justify-content:flex-start} }
+html[data-filter] .col.side .acts{justify-content:flex-start}
+.heart{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted);
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, transform .12s;
+}
+.heart svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round}
+.heart:hover{color:var(--red)}
+.heart[aria-pressed="true"]{color:var(--red)}
+.heart[aria-pressed="true"] svg{fill:currentColor}
+.heart.pop{transform:scale(1.25)}
+.heart .cnt:empty{display:none}
+a.vid{display:block; position:relative; color:inherit}
+.ph{position:relative}
+.ph .play{position:absolute; left:50%; top:50%; width:46px; height:46px; margin:-23px 0 0 -23px; border-radius:50%;
+  background:rgba(17,17,16,.72); display:flex; align-items:center; justify-content:center; pointer-events:none}
+.ph .play svg{width:22px; height:22px; fill:#fff; margin-left:3px}
+.vlink{margin-top:0}
+.skip{
+  appearance:none; cursor:pointer; background:transparent; border:0; padding:8px; margin:-8px;
+  display:inline-flex; align-items:center; gap:5px; color:var(--muted); opacity:.55;
+  font:inherit; font-size:10px; font-weight:700; letter-spacing:.08em; line-height:1;
+  transition:color .12s, opacity .12s, transform .12s;
+}
+.skip svg{width:15px; height:15px; display:block; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+.skip:hover{opacity:1; color:var(--ink)}
+.skip[aria-pressed="true"]{opacity:1; color:var(--ink)}
+.skip.pop{transform:scale(1.2)}
+.skip .cnt:empty{display:none}
+article.skipped .ph, article.skipped .tx{display:none}
+article.skipped .hl{opacity:.4; text-decoration:line-through; text-decoration-thickness:1px}
+article.skipped .tagrow{opacity:.4}
+article.skipped .acts .src{opacity:.4}
+.myhead{margin-top:34px}
+.hidlist{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px}
+.hidlist li{display:flex; align-items:center; gap:12px; font-size:13px; color:var(--muted)}
+.hidlist li a{color:var(--muted); text-decoration:none; text-decoration:line-through}
+.hidlist li a:hover{color:var(--ink)}
+.hidlist .skip{opacity:1; color:var(--ink)}
+
+/* ---- uniform grid (My page, Weekly picks) ---- */
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:34px 28px; padding-top:26px}
+.grid article{text-align:left}
+.grid .ph{aspect-ratio:3/2}
+.grid .hl{font-size:19px; line-height:1.18}
+.grid .tx{font-size:12.5px; line-height:1.5; color:var(--muted)}
+.grid .tagrow{margin-left:0; margin-right:0}
+.empty{padding:60px 0 40px; text-align:center; color:var(--muted); font-size:14px; line-height:1.7}
+.empty .tx{margin:0 auto}
+.empty .big{font-family:"Archivo Black",Impact,sans-serif; font-size:clamp(24px,4vw,40px); color:var(--ink); text-transform:uppercase; line-height:1; margin-bottom:14px}
+.clearbtn{
+  appearance:none; cursor:pointer; background:transparent; border:1px solid var(--ink); border-radius:999px;
+  color:var(--ink); font:inherit; font-size:9.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  padding:5px 12px; line-height:1.4;
+}
+.clearbtn:hover{background:var(--shade)}
+
+/* ---- weekly ---- */
+.week{padding:6px 0 12px}
+.week + .week{padding-top:34px; border-top:2px solid var(--ink)}
+.wtitle{
+  font-family:"Noto Serif Display","Times New Roman",Georgia,"Songti SC","Apple SD Gothic Neo",serif;
+  font-weight:550; font-stretch:80%; font-size:clamp(26px,3.6vw,40px); line-height:1.08; letter-spacing:-.01em;
+  margin:0 0 14px; text-wrap:balance;
+}
+.wintro .tx{max-width:70ch; font-size:15px; line-height:1.65}
+.wtabs{position:sticky; top:0; z-index:20; background:var(--ground); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:26px}
+.wtabs .filters{padding:12px 0}
+.wtabs .filters a{
+  appearance:none; cursor:pointer; background:transparent; border:0; border-radius:999px; text-decoration:none;
+  color:var(--ink); font:inherit; font-size:10px; font-weight:600; letter-spacing:.13em; text-transform:uppercase;
+  padding:7px 14px; white-space:nowrap; transition:color .12s, background .12s;
+}
+.wtabs .filters a:hover{color:var(--red)}
+.wtabs .filters a[aria-current="true"]{background:var(--cat); color:#fff; font-weight:700}
+@media (max-width:700px){
+  .wtabs .filters{flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start; -webkit-overflow-scrolling:touch;
+    padding:10px 20px; gap:14px; margin-left:-20px; margin-right:-20px; scrollbar-width:none}
+  .wtabs .filters::-webkit-scrollbar{display:none}
+}
+.wcat{scroll-margin-top:64px; border-radius:6px; transition:background .35s, box-shadow .35s}
+.wcat.hit{background:var(--shade); box-shadow:0 0 0 12px var(--shade)}
+.wcat.hit .tag{background:var(--cat); color:#fff}
+.wcats{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0 34px}
+.wcat{padding:22px 0 24px; border-bottom:1px solid var(--hair); break-inside:avoid}
+.wcat .tx{max-width:none; font-size:13.5px; line-height:1.6}
+.wcat ul{list-style:none; margin:12px 0 0; padding:0; display:grid; gap:7px}
+.wcat li{display:flex; align-items:baseline; gap:10px; font-size:13px; line-height:1.35}
+.wcat li a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--hair)}
+.wcat li a:hover{color:var(--red); border-bottom-color:var(--red)}
+.wcat li .who{font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); white-space:nowrap}
+.wtop{margin-top:30px}
+.wtop h3{
+  font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.06em; text-transform:uppercase;
+  margin:0 0 4px; display:flex; align-items:center; gap:8px;
+}
+.wtop h3 svg{width:15px; height:15px; fill:var(--red); stroke:var(--red); stroke-width:1.8}
+.wtop ol{list-style:none; margin:0; padding:0; counter-reset:n; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:0 28px}
+.wtop li{counter-increment:n; display:flex; gap:12px; align-items:baseline; padding:12px 0; border-bottom:1px solid var(--hair)}
+.wtop li::before{content:counter(n,decimal-leading-zero); font-family:"Archivo Black",Impact,sans-serif; font-size:18px; color:var(--red); line-height:1}
+.wtop li a{color:var(--ink); text-decoration:none; font-size:14px; line-height:1.3; flex:1}
+.wtop li a:hover{color:var(--red)}
+.wtop li .n{font-size:10px; font-weight:700; color:var(--muted); letter-spacing:.06em; white-space:nowrap}
+.wtop.wskip h3 svg{fill:none; stroke:var(--ink); stroke-linecap:round}
+.wtop.wskip li::before{color:var(--muted)}
+.wfb{margin-top:34px; padding-top:22px; border-top:1px solid var(--ink)}
+.wfb h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 12px}
+.wfb .fbgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px 34px}
+.wfb table{width:100%; border-collapse:collapse; font-size:12.5px}
+.wfb th{text-align:left; font-size:9.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); padding:0 0 6px; border-bottom:1px solid var(--ink)}
+.wfb th.num, .wfb td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+.wfb td{padding:6px 0; border-bottom:1px solid var(--hair); vertical-align:baseline}
+.wfb td .bar{display:inline-block; height:7px; border-radius:2px; vertical-align:middle; margin-right:6px}
+.wfb td .bar.l{background:var(--red)}
+.wfb td .bar.s{background:var(--muted); opacity:.55}
+.wfb .fbnote{font-size:11px; color:var(--muted); margin-top:8px}
+.wact{margin-top:26px; padding:18px 20px; background:var(--shade); border-radius:6px}
+.wact h3{font-family:"Archivo Black",Impact,sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin:0 0 10px}
+.wact .tx{max-width:none; font-size:14px; line-height:1.65}
+
+.foot{background:var(--footer); color:var(--footer-ink); margin-top:30px; padding:44px 0 50px}
+.foot-grid{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center}
+.foot .wordmark{font-family:"Archivo Black",Impact,sans-serif; font-size:19px; letter-spacing:.02em; text-transform:uppercase}
+.foot .note{font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; opacity:.62}
+</style>
+<div class="sheet" id="top">
+<div class="shell">
+  <div class="top">
+    <span class="wordmark">ADUX&nbsp;DAILY</span>
+    <nav class="topnav" aria-label="Sections">
+      <a href="index.html" aria-current="page">Daily</a>
+      <a href="weekly.html">Weekly</a>
+      <a href="my.html">My &#9829;<span class="badge" id="mybadge"></span></a>
+    </nav>
+    <span class="ctrls">
+      <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-label="Settings">
+        <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <div><span class="mlabel">Language</span>
+          <span class="langsw" role="group" aria-label="Language">
+            <button type="button" data-set="en" aria-pressed="false">EN</button>
+            <button type="button" data-set="zh" aria-pressed="false">中文</button>
+            <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+          </span>
+        </div>
+        <div><span class="mlabel">Theme</span>
+          <button type="button" class="themesw" id="themesw" aria-label="Toggle colour theme">Dark</button>
+        </div>
+        <div class="menu-team">
+          <span class="dedication">for DC Advanced UX Team.</span>
+          <span class="team-names">Vivi &middot; Yohan &middot; Libby &middot; Lim<br>Jisu &middot; Katey &middot; Anna</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <header class="masthead">
+    <h1>Latest News</h1>
+  </header>
+  <div class="fwrap"><nav class="filters" aria-label="Category filter">
+    <button type="button" data-f="" aria-pressed="true">All</button>
+    <button type="button" data-f="micromobility" style="--cat:#E5342A" aria-pressed="false">Micromobility</button>
+    <button type="button" data-f="cockpit" style="--cat:#7B5CF0" aria-pressed="false">Cockpit</button>
+    <button type="button" data-f="interaction" style="--cat:#17A472" aria-pressed="false">Interaction</button>
+    <button type="button" data-f="ai" style="--cat:#DB3A9C" aria-pressed="false">AI</button>
+    <button type="button" data-f="design" style="--cat:#E07A18" aria-pressed="false">Design</button>
+    <button type="button" data-f="visual" style="--cat:#2E6BE6" aria-pressed="false">Visual</button>
+    <button type="button" data-f="industrial" style="--cat:#B08900" aria-pressed="false">Industrial</button>
+    <button type="button" data-f="motion" style="--cat:#0FA3B1" aria-pressed="false">Motion</button>
+    <button type="button" data-f="realtime" style="--cat:#8A2BE2" aria-pressed="false">Realtime</button>
+  </nav></div>
+<section class="day" id="d2026-10-22"><div class="band"><div class="col lead"><article class="a-lead" data-tag="interaction" data-id="2026-10-22-1"><figure class="ph ph-lead fb" style="background:#17A472;color:#fff"><span>Interaction</span></figure><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">iPhone Duo hands-on: two texts, then unfold</h3><p class="tx en">A week on the iPhone Duo, after September's shape notes, is a software problem. The 5.4-inch cover and 7.6-inch inner panel share a 1.4:1 ratio, and with the keyboard up Messages shows about two texts. Updated apps park navigation on the right; Mail's back button moved there, and other apps leave a black bar. Opening adds width, not height, and two apps pin side by side only in landscape. Nano-texture glass hides the crease until a finger finds it. Touch ID is in the side button.</p><p class="tx zh">九月的外形笔记之后，iPhone Duo上手一周，问题在软件。5.4英寸外屏与7.6英寸内屏同为1.4:1，键盘弹起时信息大约只剩两行。适配过的应用把导航挪到右缘，邮件的返回键也过去了，其余应用留下黑边。打开只增加宽度，两个应用并排只在横屏成立。纳米纹理内屏把折痕藏到手指摸到为止。Touch ID在侧键。</p><p class="tx ko">9월의 형태 노트 이후 아이폰 듀오 일주일은 소프트웨어 문제다. 5.4인치 커버와 7.6인치 내부 화면이 1.4:1이고, 키보드를 올리면 메시지는 두 줄 정도다. 맞춘 앱은 내비게이션을 오른쪽으로 옮기고, 메일의 뒤로 가기도 그쪽으로 갔으며, 나머지는 검은 막대를 남긴다. 열면 너비만 늘고, 앱 두 개의 고정은 가로에서만 된다. 나노 텍스처는 손가락이 닿기 전 주름을 숨긴다. Touch ID는 측면 버튼에 있다.</p><span class="acts"><a class="src" href="https://www.theverge.com/tech/1015028/iphone-duo-review" target="_blank" rel="noopener">The Verge &rarr;</a><button type="button" class="heart" data-id="2026-10-22-1" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-1" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><div class="duo"><article class="a-duo" data-tag="interaction" data-id="2026-10-22-2"><figure class="ph ph-duo fb" style="background:#17A472;color:#fff"><span>Interaction</span></figure><span class="tagrow" style="--cat:#17A472"><span class="tag">Interaction</span></span><h3 class="hl">Audi Spotify: lyrics lock while moving</h3><p class="tx en">Spotify's native app sits on Audi's own screens, first on the A6 e-tron, Q6 e-tron, A5, Q5 and A6. Sign-in is a QR code; after that the phone does not have to stay paired. While the car moves, the centre display drops video and lyrics and keeps voice plus a shorter list. Parked, including on a charger, the same screen fills with video podcasts, music videos and live lyrics. A passenger display, where fitted, can browse and play video on its own. "Hey Audi" runs playback, or you talk to Spotify's DJ.</p><p class="tx zh">Spotify的原生应用直接跑在奥迪屏幕上，先上车的是A6 e-tron、Q6 e-tron、A5、Q5和A6。登录用二维码，之后手机不必一直配对。车子在动时，中控去掉视频和歌词，只留语音和更短的列表。停车或充电时，同一块屏铺满视频播客、音乐视频和实时歌词。有副驾屏就可以单独浏览和放视频。“Hey Audi”管播放，也可以直接对Spotify的DJ说话。</p><p class="tx ko">스포티파이 네이티브 앱이 아우디 화면에서 돈다. 처음은 A6 e-tron, Q6 e-tron, A5, Q5, A6다. 로그인은 QR이고, 이후 휴대폰을 붙여 둘 필요가 없다. 주행 중 센터 화면은 영상과 가사를 빼고 음성과 짧은 목록만 남긴다. 주차와 충전 중에는 같은 화면이 비디오 팟캐스트, 뮤직비디오, 실시간 가사로 찬다. 조수석 화면이 있으면 따로 탐색하고 재생한다. "Hey Audi"가 재생을 맡거나, 스포티파이 DJ에게 말한다.</p><span class="acts"><a class="src" href="https://newsroom.spotify.com/2026-10-21/spotify-native-car-app-audi/" target="_blank" rel="noopener">Spotify &rarr;</a><button type="button" class="heart" data-id="2026-10-22-2" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-2" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-duotx" data-tag="motion" data-id="2026-10-22-3"><span class="tagrow" style="--cat:#0FA3B1"><span class="tag">Motion</span></span><h3 class="hl">Foundry Labs: pixel type, no voiceover</h3><p class="tx en">Ranger &amp; Fox's film for Microsoft Foundry Labs puts the models on screen and leaves the voiceover out. Aurora, MatterSim and TamGen are the cast. The type is pixelated and monospaced, drawn to look as if the lab wrote it, and a line of code becomes a weather model or a new molecule. Brown Yoon and Ted Gore designed and animated it, Dave Hummel wrote the music, and Stephen Panicara was ECD. Made for Microsoft Build 2026, the film is one handoff: code on one side, a working thing on the other.</p><p class="tx zh">Ranger &amp; Fox为微软Foundry Labs做的片子把模型放上屏幕，没有旁白。出镜的是Aurora、MatterSim和TamGen。字体是像素化等宽字，像实验室自己写的。一行代码变成天气模型，或一个新分子。Brown Yoon与Ted Gore做设计和动画，Dave Hummel做音乐。片子为2026微软Build而做：一边是代码，另一边是已经在工作的东西。</p><p class="tx ko">레인저 앤 폭스가 마이크로소프트 파운드리 랩스를 위해 만든 필름은 모델을 화면에 올리고 내레이션을 뺐다. 출연은 Aurora, MatterSim, TamGen이다. 글자는 픽셀 고정폭으로, 연구실이 직접 친 것처럼 보인다. 코드 한 줄이 기상 모델이나 새 분자가 된다. 디자인과 애니메이션은 브라운 윤과 테드 고어, 음악은 데이브 허멀. 2026 빌드용이고, 한쪽은 코드, 다른 쪽은 이미 작동하는 것이다.</p><span class="acts"><a class="src" href="https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/" target="_blank" rel="noopener">STASH &rarr;</a><a class="src vlink" href="https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-22-3" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-3" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article></div></div><div class="col mid"><article class="a-mid" data-tag="cockpit" data-id="2026-10-22-4"><figure class="ph ph-mid fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">Escalade IQ: a turquoise strip says look away</h3><p class="tx en">GM's Level 3 system, first on the 2028 Cadillac Escalade IQ, uses a turquoise light strip across the dashboard as the signal that it is safe to look away. Lights in the mirror housings may tell other drivers the car is driving itself, where the law allows it. The same stack follows on the next Silverado and other high-volume GM trucks and three-row crossovers. One liquid-cooled central computer, about 40 times today's truck machines, runs autonomy, safety and propulsion. The strip is the interface.</p><p class="tx zh">通用的L3先上车2028款凯迪拉克Escalade IQ。仪表板上一道青绿色灯带亮起，表示可以移开视线。后视镜壳体上的灯，在法规允许处告诉别的车：这辆正在自己开。同一套随后到下一代Silverado，以及其他量大的通用皮卡和三排跨界。一台液冷中央计算机，大约是今天卡车的40倍，同时管自动驾驶、安全和驱动。灯带就是界面。</p><p class="tx ko">GM 레벨 3는 2028 캐딜락 에스컬레이드 IQ에 먼저 들어간다. 대시보드의 청록색 라이트 스트립이 켜지면 시선을 떼도 된다. 미러 하우징의 등은 법이 허용하는 곳에서, 차가 스스로 달린다고 다른 운전자에게 알린다. 같은 구성은 다음 실버라도와 물량이 큰 GM 트럭, 3열 크로스오버로 이어진다. 액체 냉각 중앙 컴퓨터 하나가 오늘날 트럭의 약 40배 성능으로 자율주행, 안전, 구동을 맡는다. 스트립이 인터페이스다.</p><span class="acts"><a class="src" href="https://www.carscoops.com/2293287/gm-autonomous-driving-in-more-models/" target="_blank" rel="noopener">Carscoops &rarr;</a><button type="button" class="heart" data-id="2026-10-22-4" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-4" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-mid" data-tag="visual" data-id="2026-10-22-5"><figure class="ph ph-mid fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">To Be Formed: a wordmark still becoming</h3><p class="tx en">Day Job's identity for Lance Oppenheim's company To Be Formed is a wordmark that looks unfinished on purpose. Orysia Zabeida drew the primary mark so it feels about to turn into something else: thick shapes beside thin calligraphic letters, x-heights that do not agree. About 20 more wordmarks, many pastiches of corporate media, sit behind it. References ran from crooked book covers to early-2000s DVD menus. On the site, navigation is objects kept from each film. The name began as a placeholder and stayed.</p><p class="tx zh">Day Job为Lance Oppenheim的制片公司To Be Formed做的识别，是一个故意没画完的字标。Orysia Zabeida的主标志像正要变成别的东西：粗笔画挨着细书法，x字高对不齐。背后还有大约20个字标，不少在戏仿企业媒体。参考从歪斜书封到2000年代初的DVD菜单。网站导航是每部片子留下的物件。名字起初是占位，后来留下了。</p><p class="tx ko">데이 잡이 랜스 오펜하임의 제작사 To Be Formed에 만든 아이덴티티는 일부러 덜 끝난 워드마크다. 오러시아 자베이다의 기본 마크는 곧 다른 것이 될 듯하다. 굵은 형태가 가는 캘리그래피 옆에 있고 x-하이트는 맞지 않는다. 뒤에 워드마크 약 20개가 있고, 상당수는 기업 미디어를 흉내 낸다. 참고는 비뚤어진 책 표지에서 2000년대 초 DVD 메뉴까지다. 사이트 내비게이션은 각 영화의 물건이다. 이름은 자리표시로 남아 있다.</p><span class="acts"><a class="src" href="https://www.itsnicethat.com/articles/tbf-day-job-graphic-design-project-211026" target="_blank" rel="noopener">It's Nice That &rarr;</a><button type="button" class="heart" data-id="2026-10-22-5" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-5" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article></div><div class="col side"><article class="a-side" data-tag="ai" data-id="2026-10-22-6"><a class="vid" href="https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/" target="_blank" rel="noopener" aria-label="Watch the video"><figure class="ph ph-side fb" style="background:#DB3A9C;color:#fff"><span>AI</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></figure></a><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">Query: no boards, shot follows shot</h3><p class="tx en">Brent Bonacorso made the short Query with no storyboards and no finished script, shot by shot from the first frame of a man walking. A giant duck began as a background joke and ended up carrying the resolution. The look was set in the prompts: camera move, lenses, light, colour, grain. He edited it himself, matched a few shots, and generated the music. Graphic-design habits still run the frame: composition, hierarchy, where the eye goes, now at 24 frames a second. Mise Creative produced it.</p><p class="tx zh">Brent Bonacorso的短片Query没有分镜，也没有完成的剧本。他从一个人走路的第一帧开始，一镜接一镜做。一只巨大的鸭子起初是背景笑话，最后承担了解题。画面在提示词里定下：运镜、镜头、光线、颜色、颗粒。他自己剪，对齐少数镜头，音乐也是生成的。平面习惯仍在管画面：构图、层级、眼睛往哪走，现在是每秒24帧。出品是Mise Creative。</p><p class="tx ko">브렌트 보나코르소는 단편 Query를 스토리보드도 완성 대본도 없이 만들었다. 남자가 걷는 첫 프레임부터 샷을 이어 갔다. 거대한 오리는 배경 농담으로 시작해 결말을 맡았다. 룩은 프롬프트에서 정했다. 카메라 움직임, 렌즈, 빛, 색, 입자. 편집은 직접 하고 몇 샷만 맞췄으며 음악도 생성했다. 그래픽 습관이 프레임을 잡는다. 구도, 위계, 시선, 이제는 초당 24프레임. 제작은 미스 크리에이티브.</p><span class="acts"><a class="src" href="https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/" target="_blank" rel="noopener">STASH &rarr;</a><a class="src vlink" href="https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-22-6" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-6" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-side" data-tag="industrial" data-id="2026-10-22-7"><figure class="ph ph-side fb" style="background:#B08900;color:#fff"><span>Industrial</span></figure><span class="tagrow" style="--cat:#B08900"><span class="tag">Industrial</span></span><h3 class="hl">Paris: 1,500 beads that rattle on a chair</h3><p class="tx en">Apple's Designers of Tomorrow, at the Hôtel de Maisons through 25 October, puts four objects in a room and asks you to touch them. Isabel Rower's Padded Chair 1860 is gloss black, on discarded furniture and papier-mâché, with about 1,500 ceramic beads where a fringe would be. They click when a hand passes. Salem S. Charabi's lantern stands on Galala limestone; date-palm ribs, each a 3 mm octagon, hold banana paper. Yoonjeong Lee uses three pencil stubs as nails over a table of about 5,000 veneer sheets.</p><p class="tx zh">苹果Designers of Tomorrow在巴黎Hôtel de Maisons展到10月25日。Isabel Rower的Padded Chair 1860是亮黑的，骨架来自捡来的家具和纸浆，流苏处约1500颗陶瓷珠，手一掠过就响。Salem S. Charabi的灯立在Galala石灰岩上，椰枣叶肋修成3毫米八边形，托着香蕉纸。Yoonjeong Lee用铅笔头当钉子，压在薄木叠成的桌上。</p><p class="tx ko">애플 Designers of Tomorrow가 파리 오텔 드 메종에서 10월 25일까지 열린다. 이사벨 로워의 Padded Chair 1860은 광택 검정이고, 버려진 가구와 파피에마셰 위에 있으며, 세라믹 구슬 약 1,500개가 손이 스치면 소리를 낸다. 살렘 S. 차라비의 랜턴은 갈랄라 석회암 위에 서고, 3mm 팔각형 대추야자 잎맥이 바나나 종이를 받친다. 이윤정은 연필 몽당 세 개를 못으로 베니어 약 5,000장 위에 쓴다.</p><span class="acts"><a class="src" href="https://www.designboom.com/design/apple-designers-of-tomorrow-design-miami-paris-2026/" target="_blank" rel="noopener">designboom &rarr;</a><button type="button" class="heart" data-id="2026-10-22-7" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-7" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-side" data-tag="realtime" data-id="2026-10-22-8"><figure class="ph ph-side fb" style="background:#8A2BE2;color:#fff"><span>Realtime</span></figure><span class="tagrow" style="--cat:#8A2BE2"><span class="tag">Realtime</span></span><h3 class="hl">Painterly: one slider bends the normals</h3><p class="tx en">Theo Daley's YMA Painterly is 12 shaders for Cinema 4D and Houdini that paint a model inside the render. Each takes up to four colours from 4K textures painted in Rebelle, Photoshop and Substance 3D Designer. A normals slider runs from the geometry's own surface at zero to a brush-warped surface at full. Redshift and Octane each have a version; Houdini's is Redshift, including Solaris, on Redshift 2026.1.0 or newer. Colour, brush scale and that slider sit in front.</p><p class="tx zh">Theo Daley的YMA Painterly是给Cinema 4D和Houdini的12个着色器，在渲染里给模型上漆。每一个最多四种颜色，贴图是Rebelle、Photoshop和Substance手绘的4K纹理。法线滑杆在0是几何体本身，拉满就变成笔触扭过的表面。Redshift与Octane各有一版。颜色、笔触尺度和那根滑杆在界面最前。</p><p class="tx ko">테오 데일리의 YMA Painterly는 Cinema 4D와 Houdini용 셰이더 12개로, 렌더 안에서 모델에 칠한다. 각각 최대 네 색을 받고, 텍스처는 Rebelle와 Photoshop으로 그린 4K다. 노멀 슬라이더는 0에서 지오메트리 자체이고, 끝까지 밀면 붓질로 휜다. Redshift와 Octane에 버전이 있다. 색과 붓 크기, 그 슬라이더가 앞에 있다.</p><span class="acts"><a class="src" href="https://80.lv/articles/how-to-make-3d-look-like-a-stylized-painting-with-shaders-in-houdini-c4d" target="_blank" rel="noopener">80 Level &rarr;</a><button type="button" class="heart" data-id="2026-10-22-8" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-8" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article></div></div><div class="rest"><article class="a-foot" data-tag="visual" data-id="2026-10-22-9"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">AHA: a stamp, cream paper, a tilted serif</h3><p class="tx en">Davy Denduyver's identity for A Human Agency is a hand-drawn wordmark and emblem made to look like stamps, cream and black, with a serif that tilts. Illustration was ruled out so the mark would not compete with the agency's 14 artists. "For Humans. By Humans." runs on cards, totes, caps, shirts and packing tape. Founder Ryan Claydon hired him off a Creative Boom Instagram post, ahead of the agency's fifth year in January. Two small changes in the whole job. The mark sits under the pictures, like a museum label.</p><p class="tx zh">Davy Denduyver为插画经纪A Human Agency做的识别，是手绘字标和徽记，像印章，奶油色配黑，衬线微微倾斜。插画被排除，免得和14位艺术家抢画面。“For Humans. By Humans.”印在名片、托特、帽子和封箱胶带上。Ryan Claydon从Creative Boom的Instagram看到他。标志待在画面下面，像博物馆说明牌。</p><p class="tx ko">다비 덴뒤버가 일러스트 에이전시 A Human Agency에 만든 아이덴티티는 도장처럼 손으로 그린 워드마크와 엠블럼이다. 크림과 검정, 기운 세리프. 일러스트는 빼서 작가 14명의 그림과 싸우지 않게 했다. "For Humans. By Humans."는 명함, 토트, 모자, 티셔츠, 포장 테이프에 있다. 라이언 클레이든은 크리에이티브 붐 인스타그램에서 그를 보고 1월 5주년 전에 맡겼다. 작은 수정은 두 번. 마크는 그림 아래, 박물관 캡션처럼 앉는다.</p><span class="acts"><a class="src" href="https://www.creativeboom.com/work/davy-denduyver/" target="_blank" rel="noopener">Creative Boom &rarr;</a><button type="button" class="heart" data-id="2026-10-22-9" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-9" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="motion" data-id="2026-10-22-10"><a class="vid" href="https://vimeo.com/1237378148" target="_blank" rel="noopener" aria-label="Watch the video"><figure class="ph ph-foot fb" style="background:#0FA3B1;color:#fff"><span>Motion</span><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span></figure></a><span class="tagrow" style="--cat:#0FA3B1"><span class="tag">Motion</span></span><h3 class="hl">BYREDO: steel spheres over five scents</h3><p class="tx en">Leonardo Garza's Matter / Memory, for BYREDO in Mexico City, is five curved glass fragments and a curtain of stainless steel spheres. A hand pushes the spheres aside and the material shows through, with a small metallic sound. Gypsy Water is charcoal and ash, Rose of No Man's Land is broken glass, Mojave Ghost is mineral dust, Bal d'Afrique is red ochre, Blanche is folded white cloth. A low fog sits around the piece. The film is that sequence: concealment, the reveal, then the sound.</p><p class="tx zh">Leonardo Garza为BYREDO在墨西哥城做的Matter / Memory，是五块曲面玻璃加一道不锈钢球帘。手把球拨开，材料露出，同时有细小的金属声。Gypsy Water是炭和灰，Rose of No Man's Land是碎玻璃，Mojave Ghost是矿物粉，Bal d'Afrique是红赭土，Blanche是折叠白布。片子的顺序是：挡住，露出，然后是声音。</p><p class="tx ko">레오나르도 가르사가 멕시코시티 BYREDO를 위해 만든 Matter / Memory는 휜 유리 다섯 조각과 스테인리스 구슬 커튼이다. 손이 구슬을 밀면 재료가 드러나고 작은 금속 소리가 난다. Gypsy Water는 숯과 재, Rose of No Man's Land는 깨진 유리, Mojave Ghost는 광물 가루, Bal d'Afrique는 적황토, Blanche는 접힌 흰 천이다. 필름의 순서는 가림, 드러남, 소리다.</p><span class="acts"><a class="src" href="https://www.designboom.com/design/steel-spheres-curved-glass-leonardo-garza-sensory-installation-byredo-matter-memory/" target="_blank" rel="noopener">designboom &rarr;</a><a class="src vlink" href="https://vimeo.com/1237378148" target="_blank" rel="noopener">&#9654; Watch</a><button type="button" class="heart" data-id="2026-10-22-10" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-10" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="ai" data-id="2026-10-22-11"><figure class="ph ph-foot fb" style="background:#DB3A9C;color:#fff"><span>AI</span></figure><span class="tagrow" style="--cat:#DB3A9C"><span class="tag">AI</span></span><h3 class="hl">Free Form: blur is a slider, type flowers</h3><p class="tx en">Melina K and Rob Farmer each made a poster in free Affinity and Cavalry, then published the files. Gaussian blur is a slider with a live preview. Live Filters let Melina return to noise after the layout moves on, and Vector and Pixel studios switch without leaving the app. She printed, scanned and cut the sky poster. Rob built typographic flowers in Cavalry with the oscillator, which moves a value, including colour across the letters, without keyframes.</p><p class="tx zh">Melina K和Rob Farmer用免费的Affinity和Cavalry各做一张海报，并把文件公开。高斯模糊是一根带实时预览的滑杆。Live Filters让Melina在版式往下走之后还能改噪点，矢量与像素工作室不用离开应用就能切换。天空那张她拿去打印、扫描、剪裁。Rob在Cavalry里用字母堆出花，oscillator不打关键帧就能推动颜色。</p><p class="tx ko">멜리나 K와 롭 파머는 무료 Affinity와 Cavalry로 포스터를 만들고 파일을 공개했다. 가우시안 블러는 실시간 미리보기가 있는 슬라이더다. Live Filters로 멜리나는 나중에 노이즈로 돌아가고, Vector와 Pixel은 앱을 나가지 않고 바뀐다. 하늘 포스터는 인쇄하고 스캔하고 잘랐다. 롭은 Cavalry에서 글자로 꽃을 만들고, oscillator로 키프레임 없이 색을 옮긴다.</p><span class="acts"><a class="src" href="https://www.itsnicethat.com/features/affinity-and-cavalry-free-form-brand-partnership-211026" target="_blank" rel="noopener">It's Nice That &rarr;</a><button type="button" class="heart" data-id="2026-10-22-11" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-11" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-22-12"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Marketplace: two dummies, cropped into a kiss</h3><p class="tx en">Casey Roarty's series Is This Still Available? remakes Facebook Marketplace photos: harsh flash, scribbled-out faces, heavy compression. He crops, simplifies, and adds pencil or pastel until the listing becomes another picture. A favourite frame has two martial-arts dummies squeezed into the left edge. Cropped, they read as a kiss. Other pictures keep a costume laid flat, a hand in the shot, a 65-inch TV, gold mirrors. He wants the third or fourth photo, the one the seller did not mean as the picture.</p><p class="tx zh">Casey Roarty的系列Is This Still Available?重做Facebook Marketplace的照片：硬闪光、涂掉的脸、严重压缩。他裁切、简化，加上铅笔或粉彩，直到商品图变成另一张画。他喜欢的一帧，两个武术假人挤在左缘，裁进去之后像在接吻。其他画面留下摊平的戏服、伸进镜头的手、一台65英寸电视、金色镜框。他要的是第三张或第四张，卖家没打算当主图的那张。</p><p class="tx ko">케이시 로아티의 Is This Still Available?는 페이스북 마켓플레이스 사진을 다시 만든다. 강한 플래시, 긁어 지운 얼굴, 심한 압축. 그는 자르고 연필이나 파스텔을 더해 매물을 다른 그림으로 만든다. 무술 더미 둘이 왼쪽 가장자리에 끼어 있고, 자르면 입맞춤으로 읽힌다. 다른 그림에는 펼친 의상, 들어온 손, 65인치 TV가 남는다. 그가 원하는 것은 판매자가 대표로 삼지 않은 장이다.</p><span class="acts"><a class="src" href="https://www.creativeboom.com/work/casey-roarty-digs-through-facebook-marketplace-listings-and-transforms-his-findings-into-art/" target="_blank" rel="noopener">Creative Boom &rarr;</a><button type="button" class="heart" data-id="2026-10-22-12" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-12" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="visual" data-id="2026-10-22-13"><figure class="ph ph-foot fb" style="background:#2E6BE6;color:#fff"><span>Visual</span></figure><span class="tagrow" style="--cat:#2E6BE6"><span class="tag">Visual</span></span><h3 class="hl">Dezeen: same type, a colour per desk</h3><p class="tx en">Dezeen's site, rebuilt by Made by On, is the first full redesign since 2016. Micha Weidmann kept the classic type and gave Awards, Events Guide and Showroom each a new colour and logo. Square images stay. Horizontal scrolls and mixed sizes break the vertical feed. Search, the menu and filters are one system. The right-hand sidebar is gone, and articles can hold larger pictures. dezeenjobs.com is still on the old site. The feed remains reverse-chronological.</p><p class="tx zh">Dezeen网站由Made by On重建，这是2016年以来第一次完整改版。当初定字体的Micha Weidmann留下经典排版，给Awards、Events Guide和Showroom各自新的颜色和标志。方形图还在。横向滚动和不同尺寸把垂直信息流打断。搜索、菜单和筛选在这些服务之间是同一套。右侧边栏去掉了，文章可以放更大的图和画廊。dezeenjobs.com还在旧站。信息流仍按时间倒序。</p><p class="tx ko">데진 사이트를 Made by On이 다시 지었다. 2016년 이후 첫 전면 개편이다. 미하 바이드만은 고전 서체를 남기고 Awards, Events Guide, Showroom에 새 색과 로고를 줬다. 정사각 이미지는 그대로다. 가로 스크롤이 세로 피드를 끊는다. 검색과 메뉴, 필터는 하나의 시스템이다. 오른쪽 사이드바는 사라졌다. dezeenjobs.com은 아직 옛 사이트다. 피드는 시간 역순이다.</p><span class="acts"><a class="src" href="https://www.dezeen.com/2026/10/21/dezeen-launches-new-website-2026/" target="_blank" rel="noopener">Dezeen &rarr;</a><button type="button" class="heart" data-id="2026-10-22-13" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-13" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="micromobility" data-id="2026-10-22-14"><figure class="ph ph-foot fb" style="background:#E5342A;color:#fff"><span>Micromobility</span></figure><span class="tagrow" style="--cat:#E5342A"><span class="tag">Micromobility</span></span><h3 class="hl">Santander Cycles: the QR is on the bike</h3><p class="tx en">TfL's new Santander Cycles app, live 17 November, puts a QR code on the bike and makes that the unlock. The codes are already on many bikes and do nothing until 21:00 that day. Apple Pay and Google Pay replace the older payment path, and the app shows which docks have bikes. The current app stops when the new one starts. Hire is off from the evening of 13 November to the evening of 17 November. The bike is the button.</p><p class="tx zh">TfL的新Santander Cycles应用11月17日上线。二维码印在车上，扫它就是开锁。码已经贴在不少车上，当天21:00之前不能用。Apple Pay和Google Pay换掉原来的支付。出发前买通行、看哪个桩有车，也在这个应用里。新应用一开始，旧的就停。11月13日晚到17日晚不能租车。电助力车的桩内充电是明年的硬件。车本身就是按钮。</p><p class="tx ko">TfL의 새 Santander Cycles 앱은 11월 17일에 열린다. QR 코드가 자전거에 붙어 있고, 스캔하면 잠금이 풀린다. 코드는 이미 많은 차에 있지만 그날 21:00까지는 작동하지 않는다. Apple Pay와 Google Pay가 이전 결제를 대신하고, 어느 거치대에 차가 있는지도 앱에서 본다. 새 앱이 시작되면 현재 앱은 멈춘다. 11월 13일 저녁부터 17일 저녁까지 대여가 멈춘다. 자전거가 버튼이다.</p><span class="acts"><a class="src" href="https://tfl.gov.uk/info-for/media/press-releases/2026/october/tfl-and-santander-to-make-bike-hire-quicker-and-easier-than-ever" target="_blank" rel="noopener">Transport for London &rarr;</a><button type="button" class="heart" data-id="2026-10-22-14" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-14" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="cockpit" data-id="2026-10-22-15"><figure class="ph ph-foot fb" style="background:#7B5CF0;color:#fff"><span>Cockpit</span></figure><span class="tagrow" style="--cat:#7B5CF0"><span class="tag">Cockpit</span></span><h3 class="hl">Lexus TZ: the cluster becomes the map</h3><p class="tx en">The 2027 Lexus TZ runs Lexus Interface as a 14-inch touchscreen of customizable widgets, a voice assistant, and navigation that can take the whole digital cluster. The pad sits on the dash as its own slab. Full-screen map on the cluster, widgets on the 14-inch pad, voice for the rest: three surfaces, each with one job. US orders for the base TZ 450e open later this year, with Touring and Luxury in early 2027. The European 450e lines use the same split. That division is the GUI worth keeping.</p><p class="tx zh">2027款雷克萨斯TZ的Lexus Interface是一块14英寸触屏，放可定制小组件，加上语音助手，导航可以占满数字仪表。这块屏像一块板搁在仪表台上。仪表铺满地图，14英寸屏放小组件，其余交给语音：三个面，各干一件事。美国基础版TZ 450e今年稍晚订购，Touring和Luxury在2027年初。欧洲450e用同一套分屏。值得留下的是这个划分。</p><p class="tx ko">2027 렉서스 TZ의 Lexus Interface는 맞춤 위젯이 있는 14인치 터치스크린, 음성 어시스턴트, 디지털 클러스터 전체를 차지할 수 있는 내비게이션이다. 패드는 대시 위에 따로 놓인 판이다. 클러스터에는 지도, 14인치에는 위젯, 나머지는 음성. 면이 셋이고 각자가 일 하나를 맡는다. 미국 기본 TZ 450e 주문은 올해 늦게, Touring과 Luxury는 2027년 초다. 유럽 450e도 같은 분할이다. 남겨 둘 GUI는 이 나눔이다.</p><span class="acts"><a class="src" href="https://electrek.co/2026/10/21/lexus-announces-prices-3-row-tz-electric-suv/" target="_blank" rel="noopener">Electrek &rarr;</a><button type="button" class="heart" data-id="2026-10-22-15" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-15" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article><article class="a-foot" data-tag="realtime" data-id="2026-10-22-16"><figure class="ph ph-foot fb" style="background:#8A2BE2;color:#fff"><span>Realtime</span></figure><span class="tagrow" style="--cat:#8A2BE2"><span class="tag">Realtime</span></span><h3 class="hl">BeamNG: every part, 2,000 times a second</h3><p class="tx en">BeamNG.drive is on PS5, and the frame worth keeping is the crash. The soft-body solver runs at 2 kHz, so each component updates up to 2,000 times a second. In a hit, the chassis, the engine and the suspension dent, crack or bend as separate pieces. The cars are not licensed, and there is no driver in the seat. It runs on Torque 3D, the same soft-body idea as the 2005 sim Rigs of Rods. Deserts, cities, mountain roads and ports are there to break things in. The PS5 trailer is a deformation study.</p><p class="tx zh">BeamNG.drive上了PS5，值得留下的画面是碰撞。软体求解器跑在2 kHz，每个零件每秒最多更新2000次。撞上去时，车身、发动机和悬挂各自凹陷、开裂或弯曲。车没有厂商授权，座位上没有驾驶员。它跑在Torque 3D上，软体思路和2005年的Rigs of Rods一样。沙漠、城市、山路和港口都是用来把东西撞坏的。PS5预告是一份变形研究。</p><p class="tx ko">BeamNG.drive가 PS5에 올라왔고, 남겨 둘 프레임은 충돌이다. 소프트바디 솔버는 2 kHz로, 각 부품이 초당 최대 2,000번 갱신된다. 부딪히면 차체, 엔진, 서스펜션이 각자 찌그러지거나 갈라지거나 휜다. 차는 라이선스가 없고 좌석에 운전자도 없다. Torque 3D에서 돌며, 생각은 2005년 Rigs of Rods와 같다. 사막, 도시, 산길, 항구는 부수라고 있는 곳이다. PS5 트레일러는 변형 연구다.</p><span class="acts"><a class="src" href="https://www.carscoops.com/2291537/beam-ng-drive-playstation5/" target="_blank" rel="noopener">Carscoops &rarr;</a><button type="button" class="heart" data-id="2026-10-22-16" aria-pressed="false" aria-label="Like"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg><span class="cnt"></span></button><button type="button" class="skip" data-id="2026-10-22-16" aria-pressed="false" aria-label="Not for me" title="Not for me"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg><span class="cnt"></span></button></span><span class="adate">2026-10-22</span></article></div></section><div class="datebar"><a class="arrow" href="20261021.html" aria-label="Previous edition">&larr;</a><button type="button" class="cur" id="calbtn" aria-expanded="false" aria-haspopup="dialog"><svg viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 7h12M5 1.5v3M11 1.5v3"/></svg>Thu 22 Oct 2026</button><a class="arrow" aria-disabled="true">&rarr;</a><div class="cal" id="cal" hidden role="dialog" aria-label="Pick an edition"></div></div>
+  <a class="morebar" href="#top">Back to top &uarr;</a>
+</div>
+</div>
+<footer class="foot"><div class="shell foot-grid">
+  <span class="wordmark">ADUX Daily</span>
+  <span class="note">Curated by Claude</span>
+</div></footer>
+<script>window.ADUX_LIKE_API="https://adux-likes.kinomeartemis.workers.dev";</script><script>
+(function(){
+  var root=document.documentElement;
+  var btns=[].slice.call(document.querySelectorAll('.langsw button'));
+  var sw=document.getElementById('themesw');
+  var mb=document.getElementById('menubtn'), menu=document.getElementById('menu');
+
+  /* ---- language: stored choice, else the device language ---- */
+  function applyLang(l,store){
+    root.setAttribute('data-lang',l);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    if(store){try{localStorage.setItem('hmi-lang',l);}catch(e){}}
+  }
+  var lang=null;
+  try{lang=localStorage.getItem('hmi-lang');}catch(e){}
+  if(['en','zh','ko'].indexOf(lang)<0){
+    var nav=(navigator.language||'en').toLowerCase();
+    lang=nav.indexOf('ko')===0?'ko':nav.indexOf('zh')===0?'zh':'en';
+  }
+  applyLang(lang,false);
+  btns.forEach(function(b){b.addEventListener('click',function(){applyLang(b.dataset.set,true);});});
+
+  /* ---- theme ---- */
+  function systemDark(){
+    try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}
+  }
+  function label(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    if(sw) sw.textContent=dark?'Light':'Dark';
+  }
+  var th=null;
+  try{th=localStorage.getItem('hmi-theme');}catch(e){}
+  if(th==='dark'||th==='light'){ root.setAttribute('data-theme',th); }
+  label();
+  if(sw) sw.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur? cur==='dark' : systemDark();
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('hmi-theme',next);}catch(e){}
+    label();
+  });
+
+  /* ---- hamburger ---- */
+  function setMenu(open){
+    if(!menu||!mb) return;
+    menu.hidden=!open;
+    mb.setAttribute('aria-expanded',String(open));
+  }
+  if(mb) mb.addEventListener('click',function(e){e.stopPropagation(); setMenu(menu.hidden);});
+  document.addEventListener('click',function(e){
+    if(menu&&!menu.hidden&&!menu.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setMenu(false); });
+
+  /* ---- category filter ---- */
+  var fbtns=[].slice.call(document.querySelectorAll('.filters button'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      if(b.dataset.f){ root.setAttribute('data-filter',b.dataset.f); }
+      else{ root.removeAttribute('data-filter'); }
+      fbtns.forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); });
+    });
+  });
+
+  /* ---- reactions: hearts + "not for me" — local lists (My page) + shared counts (Worker API) ---- */
+  var API=(window.ADUX_LIKE_API||'').replace(/\/+$/,'');
+  function loadJ(k){ try{ return JSON.parse(localStorage.getItem(k)||'{}')||{}; }catch(e){ return {}; } }
+  function saveJ(k,o){ try{ localStorage.setItem(k,JSON.stringify(o)); }catch(e){} }
+  function loadLikes(){ return loadJ('adux-likes'); }
+  function saveLikes(o){ saveJ('adux-likes',o); }
+  function loadSkips(){ return loadJ('adux-skips'); }
+  function saveSkips(o){ saveJ('adux-skips',o); }
+  function cid(){
+    try{
+      var c=localStorage.getItem('adux-cid');
+      if(!c){ c=Math.random().toString(36).slice(2,10)+Date.now().toString(36); localStorage.setItem('adux-cid',c); }
+      return c;
+    }catch(e){ return 'anon'; }
+  }
+  function post(path,body){
+    if(!API||!window.fetch) return Promise.reject(new Error('no api'));
+    return fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+      .then(function(r){ return r.json(); });
+  }
+  function badge(){
+    var b=document.getElementById('mybadge'); if(!b) return;
+    var n=Object.keys(loadLikes()).length; b.textContent=n?String(n):'';
+  }
+  function setCount(sel,id,n){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"] .cnt'),function(c){ c.textContent=n>0?String(n):''; });
+  }
+  function setPressed(sel,id,on){
+    [].forEach.call(document.querySelectorAll(sel+'[data-id="'+id+'"]'),function(x){ x.setAttribute('aria-pressed',String(on)); });
+  }
+  function setHidden(id,on){
+    [].forEach.call(document.querySelectorAll('article[data-id="'+id+'"]'),function(a){ a.classList.toggle('skipped',!!on); });
+  }
+  function bump(btn,d){
+    var c=btn.querySelector('.cnt'); var n=parseInt(c&&c.textContent||'0',10)||0; return Math.max(0,n+d);
+  }
+  function toggleLike(h){
+    var id=h.dataset.id, cur=loadLikes(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveLikes(cur); badge(); setPressed('.heart',id,on);
+    if(on){ var sk=loadSkips(); if(sk[id]){ delete sk[id]; saveSkips(sk); setPressed('.skip',id,false); setHidden(id,false);
+      var sb=document.querySelector('.skip[data-id="'+id+'"]'); if(sb) setCount('.skip',id,bump(sb,-1)); } }
+    h.classList.add('pop'); setTimeout(function(){ h.classList.remove('pop'); },160);
+    setCount('.heart',id,bump(h,on?1:-1));
+    post('/like',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.heart',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:like',{detail:{id:id,on:on}}));
+  }
+  function toggleSkip(b){
+    var id=b.dataset.id, cur=loadSkips(), on=!cur[id];
+    if(on) cur[id]=Date.now(); else delete cur[id];
+    saveSkips(cur); setPressed('.skip',id,on); setHidden(id,on);
+    if(on){ var lk=loadLikes(); if(lk[id]){ delete lk[id]; saveLikes(lk); badge(); setPressed('.heart',id,false);
+      var hb=document.querySelector('.heart[data-id="'+id+'"]'); if(hb) setCount('.heart',id,bump(hb,-1)); } }
+    b.classList.add('pop'); setTimeout(function(){ b.classList.remove('pop'); },160);
+    setCount('.skip',id,bump(b,on?1:-1));
+    post('/skip',{id:id,on:on,cid:cid()}).then(function(r){ if(r&&typeof r.count==='number') setCount('.skip',id,r.count); }).catch(function(){});
+    document.dispatchEvent(new CustomEvent('adux:skip',{detail:{id:id,on:on}}));
+  }
+  function wire(scope){
+    var likes=loadLikes(), skips=loadSkips();
+    var hearts=[].slice.call((scope||document).querySelectorAll('.heart[data-id]'));
+    var sks=[].slice.call((scope||document).querySelectorAll('.skip[data-id]'));
+    hearts.forEach(function(h){
+      if(h.dataset.wired) return; h.dataset.wired='1';
+      h.setAttribute('aria-pressed',String(!!likes[h.dataset.id]));
+      h.addEventListener('click',function(){ toggleLike(h); });
+    });
+    sks.forEach(function(b){
+      if(b.dataset.wired) return; b.dataset.wired='1';
+      b.setAttribute('aria-pressed',String(!!skips[b.dataset.id]));
+      if(skips[b.dataset.id]) setHidden(b.dataset.id,true);
+      b.addEventListener('click',function(){ toggleSkip(b); });
+    });
+    var ids=[]; hearts.concat(sks).forEach(function(h){ if(ids.indexOf(h.dataset.id)<0) ids.push(h.dataset.id); });
+    for(var i=0;i<ids.length;i+=150){
+      post('/counts',{ids:ids.slice(i,i+150)}).then(function(r){
+        var c=(r&&r.counts)||{}; Object.keys(c).forEach(function(k){ setCount('.heart',k,c[k]); });
+        var sk=(r&&r.skips)||{}; Object.keys(sk).forEach(function(k){ setCount('.skip',k,sk[k]); });
+      }).catch(function(){});
+    }
+  }
+  window.ADUX={wire:wire,likes:loadLikes,save:saveLikes,skips:loadSkips,saveSkips:saveSkips,badge:badge,heartSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.7 3.6 4.5 6.9 4.5c2 0 3.4 1.1 4.1 2.2.7-1.1 2.1-2.2 4.1-2.2 3.3 0 5.4 3.2 4.2 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>',skipSvg:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.3A11 11 0 0 1 12 5.2c5 0 9 3.6 10.2 6.8-.5 1.3-1.4 2.7-2.6 3.9M6.6 6.6C4.3 8 2.6 10 1.8 12c1.2 3.2 5.2 6.8 10.2 6.8 1.8 0 3.4-.4 4.8-1.1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>'};
+  badge(); wire(document);
+})();
+</script><script>window.ADUX_DATES=["2026-10-22", "2026-10-21", "2026-10-20", "2026-10-19", "2026-10-16", "2026-10-15", "2026-10-14", "2026-10-13", "2026-10-12", "2026-10-09", "2026-10-06", "2026-10-05", "2026-10-02", "2026-10-01", "2026-09-30", "2026-09-29", "2026-09-28", "2026-09-25", "2026-09-24", "2026-09-23", "2026-09-22", "2026-09-21", "2026-09-18", "2026-09-17", "2026-09-16", "2026-09-15", "2026-09-14", "2026-09-11", "2026-09-10", "2026-09-09", "2026-09-08", "2026-09-07", "2026-09-04", "2026-09-03", "2026-09-02", "2026-09-01", "2026-08-31", "2026-08-28", "2026-08-27", "2026-08-26", "2026-08-25", "2026-08-24", "2026-08-21"];window.ADUX_CUR="2026-10-22";</script><script>
+(function(){
+  var btn=document.getElementById('calbtn'), cal=document.getElementById('cal'); if(!btn||!cal) return;
+  var dates=window.ADUX_DATES||[], cur=window.ADUX_CUR||'', latest=dates[0]||'';
+  var has={}; dates.forEach(function(d){ has[d]=1; });
+  var y=parseInt(cur.slice(0,4),10), m=parseInt(cur.slice(5,7),10)-1;
+  var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function pad(n){ return (n<10?'0':'')+n; }
+  function draw(){
+    var first=new Date(y,m,1), start=(first.getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+    var h='<div class="calhead"><button type="button" data-go="-1" aria-label="Previous month">&lsaquo;</button>'+
+      '<span class="mon">'+MON[m]+' '+y+'</span><button type="button" data-go="1" aria-label="Next month">&rsaquo;</button></div>'+
+      '<div class="calgrid">'+['Mo','Tu','We','Th','Fr','Sa','Su'].map(function(w){ return '<span class="wd">'+w+'</span>'; }).join('');
+    for(var i=0;i<start;i++) h+='<span class="d off"></span>';
+    for(var d=1;d<=days;d++){
+      var iso=y+'-'+pad(m+1)+'-'+pad(d);
+      if(has[iso]) h+='<a class="d has'+(iso===cur?' now':'')+'" href="'+iso.replace(/-/g,'')+'.html">'+d+'</a>';
+      else h+='<span class="d">'+d+'</span>';
+    }
+    h+='</div><div class="calfoot"><span>'+dates.length+' editions</span><a href="'+latest.replace(/-/g,'')+'.html">Latest &rarr;</a></div>';
+    cal.innerHTML=h;
+    [].forEach.call(cal.querySelectorAll('[data-go]'),function(b){
+      b.addEventListener('click',function(e){ e.stopPropagation(); m+=parseInt(b.dataset.go,10); if(m<0){m=11;y--;} if(m>11){m=0;y++;} draw(); });
+    });
+  }
+  function open(o){ cal.hidden=!o; btn.setAttribute('aria-expanded',String(o)); if(o){ y=parseInt(cur.slice(0,4),10); m=parseInt(cur.slice(5,7),10)-1; draw(); } }
+  btn.addEventListener('click',function(e){ e.stopPropagation(); open(cal.hidden); });
+  document.addEventListener('click',function(e){ if(!cal.hidden&&!cal.contains(e.target)) open(false); });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') open(false);
+    if(e.target&&/input|textarea/i.test(e.target.tagName)) return;
+    var i=dates.indexOf(cur);
+    if(e.key==='ArrowLeft'&&i+1<dates.length) location.href=dates[i+1].replace(/-/g,'')+'.html';
+    if(e.key==='ArrowRight'&&i>0) location.href=dates[i-1].replace(/-/g,'')+'.html';
+  });
+})();
+</script></body></html>
