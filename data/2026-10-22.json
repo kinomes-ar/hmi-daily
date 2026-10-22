@@ -8,7 +8,9 @@
   "zh": "九月的外形笔记之后，iPhone Duo上手一周，问题在软件。5.4英寸外屏与7.6英寸内屏同为1.4:1，键盘弹起时信息大约只剩两行。适配过的应用把导航挪到右缘，邮件的返回键也过去了，其余应用留下黑边。打开只增加宽度，两个应用并排只在横屏成立。纳米纹理内屏把折痕藏到手指摸到为止。Touch ID在侧键。",
   "ko": "9월의 형태 노트 이후 아이폰 듀오 일주일은 소프트웨어 문제다. 5.4인치 커버와 7.6인치 내부 화면이 1.4:1이고, 키보드를 올리면 메시지는 두 줄 정도다. 맞춘 앱은 내비게이션을 오른쪽으로 옮기고, 메일의 뒤로 가기도 그쪽으로 갔으며, 나머지는 검은 막대를 남긴다. 열면 너비만 늘고, 앱 두 개의 고정은 가로에서만 된다. 나노 텍스처는 손가락이 닿기 전 주름을 숨긴다. Touch ID는 측면 버튼에 있다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1015028/iphone-duo-review"
+  "url": "https://www.theverge.com/tech/1015028/iphone-duo-review",
+  "img": "assets/2026-10-22-1.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268762_iPhone_Duo_AKrales_1378.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
  },
  {
   "tag": "Interaction",
@@ -20,7 +22,9 @@
   "ko": "스포티파이 네이티브 앱이 아우디 화면에서 돈다. 처음은 A6 e-tron, Q6 e-tron, A5, Q5, A6다. 로그인은 QR이고, 이후 휴대폰을 붙여 둘 필요가 없다. 주행 중 센터 화면은 영상과 가사를 빼고 음성과 짧은 목록만 남긴다. 주차와 충전 중에는 같은 화면이 비디오 팟캐스트, 뮤직비디오, 실시간 가사로 찬다. 조수석 화면이 있으면 따로 탐색하고 재생한다. \"Hey Audi\"가 재생을 맡거나, 스포티파이 DJ에게 말한다.",
   "src": "Spotify",
   "url": "https://newsroom.spotify.com/2026-10-21/spotify-native-car-app-audi/",
-  "img_url": "https://storage.googleapis.com/pr-newsroom-wp/1/2026/10/SpotifyxAudi_Desktop_1440x82023049283408230.jpg"
+  "img_url": "https://storage.googleapis.com/pr-newsroom-wp/1/2026/10/SpotifyxAudi_Desktop_1440x82023049283408230.jpg",
+  "img": "assets/2026-10-22-2.jpg",
+  "img_src": "https://storage.googleapis.com/pr-newsroom-wp/1/2026/10/SpotifyxAudi_Desktop_1440x82023049283408230.jpg"
  },
  {
   "tag": "Motion",
@@ -32,7 +36,9 @@
   "ko": "레인저 앤 폭스가 마이크로소프트 파운드리 랩스를 위해 만든 필름은 모델을 화면에 올리고 내레이션을 뺐다. 출연은 Aurora, MatterSim, TamGen이다. 글자는 픽셀 고정폭으로, 연구실이 직접 친 것처럼 보인다. 코드 한 줄이 기상 모델이나 새 분자가 된다. 디자인과 애니메이션은 브라운 윤과 테드 고어, 음악은 데이브 허멀. 2026 빌드용이고, 한쪽은 코드, 다른 쪽은 이미 작동하는 것이다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/",
-  "video": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/"
+  "video": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/",
+  "img": "assets/2026-10-22-3.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Microsoft-Foundry-Labs-Brand-Film-by-Ranger-Fox-_-STASH-MAGAZINE8.jpg"
  },
  {
   "tag": "Cockpit",
@@ -43,7 +49,9 @@
   "ko": "GM 레벨 3는 2028 캐딜락 에스컬레이드 IQ에 먼저 들어간다. 대시보드의 청록색 라이트 스트립이 켜지면 시선을 떼도 된다. 미러 하우징의 등은 법이 허용하는 곳에서, 차가 스스로 달린다고 다른 운전자에게 알린다. 같은 구성은 다음 실버라도와 물량이 큰 GM 트럭, 3열 크로스오버로 이어진다. 액체 냉각 중앙 컴퓨터 하나가 오늘날 트럭의 약 40배 성능으로 자율주행, 안전, 구동을 맡는다. 스트립이 인터페이스다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2293287/gm-autonomous-driving-in-more-models/",
-  "img_url": "https://www.carscoops.com/img/gallery/forget-doordash-gm-wants-your-next-car-to-run-errands-for-you/l-intro-1792604391.jpg"
+  "img_url": "https://www.carscoops.com/img/gallery/forget-doordash-gm-wants-your-next-car-to-run-errands-for-you/l-intro-1792604391.jpg",
+  "img": "assets/2026-10-22-4.jpg",
+  "img_src": "https://www.carscoops.com/img/gallery/forget-doordash-gm-wants-your-next-car-to-run-errands-for-you/l-intro-1792604391.jpg"
  },
  {
   "tag": "Visual",
@@ -55,7 +63,9 @@
   "ko": "데이 잡이 랜스 오펜하임의 제작사 To Be Formed에 만든 아이덴티티는 일부러 덜 끝난 워드마크다. 오러시아 자베이다의 기본 마크는 곧 다른 것이 될 듯하다. 굵은 형태가 가는 캘리그래피 옆에 있고 x-하이트는 맞지 않는다. 뒤에 워드마크 약 20개가 있고, 상당수는 기업 미디어를 흉내 낸다. 참고는 비뚤어진 책 표지에서 2000년대 초 DVD 메뉴까지다. 사이트 내비게이션은 각 영화의 물건이다. 이름은 자리표시로 남아 있다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/tbf-day-job-graphic-design-project-211026",
-  "img_url": "https://m.itsnicethat.com/original_images/day-job-tbf-graphic-design-project-itsnicethat-7.png"
+  "img_url": "https://m.itsnicethat.com/original_images/day-job-tbf-graphic-design-project-itsnicethat-7.png",
+  "img": "assets/2026-10-22-5.png",
+  "img_src": "https://m.itsnicethat.com/original_images/day-job-tbf-graphic-design-project-itsnicethat-7.png"
  },
  {
   "tag": "AI",
@@ -66,7 +76,9 @@
   "ko": "브렌트 보나코르소는 단편 Query를 스토리보드도 완성 대본도 없이 만들었다. 남자가 걷는 첫 프레임부터 샷을 이어 갔다. 거대한 오리는 배경 농담으로 시작해 결말을 맡았다. 룩은 프롬프트에서 정했다. 카메라 움직임, 렌즈, 빛, 색, 입자. 편집은 직접 하고 몇 샷만 맞췄으며 음악도 생성했다. 그래픽 습관이 프레임을 잡는다. 구도, 위계, 시선, 이제는 초당 24프레임. 제작은 미스 크리에이티브.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/",
-  "video": "https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/"
+  "video": "https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/",
+  "img": "assets/2026-10-22-6.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Query-Short-Film-by-Brent-Bonacorso-_-STASH-MAGAZINE7.jpg"
  },
  {
   "tag": "Industrial",
@@ -78,7 +90,9 @@
   "ko": "애플 Designers of Tomorrow가 파리 오텔 드 메종에서 10월 25일까지 열린다. 이사벨 로워의 Padded Chair 1860은 광택 검정이고, 버려진 가구와 파피에마셰 위에 있으며, 세라믹 구슬 약 1,500개가 손이 스치면 소리를 낸다. 살렘 S. 차라비의 랜턴은 갈랄라 석회암 위에 서고, 3mm 팔각형 대추야자 잎맥이 바나나 종이를 받친다. 이윤정은 연필 몽당 세 개를 못으로 베니어 약 5,000장 위에 쓴다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/apple-designers-of-tomorrow-design-miami-paris-2026/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/apple-designers-of-tomorrow-design-miami-paris-2026-designboom-03.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/apple-designers-of-tomorrow-design-miami-paris-2026-designboom-03.jpg",
+  "img": "assets/2026-10-22-7.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/apple-designers-of-tomorrow-design-miami-paris-2026-designboom-03.jpg"
  },
  {
   "tag": "Realtime",
@@ -89,7 +103,9 @@
   "ko": "테오 데일리의 YMA Painterly는 Cinema 4D와 Houdini용 셰이더 12개로, 렌더 안에서 모델에 칠한다. 각각 최대 네 색을 받고, 텍스처는 Rebelle와 Photoshop으로 그린 4K다. 노멀 슬라이더는 0에서 지오메트리 자체이고, 끝까지 밀면 붓질로 휜다. Redshift와 Octane에 버전이 있다. 색과 붓 크기, 그 슬라이더가 앞에 있다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/how-to-make-3d-look-like-a-stylized-painting-with-shaders-in-houdini-c4d",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50708/images/6ad8b35fae474/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50708/images/6ad8b35fae474/contain_1200x630.jpg",
+  "img": "assets/2026-10-22-8.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50708/images/6ad8b35fae474/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -100,7 +116,9 @@
   "ko": "다비 덴뒤버가 일러스트 에이전시 A Human Agency에 만든 아이덴티티는 도장처럼 손으로 그린 워드마크와 엠블럼이다. 크림과 검정, 기운 세리프. 일러스트는 빼서 작가 14명의 그림과 싸우지 않게 했다. \"For Humans. By Humans.\"는 명함, 토트, 모자, 티셔츠, 포장 테이프에 있다. 라이언 클레이든은 크리에이티브 붐 인스타그램에서 그를 보고 1월 5주년 전에 맡겼다. 작은 수정은 두 번. 마크는 그림 아래, 박물관 캡션처럼 앉는다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/work/davy-denduyver/",
-  "img_url": "https://media.creativeboom.com/67725a0f-c071-4f5b-96f4-632013fb6be6/conversions/281a1073fd0226753e4d9fa92f19741df9fa5e28-medium.webp"
+  "img_url": "https://media.creativeboom.com/67725a0f-c071-4f5b-96f4-632013fb6be6/conversions/281a1073fd0226753e4d9fa92f19741df9fa5e28-medium.webp",
+  "img": "assets/2026-10-22-9.webp",
+  "img_src": "https://media.creativeboom.com/67725a0f-c071-4f5b-96f4-632013fb6be6/conversions/281a1073fd0226753e4d9fa92f19741df9fa5e28-medium.webp"
  },
  {
   "tag": "Motion",
@@ -112,7 +130,9 @@
   "src": "designboom",
   "url": "https://www.designboom.com/design/steel-spheres-curved-glass-leonardo-garza-sensory-installation-byredo-matter-memory/",
   "video": "https://vimeo.com/1237378148",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/steel-spheres-curved-glass-leonardo-garza-sensory-installation-byredo-matter-memory-designboom-1800-2.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/steel-spheres-curved-glass-leonardo-garza-sensory-installation-byredo-matter-memory-designboom-1800-2.jpg",
+  "img": "assets/2026-10-22-10.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/10/steel-spheres-curved-glass-leonardo-garza-sensory-installation-byredo-matter-memory-designboom-1800-2.jpg"
  },
  {
   "tag": "AI",
@@ -123,7 +143,9 @@
   "ko": "멜리나 K와 롭 파머는 무료 Affinity와 Cavalry로 포스터를 만들고 파일을 공개했다. 가우시안 블러는 실시간 미리보기가 있는 슬라이더다. Live Filters로 멜리나는 나중에 노이즈로 돌아가고, Vector와 Pixel은 앱을 나가지 않고 바뀐다. 하늘 포스터는 인쇄하고 스캔하고 잘랐다. 롭은 Cavalry에서 글자로 꽃을 만들고, oscillator로 키프레임 없이 색을 옮긴다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/features/affinity-and-cavalry-free-form-brand-partnership-211026",
-  "img_url": "https://m.itsnicethat.com/original_images/Affinity_Campaign_Meta_Image_1200x627-02.png"
+  "img_url": "https://m.itsnicethat.com/original_images/Affinity_Campaign_Meta_Image_1200x627-02.png",
+  "img": "assets/2026-10-22-11.png",
+  "img_src": "https://m.itsnicethat.com/original_images/Affinity_Campaign_Meta_Image_1200x627-02.png"
  },
  {
   "tag": "Visual",
@@ -134,7 +156,9 @@
   "ko": "케이시 로아티의 Is This Still Available?는 페이스북 마켓플레이스 사진을 다시 만든다. 강한 플래시, 긁어 지운 얼굴, 심한 압축. 그는 자르고 연필이나 파스텔을 더해 매물을 다른 그림으로 만든다. 무술 더미 둘이 왼쪽 가장자리에 끼어 있고, 자르면 입맞춤으로 읽힌다. 다른 그림에는 펼친 의상, 들어온 손, 65인치 TV가 남는다. 그가 원하는 것은 판매자가 대표로 삼지 않은 장이다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/work/casey-roarty-digs-through-facebook-marketplace-listings-and-transforms-his-findings-into-art/",
-  "img_url": "https://media.creativeboom.com/0e73a5e4-e93c-4b8a-8f62-028bb12fd305/conversions/317c29cfa20e349a2e8c60972d3c3d42fc8f158b-medium.webp"
+  "img_url": "https://media.creativeboom.com/0e73a5e4-e93c-4b8a-8f62-028bb12fd305/conversions/317c29cfa20e349a2e8c60972d3c3d42fc8f158b-medium.webp",
+  "img": "assets/2026-10-22-12.webp",
+  "img_src": "https://media.creativeboom.com/0e73a5e4-e93c-4b8a-8f62-028bb12fd305/conversions/317c29cfa20e349a2e8c60972d3c3d42fc8f158b-medium.webp"
  },
  {
   "tag": "Visual",
@@ -145,7 +169,9 @@
   "ko": "데진 사이트를 Made by On이 다시 지었다. 2016년 이후 첫 전면 개편이다. 미하 바이드만은 고전 서체를 남기고 Awards, Events Guide, Showroom에 새 색과 로고를 줬다. 정사각 이미지는 그대로다. 가로 스크롤이 세로 피드를 끊는다. 검색과 메뉴, 필터는 하나의 시스템이다. 오른쪽 사이드바는 사라졌다. dezeenjobs.com은 아직 옛 사이트다. 피드는 시간 역순이다.",
   "src": "Dezeen",
   "url": "https://www.dezeen.com/2026/10/21/dezeen-launches-new-website-2026/",
-  "img_url": "https://static-2026.dezeen.com/uploads/2026/10/Dezeen-website-homepage-laptop_dezeen_01_sq.jpg"
+  "img_url": "https://static-2026.dezeen.com/uploads/2026/10/Dezeen-website-homepage-laptop_dezeen_01_sq.jpg",
+  "img": "assets/2026-10-22-13.jpg",
+  "img_src": "https://static-2026.dezeen.com/uploads/2026/10/Dezeen-website-homepage-laptop_dezeen_01_sq.jpg"
  },
  {
   "tag": "Micromobility",
@@ -166,7 +192,9 @@
   "ko": "2027 렉서스 TZ의 Lexus Interface는 맞춤 위젯이 있는 14인치 터치스크린, 음성 어시스턴트, 디지털 클러스터 전체를 차지할 수 있는 내비게이션이다. 패드는 대시 위에 따로 놓인 판이다. 클러스터에는 지도, 14인치에는 위젯, 나머지는 음성. 면이 셋이고 각자가 일 하나를 맡는다. 미국 기본 TZ 450e 주문은 올해 늦게, Touring과 Luxury는 2027년 초다. 유럽 450e도 같은 분할이다. 남겨 둘 GUI는 이 나눔이다.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/10/21/lexus-announces-prices-3-row-tz-electric-suv/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Lexus-TZ-prices-2.jpeg?quality=82&strip=all&resize=1200,628"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Lexus-TZ-prices-2.jpeg?quality=82&strip=all&resize=1200,628",
+  "img": "assets/2026-10-22-15.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Lexus-TZ-prices-2.jpeg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Realtime",
@@ -177,6 +205,8 @@
   "ko": "BeamNG.drive가 PS5에 올라왔고, 남겨 둘 프레임은 충돌이다. 소프트바디 솔버는 2 kHz로, 각 부품이 초당 최대 2,000번 갱신된다. 부딪히면 차체, 엔진, 서스펜션이 각자 찌그러지거나 갈라지거나 휜다. 차는 라이선스가 없고 좌석에 운전자도 없다. Torque 3D에서 돌며, 생각은 2005년 Rigs of Rods와 같다. 사막, 도시, 산길, 항구는 부수라고 있는 곳이다. PS5 트레일러는 변형 연구다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2291537/beam-ng-drive-playstation5/",
-  "img_url": "https://www.carscoops.com/img/gallery/nerds-rejoice-beamng-drive-launches-on-ps5/l-intro-1792502373.jpg"
+  "img_url": "https://www.carscoops.com/img/gallery/nerds-rejoice-beamng-drive-launches-on-ps5/l-intro-1792502373.jpg",
+  "img": "assets/2026-10-22-16.jpg",
+  "img_src": "https://www.carscoops.com/img/gallery/nerds-rejoice-beamng-drive-launches-on-ps5/l-intro-1792502373.jpg"
  }
 ]
