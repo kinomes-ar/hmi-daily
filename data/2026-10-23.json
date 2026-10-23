@@ -8,7 +8,9 @@
   "zh": "苹果音乐2015年以来的第一个新标志，是在矿物油浅槽里拍出来的，不是画出来的。Fred again..与NEST Acoustics写了一小段，每个音经过换能器，波纹由Joe Jackson实拍。音太高，标志就糊掉，所以声音和画面一起调了好几个月。字标是粗体小写SF Pro，Plau做了字体。同一段曲子就是声音标志。图标在iOS 27.2里改成黑白。",
   "ko": "애플 뮤직의 2015년 이후 첫 새 마크는 그려진 것이 아니라 미네랄 오일 수조에서 촬영됐다. Fred again..과 NEST Acoustics가 짧은 곡을 썼고, 음 하나하나를 트랜스듀서에 통과시킨 뒤 Joe Jackson이 물결을 찍었다. 음이 너무 높으면 마크가 읽히지 않아, 소리와 화면을 몇 달에 걸쳐 함께 맞췄다. 워드마크는 굵은 소문자 SF Pro이고 Plau가 타입을 맡았으며, 같은 곡이 소닉 로고다. 아이콘은 iOS 27.2에서 흑백이 된다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/news/apple-musics-new-logo-was-shaped-by-fred-again-and-a-bath-of-mineral-oil/"
+  "url": "https://www.creativeboom.com/news/apple-musics-new-logo-was-shaped-by-fred-again-and-a-bath-of-mineral-oil/",
+  "img": "assets/2026-10-23-1.webp",
+  "img_src": "https://media.creativeboom.com/f0483d4b-6893-4edc-bad5-edb4885a88f9/conversions/b62c93fdc8522ade2ae9125200ea39fa538362f8-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -20,7 +22,9 @@
   "ko": "이지스 라이더의 안경은 Nexx X.WST3 바이저 뒤에 자석으로 붙는다. 턱 카메라와 관성 센서가 내비게이션, 속도, 경고를 노면에 고정해, 어깨 너머를 봐도 그래픽이 따라오지 않는다. 화살표는 교차로에 3D로 두거나 단순한 모드로 줄일 수 있다. 설정은 10분 주행이다. 좌회전 다섯 번, 우회전 다섯 번, 직선 45초이며, 바이크는 다섯 대까지 저장한다. 화면은 눈이 아니라 모터사이클에 고정된다.",
   "src": "MCN",
   "url": "https://www.motorcyclenews.com/news/new-tech/2026/october/aegis-rider-heads-up-display/",
-  "img_url": "https://mcn-images.bauersecure.com/wp-images/443473/helmet-front-visor-up_bg.jpg"
+  "img_url": "https://mcn-images.bauersecure.com/wp-images/443473/helmet-front-visor-up_bg.jpg",
+  "img": "assets/2026-10-23-2.jpg",
+  "img_src": "https://mcn-images.bauersecure.com/wp-images/443473/helmet-front-visor-up_bg.jpg"
  },
  {
   "tag": "AI",
@@ -31,7 +35,9 @@
   "zh": "Canva Craft分两步出图：先排版，再绘制，所以文字能读清，物体也停在你放的位置。输出到2K，长宽比超过30种，从帖子到场景都行。模型用Canva上已有的数百万人工模板训练，包括菜单、演示文稿和信息图。它在Design Arena排第四，前面是三个OpenAI图像模型，所有用户都能在Dream Lab里用。先定画面再填内容，是排版工具一直缺的那一步。",
   "ko": "캔바 크래프트는 두 단계로 이미지를 만든다. 먼저 레이아웃을 계획하고, 그다음 그린다. 그래서 글자가 읽히고 오브젝트는 둔 자리에 남는다. 출력은 2K까지, 화면비는 30종이 넘으며 게시물에서 장면까지 간다. 모델은 캔바에 있는 수백만 개의 사람 만든 템플릿으로 학습했다. 디자인 아레나 4위이고, 앞은 오픈AI 이미지 모델 세 개다. 모든 사용자가 드림 랩에서 쓸 수 있다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+  "img": "assets/2026-10-23-3.png",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
  },
  {
   "tag": "Motion",
@@ -43,7 +49,9 @@
   "ko": "퓨처디럭스가 버라이즌 런던 허브를 위해 만든 웰컴 필름은 임스 부부의 파워스 오브 텐에서 줌을 빌렸다. 마커스 챌로너는 네트워크를 생체모방으로 다루고, 미시에서 킬로 스케일까지 간다. 몸속을 지나 유기적 인프라를 거쳐 연산 모놀리스와 흐르는 데이터로 나간다. 1분이 4K, 60fps이고, 프레임의 상당수가 굴절 재질이라 어려웠다. 사운드는 에코익 오디오다. 부품과 시스템 전체를 함께 보여야 하는 클러스터가 가져갈 스케일 수업이다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
-  "video": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/"
+  "video": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
+  "img": "assets/2026-10-23-4.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Verizon-London-Hub-Brand-Film-by-FutureDeluxe-_-STASH-MAGAZINE8.jpg"
  },
  {
   "tag": "Interaction",
@@ -54,7 +62,9 @@
   "ko": "루프트한자 시스템의 리도 파일럿 앱은 조종석 아이패드에서 돌고, 매일 10만 명이 넘는 조종사가 쓴다. 지도는 항로와 기상, 트래픽을 담되 복잡해지면 안 된다. 피그마 메이크에서 판카지 주베카르는 상단 바, 하단 바, 아이콘을 맵박스에 붙이고 오픈스카이 마커를 500해리 안에 남겼다. FAA 중량 등급이 크기를 정해 Embraer 195가 Boeing 737보다 작다. 활주로 트래픽은 이륙하는 순간 색이 바뀐다.",
   "src": "Figma",
   "url": "https://www.figma.com/blog/lufthansa-figma-make/",
-  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/25a1a68c5c527f854a2b80c859e10fbd1cc1d8c0-3840x2160.png?w=1200&q=70&fit=max&auto=format"
+  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/25a1a68c5c527f854a2b80c859e10fbd1cc1d8c0-3840x2160.png?w=1200&q=70&fit=max&auto=format",
+  "img": "assets/2026-10-23-5.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/25a1a68c5c527f854a2b80c859e10fbd1cc1d8c0-3840x2160.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Realtime",
@@ -65,7 +75,9 @@
   "zh": "《The Alters: Last Variable》里，11 bit studios把同一关卡做两遍：焦土，然后长满。Artem Ostapchuk的植被是不透明Nanite，每片叶子都是挖空几何，比遮罩着色器更快。风是顶点色驱动的World Position Offset。Blender和ZBrush做植物，Substance上色，HISM加PCG撒两种状态。长出来的是死树上的珊瑚和苔藓。",
   "ko": "더 알터스: 라스트 베리에이블에서 11 bit studios는 같은 레벨을 두 번 입힌다. 불탄 땅, 그다음 무성한 상태다. 아르템 오스타프추크의 식생은 불투명 나나이트이고, 잎은 컷아웃 지오메트리라 마스크 셰이더보다 빨랐다. 바람은 버텍스 컬러의 월드 포지션 오프셋이다. 블렌더와 지브러시가 식물을 만들고 섭스턴스가 칠하며, HISM과 PCG가 두 상태를 흩뿌린다. 성장은 죽은 나무 위의 산호와 이끼다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/terraforming-the-alters-last-variable-with-blender-zbrush-ue5"
+  "url": "https://80.lv/articles/terraforming-the-alters-last-variable-with-blender-zbrush-ue5",
+  "img": "assets/2026-10-23-6.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50730/images/6ada1417be180/contain_1200x630.jpg"
  },
  {
   "tag": "Motion",
@@ -76,7 +88,9 @@
   "ko": "오디너리 포크의 디스턴스는 새뮤얼 핀리 브리즈 모스를 그린 손그림 900프레임이다. 화가였던 세월, 그다음 부호다. 2020년에 시작해 네이트 디메오의 더 메모리 팰리스 한 편을 따른다. 그림은 호르헤 R. 카네도 E.와 아비칼리 로마바투, 음악은 앰브로즈 유다. 움직임은 물감이 쌓이는 쪽이고, 플랫 컬러 리오 40°보다 느리다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/ordinary-folk-goes-the-distance-in-powerful-new-short-film/",
-  "video": "https://www.stashmedia.tv/ordinary-folk-goes-the-distance-in-powerful-new-short-film/"
+  "video": "https://www.stashmedia.tv/ordinary-folk-goes-the-distance-in-powerful-new-short-film/",
+  "img": "assets/2026-10-23-7.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Distance-Short-Film-by-Ordinary-Folk-STASH-MAGAZINE2.jpg"
  },
  {
   "tag": "Interaction",
@@ -86,7 +100,9 @@
   "zh": "RevisionX是一台双DIN主机，来自澳大利亚一台180SX，还在改，暂时买不到。屏幕伸出时是方的Apple CarPlay或Android Auto，下面有音量旋钮、预设键、两个USB-A和一个aux。更小的那块屏可以放你的车，或一座滚动的城市。电动面板翻下去，出现能用的均衡器：推子，还有跟着曲子动的电平表。均衡器和旋钮可以换位置，面板可换，整机也能缩成单DIN。屏幕在，然后就不在了。",
   "ko": "리비전X는 호주 180SX 빌드의 더블 DIN 헤드유닛이고, 아직 완성 전이다. 화면을 내밀면 정사각 애플 카플레이 또는 안드로이드 오토, 볼륨 노브, USB-A 두 개, aux가 있다. 전동 패널을 접으면 이퀄라이저가 나온다. 슬라이더와, 곡을 따라 움직이는 레벨 미터다. 이퀄라이저와 노브의 자리를 바꿀 수 있고, 유닛은 싱글 DIN으로 줄일 수 있다. 화면이 있다가 없어진다.",
   "src": "The Drive",
-  "url": "https://www.thedrive.com/news/this-guy-invented-the-ultimate-old-school-stereo-head-unit-with-hidden-carplay"
+  "url": "https://www.thedrive.com/news/this-guy-invented-the-ultimate-old-school-stereo-head-unit-with-hidden-carplay",
+  "img": "assets/2026-10-23-8.jpg",
+  "img_src": "https://www.thedrive.com/wp-content/uploads/2026/10/Double-DIN-Hero-1.jpg?w=1200"
  },
  {
   "tag": "Interaction",
@@ -97,7 +113,9 @@
   "ko": "N-드림의 에어콘솔은 인포테인먼트 화면을 놀이판으로, 휴대폰을 컨트롤러로 쓴다. QR로 연결하고 추가 하드웨어는 없다. 이미 BMW, MINI, 폭스바겐, 아우디, 포르쉐, 스코다, 타타 차량 500만 대 이상에 있다. 지커 7GT에서는 PAC-MAN 챔피언십 에디션이 차 화면에서 돌고, 앰비언트 라이트가 게임을 따른다. 일부 유럽 지커는 2026년 말 전에 받는다. 가져갈 부분은 스프라이트에 잠긴 조명이다.",
   "src": "DVN",
   "url": "https://www.drivingvisionnews.com/news/2026/10/22/n-dream-puts-gaming-into-automotive-connectivity-packages/",
-  "img_url": "https://www.drivingvisionnews.com/wp-content/uploads/2026/10/221026_M48.jpg"
+  "img_url": "https://www.drivingvisionnews.com/wp-content/uploads/2026/10/221026_M48.jpg",
+  "img": "assets/2026-10-23-9.jpg",
+  "img_src": "https://www.drivingvisionnews.com/wp-content/uploads/2026/10/221026_M48.jpg"
  },
  {
   "tag": "Visual",
@@ -108,7 +126,9 @@
   "ko": "헤이든 클레이 윌리엄스는 버려지는 물건을 스테인드글라스로 다시 만든다. 에그 카톤(식스 웰스)은 청록, 호박색, 분홍을 은색 땜으로 잇고, 햇빛이 테이블 위에 색으로 깨진다. 트래픽 콘은 테이퍼와 사각 받침을 호박색과 구리색으로 유지한다. 미끄럼 주의 표지는 금색 유리이고 경첩이 움직이며, 미끄러지는 사람은 조각 유리다. 한 점에 약 3주, 무연 땜과 아연 프레임이다. 유리는 경고 자체를 깨지기 쉽게 만든다.",
   "src": "designboom",
   "url": "https://www.designboom.com/art/hayden-clay-williams-everyday-objects-stained-glass-sculptures-surrealism/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/hayden-clay-williams-stained-glass-sculpture-suburban-surrealism-designboom-05.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/hayden-clay-williams-stained-glass-sculpture-suburban-surrealism-designboom-05.jpg",
+  "img": "assets/2026-10-23-10.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/hayden-clay-williams-stained-glass-sculpture-suburban-surrealism-designboom-05.jpg"
  },
  {
   "tag": "Realtime",
@@ -118,7 +138,9 @@
   "zh": "Pranav Pradi在Blender里重做了一项Houdini纸线研究。原作是Aidiniotisv用Vellum和COPs让纸条跟着笔走。他把节点逻辑译进Geometry Nodes，称为迷你Houdini：线条是生成的，不是一帧帧画的。80 Level于10月21日刊出。输入只有笔，材料记得路径。屏幕可以把它当成没有时间轴的待机。",
   "ko": "프라나브 프라디는 후디니의 종이선 스터디를 블렌더에서 다시 만들었다. 원작은 아이디니오티스브가 벨럼과 COP로 종이 띠가 펜을 따르게 한 것이다. 프라디는 그 노드 논리를 Geometry Nodes로 옮겼고, 이를 미니 후디니라 불렀다. 선은 생성되고, 프레임마다 그려지지 않는다. 80 레벨이 10월 21일에 분해를 올렸다. 입력은 펜 하나이고, 재료가 경로를 기억하는 작은 모션 시스템이다. 화면은 타임라인 없이 이것을 대기 상태로 돌릴 수 있다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/recreating-a-procedural-houdini-setup-with-moving-paper-lines-in-blender"
+  "url": "https://80.lv/articles/recreating-a-procedural-houdini-setup-with-moving-paper-lines-in-blender",
+  "img": "assets/2026-10-23-11.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50705/images/6ad8751d31e58/contain_1200x630.jpg"
  },
  {
   "tag": "AI",
@@ -128,7 +150,9 @@
   "zh": "Figma 10月22日的说明，是把设计系统喂给智能体，而不是对着空白画框下指令。接上已发布的组件库，它就该拿批准过的组件和变量。订单摘要可以回来变成Card/OrderSummary/Default，带着已命名的按钮和间距token。要指定就@那个组件。同样的错反复出现，该改组件库，不是再写提示。智能体有多具体，取决于你交给它的系统。",
   "ko": "피그마가 10월 22일에 적은 글은 빈 프레임에 프롬프트를 던지는 일이 아니라, 디자인 시스템을 에이전트에 먹이는 일이다. 퍼블리시된 라이브러리를 연결하면 승인된 컴포넌트와 변수를 집는다. 주문 요약은 Card/OrderSummary/Default로 돌아올 수 있고, 이름 붙인 버튼과 간격 토큰을 쓴다. 그 컴포넌트는 @로 짚는다. 같은 실수가 반복되면 고칠 곳은 라이브러리다. 에이전트는 건넨 시스템만큼만 구체적이다.",
   "src": "Figma",
-  "url": "https://www.figma.com/blog/how-to-put-your-design-system-to-work-with-the-figma-agent/"
+  "url": "https://www.figma.com/blog/how-to-put-your-design-system-to-work-with-the-figma-agent/",
+  "img": "assets/2026-10-23-12.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/9db0b3dca44f5d8d35c537adb07f9f9eb479dcd0-1632x918.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Micromobility",
@@ -139,7 +163,9 @@
   "ko": "밴딧9의 (RED)800은 아홉 대다. 각각 손으로 빚은 알루미늄 차체이고 패널 이음은 없다. 그라데이션이 레이싱 레드에서 브러시드 알루미늄으로 넘어가, 표면이 같은 두 대는 없다. 아래는 821cc 두카티 테스타스트레타, 110마력이고 기계는 일부 드러난다. 다릴 빌라누에바가 (RED)와 만들었고, 8개월에서 12개월이 걸린다. 그래픽은 그 페이드다. 페인트가 멈추는 곳에서 금속이 나온다.",
   "src": "designboom",
   "url": "https://www.designboom.com/technology/bandit9-red-limited-edition-hand-brushed-aluminum-motorcycle-red800/",
-  "img_url": "https://www.designboom.com/wp-content/dbsub/451123/2026-10-20/bandit9-red800-8-6ad6ceac5eaea.jpg"
+  "img_url": "https://www.designboom.com/wp-content/dbsub/451123/2026-10-20/bandit9-red800-8-6ad6ceac5eaea.jpg",
+  "img": "assets/2026-10-23-13.jpg",
+  "img_src": "https://www.designboom.com/wp-content/dbsub/451123/2026-10-20/bandit9-red800-8-6ad6ceac5eaea.jpg"
  },
  {
   "tag": "Industrial",
@@ -150,7 +176,9 @@
   "ko": "라이카 Q3 43 포뮬러 1 에디션은 6000만 화소 센서와 고정 APO-Summicron 43mm f/2를 그대로 둔다. 바뀌는 것은 껍질이다. 검은 Microvelour는 포뮬러 1 스티어링 휠의 질감이다. 독일산 카본이 무선 충전 그립, 엄지 받침대, 소프트 셔터를 덮는다. 빨강은 셔터와 기능 버튼 하나에 찍힌다. FOTOS의 포뮬러 1 룩은 대비를 올리고, 뷰파인더에서 미리 볼 수 있다. 그립, 엄지, 빨간 버튼 하나.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/10/22/leicas-new-formula-1-camera-brings-carbon-fiber-and-racing-inspired-dna-to-photography/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/10/leicas-new-formula-1-camera-brings-carbon-fiber-and-racing-inspired-dna-to-photography/Leica-Formula-1-Camera.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/10/leicas-new-formula-1-camera-brings-carbon-fiber-and-racing-inspired-dna-to-photography/Leica-Formula-1-Camera.jpg",
+  "img": "assets/2026-10-23-14.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/leicas-new-formula-1-camera-brings-carbon-fiber-and-racing-inspired-dna-to-photography/Leica-Formula-1-Camera.jpg"
  },
  {
   "tag": "Visual",
@@ -161,7 +189,9 @@
   "ko": "이리스 반 헤르펜은 앙보네와 크라망의 포도밭을 녹음한 뒤, 사이매틱스로 진동을 패턴으로 바꿨다. 심포닉 블룸은 실크와 재활용 22-carat 금으로, Perrier-Jouët Belle Époque 1988 제로봄 위에서 솟는다. 심포닉 라이프는 1999년 매그넘 열 병을 같은 금으로 감싼다. 세브린 프레르송과 Belle Époque 2018 병을 다시 그렸다. 작품은 10월 21일 파리 페닌슐라에 있었다. 소리를 보이게 하고, 파동으로 짓는다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/iris-van-herpen-invisible-rhythms-nature-sculptural-forms-perrier-jouet/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/iris-van-herpen-invisible-rhythms-nature-sculptural-forms-perrier-jouet-designboom-02.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/iris-van-herpen-invisible-rhythms-nature-sculptural-forms-perrier-jouet-designboom-02.jpg",
+  "img": "assets/2026-10-23-15.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/iris-van-herpen-invisible-rhythms-nature-sculptural-forms-perrier-jouet-designboom-02.jpg"
  },
  {
   "tag": "Visual",
@@ -171,6 +201,8 @@
   "zh": "SEA三十周年的书是304页精装，银边，限量300本编号。工作室自己设计和编辑，TEAM印刷，Diamond做函套，纸是G.F. Smith。工作室的标志至今没有一个被重画。最长的客户关系有26年和27年，Regatta是其中之一，团队大约一直是12到15人。Creative Boom于10月21日刊出这次谈话。值得留下的是关于标志的那句：一套被允许停在原地的识别。",
   "ko": "SEA의 30주년 책은 304쪽 하드커버이고, 은색 가장자리에 300부 번호 한정이다. 스튜디오가 디자인하고 편집했으며, TEAM이 인쇄하고 Diamond가 제본했고, 종이는 G.F. Smith다. 다시 그려진 마크는 없다. 가장 긴 클라이언트 관계는 26년과 27년이고, 팀은 약 12명에서 15명이다. 그 자리에 머물도록 허용된 아이덴티티다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/insight/sea-turns-30/"
+  "url": "https://www.creativeboom.com/insight/sea-turns-30/",
+  "img": "assets/2026-10-23-16.webp",
+  "img_src": "https://media.creativeboom.com/fcd10b60-11d5-44a2-a164-384f8757a7e1/conversions/50110d9e3148ec574727122bb95019a5381a3d10-medium.webp"
  }
 ]
