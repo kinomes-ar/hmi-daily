@@ -9,7 +9,9 @@
   "ko": "로드스터 화면은 검은 바탕의 빨간 글자이고, 가운데는 와이어프레임, 옆은 각진 요크다. 아래 탭은 Home, Vehicle, Listen, Climate, Navigate다. 트랙 모드는 서킷, 랩 타임, 브레이크와 모터 온도, 타이어 압력과 온도를 그린다. 에어로는 Auto, Low Drag, High Downforce, Custom이고 안정과 트랙션을 끌 수 있다. 상태 바는 Thruster · 5,500 PSI와 Boost Ready다. 앞 화면 둘.",
   "src": "Teslarati",
   "url": "https://www.teslarati.com/tesla-roadster-center-display-ui-ux/",
-  "img_url": "https://www.teslarati.com/wp-content/uploads/2026/10/tesla-roadster-screen-ui.jpg"
+  "img_url": "https://www.teslarati.com/wp-content/uploads/2026/10/tesla-roadster-screen-ui.jpg",
+  "img": "assets/2026-10-26-1.jpg",
+  "img_src": "https://www.teslarati.com/wp-content/uploads/2026/10/tesla-roadster-screen-ui.jpg"
  },
  {
   "tag": "Visual",
@@ -33,7 +35,9 @@
   "ko": "패브리스 르 네제가 이끄는 옵티컬 아츠는 다이슨 클린+워시 하이진을 위해 수천 개의 대걸레가 연쇄로 쓰러지는 CG를 만들었다. 대걸레마다 무게가 있고, 팀은 그 안에서도 한 장면씩 안무를 통제한다. 참고는 아날로그 영상이고, 리듬은 기능 목록이 아니라 뮤직비디오에 가깝다. CG는 토마 랑보, 그레이드는 타임 베이스드 아츠의 다니엘라 로타루, 사운드는 750mph다. 청소기는 뷰티 컷이 아니라 붕괴의 한가운데에 있다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
-  "video": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/"
+  "video": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
+  "img": "assets/2026-10-26-3.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-_-STASH-MAGAZINE7.jpg"
  },
  {
   "tag": "Realtime",
@@ -44,7 +48,9 @@
   "zh": "Mario Sánchez Aguado的木屋与海面起初在Maya里搁了一年，后用Houdini Solaris和Karma XPU重做。木屋来自Big Medium Small，珊瑚和鱼来自The Sea's Heart。低频浪加置换太重，一片平面配Ocean Procedural承担水面。透射控制深度。夜景在珊瑚和鱼上撒青绿光，Nuke里加抖动和焦散。",
   "ko": "마리오 산체스 아과도의 오두막과 바다 샷은 마야와 아놀드로 시작했다가 일 년을 묵혔다. 그는 후디니 솔라리스와 카르마 XPU로 다시 만들고, 오두막과 어부는 빅 미디엄 스몰에서, 바위와 산호와 물고기는 더 시스 하트에서 가져왔다. 저주파 파도에 별도 변위를 얹으면 너무 무거워, 후디니 오션 프로시저럴이 걸린 평면 하나가 물을 맡는다. 투과로 깊이를 잡고, 밤 버전은 산호와 물고기에 청록 빛을 흩뿌린다. 누크에서 흔들림, 렌즈, 코스틱을 더했다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/this-dreamy-wooden-cabin-scene-with-glowing-water-fx-was-made-with-houdini"
+  "url": "https://80.lv/articles/this-dreamy-wooden-cabin-scene-with-glowing-water-fx-was-made-with-houdini",
+  "img": "assets/2026-10-26-4.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50745/images/6adb4669c4266/contain_1200x630.jpg"
  },
  {
   "tag": "AI",
@@ -54,7 +60,9 @@
   "zh": "Tripo P2.0生成三角或四边网格，可调密度、拆件、Smart UV、局部编辑，一次提示出多个变体。H系列追细节，P系列追能绑骨的拓扑。Astra不雕网格，它理解任务后去驱动Blender、Unity或脚本。常见做法是P2.0或H3.1分件，再让Astra组装、绑骨、做动画。Lucca Cerf用三条提示、90分钟搭出魔兽世界同人场景。",
   "ko": "트라이포 P2.0은 삼각 또는 쿼드 메시를 만들고, 밀도, 파트 분리, 스마트 UV, 부분 편집, 한 프롬프트의 여러 변형을 다룬다. H는 디테일, P는 리깅 가능한 토폴로지다. 아스트라는 메시를 깎지 않고, 작업을 추론한 뒤 블렌더, 유니티, 스크립트를 돌린다. 파트를 P2.0이나 H3.1로 만들고 아스트라가 조립과 리깅, 애니메이션을 맡긴다. 루카 세르프는 프롬프트 세 개, 90분에 워크래프트 팬 장면을 세웠다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/how-tripo-p2-0-astra-work-together-in-blender-and-unity"
+  "url": "https://80.lv/articles/how-tripo-p2-0-astra-work-together-in-blender-and-unity",
+  "img": "assets/2026-10-26-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50386/images/6ada9dc6ed2d2/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -67,7 +75,9 @@
   "src": "designboom",
   "url": "https://www.designboom.com/design/daft-punk-lego-group-brick-version-alive-tour-stage/",
   "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/LEGO-group-daft-punk-designboom-01.jpg",
-  "video": "https://www.designboom.com/wp-content/uploads/2026/10/LEGO-group-daft-punk-designboom-01a.mp4"
+  "video": "https://www.designboom.com/wp-content/uploads/2026/10/LEGO-group-daft-punk-designboom-01a.mp4",
+  "img": "assets/2026-10-26-6.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/LEGO-group-daft-punk-designboom-01.jpg"
  },
  {
   "tag": "Motion",
@@ -78,7 +88,9 @@
   "ko": "김수빈의 투게더는 심신 문제를 동화책으로 다룬다. 풍선은 마음이고, 그려진 인물은 몸이며, 어느 쪽도 위에 두지 않는다. 스쿼시 앤 스트레치, 바운스, 색 변화가 풍선의 무게를 맡는다. 페이지는 가로와 세로 스크롤로 움직이고, 소품은 장난감과 스티커이며, 그림이 분위기를 바꾼다. 슈퍼 베리 모어의 김영민이 멘토였고, 사운드는 선우 숀 킴이다. 스태시에 올린 그녀의 첫 작품이다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
-  "video": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/"
+  "video": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
+  "img": "assets/2026-10-26-7.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-_-STASH-MAGAZINE8.jpg"
  },
  {
   "tag": "Visual",
@@ -88,7 +100,9 @@
   "zh": "Bráulio Amado给Good Room做海报，素材是他差点没拍的东西：一张餐巾、一道擦痕、桌上两个物件硬挤在一起。散步时他限制拍照，免得手机变成目的，然后给自己定规矩，比如两小时里只用胶带、马克笔和纸。下一张海报就从这次意外里长出来。这习惯来自Richard Turley手下的彭博商业周刊，在那之前他在Pentagram，网格不是他的事。主意决定风格。美妆品牌拿不到夜店那种街边碎屑。",
   "ko": "브라우울리우 아마도의 굿 룸 포스터는 그가 거의 찍지 않을 뻔한 것에서 시작한다. 냅킨, 긁힌 자국, 책상 위 물건을 억지로 붙인 조합이다. 산책에서 사진을 제한해 휴대폰이 목적이 되지 않게 하고, 테이프와 마커와 종이로 두 시간 같은 규칙을 건다. 다음 포스터는 그 규칙이 만든 사고에서 출발한다. 습관은 펜타그램 이후 리처드 털리 아래 블룸버그 비즈니스위크에서 생겼다. 아이디어가 스타일을 고른다. 뷰티 브랜드는 클럽과 같은 거리 조각을 받지 않는다.",
   "src": "It's Nice That",
-  "url": "https://www.itsnicethat.com/features/braulio-amado-graphic-design-spotlight-261026"
+  "url": "https://www.itsnicethat.com/features/braulio-amado-graphic-design-spotlight-261026",
+  "img": "assets/2026-10-26-8.png",
+  "img_src": "https://m.itsnicethat.com/original_images/Braulio_Hero.png?class=w1440"
  },
  {
   "tag": "Visual",
@@ -99,7 +113,9 @@
   "ko": "사카모토 요타로의 샤텐레퀴지트: 칼럼은 가는 실로 만든 기둥이고, 발상은 스다레 발의 빛 거름이다. 밀리미터파 센서가 가까운 사람을 알아채면 스테퍼 모터가 실 다발을 돌려, 겹침이 바뀌고 벽과 바닥의 그림자가 다시 그려진다. 기둥은 건축 부재로 남고, 그림자만 지나가는 사람처럼 움직인다. 실과 그림자를 하나의 조각으로 본다. 사진은 다나카 마나부다.",
   "src": "designboom",
   "url": "https://www.designboom.com/art/youtaro-sakamoto-kinetic-thread-column-human-presence-shifting-shadows-schattenrequisit/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/yotaro-sakamoto-schattenrequisit-column-kinetic-installation-threads-human-movement-shifting-shadows-designboom-1800-2.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/yotaro-sakamoto-schattenrequisit-column-kinetic-installation-threads-human-movement-shifting-shadows-designboom-1800-2.jpg",
+  "img": "assets/2026-10-26-9.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/10/yotaro-sakamoto-schattenrequisit-column-kinetic-installation-threads-human-movement-shifting-shadows-designboom-1800-2.jpg"
  },
  {
   "tag": "Cockpit",
@@ -109,7 +125,9 @@
   "zh": "第二代比亚迪海豹07的官方内饰叫Ocean Rhythm座舱，换挡离开了中控台。圆水晶换挡旋钮换成转向柱上的电子拨杆。悬浮中控因此放下两块斜置无线充电板、金属拨钮和杯托。方向盘是三辐平底，后面是数字仪表，仪表台有一块抬头显示的凹位。20扬声器帝瓦雷的门板格栅是激光蚀刻金属。前排座椅有加热、通风和按摩。",
   "ko": "2세대 비야디 실 07의 공식 실내는 오션 리듬 콕핏이라 불리며, 기어 선택이 콘솔을 떠난다. 둥근 크리스털 셀렉터 자리에 칼럼의 전자 스토크가 온다. 플로팅 콘솔에는 기울어진 무선 충전 패드 두 개, 금속 토글, 컵홀더가 놓인다. 스티어링은 3스포크 플랫 보텀이고, 디지털 클러스터와 헤드업 디스플레이용 대시 홈이 있다. 20스피커 드비알레의 도어 그릴은 레이저 에칭 금속이다. 앞좌석은 열선, 통풍, 마사지다.",
   "src": "CarNewsChina",
-  "url": "https://carnewschina.com/2026/10/23/byd-unvails-second-gen-seal-07-interior-with-20-speaker-devialet-audio/"
+  "url": "https://carnewschina.com/2026/10/23/byd-unvails-second-gen-seal-07-interior-with-20-speaker-devialet-audio/",
+  "img": "assets/2026-10-26-10.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/10/8e7f73f029d8c1bb7adbb462bcb01677-1388x900.jpg"
  },
  {
   "tag": "Interaction",
@@ -120,7 +138,9 @@
   "ko": "이치-폭스바겐 합작의 제타 M6 실내는 8.88인치 운전자 디스플레이와 15.6인치 센터 터치스크린을 짝짓는다. 두바오와 딥시크가 그 화면에 있고, 애플 카플레이는 나중에 얹는 것이 아니라 기본이다. 운전자 정보는 센터 유리에 합쳐지지 않고 별도 클러스터로 남는다. 크루즈 보조, 자동 긴급 제동, 자동 주차가 465 프로, 555 맥스, 555 울트라에 기본이다. 중국 어시스턴트 둘이 카플레이와 같은 유리를 쓴다.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/10/24/volkswagens-new-electric-jetta-offers-285-miles-of-range-for-under-12k/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/10/jetta_MAIN.jpg?quality=82&strip=all&resize=1200,628"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/10/jetta_MAIN.jpg?quality=82&strip=all&resize=1200,628",
+  "img": "assets/2026-10-26-11.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/10/jetta_MAIN.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Realtime",
@@ -130,7 +150,9 @@
   "zh": "动视暴雪资深技术动画师Shirzad Bahrami在测试HézFX，给Maya和3ds Max用的肌肉插件。对比里，红色组织是HézFX，蓝色是Ziva VFX，也就是Unity停掉、现由DNEG独家授权的那套求解器。肌肉不是一下子全收缩：激活沿着纤维走向，经过肌腹。计划中的工具包括提高局部分辨率的密度绘制、邻近绘制，以及自动找出肌纤维端点。3ds Max版已有超过10名测试者。",
   "ko": "액티비전 블리자드의 시니어 테크니컬 애니메이터 시르자드 바라미가 마야와 3ds 맥스용 근육 플러그인 헤즈FX를 시험 중이다. 비교에서 빨간 조직은 헤즈FX, 파란 조직은 지바 VFX다. 지바는 유니티가 중단했고 지금은 DNEG가 라이선스를 가진 솔버다. 근육은 한 번에 다 수축하지 않는다. 활성화가 섬유를 따라 배까지 간다. 밀도 페인팅, 근접 페인팅, 섬유 끝점 자동 찾기가 예정돼 있다. 3ds 맥스 빌드는 베타 테스터가 이미 10명이 넘는다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya"
+  "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya",
+  "img": "assets/2026-10-26-12.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50746/images/6adb488d28e01/contain_1200x630.jpg"
  },
  {
   "tag": "AI",
@@ -141,7 +163,9 @@
   "ko": "비비오의 바이올룹은 책상 위에 기울여 두는 작은 터치스크린으로, 이미 쓰는 컴퓨터를 조작한다. 왓츠앱 대화에서 이름을 꺼내 CRM에 넣는 식의 일을 말로 시키면 된다. 화면을 읽고 키보드와 마우스 이벤트를 보내므로, 앱마다 연동이 필요 없다. 동반 소프트웨어는 윈도, 맥OS, 리눅스를 덮는다. 로컬 하드웨어는 26 TOPS이고, 개인 기억은 기기에 남는다. 민감한 동작은 위의 물리 버튼을 기다려야 하며, 보안 컨트롤러가 추론과 분리돼 있다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/10/24/this-ai-assistant-looks-like-a-tiny-monitor-but-actually-operates-your-computer/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/10/this-ai-assistant-looks-like-a-tiny-monitor-but-actually-operates-your-computer/VIOLOOP-PLUG-IN-AI-FOR-YOUR-COMPUTER.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/10/this-ai-assistant-looks-like-a-tiny-monitor-but-actually-operates-your-computer/VIOLOOP-PLUG-IN-AI-FOR-YOUR-COMPUTER.jpg",
+  "img": "assets/2026-10-26-13.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/this-ai-assistant-looks-like-a-tiny-monitor-but-actually-operates-your-computer/VIOLOOP-PLUG-IN-AI-FOR-YOUR-COMPUTER.jpg"
  },
  {
   "tag": "Micromobility",
@@ -162,7 +186,9 @@
   "ko": "알렉세이 다닐린이 마이트니를 위해 만든 호프 테이블 램프는 거의 전부 유약 세라믹이고, 로마 조각과 도기에서 곡선을 가져왔으며, 질량의 약 90퍼센트를 재활용할 수 있게 잡았다. 두 쪽 사이에 틈이 있고, LED 보드가 그 틈으로 빛을 내보내며, 안쪽 면이 빛을 튕겨 맨 광원이 되지 않는다. 금속 기둥이 두 쪽을 잡고, 꼭대기의 작은 구체가 터치 디머다. 껍질이 천이나 금속 갓을 대신한다. 일회작이 아니라 양산용으로 그렸다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/split-ceramic-curves-soft-reflected-light-dimmable-table-lamp-alexey-danilin-maytoni-hope/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/alexey-danilin-maytoni-hope-table-lamp-designboom-1800-2.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/alexey-danilin-maytoni-hope-table-lamp-designboom-1800-2.jpg",
+  "img": "assets/2026-10-26-15.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/10/alexey-danilin-maytoni-hope-table-lamp-designboom-1800-2.jpg"
  },
  {
   "tag": "AI",
@@ -172,6 +198,8 @@
   "zh": "iPhone Duo和iPhone 18的画框预设，现在出现在Figma所有能选手机画框的地方。包括新建画框的属性面板、代码层的属性面板、原型设置、Make预览的设备选择，以及代码层全屏。Duo的预设跟着这个月的硬件走，折叠不用再手拉一个矩形。它让双屏手机不再被画成一整块板。",
   "ko": "아이폰 듀오와 아이폰 18 프레임 프리셋이 피그마에서 휴대폰 프레임을 고르는 모든 자리에 들어왔다. 새 프레임의 속성 패널, 코드 레이어의 속성 패널, 프로토타입 설정, 메이크 미리보기의 기기 선택, 코드 레이어 전체 화면이 포함된다. 듀오 프리셋은 이달의 하드웨어를 따르므로, 접힘을 임의 사각형으로 그리지 않아도 된다. 두 화면 휴대폰이 한 장의 판으로 그려지는 일을 막는다.",
   "src": "Figma",
-  "url": "https://forum.figma.com/product-updates-3/iphone-duo-and-iphone-18-frame-presets-now-available-wherever-you-design-and-prototype-59263"
+  "url": "https://forum.figma.com/product-updates-3/iphone-duo-and-iphone-18-frame-presets-now-available-wherever-you-design-and-prototype-59263",
+  "img": "assets/2026-10-26-16.webp",
+  "img_src": "https://uploads-us-west-2.insided.com/figma-en/attachment/66e06457-d25a-4b0f-87c0-9fff6da343e2.jpg"
  }
 ]
