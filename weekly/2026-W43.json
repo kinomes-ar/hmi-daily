@@ -1,0 +1,154 @@
+{
+ "week": "2026-W43",
+ "from": "2026-10-19",
+ "to": "2026-10-23",
+ "title": {
+  "en": "The Roadster drives the ceiling, Mission S keeps five dials, and a note bends in oil",
+  "zh": "Roadster贴着天花板开，Mission S留下五只表，一颗音符在矿物油里弯折",
+  "ko": "로드스터는 천장을 달리고, 미션 S는 다이얼 다섯 개를 남기며, 음표는 오일 속에서 굽는다"
+ },
+ "intro": {
+  "en": "Monday opened on the picture everyone had already seen: Tesla's Roadster driving the ceiling, then flipping on cold gas. The red Track Mode interface, with a 5,500 PSI thruster reading, landed Friday afternoon, after that day's edition had closed. The rest of the week looked for controls that are not another wide pane. Porsche's Mission S keeps five analog gauges and makes a MagSafe phone the map. The iPhone Duo hands-on is two messages, then an unfold. Audi locks Spotify lyrics once the car moves, and Apple Music's new note was filmed in mineral oil. Eighty stories, and the team marked none of them: no most-hearted item and no most-skipped item. The thread through the five days is a screen that knows when to step aside.",
+  "zh": "周一打开的是大家都见过的那张图：特斯拉Roadster贴着天花板开，再用冷气翻身。红色Track Mode界面，状态栏写着5,500 PSI，到周五下午才出现，当天的日刊已经截稿。这一周其余的时间都在找不是又一块大屏的控制。保时捷Mission S留着五只模拟表，把MagSafe手机当成地图。iPhone Duo的上手是先看两条短信，再展开。奥迪在车辆移动后锁住Spotify歌词，苹果音乐的新音符是在矿物油里拍的。八十条故事，团队一条都没标：没有最多红心，也没有最多“不想看”。五天里串起来的是一块知道何时让开的屏幕。",
+  "ko": "월요일은 이미 모두가 본 그림으로 열렸다. 테슬라 로드스터가 천장을 달리고, 냉가스로 뒤집힌다. 5,500 PSI가 적힌 빨간 트랙 모드 인터페이스는 금요일 오후에야 나왔고, 그날 에디션은 이미 닫혀 있었다. 나머지 주는 또 하나의 넓은 화면이 아닌 조작을 찾았다. 포르쉐 미션 S는 아날로그 게이지 다섯 개를 두고 맥세이프 휴대폰을 지도로 쓴다. 아이폰 듀오 핸즈온은 문자 두 통, 그다음 펼침이다. 아우디는 차가 움직이면 스포티파이 가사를 잠그고, 애플 뮤직의 새 음표는 미네랄 오일에서 촬영됐다. 80건이고, 팀은 아무것도 표시하지 않았다. 최다 하트도, 최다 스킵도 없다. 닷새를 관통하는 실은, 언제 비켜야 하는지 아는 화면이다."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Seven cabins, and none of them took a heart. Monday's Roadster drove a ramp upside down and flipped on cold gas. The red UI, with a bar reading Thruster 5,500 PSI, arrived after Friday's file had closed. Porsche's Mission S keeps five analog gauges and uses a MagSafe phone as the map, with no centre screen. BYD's Tang replaces the cluster and HUD with a 35.4-inch cowl and a 30-inch pad. The Escalade IQ uses a turquoise strip to say look away. Lexus TZ turns the cluster into the map. Hedley's 550 J puts round gauges on a Spyder at 80 percent scale.",
+   "zh": "七个座舱，没有红心。周一的Roadster倒贴坡道，再用冷气翻身。红色界面和写着Thruster 5,500 PSI的状态栏，出现在周五截稿之后。保时捷Mission S留着五只模拟表，用MagSafe手机当地图，没有中控，也没有副驾屏。比亚迪唐用35.4英寸前挡屏取代仪表和HUD，下面是30英寸垫。凯雷德IQ用一条青绿色光带表示请看路。雷克萨斯TZ让仪表变成地图。Hedley的550 J把圆表放在缩到八成的电动Spyder上。",
+   "ko": "콕핏 일곱 건, 하트는 없다. 월요일의 로드스터는 램프를 거꾸로 달리고 냉가스로 뒤집혔다. Thruster 5,500 PSI가 적힌 빨간 UI는 금요일 파일이 닫힌 뒤에 도착했다. 포르쉐 미션 S는 아날로그 게이지 다섯 개와 맥세이프 휴대폰 지도를 두고, 센터 스크린이 없다. BYD 탕은 클러스터와 HUD를 35.4인치 카울과 30인치 패드로 바꾼다. 에스컬레이드 IQ는 청록 스트립으로 전방을 보라고 한다. 렉서스 TZ는 클러스터를 지도로 바꾼다. 헤들리 550 J는 80퍼센트 크기의 스파이더에 둥근 게이지를 둔다.",
+   "items": [
+    "2026-10-19-1",
+    "2026-10-19-2",
+    "2026-10-19-8",
+    "2026-10-22-4",
+    "2026-10-22-15",
+    "2026-10-21-7"
+   ]
+  },
+  {
+   "tag": "Interaction",
+   "en": "Fourteen control stories, none hearted. The iPhone Duo hands-on is the one people were already passing around: two texts on the outer screen, then the phone unfolds. Audi's native Spotify locks lyrics once the car is moving, and a passenger display can still show them. Aegis Rider's helmet HUD stays locked to the road when the rider looks over a shoulder. The GTA VI pad is white, with leaves and a pink VI. Clevetura makes the keys themselves the trackpad. RevisionX folds CarPlay into an old-school EQ face. Lufthansa's Lido prototype keeps a live map inside Figma Make. AirConsole turns the phone into the pad for in-car games.",
+   "zh": "十四条控制，没有红心。大家都在传的是iPhone Duo上手：外屏上两条短信，然后手机展开。奥迪原生Spotify在车辆移动后锁住歌词，副驾屏仍可显示。Aegis Rider的头盔HUD在骑手转头时仍钉在路面上。GTA VI手柄是白色的，有树叶和粉色的VI。Clevetura让按键本身成为触控板。RevisionX把CarPlay折进老式均衡器面板。汉莎Lido的原型把实时地图留在Figma Make里。AirConsole把手机变成车内游戏的手柄。",
+   "ko": "조작 14건, 하트 없음. 이미 돌고 있던 것은 아이폰 듀오 핸즈온이다. 바깥 화면의 문자 두 통, 그다음 펼침. 아우디의 네이티브 스포티파이는 차가 움직이면 가사를 잠그고, 동승 화면은 가사를 남길 수 있다. 이지스 라이더의 헬멧 HUD는 어깨 너머를 봐도 도로에 고정된다. GTA VI 패드는 흰색에 잎과 분홍 VI다. 클레베투라는 키 자체를 트랙패드로 만든다. 리비전X는 카플레이를 구식 EQ 면에 접어 넣는다. 루프트한자 리도 프로토타입은 피그마 메이크 안에 실시간 지도를 둔다. 에어콘솔은 휴대폰을 차 안 게임 패드로 쓴다.",
+   "items": [
+    "2026-10-22-1",
+    "2026-10-22-2",
+    "2026-10-23-2",
+    "2026-10-21-1",
+    "2026-10-20-2",
+    "2026-10-23-8",
+    "2026-10-23-5",
+    "2026-10-23-9"
+   ]
+  },
+  {
+   "tag": "AI",
+   "en": "Ten tool stories, no hearts. Canva Craft plans the layout, then draws, which is how type stays put. Krea 3 is aimed at a 2K edit in under eight seconds, as a retouch rather than a replacement. Runway's agent takes a brief and returns a cut, via the Claude marketplace. Figma's agent reads the design-system library as the brief. Affinity and Cavalry's Free Form makes blur a slider and lets type flower. FRAME's film keeps about 95 percent of the generated frames. Query cuts shot to shot with no boards. Arti is a design agent that is meant to hold a studio's taste instead of washing it out.",
+   "zh": "十条工具，没有红心。Canva Craft先排版再绘制，文字才停在该在的位置。Krea 3面向八秒内的2K修图，是润色而不是替换。Runway的智能体接过简报就回一条成片，走Claude应用市场。Figma的智能体把设计系统库当成简报来读。Affinity与Cavalry的Free Form把模糊做成滑杆，并让文字开花。FRAME的片子保留大约95%的生成帧。Query没有分镜，镜头接着镜头。Arti想保住工作室的口味，而不是把它洗掉。",
+   "ko": "도구 10건, 하트 없음. 캔바 크래프트는 레이아웃을 계획한 뒤 그려서 글자가 제자리에 남는다. 크레아 3는 8초 안의 2K 수정이고, 대체가 아니라 리터치다. 런웨이의 에이전트는 브리프를 받아 컷을 돌려주며, 클로드 마켓플레이스를 탄다. 피그마의 에이전트는 디자인 시스템 라이브러리를 브리프로 읽는다. 어피니티와 캐벌리의 프리 폼은 블러를 슬라이더로 만들고 글자를 피게 한다. 프레임의 필름은 생성 프레임의 약 95퍼센트를 남긴다. 쿼리는 보드 없이 숏을 잇는다. 아르티는 스튜디오의 취향을 씻어 내지 않으려는 디자인 에이전트다.",
+   "items": [
+    "2026-10-23-3",
+    "2026-10-20-3",
+    "2026-10-21-13",
+    "2026-10-23-12",
+    "2026-10-22-11",
+    "2026-10-19-4",
+    "2026-10-22-6",
+    "2026-10-20-10"
+   ]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "Five rider pieces, no hearts. Spiny 2 lifts its roller off the ground when the scooter stops. Priority's E-Sauce gives torque up to 20 mph, then hands the feel back to cadence. Cellcius wears eight hexagonal battery cells on an electric superbike, and two of them pull out. Santander Cycles puts the hire QR on the bike itself, so the phone meets the frame instead of a dock screen. Bandit9's red limited run fades the paint into brushed aluminum on a hand-finished motorcycle. None of the five is a new TFT size. The interest is the control, the code, or the surface.",
+   "zh": "五条骑行，没有红心。Spiny 2在滑板车停下时把滚轮抬离地面。Priority的E-Sauce在20英里时速前给扭矩，之后把脚感交回踏频。Cellcius把八块六边形电池挂在电动超跑摩托上，其中两块可以抽出。Santander Cycles把租车二维码印在车上，手机对着车架，而不是桩上的屏幕。Bandit9的红色限量把漆面过渡到手工拉丝铝。五条都不是新的TFT尺寸。值得看的是控制、代码，或表面。",
+   "ko": "라이더 다섯 건, 하트 없음. 스파이니 2는 스쿠터가 멈추면 롤러를 땅에서 들어 올린다. 프라이어리티의 E-소스는 시속 20마일까지 토크를 주고, 그 뒤 감각을 케이던스에 돌려준다. 셀시우스는 전기 슈퍼바이에 육각 배터리 셀 여덟 개를 두르고, 그중 둘은 빼낸다. 산탄데르 사이클은 대여 QR을 자전거 자체에 두어, 휴대폰이 독 화면이 아니라 프레임을 만난다. 밴딧9의 레드 한정은 손질한 모터사이클에서 페인트를 브러시드 알루미늄으로 보낸다. 다섯 건 모두 새 TFT 크기가 아니다. 관심은 조작, 코드, 또는 표면이다.",
+   "items": [
+    "2026-10-19-11",
+    "2026-10-20-15",
+    "2026-10-21-10",
+    "2026-10-22-14",
+    "2026-10-23-13"
+   ]
+  },
+  {
+   "tag": "Visual",
+   "en": "Twenty graphic stories, no hearts. Apple Music's note was bent in a bath of mineral oil, shot from sound rather than drawn, and set in a bold lowercase SF Pro. Pentagram's Doha identity gives Arabic and English one shared stroke. Fulham's new type comes from lettering found in the stadium. Source Type's Dictionary of the Illegible hides as much as it shows. To Be Formed's wordmark is still in the act of becoming. Jenny Holzer put 250 texts on the Orsay facade. Nik Arthur shot the A24 logo in duckweed, in reverse. SEA's 30th book gives the archive a silver edge, in an edition of 300.",
+   "zh": "二十条图形，没有红心。苹果音乐的音符在矿物油浅槽里被声音弯折，不是画出来的，字是粗体小写SF Pro。Pentagram的多哈识别让阿拉伯文和英文共用一笔。富勒姆的新字体来自球场里找到的字母。Source Type的《不可读词典》藏起来的和展示的一样多。To Be Formed的字标仍在成形。Jenny Holzer把250段文字投在奥赛博物馆立面上。Nik Arthur用浮萍倒着拍了A24标志。SEA三十周年的书给档案一条银边，限300册。",
+   "ko": "그래픽 20건, 하트 없음. 애플 뮤직의 음표는 미네랄 오일 수조에서 소리로 굽혀 촬영됐고, 굵은 소문자 SF Pro다. 펜타그램의 도하 아이덴티티는 아랍어와 영어에 한 획을 나눠 준다. 풀럼의 새 타입은 경기장에서 찾은 레터링이다. 소스 타입의 읽을 수 없는 사전은 보여 주는 만큼 숨긴다. 투 비 폼드의 워드마크는 아직 되는 중이다. 제니 홀저는 오르세 파사드에 텍스트 250개를 올렸다. 닉 아서는 A24 로고를 개구리밥 속에서 거꾸로 찍었다. SEA 30주년 책은 아카이브에 은색 가장자리를 주고, 300부다.",
+   "items": [
+    "2026-10-23-1",
+    "2026-10-20-6",
+    "2026-10-20-7",
+    "2026-10-21-3",
+    "2026-10-22-5",
+    "2026-10-20-4",
+    "2026-10-21-12",
+    "2026-10-23-16"
+   ]
+  },
+  {
+   "tag": "Motion",
+   "en": "Ten films, each with something to press play on, none hearted. Studio River's R.EVISITED puts a Hublot under black-and-white Arctic ice. Illo's Everpure films for Bloomberg TV give one shape to one idea, then move it. Ranger & Fox set Foundry Labs in pixel type with no voiceover. FutureDeluxe's Verizon hub film is a Powers of Ten zoom at 4K and 60 frames a second. Ordinary Folk's Distance is 900 hand-painted frames on Morse code. VisitOSLO answers Halfdan in song. Kutuko breaks the court for Bullpadel's Xplo 02. BYREDO hangs steel spheres over five scents.",
+   "zh": "十部片子，每部都能按播放，没有红心。Studio River的R.EVISITED把一块宇舶放进黑白的北极冰下。Illo为彭博电视和Everpure做的片子，一个想法一个形状，然后让它动。Ranger & Fox用像素字做Foundry Labs，没有旁白。FutureDeluxe给Verizon中心的片子是4K、每秒60帧的《十的次方》式变焦。Ordinary Folk的Distance是900帧手绘，讲摩尔斯电码。VisitOSLO用歌声回答Halfdan。Kutuko为Bullpadel Xplo 02把球场砸开。BYREDO把钢球悬在五种气味之上。",
+   "ko": "필름 열 편, 모두 재생할 것이 있고 하트는 없다. 스튜디오 리버의 레비지티드는 위블로를 흑백의 북극 얼음 아래에 둔다. 일로의 에버퓨어 필름은 블룸버그 TV를 위해 아이디어 하나에 형태 하나를 주고 움직인다. 레인저 앤 폭스는 파운드리 랩스를 픽셀 타입으로, 보이스오버 없이 했다. 퓨처디럭스의 버라이즌 허브 필름은 4K, 초당 60프레임의 파워스 오브 텐 줌이다. 오디너리 포크의 디스턴스는 모스 부호를 위한 손그림 900프레임이다. 비지트오슬로는 할프단에게 노래로 답한다. 쿠투코는 불파델 엑스플로 02를 위해 코트를 부순다. 바이레도는 다섯 향 위에 강철 구를 건다.",
+   "items": [
+    "2026-10-19-3",
+    "2026-10-20-1",
+    "2026-10-22-3",
+    "2026-10-23-4",
+    "2026-10-23-7",
+    "2026-10-21-2",
+    "2026-10-21-6",
+    "2026-10-22-10"
+   ]
+  },
+  {
+   "tag": "Realtime",
+   "en": "Nine real-time pieces, no hearts. BeamNG.drive on PlayStation 5 updates every part 2,000 times a second. YMA Painterly is one slider that bends normals toward a painted surface, in Houdini and Cinema 4D. Moko's brush picks up paint and dries on the canvas. Plasticity 2026.2 shades the curvature of a CAD model. The Alters builds Nanite leaves without transparency. Signal mapped Prague for four nights, then the installation came down. A Blender setup drags a trail behind a pen the way paper lines do. AMD's FSR 4.1 reaches Xbox, the ROG Ally and Radeon RX 6000.",
+   "zh": "九条实时，没有红心。PlayStation 5上的BeamNG.drive每秒更新每个零件2000次。YMA Painterly用一根滑杆把法线弯向绘画表面，在Houdini和Cinema 4D里。Moko的笔能蘸起颜料，并在画布上变干。Plasticity 2026.2给CAD模型的曲率上色。The Alters用Nanite做叶子，不用透明贴图。Signal把布拉格测绘了四个晚上，然后装置撤走。一套Blender流程让笔拖出纸面上的线痕。AMD的FSR 4.1到达Xbox、ROG Ally和Radeon RX 6000。",
+   "ko": "리얼타임 아홉 건, 하트 없음. 플레이스테이션 5의 빔NG.드라이브는 모든 부품을 초당 2,000번 갱신한다. YMA 페인터리는 후디니와 시네마 4D에서 노멀을 그림 표면으로 굽히는 슬라이더 하나다. 모코의 붓은 물감을 찍고 캔버스에서 마른다. 플라스티시티 2026.2는 CAD 모델의 곡률을 셰이딩한다. 알터스는 투명 없이 나나이트 잎을 만든다. 시그널은 프라하를 나흘 밤 매핑한 뒤 설치를 걷었다. 블렌더 셋업은 종이 선처럼 펜 뒤에 궤적을 남긴다. AMD FSR 4.1은 엑스박스, ROG 앨리, 라데온 RX 6000에 닿는다.",
+   "items": [
+    "2026-10-22-16",
+    "2026-10-22-8",
+    "2026-10-20-5",
+    "2026-10-21-8",
+    "2026-10-23-6",
+    "2026-10-19-5",
+    "2026-10-23-11",
+    "2026-10-21-16"
+   ]
+  },
+  {
+   "tag": "Design",
+   "en": "One design-studio story, and no heart. Jean-Baptiste Fastrez's Zodiac treats a boat fitting and its reflection as the object: the tube and the look it gives back are one piece. It sat alone in Design this week, between a week of cockpits and a week of type. There is no exterior program and no auto-show stand attached. The read is industrial sculpture used as a way of thinking about a part and its mirror, which is why it stays in Design rather than being filed as another lamp.",
+   "zh": "一条设计工作室的故事，没有红心。Jean-Baptiste Fastrez的Zodiac把船用管件和它的倒影当成同一件物品：管子和它映回去的样子是一件。它是本周Design里唯一的一条，夹在一周的座舱和一周的字体之间。没有外观方案，也没有车展展台。读法是用工业雕塑去想一个零件和它的镜像，所以它留在设计，而不是被归成又一盏灯。",
+   "ko": "디자인 스튜디오 이야기 한 건, 하트 없음. 장바티스트 파스트레의 조디악은 보트 피팅과 그 반사를 하나의 오브제로 본다. 관과 관이 돌려주는 모습이 한 조각이다. 이번 주 디자인에서는 이것이 유일하고, 콕핏의 한 주와 타입의 한 주 사이에 있다. 외장 프로그램도, 모터쇼 부스도 없다. 부품과 그 거울을 생각하는 방식으로 산업 조각을 쓴 것이라, 또 하나의 램프가 아니라 디자인에 남긴다.",
+   "items": [
+    "2026-10-21-15"
+   ]
+  },
+  {
+   "tag": "Industrial",
+   "en": "Four objects, no hearts and no skips. FTC-1 lifts the lens 30 mm on a knob while the level of the picture stays put. Apple's Designers of Tomorrow chair in Paris carries about 1,500 beads that rattle when someone sits. The Leica Q3 Formula 1 edition puts carbon where the thumb rests. Federico Fontanella's Melt glass borrows its base from a logo, so the optical trick and the mark are the same drawing. Product stays one slot next week because the three-week window did not have enough reactions to move it.",
+   "zh": "四件物品，没有红心，也没有“不想看”。FTC-1用旋钮把镜头抬高30毫米，画面的水平仍保持。苹果在巴黎“未来设计师”的椅子上有大约1500颗珠子，坐下会响。徕卡Q3的Formula 1版把碳纤维放在拇指停留的位置。Federico Fontanella的Melt玻璃杯从标志借来底座，光学把戏和标记是同一张图。下周产品仍是一个名额，因为三周窗口里的反应不够，配额没有被推动。",
+   "ko": "사물 네 건, 하트도 스킵도 없다. FTC-1은 노브로 렌즈를 30mm 올리고, 화면의 수평은 그대로다. 파리의 애플 디자이너스 오브 투모로 의자는 구슬 약 1,500개가 앉아 있으면 흔들린다. 라이카 Q3 포뮬러 1 에디션은 엄지가 닿는 자리에 카본을 둔다. 페데리코 폰타넬라의 멜트 글라스는 로고에서 바닥을 빌려, 광학 트릭과 마크가 같은 그림이다. 3주 창의 반응이 부족해 할당이 움직이지 않았으므로, 다음 주 제품은 한 칸으로 남는다.",
+   "items": [
+    "2026-10-19-6",
+    "2026-10-22-7",
+    "2026-10-23-14",
+    "2026-10-20-16"
+   ]
+  }
+ ],
+ "top": [],
+ "feedback": {
+  "skipped": [],
+  "actions": {
+   "en": "This week drew no hearts and no skips, so there is no most-hearted story and no most-skipped story to steer by. Four reactions across the longer window are still under five, which is not enough to move a group. Next week stays on the base quotas: HMI 4, Micromobility 1, AI 2, Visual 6, Realtime 2, Product 1. The note from the count is: \"4 reaction(s) in the window (< 5): not enough signal, base quotas apply.\" No source is favoured or deprioritised.",
+   "zh": "本周没有红心，也没有“不想看”，所以没有最多红心的故事，也没有最多跳过的故事可以跟着走。更长窗口里只有四次反应，不到五次，不足以移动任何一组。下周仍用基础配额：HMI 4、微出行 1、AI 2、视觉 6、实时 2、产品 1。计数的原话是：“4 reaction(s) in the window (< 5): not enough signal, base quotas apply.”没有来源被优先，也没有来源被降权。",
+   "ko": "이번 주는 하트도 스킵도 없어서, 따라갈 최다 하트 이야기도 최다 스킵 이야기도 없다. 더 긴 창의 반응은 네 번으로 다섯 번에 못 미치고, 어느 그룹도 옮기기에 부족하다. 다음 주는 기본 할당 그대로다. HMI 4, 마이크로모빌리티 1, AI 2, 비주얼 6, 리얼타임 2, 제품 1. 집계의 문장은 이렇다. “4 reaction(s) in the window (< 5): not enough signal, base quotas apply.” 우선하는 출처도, 후순위로 두는 출처도 없다."
+  }
+ }
+}
