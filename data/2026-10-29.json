@@ -9,7 +9,9 @@
   "ko": "새 맥북 프로는 손으로 만질 수 있는 첫 맥이다. 센서는 패널 위에 얹힌 층이 아니라 패널 안에 있다. 빨강, 노랑, 초록 창 버튼을 누르면 커지고, 메뉴도 같아서 손가락이 더 큰 과녁을 얻는다. 음악은 다이내믹 아일랜드에 있고, 음량과 밝기 슬라이더는 모서리가 아니라 그 알약에서 나온다. 14인치는 3파운드, 16인치는 4파운드이며 탠덤 OLED는 2000니트다. 펜슬은 없다. 터치 모델은 2899달러부터다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1020549/macbook-studio-touchscreen-hands-on",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/mbptouch.jpg?quality=90&strip=all&crop=0%2C10.740836125969%2C100%2C78.518327748063&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/mbptouch.jpg?quality=90&strip=all&crop=0%2C10.740836125969%2C100%2C78.518327748063&w=1200",
+  "img": "assets/2026-10-29-1.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/mbptouch.jpg?quality=90&strip=all&crop=0%2C10.740836125969%2C100%2C78.518327748063&w=1200"
  },
  {
   "tag": "Motion",
@@ -21,7 +23,9 @@
   "ko": "베를린의 섬폼 스튜디오가 하이퍼아이스와 함께 만든 나이키 에어 줌 하이퍼스라이드를 위해 30초 영상을 자른다. 신발은 모래색이고 거의 한 톤이다. 발등 위의 열과 진동은 도표가 아니다. 쿠션, 진동, 열의 추상 컷이고, 편집은 슬리퍼의 형태를 따른다. 강한 색은 열이 켜질 때 하이퍼스라이드 팟의 붉은 빛뿐이다. 크리스토퍼 심스가 모션을 맡았고, 젤리그 사운드가 트랙을 했다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/someform-studio-slips-into-the-hyperslide-for-hyperice-nike/",
-  "video": "https://www.stashmedia.tv/someform-studio-slips-into-the-hyperslide-for-hyperice-nike/"
+  "video": "https://www.stashmedia.tv/someform-studio-slips-into-the-hyperslide-for-hyperice-nike/",
+  "img": "assets/2026-10-29-2.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Hyperslide-launch-film-for-Hyperice-Nike-by-someform-Studio-_-STASH-MAGAZINE7.jpg"
  },
  {
   "tag": "Visual",
@@ -33,7 +37,9 @@
   "ko": "마더 디자인이 심령 앱 퍼플 가든을 위해 만든 아이덴티티는 목탄과 자동 드로잉에서 시작해 디자인 소프트웨어와 AI 사이를 오간다. 워드마크는 늘린 세리프와 밖으로 굽는 모서리를 갖는다. 수정 같은 글리프가 안내의 표식이고 아이콘의 바탕이다. Literatura Present가 긴 디센더를 맡고, ABC Social이 화면의 본문을 맡는다. 리빙 타입은 소리가 표면에 남기는 모양을 따른다. 팔레트는 더 따뜻한 보라 여섯이다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/work/how-mother-design-turned-a-seance-into-a-new-identity-for-purple-garden/",
-  "img_url": "https://media.creativeboom.com/af84f641-c883-4cdd-83db-65f48b7af3a1/conversions/452e16689042fc9c747d4b0ecff5311bc19be1b7-medium.webp"
+  "img_url": "https://media.creativeboom.com/af84f641-c883-4cdd-83db-65f48b7af3a1/conversions/452e16689042fc9c747d4b0ecff5311bc19be1b7-medium.webp",
+  "img": "assets/2026-10-29-3.webp",
+  "img_src": "https://media.creativeboom.com/af84f641-c883-4cdd-83db-65f48b7af3a1/conversions/452e16689042fc9c747d4b0ecff5311bc19be1b7-medium.webp"
  },
  {
   "tag": "AI",
@@ -44,7 +50,9 @@
   "ko": "알렉사의 홈 맵은 평면도를 버린다. 집은 주소로 맵박스에서 가져온 3D 모델이고, 라이다가 있는 아이폰으로 방마다 스캔한다. 15분에서 20분이다. 기기는 모델 위로 끌어다 놓는다. 켜진 조명은 설정된 색으로 빛나고, 재생 중인 스피커에는 춤추는 음표가 뜬다. 밖에서는 링 카메라가 사람이 다가오면 작은 형상을 두고, 타임라인은 모든 카메라를 24시간 되돌린다. 날씨는 외부에 그려진다. 옛 2D 지도는 넘어오지 않는다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1020392/amazon-alexa-home-view-3d-update-external-view",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268832_Amazon_Echo_Show_16_JTuohy_0016.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268832_Amazon_Echo_Show_16_JTuohy_0016.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+  "img": "assets/2026-10-29-4.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268832_Amazon_Echo_Show_16_JTuohy_0016.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
  },
  {
   "tag": "Visual",
@@ -56,7 +64,9 @@
   "ko": "스팬이 일리노이 인권부를 위해 만든 아이덴티티는 HEX Franklin으로 Human Rights를 크게 두 줄 쓴다. Illinois Department of가 그 사이에 있어, 이름을 읽기 전에 로크업이 등호로 읽힌다. 스팬의 닉 애덤은 이 줄을 깃발만큼 레스터 빌의 포스터에 둔다. 나머지는 키트다. 배너, 버튼, 스티커, 그리고 급한 공공 메시지에 답하는 방식. 글자는 무겁다. 문장 부호가 로고다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/work/spans-identity-for-illinois-department-of-human-rights-turns-a-common-piece-of-punctuation-into-a-rallying-cry/",
-  "img_url": "https://media.creativeboom.com/5138f56e-212a-428a-b1f1-da04ba5a1d1f/conversions/63e3f7b09f0289f65e3b30455bf976855685abb6-medium.webp"
+  "img_url": "https://media.creativeboom.com/5138f56e-212a-428a-b1f1-da04ba5a1d1f/conversions/63e3f7b09f0289f65e3b30455bf976855685abb6-medium.webp",
+  "img": "assets/2026-10-29-5.webp",
+  "img_src": "https://media.creativeboom.com/5138f56e-212a-428a-b1f1-da04ba5a1d1f/conversions/63e3f7b09f0289f65e3b30455bf976855685abb6-medium.webp"
  },
  {
   "tag": "Realtime",
@@ -68,7 +78,9 @@
   "ko": "우쿠푸마르의 무료 블렌더 페인팅 애드온 우큐페인트 3.0은 옆 패널을 숨기고 레이어 목록을 앞에 둔다. 베이스 레이어가 자동으로 만들어져 모든 채널의 기본값을 담는다. 높이와 벡터 변위는 노멀 채널을 떠나 각자 채널이 된다. 미리보기 하나면 채널, 레이어, 알파, 마스크, 커스텀 데이터를 본다. 조정 레이어는 아래 레이어를 받아 모디파이어를 돌린다. 새 데칼은 구와 원기둥이다. 블렌더 2.76부터 5.3까지 돈다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/free-blender-texture-painting-add-on-ucupaint-3-0-is-now-available",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50807/images/6ae1c87d2b7c4/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50807/images/6ae1c87d2b7c4/contain_1200x630.jpg",
+  "img": "assets/2026-10-29-6.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50807/images/6ae1c87d2b7c4/contain_1200x630.jpg"
  },
  {
   "tag": "Interaction",
@@ -79,7 +91,9 @@
   "ko": "아마존의 에코 쇼 16은 16인치 디스플레이다. 499.99달러이고 벽걸이가 들어 있다. 나노매트 유리는 569.99달러다. 스크린 스타일은 홈 네 개다. 가족 일정, 스마트홈 대시보드, 알렉사 위젯, 사진 프레임. 계속 켜 두거나 다가가면 깨어난다. 즐겨찾기 막대가 서드파티 스킬을 포함한 앱을 바꾼다. 대답은 고정할 수 있는 카드로 접힌다. 전체 화면 광고는 추천 면에만 있고, 그 면은 끌 수 있다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1020286/amazon-echo-show-16-hands-on-price-screen-styles",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268832_Amazon_Echo_Fall_2026_OGrove_0186.jpg?quality=90&strip=all&crop=0%2C10.805700988947%2C100%2C78.388598022106&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268832_Amazon_Echo_Fall_2026_OGrove_0186.jpg?quality=90&strip=all&crop=0%2C10.805700988947%2C100%2C78.388598022106&w=1200",
+  "img": "assets/2026-10-29-7.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268832_Amazon_Echo_Fall_2026_OGrove_0186.jpg?quality=90&strip=all&crop=0%2C10.805700988947%2C100%2C78.388598022106&w=1200"
  },
  {
   "tag": "Interaction",
@@ -90,7 +104,9 @@
   "ko": "엑스펜의 매직 프로 13은 12.95인치 LCD다. 3096×2064, 최대 120헤르츠, 유리는 나노 에칭이다. X4 펜은 압력 16384단계와 기울기 60도를 읽는다. 물리 스위치가 손가락 터치를 꺼서, 손바닥을 올려도 그려지지 않는다. 혼자 쓸 때는 안드로이드 16이다. Canvas는 스케치, Shelf는 태그된 참고다. DP-IN USB-C가 같은 유리를 데스크톱용 펜 디스플레이로 바꾼다. 예약은 899.99달러다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/10/27/xppens-magic-pro-13-switches-from-standalone-tablet-to-desktop-pen-display/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/10/xppens-magic-pro-13-switches-from-standalone-tablet-to-desktop-pen-display/xppen-magic-pro-13-01.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/10/xppens-magic-pro-13-switches-from-standalone-tablet-to-desktop-pen-display/xppen-magic-pro-13-01.jpg",
+  "img": "assets/2026-10-29-8.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/10/xppens-magic-pro-13-switches-from-standalone-tablet-to-desktop-pen-display/xppen-magic-pro-13-01.jpg"
  },
  {
   "tag": "Motion",
@@ -102,7 +118,9 @@
   "src": "80 Level",
   "url": "https://80.lv/articles/this-blender-made-animated-horror-short-will-make-you-feel-so-much-in-just-two-minutes",
   "video": "https://www.animationmagazine.net/wordpress/wp-content/uploads/Monitor_BTS_Workflow.mp4",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50815/images/6ae20aeb560de/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50815/images/6ae20aeb560de/contain_1200x630.jpg",
+  "img": "assets/2026-10-29-9.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50815/images/6ae20aeb560de/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -113,7 +131,9 @@
   "ko": "스튜디오 루트시스가 메도라의 시어도어 루스벨트 대통령 도서관 사인을 맡았다. 배드랜즈의 스뇌헤타 건물이다. 커머셜 타입과 함께 트레일 표지부터 파일런까지 쓸 서체를 잘랐다. 외부는 무거운 목재와 어두운 금속 글자고, 외피와 함께 풍화되도록 했다. 실내 사인은 목재 벽에 파낸 블록 안에 평평하게 앉고, 기부 벽은 클래딩의 일부다. 그래픽은 붙인 판이 아니다. 글자가 나무 안에 있다.",
   "src": "designboom",
   "url": "https://www.designboom.com/architecture/studio-loutsis-timber-wayfinding-snohetta-theodore-roosevelt-library/",
-  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/studio-loutsis-timber-wayfinding-theodore-roosevelt-library-designboom-1800-2.jpg"
+  "img_url": "https://static.designboom.com/wp-content/uploads/2026/10/studio-loutsis-timber-wayfinding-theodore-roosevelt-library-designboom-1800-2.jpg",
+  "img": "assets/2026-10-29-10.jpg",
+  "img_src": "https://static.designboom.com/wp-content/uploads/2026/10/studio-loutsis-timber-wayfinding-theodore-roosevelt-library-designboom-1800-2.jpg"
  },
  {
   "tag": "Micromobility",
@@ -123,7 +143,9 @@
   "zh": "CPMC的N6是一块给摩托车用的屏幕，无线CarPlay和Android Auto，手机留在口袋里。面板6英寸，1440×720，800尼特，亮度跟着光线走，外壳IP67。地图、Waze和Spotify在这块玻璃上跑。支架按一颗键就松开：球头适合20到26毫米的车把，或者一块板适合12毫米的导航横杆。还有7英寸的N7。6英寸起价135英镑。屏幕是你带走的那一块。",
   "ko": "CPMC의 N6는 무선 카플레이와 안드로이드 오토를 위한 모터사이클 화면이다. 전화는 주머니에 남는다. 패널은 6인치, 1440×720, 800니트이고 밝기는 빛을 따르며 껍질은 IP67이다. 지도, 웨이즈, 스포티파이가 그 유리에서 돈다. 마운트는 버튼 하나로 풀린다. 20에서 26밀리미터 바용 볼 헤드, 또는 12밀리미터 내비 크로스바용 플레이트. 7인치 N7도 있다. 6인치는 135파운드부터다.",
   "src": "eMotorcyclist",
-  "url": "https://emotorcyclist.co.uk/cpmc-n6-brings-wireless-apple-carplay-and-android-auto-to-motorcycles/"
+  "url": "https://emotorcyclist.co.uk/cpmc-n6-brings-wireless-apple-carplay-and-android-auto-to-motorcycles/",
+  "img": "assets/2026-10-29-11.webp",
+  "img_src": "https://emotorcyclist.co.uk/wp-content/uploads/2026/10/CPMC-N6-Brings-Wireless-Apple-CarPlay-and-Android-Auto-to-Motorcycles-04.webp"
  },
  {
   "tag": "Micromobility",
@@ -134,7 +156,9 @@
   "ko": "렉트릭 XP 라이트3는 접이식 전기자전거 바에 3.5인치 풀컬러 디스플레이를 둔다. 최신 모델과 같은 얼굴이고, 뒤쪽에는 일체형 방향지시등이 있다. 페달 어시스트 다섯 단계는 라이더가 정한다. 싱글 스피드라 변속기가 바를 차지하지 않아 트위스트 스로틀이 앉는다. 모터는 연속 300와트, 피크는 800와트를 넘는다. 차체는 49파운드다. 게이츠 벨트는 체인보다 100달러 비싸다.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/10/27/lectric-launches-xp-lite3-e-bike-the-new-best-low-cost-model-in-the-us/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/10/XP-lite3-head.jpg?quality=82&strip=all&resize=1200,628"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/10/XP-lite3-head.jpg?quality=82&strip=all&resize=1200,628",
+  "img": "assets/2026-10-29-12.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/10/XP-lite3-head.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "AI",
@@ -144,7 +168,9 @@
   "zh": "Runway的App Studio记在10月26日。用一句白话描述创意应用，它用Runway的模型、你的品牌和文件做出来，然后托管。不用先导出原型再找服务器。日志旁边是27日的Runway Ads：读表现最好的广告，按每个版位生成符合品牌的变体，批准后才发布。设计师会打开的是App Studio：简报是一句话，文件已经在里面。",
   "ko": "런웨이의 앱 스튜디오는 10월 26일자다. 필요한 크리에이티브 앱을 평문으로 적으면, 런웨이 모델과 브랜드, 파일로 만든 뒤 호스팅한다. 프로토타입을 내보내 서버를 찾을 필요가 없다. 옆에는 27일의 런웨이 애즈가 있다. 성과가 좋은 광고를 읽고 지면마다 브랜드에 맞는 변형을 만들며, 승인한 뒤에 올린다. 디자이너가 열 것은 앱 스튜디오다.",
   "src": "Runway",
-  "url": "https://runway.com/changelog"
+  "url": "https://runway.com/changelog",
+  "img": "assets/2026-10-29-13.png",
+  "img_src": "https://runway.com/opengraph-image.png?opengraph-image.1oltnwfb7pfkb.png"
  },
  {
   "tag": "Industrial",
@@ -155,7 +181,9 @@
   "ko": "노먼 포스터가 르본드와 만든 첫 시계는 러그를 없앤다. 스트랩이 케이스를 이어, 둘은 한 줄이다. 케이스는 38.5밀리미터, 스트랩이 시작되는 곳은 40, 두께 10이고, 5등급 티타늄의 내추럴 또는 매트 블랙 DLC다. 양방향 12시간 베젤로 시침이 두 번째 시간대를 읽는다. 바늘은 슈퍼루미노바다. 사파이어 백의 로터는 파랑 또는 빨강이고 구멍 다섯 개가 깎여 있다. 무브먼트는 ETA 2892-A2, 약 50시간이다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/norman-foster-first-watch-lebond-good-design-scale-interview/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/norman-foster-first-watch-lebond-good-design-scale-interview-designboom-10.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/norman-foster-first-watch-lebond-good-design-scale-interview-designboom-10.jpg",
+  "img": "assets/2026-10-29-14.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/norman-foster-first-watch-lebond-good-design-scale-interview-designboom-10.jpg"
  },
  {
   "tag": "Design",
@@ -166,7 +194,9 @@
   "ko": "앨런 훅의 에퀸 아이즈는 쓰는 흰 말 머리다. 180도 카메라 두 대가 눈이 있을 자리에 있고, 앞에서 조금 겹쳐 시야는 약 350도다. 자신의 옆구리가 주변시에 들어온다. 그림은 파랑과 노랑 쪽으로 밀려, 말의 이색 시각을 대신한다. 그는 2017년 웹캠과 오큘러스 리프트로 시작했다. 골판지 주둥이가 서는 방식을 바꿨다. 머리를 빼면 뭔가 빠졌다고 했다. 마스크가 인터페이스다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/horse-shaped-headset-equine-eyes-interspecies-alan-hook/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/alan-hook-equine-eyes-interspecies-design-designboom-01.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/alan-hook-equine-eyes-interspecies-design-designboom-01.jpg",
+  "img": "assets/2026-10-29-15.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/alan-hook-equine-eyes-interspecies-design-designboom-01.jpg"
  },
  {
   "tag": "Interaction",
@@ -177,6 +207,8 @@
   "ko": "디자인 댓 매터스와 MTTS의 오터는 3.6킬로그램 신생아 보온기다. 폴리카보네이트 요람이 가열면이고, 따로 된 매트리스는 없다. 터치스크린은 온도, 가열 여부, 남은 배터리를 보여 준다. 경보는 센서, 발열체, 전원을 덮는다. 플러그가 빠지면 배터리가 이어받고, 15도에서 두 시간을 넘긴다. 다섯 대가 2025년 5월부터 잠비아 카피리 병원에서 쓰인다. 화면이 상태다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/otter-portable-newborn-warmer-hospitals-unreliable-power-design-matters-mtts-2026-seoul-design-award/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/otter-portable-newborn-warmer-hospitals-unreliable-power-design-matters-mtts-2026-seoul-design-award-designboom-03.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/10/otter-portable-newborn-warmer-hospitals-unreliable-power-design-matters-mtts-2026-seoul-design-award-designboom-03.jpg",
+  "img": "assets/2026-10-29-16.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/10/otter-portable-newborn-warmer-hospitals-unreliable-power-design-matters-mtts-2026-seoul-design-award-designboom-03.jpg"
  }
 ]
