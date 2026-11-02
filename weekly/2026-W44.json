@@ -1,0 +1,95 @@
+{
+ "week": "2026-W44",
+ "from": "2026-10-26",
+ "to": "2026-10-30",
+ "title": {
+  "en": "The Roadster stays red, the MacBook lights grow, and AUO stays see-through",
+  "zh": "Roadster保持红色，MacBook的窗口灯会变大，AUO仍然能看穿",
+  "ko": "로드스터는 빨강으로 남고, 맥북의 창 불은 커지며, AUO는 비쳐 보인다"
+ },
+ "intro": {
+  "en": "Monday's lead was the Roadster interface the previous Friday had missed: red on black, a wireframe of the car, and a bar reading Thruster 5,500 PSI. It ties at one heart with four others: AUO's 12.4-inch panel you can see through, the X-47's 7-inch Android dash, the MacBook whose window lights grow under a finger, and Alexa's house drawn in 3D. No story was marked not for me. Friday 30 October has no file, so the week is four editions. The picture that repeats is a screen that is the object, whether that object is the car, the house, the palm, or the glass itself.",
+  "zh": "周一的头条是上周五没赶上的Roadster界面：红底黑面，车的线框，状态栏写着Thruster 5,500 PSI。它和另外四条并列一颗红心：能看穿的AUO 12.4英寸屏、X-47的7英寸Android仪表、手指点下去窗口灯会变大的MacBook，以及画成三维的Alexa房子。没有故事被标成不想看。10月30日周五没有文件，所以这一周是四期。反复出现的画面，是屏幕本身就是那个物件：车、房子、手掌，或那块玻璃。",
+  "ko": "월요일의 리드는 지난 금요일이 놓친 로드스터 인터페이스였다. 검정 위의 빨강, 차의 와이어프레임, Thruster 5,500 PSI가 적힌 막대. 하트 하나에서 네 건과 동률이다. 비쳐 보이는 AUO 12.4인치, X-47의 7인치 안드로이드 대시, 손가락에 창 불이 커지는 맥북, 3D로 그린 알렉사의 집. 마음에 안 든다고 표시된 이야기는 없다. 10월 30일 금요일 파일이 없어 이번 주는 네 판이다. 반복되는 그림은 화면이 곧 사물인 경우다. 차, 집, 손바닥, 또는 유리 자체."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Three cabins, and one heart. AUO's 12.4-inch transparent Micro LED is the one the team marked, a panel you look through rather than another slab of glass. TruLife's split optical HUD keeps a 20-degree field and puts a vertical cylinder in the projector so the rainbow drops out. The Seal 07 moves its crystal knob off the console and onto a column stalk. The heart went to the display that disappears into the dash. The stalk is a real control, and it stayed lower.",
+   "zh": "三个座舱，一颗红心。团队标的是AUO的12.4英寸透明Micro LED，一块可以看穿的屏，而不是又一块玻璃板。TruLife的分体光学HUD保持20度视场，投影机里用一根竖直圆柱把彩虹去掉。海豹07把水晶旋钮从中控挪到转向柱拨杆上。红心给了会消失进仪表台的那块屏。拨杆是真的控制，它留在更下面。",
+   "ko": "콕핏 세 건, 하트 하나. 팀이 표시한 것은 AUO의 12.4인치 투명 마이크로 LED다. 또 한 장의 유리가 아니라 비쳐 보는 패널이다. 트루라이프의 분할 광학 HUD는 시야 20도를 유지하고, 프로젝터 안의 수직 원통으로 무지개를 뺀다. 씰 07은 크리스털 노브를 콘솔에서 칼럼 스톡으로 옮긴다. 하트는 대시 안으로 사라지는 디스플레이에 갔다. 스톡은 실제 조작이고, 아래쪽에 남았다.",
+   "items": ["2026-10-28-12", "2026-10-28-11", "2026-10-26-10"]
+  },
+  {
+   "tag": "Interaction",
+   "en": "Ten controls, three hearts. The Roadster UI puts the car in the middle as a red wireframe, with Track Mode and a thruster reading of 5,500 PSI. The MacBook grows its window lights under a finger, and volume slides out of the Dynamic Island. Echo Show 16 offers four home faces, from a family board to a photo frame. Around those: a washable 96-by-54 sleeve, Even G2's tortoiseshell lens HUD, a Super Mouse screen under the palm, Mazda's Gemini keeping eyes on the road, and Otter's warmer with temperature on one glance.",
+   "zh": "十条控制，三颗红心。Roadster界面把车放在中间，红色线框，Track Mode，推进器读数5,500 PSI。MacBook在手指下把窗口灯变大，音量从Dynamic Island里滑出来。Echo Show 16有四张主页，从家庭看板到相框。周围还有：可水洗的96乘54袖套、Even G2的玳瑁镜片HUD、掌下有屏幕的Super Mouse、视线仍在路上的马自达Gemini，以及一眼能看到温度的Otter保温器。",
+   "ko": "조작 열 건, 하트 셋. 로드스터 UI는 차를 가운데 빨간 와이어프레임으로 두고, 트랙 모드와 5,500 PSI 스러스터를 보여 준다. 맥북은 손가락 아래에서 창 불을 키우고, 음량은 다이내믹 아일랜드에서 나온다. 에코 쇼 16은 가족 보드부터 사진 프레임까지 홈 네 개다. 그 주변에는 세탁되는 96×54 소매, 에븐 G2의 호박 렌즈 HUD, 손바닥 아래 화면인 슈퍼 마우스, 시선을 도로에 두는 마즈다 제미나이, 한눈에 온도가 보이는 오터가 있다.",
+   "items": ["2026-10-26-1", "2026-10-29-1", "2026-10-29-7", "2026-10-27-1", "2026-10-27-5", "2026-10-28-1", "2026-10-27-13", "2026-10-29-16"]
+  },
+  {
+   "tag": "AI",
+   "en": "Ten tool stories, one heart. Alexa's Home Map drops the flat plan and draws the house in 3D from the address, then lets a lamp glow in the color it is set to. Weave's MCP runs Seedance, Kling, or Nano Banana from chat and spends Weave credits. Clate writes QML from a canvas. ProtoPie's MCP lets a Logitech G29 drive a cluster, capped in reverse at 20 km/h. Figma gave Duo and iPhone 18 their frames, and shaders now keep every version. Runway's App Studio hosts the app the sentence described.",
+   "zh": "十条工具，一颗红心。Alexa的Home Map丢掉平面图，按地址把房子画成三维，开着的灯按设定的颜色发光。Weave的MCP在对话里跑Seedance、Kling或Nano Banana，花的是Weave额度。Clate从画布写出QML。ProtoPie的MCP让罗技G29去驱动仪表，倒车封顶20公里每小时。Figma给Duo和iPhone 18补了画框，着色器现在保留每一个版本。Runway的App Studio把那句话描述的应用直接托管。",
+   "ko": "도구 열 건, 하트 하나. 알렉사 홈 맵은 평면도를 버리고 주소로 집을 3D로 그리며, 켜진 조명은 설정된 색으로 빛난다. 위브 MCP는 채팅에서 시댄스, 클링, 나노 바나나를 돌리고 위브 크레딧을 쓴다. 클레이트는 캔버스에서 QML을 쓴다. 프로토파이 MCP는 로지텍 G29가 클러스터를 움직이게 하고, 후진은 시속 20킬로미터에서 막는다. 피그마는 듀오와 아이폰 18에 프레임을 줬고, 셰이더는 모든 버전을 남긴다. 런웨이 앱 스튜디오는 문장이 묘사한 앱을 호스팅한다.",
+   "items": ["2026-10-29-4", "2026-10-27-4", "2026-10-28-3", "2026-10-27-8", "2026-10-26-16", "2026-10-28-7", "2026-10-29-13", "2026-10-26-5"]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "Five rider pieces, one heart. Ultraviolette's X-47 puts a 7-inch Android dash in an IP67 shell, and that is the story the team marked. CPMC's N6 is a 6-inch wireless CarPlay screen that leaves the bars on a ball head. Lectric's XP Lite3 puts a 3.5-inch color face on a folding bike. MOTO-HUB 0.1.53 offers 45 community layouts on a 1280 by 720 TFT, with the phone still on the bars. MapQuest draws surveillance cameras as glancing eyes. The heart went to the dash that is part of the bike.",
+   "zh": "五条骑行，一颗红心。Ultraviolette的X-47把7英寸Android仪表放进IP67外壳，这是团队标出的那条。CPMC的N6是6英寸无线CarPlay屏，球头一按就离开车把。Lectric的XP Lite3在折叠车上放一块3.5英寸彩色脸。MOTO-HUB 0.1.53在1280乘720的TFT上提供45套社区布局，手机仍在车把上。MapQuest把监控摄像头画成斜视的眼睛。红心给了属于那辆车的仪表。",
+   "ko": "라이더 다섯 건, 하트 하나. 울트라바이올렛의 X-47은 7인치 안드로이드 대시를 IP67 껍질에 넣었고, 팀이 표시한 것이 이 이야기다. CPMC의 N6는 6인치 무선 카플레이 화면이고, 볼 헤드에서 바를 떠난다. 렉트릭 XP 라이트3는 접이식 자전거에 3.5인치 컬러 얼굴을 둔다. 모토허브 0.1.53은 1280×720 TFT에 커뮤니티 레이아웃 45개를 두고, 휴대폰은 여전히 바 위에 있다. 맵퀘스트는 감시 카메라를 곁눈질하는 눈으로 그린다. 하트는 차의 일부인 대시에 갔다.",
+   "items": ["2026-10-28-14", "2026-10-29-11", "2026-10-29-12", "2026-10-27-14", "2026-10-26-14"]
+  },
+  {
+   "tag": "Visual",
+   "en": "Seventeen graphic stories, and none of them took a heart. Temper's cider label is 60 frames of a Wimbledon rally, the ball punched out so the drink is the ball. Fjord turns the o into a degree mark. Purple Garden grows its serifs and keeps six warm purples. IDHR sets Human Rights on two lines so the lockup reads as an equals sign. Artphabet makes Warhol the letter A. Bar Rêve's wordmark floats up like sleep. The library sign is cut into the timber. White & Case cuts through the W and drops the navy.",
+   "zh": "十七条图形，没有一颗红心。Temper的苹果酒标签是温网一分的60帧，球被冲掉，所以饮料自己是那颗球。Fjord把o做成度数符号。Purple Garden把衬线养长，留下六种暖紫。IDHR把Human Rights排成两行，组合读成一个等号。Artphabet让沃霍尔成为字母A。Bar Rêve的字标像睡眠一样向上浮。图书馆的字刻进木头。White & Case切开W，拿掉海军蓝。",
+   "ko": "그래픽 열일곱 건, 하트는 없다. 템퍼의 사이다 라벨은 윔블던 랠리 60프레임이고, 공은 뚫려 있어 음료가 공이 된다. 피오르는 o를 도 기호로 만든다. 퍼플 가든은 세리프를 키우고 따뜻한 보라 여섯을 남긴다. IDHR은 Human Rights를 두 줄로 두어 로크업이 등호로 읽힌다. 아트파벳은 워홀을 알파벳 A로 만든다. 바 레브의 워드마크는 잠처럼 떠오른다. 도서관 사인은 목재에 새겨진다. 화이트 앤 케이스는 W를 가르고 네이비를 뺀다.",
+   "items": ["2026-10-26-2", "2026-10-27-3", "2026-10-29-3", "2026-10-29-5", "2026-10-28-4", "2026-10-28-5", "2026-10-29-10", "2026-10-28-8"]
+  },
+  {
+   "tag": "Motion",
+   "en": "Eight films, each with a play link, none hearted. Optical Arts drops Dyson's mops like dominoes. EHHO unfolds a timber barn into seats. K/DA's Firestarter cuts the runway into long takes. Terry Fox's road opens into a world. Etnia and Felipe Pantone put the frames through a glitch. Hyperslide draws heat as a red glow on a sand-colored shoe. Together lets a balloon stand in for the mind. Monitor draws Grease Pencil people over a Blender house. The week watched the films and did not heart one.",
+   "zh": "八部片子，每部都有播放链接，没有红心。Optical Arts让戴森的拖把头像多米诺一样倒下。EHHO把一座木仓展开成座位。K/DA的Firestarter把秀场切成长镜头。Terry Fox的路打开成一个世界。Etnia和Felipe Pantone让镜框穿过故障。Hyperslide把热量画成沙色鞋上的红光。Together用一只气球代替心智。Monitor用Grease Pencil把人画在Blender的房子上。这一周看了这些片子，没有给任何一部红心。",
+   "ko": "필름 여덟 편, 모두 재생 링크가 있고 하트는 없다. 옵티컬 아츠는 다이슨 걸레를 도미노처럼 쓰러뜨린다. EHHO는 목재 헛간을 펼쳐 좌석으로 만든다. K/DA 파이어스타터는 런웨이를 롱 테이크로 자른다. 테리 폭스의 길은 세계로 열린다. 에트니아와 펠리페 판토네는 프레임을 글리치에 통과시킨다. 하이퍼스라이드는 열을 모래색 신발 위의 붉은 빛으로 그린다. 투게더는 풍선이 마음을 대신한다. 모니터는 블렌더 집 위에 그리스 펜슬로 사람을 그린다. 이번 주는 필름을 보고 어느 것에도 하트를 주지 않았다.",
+   "items": ["2026-10-26-3", "2026-10-28-10", "2026-10-27-2", "2026-10-27-7", "2026-10-28-2", "2026-10-29-2", "2026-10-26-7", "2026-10-29-9"]
+  },
+  {
+   "tag": "Realtime",
+   "en": "Five real-time pieces, one heart. Ucupaint 3.0 gives height and vector displacement their own channels, so they leave the normal, and that is the story the team marked. A Houdini cabin holds water on one plane, then lets it go bioluminescent. HézFX sets red muscle against Ziva blue. Twilight draws a pony as a billboard sprite, flat and dimensional at once. The garbage-man metroidvania is painted in Rebelle, street by street, then pulled apart into cubes. The heart went to the brush that finally separates height from the normal map.",
+   "zh": "五条实时，一颗红心。Ucupaint 3.0让高度和矢量置换各自有通道，从而离开法线，这是团队标出的那条。一套Houdini船舱把水放在一个平面上，再让它发出生物光。HézFX用红色肌肉对上Ziva的蓝。Twilight把小马画成广告牌精灵，既平又有体积。垃圾工类银河战士用Rebelle一条街一条街地画，再拆成方块。红心给了终于把高度从法线贴图里分开的那支笔。",
+   "ko": "리얼타임 다섯 건, 하트 하나. 우큐페인트 3.0은 높이와 벡터 변위에 각자 채널을 줘 노멀에서 떠나게 하고, 팀이 표시한 것이 이 이야기다. 후디니 선실은 물을 한 평면에 담았다가 생물발광으로 보낸다. 헤즈FX는 붉은 근육을 지바 블루에 맞춘다. 트와일라이트는 포니를 빌보드 스프라이트로 그려, 평평하면서도 입체다. 쓰레기 수거원 메트로이드바니아는 레벨에서 거리마다 그려진 뒤 큐브로 분해된다. 하트는 높이를 노멀 맵에서 마침내 분리한 붓에 갔다.",
+   "items": ["2026-10-29-6", "2026-10-26-4", "2026-10-26-12", "2026-10-28-6", "2026-10-27-6"]
+  },
+  {
+   "tag": "Design",
+   "en": "Two design stories, no hearts. Ryue Nishizawa sets a vivid orange peak against a turquoise landfill in Setouchi, a color pair used as the whole site rather than a finish sample. Alan Hook's Equine Eyes is a horse head you wear: two 180-degree cameras overlap at the front for about 350 degrees, and the picture shifts toward blue and yellow, a stand-in for a horse's two-color vision. One is a landscape decision. The other is a mask that changes what the eyes report.",
+   "zh": "两条设计，没有红心。西泽立卫在濑户内用鲜明的橙色山峰对着一块青绿的填埋场，这一对颜色就是整个场地，而不是一块色板。Alan Hook的Equine Eyes是一颗戴上的马头：两台180度摄像头在前方略有重叠，视野大约350度，画面被推向蓝和黄，用来代替马的两色视觉。一个是景观的决定。另一个是改变眼睛所报告内容的面具。",
+   "ko": "디자인 두 건, 하트 없음. 니시자와 류에는 세토우치에서 선명한 주황 봉우리를 청록 매립지에 맞붙인다. 색 한 쌍이 현장 전체이고, 마감 샘플이 아니다. 앨런 훅의 에퀸 아이즈는 쓰는 말 머리다. 180도 카메라 두 대가 앞에서 조금 겹쳐 시야는 약 350도이고, 그림은 파랑과 노랑으로 밀려 말의 이색 시각을 대신한다. 하나는 경관의 결정이다. 다른 하나는 눈이 보고하는 것을 바꾸는 마스크다.",
+   "items": ["2026-10-27-16", "2026-10-29-15"]
+  },
+  {
+   "tag": "Industrial",
+   "en": "Four objects, no hearts. Hope leaks light from a split in the ceramic. Flora's chess pieces can be named by pinch, with weighted bases in white oak and walnut. Lenovo's Xiaoxin Color Ink switches one LCD between full color and black and white. Norman Foster's first watch, with LEBOND, drops the lugs so the strap continues the case: 38.5 millimetres, Grade 5 titanium, a bezel that lets the hour hand read a second time zone. None of the four is a screen. The closest to an interface is the strap that is also the case.",
+   "zh": "四件物品，没有红心。Hope让光从陶瓷的裂缝里漏出来。Flora的棋子可以用捏来辨认，底座加重，材料是白橡和胡桃。联想小新彩墨让一块LCD在全彩和黑白之间切换。诺曼·福斯特和LEBOND的第一块表拿掉表耳，表带接着表壳：38.5毫米，五级钛，表圈让时针读出第二个时区。四件都不是屏幕。最接近界面的，是那条同时是表壳的表带。",
+   "ko": "사물 네 건, 하트 없음. 호프는 세라믹의 갈라진 틈으로 빛을 흘린다. 플로라의 체스 말은 집어 이름을 알 수 있고, 바닥은 화이트 오크와 월넛으로 무겁다. 레노버 샤오신 컬러 잉크는 LCD 하나를 풀컬러와 흑백 사이에서 바꾼다. 노먼 포스터가 르본드와 만든 첫 시계는 러그를 없애 스트랩이 케이스를 잇는다. 38.5밀리미터, 5등급 티타늄, 시침이 두 번째 시간대를 읽는 베젤. 넷 다 화면이 아니다. 인터페이스에 가장 가까운 것은 케이스이기도 한 스트랩이다.",
+   "items": ["2026-10-26-15", "2026-10-27-15", "2026-10-28-15", "2026-10-29-14"]
+  }
+ ],
+ "top": [
+  {"id": "2026-10-26-1", "n": 1},
+  {"id": "2026-10-28-12", "n": 1},
+  {"id": "2026-10-28-14", "n": 1},
+  {"id": "2026-10-29-1", "n": 1},
+  {"id": "2026-10-29-4", "n": 1}
+ ],
+ "feedback": {
+  "skipped": [],
+  "actions": {
+   "en": "Seven hearts and no skips landed on interfaces: the Roadster wireframe, the MacBook, Echo Show 16, Alexa's 3D house, Ucupaint, AUO's transparent panel, and the X-47 dash, with The Verge taking three, 80 Level one, and Teslarati, AUO, and Ultraviolette also marked. Nothing was skipped, so no kind of story was pushed out. Next week is HMI 5, Micromobility 1, AI 2, Visual 6, Realtime 1, Product 1, because \"HMI +1 (best net rate +0.08 per story: 5 hearts, 0 skips)\" and \"Realtime -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays).\" Favour 80 Level and The Verge, and no source is deprioritised.",
+   "zh": "七颗红心、零次“不想看”都落在界面上：Roadster线框、MacBook、Echo Show 16、Alexa的三维房子、Ucupaint、AUO的透明屏和X-47仪表，其中The Verge三颗、80 Level一颗，Teslarati、AUO和Ultraviolette也被标了。没有跳过，所以没有哪一种故事被推出去。下周是HMI 5、微出行 1、AI 2、视觉 6、实时 1、产品 1，因为“HMI +1 (best net rate +0.08 per story: 5 hearts, 0 skips)”以及“Realtime -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays)”。优先80 Level和The Verge，没有来源被降权。",
+   "ko": "하트 일곱과 스킵 없음은 인터페이스에 갔다. 로드스터 와이어프레임, 맥북, 에코 쇼 16, 알렉사의 3D 집, 우큐페인트, AUO 투명 패널, X-47 대시이고, 더 버지가 셋, 80 레벨이 하나, 테슬라라티와 AUO, 울트라바이올렛도 표시됐다. 스킵이 없어 밀려난 종류의 이야기는 없다. 다음 주는 HMI 5, 마이크로모빌리티 1, AI 2, 비주얼 6, 리얼타임 1, 제품 1이다. 이유는 “HMI +1 (best net rate +0.08 per story: 5 hearts, 0 skips)”와 “Realtime -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays)”다. 80 레벨과 더 버지를 우선하고, 후순위로 두는 출처는 없다."
+  }
+ }
+}
