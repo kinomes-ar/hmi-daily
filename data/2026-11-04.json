@@ -9,7 +9,9 @@
   "ko": "진델핑겐의 2027년 이전 S-Class는 대시보드의 거친 구멍 안에 시제품 프로젝터를 숨긴다. 앞유리의 투명 필름은 홀로그래픽 광학 소자로, 엔지니어 레나 헤스는 아주 작은 거울이라 부른다. 프로젝터의 빛만 되돌리므로 햇빛 속에서도 보이고, 한쪽 좌석에서만 보인다. 동승석 영상은 운전자에게 닿지 않는다. 화면은 아직 낮고 대비가 세며 유리 각도에 꺾인다.",
   "src": "Ars Technica",
   "url": "https://arstechnica.com/cars/2026/11/beyond-screens-mercedes-benzs-new-holographic-heads-up-display/",
-  "img_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/26C0308_008-1152x648.jpg"
+  "img_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/26C0308_008-1152x648.jpg",
+  "img": "assets/2026-11-04-1.jpg",
+  "img_src": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/26C0308_008-1152x648.jpg"
  },
  {
   "tag": "Motion",
@@ -22,7 +24,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/blinkink-gets-fuzzy-at-a-cabin-in-the-woods-for-levis/",
   "video": "https://www.stashmedia.tv/blinkink-gets-fuzzy-at-a-cabin-in-the-woods-for-levis/",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Levis-Lets-Get-Fuzzy-Christmas-ad-by-Blinkink-_-STASH-MAGAZINE7-640x360.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Levis-Lets-Get-Fuzzy-Christmas-ad-by-Blinkink-_-STASH-MAGAZINE7-640x360.jpg",
+  "img": "assets/2026-11-04-2.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/Levis-Lets-Get-Fuzzy-Christmas-ad-by-Blinkink-_-STASH-MAGAZINE7-640x360.jpg"
  },
  {
   "tag": "Interaction",
@@ -33,7 +37,9 @@
   "ko": "카이엔 일렉트릭의 화면 언어인 포르쉐 디지털 인터랙션이 새로 생산되는 911, 타이칸, 파나메라, 카이엔으로 들어온다. 한가운데는 돌릴 수 있는 3D 자동차이고, 그 차의 실제 외장 색이다. 모델을 누르면 기능이 열린다. 다섯 테마와 다시 배치하는 위젯이 주변을 채운다. 내비게이션 플러스는 3D 지도를 그린다. 대형 언어 모델 위의 보이스 파일럿은 이어지는 질문을 받는다.",
   "src": "Porsche Newsroom",
   "url": "https://newsroom.porsche.com/en/2026/products/porsche-new-infotainment-generation-mib4-43640.html",
-  "img_url": "https://porschepictures.flowcenter.de/pmdb/thumbnail.cgi?id=341281&w=700&h=525&crop=0&public=1&cs=fee6da580a738d52"
+  "img_url": "https://porschepictures.flowcenter.de/pmdb/thumbnail.cgi?id=341281&w=700&h=525&crop=0&public=1&cs=fee6da580a738d52",
+  "img": "assets/2026-11-04-3.jpg",
+  "img_src": "https://porschepictures.flowcenter.de/pmdb/thumbnail.cgi?id=341281&w=700&h=525&crop=0&public=1&cs=fee6da580a738d52"
  },
  {
   "tag": "Visual",
@@ -45,7 +51,9 @@
   "ko": "서울의 모호는 모호하다, 애매하다는 말에서 이름을 가져왔다. 양식으로 들어온 꿈을 짧은 영상으로 바꾼다. 인어는 비늘 한 장을 건넨 뒤 보석을 울어 낸다. Dream of a Little Seahorse는 진주빛 분홍과 노랑의 보석 해마다. 수정에서 푸른 하늘로 오르고, 더 작은 한 마리는 날카로운 이빨 사이에 뜬다. 유리와 튤, 스팽글을 꿈에 맞을 때까지 고른다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/inspired-by-strangers-dreams-moho-builds-glittering-slightly-unsettling-worlds/",
-  "img_url": "https://media.creativeboom.com/09b551fc-63eb-4540-a421-1538c27ca994/conversions/6fbbdcfdd970748d2b5a1c808a6f7a06739da8f5-medium.webp"
+  "img_url": "https://media.creativeboom.com/09b551fc-63eb-4540-a421-1538c27ca994/conversions/6fbbdcfdd970748d2b5a1c808a6f7a06739da8f5-medium.webp",
+  "img": "assets/2026-11-04-4.webp",
+  "img_src": "https://media.creativeboom.com/09b551fc-63eb-4540-a421-1538c27ca994/conversions/6fbbdcfdd970748d2b5a1c808a6f7a06739da8f5-medium.webp"
  },
  {
   "tag": "AI",
@@ -56,7 +64,9 @@
   "ko": "스파세알의 코지블랭킷 프로는 커진 코지블랭킷이 아니다. 형식이 다른 윈도우와 맥OS 앱이다. 모델은 하이폴리와 로우폴리를 보고 쿼드, 폴, 다시 돌린 엣지 루프를 제안한다. 솔기와 UV는 뷰포트에서 고치고, 수천 아일랜드는 GPU로 패킹한다. 버텍스 컬러, 노멀, 앰비언트 오클루전을 굽고 UDIM도 된다. 모델은 기기 안에서 오프라인으로 돈다. 저장과 익스포트에 라이선스가 필요하다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/sparseal-releases-ai-assisted-retopology-app-for-pc",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50888/images/6aea13a2ccdc1/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50888/images/6aea13a2ccdc1/contain_1200x630.jpg",
+  "img": "assets/2026-11-04-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50888/images/6aea13a2ccdc1/contain_1200x630.jpg"
  },
  {
   "tag": "Realtime",
@@ -67,7 +77,9 @@
   "ko": "본머스에서 게임 아트를 공부하는 베노 라이스트릭은 수채로 텍스처를 그린다. 빠르고 이미 양식화되어 있어서다. 스캔은 크리타로 간다. 레벨을 맞춘 뒤 클론 스탬프로 타일을 만들거나 아틀라스로 모은다. 모델링을 먼저 하므로 비뚤어진 창은 비뚤게 그린다. 노멀 맵은 쓰지 않고, 모델링한 벽돌이 벽을 설득한다. 언리얼의 낮은 태양과 얕은 심도가 해안 마을을 틸트시프트 모형으로 만든다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/how-to-combine-watercolor-painting-with-3d-texturing",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50887/images/6aea14febdb34/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50887/images/6aea14febdb34/contain_1200x630.jpg",
+  "img": "assets/2026-11-04-6.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50887/images/6aea14febdb34/contain_1200x630.jpg"
  },
  {
   "tag": "Motion",
@@ -78,7 +90,9 @@
   "ko": "메리인 호스는 다운 더 래빗 홀의 아트 디렉터이고, 매년 하나의 생각으로 이 네덜란드 페스티벌의 아이덴티티를 그린다. 2026년에는 식물이 핀 뒤 꽃이 시들지 않는다. 줄기에서 떠나 동물이 된다. 스틸과 모션은 같은 그림을 쓴다. 그는 약한 것이 회복력을 얻고, 생각이 씨앗처럼 이동한다고 말한다. 연출과 애니메이션은 그의 몫이다. 브랜딩은 이번 여름 현장에 이미 있었다. STASH는 11월 2일 릴을 올렸다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
-  "video": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/"
+  "video": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
+  "img": "assets/2026-11-04-7.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE4.jpg"
  },
  {
   "tag": "Micromobility",
@@ -90,7 +104,9 @@
   "ko": "이지스 라이더 비전은 카본 넥스 X.WST3다. 바이저 뒤의 자석식 AR 옵틱스가 눈마다 1080p를 그린다. 모듈은 75그램이고 배터리는 없다. 턱 카메라가 모터사이클을 보고 헬멧 센서가 고개 돌림을 읽어, 화살표는 바이크에 고정됐다가 고개를 돌리면 비킨다. 고정된 휴대폰이나 프로박스가 움직임을 준다. 설정은 10분 주행과 두 시간의 처리다. 어두우면 스태틱 모드가 그래픽을 시야에 붙인다. 헬멧과 광학은 1,999달러이고, 달면 ECE 22.06 밖이다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/03/navigation-without-looking-down-aegis-riders-ar-helmet/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/navigation-without-looking-down-aegis-riders-ar-helmet/vision-01.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/navigation-without-looking-down-aegis-riders-ar-helmet/vision-01.jpg",
+  "img": "assets/2026-11-04-8.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/navigation-without-looking-down-aegis-riders-ar-helmet/vision-01.jpg"
  },
  {
   "tag": "Cockpit",
@@ -101,7 +117,9 @@
   "ko": "닛산 시니어 디자인 매니저 히렌 파텔은 피아노 블랙과 스위치 없는 실내가 전시장에서는 단정했지만, 도로에서는 시선을 메뉴로 보냈다고 말한다. 새 로그 하이브리드는 대부분의 조작을 버튼과 스위치에 두고, 피아노 블랙은 없다. 시트 퀼팅은 패딩 재킷에서 왔다. 뒷문은 90도까지 열린다. 문이 열리면 수납이 시작된다. 이 실내는 매일 쓰라고 그렸고, 밀리미터는 아직 다툼 중이다.",
   "src": "Ars Technica",
   "url": "https://arstechnica.com/cars/2026/11/yes-to-storage-no-to-piano-black-how-car-interior-design-is-changing/",
-  "img_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/2027-Nissan-Rogue-Hybrid-05-1152x648.jpg"
+  "img_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/2027-Nissan-Rogue-Hybrid-05-1152x648.jpg",
+  "img": "assets/2026-11-04-9.jpg",
+  "img_src": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/2027-Nissan-Rogue-Hybrid-05-1152x648.jpg"
  },
  {
   "tag": "Interaction",
@@ -113,7 +131,9 @@
   "ko": "숀 웰렌스의 P1 터미널은 1970년대 가상 회사 푸시 / 풀의 CGI 컴퓨터다. 지하 방 하나를 나눠 쓰는 기계다. 아이보리 클램셸의 경첩은 1983년 컬럼비아호에 실린 그리드 컴퍼스에서 왔다. 덮개 안은 청록 글자다. 픽셀 hello 다음 우편과 게시판의 번호 메뉴, 그리고 1972년에 있을 수 없는 카메라 노치가 있다. 파란 트랙볼은 키보드 한가운데라 어느 손이든 닿는다. 관절 팔이 포드를 천장에서 내린다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/03/the-p1-terminal-is-the-severance-computer-id-actually-want-to-use/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/657537/p1_terminal_1.jpeg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/657537/p1_terminal_1.jpeg",
+  "img": "assets/2026-11-04-10.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/657537/p1_terminal_1.jpeg"
  },
  {
   "tag": "Cockpit",
@@ -135,7 +155,9 @@
   "ko": "M2ky의 BGEN 헤어는 블렌더 4.5 이후용이다. BGEN 그룸, 플로, 카드를 대신하고 그 파일도 연다. 가르마는 두피에 그린다. 빗질이 방향을 정한다. 브레이드와 록스 패널, 귀 주변 테이퍼 옆에 다이얼 프리셋이 있다. 가벼운 가이드는 중력에 떨어지고, 전체 가닥은 뷰포트에서 실시간으로 따라간다. 같은 그로워로 깃털, 비늘, 구슬, 풀도 자란다. 2K 헤어 카드 여덟 세트와 칠하는 셰이더는 게임 엔진용이다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/complete-3d-hair-grooming-simulation-add-on-for-blender",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50883/images/6ae9cf6fafa0d/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50883/images/6ae9cf6fafa0d/contain_1200x630.jpg",
+  "img": "assets/2026-11-04-12.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50883/images/6ae9cf6fafa0d/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -146,7 +168,9 @@
   "ko": "2026년 린츠 아르스 일렉트로니카에서 아드리앵 루카는 알리 아이만 라자, 콜라 슈레터, 생물학자 마르코 일리치와 작업했다. 살아 있는 식물이 LED 아래에 있고, 스펙트럼은 코끼리 박각시나방 데일레필라 엘페노르를 향한다. 이 나방은 별빛에서도 색을 가르고 자외선까지 본다. 푸른 빛에서 잎은 갈색이나 거의 검정이 되고 꽃은 앞으로 나온다. 사람은 자외선을 못 봐서 이전 그림은 빨강으로 대신했다. 식물은 움직이지 않는다.",
   "src": "designboom",
   "url": "https://www.designboom.com/art/garden-changes-color-flowers-appear-moths-adrien-lucca-parallel-world/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/11/parallel-world-adrien-lucca-moth-garden-light-pollinator-designboom-03.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/11/parallel-world-adrien-lucca-moth-garden-light-pollinator-designboom-03.jpg",
+  "img": "assets/2026-11-04-13.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/11/parallel-world-adrien-lucca-moth-garden-light-pollinator-designboom-03.jpg"
  },
  {
   "tag": "Visual",
@@ -157,7 +181,9 @@
   "ko": "페컴의 엘리 은게산은 센트럴 세인트 마틴스에서 제품 디자인을 공부하며 사진을 시작했다. 촬영 뒤 인화했다가 다시 스캔해서 종이 먼지가 파일에 남는다. 아디다스 스펙 Dobs on the Back Seat는 트레이닝복을 차 문에 넣고, 뒤에는 산호색 벽, 구석에 세 줄이 있다. Daycare's Over는 모델 둘이었다. 아이 넷이 왔고, 크로스바가 세트가 됐으며, 모델은 파란 벽돌 앞의 지친 직원이 됐다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/how-elie-nguessan-makes-everyday-london-look-like-a-movie/",
-  "img_url": "https://media.creativeboom.com/cbce7f6a-b753-427a-bcbf-c897169a9dfd/conversions/b86f66e00d2ad9ca53f7e4f8cf1d1d005b38b6fc-medium.webp"
+  "img_url": "https://media.creativeboom.com/cbce7f6a-b753-427a-bcbf-c897169a9dfd/conversions/b86f66e00d2ad9ca53f7e4f8cf1d1d005b38b6fc-medium.webp",
+  "img": "assets/2026-11-04-14.webp",
+  "img_src": "https://media.creativeboom.com/cbce7f6a-b753-427a-bcbf-c897169a9dfd/conversions/b86f66e00d2ad9ca53f7e4f8cf1d1d005b38b6fc-medium.webp"
  },
  {
   "tag": "Visual",
@@ -168,7 +194,9 @@
   "ko": "뉴욕 프리드먼 벤다의 All Intensive Purposes는 미샤 칸이 갤러리와 함께한 10년이다. 업홀스터리는 그림에서 시작해 JG SWITZER가 울로 짜고, 그 구성을 다시 재단한다. 색은 완전히 닿지 않는 쿠션을 따라간다. 프레임은 작업실에서 용접해 윤곽이 휜다. 그는 쿠션 사이의 공기를 좋아한다. Throws of Passion은 천처럼 깎인 대리석 콘솔이다. 작은 레이지 리버가 방을 돌고, 영상은 재료를 뜯었다가 다시 붙인다.",
   "src": "designboom",
   "url": "https://www.designboom.com/design/misha-kahn-upholstery-painting-marble-fabric-friedman-benda-all-intensive-purposes-interview/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/11/misha-kahn-all-intensive-purposes-friedman-benda-designboom-04.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/11/misha-kahn-all-intensive-purposes-friedman-benda-designboom-04.jpg",
+  "img": "assets/2026-11-04-15.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/11/misha-kahn-all-intensive-purposes-friedman-benda-designboom-04.jpg"
  },
  {
   "tag": "Industrial",
@@ -179,6 +207,8 @@
   "ko": "페이양(카미유) 리의 She Blooms in the Dark는 대나무로 짠 안락의자다. 앉은 사람을 감싸지만 닫힌 부스까지는 가지 않는다. 손뜨개 꽃이 격자를 덮는다. 실은 축광이라 낮의 햇빛을 저장했다가 어두워지면 낮은 빛으로 돌려준다. 꽃 안에는 LED도 배터리도 없다. 크기와 가격, 밝기는 공개되지 않았다. 빛은 분위기이고 독서등이 아니다. 꽃 자체가 조명이다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/03/a-bamboo-armchair-glows-after-dark-without-electricity/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/a-bamboo-armchair-glows-after-dark-without-electricity/she-blooms-0.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/a-bamboo-armchair-glows-after-dark-without-electricity/she-blooms-0.jpg",
+  "img": "assets/2026-11-04-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/a-bamboo-armchair-glows-after-dark-without-electricity/she-blooms-0.jpg"
  }
 ]
