@@ -9,7 +9,9 @@
   "ko": "크로마그래프 카메라는 13달러짜리 아이폰 스틸 앱이다. 라이언 존슨이 촬영감독 스티브 예들린과 만들었다. RAW에서 시작하고 애플의 룩 파이프라인을 건너뛴 뒤, 두 사람의 영화에 쓰던 그레이드를 올린다. 보이는 조작은 최대 노출, 연사, 색이다. 톤과 채도, 텍스처는 셔터 뒤에 나타나며, 이미 있는 RAW에도 적용된다. 주말 사이 비교 사진이 퍼졌다. 휴대폰 자체의 그레인 패널은 여전히 처리된 사진에서 출발한다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1025659/rian-johnson-chromagraph-camera-interview",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Chromagraph-Screenshot-1.jpeg?quality=90&strip=all"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Chromagraph-Screenshot-1.jpeg?quality=90&strip=all",
+  "img": "assets/2026-11-05-1.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Chromagraph-Screenshot-1.jpeg?quality=90&strip=all"
  },
  {
   "tag": "Motion",
@@ -22,7 +24,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
   "video": "https://www.youtube.com/watch?v=F-TxCbf-D8I",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg",
+  "img": "assets/2026-11-05-2.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg"
  },
  {
   "tag": "Cockpit",
@@ -33,7 +37,9 @@
   "ko": "로열엔필드의 컨티넨탈 GT 750은 EICMA에서 페어링이 있는 버전과 없는 버전으로 나왔다. 카페 레이서의 얼굴을 유지하고 태블릿은 받지 않는다. 계기반은 하이브리드 트윈 포드 TFT로 설명된다. 500cc 미만 바이크에 놓이기 시작한 넓은 화면과 대조된다. 페어링 버전은 핸들을 낮춘다. 보여 준 색은 레드 라인, TT 블루, 마스터 클린이다. 게릴라 450과 히말라얀 450의 싱글 포드 트리퍼 대시 옆에서, 라이딩만 보여주고 나머지는 밖에 두는 클러스터다.",
   "src": "RideApart",
   "url": "https://www.rideapart.com/news/814294/2027-royal-enfield-continental-gt-750-cafe-racer-launched-specs-features-price/",
-  "img_url": "https://cdn.motor1.com/images/mgl/y21zjm/s1/royal-enfield-continental-gt-750.jpg"
+  "img_url": "https://cdn.motor1.com/images/mgl/y21zjm/s1/royal-enfield-continental-gt-750.jpg",
+  "img": "assets/2026-11-05-3.jpg",
+  "img_src": "https://cdn.motor1.com/images/mgl/y21zjm/s1/royal-enfield-continental-gt-750.jpg"
  },
  {
   "tag": "AI",
@@ -44,7 +50,9 @@
   "ko": "피그마의 코드 레이어는 아직 오픈 베타다. 디자인을 코드로 만들 때, 프레임 사이에 이미 그어 둔 프로토타입 연결과 인터랙션을 읽는다. 캔버스의 선이 브리프이므로 플로를 다시 타이핑하지 않아도 된다. 하루 전에는 셰이더가 모든 사용자에게 열렸고, 최대 4096픽셀로 내보낸다. 코드 레이어 안으로 들어가 Chrome 157에서 레이어 오른쪽 위의 Play로 재생된다.",
   "src": "Figma",
   "url": "https://www.figma.com/release-notes/",
-  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format",
+  "img": "assets/2026-11-05-4.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Visual",
@@ -56,7 +64,9 @@
   "ko": "상파울루 빵집 P.A.C.의 로고는 정식 마크가 아니다. 폴라의 창업자 둘이 가게의 파트너이고, 세 글자를 그냥 타이핑한다. 스튜디오 무히틴 귀네시의 그론란드가 본문이고, 키이우 타입 파운드리의 루블레나가 옆에 선다. 베아트리스 바티스텔리의 선화가 글자 옆에 있고, 영수증 프린터가 오늘의 메뉴를 찍는다. 브루노 히베이루는 시스템을 미완성으로 둔다. 공간이 커져도 서체를 바꾸면 되고, 식별 전체를 다시 그리지 않는다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/polar-pac-graphic-design-project-041126",
-  "img_url": "https://m.itsnicethat.com/original_images/pac-polar-graphic-design-project-itsnicethat-13.gif"
+  "img_url": "https://m.itsnicethat.com/original_images/pac-polar-graphic-design-project-itsnicethat-13.gif",
+  "img": "assets/2026-11-05-5.gif",
+  "img_src": "https://m.itsnicethat.com/original_images/pac-polar-graphic-design-project-itsnicethat-13.gif"
  },
  {
   "tag": "Realtime",
@@ -67,7 +77,9 @@
   "ko": "피지컬 애드온의 Physical Atmosphere²는 블렌더 뷰포트에서 바로 갱신되는 하늘을 만든다. 절차적 구름 네 층이 슬라이더를 따라 움직이고, 헤이즈와 해, 달은 날짜와 시간, 장소를 따른다. 구름은 장면을 가리고 그림자를 드리운다. 뒤에 붙인 평면이 아니다. 고급 모드는 산란, 오존, 안개를 연다. 조명을 잡는 동안 사실적인 하늘이 라이브로 남아 있는 것이 목표다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/get-this-blender-add-on-for-realistic-real-time-procedural-sky",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50874/images/6ae8db38af6f1/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50874/images/6ae8db38af6f1/contain_1200x630.jpg",
+  "img": "assets/2026-11-05-6.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50874/images/6ae8db38af6f1/contain_1200x630.jpg"
  },
  {
   "tag": "Interaction",
@@ -78,7 +90,9 @@
   "ko": "iOS 27.3 개발자 베타의 사파리는 탭을 왼쪽에 쌓을 수 있다. 기본은 아이콘이고, 제목이 필요하면 열을 넓힌다. 스위치는 설정, 앱, 사파리에 있다. 맥과 아이패드에서는 보기 메뉴에도 있다. 다크 디자인이 없는 사이트에는 Try 버튼이 뜨고, 사파리가 그 페이지의 어두운 버전을 만든다. 시리는 탭을 옮기고, 정렬하고, 닫을 수 있다. 아크가 이 열을 익숙하게 만들었고, 아크는 12월에 멈출 예정이다.",
   "src": "9to5Mac",
   "url": "https://9to5mac.com/2026/11/03/ios-27-3-and-macos-27-3-add-vertical-tabs-adaptive-dark-mode-and-more-to-safari/",
-  "img_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/11/IMG_0336.jpg?quality=82&strip=all&w=1200"
+  "img_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/11/IMG_0336.jpg?quality=82&strip=all&w=1200",
+  "img": "assets/2026-11-05-7.jpg",
+  "img_src": "https://9to5mac.com/wp-content/uploads/sites/6/2026/11/IMG_0336.jpg?quality=82&strip=all&w=1200"
  },
  {
   "tag": "Visual",
@@ -90,7 +104,9 @@
   "ko": "잉카 일로리의 2026/27 토트넘 원정 셔츠 이름은 We Are Tottenham, Wherever We Go다. 네이비는 분홍, 보라, 주황, 일렉트릭 블루의 줄로 갈라지고, THFC LDN17은 N17 우편번호를 가리킨다. 등에는 라일락 꽃잎, 체크 고리, 터콰이즈 띠가 COYS를 두른다. 안에는 I know I am, I'm sure I am이 있고, 바깥 고리에 제목과 그의 이름이 있다. 토트넘 헤일의 하트 오브 헤일 상주 작가로 그렸다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/news/yinka-ilori-brings-his-joyful-love-of-colour-to-reimagine-the-tottenham-hotspur-away-shirt/",
-  "img_url": "https://media.creativeboom.com/7cf2b391-b450-4f3c-b619-43d597af9a96/conversions/e52963f74da123938096e2fe7d164c65cba26f03-medium.webp"
+  "img_url": "https://media.creativeboom.com/7cf2b391-b450-4f3c-b619-43d597af9a96/conversions/e52963f74da123938096e2fe7d164c65cba26f03-medium.webp",
+  "img": "assets/2026-11-05-8.webp",
+  "img_src": "https://media.creativeboom.com/7cf2b391-b450-4f3c-b619-43d597af9a96/conversions/e52963f74da123938096e2fe7d164c65cba26f03-medium.webp"
  },
  {
   "tag": "Micromobility",
@@ -101,7 +117,9 @@
   "ko": "노턴의 450 어반은 이름이 아직 임시이고, 미러 스템 사이에 8인치 TFT를 둔다. A2 라이더를 겨냥해 2027년에 나오는 바이크에서, 화면은 클러스터보다 전자책 단말에 가깝다. 가벼운 알루미늄 프레임과, TVS 아래 노턴의 수랭 454cc 단기통, 약 45Nm이 주변을 채운다. EICMA 사진에서 계기반이 프레임 안의 첫 번째이고, 도시 통근용으로는 유리가 많다.",
   "src": "RideApart",
   "url": "https://www.rideapart.com/news/814131/norton-450-urban-eicma-2026-unveiling/",
-  "img_url": "https://cdn.motor1.com/images/mgl/Mk6Lj8/s1/norton-450-urban---eicma-2026.jpg"
+  "img_url": "https://cdn.motor1.com/images/mgl/Mk6Lj8/s1/norton-450-urban---eicma-2026.jpg",
+  "img": "assets/2026-11-05-9.jpg",
+  "img_src": "https://cdn.motor1.com/images/mgl/Mk6Lj8/s1/norton-450-urban---eicma-2026.jpg"
  },
  {
   "tag": "Motion",
@@ -113,7 +131,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/tom-noakes-black-kite-deliver-the-doom-burger-for-kfc/",
   "video": "https://www.youtube.com/watch?v=ff6ZvCfHJrM",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/KFC-Avengers-Doomsday-Commercial-by-Tom-Noakes-Black-Kite-STASH-MAGAZINE.jpg7_-1920x801.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/KFC-Avengers-Doomsday-Commercial-by-Tom-Noakes-Black-Kite-STASH-MAGAZINE.jpg7_-1920x801.jpg",
+  "img": "assets/2026-11-05-10.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/KFC-Avengers-Doomsday-Commercial-by-Tom-Noakes-Black-Kite-STASH-MAGAZINE.jpg7_-1920x801.jpg"
  },
  {
   "tag": "Realtime",
@@ -125,7 +145,9 @@
   "ko": "키테라의 ZZZ 셰이더 2.0은 젠레스 존 제로 모델을 위한 것이고, 블렌더 5.0 이상이 필요하다. 몸과 얼굴을 나눈다. 몸은 툰 셰이딩을 유지하고, 얼굴 그림자는 키테라 선이라는 라이트를 따른다. 존 대니얼 압살루드와 키테라 르 페의 애드온이 셰이더를 적용하고, 컬러 스페이스를 맞추고, 머리 방향 엠프티를 넣어 그림자가 얼굴의 방향을 알게 한다. 파일은 깃허브에 있고, 게임 맵을 이미 가진 모델용이다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/have-a-look-at-this-zzz-shader-for-blender-that-comes-with-auto-apply-add-on",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50852/images/6ae5b2107d787/contain_1200x630.jpeg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50852/images/6ae5b2107d787/contain_1200x630.jpeg",
+  "img": "assets/2026-11-05-11.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50852/images/6ae5b2107d787/contain_1200x630.jpeg"
  },
  {
   "tag": "Interaction",
@@ -136,7 +158,9 @@
   "ko": "iOS 27.3 개발자 프리뷰에서 시리는 서드파티 앱 안에서 행동하고, 화면에 있는 것을 쓸 수 있다. 앱 스킬은 여러 단계를 요청 하나로 묶는다. 앱이 앞에 있거나, 라이브 액티비티에 있거나, 이미 대화의 대상이면 이름을 말하지 않아도 된다. 픽업 위치를 바꾸라는 말로 충분하다. 같은 범위에 캘린더, 메일, 지도, 메시지, 사진, 사파리 등이 들어간다. 지원되는 앱 안에서 무엇을 할 수 있는지 물으면 동작이 나열된다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-6.jpg?quality=90&strip=all"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-6.jpg?quality=90&strip=all",
+  "img": "assets/2026-11-05-12.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-6.jpg?quality=90&strip=all"
  },
  {
   "tag": "Visual",
@@ -147,7 +171,9 @@
   "ko": "대니얼 주먼의 루프는 몇 초이고, 점토를 집어 만든 것처럼 보이며 혹이 남아 있다. 운동화를 신은 냉장고가 러닝머신 위를 달린다. 햄버거가 나무에서 자라고, 물뿌리개 두 개가 물을 준다. 택시는 해 질 녘 스카이라인 위에 매달린다. 가판대의 사과가 열리면 마이크, 접시 안테나, 눈이 나온다. 그는 비비스 앤 버트헤드 사이의 5초 MTV 범퍼를 가리킨다. 스나이더 소속의 이 뉴욕 일러스트레이터는 픽셀로 스톱모션의 주름을 남긴다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/burger-trees-spying-fruit-and-flying-taxis-discover-the-digital-clay-world-of-daniel-jurman/",
-  "img_url": "https://media.creativeboom.com/922e1b5e-1e68-4eb4-a98d-2f28d6a7aa41/conversions/cc5f82660222448892889dc5ca4ab414e1c380b9-medium.webp"
+  "img_url": "https://media.creativeboom.com/922e1b5e-1e68-4eb4-a98d-2f28d6a7aa41/conversions/cc5f82660222448892889dc5ca4ab414e1c380b9-medium.webp",
+  "img": "assets/2026-11-05-13.webp",
+  "img_src": "https://media.creativeboom.com/922e1b5e-1e68-4eb4-a98d-2f28d6a7aa41/conversions/cc5f82660222448892889dc5ca4ab414e1c380b9-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -158,7 +184,9 @@
   "ko": "아이폰 듀오의 바깥 화면은 한 손이 가로지르기 어려울 만큼 넓다. iOS 27.3 개발자 베타는 옆으로 움직이는 리치어빌리티를 넣는다. 가장자리를 짧게 스와이프하면 인터페이스 전체가 왼쪽이나 오른쪽으로 미끄러진다. 세로로 긴 아이폰에서는 같은 조작이 여전히 화면을 아래로 당긴다. 스위치는 설정, 손쉬운 사용, 리치어빌리티에 있다. 넓은 폰은 이후 업데이트로 예정돼 있었다. 베타에 지금 들어 있고, 공개 버전은 12월을 향한다.",
   "src": "9to5Mac",
   "url": "https://9to5mac.com/2026/11/03/ios-27-3-introduces-new-iphone-duo-feature-for-one-handed-use/",
-  "img_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/iphone-duo-one-handed-front-display.jpg?quality=82&strip=all"
+  "img_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/iphone-duo-one-handed-front-display.jpg?quality=82&strip=all",
+  "img": "assets/2026-11-05-14.jpg",
+  "img_src": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/iphone-duo-one-handed-front-display.jpg?quality=82&strip=all"
  },
  {
   "tag": "Industrial",
@@ -169,7 +197,9 @@
   "ko": "트와게더의 DA1은 화면도, 갤러리도, 앱도 없는 즉석 카메라다. 한 장이 감열 롤에서 흑백 인화로 나와 바로 건넬 수 있다. 클리어 바디는 용지 경로와 기판을 보여 준다. 네온은 같은 둥근 사각 몸과 원형 렌즈를 유지한다. 나사식 파인더가 프레이밍을 돕고, 마커 다섯 개로 종이 위에 그린다. 롤은 약 50장이고, 카메라는 파일을 남기지 않는다. 네온은 98달러, 클리어는 110달러이며 배송은 11월이다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/04/da1-camera-prints-photos-to-give-away-without-a-screen-or-app/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/da1-camera-prints-photos-to-give-away-without-a-screen-or-app/da1-02.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/da1-camera-prints-photos-to-give-away-without-a-screen-or-app/da1-02.jpg",
+  "img": "assets/2026-11-05-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/da1-camera-prints-photos-to-give-away-without-a-screen-or-app/da1-02.jpg"
  },
  {
   "tag": "Visual",
@@ -180,6 +210,8 @@
   "ko": "코토의 새 보고서는 기술과 인터페이스, 제원표가 모일수록 전기차 브랜드가 갈라지기 어려워진다고 본다. 18개 항목 평가에서 리비안이 브랜드 1위, 7.8점이고, 폭스바겐은 열 곳 중 마지막, 4.8점이다. 한 가지 질문은 전기차가 자동차인지, 계속 업데이트되는 컴퓨터인지다. 르노의 물리 스위치와 폭스바겐 ID 실내로 돌아온 버튼은 추가 자동차 쪽으로 되돌아가는 흔들림이다. 중국에서 같은 물건은 연결된 서비스로 읽힌다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/insight/is-it-a-problem-that-all-electric-car-brands-all-look-the-same/",
-  "img_url": "https://media.creativeboom.com/a22a11c5-c2fa-42ff-a7fe-37e3ab07124a/conversions/8ede552707852d0d3c68ccb2aa06eaa0844b39fd-medium.webp"
+  "img_url": "https://media.creativeboom.com/a22a11c5-c2fa-42ff-a7fe-37e3ab07124a/conversions/8ede552707852d0d3c68ccb2aa06eaa0844b39fd-medium.webp",
+  "img": "assets/2026-11-05-16.webp",
+  "img_src": "https://media.creativeboom.com/a22a11c5-c2fa-42ff-a7fe-37e3ab07124a/conversions/8ede552707852d0d3c68ccb2aa06eaa0844b39fd-medium.webp"
  }
 ]
