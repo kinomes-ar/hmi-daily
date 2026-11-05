@@ -21,7 +21,9 @@ Worker after the site updates — do not send Feishu cards yourself.
 Research that never reaches `main` is a failed run. The Feishu bot only posts when
 today's file is on the site. Keep this order:
 
-1. **Budget the research.** Aim for ≤25 page fetches. Prefer STASH / Motionographer,
+1. **Budget the research.** Aim for ≤25 page fetches. When a major trade show relevant
+   to our readers is running, research it first (**Major trade shows**, below); otherwise
+   prefer STASH / Motionographer,
    Creative Boom, It's Nice That, designboom, 80 Level, Yanko, then cockpit sources.
    CarNewsChina is a check, not a default: open it only to see whether a Chinese
    automaker actually shipped a new interface idea.
@@ -71,6 +73,17 @@ it (yoke, steer-by-wire, how the demo was driven, the motion, the graphic). Skip
 it is "not a proper cabin story" is a failed edition. The miss to remember: Tesla's Roadster
 demo on 15–16 Oct 2026 — upside down on a ramp, then a cold-gas flip — was the image of the
 week and did not make the 16th or the 19th.
+
+**Major trade shows (e.g. EICMA Milan, CES, Auto Shanghai/Beijing, IAA, Eurobike).**
+While a show relevant to our readers is running (and ~2 days after), actively research
+it first. Do not fill a quota. Include only the show's highlights that are relevant to
+our design work: two-wheeler/scooter/e-bike and car clusters, TFT dashboards, HMI and
+rider interface, connectivity/app UI, lighting signatures, CMF, and notable new product
+ID or concepts that the press widely covers. Skip generic spec/price launches with no
+design angle. Prefer sources that cover the show live (rideapart, cycleworld,
+motorcycle.com, electrek, designboom, brand newsrooms); this may use part of the normal
+fetch budget. Name the show in the title so readers see they are from the show, and
+keep `tag` as one of the beats below.
 
 **Core beats, in priority order**
 
