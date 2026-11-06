@@ -1,0 +1,14 @@
+{
+  "_note": "User asked 2026-10-14 to put Citroën 2CV in tomorrow's edition (내일넣어), not Oct 14. Oct 12 used Stellantis press; prefer this Car and Driver cabin/UI angle as Cockpit or Interaction pick. Do not republish Oct 12 Stellantis URL. Include when building data/2026-10-15.json.",
+  "story": {
+    "tag": "Cockpit",
+    "pick": true,
+    "t": "2CV: comic UI on a cylinder, Radioën unclips",
+    "blurb": "No dash: 8-inch comic touchscreen, thin vision strip, lanterns and a picnic basket",
+    "en": "Car and Driver's look at Citroën's Paris 2CV concept zeroes in on the cabin. There is no conventional dashboard: a cylinder off the column holds an 8.0-inch touchscreen and a thin display at the base of the windshield, both running comic-book, hand-drawn graphics for climate, speed and navigation. The sound system hangs underneath like a classic radio, unclips, and doubles as a portable speaker. A removable wicker basket stands in for the centre console, yellow plaid deck-chair seats fill the cabin, and tiny lanterns ring the fabric sunroof opening. Door straps replace handles. The concept previews a sub-€15,000 EV for 2028; a Fourgonnette van sibling shares the same face.",
+    "zh": "Car and Driver看巴黎雪铁龙2CV概念车，重点在座舱。没有传统仪表台：转向柱伸出的圆柱装着8.0英寸触屏和风挡底部细条显示，界面都是漫画手绘风，覆盖空调、车速和导航。音响像老式收音机挂在下方，可拆下当便携音箱。可拆柳条篮代替中控，黄格纹躺椅式座椅，织物天窗边缘挂着小灯笼。门上用拉带代替把手。概念车预告2028年低于1.5万欧元的电动车；厢式Fourgonnette共用同一前脸。",
+    "ko": "카앤드라이버가 파리 시트로엥 2CV 콘셉트 실내를 짚는다. 일반 대시가 없다. 컬럼에서 나온 원기둥에 8.0인치 터치와 윈드실드 아래 얇은 디스플레이가 있고, 공조·속도·내비 모두 만화 손그림 UI다. 사운드는 클래식 라디오처럼 아래에 걸려 떼어 휴대 스피커가 된다. 센터 콘솔 대신 고리버켓, 노란 체크 데크체어 시트, 패브릭 선루프 가장자리의 작은 랜턴. 도어는 손잡이 대신 스트랩. 2028년 1만 5천 유로 미만 EV를 예고하고, 포고네트 밴도 같은 앞모습을 쓴다.",
+    "src": "Car and Driver",
+    "url": "https://www.caranddriver.com/news/a74108677/citroen-2cv-concept-revealed/"
+  }
+}
