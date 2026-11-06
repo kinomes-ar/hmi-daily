@@ -9,7 +9,9 @@
   "ko": "아드먼의 바버 필름은 스티브 하딩힐이 연출했다. 월리스와 그로밋을 크리스마스 산책으로 내보낸다. 산책은 틀어지고, 그로밋이 코트와 함께 둘을 데려온다. 눈과 점토, 월리스의 발명품이 준비 장면과 한 프레임에 있다. 이미 돌고 있는 연말 그림이다. 스톱모션이고, 렌더된 재킷이 아니다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
-  "video": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/"
+  "video": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
+  "img": "assets/2026-11-06-1.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Barbour-x-Wallace-Gromit-Christmas-Film-2026-_-STASH-MAGAZINE6.jpg"
  },
  {
   "tag": "Interaction",
@@ -21,7 +23,9 @@
   "ko": "마이크로소프트의 엑스박스 PC 앱은 11월 5일부터 인사이더에게 열렸다. 패드로 마우스를 누르는 느낌이 아니다. 친구가 메인 화면에 있고, 채팅을 열거나 파티에 들어가는 버튼이 옆에 있다. 홈, 스토어, 게임 패스는 대시보드로 그려지고 게임 카드와 설정도 다시 그렸다. 실행은 최대 60퍼센트, 그 페이지는 최대 50, 창은 최대 65퍼센트 빠르다. 같은 얼굴이 웹의 클라우드 게이밍으로 가고, 다크와 라이트, 고대비 다섯 가지가 있다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/news/1027353/microsoft-new-xbox-pc-app-redesign",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/XBOX-PC-App-1.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/XBOX-PC-App-1.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+  "img": "assets/2026-11-06-2.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/XBOX-PC-App-1.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
  },
  {
   "tag": "Visual",
@@ -33,7 +37,9 @@
   "ko": "프롬 폼이 암스테르담 뮤지엄 나이트를 위해 다섯 번째로 만든 아이덴티티다. 11월 7일, 65곳이 넘는 박물관에 걸린다. 플립북은 두지 않았다. 애슐리 호버르스와 위르옌 페르스테흐는 실사가 아니라 사진으로 야상곡을 짰다. 떠 있는 열쇠, 시계, 횃불, 그리고 하프와 올빼미, 종. 얼굴은 17세기 초상처럼 이마가 길고 눈이 크다. 공간은 디오라마의 강제 원근이다. 포스터는 일부러 조금 어긋나 있다. 어느 문도 가리키지 않는다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/from-form-amsterdam-museum-night-graphic-design-project-051126",
-  "img_url": "https://m.itsnicethat.com/original_images/Screenshot_2026-11-04_at_18.07.09.png?class=w1440"
+  "img_url": "https://m.itsnicethat.com/original_images/Screenshot_2026-11-04_at_18.07.09.png?class=w1440",
+  "img": "assets/2026-11-06-3.png",
+  "img_src": "https://m.itsnicethat.com/original_images/Screenshot_2026-11-04_at_18.07.09.png?class=w1440"
  },
  {
   "tag": "AI",
@@ -44,7 +50,9 @@
   "ko": "11월 5일부터 피그마 에이전트는 벡터 일러스트와 아이콘을 고칠 수 있는 레이어로 돌려준다. 묶음도 되어 있다. 선은 채움이 아니라 스트로크라서, 굵기와 끝모양을 다시 그리지 않고 바꾼다. 있는 그림을 스타일 참조로 붙이면 그 손으로 아이콘을 더 그린다. 구조가 깨끗해서 피그마 모션에서 움직인다. 사람이 해도 되고, 에이전트가 해도 된다. 그림이 한 덩어리로 눌리지 않고 이미 나뉘어 도착한다.",
   "src": "Figma",
   "url": "https://www.figma.com/release-notes/?title=improvements-agent-generated-vector",
-  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format",
+  "img": "assets/2026-11-06-4.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Realtime",
@@ -56,7 +64,9 @@
   "ko": "알리나 레데네바가 카미시바이 인터랙티브의 슈터 TYBALT를 위해 만든 행성은 타일 텍스처를 올린 납작한 카드다. 월드 포지션 오프셋이 카드를 카메라 쪽으로 고정한다. 반구의 스테레오그래픽 투영이 UV를 가장자리로 갈수록 조여, 텍스처가 멀어지며 휘는 면처럼 읽힌다. 극에 가까우면 블루프린트가 맵을 밀지 않고, 움직이는 피벗을 축으로 돌린다. 같은 점에 닿는 두 경로가 다른 지면을 보여줄 수 있다. 메시는 구가 되지 않는다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/faking-a-spherical-planet-with-a-tileable-texture-in-ue5",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50850/images/6ae4d9883b347/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50850/images/6ae4d9883b347/contain_1200x630.jpg",
+  "img": "assets/2026-11-06-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50850/images/6ae4d9883b347/contain_1200x630.jpg"
  },
  {
   "tag": "Cockpit",
@@ -66,7 +76,9 @@
   "zh": "EICMA 9号馆Q60，Valeo的Wind Visor HUD把速度和轨迹指引投到摩托车风挡上，落在骑士正前方的视线里。旁边的说明很直白：时速100公里时低头一两秒，大约有50米是不看路的。风挡旁边的Connected Cluster把显示和连接硬件收成一个单元。展台上的灯从薄LED模组到可在路面上投射的高清自适应光束。展会开到11月8日。",
   "ko": "EICMA 9홀 Q60에서 발레오의 윈드 바이저 HUD는 속도와 궤적 안내를 오토바이 윈드스크린에 띄운다. 라이더의 전방 시야 안이다. 옆의 설명은 단호하다. 시속 100킬로미터에서 1초에서 2초를 내려다보면, 약 50미터를 길을 보지 않고 간다. 바이저 옆의 커넥티드 클러스터는 디스플레이와 연결 하드웨어를 한 유닛에 넣는다. 조명은 얇은 LED 모듈에서, 노면에 그릴 수 있는 고해상 적응형 빔까지다. 전시장은 11월 8일까지 연다.",
   "src": "Valeo",
-  "url": "https://www.valeo.com/en/valeo-brings-advanced-safety-and-electrification-technologies-for-two-wheelers-to-eicma-2026/"
+  "url": "https://www.valeo.com/en/valeo-brings-advanced-safety-and-electrification-technologies-for-two-wheelers-to-eicma-2026/",
+  "img": "assets/2026-11-06-6.jpg",
+  "img_src": "https://www.valeo.com/wp-content/uploads/2026/11/Valeo-EICMA-2026_Moto-connectee-sur-route-toscane.jpg"
  },
  {
   "tag": "Motion",
@@ -89,7 +101,9 @@
   "ko": "메타의 뮤즈는 11월 5일부터 미국 iOS 앱에서 실시간으로 말한다. 대화 맨 위의 아바타가 말에 맞춰 움직인다. 목소리는 채팅으로 부탁하거나, 아바타 설정에서 고른다. 제이 피터스는 자기 아바타를 마크 저커버그로 맞췄고, 입은 그럴듯한데 닮은꼴은 이상하다고 적었다. 같은 얼굴과 목소리는 메타의 AI 안경, 그리고 올해 출하 예정인 뮤즈 참에도 온다. 보이는 것은 파형이 아니라 말하는 초상이다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+  "img": "assets/2026-11-06-8.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200"
  },
  {
   "tag": "Micromobility",
@@ -100,7 +114,9 @@
   "ko": "로열엔필드의 플라잉 플리 S6는 C6 옆의 스크램블러다. EICMA에서 다트 옐로와 라이트닝 그레이로 나왔다. 계기반은 여전히 원형 터치스크린이고, 이제는 플레어웨어.OS를 돌리며 폰이나 시계와 이어진다. 새 조작은 길이 끝나는 곳을 위한 오프로드 모드다. 그들이 준 시점은 2027년 여름이다. C6의 후속이다. 같은 원, 이름이 있는 시스템, 화면의 용도를 바꾸는 모드.",
   "src": "Royal Enfield",
   "url": "https://royalenfieldmedia.co.uk/posts/royal-enfield-at-eicma-2026-the-new-frontier-of-pure-motorcycling?locale=en",
-  "img_url": "https://royalenfieldmedia.s3.eu-west-2.amazonaws.com/production/7668/conversions/01M6GBAXQCR6G5ZTC8BP34VFZN-medium.jpg"
+  "img_url": "https://royalenfieldmedia.s3.eu-west-2.amazonaws.com/production/7668/conversions/01M6GBAXQCR6G5ZTC8BP34VFZN-medium.jpg",
+  "img": "assets/2026-11-06-9.jpg",
+  "img_src": "https://royalenfieldmedia.s3.eu-west-2.amazonaws.com/production/7668/conversions/01M6GBAXQCR6G5ZTC8BP34VFZN-medium.jpg"
  },
  {
   "tag": "Motion",
@@ -111,7 +127,9 @@
   "ko": "모션그래퍼가 11월 4일 요스트 얀센, 메이크 마미 프라우드와 나눈 이야기다. 영화는 괴물로 시작했고, 그 괴물을 잃었다. 2024년 3월 그 생물은 잘렸다. 드림캣은 툰 붐 하모니로, 요스트의 작업실 다큐멘터리 위에 셀 단위로 그려졌다. 마지막 쇼트에서 영화 전체로 옮겨 갔다. 스튜디오는 그의 시간 외에 532시간을 기록했고, 50일에 가까운 작업 중 약 절반만 지급할 수 있었다. AI는 없다. 방이 먼저 보이고, 그 방을 아는 그림이 따라온다.",
   "src": "Motionographer",
   "url": "https://motionographer.com/2026/11/04/im-having-a-breakdown-dreamcat-the-monster-that-wasnt-his/",
-  "video": "https://www.stashmedia.tv/joost-jansen-reveals-his-demons-in-dreamcat-short-film/"
+  "video": "https://www.stashmedia.tv/joost-jansen-reveals-his-demons-in-dreamcat-short-film/",
+  "img": "assets/2026-11-06-10.gif",
+  "img_src": "https://i0.wp.com/motionographer.com/wp-content/uploads/2016/11/Dreamcat-ezgif.com-optimize.gif?fit=600%2C250&#038;ssl=1"
  },
  {
   "tag": "Visual",
@@ -123,7 +141,9 @@
   "ko": "타티아나 예고시나가 2024년부터 2026년까지 이탈리아 에이전시 포춘 쿠키를 위해 만든 아이덴티티는 이름을 접힌 색 리본으로 바꾼다. Do not panic, The end is near, You are loved 같은 문장이 주름 위에 있고, 어떤 것은 워드마크를 대신한다. 팀이 가이드에서 벗어나자 그녀는 작은 생성기를 만들어 새 쿠키가 규칙 안에 남게 했다. 가져갈 것은 리본이다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/tatiana-egoshina-finds-beauty-in-bad-typography-italian-folklore-and-happy-accidents/",
-  "img_url": "https://media.creativeboom.com/790b7a56-b4b4-4b6b-959d-864e11d383a4/conversions/6a2a6858fff78b045857e83b525677813aef5a4d-medium.webp"
+  "img_url": "https://media.creativeboom.com/790b7a56-b4b4-4b6b-959d-864e11d383a4/conversions/6a2a6858fff78b045857e83b525677813aef5a4d-medium.webp",
+  "img": "assets/2026-11-06-11.webp",
+  "img_src": "https://media.creativeboom.com/790b7a56-b4b4-4b6b-959d-864e11d383a4/conversions/6a2a6858fff78b045857e83b525677813aef5a4d-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -134,7 +154,9 @@
   "ko": "인스타그램 에디츠의 macOS 버전은 11월 5일에 나왔다. 데스크톱 타임라인이다. 여러 트랙, 오디오 파형, 색 보정, 다른 편집기에서 가져온 단축키가 있다. MCP가 그 도구를 열어서, 뮤즈나 다른 에이전트가 다운로드 폴더의 파일을 러프컷하고 손으로 끝낼 프로젝트를 돌려준다. 보내기는 워터마크 없는 4K까지이고, 화면 비율도 하나 이상이다. 지금은 macOS뿐이고, 프로젝트는 아직 폰과 책상 사이를 오가지 않는다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1027444/instagram-edits-desktop-ai-agents-muse-mcp",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/instagram-edits-desktop-timeline-1.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/instagram-edits-desktop-timeline-1.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+  "img": "assets/2026-11-06-12.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/instagram-edits-desktop-timeline-1.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
  },
  {
   "tag": "Visual",
@@ -145,7 +167,9 @@
   "ko": "항위의 The Show Goes On은 코니아일랜드 광대 학교를 옆에서 본다. 그녀가 붙잡는 프레임은 아직 아무도 고르지 않은 코 쟁반이다. 또 하나, Me by Velvet은 카메라를 바꾼다. 항위가 광대고, 벨벳이 찍으며, 둘 다 사진 안에 있다. 노점, 유니폼, 학교는 같은 주제다. 몸에 걸치는 역할이다. 새 세션이 이달에 시작하고, 인터뷰는 사진집으로 간다. 남길 정지는 얼굴이 정해지기 전의 쟁반이다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/step-inside-hang-yus-wonderfully-strange-world-of-clowns-costumes-and-constructed-identities/",
-  "img_url": "https://media.creativeboom.com/9d7e9b0e-eb62-4174-8ff0-3853a4dfe1db/conversions/2d42a0df9779bd0d8b44b7f0532588c8911d3ac0-medium.webp"
+  "img_url": "https://media.creativeboom.com/9d7e9b0e-eb62-4174-8ff0-3853a4dfe1db/conversions/2d42a0df9779bd0d8b44b7f0532588c8911d3ac0-medium.webp",
+  "img": "assets/2026-11-06-13.webp",
+  "img_src": "https://media.creativeboom.com/9d7e9b0e-eb62-4174-8ff0-3853a4dfe1db/conversions/2d42a0df9779bd0d8b44b7f0532588c8911d3ac0-medium.webp"
  },
  {
   "tag": "Realtime",
@@ -156,7 +180,9 @@
   "ko": "프랭키 포바르치크의 바르셀로나 거리는 11월 4일 80 레벨에 올랐다. 건물마다 따로 만든 것이 아니라 키트다. 벽, 창, 아치, 문은 블렌더에서 모델링하고 서브스턴스 3D 디자이너에서 텍스처를 입혔다. 포토샵의 트림 시트는 45도 노멀을 써서 모서리가 조각처럼 빛을 받는다. 언리얼에서는 버텍스 페인트와 높이 마스크가 반복을 깨고, 데칼은 먼지가 앉을 창 아래와 발코니 아래에 놓인다. 참조는 오버워치와 발로란트다. 양식화되어 있지만 돌로 읽힌다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/creating-a-stylized-barcelona-environment-using-a-modular-architecture-kit",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50882/images/6ae9c63820152/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50882/images/6ae9c63820152/contain_1200x630.jpg",
+  "img": "assets/2026-11-06-14.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50882/images/6ae9c63820152/contain_1200x630.jpg"
  },
  {
   "tag": "Interaction",
@@ -178,6 +204,8 @@
   "ko": "웨이팅 포 아이디어스의 PP-2는 11월 5일 디자인붐에 실렸다. 톤암이 보이지 않는 가공 알루미늄 사각이다. 레코드는 뒤집혀 올라간다. 바늘은 여전히 홈에 닿지만, 자석과 코일 대신 빛이 움직임을 읽는다. 축방향 자속 모터가 속도를 초당 1000번 고친다. 33⅓과 45는 스스로 가린다. 새 RCA 출력은 하이파이에 바로 간다. 플레이어 옆, 도쿄의 유리 방 Pause 렌더에는 컬렉션이 이름이 새겨진 바닥 해치 아래 숨는다. 조립은 3주에서 4주다.",
   "src": "designboom",
   "url": "https://www.designboom.com/technology/pp-2-turntable-reads-vinyls-without-tonearm-glass-listening-room-tokyo-waiting-for-ideas/",
-  "img_url": "https://www.designboom.com/wp-content/uploads/2026/11/aluminum-pp-2-turntable-waiting-for-ideas-plays-vinyl-records-without-tonearm-settings-designboom-03.jpg"
+  "img_url": "https://www.designboom.com/wp-content/uploads/2026/11/aluminum-pp-2-turntable-waiting-for-ideas-plays-vinyl-records-without-tonearm-settings-designboom-03.jpg",
+  "img": "assets/2026-11-06-16.jpg",
+  "img_src": "https://www.designboom.com/wp-content/uploads/2026/11/aluminum-pp-2-turntable-waiting-for-ideas-plays-vinyl-records-without-tonearm-settings-designboom-03.jpg"
  }
 ]
