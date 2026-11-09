@@ -1,0 +1,155 @@
+{
+ "week": "2026-W45",
+ "from": "2026-11-02",
+ "to": "2026-11-06",
+ "title": {
+  "en": "A windshield only one seat can see, a van that stays in frame",
+  "zh": "只有一个座位能看见的挡风玻璃，一辆不离开画框的货车",
+  "ko": "한 좌석만 보는 윈드실드, 프레임을 떠나지 않는 밴"
+ },
+ "intro": {
+  "en": "The week ran from an oil-painted Porsche to Wallace and Gromit in the snow, with EICMA open. Wednesday's picture is the one to keep: a Mercedes windshield whose film only one seat can see, so a passenger image stays off the driver's glass. Tuesday held a Sainsbury's van inside a single frame for the whole spot. Friday's Figma note kept agent line work as a stroke. Milan kept sending rider screens: speed on a Valeo visor, Fleaware on a round Royal Enfield display, an 8-inch Norton between the mirrors, a 7-inch Tiger, and two pods on the Continental GT 750. No story was hearted or marked not for me. The thread is a picture that is also the control, whether that picture is glass, a visor, or a stroke.",
+  "zh": "这一周从一幅油画保时捷走到雪地里的Wallace和Gromit，EICMA同时开着。周三要留下的画面，是奔驰那块只有一个座位能看见的挡风玻璃，乘客的影像不进驾驶员的眼睛。周二的Sainsbury货车整条片子都不离开画框。周五的Figma让代理画出的线仍然是描边。米兰不断送来骑手的屏幕：Valeo面罩上的速度、皇家恩菲尔德圆形屏上的Fleaware、后视镜之间的Norton 8英寸、Tiger的7英寸，以及Continental GT 750的两个舱而不是一块平板。没有故事得到红心，也没有故事被标成不想看。贯穿的是一张同时作为控制的画面：玻璃、面罩，或一根描边。",
+  "ko": "이번 주는 유화로 그린 포르쉐에서 눈 속의 월리스와 그로밋까지이고, EICMA가 함께 열렸다. 수요일에 남길 그림은 메르세데스 윈드실드다. 필름은 한 좌석만 보고, 동승석 그림은 운전자의 유리에 남지 않는다. 화요일의 세인즈버리 밴은 스팟 내내 한 프레임 안에 있다. 금요일의 피그마는 에이전트의 선을 획으로 남긴다. 밀라노는 라이더 화면을 계속 보냈다. 발레오 바이저의 속도, 로열 엔필드의 둥근 화면 위 플리웨어, 거울 사이의 노턴 8인치, 타이거의 7인치, 태블릿 대신 두 개의 포드를 둔 컨티넨탈 GT 750. 하트를 받은 이야기도, 마음에 안 든다고 표시된 이야기도 없다. 관통하는 것은 제어이기도 한 그림이다. 유리, 바이저, 또는 획."
+ },
+ "cats": [
+  {
+   "tag": "Cockpit",
+   "en": "Eight cabins, none hearted. The picture of the week is the Mercedes windshield: elements in the glass keep a passenger film off the driver's eyes. The CLA spreads that idea across a 10.25-inch screen and two 14-inch screens on one sheet, and the passenger picture dies if the driver looks. Mini LEDs in the rear window show a brake symbol, then nearly disappear. The Rogue puts temperature back on a physical switch and drops the piano black. GM rotates the cluster out of the dash until it meets the center screen. At EICMA, Valeo draws speed on the visor, and the GT 750 uses two pods instead of a tablet.",
+   "zh": "八个座舱，没有红心。这一周的画面是奔驰的挡风玻璃：玻璃里的元件让乘客的影像不进驾驶员的眼睛。CLA把同一想法铺在一块10.25英寸和两块14英寸上，三块屏共用一片玻璃，驾驶员看过去，乘客的画面就灭。后窗里的Mini LED先亮一个刹车符号，然后几乎消失。Rogue把温度放回实体开关，拿掉钢琴黑。通用让仪表从台面转出来，直到和中控相遇。EICMA上，Valeo把速度画在面罩上，Continental GT 750用两个舱，而不是一块平板。",
+   "ko": "콕핏 여덟, 하트 없음. 이번 주의 그림은 메르세데스 윈드실드다. 유리 안의 소자가 동승석 영상을 운전자의 눈에서 떼 둔다. CLA는 같은 생각을 10.25인치 하나와 14인치 둘에 펼치고, 세 화면이 유리 한 장을 공유하며, 운전자가 보면 동승석 그림은 꺼진다. 리어 글라스의 미니 LED는 브레이크 심볼을 보였다가 거의 사라진다. 로그는 온도를 물리 스위치로 되돌리고 피아노 블랙을 뺀다. GM은 클러스터를 대시 밖으로 돌려 센터 화면과 만나게 한다. EICMA에서 발레오는 바이저에 속도를 그리고, GT 750은 태블릿 대신 포드 두 개를 쓴다.",
+   "items": [
+    "2026-11-04-1",
+    "2026-11-03-6",
+    "2026-11-04-11",
+    "2026-11-04-9",
+    "2026-11-02-8",
+    "2026-11-06-6",
+    "2026-11-05-3",
+    "2026-11-02-2"
+   ]
+  },
+  {
+   "tag": "Interaction",
+   "en": "Fifteen controls, none hearted. Porsche puts a 3D model of the car, in its real paint, at the center, and turning that model opens lights and chassis. Chromagraph takes a RAW frame through Apple's pipeline and lets the grade arrive after the shutter. Xbox seats friends on the home screen and offers five high-contrast modes. BMW draws what the car sees inside the HUD, with a 3D map on the dash. Duo slides the whole interface for one hand. Compath keeps a yellow Home key and no glass to learn. MIXO's rounded face leaves the desk body for a wrist or a phone.",
+   "zh": "十五条控制，没有红心。保时捷把一辆车的三维模型放在中间，漆色就是实车的颜色，转动模型就能打开灯光和底盘设置。Chromagraph把RAW送进苹果的管线，胶片调色在快门之后才出现。Xbox把朋友放在主屏上，并给出五种高对比模式。宝马把车看见的东西画进HUD，仪表上还有一张三维地图。Duo让整张界面为了单手向左或向右滑。Compath留下一颗黄色Home键，没有要学习的玻璃。MIXO的圆脸可以从桌面身体离开，去手腕或手机。",
+   "ko": "조작 열다섯, 하트 없음. 포르쉐는 실제 도장색의 3D 차를 가운데 두고, 그 모델을 돌리면 라이트와 섀시가 열린다. 크로마그래프는 RAW를 애플 파이프라인에 넣고, 필름 그레이드가 셔터 뒤에 도착하게 한다. 엑스박스는 친구를 홈 화면에 앉히고 고대비 모드 다섯을 둔다. BMW는 차가 보는 것을 HUD 안에 그리고, 대시에는 3D 지도가 있다. 듀오는 한 손을 위해 인터페이스 전체를 민다. 컴패스는 노란 홈 키를 남기고 배울 유리가 없다. 믹소의 둥근 얼굴은 책상 몸체를 떠나 손목이나 휴대폰으로 간다.",
+   "items": [
+    "2026-11-04-3",
+    "2026-11-05-1",
+    "2026-11-06-2",
+    "2026-11-03-12",
+    "2026-11-05-14",
+    "2026-11-02-13",
+    "2026-11-06-15",
+    "2026-11-03-2"
+   ]
+  },
+  {
+   "tag": "AI",
+   "en": "Six tool stories, none hearted, four of them Figma. A frame pasted into Weave stays linked, so the original layout still updates it. Google Drive sits in the agent's plus menu on every plan, including Starter. Code layers read wires already drawn on the canvas, and a shader can export up to 4096 pixels. The Friday note is the one to steal: agent icons come back as strokes, not fills, and the layers are ready to move. Affinity puts sketch, vector, and layout in one .af file, with the core tools free. CozyBlanket Pro suggests edge loops on the machine and packs UVs on the GPU, offline.",
+   "zh": "六条工具，没有红心，其中四条是Figma。贴进Weave的画框保持链接，原布局一改，它也改。Google Drive进了代理的加号菜单，所有方案都有，包括Starter。代码层读画布上已经画好的线，着色器可以导出到4096像素。周五那条值得拿走：代理画的图标回来是描边，不是填充，图层可以直接挪。Affinity把素描、矢量和排版放进同一个.af文件，核心工具免费。CozyBlanket Pro在本机建议边循环，并在GPU上打包UV，可以离线。",
+   "ko": "도구 여섯, 하트 없음. 그중 넷이 피그마다. 위브에 붙인 프레임은 연결이 유지되어, 원본 레이아웃이 바뀌면 함께 바뀐다. 구글 드라이브는 에이전트의 더하기 메뉴에 있고, 스타터를 포함한 모든 플랜에 있다. 코드 레이어는 캔버스에 이미 그린 선을 읽고, 셰이더는 4096픽셀까지 내보낸다. 금요일의 메모가 가져갈 것이다. 에이전트 아이콘은 채우기가 아니라 획으로 돌아오고, 레이어는 바로 옮길 수 있다. 어피니티는 스케치, 벡터, 레이아웃을 .af 파일 하나에 두고 핵심 도구는 무료다. 코지블랭킷 프로는 기기에서 에지 루프를 제안하고 GPU에서 UV를 패킹하며, 오프라인이다.",
+   "items": [
+    "2026-11-06-4",
+    "2026-11-05-4",
+    "2026-11-02-3",
+    "2026-11-02-11",
+    "2026-11-03-4",
+    "2026-11-04-5"
+   ]
+  },
+  {
+   "tag": "Micromobility",
+   "en": "Five rider pieces, all from the show week, none hearted. Triumph's Tiger 1200 puts wireless CarPlay on a 7-inch TFT, and the seat drops 30 millimetres when the bike stops. Aegis fixes 1080p in each eye to the motorcycle, so a look away hides the arrow instead of dragging it. Norton's 450 Urban hangs an 8-inch TFT between the mirrors, with the model name still open. Royal Enfield's Flying Flea S6 keeps Fleaware on a round touchscreen and adds an off-road mode. The Manx R takes five coats, thick enough to change panel gaps, over an 8-inch TFT and metal switchgear.",
+   "zh": "五条骑行，都在车展这一周，没有红心。凯旋Tiger 1200把无线CarPlay放在7英寸TFT上，停车时座椅下降30毫米。Aegis让每只眼睛的1080p钉在摩托上，头一转，箭头就藏起来，而不是被拖着走。Norton 450 Urban在后视镜之间挂一块8英寸TFT，车名还没定。皇家恩菲尔德Flying Flea S6把Fleaware留在圆形触摸屏上，并加了越野模式。Manx R上了五层漆，厚到能改变板件缝隙，下面是8英寸TFT和金属开关。",
+   "ko": "라이더 다섯, 모두 쇼 주간이고 하트는 없다. 트라이엄프 타이거 1200은 7인치 TFT에 무선 카플레이를 두고, 멈추면 시트가 30밀리미터 내려간다. 이지스는 눈마다 1080p를 모터사이클에 고정해, 고개를 돌리면 화살표가 끌려가지 않고 숨는다. 노턴 450 어반은 거울 사이에 8인치 TFT를 걸고, 모델 이름은 아직 열려 있다. 로열 엔필드 플라잉 플리 S6는 둥근 터치스크린에 플리웨어를 두고 오프로드 모드를 더한다. 맹크스 R은 패널 갭을 바꿀 만큼 두꺼운 도장 다섯 겹 아래 8인치 TFT와 메탈 스위치기어를 둔다.",
+   "items": [
+    "2026-11-02-14",
+    "2026-11-04-8",
+    "2026-11-05-9",
+    "2026-11-06-9",
+    "2026-11-03-11"
+   ]
+  },
+  {
+   "tag": "Visual",
+   "en": "Eighteen graphic stories, none hearted. Swiss Post Sans spent three years becoming a face that swaps in without moving a layout, with round dots and italics. P.A.C. is three letters, just typed, in Gronland and Rublena, and a receipt printer runs the menu. HOW+HOW stretches its logo like a fader along one crossbar, in a green-yellow called Gello. Aplomb moves the sealing wax onto the cap and gives each scent a stamp. Museum Night cuts keys and clocks from photographs and stretches faces. Fortune Cookie lets colour strips say Do not panic, and the logo sometimes steps aside. Yinka Ilori cuts the Spurs navy with pink, violet, orange, and blue.",
+   "zh": "十八条图形，没有红心。Swiss Post Sans花了三年，做成一套换上去也不挪版面的字，圆点，斜体很安静。P.A.C.就是三个字母，直接打出来，用Gronland和Rublena，菜单交给收据打印机。HOW+HOW让标志像推子一样沿一根横杆拉开，黄绿叫做Gello。Aplomb把火漆挪到瓶盖上，每种气味一张邮票。博物馆之夜从照片里切出钥匙和钟，把脸拉长。Fortune Cookie用色带写Do not panic，标志有时让到一边。Yinka Ilori用粉、紫、橙、蓝切开热刺的海军蓝。",
+   "ko": "그래픽 열여덟, 하트 없음. 스위스 포스트 산스는 삼 년 걸려, 레이아웃을 밀지 않고 갈아 끼우는 글자가 되었다. 둥근 점, 조용한 이탤릭. P.A.C.는 그냥 친 세 글자이고, 그론란드와 루블레나이며, 메뉴는 영수증 프린터가 돌린다. HOW+HOW는 로고를 페이더처럼 가로대 하나로 늘이고, 녹황색의 이름은 겔로다. 아플롱은 실링 왁스를 캡으로 옮기고 향마다 우표를 준다. 뮤지엄 나이트는 사진에서 열쇠와 시계를 오려 내고 얼굴을 늘인다. 포춘 쿠키는 색 리본으로 Do not panic을 쓰고, 로고는 때로 옆으로 비킨다. 잉카 일로리는 스퍼스의 네이비를 분홍, 보라, 주황, 파랑으로 가른다.",
+   "items": [
+    "2026-11-03-3",
+    "2026-11-05-5",
+    "2026-11-03-8",
+    "2026-11-02-5",
+    "2026-11-06-3",
+    "2026-11-06-11",
+    "2026-11-05-8",
+    "2026-11-04-13"
+   ]
+  },
+  {
+   "tag": "Motion",
+   "en": "Twelve films, each with a play link, none hearted. The Sainsbury's van stays inside the frame, and Giant Country is only what the windscreen shows. Wallace and Gromit take a Barbour into the snow and let one invention go wrong. Blinkink's Levi's sweater is touched every frame, four hours of shooting for one second. Em Cooper paints a Porsche road in oil and leaves the last stroke wet. Crown Royal sends the CG back onto 8mm, 16mm, 35mm, and VHS. Dreamcat is drawn over a real room after the monster was cut. BUCK opens Bass in red, white, and blue.",
+   "zh": "十二部片子，每部都有播放链接，没有红心。Sainsbury的货车不离开画框，巨人国只是挡风玻璃里看见的东西。Wallace和Gromit穿着Barbour走进雪里，让一项发明出错。Blinkink的Levi's毛衣每一帧都被碰过，四小时拍摄换一秒钟。Em Cooper用油画一条保时捷的路，最后一笔还是湿的。Crown Royal把CG转回8毫米、16毫米、35毫米和VHS。Dreamcat是把怪物剪掉之后，画在真实房间上的。BUCK用红、白、蓝打开Bass。",
+   "ko": "필름 열두 편, 모두 재생 링크가 있고 하트는 없다. 세인즈버리 밴은 프레임 안에 남고, 거인 나라는 윈드스크린이 보여주는 것뿐이다. 월리스와 그로밋은 바버를 입고 눈 속으로 가 발명 하나가 틀어지게 둔다. 블링킹크의 리바이스 스웨터는 프레임마다 손이 닿고, 촬영 네 시간이 일 초다. 엠 쿠퍼는 포르쉐의 길을 유화로 그리고 마지막 획을 젖은 채로 둔다. 크라운 로얄은 CG를 8밀리, 16밀리, 35밀리, VHS로 되돌린다. 드림캣은 괴물을 자른 뒤 실제 방 위에 그린다. 벅은 빨강, 하양, 파랑으로 배스를 연다.",
+   "items": [
+    "2026-11-03-1",
+    "2026-11-06-1",
+    "2026-11-04-2",
+    "2026-11-02-1",
+    "2026-11-02-4",
+    "2026-11-06-10",
+    "2026-11-05-2",
+    "2026-11-06-7"
+   ]
+  },
+  {
+   "tag": "Realtime",
+   "en": "Ten real-time pieces, none hearted. Alluvials sets blue type in the haze, ARE YOU MOTH OR ARE YOU TREE, and leaves the menu out. The Hiss rebuild gives every voxel a pixel, then lets the fluid drag that memory. A planet in Unreal is a flat card curved by stereographic UVs, with no sphere mesh. A ZZZ face shader follows one sun, split from the body. A Blender sky runs four cloud layers from one slider. Watercolour bricks are painted, scanned, and tiled. BGEN turns one groom into strands, tubes, or cards. Barcelona is one kit, then dust under the windows.",
+   "zh": "十条实时，没有红心。Alluvials在雾里放蓝字，ARE YOU MOTH OR ARE YOU TREE，底下没有菜单。Hiss让每个体素记住一个像素，再让流体把这段记忆拖走。虚幻里的行星是一张被球极UV弯起来的卡片，没有球体网格。ZZZ的脸部着色器跟一颗太阳，和身体分开，一个空物体告诉阴影头朝哪。Blender的天空用一根滑杆驱动四层云。水彩砖先画，再扫描，再拼贴。BGEN把一套毛发变成发丝、管或游戏卡片。巴塞罗那是一套模块，然后是窗下的灰尘。",
+   "ko": "리얼타임 열 건, 하트 없음. 알루비얼스는 안개에 파란 글자를 둔다. ARE YOU MOTH OR ARE YOU TREE. 메뉴는 없다. 히스는 복셀마다 픽셀을 기억하게 한 뒤, 유체가 그 기억을 끌고 가게 한다. 언리얼의 행성은 구 메시가 없고, 스테레오그래픽 UV로 휜 평평한 카드다. ZZZ 얼굴 셰이더는 몸과 나뉜 채 해 하나를 따른다. 블렌더 하늘은 슬라이더 하나로 구름 네 층을 움직인다. 수채 벽돌은 그려지고, 스캔되고, 타일된다. BGEN은 그룸 하나를 가닥, 튜브, 카드로 만든다. 바르셀로나는 키트 하나, 그리고 창 아래의 먼지다.",
+   "items": [
+    "2026-11-02-7",
+    "2026-11-03-5",
+    "2026-11-06-5",
+    "2026-11-05-11",
+    "2026-11-05-6",
+    "2026-11-04-6",
+    "2026-11-04-12",
+    "2026-11-06-14"
+   ]
+  },
+  {
+   "tag": "Design",
+   "en": "One design story, and it did not take a heart. MTpeak's One All, shown at EICMA, is a three-wheeled sports car with a single wheel at the back and a 2.0 turbo driving that wheel. Carbon panels and an open cockpit do the exterior work. It is the week's only piece filed as vehicle design rather than as a screen, and it sits next to the rider interfaces without becoming one. The open cockpit is the decision: there is no cabin to hide the layout, so the rear wheel and the carbon skin carry the whole read.",
+   "zh": "一条设计，没有红心。MTpeak的One All在EICMA展出，三轮跑车，后面只剩一只轮，2.0涡轮驱动那只轮。碳纤维板和敞开的座舱做完外观。它是这一周唯一被归成车辆设计、而不是屏幕的一条，挨着那些骑手界面，自己却不是界面。敞开的座舱是那个决定：没有舱室可以藏起布局，所以后轮和碳纤维皮肤必须承担全部阅读。",
+   "ko": "디자인 한 건, 하트는 없다. MT피크의 원 올은 EICMA에 나온 삼륜 스포츠카이고, 뒤는 바퀴 하나이며 2.0 터보가 그 바퀴를 돌린다. 카본 패널과 열린 콕핏이 외장의 일이다. 이번 주에서 화면이 아니라 차량 디자인으로 실린 유일한 건이고, 라이더 인터페이스 옆에 있으면서 그 중 하나가 되지 않는다. 열린 콕핏이 결정이다. 레이아웃을 숨길 캐빈이 없어, 뒷바퀴와 카본 껍질이 읽기의 전부를 진다.",
+   "items": [
+    "2026-11-03-16"
+   ]
+  },
+  {
+   "tag": "Industrial",
+   "en": "Five objects, none hearted. PP-2 in Tokyo reads a record with light: the vinyl sits upside down and an optical stylus replaces the magnets. DA1 prints a photo onto a thermal roll and keeps no screen and no file after the print is handed over. WOLOLOW puts Suuronen's 1968 Futuro ellipse on a nightstand, five shells and a replaceable 12-volt MR16 in the hull. She Blooms crochets phosphorescent yarn over bamboo so the chair glows later, with no lamp inside. One discarded leather armchair comes back as nine objects, among them a lamp, a bowl, and a rug.",
+   "zh": "五件物品，没有红心。东京的PP-2用光读唱片：黑胶倒着放，光学唱针换掉磁铁。DA1把照片打在热敏卷上，交出照片之后没有屏幕，也没有文件留下。WOLOLOW把Suuronen 1968年的Futuro椭圆放到床头，五层壳，船体里一颗可换的12伏MR16。She Blooms用磷光纱钩在竹壳上，椅子过后会亮，里面没有灯。一把丢掉的皮扶手椅回来变成九件东西，其中有灯、碗和地毯。",
+   "ko": "사물 다섯, 하트 없음. 도쿄의 PP-2는 빛으로 레코드를 읽는다. 바이닐은 뒤집혀 있고, 광학 스타일러스가 자석을 대신한다. DA1은 사진을 감열 롤에 찍고, 프린트를 건네면 화면도 파일도 남지 않는다. 월로로우는 수우로넨의 1968년 푸투로 타원을 협탁에 두고, 껍질 다섯과 선체의 교체 가능한 12볼트 MR16을 둔다. 쉬 블룸스는 대나무 위에 인광 실을 떠서, 의자가 나중에 빛나고 안에는 램프가 없다. 버린 가죽 안락의자 하나가 램프, 그릇, 러그를 포함한 아홉 물건으로 돌아온다.",
+   "items": [
+    "2026-11-06-16",
+    "2026-11-05-15",
+    "2026-11-02-15",
+    "2026-11-04-16",
+    "2026-11-03-15"
+   ]
+  }
+ ],
+ "top": [],
+ "feedback": {
+  "skipped": [],
+  "actions": {
+   "en": "This week drew no hearts and no skips across 80 stories, so Monday to Friday did not move a quota by itself. Next week still follows the three-week window: HMI 5, Micromobility 1, AI 1, Visual 6, Realtime 2, Product 1, because \"HMI +1 (best net rate +0.07 per story: 4 hearts, 0 skips).\" and \"AI -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays).\" Those hearts are from earlier editions. Favour The Verge (15 stories, 3 hearts, 0 skips), and no source is deprioritised.",
+   "zh": "这一周80条故事没有红心，也没有“不想看”，所以周一到周五本身没有推动任何配额。下周仍按三周窗口：HMI 5、微出行 1、AI 1、视觉 6、实时 2、产品 1，因为“HMI +1 (best net rate +0.07 per story: 4 hearts, 0 skips).”以及“AI -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays).”。那四颗红心在更早的期数里。优先The Verge（15条，3颗红心，0次跳过），没有来源被降权。",
+   "ko": "이번 주 80건은 하트도 스킵도 없어, 월요일부터 금요일은 그 자체로 쿼터를 움직이지 않았다. 다음 주는 여전히 3주 창을 따른다. HMI 5, 마이크로모빌리티 1, AI 1, 비주얼 6, 리얼타임 2, 제품 1. 이유는 “HMI +1 (best net rate +0.07 per story: 4 hearts, 0 skips).”와 “AI -1 (no group is negative; taken from AI/Realtime to keep 16, Visual stays).”다. 그 하트는 더 앞선 판에 있다. 더 버지를 우선한다(15건, 하트 3, 스킵 0). 후순위로 두는 출처는 없다."
+  }
+ }
+}
