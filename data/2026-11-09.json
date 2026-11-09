@@ -9,7 +9,9 @@
   "ko": "새 맥북 프로는 손가락으로 찌를 수 있는 유리이고, macOS는 그 찌름을 마우스 클릭으로 받는다. 손가락이 다가오면 창의 신호등 버튼이 커진다. 사진은 두 손가락으로 집으면 확대된다. 유리 위 키보드는 없고, 애플 펜슬도 동작하지 않는다. 노치 자리에는 다이내믹 아일랜드가 있다. 더 버지의 데이비드 피어스는 3파운드짜리 14인치에서 하루 대여섯 번만 화면을 두드렸다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1026570/apple-macbook-pro-proled-xdr-display-review",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/MON09105-edit.jpeg?quality=90&strip=all&crop=0%2C10.752726382539%2C100%2C78.494547234923&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/MON09105-edit.jpeg?quality=90&strip=all&crop=0%2C10.752726382539%2C100%2C78.494547234923&w=1200",
+  "img": "assets/2026-11-09-1.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/MON09105-edit.jpeg?quality=90&strip=all&crop=0%2C10.752726382539%2C100%2C78.494547234923&w=1200"
  },
  {
   "tag": "Cockpit",
@@ -21,7 +23,9 @@
   "ko": "2027 Q6 e-트론의 스티어링 휠에는 터치 패드 자리에 물리 스크롤 휠이 두 개 있다. 왼쪽 휠은 디지털 클러스터의 화면을 넘기고, 오른쪽 휠은 음량이다. 햅틱 버튼은 남아 있고, 눌림이 돌아온다. 센터 화면과 클러스터의 MMI는 아이콘이 더 크고 배경이 더 단순해서, 이전 아우디 메뉴보다 카플레이에 가깝다. 10.9인치 동승석 화면은 선택이고, 달면 대시가 유리 한 장으로 읽힌다.",
   "src": "Car and Driver",
   "url": "https://www.caranddriver.com/news/a74275364/audi-infotainment-system-updates/",
-  "img_url": "https://hips.hearstapps.com/hmg-prod/images/original-16333-my27-a6-sportback-e-tron-interior-apple-carplay-5952-6986573011585.jpg?crop=1xw:0.6666666666666666xh;center,top&resize=1200:*"
+  "img_url": "https://hips.hearstapps.com/hmg-prod/images/original-16333-my27-a6-sportback-e-tron-interior-apple-carplay-5952-6986573011585.jpg?crop=1xw:0.6666666666666666xh;center,top&resize=1200:*",
+  "img": "assets/2026-11-09-2.jpg",
+  "img_src": "https://hips.hearstapps.com/hmg-prod/images/original-16333-my27-a6-sportback-e-tron-interior-apple-carplay-5952-6986573011585.jpg?crop=1xw:0.6666666666666666xh;center,top&resize=1200:*"
  },
  {
   "tag": "Motion",
@@ -34,7 +38,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/framestore-reindeer-take-flight-for-the-national-lottery/",
   "video": "https://www.framestore.com/work/christmas-it-could-be-you",
-  "img_url": "https://www.framestore.com/sites/default/files/2026-11/National_Lottery_Christmas_header.jpg"
+  "img_url": "https://www.framestore.com/sites/default/files/2026-11/National_Lottery_Christmas_header.jpg",
+  "img": "assets/2026-11-09-3.jpg",
+  "img_src": "https://www.framestore.com/sites/default/files/2026-11/National_Lottery_Christmas_header.jpg"
  },
  {
   "tag": "AI",
@@ -56,7 +62,9 @@
   "ko": "발로란트의 요원 허시는 Spine 2D로 움직이고, 무기와 배경은 애프터 이펙트에서 끝낸다. 배경은 프랙탈 노이즈, CC 벡터 블러, 카툰 효과를 겹친다. 세터 MD는 이미 5막 홈을 클로브, 제트, 피닉스, 오멘, 게코로 만들었다. 3D처럼 읽히는 기울기는 Spine의 2D 워프이고, 각각 15분에서 30분이다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/how-valorant-s-hush-was-animated-using-spine-2d-after-effects",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50923/images/6aedf24893be2/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50923/images/6aedf24893be2/contain_1200x630.jpg",
+  "img": "assets/2026-11-09-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50923/images/6aedf24893be2/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -68,7 +76,9 @@
   "ko": "피터 데이비스는 객석의 틀린 쪽에서 공연을 그린다. 들어 올린 휴대폰이 벽이 되고, 무대는 빛 한 덩어리로 줄어든다. 그는 화면 위로 고개 숙인 사람을 십 년째 그려 왔고, 그 자세를 이 행성에서 가장 흔한 포즈라고 부른다. 긱 포즈는 밴드 티셔츠를 더한다. 너바나 스마일리처럼, 충성이 아니라 복장으로 입힌다. 각 캔버스는 참고 사진에서 시작해 붓으로 그린다. 시리즈는 11월 19일부터 22일 맨체스터 컨템포러리에 있다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/peter-daviss-gig-pose/",
-  "img_url": "https://media.creativeboom.com/6089858d-1368-42de-8177-0f1e21368c7e/conversions/530afe8682d14681e87cbd7616ce65ab7a4db85c-medium.webp"
+  "img_url": "https://media.creativeboom.com/6089858d-1368-42de-8177-0f1e21368c7e/conversions/530afe8682d14681e87cbd7616ce65ab7a4db85c-medium.webp",
+  "img": "assets/2026-11-09-6.webp",
+  "img_src": "https://media.creativeboom.com/6089858d-1368-42de-8177-0f1e21368c7e/conversions/530afe8682d14681e87cbd7616ce65ab7a4db85c-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -79,7 +89,9 @@
   "ko": "아이나 링은 티타늄 밴드이고, 직사각형 OLED가 검지 위에 있다. 몸체 네 조각이 부품 약 140개를 감싼다. 엄지 옆 조이스틱은 튕김, 누름, 길게 누름의 일곱 입력을 받는다. 위로 튕기면 Cue 승인, 전화, 음악 정지가 되고, 무시하면 예약되지 않는다. 길게 누르면 마이크가 메모를 받는다. iOS 18 이상 아이폰이 필요하고, 7에서 13까지 화면 크기는 같다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/07/ainas-ai-ring-puts-an-oled-screen-and-joystick-on-your-finger/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/ainas-ai-ring-puts-an-oled-screen-and-joystick-on-your-finger/aina-ring-01.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/ainas-ai-ring-puts-an-oled-screen-and-joystick-on-your-finger/aina-ring-01.jpg",
+  "img": "assets/2026-11-09-7.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/ainas-ai-ring-puts-an-oled-screen-and-joystick-on-your-finger/aina-ring-01.jpg"
  },
  {
   "tag": "Micromobility",
@@ -90,7 +102,9 @@
   "ko": "EICMA의 야마하 RW700은 사각 램프의 상자이고, 거울 사이의 태블릿이 아니라 5인치 TFT다. 가민 스트리트크로스는 그 화면에서 무료다. 익스플로어는 백라이트 스위치, 열선 그립, 열선 시트를 더한다. 플로어보드와 풋페그가 둘 다 있다. Y-AMT는 스스로 변속하거나 라이더에게 맡긴다. 색은 세이지 블루, 아라시 샌드, 미드나잇 블랙이다.",
   "src": "RideApart",
   "url": "https://www.rideapart.com/news/814140/yamaha-rw700-explore-rw350-adventure-scooter-lineup-overview/",
-  "img_url": "https://cdn.motor1.com/images/mgl/7Z14z1/s1/riufnll4auu.jpg"
+  "img_url": "https://cdn.motor1.com/images/mgl/7Z14z1/s1/riufnll4auu.jpg",
+  "img": "assets/2026-11-09-8.jpg",
+  "img_src": "https://cdn.motor1.com/images/mgl/7Z14z1/s1/riufnll4auu.jpg"
  },
  {
   "tag": "Motion",
@@ -101,7 +115,9 @@
   "ko": "이매지너리 포시스는 HBO의 War 오프닝을 법정이 아니라 물감으로 연다. 두 형태가 나아가고, 부딪히고, 돌아온다. 두 복서가 링을 쓰는 방식이다. 움직임은 애플 펜슬로 프로크리에이트에서 그린 뒤 크리타로 넘긴다. 시네마 4D와 레드시프트가 캔버스와 빛을 더하고, 붓질은 남는다. 로니 코프가 연출했다. 시퀀스는 싸움 자체다.",
   "src": "Imaginary Forces",
   "url": "https://imaginaryforces.com/project/war",
-  "video": "https://imaginaryforces.com/project/war"
+  "video": "https://imaginaryforces.com/project/war",
+  "img": "assets/2026-11-09-9.jpg",
+  "img_src": "https://imaginaryforces.com/images/pics/834_x8a8ET_frame_1061.jpg"
  },
  {
   "tag": "Interaction",
@@ -112,7 +128,9 @@
   "ko": "언 규 리의 마이크로 저널 Rev.2.1.MINI, 베이비 샤크는 나사가 드러난 빨간 클램셸이고, 8인치 LCD는 1280×400이다. 키는 네 줄 열두 개, 48개다. 숫자는 레이어에 있다. Vial로 다시 매기고 스위치는 핫스왑이다. 파이 제로 2 W가 리눅스를 돌리고, 글은 워드그라인더와 나노로 쓴다. 부팅은 약 30초다. 18650 네 개, 또는 USB-A 충전기가 필요한 USB-C. 위치 배색은 EVA-01이다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/07/micro-journal-rev-2-1-mini-writing-laptop-pairs-a-wide-screen-with-just-48-keys/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/micro-journal-rev-2-1-mini-writing-laptop-pairs-a-wide-screen-with-just-48-keys/micro-journal-rev-2-1-mini-baby-shark-01.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/micro-journal-rev-2-1-mini-writing-laptop-pairs-a-wide-screen-with-just-48-keys/micro-journal-rev-2-1-mini-baby-shark-01.jpg",
+  "img": "assets/2026-11-09-10.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/micro-journal-rev-2-1-mini-writing-laptop-pairs-a-wide-screen-with-just-48-keys/micro-journal-rev-2-1-mini-baby-shark-01.jpg"
  },
  {
   "tag": "Cockpit",
@@ -133,7 +151,9 @@
   "ko": "《액시덴털 콜라주》는 맨체스터 닥터미와 웨이팅 룸 프레스의 400쪽이다. 맨해튼 가림막, 파리 메트로, 런던 지하철에서 벗겨 낸 포스터다. 닉 케이브 포스터 아래로 맥도날드 마크가 나오고, 마크 에드워즈는 그것을 맥케이브라 부른다. 글은 히샴 아키라 바루차, 사라 보리스, 닉 디킨, 브라우리우 아마도, 제러미 구스틴이 썼다. 표지는 리디아 데이비스를 따라 손으로 찢는다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/dr-me-waiting-room-press-accidental-collage-advertising-publication-project-051126",
-  "img_url": "https://m.itsnicethat.com/original_images/dr-me-publication-itsnicethat-1.jpg?class=w1440"
+  "img_url": "https://m.itsnicethat.com/original_images/dr-me-publication-itsnicethat-1.jpg?class=w1440",
+  "img": "assets/2026-11-09-12.jpg",
+  "img_src": "https://m.itsnicethat.com/original_images/dr-me-publication-itsnicethat-1.jpg?class=w1440"
  },
  {
   "tag": "Visual",
@@ -143,7 +163,9 @@
   "zh": "Pangram Pangram的PP Altera由Caio Kondo、Francesca Bolognini和Mat Desjardins绘制。一个可变文件，九个子家族，72种样式，每切510个字形。三条轴动笔画、字尾和衬线。共用度量，标题换成正文时网格不用重排。",
   "ko": "팽그램 팽그램의 PP 알테라는 카이오 콘도, 프란체스카 볼로니니, 맷 데자르댕이 그렸다. 가변 파일 하나, 하위 패밀리 아홉, 스타일 72, 컷마다 글리프 510개. 리니얼은 엘레강트, 슬릭, 산스. 휴메인은 에이션트, 텍스트, 웨지. 클래식은 샤프, 카브, 세리프. 세 축은 획, 터미널, 세리프를 움직이고, 메트릭이 같아 헤드라인이 본문이 되어도 그리드가 밀리지 않는다.",
   "src": "Abduzeedo",
-  "url": "https://abduzeedo.com/typography-pp-altera-variable-typeface-pangram-pangram"
+  "url": "https://abduzeedo.com/typography-pp-altera-variable-typeface-pangram-pangram",
+  "img": "assets/2026-11-09-13.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_pp-altera.jpg"
  },
  {
   "tag": "Realtime",
@@ -153,7 +175,9 @@
   "zh": "DillonGoo的Flattice支持Blender 3.6到5.1，给动漫脸假造一支更长的镜头。点一下，在脸、胸或整个身体上生成一个朝向摄像机的晶格，压扁看不见，五官也不会在画幅边缘被拉开。3D游标决定效果最强的位置，插件会写出顶点组、驱动，并父级到绑定。这套做法用Geometry Nodes也能做，这里收成一颗按钮。",
   "ko": "딜런구의 플래티스는 블렌더 3.6부터 5.1에서 애니 얼굴에 더 긴 렌즈를 흉내 낸다. 한 번 누르면 얼굴, 가슴, 또는 몸 전체에 카메라를 향한 래티스가 생긴다. 눌림은 보이지 않고, 이목구비가 프레임 가장자리에서 늘어나지 않는다. 3D 커서가 가장 센 곳을 정하고, 애드온은 버텍스 그룹과 드라이버를 릭에 붙인다. 지오메트리 노드로도 되고, 여기서는 버튼이다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/create-perfect-anime-faces-at-extreme-angles-with-this-blender-tool"
+  "url": "https://80.lv/articles/create-perfect-anime-faces-at-extreme-angles-with-this-blender-tool",
+  "img": "assets/2026-11-09-14.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50830/images/6ae349077261f/contain_1200x630.jpg"
  },
  {
   "tag": "Industrial",
@@ -164,7 +188,9 @@
   "ko": "루이 에라르와 비아니 할터의 퓌튀르 앙테리외르는 다이얼에 리벳 포트홀을 두 개 둔다. 한 창은 시와 분, 다른 창은 흐르는 초다. 각 창은 셀리타 SW100을 따로 가진다. 둘째 시간대까지 맞추는 일은 더 어려워 하지 않았다. 스틸 케이스는 지름 38밀리미터, 러그 사이 44밀리미터, 두께 8.85밀리미터다. 베젤마다 리벳 12개, 크라운마다 여섯, 블루 스틸 바늘. 각 178피스.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/08/two-hidden-mechanical-movements-power-one-slim-louis-erard-watch/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/two-hidden-mechanical-movements-power-one-slim-louis-erard-watch/futur-anteriur-0.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/two-hidden-mechanical-movements-power-one-slim-louis-erard-watch/futur-anteriur-0.jpg",
+  "img": "assets/2026-11-09-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/two-hidden-mechanical-movements-power-one-slim-louis-erard-watch/futur-anteriur-0.jpg"
  },
  {
   "tag": "Design",
@@ -175,6 +201,8 @@
   "ko": "오리건 그레셤의 이스트 카운티 도서관은 홀스트와 아자예의 9만 5천 제곱피트이고, 숲에서 시작한다. 가느다란 목재 기둥이 벽 밖으로 나가 지붕을 받친다. 실내에는 공학 목재 보와 기둥 약 1,200개, 직교 집성판 거의 300장이 노출되고 사이에 천창이 있다. 나무 살로 감긴 곡선 계단은 식재된 좌석으로 내려간다. 서쪽은 놀이와 강당, 동쪽은 독서다. 550명 넘게 쿨 코스탈에 투표했다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/08/this-oregon-library-brings-the-feeling-of-walking-through-a-forest-indoors/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/this-oregon-library-brings-the-feeling-of-walking-through-a-forest-indoors/EastCounty_Library_Architecture_01.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/this-oregon-library-brings-the-feeling-of-walking-through-a-forest-indoors/EastCounty_Library_Architecture_01.jpg",
+  "img": "assets/2026-11-09-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/this-oregon-library-brings-the-feeling-of-walking-through-a-forest-indoors/EastCounty_Library_Architecture_01.jpg"
  }
 ]
