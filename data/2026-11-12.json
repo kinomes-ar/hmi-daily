@@ -1,10 +1,49 @@
 [
  {
+  "tag": "Cockpit",
+  "t": "GV90: shut the door, skip the button",
+  "en": "Close the door and the column shifter, the Crystal Sphere and the tweeter covers move, to say the GV90 is ready. Brake, select a gear, and it pulls away. There is no start button. The centre OLED is 23.6 inches wide in motion, with telemetry, navigation and infotainment on one layout. Parked, one button opens it to 24.6 inches, about 1.7 times the area. A 25-inch head-up display, Pleos Connect and Gleo AI come with it. Orders for this car, and the coach-door Neolun, opened in Korea on 10 November.",
+  "blurb": "Shut the door and the shifter moves; parked, the OLED opens to 24.6 inches",
+  "pick": true,
+  "zh": "关上车门，换挡杆、Crystal Sphere和扬声器罩会动起来，表示GV90可以走了。踩刹车、挂挡，直接起步。没有启动键。行驶时中控OLED宽23.6英寸，同一块画面上车况、导航和娱乐。停车后按一下，展开到24.6英寸，面积大约1.7倍。旁边是25英寸抬头显示、Pleos Connect和Gleo AI。这台车和无B柱马车门的Neolun，11月10日在韩国开放订购。",
+  "ko": "문을 닫으면 컬럼 시프터와 크리스탈 스피어, 트위터 커버가 움직여 GV90이 준비됐음을 알린다. 브레이크를 밟고 기어를 넣으면 출발한다. 시동 버튼은 없다. 주행 중 센터 OLED는 23.6인치이고, 차의 상태와 내비와 인포테인먼트가 한 화면에 있다. 주차 후 버튼 하나에 24.6인치로 열리며, 면적은 약 1.7배다. 25인치 헤드업 디스플레이와 플레오스 커넥트, 글리오 AI가 함께한다. 이 차와 코치 도어 네오룬의 한국 주문이 11월 10일에 열렸다.",
+  "src": "Genesis",
+  "url": "https://newsroom.genesis.com/genesis-commences-sales-of-gv90-neolun-and-gv90-in-korea/",
+  "img_url": "https://content.presspage.com/uploads/2934/92df665d-8285-4cd4-9b8a-495e1a5c0507/1920_redefiningspacewiththegenesisgv90rsquosluxuryhometheater_2.jpg?10000",
+  "img": "assets/2026-11-12-gv90.jpg",
+  "img_src": "https://content.presspage.com/uploads/2934/92df665d-8285-4cd4-9b8a-495e1a5c0507/1920_redefiningspacewiththegenesisgv90rsquosluxuryhometheater_2.jpg?10000"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Formula 2030: Calm, Map, or the car",
+  "en": "The Formula 2030 cluster is a curved display you restack: Calm, Map, or Car, swapped without a menu. A segmented fade sits on the graphics so the read stays clear. Steer-by-wire sends the wheel to actuators, and haptic feedback stands in for a mechanical link. The physical buttons can change position and what they do, so the row under the screen is the driver's own. Polestar points this cockpit at the interiors that follow.",
+  "blurb": "The cluster swaps Calm, Map and Car cards, and the buttons can be moved",
+  "pick": true,
+  "zh": "Formula 2030的仪表是一块可重排的曲面屏：Calm、Map或Car，不用进菜单就能换。图形上有一段分段渐隐，读数保持清楚。线控转向把方向盘的输入交给执行器，机械连接的位置换成触觉反馈。实体按键可以改位置，也可以改功能，屏幕下方那一排是驾驶者自己的。极星把这套座舱指向后面的内饰。",
+  "ko": "포뮬러 2030의 클러스터는 다시 쌓는 곡면 디스플레이다. Calm, Map, Car를 메뉴 없이 바꾼다. 그래픽 위의 분할 페이드가 읽기를 분명하게 둔다. 스티어 바이 와이어는 휠의 입력을 액추에이터로 보내고, 기계식 연결 자리에는 햅틱이 선다. 물리 버튼은 위치와 기능을 바꿀 수 있어, 화면 아래 줄은 운전자의 것이다. 폴스타는 이 콕핏을 다음 실내로 가리킨다.",
+  "src": "Polestar",
+  "url": "https://www.polestar.com/global/concept-cars/formula-2030/",
+  "img_url": "https://www.polestar.com/dato-assets/94392/1794218958-polestar-formula2030-20-cover-d.png?fm=jpg&w=1600&q=80",
+  "img": "assets/2026-11-12-polestar.jpg",
+  "img_src": "https://www.polestar.com/dato-assets/94392/1794218958-polestar-formula2030-20-cover-d.png?fm=jpg&w=1600&q=80"
+ },
+ {
+  "tag": "AI",
+  "t": "Figma: a spring sets the duration",
+  "en": "Motion, still in open beta, plays a style in the list and on the canvas before you apply it. A physics spring takes stiffness and damping, plus mass on iOS and web. Android uses stiffness and a damping ratio. Duration comes from those values. The timeline marks where the motion ends, short of the next keyframe or past it. Springs save into a library. A Lottie preview plays the export before download: shaders and angular gradients flatten, video drops out, and glass, noise and shadows keep the first frame.",
+  "blurb": "Stiffness, damping and mass set the time, then a Lottie preview plays",
+  "zh": "仍在公开测试的Motion，先在列表和画布上播放样式，再决定用不用。物理弹簧在iOS和网页上设刚度、阻尼和质量。Android用刚度和阻尼比，没有单独的质量。时长由这些数值算出。时间线标出动作真正结束的位置，可能早于下一关键帧，也可能超过。弹簧能存进库。Lottie预览在下载前播放：着色器和角度渐变压成静帧，视频不支持，玻璃、噪点和阴影停在第一帧。",
+  "ko": "아직 오픈 베타인 모션은 스타일을 적용하기 전에 목록과 캔버스에서 먼저 재생한다. 물리 스프링은 iOS와 웹에서 강성, 감쇠, 질량을 받는다. 안드로이드는 강성과 감쇠비이고 질량은 없다. 시간은 그 값에서 나온다. 타임라인은 모션이 끝나는 지점을 표시하고, 다음 키프레임보다 이를 수도 넘을 수도 있다. 스프링은 라이브러리에 저장된다. 로티 미리보기는 받기 전에 재생된다. 셰이더와 각도 그라데이션은 납작해지고, 영상은 빠지며, 유리와 그림자는 첫 프레임에 남는다.",
+  "src": "Figma",
+  "url": "https://www.figma.com/release-notes/?title=new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews",
+  "img": "assets/2026-11-12-3.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+ },
+ {
   "tag": "Motion",
   "t": "Bass X: an X cuts through the title",
   "en": "BUCK's titles for Netflix's Bass X Machina open inside Bass's head. A hat brim cuts a field of red, a rider crosses a flat blue sky, and a blue eye stares out of a fractured diamond. The wordmark is distressed, and an oversized X cuts straight through it. Red, white and blue only, paced by Janelle Monáe's HONOR KiLLING. Brian Tyree Henry worked the sequence with the studio. Studio Mir animates the six episodes, on Netflix since 3 November.",
   "blurb": "An oversized X cuts a distressed wordmark on red, white and blue posters",
-  "pick": true,
   "zh": "BUCK为Netflix的Bass X Machina做的片头，开在Bass脑子里。帽檐切开一片红，骑手穿过平坦的蓝天，一只蓝眼睛从碎开的菱形里盯出来。字标做旧，一个过大的X直接切过标题。只有红、白、蓝，节奏跟着Janelle Monáe的HONOR KiLLING。Brian Tyree Henry和工作室一起做了这段。Studio Mir画的六集，11月3日起在Netflix。",
   "ko": "벅이 넷플릭스 Bass X Machina 오프닝을 배스의 머릿속에서 연다. 모자챙이 빨간 면을 가르고, 기수는 평평한 파란 하늘을 가로지르며, 파란 눈이 쪼개진 다이아몬드 밖으로 본다. 워드마크는 닳아 있고, 큰 X가 제목을 곧장 가른다. 빨강, 하양, 파랑뿐이고, 자넬 모네의 HONOR KiLLING이 박자를 잡는다. 브라이언 타이리 헨리가 스튜디오와 시퀀스를 맞췄다. 스튜디오 미르가 여섯 편을 그렸고, 11월 3일부터 넷플릭스에 있다.",
   "src": "Abduzeedo",
@@ -27,18 +66,6 @@
   "img_url": "https://www.thedrive.com/wp-content/uploads/2026/10/untitled-0481-e1794408387522.jpg?w=1200",
   "img": "assets/2026-11-12-2.jpg",
   "img_src": "https://www.thedrive.com/wp-content/uploads/2026/10/untitled-0481-e1794408387522.jpg?w=1200"
- },
- {
-  "tag": "AI",
-  "t": "Figma: a spring sets the duration",
-  "en": "Motion, still in open beta, plays a style in the list and on the canvas before you apply it. A physics spring takes stiffness and damping, plus mass on iOS and web. Android uses stiffness and a damping ratio. Duration comes from those values. The timeline marks where the motion ends, short of the next keyframe or past it. Springs save into a library. A Lottie preview plays the export before download: shaders and angular gradients flatten, video drops out, and glass, noise and shadows keep the first frame.",
-  "blurb": "Stiffness, damping and mass set the time, then a Lottie preview plays",
-  "zh": "仍在公开测试的Motion，先在列表和画布上播放样式，再决定用不用。物理弹簧在iOS和网页上设刚度、阻尼和质量。Android用刚度和阻尼比，没有单独的质量。时长由这些数值算出。时间线标出动作真正结束的位置，可能早于下一关键帧，也可能超过。弹簧能存进库。Lottie预览在下载前播放：着色器和角度渐变压成静帧，视频不支持，玻璃、噪点和阴影停在第一帧。",
-  "ko": "아직 오픈 베타인 모션은 스타일을 적용하기 전에 목록과 캔버스에서 먼저 재생한다. 물리 스프링은 iOS와 웹에서 강성, 감쇠, 질량을 받는다. 안드로이드는 강성과 감쇠비이고 질량은 없다. 시간은 그 값에서 나온다. 타임라인은 모션이 끝나는 지점을 표시하고, 다음 키프레임보다 이를 수도 넘을 수도 있다. 스프링은 라이브러리에 저장된다. 로티 미리보기는 받기 전에 재생된다. 셰이더와 각도 그라데이션은 납작해지고, 영상은 빠지며, 유리와 그림자는 첫 프레임에 남는다.",
-  "src": "Figma",
-  "url": "https://www.figma.com/release-notes/?title=new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews",
-  "img": "assets/2026-11-12-3.png",
-  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Motion",
@@ -161,7 +188,6 @@
   "t": "Disney: eyes where the glass was",
   "en": "A small orange four-wheeler, tested with Field AI, puts a screen where a windshield would be. The eyes move. The eyelids blink. The paint is a high-vis vest, orange with yellow, closer to Cars than to a humanoid. A sign on the roof changes to point at an open space, and two short arms carry red lights, the way a marshaller does. Shown at Disney Accelerator Demo Day. No date for the Disneyland lots, and no promise they will be there.",
   "blurb": "A screen for a windshield, with blinking eyes and a sign on the roof",
-  "pick": true,
   "zh": "和Field AI一起测试的一辆橙色小四轮，把屏幕放在挡风玻璃该在的位置。眼睛会动，眼皮会眨。涂装像反光背心，橙配黄，更接近Cars，而不是人形机器人。车顶的牌子会变，指向空车位。两条短臂带着红灯，像机坪引导员。在迪士尼加速器Demo Day上出现。乐园停车场没有日期，也没有承诺一定会去。",
   "ko": "필드 AI와 시험 중인 작은 주황 사륜은 앞유리가 있을 자리에 화면을 둔다. 눈이 움직이고, 눈꺼풀이 깜빡인다. 도색은 안전조끼다. 주황에 노랑, 휴머노이드보다 카스에 가깝다. 지붕의 표지판은 빈자리를 가리키도록 바뀌고, 짧은 팔 두 개가 빨간 등을 든다. 마샬러처럼. 디즈니 액셀러레이터 데모 데이에서 보였다. 디즈니랜드 주차장에 올 날짜도, 온다는 약속도 없다.",
   "src": "Carscoops",
