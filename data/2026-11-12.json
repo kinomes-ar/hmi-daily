@@ -1,31 +1,32 @@
 [
  {
   "tag": "Cockpit",
-  "t": "GV90: shut the door, skip the button",
-  "en": "Close the door and the column shifter, the Crystal Sphere and the tweeter covers move, to say the GV90 is ready. Brake, select a gear, and it pulls away. There is no start button. The centre OLED is 23.6 inches wide in motion, with telemetry, navigation and infotainment on one layout. Parked, one button opens it to 24.6 inches, about 1.7 times the area. A 25-inch head-up display, Pleos Connect and Gleo AI come with it. Orders for this car, and the coach-door Neolun, opened in Korea on 10 November.",
+  "t": "GV90 Neolun: shut the door, no button",
+  "en": "The production GV90 Neolun, the coach-door flagship, opened for orders in Korea on 10 November. Close the door and the column shifter, the Crystal Sphere and the tweeter covers move. Brake, select a gear, and it pulls away. There is no start button. The centre OLED is 23.6 inches wide while driving, with telemetry, navigation and infotainment on one layout. Parked, one button opens it to 24.6 inches, about 1.7 times the area. A 25-inch head-up display, Pleos Connect and Gleo AI sit with it.",
   "blurb": "Shut the door and the shifter moves; parked, the OLED opens to 24.6 inches",
   "pick": true,
-  "zh": "关上车门，换挡杆、Crystal Sphere和扬声器罩会动起来，表示GV90可以走了。踩刹车、挂挡，直接起步。没有启动键。行驶时中控OLED宽23.6英寸，同一块画面上车况、导航和娱乐。停车后按一下，展开到24.6英寸，面积大约1.7倍。旁边是25英寸抬头显示、Pleos Connect和Gleo AI。这台车和无B柱马车门的Neolun，11月10日在韩国开放订购。",
-  "ko": "문을 닫으면 컬럼 시프터와 크리스탈 스피어, 트위터 커버가 움직여 GV90이 준비됐음을 알린다. 브레이크를 밟고 기어를 넣으면 출발한다. 시동 버튼은 없다. 주행 중 센터 OLED는 23.6인치이고, 차의 상태와 내비와 인포테인먼트가 한 화면에 있다. 주차 후 버튼 하나에 24.6인치로 열리며, 면적은 약 1.7배다. 25인치 헤드업 디스플레이와 플레오스 커넥트, 글리오 AI가 함께한다. 이 차와 코치 도어 네오룬의 한국 주문이 11월 10일에 열렸다.",
+  "zh": "量产的GV90 Neolun是对开门旗舰，11月10日在韩国开放订购。关上车门，换挡杆、Crystal Sphere和扬声器罩会动起来。踩刹车、挂挡，直接起步。没有启动键。行驶时中控OLED宽23.6英寸，同一块画面上车况、导航和娱乐。停车后按一下，展开到24.6英寸，面积大约1.7倍。旁边是25英寸抬头显示、Pleos Connect和Gleo AI。",
+  "ko": "양산형 GV90 네오룬은 코치 도어 플래그십이고, 한국 주문이 11월 10일에 열렸다. 문을 닫으면 컬럼 시프터와 크리스탈 스피어, 트위터 커버가 움직인다. 브레이크를 밟고 기어를 넣으면 출발한다. 시동 버튼은 없다. 주행 중 센터 OLED는 23.6인치이고, 차의 상태와 내비와 인포테인먼트가 한 화면에 있다. 주차 후 버튼 하나에 24.6인치로 열리며, 면적은 약 1.7배다. 25인치 헤드업 디스플레이와 플레오스 커넥트, 글리오 AI가 함께한다.",
   "src": "Genesis",
   "url": "https://newsroom.genesis.com/genesis-commences-sales-of-gv90-neolun-and-gv90-in-korea/",
-  "img_url": "https://content.presspage.com/uploads/2934/92df665d-8285-4cd4-9b8a-495e1a5c0507/1920_redefiningspacewiththegenesisgv90rsquosluxuryhometheater_2.jpg?10000",
+  "img_url": "https://content.presspage.com/uploads/2934/f5608b65-4c50-426b-8a03-d951db2b1321/1920_261110-genesiscommencessalesofgv90neolunandgv90inkorea-2.jpg?10000",
   "img": "assets/2026-11-12-gv90.jpg",
-  "img_src": "https://content.presspage.com/uploads/2934/92df665d-8285-4cd4-9b8a-495e1a5c0507/1920_redefiningspacewiththegenesisgv90rsquosluxuryhometheater_2.jpg?10000"
+  "img_src": "https://content.presspage.com/uploads/2934/f5608b65-4c50-426b-8a03-d951db2b1321/1920_261110-genesiscommencessalesofgv90neolunandgv90inkorea-2.jpg?10000"
  },
  {
   "tag": "Cockpit",
-  "t": "Formula 2030: Calm, Map, or the car",
-  "en": "The Formula 2030 cluster is a curved display you restack: Calm, Map, or Car, swapped without a menu. A segmented fade sits on the graphics so the read stays clear. Steer-by-wire sends the wheel to actuators, and haptic feedback stands in for a mechanical link. The physical buttons can change position and what they do, so the row under the screen is the driver's own. Polestar points this cockpit at the interiors that follow.",
-  "blurb": "The cluster swaps Calm, Map and Car cards, and the buttons can be moved",
+  "t": "Formula 2030: tiles, knobs, 22°C",
+  "en": "The film prints Polestar Formula 2030 along the body. Under the screen, the console is a white panel: climate held at 22°C, tile buttons, knurled knobs, one of them gold. The same panel lists Performance, Normal and Autonomous. The curved cluster swaps Calm, Map and Car cards, and a segmented fade sits on the graphics. Steer-by-wire sends the wheel to actuators. Haptic feedback stands in for a mechanical link.",
+  "blurb": "White tiles and knurled knobs, one of them gold, climate held at 22°C",
   "pick": true,
-  "zh": "Formula 2030的仪表是一块可重排的曲面屏：Calm、Map或Car，不用进菜单就能换。图形上有一段分段渐隐，读数保持清楚。线控转向把方向盘的输入交给执行器，机械连接的位置换成触觉反馈。实体按键可以改位置，也可以改功能，屏幕下方那一排是驾驶者自己的。极星把这套座舱指向后面的内饰。",
-  "ko": "포뮬러 2030의 클러스터는 다시 쌓는 곡면 디스플레이다. Calm, Map, Car를 메뉴 없이 바꾼다. 그래픽 위의 분할 페이드가 읽기를 분명하게 둔다. 스티어 바이 와이어는 휠의 입력을 액추에이터로 보내고, 기계식 연결 자리에는 햅틱이 선다. 물리 버튼은 위치와 기능을 바꿀 수 있어, 화면 아래 줄은 운전자의 것이다. 폴스타는 이 콕핏을 다음 실내로 가리킨다.",
+  "zh": "片子在车身上印着Polestar Formula 2030。屏幕下方是一块白面板：空调停在22°C，瓷砖式按键，滚花旋钮，其中一颗是金色。同一块面板列出Performance、Normal和Autonomous。曲面仪表在Calm、Map和Car三张卡片之间换，图形上有一段分段渐隐。线控转向把方向盘交给执行器。机械连接的位置换成触觉反馈。",
+  "ko": "영상이 차체 옆에 Polestar Formula 2030을 새긴다. 화면 아래 콘솔은 흰 패널이다. 공조는 22°C, 타일 버튼, 널링 노브, 그중 하나는 금색이다. 같은 패널에 Performance, Normal, Autonomous가 있다. 곡면 클러스터는 Calm, Map, Car 카드를 바꾸고, 그래픽 위에 분할 페이드가 있다. 스티어 바이 와이어는 휠을 액추에이터로 보낸다. 기계식 연결 자리에는 햅틱이 선다.",
   "src": "Polestar",
   "url": "https://www.polestar.com/global/concept-cars/formula-2030/",
-  "img_url": "https://www.polestar.com/dato-assets/94392/1794218958-polestar-formula2030-20-cover-d.png?fm=jpg&w=1600&q=80",
+  "img_url": "https://www.polestar.com/dato-assets/94392/1794217686-polestar-formula2030-05-d.png?fm=jpg&w=1200&q=80",
   "img": "assets/2026-11-12-polestar.jpg",
-  "img_src": "https://www.polestar.com/dato-assets/94392/1794218958-polestar-formula2030-20-cover-d.png?fm=jpg&w=1600&q=80"
+  "img_src": "https://www.polestar.com/dato-assets/94392/1794217686-polestar-formula2030-05-d.png?fm=jpg&w=1200&q=80",
+  "video": "https://insight.supermatrix.app/assets/2026-11-12-formula2030.mp4"
  },
  {
   "tag": "AI",
