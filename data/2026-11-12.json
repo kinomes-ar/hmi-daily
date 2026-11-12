@@ -10,7 +10,9 @@
   "src": "Abduzeedo",
   "url": "https://abduzeedo.com/bass-x-machina-inside-bucks-new-title-sequence",
   "video": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
-  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_24.jpg"
+  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_24.jpg",
+  "img": "assets/2026-11-12-1.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_24.jpg"
  },
  {
   "tag": "Cockpit",
@@ -22,7 +24,9 @@
   "ko": "Q9 스티어링 휠의 롤러가 먼저다. 기계식 조작이 뒤따른다. 공조 버튼, 그다음 도어에 같은 처리, 이미 생산 중인 실내에도, Q7을 포함해서. 아우디 아메리카의 필립 브라베츠는 이 수정을 Interior Next와 Radical Next 두 이름 아래 둔다. 후자는 게르노트, 마시모 프라셀라와 함께다. 화면은 이 세대에서 갈 데까지 갔다. 손은 보지 않고도 찾는 조작을 갖는다.",
   "src": "The Drive",
   "url": "https://www.thedrive.com/news/audi-says-touchscreens-have-gone-as-far-as-theyll-go-buttons-are-coming-back",
-  "img_url": "https://www.thedrive.com/wp-content/uploads/2026/10/untitled-0481-e1794408387522.jpg?w=1200"
+  "img_url": "https://www.thedrive.com/wp-content/uploads/2026/10/untitled-0481-e1794408387522.jpg?w=1200",
+  "img": "assets/2026-11-12-2.jpg",
+  "img_src": "https://www.thedrive.com/wp-content/uploads/2026/10/untitled-0481-e1794408387522.jpg?w=1200"
  },
  {
   "tag": "AI",
@@ -32,7 +36,9 @@
   "zh": "仍在公开测试的Motion，先在列表和画布上播放样式，再决定用不用。物理弹簧在iOS和网页上设刚度、阻尼和质量。Android用刚度和阻尼比，没有单独的质量。时长由这些数值算出。时间线标出动作真正结束的位置，可能早于下一关键帧，也可能超过。弹簧能存进库。Lottie预览在下载前播放：着色器和角度渐变压成静帧，视频不支持，玻璃、噪点和阴影停在第一帧。",
   "ko": "아직 오픈 베타인 모션은 스타일을 적용하기 전에 목록과 캔버스에서 먼저 재생한다. 물리 스프링은 iOS와 웹에서 강성, 감쇠, 질량을 받는다. 안드로이드는 강성과 감쇠비이고 질량은 없다. 시간은 그 값에서 나온다. 타임라인은 모션이 끝나는 지점을 표시하고, 다음 키프레임보다 이를 수도 넘을 수도 있다. 스프링은 라이브러리에 저장된다. 로티 미리보기는 받기 전에 재생된다. 셰이더와 각도 그라데이션은 납작해지고, 영상은 빠지며, 유리와 그림자는 첫 프레임에 남는다.",
   "src": "Figma",
-  "url": "https://www.figma.com/release-notes/?title=new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews"
+  "url": "https://www.figma.com/release-notes/?title=new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews",
+  "img": "assets/2026-11-12-3.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Motion",
@@ -56,7 +62,9 @@
   "ko": "하루 전 에이전트 도구와 별개로, 어도비 맥스 스니크는 실험이다. 스크린 테스트는 불안, 수줍음, 어색함 같은 특성에서 시작한다. 통화하듯 말하면 페르소나가 아직 움직일 수 있는 슬라이더로 돌아온다. 사이트 스팬은 사진이나 그림을 걸어 들어갈 방으로 바꾼다. 걸어 다닐 때는 흐리고, 카메라를 고정하면 그 프레임이 선명해진다. 린스 리핏은 포토샵 수정 하나를 다른 얼굴이나 제품에 복사하고 네이티브 레이어로 다시 만든다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Adobe-Project-Screen-Test.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Adobe-Project-Screen-Test.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+  "img": "assets/2026-11-12-5.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Adobe-Project-Screen-Test.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
  },
  {
   "tag": "Visual",
@@ -68,7 +76,9 @@
   "ko": "디자인스튜디오와 리프트 타입이 DNEG Script를 잘랐다. 큰 문장을 위한 무거운 좁은 글자다. 비전 필름은 렌즈 같은 눈을 주황과 보라 줄기를 따라 소실점으로 보내고, 완성된 샷으로 모은다. 같은 줄기가 산호색 글자 뒤에 선다. BEYOND POSSIBLE, 그 아래 Where reality ends, we begin. 넓은 그로테스크가 작은 문장을 맡는다. 로고는 다시 그린 것이 아니라 조였다. 나머지는 검정이라 색은 빛으로 읽힌다.",
   "src": "Abduzeedo",
   "url": "https://abduzeedo.com/how-designstudio-refreshed-dneg-brand-identity",
-  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_25.jpg"
+  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_25.jpg",
+  "img": "assets/2026-11-12-6.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_25.jpg"
  },
  {
   "tag": "Visual",
@@ -79,7 +89,9 @@
   "ko": "코토는 워드마크의 마지막 f를 화살촉으로 끝내고, 그 화살표를 가격과 혜택 옆에 반복한다. Giffsans는 맞춤 높은 좁은 산세리프이고, gg 합자는 옛 마크를 가리킨다. 애시드 그린이 검정과 하양에 더해진다. 사진은 플래시를 친 즉석 컷이다. 밤거리, 바닷가의 두 사람, 스톡 미소가 아니다. 소포의 녹색 테이프에는 Your Next Move가 찍힌다. 시스템은 기존 디자인 토큰 위에 있어 사이트와 앱이 그대로 실을 수 있다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/",
-  "img_url": "https://media.creativeboom.com/4f65ec68-9090-4951-b27a-072e666ad48e/conversions/14e4f4cda141f601d5a633fd942b521b42fb7b5d-medium.webp"
+  "img_url": "https://media.creativeboom.com/4f65ec68-9090-4951-b27a-072e666ad48e/conversions/14e4f4cda141f601d5a633fd942b521b42fb7b5d-medium.webp",
+  "img": "assets/2026-11-12-7.webp",
+  "img_src": "https://media.creativeboom.com/4f65ec68-9090-4951-b27a-072e666ad48e/conversions/14e4f4cda141f601d5a633fd942b521b42fb7b5d-medium.webp"
  },
  {
   "tag": "Realtime",
@@ -89,7 +101,9 @@
   "zh": "J4m1ns的Editable Motion Paths把运动画成视口里的曲线。关键帧是点，切线是贝塞尔手柄。切刀、倒角、挤出、环切作用在路径上，F曲线跟着更新。每帧一个点显示间距。笔刷有抓取、平滑、挤压，以及慢、快、均匀。Dissolve一笔去掉烘焙键。在Blender Studio的Rain上试过。Blender 4.4起，Extensions免费。",
   "ko": "J4m1ns의 Editable Motion Paths는 움직임을 뷰의 곡선으로 그린다. 키는 점, 탄젠트는 베지에 핸들이다. 나이프, 베벨, 익스트루드, 루프 컷이 경로에 먹히고 F커브가 갱신된다. 프레임마다 점이 간격을 보여 준다. 브러시는 그랩, 스무드, 핀치, 슬로, 패스트, 이븐. Dissolve는 구운 키를 걷어 낸다. Rain 리그에서 시험했다. 블렌더 4.4 이상, 익스텐션에서 무료다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/edit-your-blender-animations-just-like-editing-mesh-with-this-free-tool"
+  "url": "https://80.lv/articles/edit-your-blender-animations-just-like-editing-mesh-with-this-free-tool",
+  "img": "assets/2026-11-12-8.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50982/images/6af49b53044b2/contain_1200x630.jpg"
  },
  {
   "tag": "Cockpit",
@@ -100,7 +114,9 @@
   "ko": "마날리의 스파이 샷은 다음 크레타의 운전자 디스플레이를 대시 깊숙이, 디미스터 쪽에 둔다. 새 셀토스, 베뉴, 베르나처럼 센터 화면과 한 패널로 붙이지 않는다. 센터 터치스크린은 따로, 크다. 휠은 새것이다. 평평한 아래, 네 점의 모스 부호 H, 터치 패드, 그리고 물리적 스크롤 휠 두 개. 화면 아래에는 로터리가 있다. 조수석 보스 모드 버튼은 콘솔에 있다. 소프트웨어는 플레오스로 보이지만, 현대는 확인하지 않았다.",
   "src": "Autocar India",
   "url": "https://www.autocarindia.com/car-news/2027-hyundai-creta-interior-spied-in-india-441298",
-  "img_url": "https://asset.autocarindia.com/static/news/images/20261111_070926_a0f5fa0b.jpg"
+  "img_url": "https://asset.autocarindia.com/static/news/images/20261111_070926_a0f5fa0b.jpg",
+  "img": "assets/2026-11-12-9.jpg",
+  "img_src": "https://asset.autocarindia.com/static/news/images/20261111_070926_a0f5fa0b.jpg"
  },
  {
   "tag": "Visual",
@@ -110,7 +126,9 @@
   "zh": "Essential Viewing给Ironman女性社群的标志，是三枚人字形，游泳、骑行、跑步各一枚，叠到读成一个W。下面一行是Strength in every thread。名字换掉2014年的Women For Tri。工作室自编自导的片子Not One Thing，带着一年的铺开，覆盖45个地区、Strava、赛事和周边。标志在凯卢阿-科纳的世锦赛上出现过。辫子就是整套系统。",
   "ko": "에센셜 뷰잉이 아이언맨 여성 커뮤니티에 만든 마크는 셰브론 세 개다. 수영, 자전거, 달리기, 하나씩 쌓아 W로 읽히게 한다. 아래 줄은 Strength in every thread. 이름은 2014년의 Women For Tri를 대체한다. 스튜디오가 쓰고 연출한 Not One Thing이 1년 롤아웃을 이끈다. 45개 지역, 스트라바, 대회, 상품. 마크는 카일루아코나의 세계선수권에 있었다. 땋임이 시스템 전체다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/news/this-new-identity-for-a-womens-sports-community-swaps-cheerleading-for-real-talk/"
+  "url": "https://www.creativeboom.com/news/this-new-identity-for-a-womens-sports-community-swaps-cheerleading-for-real-talk/",
+  "img": "assets/2026-11-12-10.webp",
+  "img_src": "https://media.creativeboom.com/98052d5c-7048-40c6-bbf8-cf1bab1ead0b/conversions/993960a1da74f054727c6beb7346d5613589b5e3-medium.webp"
  },
  {
   "tag": "Micromobility",
@@ -121,7 +139,9 @@
   "ko": "강철 차체는 그대로인 베스파다. 2027 프리마베라 테크 엘레트리카의 새 얼굴은 5인치 TFT다. 키리스 시동, 전화 연결의 턴바이턴 내비, 앱으로 열리는 시트가 있다. 테크는 유럽에서 모터사이클로 인증되고 67km/h까지 간다. 배터리는 빼서 실내에서 충전할 수 있어, 차고가 없는 라이더를 위한 변화다. 45km/h 프리마베라와 스프린트 S는 희토류 자석을 뺀 새 이탈리아 모터를 공유한다. 멀리서 보면 여전히 베스파다.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/11/09/the-electric-vespa-just-got-better-where-it-actually-matters/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/11/vespa-lettrica-header-scooter-1.jpg?quality=82&strip=all&resize=1200,628"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/11/vespa-lettrica-header-scooter-1.jpg?quality=82&strip=all&resize=1200,628",
+  "img": "assets/2026-11-12-11.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/11/vespa-lettrica-header-scooter-1.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Interaction",
@@ -132,7 +152,9 @@
   "ko": "이번 달 등록된 특허에서 차의 전방 카메라는 드래그 스트립의 크리스마스 트리를 알아본다. 운전자는 두 페달을 함께 밟는다. 차는 브레이크를 잡고 노란 등의 간격을 재며, 초록 등이 켜지면 제동 압력을 푼다. 특허는 간격이 다른 트리도 커버해, 같은 논리가 서킷을 옮겨 갈 수 있다. 출발 뒤 가속 페달을 어찌할지는 열려 있다. 인터페이스는 세 가지 색을 읽는 카메라이고, 발은 그대로 밟혀 있다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2312459/gm-launch-control-automated/",
-  "img_url": "https://www.carscoops.com/img/gallery/gm-wants-its-ai-to-drag-race-for-you/l-intro-1794337501.jpg"
+  "img_url": "https://www.carscoops.com/img/gallery/gm-wants-its-ai-to-drag-race-for-you/l-intro-1794337501.jpg",
+  "img": "assets/2026-11-12-12.jpg",
+  "img_src": "https://www.carscoops.com/img/gallery/gm-wants-its-ai-to-drag-race-for-you/l-intro-1794337501.jpg"
  },
  {
   "tag": "Interaction",
@@ -144,7 +166,9 @@
   "ko": "필드 AI와 시험 중인 작은 주황 사륜은 앞유리가 있을 자리에 화면을 둔다. 눈이 움직이고, 눈꺼풀이 깜빡인다. 도색은 안전조끼다. 주황에 노랑, 휴머노이드보다 카스에 가깝다. 지붕의 표지판은 빈자리를 가리키도록 바뀌고, 짧은 팔 두 개가 빨간 등을 든다. 마샬러처럼. 디즈니 액셀러레이터 데모 데이에서 보였다. 디즈니랜드 주차장에 올 날짜도, 온다는 약속도 없다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2311179/disney-testing-ai-powered-parking-assistants-cars/",
-  "img_url": "https://www.carscoops.com/img/gallery/disney-testing-ai-powered-cars-themed-parking-assistants/l-intro-1794247263.jpg"
+  "img_url": "https://www.carscoops.com/img/gallery/disney-testing-ai-powered-cars-themed-parking-assistants/l-intro-1794247263.jpg",
+  "img": "assets/2026-11-12-13.jpg",
+  "img_src": "https://www.carscoops.com/img/gallery/disney-testing-ai-powered-cars-themed-parking-assistants/l-intro-1794247263.jpg"
  },
  {
   "tag": "Visual",
@@ -154,7 +178,9 @@
   "zh": "白袍和头巾里的人坐在绣球花间的雕花椅子上，脸化开了，像一张被放到超过文件分辨率的照片。玫瑰读成贴纸，贴在平坦的糖果色地上，每个人都像剪下来再放下。Hawazin在布里克斯顿的工作室里用手画。最近的参照是Silent Hill 2：一个像心情一样能走进去的地方。脸如果清楚，就是肖像。这张是始终没有对上焦的截图。",
   "ko": "흰 토브와 구트라를 한 인물들이 수국 사이 화려한 의자에 앉아 있고, 얼굴은 풀려 있다. 파일을 넘겨 확대한 사진처럼. 장미는 스티커로 읽히고, 평평한 사탕색 바닥에 붙어, 사람마다 오려 붙인 것처럼 보인다. 하와진은 브릭스턴 작업실에서 손으로 그린다. 최근 참조는 사일런트 힐 2다. 기분처럼 걸어 들어가는 장소. 얼굴이 선명하면 초상이다. 이것은 끝내 초점이 맞지 않은 스크린샷이다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/blurry-faces-pink-skies-and-video-game-worlds-step-inside-hawazins-candy-coloured-paintings/"
+  "url": "https://www.creativeboom.com/inspiration/blurry-faces-pink-skies-and-video-game-worlds-step-inside-hawazins-candy-coloured-paintings/",
+  "img": "assets/2026-11-12-14.webp",
+  "img_src": "https://media.creativeboom.com/b575c01a-d687-4636-9f66-b6f41a340aa8/conversions/bcf0551d978fcf5c8fb43bc1d0a757c60ca5ea0f-medium.webp"
  },
  {
   "tag": "Industrial",
@@ -165,7 +191,9 @@
   "ko": "MK-II 스튜디오의 루프 라이트는 앤드루 페리어의 작업이다. 자석 링을 원통 베이스 위 골진 갓으로 쌓는다. 각 링의 투명한 중심은 구멍이 아니라 렌즈다. 하나를 들어 올리면 가장자리에 따뜻한 빛이 있는 확대경이 되어, 메뉴를 보려 전화를 테이블에 올리지 않아도 된다. 렌즈는 종이 위에 떠 있도록 되어 있다. 큰 테이블에는 링을 더하고, 나머지는 켜진 채다. 무선, 밀폐, 유도 충전이라 자리 사이에 닦을 수 있다. 배율과 사용 시간은 아직 열려 있다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/11/loupe-light-concept-lets-diners-borrow-a-magnifier-from-the-table-lamp/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/loupe-light-concept-lets-diners-borrow-a-magnifier-from-the-table-lamp/loupe-modular-lamp-magnifier-concept-02.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/loupe-light-concept-lets-diners-borrow-a-magnifier-from-the-table-lamp/loupe-modular-lamp-magnifier-concept-02.jpg",
+  "img": "assets/2026-11-12-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/loupe-light-concept-lets-diners-borrow-a-magnifier-from-the-table-lamp/loupe-modular-lamp-magnifier-concept-02.jpg"
  },
  {
   "tag": "Interaction",
@@ -175,6 +203,8 @@
   "zh": "Google Labs的Tabletop用一句提示做出共享板：行程、晚餐投票、分账、对阵表。丢进链接、文件和笔记，再对@tabletop说，或从模板开始。一条邀请链接让一群人进同一块板，像文档一样一起改。看起来更像规划墙，而不是聊天。测试是美国候补名单，18岁以上。屏幕上是你要的那个工具，不是一串回答。",
   "ko": "구글 랩스의 테이블톱은 프롬프트로 공유 보드를 만든다. 여행 일정, 저녁 투표, 비용 나누기, 대진표. 링크와 파일과 메모를 넣고 @tabletop에 말하거나, 템플릿에서 시작한다. 초대 링크 하나가 무리를 같은 공간에 넣고, 문서처럼 함께 고친다. 채팅보다 계획 벽에 가깝다. 베타는 미국 대기자 명단이고, 18세 이상이다. 화면 위는 요청한 도구이지, 답변의 실이 아니다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability"
+  "url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+  "img": "assets/2026-11-12-16.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Google-Labs-Tabletop.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
  }
 ]
