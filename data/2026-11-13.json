@@ -9,7 +9,9 @@
   "ko": "제미나이 앱이 애플 카플레이 화면과 사이드 레일에 자체 아이콘을 갖는다. 구글 지도 안의 버튼과는 별개다. 누르면 최근 대화를 잇거나 새로 시작한다. 말을 끊고, 주제를 바꾸고, 출구 앞에서 멈출 수 있다. 스레드는 아이폰으로 동기화되어 주차하면 메모가 남는다. 캘린더를 읽고 지메일을 요약한다. 데일리 브리프는 18세 미만과 유럽경제지역, 나이지리아에서 꺼진다. 최신 앱과 마이크, 폰에서 라이브를 한 번 쓴 상태가 필요하다.",
   "src": "Google",
   "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
-  "img_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Carplay_hero_image.width-1300.png"
+  "img_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Carplay_hero_image.width-1300.png",
+  "img": "assets/2026-11-13-1.png",
+  "img_src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Carplay_hero_image.width-1300.png"
  },
  {
   "tag": "Motion",
@@ -22,7 +24,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
   "video": "https://www.youtube.com/watch?v=icsvRE68MxA",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-_-STASH-MAGAZINE7-640x360.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-_-STASH-MAGAZINE7-640x360.jpg",
+  "img": "assets/2026-11-13-2.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-_-STASH-MAGAZINE7-640x360.jpg"
  },
  {
   "tag": "Visual",
@@ -34,7 +38,9 @@
   "ko": "코타입의 마크 블룸은 에이오닉의 완전 라운드 짝을 시험하다 멈췄다. 알약형 끝은 a, s, c, e를 벌레처럼 만들었고, 블랙에서 심했다. 가변 시안은 모서리 반경을 네 단계로 나누고 작은 값에 고정했다. 바깥은 굽고 기둥은 곧다. 소문자 a가 한계다. K와 k의 굵은 사선은 윗팔을 좁혀, 그 획을 조금 벌렸다. 에어부터 블랙까지 여덟 굵기와 이탤릭. 스타일 세트 열일곱에 단층 a, 슬래시 제로, 세리프 7이 있다.",
   "src": "Abduzeedo",
   "url": "https://abduzeedo.com/aeonik-soft-rounded-neo-grotesque-typography-cotype",
-  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_cotype-s-mark-bloom-softening-aeonik-s-type01.jpg"
+  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_cotype-s-mark-bloom-softening-aeonik-s-type01.jpg",
+  "img": "assets/2026-11-13-3.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_cotype-s-mark-bloom-softening-aeonik-s-type01.jpg"
  },
  {
   "tag": "AI",
@@ -45,7 +51,9 @@
   "ko": "슬래시바이브는 에이전트 작업을 컴퓨터 옆 힌지형 3.96인치 LCD에 둔다. 짧은 조작은 키 세 개와 2축 조이스틱이다. 음성 컨트롤러는 분리되어 화면과 무선으로 잇고, 화면은 USB-C에 남는다. 보내기와 취소가 나뉘어 말이 곧 제출은 아니다. 세션은 진행, 완료, 대기로 보이고, 해당 창을 앞으로 불러온다. 앱은 macOS와 Windows이며 에이전트 20개 이상을 적는다. 클로드 코드와 커서가 그 안에 있다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/11/slashvibe-gives-ai-work-a-dedicated-screen-and-a-detachable-voice-controller/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/slashvibe-gives-ai-work-a-dedicated-screen-and-a-detachable-voice-controller/SlashVibe-hero.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/slashvibe-gives-ai-work-a-dedicated-screen-and-a-detachable-voice-controller/SlashVibe-hero.jpg",
+  "img": "assets/2026-11-13-4.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/slashvibe-gives-ai-work-a-dedicated-screen-and-a-detachable-voice-controller/SlashVibe-hero.jpg"
  },
  {
   "tag": "Realtime",
@@ -57,7 +65,9 @@
   "ko": "블렌더 5.3은 PLY, SPZ, glTF의 3D 가우시안 스플랫을 가져온다. 지오메트리 노드에서 다루고, 워크벤치에서 미리 보며, EEVEE나 사이클스로 렌더한다. 프린시플드 BSDF에 분산이 생겨 유리와 보석의 무지개가 나온다. DLSS 4.5 레이 리컨스트럭션은 디노이즈 패널에 있고, 엔비디아 드라이버 620 이상이 필요하다. EEVEE 머티리얼 라이팅은 툰이나 이리데선스로 빛에 반응한다. 스플래시는 오픈 필름 오버그로운이다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/blender-5-3-has-finally-arrived",
-  "img_url": "https://cdn.80.lv/api/upload/meta/50974/images/6af4373eb589c/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/50974/images/6af4373eb589c/contain_1200x630.jpg",
+  "img": "assets/2026-11-13-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/50974/images/6af4373eb589c/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -69,7 +79,9 @@
   "ko": "스튜디오 둠바는 젤러펠트의 정체성을 휴대폰 스캔의 단일 소재 신발 위에 올렸다. 접착도 봉제도 없다. 주황 포스터에서 굵은 그로테스크는 사선 인필로 잘린다. 프린터가 부품 안에 까는 격자라, 글자가 단어 한가운데 그물이 된다. 마크는 발 모양 고리와 각진 안쪽 사각형이다. 숯색 상자 밖으로 큰 글자가 넘치고, 세리프 한 줄 아래 모노스페이스 스펙이 있다. 검은 테이프의 주홍은 printed with Zellerfeld, 옆은 단선 신발이다.",
   "src": "Abduzeedo",
   "url": "https://abduzeedo.com/how-studio-dumbar-crafted-3d-footwear-branding-zellerfeld",
-  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_zellerfeld-studiodumbar-com.jpg"
+  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_zellerfeld-studiodumbar-com.jpg",
+  "img": "assets/2026-11-13-6.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_zellerfeld-studiodumbar-com.jpg"
  },
  {
   "tag": "Interaction",
@@ -79,7 +91,9 @@
   "zh": "The Verge上手HomeView，屏幕是1088乘1088的7英寸方形LCD。表盘里有史努比，画法沿用Apple Watch。没有实体音量键和静音键，调音量得点玻璃，或再拿起手机。屏幕上方的Center Stage摄像头把FaceTime的人留在画面里。桌面版299美元。壁挂版同价，不含支架，施耐德USB-C底板59.99美元。指纹不明显。在台面上转了几天，线拧上了。",
   "ko": "더 버지의 홈뷰 핸즈온은 화면을 1088 곱하기 1088, 7인치 정사각 LCD로 잰다. 페이스에 애플 워치 스타일의 스누피가 있다. 물리 음량과 음소거 버튼이 없어, 소리는 유리를 누르거나 폰을 집는다. 화면 위 센터 스테이지 카메라는 페이스타임 상대를 프레임에 둔다. 탁상형은 299달러다. 벽걸이형은 같은 가격이고 마운트가 없다. 슈나이더 USB-C 플레이트는 59.99달러다. 지문은 문제되지 않았고, 며칠 돌리자 케이블이 꼬였다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1031726/apple-homeview-review-smart-display-homekit"
+  "url": "https://www.theverge.com/tech/1031726/apple-homeview-review-smart-display-homekit",
+  "img": "assets/2026-11-13-7.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268864_Smart_home_photos_HMCRAE74.jpg?quality=90&strip=all&crop=0%2C4.1397458568192%2C100%2C78.47632823109&w=1200"
  },
  {
   "tag": "Motion",
@@ -91,7 +105,9 @@
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/news/this-french-new-wave-take-on-sabrina-carpenter-is-genius-in-a-bottle/",
   "video": "https://www.youtube.com/watch?v=T8WwhKYO0LA",
-  "img_url": "https://media.creativeboom.com/90239ff2-9596-47a6-93dc-49d2097531f3/conversions/9fdff567969d465f62870868548791b2539c46c6-medium.webp"
+  "img_url": "https://media.creativeboom.com/90239ff2-9596-47a6-93dc-49d2097531f3/conversions/9fdff567969d465f62870868548791b2539c46c6-medium.webp",
+  "img": "assets/2026-11-13-8.webp",
+  "img_src": "https://media.creativeboom.com/90239ff2-9596-47a6-93dc-49d2097531f3/conversions/9fdff567969d465f62870868548791b2539c46c6-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -102,7 +118,9 @@
   "ko": "엑스박스 인사이더는 가이드 메뉴를 화면 왼쪽뿐 아니라 오른쪽 가장자리에도 둘 수 있다. 알파 스킵어헤드가 먼저다. 다이내믹 배경은 즐겨찾기에 넣고, 로그인마다, 또는 시간, 하루, 주 단위로 섞을 수 있다. 카테고리 전체의 셔플도 있다. 디스크로 받은 디지털 라이선스 게임은 라이브러리에서 따로 모이고, 타일의 라이선스 아이콘은 숨길 수 있다. 볼 변화는 레이아웃이다. 시스템 메뉴가 왼쪽 레일을 전제하지 않는다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/news/1032396/xbox-dashboard-guide-menu-right-side-background-shuffle-feature",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/4.-Guide-right.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/4.-Guide-right.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+  "img": "assets/2026-11-13-9.png",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/4.-Guide-right.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
  },
  {
   "tag": "AI",
@@ -113,7 +131,9 @@
   "ko": "칼 페이의 최신 영상에서 낫싱의 12월 기기는 회색 둥근 몸체, 녹음 버튼, 초록과 빨강 상태등 두 개다. 글은 맥락이 채팅 상자에 살지 않는다고 한다. 화면은 여전히 없다. 그는 이것이 앱일 수 없고 새 화면을 더하지 않는다고 이미 말했다. 프레임 안의 인터페이스는 버튼과 LED뿐이고, 불빛이 말풍선의 일을 한다.",
   "src": "9to5Google",
   "url": "https://9to5google.com/2026/11/12/nothings-screen-less-new-gadget-really-looks-like-yet-another-ai-recorder/",
-  "img_url": "https://9to5google.com/wp-content/uploads/sites/4/2026/11/nothing-ai-recorder-teaser.jpg?quality=82&strip=all&resize=1200,628"
+  "img_url": "https://9to5google.com/wp-content/uploads/sites/4/2026/11/nothing-ai-recorder-teaser.jpg?quality=82&strip=all&resize=1200,628",
+  "img": "assets/2026-11-13-10.jpg",
+  "img_src": "https://9to5google.com/wp-content/uploads/sites/4/2026/11/nothing-ai-recorder-teaser.jpg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Interaction",
@@ -124,7 +144,9 @@
   "ko": "모토로라 MA2는 작은 검은 사각으로, 유선 안드로이드 오토를 무선으로 바꾸고 그 자동을 거절할 길도 준다. 휴대폰 두 대가 페어링된 채 남는다. 버튼이 어느 쪽이 대시보드를 가질지 고른다. 주차 뒤 USB가 살아 있으면 슬라이드가 어댑터를 끊는다. 상태등만 있고 화면은 없다. USB-C에 A와 C 케이블, 젤 패드. 차는 유선 안드로이드 오토를 말해야 하고, 연결은 5 GHz다. 미국가는 69.99달러, 첫 배송은 12월이다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/12/motorola-ma2-adds-a-phone-switching-button-to-wireless-android-auto/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/motorola-ma2-adds-a-phone-switching-button-to-wireless-android-auto/motorola-ma2-wireless-android-auto-adapter-04.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/motorola-ma2-adds-a-phone-switching-button-to-wireless-android-auto/motorola-ma2-wireless-android-auto-adapter-04.jpg",
+  "img": "assets/2026-11-13-11.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/motorola-ma2-adds-a-phone-switching-button-to-wireless-android-auto/motorola-ma2-wireless-android-auto-adapter-04.jpg"
  },
  {
   "tag": "Visual",
@@ -135,7 +157,9 @@
   "ko": "조지 매코슬랜드는 비싼 종이를 치웠다. 번진 연필, 과슈, 파스텔이 깨끗한 종이보다 질감을 주고, 그녀는 자국에 사람이 남기를 원한다. 그림은 뉴욕 타임스, 더 컷, 아파르타멘토로 가고, 현장에서 그린 스케치북도 있다. 공원, 또는 카페 탁자 아래다. 예전에 쫓던 민속은 아니다. 작업실은 바르셀로나의 부페 유레이고, 곁가지는 애니메이션, 판화, 도자다. 선은 느슨하다. 디테일은 남아 있다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/georgie-mcausland-illustration-discover-121126",
-  "img_url": "https://m.itsnicethat.com/original_images/Turtle_lake.jpg?class=w1440"
+  "img_url": "https://m.itsnicethat.com/original_images/Turtle_lake.jpg?class=w1440",
+  "img": "assets/2026-11-13-12.webp",
+  "img_src": "https://m.itsnicethat.com/original_images/Turtle_lake.jpg?class=w1440"
  },
  {
   "tag": "Interaction",
@@ -146,7 +170,9 @@
   "ko": "후프 휴먼스는 커뮤니티 탭을 스토리처럼 연다. 모멘트는 사진과 캡션이다. 러닝에서 위로 쓸면 프레임이 경로 지도가 되고, 페이스와 거리가 붙는다. 옆 카드는 팔로우한 사람의 수면, 회복, 스트레인이다. 리커버리, 스트레인, 슬립, HRV, 안정시 심박수 중 무엇을 내보낼지 고른다. 스텔스 모드는 선택을 바꾸지 않고 숫자만 숨긴다. 민감 활동은 기본으로 나가지 않는다. 계정은 밴드의 심박에 묶이고, 피드는 기록된 데이터다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/gadgets/1032630/whoop-humans-social-network",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whoop-humans-launch-screenshots-trio-2.jpeg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whoop-humans-launch-screenshots-trio-2.jpeg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+  "img": "assets/2026-11-13-13.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/whoop-humans-launch-screenshots-trio-2.jpeg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
  },
  {
   "tag": "Visual",
@@ -157,7 +183,9 @@
   "ko": "에밀리 스타인의 아쿠아스플래시는 낡고 시끄러운 색의 이탈리아 워터파크다. 라이크라 모자, 휘는 슬라이드, 조각, 네온 음료. 스타일링도 연출도 없다. 아이가 파란 물에 떨어지고, 캔이 타일 위에 남는다. 파스텔 분홍 사물함과 자판기가 사람과 같은 주의를 받는다. 보정은 약간의 채도뿐이다. 그녀는 그곳을 볼륨을 끝까지 올린 여름이라 한다. 튜브와 타일, 물러나지 않는 색이 남는다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/emily-stein-aquasplash-photography-project-111126",
-  "img_url": "https://m.itsnicethat.com/original_images/Emily-Stein-Aquasplash-photography-Itsnicethat-7.jpg?class=w1440"
+  "img_url": "https://m.itsnicethat.com/original_images/Emily-Stein-Aquasplash-photography-Itsnicethat-7.jpg?class=w1440",
+  "img": "assets/2026-11-13-14.jpg",
+  "img_src": "https://m.itsnicethat.com/original_images/Emily-Stein-Aquasplash-photography-Itsnicethat-7.jpg?class=w1440"
  },
  {
   "tag": "Industrial",
@@ -168,7 +196,9 @@
   "ko": "카란 아네자의 플랜티크는 얼굴이 있는 토양 센서다. 주황, 서니 옐로, 스프라우트 그린 몸이 윤기 나는 검은 OLED를 감싼다. 청록 눈은 수치가 바뀌면 위로 휜 곡선에서 처진다. 머리 위에는 구슬 끝 줄기 세 개. 골진 목 아래의 얇은 정전용량 프로브는 화분에 남고, 화면은 방 건너 앱이 아니라 흙 위에 있다. 표정은 기분이 아니라 읽기다. 처진 눈은 물을 붓는 명령이 아니라 화분을 보는 이유다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/12/plantique-concept-makes-a-soil-sensor-look-like-a-tiny-alien/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/plantique-concept-makes-a-soil-sensor-look-like-a-tiny-alien/plantique-plant-monitoring-device-concept-02.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/plantique-concept-makes-a-soil-sensor-look-like-a-tiny-alien/plantique-plant-monitoring-device-concept-02.jpg",
+  "img": "assets/2026-11-13-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/plantique-concept-makes-a-soil-sensor-look-like-a-tiny-alien/plantique-plant-monitoring-device-concept-02.jpg"
  },
  {
   "tag": "Micromobility",
@@ -179,6 +209,8 @@
   "ko": "혼다 UC3는 110cc급 시티 스쿠터다. 라이더 앞은 풀컬러 TFT이고, 휴대폰과 연결되며, 주행 모드 세 가지와 후진이 있다. 배터리는 빠지지 않는다. 다른 혼다 전기 스쿠터와 달리 3.2 kWh 팩은 차에 고정되어 그 자리에서 충전된다. 6 kW는 약 80 km/h, 시트 아래는 26리터다. 베트남에서는 약 2,100달러로 보였다. 미국 일정은 없다. 남길 것은 인터페이스다. 컬러 클러스터와, 위층으로 들지 않는 배터리.",
   "src": "Electrek",
   "url": "https://electrek.co/2026/11/12/hondas-2000-electric-moped-is-a-winner-so-why-cant-americans-buy-it/",
-  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/01/honda-uc3-head.jpg?quality=82&strip=all&resize=1200,628"
+  "img_url": "https://electrek.co/wp-content/uploads/sites/3/2026/01/honda-uc3-head.jpg?quality=82&strip=all&resize=1200,628",
+  "img": "assets/2026-11-13-16.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/01/honda-uc3-head.jpg?quality=82&strip=all&resize=1200,628"
  }
 ]
