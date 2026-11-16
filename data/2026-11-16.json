@@ -22,7 +22,9 @@
   "ko": "피그마 디자인에 3D 트랜스폼이라는 효과가 생겼다. 캔버스의 핸들이 레이어를 x, y, z로 돌리고, 미리보기는 실시간이다. 원근과 깊이로 장면을 만들거나, 에이전트가 프롬프트로 구성한다. 피그마 모션과 짝을 맞추면 뒤집기는 짐작한 곡선이 아니라 스프링이 될 수 있다. 데브 모드는 CSS를 복사한다. 같은 오브젝트는 피그마 MCP로 코딩 에이전트에 넘어간다.",
   "src": "Figma",
   "url": "https://www.figma.com/release-notes/?title=design-in-3d-natively-in-figma-and-ship-directly-to-code",
-  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format",
+  "img": "assets/2026-11-16-2.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Visual",
@@ -34,7 +36,9 @@
   "ko": "데시멀은 지미의 사이트를 먼저 만들고, 아이덴티티가 페이지에서 떨어지게 했다. 워드마크는 부드러운 덩어리로 늘어났다가 글자로 돌아온다. 헤드라인은 스튜디오 페이센의 이즈 풀 라운디드, 캡션은 로보토 모노. 바탕은 검정, 밝은 회색, 애시드 옐로다. 이 작업을 위해 만든 모프 랩은 아무 문장이나 그 녹임으로 바꾸고 내보낸다. 명단에는 스무 명이 넘는 작가가 있고, 사람, 작업 종류, 브랜드로 거른다.",
   "src": "Mindsparkle",
   "url": "https://mindsparklemag.com/designs/jimmys-morphing-identity-mirrors-the-ai-films-it-makes",
-  "img_url": "https://mindsparklemag.com/storage/media/32996/jimmy-ai-vfx-studio-website-homepage-brand-identity-mindsparkle-mag-1.jpg"
+  "img_url": "https://mindsparklemag.com/storage/media/32996/jimmy-ai-vfx-studio-website-homepage-brand-identity-mindsparkle-mag-1.jpg",
+  "img": "assets/2026-11-16-3.jpg",
+  "img_src": "https://mindsparklemag.com/storage/media/32996/jimmy-ai-vfx-studio-website-homepage-brand-identity-mindsparkle-mag-1.jpg"
  },
  {
   "tag": "Interaction",
@@ -56,7 +60,9 @@
   "ko": "발리티는 고도로 만든 만화풍 FPS이고, 레벨은 속이 빈 구다. 음의 점 중력을 가진 Area3D가 몸을 껍질 쪽으로 민다. 벽에서 힘이 가득하고 중심에서는 영이 되며, (거리/반지름)의 1.5제곱으로 줄어든다. 가운데 근처에서는 뜨다가 천천히 돌아온다. 세계는 돌지 않는다. 플레이어마다 자기 몸을 돌려, 마우스 요는 자신의 위를 축으로 하고 피치는 카메라에만 있다. 먹, 권총, 밧줄의 쿠나이, 90년대 아케이드 트랙.",
   "src": "80 Level",
   "url": "https://80.lv/articles/this-manga-style-action-fps-uses-radial-gravity-to-turn-walls-into-floors",
-  "img_url": "https://cdn.80.lv/api/upload/meta/51013/images/6af6eb3f184ff/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/51013/images/6af6eb3f184ff/contain_1200x630.jpg",
+  "img": "assets/2026-11-16-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51013/images/6af6eb3f184ff/contain_1200x630.jpg"
  },
  {
   "tag": "Design",
@@ -68,7 +74,9 @@
   "ko": "웨스트코스트 커스텀스는 GTA VI 팝업을 위해 실제 페라리 테스타로사 위에 운전 가능한 그로티 치타를 올렸다. 11월 28일까지 셀프리지스 코너 숍에 있다. 핑크에서 블루로 바래고, 팝업 램프와 긴 사이드 스트레이크가 남았으며, 말 자리에는 일어선 토끼가 있다. 여섯 대 중 살 수 있는 것은 이 한 대다. 나머지는 마이애미에 남았고, 마린 스타디움과 1111 링컨 로드에서 찍혔다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/14/rockstar-turned-a-real-ferrari-into-a-gta-vi-grotti-cheetah-that-you-can-buy-for-1-3-million/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/rockstar-turned-a-real-ferrari-into-a-gta-vi-grotti-cheetah-that-you-can-buy-for-1-3-million/gta6_grotti_cheetah_1.jpeg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/rockstar-turned-a-real-ferrari-into-a-gta-vi-grotti-cheetah-that-you-can-buy-for-1-3-million/gta6_grotti_cheetah_1.jpeg",
+  "img": "assets/2026-11-16-6.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/rockstar-turned-a-real-ferrari-into-a-gta-vi-grotti-cheetah-that-you-can-buy-for-1-3-million/gta6_grotti_cheetah_1.jpeg"
  },
  {
   "tag": "Interaction",
@@ -78,7 +86,9 @@
   "zh": "iFixit拆开PROLED MacBook Pro，发光的苹果不是屏幕背光。OLED没有背光。四颗白光LED贴在边缘，软件让它们的亮度跟着屏幕走。颜色变不了。LogoLight和Backglow可以让它呼吸、跟着音乐跳，仍然是白的。要碰到那几颗灯，屏幕在拆解里已经分层，所以改颜色等于毁掉一块屏。其他MacBook上的黑苹果，是不亮的那一颗。",
   "ko": "아이픽싯이 프로레드 맥북 프로를 열자, 빛나는 애플은 백라이트가 아니었다. OLED 패널에는 백라이트가 없다. 흰색 LED 네 개가 가장자리에 있고, 소프트웨어가 밝기를 화면과 맞춘다. 색은 바뀌지 않는다. 로고라이트와 백글로우는 숨 쉬게 하거나 음악에 맞출 수 있지만, 여전히 흰색이다. LED에 닿으려다 패널이 들떴으니, 색을 바꾸는 일은 화면을 깨는 일이다. 다른 맥북의 검은 로고는 켜지지 않는 쪽이다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1032550/apple-macbook-pro-proled-xdr-lid-logo-led-rgb-colors"
+  "url": "https://www.theverge.com/tech/1032550/apple-macbook-pro-proled-xdr-lid-logo-led-rgb-colors",
+  "img": "assets/2026-11-16-7.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/author_profile_images/195792/ANTONIO_DI_BENEDETTO.0.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400"
  },
  {
   "tag": "Interaction",
@@ -88,7 +98,9 @@
   "zh": "CRKD的Atom Plus大约3.5英寸宽，29.99美元，比8BitDo Zero 2窄半英寸。两根对称摇杆和初代Switch Joy-Con差不多大，用隧道磁阻，不容易漂，张力比任天堂的略紧。肩键和数字扳机挤在同一条边上。拇指按方向键时，常常碰到左边的摇杆。配对是方向键加Home，Switch、PC、Android、iOS各不相同。这个对照没有印在背面。",
   "ko": "CRKD의 아톰 플러스는 너비 약 3.5인치, 29.99달러로, 8BitDo 제로 2보다 0.5인치 좁다. 대칭 스틱 두 개는 오리지널 스위치 조이콘 크기이고, 터널링 자기저항이라 드리프트에 버티며 텐션은 닌텐도보다 조금 세다. 숄더 버튼과 디지털 트리거가 같은 가장자리를 나눈다. 십자키를 누르는 엄지가 왼쪽 스틱에 자주 닿는다. 페어링은 그 패드 방향과 홈이고, 스위치, PC, 안드로이드, iOS마다 다르다. 그 표는 뒷면에 인쇄되어 있지 않다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1013985/crkd-atom-plus-tmr-analog-thumbstick-controller-gamepad-switch-ios-android-hands-on"
+  "url": "https://www.theverge.com/tech/1013985/crkd-atom-plus-tmr-analog-thumbstick-controller-gamepad-switch-ios-android-hands-on",
+  "img": "assets/2026-11-16-8.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/crkd1_d836b8.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200"
  },
  {
   "tag": "Motion",
@@ -111,7 +123,9 @@
   "ko": "스튜디오 프레이트는 테시스를 화면을 배운 진처럼 잡았다. 검정, 흰색, 거친 질감, 손으로 그린 구와 기어, 그리고 전기 라임 하나. 마크는 별표이고, 각주와 깃발 사이다. 점 그리드 디스플레이인 하버는 이름을 포스터 크기로 쓰고, 홈페이지에서는 마크 뒤에 희미하게 깔린다. 앤티크 레거시 세미볼드가 평문을 맡는다. tBTC 휴대폰 화면도 같은 점을 쓴다. 라임은 프레임마다 한 곳, 포스터나 헤드라인, 또는 그려진 바탕에만 떨어진다.",
   "src": "Abduzeedo",
   "url": "https://abduzeedo.com/how-studio-freight-reimagined-thesis-brand-identity",
-  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_35.jpg"
+  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_35.jpg",
+  "img": "assets/2026-11-16-10.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_35.jpg"
  },
  {
   "tag": "Visual",
@@ -122,7 +136,9 @@
   "ko": "본드는 처음 소로 그려진 글자 알레프를 뒤집어 알레프 팜스와 알레프 컷스에 썼다. 모기업 워드마크는 단단한 그로테스크, 짙은 녹색 위의 흰색이고, 뒤집힌 글자는 원 안에 작은 기하 머리로 앉는다. 컷스는 목소리를 바꾼다. 부드럽고 거의 액체 같은 글자, 산호 위의 짙은 녹색, 같은 소가 옆에 있다. 명함의 마크는 블라인드 디보스, 찍힌 것이지 인쇄가 아니다. 접시 한가운데에 도장이 있고, 접시는 비어 있다. 줄리아 스토츠는 고기를 녹색과 옅은 천 앞에서 찍는다.",
   "src": "Abduzeedo",
   "url": "https://abduzeedo.com/bond-unveils-aleph-farms-brand-identity",
-  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_36.jpg"
+  "img_url": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_36.jpg",
+  "img": "assets/2026-11-16-11.jpg",
+  "img_src": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_36.jpg"
  },
  {
   "tag": "Realtime",
@@ -133,7 +149,9 @@
   "ko": "테오 트리안타필리디스의 벽은 맨체스터 아비바 스튜디오에서 피드 세 개로 하늘을 만든다. 오픈메테오가 날씨를, 비행 레이더가 건물 위 비행기를, e버드가 사람이 기록한 새를 넣는다. 현장의 언어 모델은 그 섞임을 신탁으로 보고 새와 비행기, 구름을 그린다. 드문 새나 몰린 항공편이 기분을 바꾼다. 그림은 가끔 바깥 거리와 맞고, 가끔 빗나간다. 12월 6일까지 돌고, 이후 홍콩, 멜버른, 뉴욕은 각자 데이터로 간다.",
   "src": "designboom",
   "url": "https://www.designboom.com/art/bird-plane-funny-weather-theo-triantafyllidis/",
-  "img_url": "https://www.designboom.com/twitterimages/uploads/2026/11/funny-weather-designboom-10.jpg"
+  "img_url": "https://www.designboom.com/twitterimages/uploads/2026/11/funny-weather-designboom-10.jpg",
+  "img": "assets/2026-11-16-12.jpg",
+  "img_src": "https://www.designboom.com/twitterimages/uploads/2026/11/funny-weather-designboom-10.jpg"
  },
  {
   "tag": "Micromobility",
@@ -154,7 +172,9 @@
   "zh": "Claude Duet是单独的应用，还是那张浅色、很少的脸，并且已经适配iPhone Duo。接上邮件和聊天之后，帮助以卡片出现。往一边滑是藏起来，往另一边滑是收下，一叠短名单。出差的一周里，它自己把邮件里的Gemini会议摘要和一条Slack对上了。它有点急，也爱写自己。屏幕上的东西是这一叠，不是又一条聊天栏。",
   "ko": "클로드 듀엣은 따로 있는 앱이고, 같은 옅고 최소한의 얼굴이며, 이미 아이폰 듀오에 맞다. 메일과 채팅을 연결하면 도움이 카드로 나온다. 한쪽으로 밀면 숨고, 다른 쪽으로 밀면 받는다. 짧은 목록을 한 묶음 나누는 방식이다. 여행이 겹친 한 주 동안, 시키지 않아도 이메일의 제미나이 회의 요약과 슬랙 메시지를 이었다. 좀 성급하고, 자기 얘기를 쓰기를 좋아한다. 화면 위의 것은 그 묶음이지, 또 하나의 채팅 열이 아니다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on"
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+  "img": "assets/2026-11-16-14.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04398_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200"
  },
  {
   "tag": "Design",
@@ -164,7 +184,9 @@
   "zh": "Vincent Leroy的Molecular Cloud Wireframe立在摩洛哥Agafay沙漠。弯曲的金属肋勾出相交的球，空隙留着，沙丘就在这张图里面。白天能分开层次。黄昏时，同一组肋变成天空前的一个剪影。没有蒙皮。云是云的线，大到可以朝它走，地面负责填色。",
   "ko": "뱅상 르루아의 몰레큘러 클라우드 와이어프레임은 모로코 아가파이 사막에 서 있다. 굽은 금속 늑골이 교차하는 구를 그리고 사이는 비워, 모래언덕이 그림 안에 남는다. 낮에는 층이 갈라진다. 해 질 녘 같은 늑골은 하늘 앞의 실루엣 하나가 된다. 껍질은 없다. 구름은 구름의 선이고, 걸어갈 만큼 크며, 지면이 채운다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/11/13/a-metal-cloud-frames-the-desert-without-hiding-it/"
+  "url": "https://www.yankodesign.com/2026/11/13/a-metal-cloud-frames-the-desert-without-hiding-it/",
+  "img": "assets/2026-11-16-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/a-metal-cloud-frames-the-desert-without-hiding-it/1.jpg"
  },
  {
   "tag": "Realtime",
@@ -175,6 +197,8 @@
   "ko": "플레이그라운드의 페이블 예고 Something in the Water는 PC 플레이 4분이고, 엑스박스 25주년에 나왔다. 브라이어 힐의 영웅과 아든은 딥우드로 들어가고, 그곳의 자연 마법은 오염된 것처럼 읽힌다. 싸움은 검, 원거리, 주문을 섞는다. 스튜디오는 NPC를 모두 손으로 디자인했다. 랜덤 도구가 더 빨랐을 텐데, 쓰지 않았다. 세계는 밝은 이야기책 쪽이다. 2027년 2월 23일, 시리즈 X|S, 스팀, 플레이스테이션 5.",
   "src": "80 Level",
   "url": "https://80.lv/articles/fable-reboot-shows-combat-story-in-new-four-minute-gameplay-trailer",
-  "img_url": "https://cdn.80.lv/api/upload/meta/51005/images/6af6b7d3b05ba/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/51005/images/6af6b7d3b05ba/contain_1200x630.jpg",
+  "img": "assets/2026-11-16-16.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51005/images/6af6b7d3b05ba/contain_1200x630.jpg"
  }
 ]
