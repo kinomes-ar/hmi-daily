@@ -8,7 +8,9 @@
   "zh": "Trmnl的Frame是31.5英寸E Ink Spectra 6，木框有白橡、樱桃、沙比利或胡桃。它可以是一幅画，也可以是一面墙：天气、待办和照片共用这块屏，插件超过1400个。色彩引擎叫Lazarus，机器开源，调色能改。10000mAh按月续航。离线时microSD里的图按日程轮换。首批约470台，1299美元，多数2027年初交付。",
   "ko": "트름늘의 프레임은 31.5인치 이잉크 스펙트라 6이고, 틀은 화이트 오크, 체리, 사펠레, 월넛이다. 그림으로 걸 수도 있고, 날씨와 할 일, 사진을 한 유리에 올리는 대시보드로 걸 수도 있다. 플러그인은 1400개가 넘는다. 색 맞춤은 라자루스이고, 오픈 소스라 튜닝을 바꿀 수 있다. 10000mAh는 몇 달을 버티게 잡혀 있다. 오프라인에서는 microSD 이미지를 일정대로 돌린다. 첫 런은 약 470대, 1299달러다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1035258/trmnl-e-ink-spectra-6-frame-dashboard-display-poster-photos"
+  "url": "https://www.theverge.com/tech/1035258/trmnl-e-ink-spectra-6-frame-dashboard-display-poster-photos",
+  "img": "assets/2026-11-18-1.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/frame1.jpg?quality=90&strip=all&crop=0%2C10.708427060106%2C100%2C78.583145879787&w=1200"
  },
  {
   "tag": "Motion",
@@ -21,7 +23,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
   "video": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
-  "img_url": "https://mindsparklemag.com/storage/media/32757/quorum-surreal-3d-bee-film-catk-motion-design-mindsparkle-mag-1.jpg"
+  "img_url": "https://mindsparklemag.com/storage/media/32757/quorum-surreal-3d-bee-film-catk-motion-design-mindsparkle-mag-1.jpg",
+  "img": "assets/2026-11-18-2.jpg",
+  "img_src": "https://mindsparklemag.com/storage/media/32757/quorum-surreal-3d-bee-film-catk-motion-design-mindsparkle-mag-1.jpg"
  },
  {
   "tag": "Visual",
@@ -33,7 +37,9 @@
   "ko": "노스 디자인은 노먼 포스터의 1970년대 철골 스케치에서 세 틀을 꺼내 마크로 겹쳤다. 1978년 건물은 설립 문서의 이름, 세인즈버리 뮤지엄 앤드 아트 센터로 돌아간다. 전용 서체 SM 바우머 모노는 유니위스다. 기능 모드는 간격을 고르게 잡아 웨이파인딩에 쓰고, 표현 모드는 포스터와 화면에서 간격을 흔든다. 색은 알루미늄, 강, 유리, 콘크리트에서 온다. 그리드는 오틀 아이허에게서 빌렸다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/north-design-sainsbury-museum-and-art-centre-graphic-design-171126",
-  "img_url": "https://m.itsnicethat.com/original_images/North_Design_Sainsbury_Museum_and_Art_Centre_How_Do_We_Find_Love_1_zLq4nKe.jpg?class=w1440"
+  "img_url": "https://m.itsnicethat.com/original_images/North_Design_Sainsbury_Museum_and_Art_Centre_How_Do_We_Find_Love_1_zLq4nKe.jpg?class=w1440",
+  "img": "assets/2026-11-18-3.webp",
+  "img_src": "https://m.itsnicethat.com/original_images/North_Design_Sainsbury_Museum_and_Art_Centre_How_Do_We_Find_Love_1_zLq4nKe.jpg?class=w1440"
  },
  {
   "tag": "AI",
@@ -56,7 +62,9 @@
   "ko": "PS5의 일시정지 메뉴는 탭이 달린 데스크톱 창이 아니다. 빔NG는 이것을 시스템, 현재 모드, 차량, 환경의 네 가지로 다시 짰다. 익숙한 자리는 남고, 키보드 단축키는 주행 중 버튼 프롬프트가 된다. 소프트바디 골격은 PC와 같다. 질량과 스프링이고, 메시는 따라 변형된다. 처음 몇 분은 운전뿐이다. 나머지 인터페이스는 필요할 때 나타난다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/how-beamng-drive-brought-its-soft-body-physics-to-ps5",
-  "img_url": "https://cdn.80.lv/api/upload/meta/51071/images/6afcb40a98b3f/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/51071/images/6afcb40a98b3f/contain_1200x630.jpg",
+  "img": "assets/2026-11-18-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51071/images/6afcb40a98b3f/contain_1200x630.jpg"
  },
  {
   "tag": "Cockpit",
@@ -66,7 +74,9 @@
   "zh": "韩国车库里敞开的车门，拍到测试中的IONIQ 5：两块12.3英寸屏的位置，换成一块居中的大屏。界面像Pleos Connect，基于Android Automotive，有地图、应用和分屏。更早的画面没有独立仪表，车速得放在中屏，或是照片里没有的HUD。方向盘和仪表台是新的。Grandeur已在韩国使用。美国Tucson定在2027年初。",
   "ko": "문이 열린 IONIQ 5 시험차가 한국 주차장에서 찍혔다. 12.3인치 두 장이 있던 자리에 중앙의 큰 화면이 있다. 유리는 플레오스 커넥트처럼 보인다. 안드로이드 오토모티브 위에 지도, 앱, 분할 화면이 있다. 앞선 사진에는 운전자 디스플레이가 없어서, 속도는 중앙 화면이나 사진에 없는 HUD로 간다. 스티어링과 대시는 새것이다. 그랜저는 한국에서 이미 쓴다. 미국 투싼은 2027년 초다.",
   "src": "Electrek",
-  "url": "https://electrek.co/2026/11/16/hyundai-ioniq-5-caught-new-high-tech-interior-big-display/"
+  "url": "https://electrek.co/2026/11/16/hyundai-ioniq-5-caught-new-high-tech-interior-big-display/",
+  "img": "assets/2026-11-18-6.jpg",
+  "img_src": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Hyundai-IONIQ-7.jpeg?quality=82&strip=all&resize=1200,628"
  },
  {
   "tag": "Micromobility",
@@ -76,7 +86,9 @@
   "zh": "大疆分拆的Amflow把1.4英寸触控屏嵌进UE Carbon的车把，旁边是15W无线充电和20W USB-C。Apple Watch可以解锁，Find My负责定位，心率带靠改变助力把人留在目标区间。Osmo录制键也在同一块上。后面是Avinox：125牛·米，峰值1100瓦，低于45分贝。车架20.9公斤，电池600瓦时可换。起价3099欧元。",
   "ko": "DJI에서 갈라진 암플로는 UE 카본 핸들바에 1.4인치 터치스크린을 넣었다. 옆에는 15W 무선 충전과 20W USB-C가 있다. 애플 워치가 잠금을 풀고, 나의 찾기가 위치를 따른다. 심박 벨트는 어시스트를 바꿔 목표 구간을 유지한다. 오스모 녹화도 같은 곳에 있다. 모터는 아비녹스, 125Nm, 피크 1100W다. 20.9kg, 교체형 600Wh, 3099유로부터다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/transportation/1035318/amflow-ue-carbon-pro-commuter-ebike-dji-avinox-price-specs"
+  "url": "https://www.theverge.com/transportation/1035318/amflow-ue-carbon-pro-commuter-ebike-dji-avinox-price-specs",
+  "img": "assets/2026-11-18-7.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/UE-Pro-Beauty-Shots_UE-pro_01.jpg?quality=90&strip=all&crop=0%2C11.049190129779%2C100%2C77.901619740443&w=1200"
  },
  {
   "tag": "Interaction",
@@ -86,7 +98,9 @@
   "zh": "五月I/O上的Android Auto Material 3 Expressive，路上还没有。18.0拆包里已有代号Cielo、仪表动画和地图缩放，后来又多了100多个浅色素材。打算中的样子是更圆的字、新颜色、更顺的动效，地图要铺满非矩形屏幕。时间押在明年年初，不是十二月。车机仍得伺候2015年起的屏幕。",
   "ko": "5월 I/O의 안드로이드 오토 머티리얼 3 익스프레시브는 아직 차 안에 없다. 18.0 분해에는 코드명 시엘로, 대시보드 모션, 지도 스케일이 있고, 이후 라이트 테마 에셋이 100개 넘게 늘었다. 노리는 얼굴은 더 둥근 글자, 새 색, 더 매끈한 모션이고, 지도는 직사각형이 아닌 화면도 채운다. 예상은 내년 초다. 헤드는 2015년부터의 디스플레이를 아직 받친다.",
   "src": "XDA",
-  "url": "https://www.xda-developers.com/ive-been-waiting-months-for-android-autos-big-redesign-google-still-hasnt-delivered/"
+  "url": "https://www.xda-developers.com/ive-been-waiting-months-for-android-autos-big-redesign-google-still-hasnt-delivered/",
+  "img": "assets/2026-11-18-8.jpg",
+  "img_src": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/11/android-auto-material-3-expressive.jpg?w=1600&h=900&fit=crop"
  },
  {
   "tag": "Visual",
@@ -97,7 +111,9 @@
   "zh": "曼彻斯特的Love把真植物压在蓝晒纸上，让太阳给Everleaf的三款开胃酒印剪影。Forest是藏红花和兰花，Mountain是玫瑰果和樱花，Marine是海藻和橄榄。瓶子握感更柔，从500克减到385克，玻璃100%来自消费后回收，瓶底压了金合欢叶，瓶颈有一层肌理，肩上铸了一片叶子。瓶盖分蓝、橙、粉。纸盒是白的，同一张印花做成网点。运输箱是牛皮纸，一种深色油墨，叶子画出边缘。",
   "ko": "맨체스터의 러브는 진짜 식물을 사이아노타입 종이 위에 올려 햇빛으로 에버리프 세 아페리티프의 실루엣을 만들었다. 포레스트는 사프란과 난, 마운틴은 로즈힙과 벚꽃, 마린은 해조와 올리브다. 병은 500g에서 385g, 유리는 소비 후 재활용이다. 바닥에 아카시아 양각, 목에 질감, 어깨에 잎이 있다. 캡은 파랑, 주황, 분홍. 상자는 흰색 망점이고, 배송 상자는 크래프트에 잉크 한 색이다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/news/this-non-alcoholic-aperitif-packaging-was-made-with-real-plants-sunlight-and-embossed-glass/"
+  "url": "https://www.creativeboom.com/news/this-non-alcoholic-aperitif-packaging-was-made-with-real-plants-sunlight-and-embossed-glass/",
+  "img": "assets/2026-11-18-9.webp",
+  "img_src": "https://media.creativeboom.com/a9582509-7215-4f87-8344-78c91899660e/conversions/a61042a61bf6527ae8e1cdd45e12f69d64c335a9-medium.webp"
  },
  {
   "tag": "Visual",
@@ -107,7 +123,9 @@
   "zh": "FutureBrand的新标志是一个倾斜的F，而且不是一张固定的图。它可以换材料和质地，字标跟着斜，用的是他们自己的Future Display。从F切出来的方块会改透视，同时仍能当界面零件。网站保持黑白，好让客户的作品有地方放，光标和按钮是行为的一部分，不是一层皮。声音来自名字的发音，同一个词用不同音高。这套系统要在它不再是一个固定识别时，仍然读得出来。",
   "ko": "퓨처브랜드의 새 마크는 기울어진 F이고, 그림 한 장이 아니다. 재료와 질감을 바꿔 입고, 워드마크도 같이 기운다. 서체는 그들의 퓨처 디스플레이다. F에서 잘라 낸 상자는 시점을 바꾸면서도 인터페이스 조각으로 남는다. 사이트는 흑백이라 클라이언트 작업이 앉을 자리가 있고, 커서와 버튼은 스킨이 아니라 행동의 일부다. 사운드는 이름의 음성에서 오고, 같은 단어를 다른 음높이로 낸다. 시스템의 요점은 고정된 아이덴티티가 아니어도 여전히 읽힌다는 것이다.",
   "src": "FutureBrand",
-  "url": "https://www.futurebrand.com/thinking/a-new-positioning-for-futurebrand/"
+  "url": "https://www.futurebrand.com/thinking/a-new-positioning-for-futurebrand/",
+  "img": "assets/2026-11-18-10.jpg",
+  "img_src": "https://www.futurebrand.com/_next/image/?url=https%3A%2F%2Fapp-fb-global-site-frontend-evhgdufwahd0ahas.uksouth-01.azurewebsites.net%2Fmedia%2Fuploads%2Fnew_project_1_f09905583d.webp&w=1440&q=85"
  },
  {
   "tag": "Industrial",
@@ -117,7 +135,9 @@
   "zh": "耐克的Tuned Air鞋底是印出来的，不是一整只均匀的气囊。数码印刷加选择性层压，只在该粘合的地方上墨，所以内部气室可以是任意形状，相邻气室里的气可以一边硬、一边软。他们给出的参照是杂志封面的颜色，不是一个新轮廓。第一双用上它的跑鞋指向2027年末。这跟在2024年的Air Max 1000后面：那双用3D打印在同一个形体里改变支撑。这一次会变的是空气本身。",
   "ko": "나이키의 튠드 에어 솔은 인쇄로 만들고, 균일한 에어백 하나가 아니다. 잉크는 층이 붙는 곳에만 놓여, 주머니의 모양과 공기 압을 이웃과 다르게 할 수 있다. 참조는 잡지 표지의 색이다. 첫 러닝화는 2027년 말이다. 2024년 에어 맥스 1000이 3D 프린트로 지지력을 바꾼 다음이고, 이번에는 공기 자체가 변한다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1035911/nike-shoes-tuned-air-sole-printing-variable-cushioning"
+  "url": "https://www.theverge.com/tech/1035911/nike-shoes-tuned-air-sole-printing-variable-cushioning",
+  "img": "assets/2026-11-18-11.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/nike1.jpg?quality=90&strip=all&crop=0%2C10.717271201674%2C100%2C78.565457596651&w=1200"
  },
  {
   "tag": "AI",
@@ -127,7 +147,9 @@
   "zh": "11月17日放出的GPT-6.2 Astra，是OpenAI拿来做幻灯片、表格和文档的那一版，要求停在模板上，而不是漂成一套通用版式。同一则说明里，它在网站、游戏和3D上也更强。The Verge的对照帧是一座花园平面，Astra的版本比GPT-6细得多。它下面的GPT-6.2 Sol同批推出，被说成两者里更省的那个。值得留下的一帧是这座花园：路径和种植真的守着网格。",
   "ko": "11월 17일에 나온 GPT-6.2 아스트라는 슬라이드, 스프레드시트, 문서를 템플릿 위에 머물게 하는 모델이다. 흔한 레이아웃으로 흘러가지 않게 하는 쪽이다. 같은 설명은 웹사이트, 게임, 3D에서도 더 낫다고 한다. 더 버지의 비교 프레임은 정원 평면도이고, 아스트라의 결과는 GPT-6보다 훨씬 자세하다. 그 아래의 GPT-6.2 솔도 같은 번에 나오며, 둘 중 더 효율적인 쪽으로 적혀 있다. 남겨 둘 프레임은 정원이다. 길과 식재가 실제로 그리드를 지킨다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model"
+  "url": "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model",
+  "img": "assets/2026-11-18-12.png",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gpt-6-2-3d.png?quality=90&strip=all&crop=0%2C8.3288812907362%2C100%2C83.342237418528&w=1200"
  },
  {
   "tag": "Interaction",
@@ -137,7 +159,9 @@
   "zh": "Vishesh Singh和Kunal Sharma的REC DIAL是一只短圆柱。圆盘负责回放、音量和录音列表，中间那块圆屏是按下确认的地方。周围四颗键用三角、方块、圆和叉，方案没有写每颗做什么。黑色镀膜玻璃把零件露出来，而不是藏起来。侧面一圈孔，像一只很小的扬声器。磁吸橡胶垫画成可以贴在冰箱或衣服上。零件表里有microSD、耳机孔和1200mAh电池。文件怎么导走，没有写。",
   "ko": "비셰시 싱과 쿠날 샤르마의 REC 다이얼은 짧은 원통이다. 원반은 재생, 음량, 녹음 목록을 돌리고, 가운데 둥근 화면을 눌러 확정한다. 버튼 네 개는 삼각, 사각, 원, 가위표인데 역할은 없다. 검은 유리가 부품을 보여 주고, 옆면에는 구멍이 있다. 자석 패드는 냉장고나 옷에 붙는다. 안에는 microSD, 헤드폰 잭, 1200mAh가 있다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/11/17/rec-dial-voice-recorder-concept-gives-voice-notes-a-turn-and-press-interface/"
+  "url": "https://www.yankodesign.com/2026/11/17/rec-dial-voice-recorder-concept-gives-voice-notes-a-turn-and-press-interface/",
+  "img": "assets/2026-11-18-13.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/rec-dial-voice-recorder-concept-gives-voice-notes-a-turn-and-press-interface/rec-dial-concept-06.jpg"
  },
  {
   "tag": "Visual",
@@ -147,7 +171,9 @@
   "zh": "Ines Launay先画分开的铅笔小稿，再决定它们怎么共用一页。一张是日本店面，自行车和招牌挤在街上。别的页把笔记、小人和气泡混在一起，更像日记。2024年毕业作Levain跟着三个朋友试不同的活法。和Louane Carmona、Coline Balfroid一起的瑞士笔记用铅笔和手写，旁边有影像。画嵌进上班的空隙，也嵌进她跑的山径。",
   "ko": "이네스 로네는 연필 조각을 따로 그린 뒤에야 한 페이지에 어떻게 놓을지 정한다. 한 장은 일본 상점 앞, 자전거와 간판이 빼곡하다. 다른 장은 메모, 작은 인물, 말풍선을 섞어 일기처럼 보인다. 2024년 졸업작 르뱅은 사는 법을 시험하는 세 친구를 따라간다. 엘라 마야르 여행 노트는 루안 카르모나, 콜린 발프루아와 함께 연필과 손글씨로 만들었고, 옆에 영상이 있다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/sheep-polka-dots-and-graphic-wanderings-inside-ines-launays-playful-world-of-illustration/"
+  "url": "https://www.creativeboom.com/inspiration/sheep-polka-dots-and-graphic-wanderings-inside-ines-launays-playful-world-of-illustration/",
+  "img": "assets/2026-11-18-14.webp",
+  "img_src": "https://media.creativeboom.com/620d68af-c455-491e-bd14-c182025e8cd2/conversions/23c1d1e2ce79acaf020febade804b98045882c35-medium.webp"
  },
  {
   "tag": "Motion",
@@ -159,7 +185,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
   "video": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-Give-the-Gift-of-Closeness-ad-by-Duncan-Christie-Postoffice-Amsterdam-_-STASH-MAGAZINE6-640x360.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-Give-the-Gift-of-Closeness-ad-by-Duncan-Christie-Postoffice-Amsterdam-_-STASH-MAGAZINE6-640x360.jpg",
+  "img": "assets/2026-11-18-15.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-Give-the-Gift-of-Closeness-ad-by-Duncan-Christie-Postoffice-Amsterdam-_-STASH-MAGAZINE6-640x360.jpg"
  },
  {
   "tag": "Cockpit",
@@ -170,6 +198,8 @@
   "ko": "오토홈 사진 속 새 BYD 한은 D형 스티어링 뒤에 LCD 클러스터를, 터널 위에 플로팅 스크린을 둔다. 유리 아래에는 물리 버튼, 충전 패드 두 개, 수납, 암레스트가 있다. 변속은 스토크, 도어는 물리 손잡이다. 캐빈은 베이지와 타공 가죽이다. 레이아웃은 더 큰 다한을 따른다. 바뀐 것은 화면 크기가 아니라, 버튼이 유리 아래로 돌아온 것이다.",
   "src": "CarNewsChina",
   "url": "https://carnewschina.com/2026/11/16/interior-of-the-new-byd-han-sedan-exposed-in-china-ahead-of-launch/",
-  "img_url": "https://carnewschina.com/wp-content/uploads/2026/11/byd_han_interior-1500x844.jpg"
+  "img_url": "https://carnewschina.com/wp-content/uploads/2026/11/byd_han_interior-1500x844.jpg",
+  "img": "assets/2026-11-18-16.jpg",
+  "img_src": "https://carnewschina.com/wp-content/uploads/2026/11/byd_han_interior-1500x844.jpg"
  }
 ]
