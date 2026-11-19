@@ -10,7 +10,9 @@
   "src": "80 Level",
   "url": "https://80.lv/articles/behind-the-incredible-new-tech-and-systems-rockstar-built-to-make-gta-6-feel-alive",
   "video": "https://www.youtube.com/watch?v=LCMjZPWoVUw",
-  "img_url": "https://cdn.80.lv/api/upload/meta/51086/images/6afe1110709a8/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/51086/images/6afe1110709a8/contain_1200x630.jpg",
+  "img": "assets/2026-11-19-1.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51086/images/6afe1110709a8/contain_1200x630.jpg"
  },
  {
   "tag": "Motion",
@@ -35,7 +37,9 @@
   "ko": "멋 아트 리뷰의 표지는 흑백으로 남고, 글자는 투명해서 사진이 글자 안을 채운다. 칼럼 애벗은 매호 같은 1970년대 ITC 서체를 두고 템플릿만 바꾼다. 아나 래트너와 만든 디 아더 알마낙은 반대다. 200쪽이 넘고, 새 사진 예산은 없다. 그는 다폰트와 1001 폰트에서 가져온 무료 서체를 포함해 40종으로 조판했다. 홀 어스 카탈로그처럼 겹친다.",
   "src": "It's Nice That",
   "url": "https://www.itsnicethat.com/articles/callum-abbott-other-almanac-mutt-art-review-graphic-design-publication-project-181126",
-  "img_url": "https://m.itsnicethat.com/original_images/Mutt-Issue5-COVER.jpg?class=w1440"
+  "img_url": "https://m.itsnicethat.com/original_images/Mutt-Issue5-COVER.jpg?class=w1440",
+  "img": "assets/2026-11-19-3.jpg",
+  "img_src": "https://m.itsnicethat.com/original_images/Mutt-Issue5-COVER.jpg?class=w1440"
  },
  {
   "tag": "Interaction",
@@ -57,7 +61,9 @@
   "ko": "피그마의 Make image와 Edit image는 이제 프롬프트 하나를 한 묶음에 쓴다. 모델 하나가 두 장, 네 장, 또는 여섯 장을 돌려주므로 다음은 고르는 일이다. 같은 문장을 최대 세 모델에 동시에 보내 각각 한 장씩 나란히 둘 수도 있다. 차이가 결과다. 컨트롤은 Design, FigJam, Slides, Draw, Assets에 있다.",
   "src": "Figma",
   "url": "https://www.figma.com/release-notes/?title=generate-multiple-images-from-a-single-prompt",
-  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format",
+  "img": "assets/2026-11-19-5.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Visual",
@@ -69,7 +75,9 @@
   "ko": "금박이 촛불처럼 그림 위에 앉는다. 멕시코시티의 마리아 발레리아 파소스는 아니마 문디를 시각적 컷업으로 만든다. 한 생물의 머리, 다른 생물의 몸, 꽃의 질감, 꿈의 공기다. 물고기는 눈으로 덮여 있다. 말은 해 얼굴의 성인을 등에 태운다. 가족은 같은 눈과 같은 점무늬 피부를 나눈다. 생성 모델은 드로잉과 콜라주 옆의 도구이고, 25년 된 노트에 쓴다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/meet-the-strange-and-wonderful-creatures-of-maria-valeria-pazos-anima-mundi/",
-  "img_url": "https://media.creativeboom.com/039cfd94-cf42-44df-982d-bb4e0c643361/conversions/5e449eb8d9970e11197bc53e3a1e6a80484864fe-medium.webp"
+  "img_url": "https://media.creativeboom.com/039cfd94-cf42-44df-982d-bb4e0c643361/conversions/5e449eb8d9970e11197bc53e3a1e6a80484864fe-medium.webp",
+  "img": "assets/2026-11-19-6.webp",
+  "img_src": "https://media.creativeboom.com/039cfd94-cf42-44df-982d-bb4e0c643361/conversions/5e449eb8d9970e11197bc53e3a1e6a80484864fe-medium.webp"
  },
  {
   "tag": "Motion",
@@ -81,7 +89,9 @@
   "src": "Motionographer",
   "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
   "video": "https://vimeo.com/1153872039",
-  "img_url": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/trimEMMM_TRAILER_en-ezgif.com-optimize.gif?fit=600%2C337&ssl=1"
+  "img_url": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/trimEMMM_TRAILER_en-ezgif.com-optimize.gif?fit=600%2C337&ssl=1",
+  "img": "assets/2026-11-19-7.gif",
+  "img_src": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/trimEMMM_TRAILER_en-ezgif.com-optimize.gif?fit=600%2C337&ssl=1"
  },
  {
   "tag": "Visual",
@@ -92,7 +102,9 @@
   "ko": "앳킨슨 하이퍼레저블이 모든 킨들에 들어왔다. iOS와 안드로이드 앱, 알렉사 태블릿도 포함한다. 점자 연구소의 이 서체는 글자와 숫자를, 회색 화면에서 보통 하나로 뭉개지는 닮은꼴이 떨어지도록 그린다. 따로 넣는 파일이 아니라 시스템 글꼴이다. 이잉크에서는 그 구분이 디자인 전부다. 한눈에 글자를 바꾸어 읽지 못하게 만든 본문 서체다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1037065/amazon-kindle-scribe-alexa-tablet-braille-institute-atkinson-hyperlegible-font",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/font.jpg?quality=90&strip=all&crop=0%2C2.1731635677806%2C100%2C95.653672864439&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/font.jpg?quality=90&strip=all&crop=0%2C2.1731635677806%2C100%2C95.653672864439&w=1200",
+  "img": "assets/2026-11-19-8.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/font.jpg?quality=90&strip=all&crop=0%2C2.1731635677806%2C100%2C95.653672864439&w=1200"
  },
  {
   "tag": "Interaction",
@@ -103,7 +115,9 @@
   "ko": "스토리를 열고 오른쪽 아래 점 세 개를 누르면 Edit Story가 15분 동안 있다. 글, 음악, 스티커, 낙서를 바꿔도 조회, 좋아요, 답글은 지워지지 않는다. 새 서체와 색, 형태는 찾아 헤매지 않고 넘기도록 스티커 시트에 놓인다. 배경에는 블러, 단색, 그라데이션이 생긴다. 사진 여러 장을 고르는 손짓도 바뀌었다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1036941/instagram-now-lets-you-edit-your-stories-after-you-post-them",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/insta-story-edit.png?quality=90&strip=all&crop=0,16.342557965595,100,67.314884068811"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/insta-story-edit.png?quality=90&strip=all&crop=0,16.342557965595,100,67.314884068811",
+  "img": "assets/2026-11-19-9.png",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/insta-story-edit.png?quality=90&strip=all&crop=0,16.342557965595,100,67.314884068811"
  },
  {
   "tag": "Cockpit",
@@ -114,7 +128,9 @@
   "ko": "IM5 퍼포먼스는 계기판과 인포테인먼트를 26.3인치 한 장으로 합치고, 그 아래 10.5인치 세로 화면이 차 자체를 맡는다. 공조 바로가기는 그 세로 화면의 아래 가장자리에 있다. 홈에는 열선 시트와 ADAS 아이콘이 있다. 오른쪽으로 밀면 바로가기 판이 열리고, 설정은 별도 아이콘 아래다. 무선 카플레이와 안드로이드 오토가 기본이다. 중국의 새 실내는 이 구성을 이미 통유리 한 장으로 바꿨다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2321235/2026-im5-performance-review/",
-  "img_url": "https://www.carscoops.com/img/gallery/the-im5-performance-is-more-than-just-a-quick-ev/l-intro-1795041649.jpg"
+  "img_url": "https://www.carscoops.com/img/gallery/the-im5-performance-is-more-than-just-a-quick-ev/l-intro-1795041649.jpg",
+  "img": "assets/2026-11-19-10.jpg",
+  "img_src": "https://www.carscoops.com/img/gallery/the-im5-performance-is-more-than-just-a-quick-ev/l-intro-1795041649.jpg"
  },
  {
   "tag": "Visual",
@@ -125,7 +141,9 @@
   "ko": "엘레노어 코프카는 손으로 그린 영화에서 프레임 하나를 집어 그 구불거림을 점토로 다시 만든다. 조각은 한때 움직이던 한 걸음이다. 그녀는 프레임 단위로 그리고, 스토리보드 없이 시작하는 일이 많으며, MOLD의 음악도 직접 썼다. 2025년에 마친 도예 견습이 같은 선을 화면 밖으로 내보낸다. 작업은 리옹이다. 새 작품은 픽셀로 두고 싶지 않았던 프레임이다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/elenor-kopka-on-turning-her-strange-squiggly-animations-into-ceramic-sculptures/",
-  "img_url": "https://media.creativeboom.com/1b3eecda-db4c-4ad5-a81e-1e8071df6515/conversions/c8156dab0f52c1ffa55d6defff3676b784f01b77-medium.webp"
+  "img_url": "https://media.creativeboom.com/1b3eecda-db4c-4ad5-a81e-1e8071df6515/conversions/c8156dab0f52c1ffa55d6defff3676b784f01b77-medium.webp",
+  "img": "assets/2026-11-19-11.webp",
+  "img_src": "https://media.creativeboom.com/1b3eecda-db4c-4ad5-a81e-1e8071df6515/conversions/c8156dab0f52c1ffa55d6defff3676b784f01b77-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -136,7 +154,9 @@
   "ko": "폴더블에서 앱은 안쪽 유리 전체를 써야 한다. 구글의 티어 3, 어댑티브 레디는 레터박스를 막는다. 양옆에 호환 띠를 남길 수 없다. 스크롤 위치, 입력 중인 글, 재생은 접힘과 회전, 크기 변경, 멀티윈도를 넘어야 한다. 앱은 2027년 4월, 게임은 2027년 8월이 기한이다. 스토어에는 폴더블 스크린샷 세 장이 필요하고, 지금 올릴 수 있다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/google-pixel-11-pro-fold-01.jpg?quality=90&strip=all&crop=0%2C10.741906587151%2C100%2C78.516186825698&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/google-pixel-11-pro-fold-01.jpg?quality=90&strip=all&crop=0%2C10.741906587151%2C100%2C78.516186825698&w=1200",
+  "img": "assets/2026-11-19-12.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/google-pixel-11-pro-fold-01.jpg?quality=90&strip=all&crop=0%2C10.741906587151%2C100%2C78.516186825698&w=1200"
  },
  {
   "tag": "Interaction",
@@ -147,7 +167,9 @@
   "ko": "프레임워크의 와이어리스 터치패드 키보드는 포인팅을 키 오른쪽에 두어, 마우스를 쿠션 위에 두지 않는다. 키는 랩톱 12의 시저다. 키 트래블은 약 0.06인치, 간격은 0.75인치다. 몸체는 약 14.1 곱하기 4.7인치, 1.07파운드이고, 강판이 휨을 막는다. 블루투스 채널 세 개와 USB-A 동글, 키 변경은 ZMK 스튜디오다. 99달러, 백라이트는 없고, 첫 물량은 2027년 초다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/18/frameworks-99-couch-keyboard-is-built-to-come-apart/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/frameworks-99-couch-keyboard-is-built-to-come-apart/framework-wireless-touchpad-keyboard-07.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/frameworks-99-couch-keyboard-is-built-to-come-apart/framework-wireless-touchpad-keyboard-07.jpg",
+  "img": "assets/2026-11-19-13.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/frameworks-99-couch-keyboard-is-built-to-come-apart/framework-wireless-touchpad-keyboard-07.jpg"
  },
  {
   "tag": "Micromobility",
@@ -158,7 +180,9 @@
   "ko": "후셀록스는 삼륜 페달 캠퍼다. 뒤쪽 외피가 주황과 흰색 주름으로 열린다. 접으면 랩어라운드 윈드실드가 있는 물방울이다. 열리면 벨로우즈가 스토브와 접이식 조리대를 덮고, 문은 날개집처럼 들린다. 안에는 누운 시트, 침상, 팔에 달린 나무 테이블, 작은 고정 화면이 있다. 위창 우가 2022년 하노버 응용과학대학에서 설계했다. 2026년 EPDA는 콘셉트에 준 상이다. 살 수 있는 자전거가 아니다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/18/this-camper-bike-pod-unfolds-like-an-accordion-into-a-spacious-cabin/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/draft-huuselox/huuselox_biker_pod_1.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/draft-huuselox/huuselox_biker_pod_1.jpg",
+  "img": "assets/2026-11-19-14.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/draft-huuselox/huuselox_biker_pod_1.jpg"
  },
  {
   "tag": "Industrial",
@@ -169,7 +193,9 @@
   "ko": "엔토로 디자인의 세키모리이시는 끈으로 묶인 정원의 돌인데, 돌이 아니다. 갓은 주조 에폭시라 꺼지면 흐리고, 켜지면 2700K의 따뜻한 덩어리다. 식물 탄닌 가죽 끈이 몸을 가로질러 고리로 묶이고, 그 고리가 손잡이이자 높이다. 밝기 세 단은 밑면 터치 센서에 있어 껍질은 뚫리지 않는다. 낮은 밝기 약 6.7시간, 높은 밝기 1.6시간, 충전은 USB-C다. 본뜬 돌은 길을 막으라는 표시다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/18/a-japanese-garden-stone-reimagined-as-a-quietly-glowing-lamp/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/a-japanese-garden-stone-reimagined-as-a-quietly-glowing-lamp/sekimori-ishi-0.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/a-japanese-garden-stone-reimagined-as-a-quietly-glowing-lamp/sekimori-ishi-0.jpg",
+  "img": "assets/2026-11-19-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/a-japanese-garden-stone-reimagined-as-a-quietly-glowing-lamp/sekimori-ishi-0.jpg"
  },
  {
   "tag": "AI",
@@ -179,6 +205,8 @@
   "zh": "Figma的管理后台多了一个Extensions标签。在Organization和Enterprise方案里，允许名单决定哪些OAuth应用可以打开文件，包括Cursor和Claude Code这类MCP客户端。代理进来之前，请求可以先审，已批准的集合也在同一个标签里管理。这个控制会在接下来几天陆续开放。新的界面是文件上的一道门，不是画布上的又一个工具。",
   "ko": "피그마 관리 콘솔에 Extensions 탭이 생긴다. Organization과 Enterprise 플랜에서는 허용 목록이 파일을 열 수 있는 OAuth 앱을 정한다. Cursor와 Claude Code 같은 MCP 클라이언트도 포함이다. 에이전트가 들어오기 전에 요청을 검토할 수 있고, 승인된 묶음은 같은 탭에 있다. 앞으로 며칠에 걸쳐 열린다. 새 인터페이스는 캔버스의 도구가 아니라 파일 위의 문이다.",
   "src": "Figma",
-  "url": "https://www.figma.com/release-notes/?title=manage-an-allowlist-of-approved-oauth-apps-including-mcp-clients"
+  "url": "https://www.figma.com/release-notes/?title=manage-an-allowlist-of-approved-oauth-apps-including-mcp-clients",
+  "img": "assets/2026-11-19-16.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  }
 ]
