@@ -28,7 +28,9 @@
   "zh": "Waymo 的定制车 Ojai 现在把 Gemini 请进座舱：只有点按图标才会唤醒，与驾驶系统完全隔离，负责空调、行程问答和周边推荐。屏幕布局还会按乘客座位自行'编排'。这是共享座舱里 AI 的一个克制范本。",
   "ko": "웨이모의 전용 로보택시 오하이에 제미나이가 탑승했다. 아이콘을 눌러야만 깨어나고, 주행 시스템과는 완전히 분리된 채 공조·여정 질문·주변 추천을 맡는다. 화면 레이아웃은 앉은 자리에 맞춰 스스로 재배치된다. 공유 캐빈 속 AI의 절제된 템플릿.",
   "src": "Waymo",
-  "url": "https://waymo.com/blog/2026/07/gemini-in-waymo/"
+  "url": "https://waymo.com/blog/2026/07/gemini-in-waymo/",
+  "img": "assets/2026-09-02-3.jpg",
+  "img_src": "https://lh3.googleusercontent.com/bnfvXFtZDG0u6Pen-d7RGFIOWMXGHG7xyeqyzvcN9NiulLwWN6HZfN5lwc2LxgLzGBweXalEZ0dB8dgQlCvPwQV5rWss9tm0Ui4"
  },
  {
   "tag": "Interaction",
