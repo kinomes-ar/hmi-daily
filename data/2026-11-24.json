@@ -9,7 +9,9 @@
   "ko": "중앙 화면은 더 이상 도로를 와이어프레임으로 그리지 않는다. FSD v15의 리얼리티 뷰는 건물, 횡단보도, 보행자, 주변 차량을 위에서 실시간으로 보여 준다. 그 그림을 탭하면 차가 다음에 하려는 일이 바뀐다. 배포는 토요일에 시작됐고, 일론 머스크는 “FSD is GTA irl”이라고 올렸다. 화면이 과하면 같은 화면을 지도로, 또는 디테일을 뺀 조용한 모드로 내릴 수 있다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/transportation/1039919/tesla-fsd-v15-reality-view-gta-nhtsa-safety-rollout",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-23-at-8.51.20-AM.png?quality=90&strip=all&crop=0%2C3.0843968816805%2C100%2C93.831206236639&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-23-at-8.51.20-AM.png?quality=90&strip=all&crop=0%2C3.0843968816805%2C100%2C93.831206236639&w=1200",
+  "img": "assets/2026-11-24-1.png",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-23-at-8.51.20-AM.png?quality=90&strip=all&crop=0%2C3.0843968816805%2C100%2C93.831206236639&w=1200"
  },
  {
   "tag": "Cockpit",
@@ -21,7 +23,9 @@
   "ko": "LG 울트라뷰는 앞유리에 그림 두 장을 동시에 띄운다. 초점 맞춤이 필요 없는 AR-HUD는 속도, 운전자 보조 경고, 내비게이션 단서를 도로 쪽 먼 거리에 둔다. 더 가까운 호버 화면은 내비게이션, 차량 상태, 공조, 미디어를 체감 1.2미터에 둔다. 둘을 합치면 시야는 25도에 7도이고, 광학 패키지는 약 15리터이며, 그림의 크기와 밀도는 주행에 따라 바뀐다. 디스플레이를 끄면 유리에 검은 마스크가 없다.",
   "src": "LG",
   "url": "https://www.lg.com/global/newsroom/news/vehicle-solutions/lg-electronics-ultraview-windshield-display-wins-2026-automotive-news-pace-pilot-award/",
-  "img_url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/vehicle-component-solutions/lg-electronics-ultraview-windshield-display-wins-2026-automotive-news-pace-pilot-award/main-image-desktopmobile-2026pacepilot-464.png"
+  "img_url": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/vehicle-component-solutions/lg-electronics-ultraview-windshield-display-wins-2026-automotive-news-pace-pilot-award/main-image-desktopmobile-2026pacepilot-464.png",
+  "img": "assets/2026-11-24-2.jpg",
+  "img_src": "https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/vehicle-component-solutions/lg-electronics-ultraview-windshield-display-wins-2026-automotive-news-pace-pilot-award/main-image-desktopmobile-2026pacepilot-464.png"
  },
  {
   "tag": "Motion",
@@ -34,7 +38,9 @@
   "src": "STASH",
   "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
   "video": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE11-640x360.jpg"
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE11-640x360.jpg",
+  "img": "assets/2026-11-24-3.jpg",
+  "img_src": "https://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE11-640x360.jpg"
  },
  {
   "tag": "Visual",
@@ -56,7 +62,9 @@
   "ko": "아키톤코 추의 VRChat 셰이더는 손, 발, 모자, 망토를 은하로 바꾼다. 한 스타일은 메시를 우주를 내다보는 창으로 만든다. 다른 스타일은 손을 유리처럼 보이게 하고, 그 안에 우주를 넣는다. 림 라이트와 노멀 맵이 별을 가리지 않은 채 깊이를 주고, 평면 버전도 남아 있다. 행성이나 블랙홀을 그 공간에 놓을 수 있다. 셰이더는 아직 진행 중이고, Booth에는 없다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/this-vrchat-shader-turns-body-parts-into-beautiful-galaxies",
-  "img_url": "https://cdn.80.lv/api/upload/meta/51136/images/6b044f4f11bec/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/51136/images/6b044f4f11bec/contain_1200x630.jpg",
+  "img": "assets/2026-11-24-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51136/images/6b044f4f11bec/contain_1200x630.jpg"
  },
  {
   "tag": "AI",
@@ -67,7 +75,9 @@
   "ko": "피그마의 에이전트가 이제 모든 유료 플랜의 FigJam과 슬라이드에서 일반 제공된다. 커넥터와 첨부를 받고, Hex, 슬랙, 아사나의 맥락을 보드와 다이어그램과 덱으로 가져올 수 있다. 어지러운 FigJam은 요약과 다음 단계가 있는 스펙이 된다. 덱은 그 스펙과 브랜드 템플릿에서 시작하고, 붐비는 슬라이드를 나누고, 요지를 다듬고, 청중에 맞춘 스피커 노트를 초안한다. 프롬프트는 이미 보드 위에 있는 회의다.",
   "src": "Figma",
   "url": "https://www.figma.com/release-notes/?title=figmas-agent-is-now-in-figjam-and-slides",
-  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+  "img_url": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format",
+  "img": "assets/2026-11-24-6.png",
+  "img_src": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format"
  },
  {
   "tag": "Motion",
@@ -78,7 +88,9 @@
   "ko": "맨즈머신은 로빈후드의 후드 서밋 '26, 엔진스 오브 크리에이션의 오프닝 타이틀을 연출하고 디자인하고 애니메이트했다. 맞춤 설계한 탐사선이 빈 은하를 지난다. 프레임은 절제되어 있다. 우주, 선체, 크롬은 거의 없다. 데니스 킬티가 음악과 사운드를 맡았다. 시퀀스는 이번 가을 초 휴스턴에서 재생됐고, STASH가 월요일에 올렸다. 야심은 대시보드가 아니라 거리로 그려진다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
-  "video": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/"
+  "video": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
+  "img": "assets/2026-11-24-7.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-_-STASH-MAGAZINE8.jpg"
  },
  {
   "tag": "Visual",
@@ -88,7 +100,9 @@
   "zh": "Casey Roarty为Chicken Shop Date最后一季做了海报，更早还做了十周年的识别。标题是薯条店门面那种黄的手写体，其他物料用一种让人想起Morley's的红。同一只手在Oh Wonder和That Woman的封套上画粉笔和喷漆的痕迹。Peckham的Nola则保持米色和安静，贴近咖啡馆自己的房间，落在卡片和托特包上。极简，然后一个响的颜色。",
   "ko": "케이시 로아티는 치킨 숍 데이트 마지막 시즌의 포스터를 그렸고, 그 전에 10주년 아이덴티티도 맡았다. 제목은 치킨집 간판의 노란 필기체이고, 다른 물건은 몰리의 빨강을 떠올리게 하는 빨강을 쓴다. 같은 손이 오 원더와 댓 우먼의 슬리브에 분필과 스프레이 자국을 그린다. 페컴의 놀라는 베이지와 조용함으로 남고, 카페 자신의 방에 가깝게 카드와 토트백 위에 앉는다. 미니멀, 그리고 시끄러운 색 하나.",
   "src": "It's Nice That",
-  "url": "https://www.itsnicethat.com/articles/casey-roarty-graphic-design-discover-231126"
+  "url": "https://www.itsnicethat.com/articles/casey-roarty-graphic-design-discover-231126",
+  "img": "assets/2026-11-24-8.webp",
+  "img_src": "https://m.itsnicethat.com/original_images/casey-roarty-graphic-design-itsnicethat-5.jpg?class=w1440"
  },
  {
   "tag": "Interaction",
@@ -98,7 +112,9 @@
   "zh": "洛杉矶车展的起亚展台上，配置器是一组实体旋钮。每个旋钮自带一块高分辨率屏幕，颜色、内饰和机位一变，旋钮上的画面就跟着变。墙上的车也跟着转：日光、街道或风景，反光顺着漆面走。一段配乐随选项移动。旁边，迪士尼、皮克斯和星球大战的仪表主题在组合屏上预览。展会开到11月29日。",
   "ko": "LA 오토쇼의 기아 부스에서 컨피규레이터는 물리 다이얼 한 세트다. 다이얼마다 고해상도 화면이 있고, 색, 트림, 카메라 각도를 넘기면 그 위의 그림이 바뀐다. 벽의 차는 돌리는 대로 갱신된다. 햇빛, 거리, 풍경, 그리고 도장을 따라가는 반사. 사운드트랙도 선택과 함께 움직인다. 옆에서는 디즈니, 픽사, 스타워즈의 클러스터 테마가 계기판에서 미리 보인다. 쇼는 11월 29일까지다.",
   "src": "Kia",
-  "url": "https://www.kiamedia.com/us/en/media/pressreleases/25507/kia-america-will-debut-all-new-and-highly-interactive-exhibit-at-the-2026-la-auto-show"
+  "url": "https://www.kiamedia.com/us/en/media/pressreleases/25507/kia-america-will-debut-all-new-and-highly-interactive-exhibit-at-the-2026-la-auto-show",
+  "img": "assets/2026-11-24-9.jpg",
+  "img_src": "https://www.kiamedia.com/content/images/default/low.jpg"
  },
  {
   "tag": "Micromobility",
@@ -109,7 +125,9 @@
   "ko": "탕게랑의 IMOS에서 버그만 스트리트의 계기는 4.2인치 컬러 TFT다. 인도네시아 스즈키 스쿠터에 Ride Connect+ 화면이 처음 들어간다. 휴대폰 앱은 내비게이션, 수신 전화, 메시지 알림, 날씨를 그 패널에 올린다. 스마트 키 때문에 리모컨은 주머니에 있어도 된다. ICE BSD의 쇼는 11월 29일까지다. 화면은 작고, 라이딩과 휴대폰을 한꺼번에 담으라고 한다.",
   "src": "Antara",
   "url": "https://otomotif.antaranews.com/berita/5869463/suzuki-burgman-street-adopsi-tft-lcd-berwarna-42-inci",
-  "img_url": "https://cdn.antaranews.com/cache/1200x800/2026/11/21/Press-Photo-Suzuki-Burgman-Street-2.jpeg"
+  "img_url": "https://cdn.antaranews.com/cache/1200x800/2026/11/21/Press-Photo-Suzuki-Burgman-Street-2.jpeg",
+  "img": "assets/2026-11-24-10.jpg",
+  "img_src": "https://cdn.antaranews.com/cache/1200x800/2026/11/21/Press-Photo-Suzuki-Burgman-Street-2.jpeg"
  },
  {
   "tag": "Interaction",
@@ -119,7 +137,9 @@
   "zh": "Tovie是一辆没有座椅的地板车，16乘16乘9.5英寸，24磅，椅子就成了鞍座。踏板通过蓝牙跟手机或平板说话。家长选好的YouTube只在孩子踩踏时播放，腿一停，画面就冻住。时长限制在家长那边，旁边还有声音、灯光和强度。游戏用同一对踏板：前进和后退驾驶一艘黄色潜艇。无屏幕模式只留下阻力和可换的纹理踏板，别的都没有。",
   "ko": "토비는 안장 없는 바닥 자전거다. 16 곱하기 16 곱하기 9.5인치, 24파운드라서 의자가 안장이 된다. 페달은 블루투스로 휴대폰이나 태블릿과 이야기한다. 부모가 고른 유튜브는 아이가 밟는 동안에만 재생되고, 다리가 멈추면 화면이 멈춘다. 시간 제한은 부모 쪽에 있고, 그 옆에 소리, 조명, 강도가 있다. 게임도 같은 페달을 쓴다. 앞뒤가 노란 잠수함을 몬다. 화면 없는 모드는 저항과 텍스처 인서트만 남긴다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/11/23/this-kids-bike-pauses-youtube-the-second-they-stop-pedaling-for-a-very-good-reason/"
+  "url": "https://www.yankodesign.com/2026/11/23/this-kids-bike-pauses-youtube-the-second-they-stop-pedaling-for-a-very-good-reason/",
+  "img": "assets/2026-11-24-11.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/661347/tovie_pedal_to_play_1.jpg"
  },
  {
   "tag": "AI",
@@ -129,7 +149,9 @@
   "zh": "Claude的手机应用正在长出一条底栏。分页是chat、Projects、Code和Artifacts，原来藏在菜单里的工作变成拇指高度的一次点按。这次改版已经开始推送。它紧跟ChatGPT自己也长出底栏的那一天。这里没有新模型。四件事，一排，在对话的下面。",
   "ko": "클로드의 휴대폰 앱에 하단 바가 생긴다. 탭은 chat, Projects, Code, Artifacts다. 메뉴 안에 있던 일이 엄지 높이의 한 번 탭이 된다. 개편은 배포가 시작됐다. 챗GPT가 자기 하단 바를 가진 다음 날이다. 여기에는 새 모델이 없다. 네 가지 일, 한 줄, 대화 아래다.",
   "src": "The Verge",
-  "url": "https://www.theverge.com/ai-artificial-intelligence/1039188/claude-has-a-new-mobile-design-too"
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1039188/claude-has-a-new-mobile-design-too",
+  "img": "assets/2026-11-24-12.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/anthropic-claude-mobile-app-bottom-tab-bar.jpeg?quality=90&strip=all&crop=0%2C23.731093659104%2C100%2C52.537812681792&w=1200"
  },
  {
   "tag": "Visual",
@@ -139,7 +161,9 @@
   "zh": "Maria Francesca Melis从铅笔开始，转到墨水时故意让线条松着。颜色是数字的，质地却是她手扫的水彩。祖母用撒丁岛的灯心草giunco编的篮子，仍以几何形出现。给北京的爱马仕旗舰店，她先研究建筑、纹样和颜色，再用自己的植物去接。她的第一本全插画书《Dragons Around the World》由Thames & Hudson出版。",
   "ko": "마리아 프란체스카 멜리스는 연필로 시작하고, 잉크로 옮길 때도 선을 일부러 느슨하게 둔다. 색은 디지털이지만 질감은 손으로 스캔한 수채다. 할머니가 사르데냐의 골풀 준코로 짠 바구니는 여전히 기하로 나타난다. 베이징 에르메스 플래그십을 위해 건축, 문양, 색을 살핀 뒤 자신의 식물로 만났다. 첫 단독 그림책 Dragons Around the World는 템스 앤드 허드슨에서 나온다.",
   "src": "Creative Boom",
-  "url": "https://www.creativeboom.com/inspiration/maria-francesca-melis-on-embracing-imperfection-and-the-secret-of-successful-brand-collaborations/"
+  "url": "https://www.creativeboom.com/inspiration/maria-francesca-melis-on-embracing-imperfection-and-the-secret-of-successful-brand-collaborations/",
+  "img": "assets/2026-11-24-13.webp",
+  "img_src": "https://media.creativeboom.com/23134534-7bac-4727-a6fb-d927c4dd33ac/conversions/2e5878e6c57f014802cc94c7805b7fb9c8dca64f-medium.webp"
  },
  {
   "tag": "Visual",
@@ -150,7 +174,9 @@
   "ko": "매스드라이버의 서모크롬은 점 그리드 위에 있다. 도트매트릭스, 감열 프린터, CRT 단말을 가리키고, 점은 광학적으로 보정되어 그대로 베낀 것이 아니다. 이탤릭은 행을 밀어서 만든다. 인클라인드는 한 행을 한 열씩 옮기고 약 40도이며, 반대편에는 뒷기울기가 있다. Thin에서 Ultra까지 여덟 굵기가 비례와 모노로 나가 여든 스타일이다. 굵기는 점의 크기를 바꾸고 그리드는 그대로다. 문자 세트에 미디어 컨트롤과 웨이파인딩 기호가 있다.",
   "src": "Mass-Driver",
   "url": "https://mass-driver.com/typefaces/md-thermochrome/",
-  "img_url": "https://cdn.fontdue.com/mass-driver/images/2415449231155271175/MD%20Thermochrome.png?v=63962131188"
+  "img_url": "https://cdn.fontdue.com/mass-driver/images/2415449231155271175/MD%20Thermochrome.png?v=63962131188",
+  "img": "assets/2026-11-24-14.png",
+  "img_src": "https://cdn.fontdue.com/mass-driver/images/2415449231155271175/MD%20Thermochrome.png?v=63962131188"
  },
  {
   "tag": "Realtime",
@@ -161,7 +187,9 @@
   "ko": "데이비드 빈의 유니티 도구는 시작점에서 촉수를 자라게 하고, 표면을 타고, 모델이 덮일 때까지 감는다. 물체의 형태를 먼저 읽어서 경로는 땅과 메시 위에 남고, 공기도 물체도 뚫지 않는다. 다섯 가지 모습이다. 심비오트, 케이블, 덩굴, 회로, 잉크. 타이밍, 밀도, 색, 표면 디테일은 인스펙터에 있다. 경로는 에디터에서 구울 수 있다. 휴대폰에 가깝게 CPU를 제한하면 프레임당 약 3에서 8밀리초다. 유니티 6에서 돈다.",
   "src": "80 Level",
   "url": "https://80.lv/articles/procedural-unity-tool-creates-venom-like-tendrils-that-wrap-around-any-object",
-  "img_url": "https://cdn.80.lv/api/upload/meta/51134/images/6b043f512b50d/contain_1200x630.jpg"
+  "img_url": "https://cdn.80.lv/api/upload/meta/51134/images/6b043f512b50d/contain_1200x630.jpg",
+  "img": "assets/2026-11-24-15.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51134/images/6b043f512b50d/contain_1200x630.jpg"
  },
  {
   "tag": "Industrial",
@@ -173,6 +201,8 @@
   "ko": "틴에이지 엔지니어링의 첫 CD 플레이어 EP/BC-1은 디스크를 위에 두고 돌린다. 숫자 패드가 곡 번호를 18글자 빨간 7세그먼트 화면에 찍는다. 아홉 칸 LED 미터 두 개가 좌우 채널을 보여 주고, 바리스피드는 50에서 150퍼센트다. 큐 포인트 셋은 최근 40장을 기억하고, 조그는 2배, 4배, 8배로 문지른다. 3.5밀리 잭이 싱크 클록을 보낸다. USB는 디스크를 44.1 kHz, 16비트 WAV로 뜯는다.",
   "src": "Yanko Design",
   "url": "https://www.yankodesign.com/2026/11/23/teenage-engineerings-first-cd-player-is-a-modular-329-toy-for-grown-up-music-nerds/",
-  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/auto-draft/teenage_engineering_ep_bc1_1.jpg"
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/auto-draft/teenage_engineering_ep_bc1_1.jpg",
+  "img": "assets/2026-11-24-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/auto-draft/teenage_engineering_ep_bc1_1.jpg"
  }
 ]
