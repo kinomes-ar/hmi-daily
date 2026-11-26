@@ -9,7 +9,9 @@
   "ko": "프레임은 도시가 아니라 화학 에어록이다. 안티바디의 패트릭 클레어와 라울 마크스는 열화된 아날로그 영상, DNA 이미징, 스펙트럼 색으로 블레이드 러너 2099를 열고, 익숙한 삽화 서사는 빼 둔다. 레오폴드 로스의 음악이 그 추상을 붙든다. 실카 루이사와 알콘, 스콧 프리가 시퀀스에 있다. 시리즈로 들어가는 문은 스카이라인이 아니라 질감이다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
-  "video": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/"
+  "video": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
+  "img": "assets/2026-11-26-1.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-_-STASH-MAGAZINE9.jpg"
  },
  {
   "tag": "Interaction",
@@ -20,7 +22,9 @@
   "ko": "강철 레일 휠이 레인저 슈퍼 듀티에서 내려오고, 그 스위치는 나중에 붙인 버튼 뱅크가 아니다. 포드 프로와 에리즈 레일, 옵세스는 유압 가이드와 카메라 영상을 트럭의 센터 터치스크린 안에 넣어 에어백을 가리지 않게 했다. 대시에는 두 번째 중장비형 디스플레이가 있고, 스티어링 휠 옆에는 휴대용 무전기가 놓인다. 첫 실차는 브리즈번의 AusRAIL에 있었다.",
   "src": "Carscoops",
   "url": "https://www.carscoops.com/2327195/ford-pro-australia-ranger-super-duty-train/",
-  "img_url": "https://www.carscoops.com/img/gallery/fords-toughest-ranger-super-duty-just-became-a-literal-train/l-intro-1795552088.jpg"
+  "img_url": "https://www.carscoops.com/img/gallery/fords-toughest-ranger-super-duty-just-became-a-literal-train/l-intro-1795552088.jpg",
+  "img": "assets/2026-11-26-2.jpg",
+  "img_src": "https://www.carscoops.com/img/gallery/fords-toughest-ranger-super-duty-just-became-a-literal-train/l-intro-1795552088.jpg"
  },
  {
   "tag": "AI",
@@ -42,7 +46,9 @@
   "ko": "옐프의 블록은 동네이고, 초당 12프레임으로 움직인다. 긴츠 구트마니스가 연출한 패닉은 새 일러스트 스타일을 모션으로 가져온다. 엠보싱과 그림자와 나무 질감이고, 블록 자체가 컷이다. 빨간 리뷰 카드가 집들 사이로 튀어나온다. 반려동물은 셀 애니메이션으로 위에 얹힌다. 아이덴티티를 고친 뒤 첫 애니메이션이다.",
   "src": "STASH",
   "url": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
-  "video": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/"
+  "video": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
+  "img": "assets/2026-11-26-4.jpg",
+  "img_src": "http://www.stashmedia.tv/wp-content/uploads/Yelp-22It-Takes-a-Village22-Campaign-film-by-Panic-STASH-MAGAZINE6.jpg"
  },
  {
   "tag": "Realtime",
@@ -53,7 +59,9 @@
   "zh": "把一种材质丢到任意网格上，光照就变成木刻。Tamás Rolfesz的Eevee着色器不需要UV、贴图或遮罩。三个滑杆把每个像素分成纸、排线和油墨，少数固定方向让笔触不再发颤。Voronoi块把线条错开，因为算在物体空间里，镜头一动它们也不漂。移动太阳，整张版画会被重新刻一遍。",
   "ko": "메시 어디에든 머티리얼 하나를 올리면 조명이 목판화가 된다. 터마시 롤페스의 이브이 셰이더는 UV도 텍스처도 마스크도 필요 없다. 슬라이더 세 개가 픽셀을 종이, 해칭, 잉크로 나누고, 고정된 몇 방향이 획이 흔들리지 않게 한다. 보로노이 블록이 선을 어긋나게 하고, 오브젝트 공간에 있어서 카메라가 움직여도 제자리에 남는다. 해를 옮기면 판화가 다시 새겨진다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/this-blender-shader-turns-any-3d-object-into-woodcut-illustration"
+  "url": "https://80.lv/articles/this-blender-shader-turns-any-3d-object-into-woodcut-illustration",
+  "img": "assets/2026-11-26-5.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51169/images/6b06d5048e9b3/contain_1200x630.jpg"
  },
  {
   "tag": "Visual",
@@ -65,7 +73,9 @@
   "ko": "손으로 만든 세라믹 타일 3만 장 이상이 빌뢰르반의 플라셰–알랭 질 역 승강장을 덮는다. 카미유 왈랄라의 앨리-웁은 알랭 질의 이름을 딴 농구 동작을 빌린 뒤, 줄무늬 블록과 물결선을 쌓아 벽이 되튀는 것처럼 보이게 한다. 띠는 근처 마리오 보타의 MLIS도 따라간다. 공사는 밤에 해서 역은 열려 있고, 작품은 내년 봄에 끝난다. 그녀의 첫 영구 공공 작업이고, 이 규모의 첫 세라믹이다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/news/camille-walala-is-covering-a-lyon-metro-station-in-30000-hand-made-tiles/",
-  "img_url": "https://media.creativeboom.com/e8bf23d2-8386-4d8c-a9bd-1cb5c23422f8/conversions/afb7e2c098278e638b7cb735d07d7e711184188b-medium.webp"
+  "img_url": "https://media.creativeboom.com/e8bf23d2-8386-4d8c-a9bd-1cb5c23422f8/conversions/afb7e2c098278e638b7cb735d07d7e711184188b-medium.webp",
+  "img": "assets/2026-11-26-6.webp",
+  "img_src": "https://media.creativeboom.com/e8bf23d2-8386-4d8c-a9bd-1cb5c23422f8/conversions/afb7e2c098278e638b7cb735d07d7e711184188b-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -76,7 +86,9 @@
   "ko": "타포 C825에는 4인치 터치스크린이 있고, 저장된 얼굴을 누르면 다른 C825로 영상 통화가 시작된다. 통화가 없으면 같은 유리는 사진 액자이거나 날씨 패널, 시계가 된다. 프라이버시 모드는 렌즈를 천장으로 돌리고 감시를 멈춘다. 헤드는 360도 회전하고 156도 기울며, 화각은 114.5도다. 사람과 반려동물 인식은 기기 안에서 돈다. 가격은 149.99달러다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1041221/tapo-c825-security-indoor-2k-camera-video-calls-tracking-pan-tilt",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/tapo1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/tapo1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+  "img": "assets/2026-11-26-7.jpg",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/tapo1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
  },
  {
   "tag": "Motion",
@@ -88,7 +100,9 @@
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/inspiration/show-dont-tell-father-explains-what-it-does-with-a-film-that-lets-the-dungeness-coastline-do-the-talking/",
   "video": "https://www.nowness.com/films/can-you-hear-this/",
-  "img_url": "https://media.creativeboom.com/8b0468a5-fe43-4c91-b505-a458e2dcdeb6/conversions/2b16b7ea020b7e36bc015958acaa09f5bdea305e-medium.webp"
+  "img_url": "https://media.creativeboom.com/8b0468a5-fe43-4c91-b505-a458e2dcdeb6/conversions/2b16b7ea020b7e36bc015958acaa09f5bdea305e-medium.webp",
+  "img": "assets/2026-11-26-8.webp",
+  "img_src": "https://media.creativeboom.com/8b0468a5-fe43-4c91-b505-a458e2dcdeb6/conversions/2b16b7ea020b7e36bc015958acaa09f5bdea305e-medium.webp"
  },
  {
   "tag": "Interaction",
@@ -98,7 +112,9 @@
   "zh": "四个方键和一条宽键装在掌心大小的铝壳里。Genspark的VoicePad用Cherry MX Ultra Low Profile轴，行程1.8毫米，0.8毫米处有一段段落，整机85克。出厂键位是听写、会议笔记、日历、幻灯片和AI工作区，每一颗都能改映射。只有按下键才会录音。一排小孔盖住麦克风。",
   "ko": "네모 키 네 개와 넓은 바 하나가 손바닥만 한 알루미늄 패드에 있다. 젠스파크의 보이스패드는 체리 MX 울트라 로우 프로파일 스위치를 쓰고, 키 트래블은 1.8mm, 범프는 0.8mm, 몸체는 85그램이다. 기본 키는 받아쓰기, 회의 노트, 달력, 슬라이드, AI 작업 공간이고, 각각 다시 매핑할 수 있다. 키를 눌렀을 때만 녹음한다. 구멍 격자가 마이크를 가린다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/11/24/genspark-built-a-five-button-remote-for-your-ai-agents-and-it-has-cherry-mechanical-switches/"
+  "url": "https://www.yankodesign.com/2026/11/24/genspark-built-a-five-button-remote-for-your-ai-agents-and-it-has-cherry-mechanical-switches/",
+  "img": "assets/2026-11-26-9.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/genspark-built-a-five-button-remote-for-your-ai-agents-and-it-has-cherry-mechanical-switches/SecondBrain-1.jpg"
  },
  {
   "tag": "AI",
@@ -109,7 +125,9 @@
   "ko": "디디에 로슈가 공유한 미리보기에서 우분투 홈 화면에 프롬프트 상자가 있다. 캐노니컬은 이것을 키보드와 음성이 함께 쓰는 하나의 입구로 설명하고, 앱과 로컬 맥락을 잇되 도움을 요청할 때만 나온다고 했다. 상자는 1월에 올 예정이다. 스크린샷에서 그것은 데스크톱 위의 입력칸 하나, 타이핑하거나 말하는 자리이고, 버튼이 늘어선 두 번째 패널은 아니다.",
   "src": "The Verge",
   "url": "https://www.theverge.com/tech/1042603/ubuntu-is-working-on-an-ai-launcher-for-its-linux-desktop",
-  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ubuntu_warty_launcher.webp?quality=90&strip=all&crop=0%2C8.0900120821587%2C100%2C83.819975835683&w=1200"
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ubuntu_warty_launcher.webp?quality=90&strip=all&crop=0%2C8.0900120821587%2C100%2C83.819975835683&w=1200",
+  "img": "assets/2026-11-26-10.png",
+  "img_src": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ubuntu_warty_launcher.webp?quality=90&strip=all&crop=0%2C8.0900120821587%2C100%2C83.819975835683&w=1200"
  },
  {
   "tag": "Visual",
@@ -120,7 +138,9 @@
   "ko": "새 칼링 마크는 마름모가 아니라 축구 문장이다. 브랜드오퍼스는 배지 안에 버턴 양조장과 버턴 브리지를 그리고, 보리 이삭으로 두르며, 테두리에는 The Carling Brewery와 Burton-upon-Trent를, 가운데에는 블랙 라벨 띠를 넣는다. 토머스 칼링의 서명은 캔과 잔에 앉는다. 파인트 잔은 바닥 근처에 Burton-upon-Trent를 양각한다. 경기장 벽화는 구단마다 색을 바꾼다.",
   "src": "Creative Boom",
   "url": "https://www.creativeboom.com/news/carlings-new-identity-is-a-badge-of-belonging-inspired-by-football-clubs/",
-  "img_url": "https://media.creativeboom.com/f6aa6eac-7dda-41b3-997d-a41dcdf1e682/conversions/de97a73f620dcebf314348496caa0af8558efc08-medium.webp"
+  "img_url": "https://media.creativeboom.com/f6aa6eac-7dda-41b3-997d-a41dcdf1e682/conversions/de97a73f620dcebf314348496caa0af8558efc08-medium.webp",
+  "img": "assets/2026-11-26-11.webp",
+  "img_src": "https://media.creativeboom.com/f6aa6eac-7dda-41b3-997d-a41dcdf1e682/conversions/de97a73f620dcebf314348496caa0af8558efc08-medium.webp"
  },
  {
   "tag": "Visual",
@@ -130,7 +150,9 @@
   "zh": "Fialetta是一款圆角偏方的无衬线，从Light到Black五个字重，为菜单、HUD和对白而画。每个圆形字母在右上角留一个干脆的角，像小药瓶上的标签。打开自由连字，输入heart、capsule或Rx，单词就变成图标：一共九个，包括瓶子、注射器、温度计、研钵和叶子。三十种语言在同一套文件里。要把字体放进游戏，需要单独的应用授权。",
   "ko": "피알레타는 모서리가 부드럽게 각진 산세리프이고, 라이트에서 블랙까지 다섯 굵기이며, 메뉴와 HUD, 대사를 위해 그렸다. 둥근 글자는 오른쪽 위에 각진 모서리 하나를 남긴다. 약병 라벨 같다. 임의 합자를 켜고 heart, capsule, Rx를 치면 단어가 아이콘이 된다. 아홉 개이고, 병, 주사기, 체온계, 막자사발, 잎이 들어 있다. 서른 개 언어가 같은 파일에 있다. 글꼴을 게임 안에 넣으려면 앱 라이선스가 필요하다.",
   "src": "Taleggio Foundry",
-  "url": "https://taleggiofoundry.itch.io/fialetta"
+  "url": "https://taleggiofoundry.itch.io/fialetta",
+  "img": "assets/2026-11-26-12.png",
+  "img_src": "https://img.itch.zone/aW1nLzMyNzMwMzE5LnBuZw==/original/0calcB.png"
  },
  {
   "tag": "Realtime",
@@ -140,7 +162,9 @@
   "zh": "在RetroEngine里，界面画在最后一道处理之前，所以文字和地牢穿过同一块玻璃。Alexander Rybak用C++和Direct3D 12为《The King's Surveyor》写了这台引擎。调色板是硬限制，不是后期调色。材质只有反照率：一张灰度贴图走过颜色渐变，没有法线，也没有高光。混音器上的主机配置让声音对上显像管。Dear ImGui只留在编辑器里。",
   "ko": "레트로엔진에서 인터페이스는 마지막 패스 전에 그려져, 글자가 던전과 같은 유리를 통과한다. 알렉산더 리바크는 《The King's Surveyor》를 위해 C++와 Direct3D 12로 엔진을 만들었다. 팔레트는 그레이드가 아니라 단단한 한계다. 머티리얼은 알베도뿐이다. 그레이스케일 텍스처가 컬러 램프를 지나고, 노멀도 스페큘러도 없다. 믹서의 콘솔 프로파일이 소리를 브라운관에 맞춘다. Dear ImGui는 에디터에만 있다.",
   "src": "80 Level",
-  "url": "https://80.lv/articles/inside-retroengine-the-custom-engine-behind-the-king-s-surveyor"
+  "url": "https://80.lv/articles/inside-retroengine-the-custom-engine-behind-the-king-s-surveyor",
+  "img": "assets/2026-11-26-13.jpg",
+  "img_src": "https://cdn.80.lv/api/upload/meta/51171/images/6b073cafc2d79/contain_1200x630.jpg"
  },
  {
   "tag": "Micromobility",
@@ -150,7 +174,9 @@
   "zh": "新Hornet 2.0的仪表是一块彩色TFT，两种主题，三档亮度。挡位、实时油耗和剩余里程可以一眼看完，骑法一变，油耗数字就跟着变。孟加拉本田本周把它装上这台街车，旁边是X形LED尾灯。颜色是Radiant Red Metallic、Matte Axis Grey Metallic和Pearl Igneous Black。",
   "ko": "새 호넷 2.0의 미터는 컬러 TFT이고, 테마가 두 개, 밝기가 세 단계다. 기어와 실시간 연비, 잔여 거리가 한눈에 있어서, 타는 방식이 바뀌면 쓴 연료로 드러난다. 방글라데시 혼다가 이번 주 이 스트리트파이터에 올렸고, 옆에는 X자 LED 테일 램프가 있다. 색은 래디언트 레드 메탈릭, 매트 액시스 그레이 메탈릭, 펄 이그니스 블랙이다.",
   "src": "Bangladesh Honda",
-  "url": "https://bdhonda.com/news/honda-launches-the-new-hornet-20-with-more-advanced-technology"
+  "url": "https://bdhonda.com/news/honda-launches-the-new-hornet-20-with-more-advanced-technology",
+  "img": "assets/2026-11-26-14.png",
+  "img_src": "https://bdhonda.com/public/uploads/2026/10/6ae1898db4609_CBR150R.png"
  },
  {
   "tag": "Industrial",
@@ -161,7 +187,9 @@
   "zh": "一颗钢珠在铁粉里写下时和分，下一分钟再把它擦掉。荷兰的Strange Inventions把钕磁铁装在玻璃下的齿轮驱动器上。每60秒，微控制器重新描一遍数字。磁铁太强会把粉末划出深槽，太弱则线条断开。沙子太粗，填料改成筛过的铁粉加非磁性填充物。手腕一甩，盘面就会糊掉。",
   "ko": "강철 구슬이 철가루 위에 시와 분을 그리고, 다음 분이 그것을 지운다. 네덜란드의 스트레인지 인벤션스는 유리 아래 기어 액추에이터에 네오디뮴 자석을 숨긴다. 60초마다 마이크로컨트롤러가 새 숫자를 따라 그린다. 자석이 세면 가루에 홈이 파이고, 약하면 선이 끊긴다. 모래는 너무 거칠어, 채 친 철가루와 비자성 충전재를 섞었다. 손목을 세게 움직이면 판이 번진다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/11/25/this-kinetic-wristwatch-draws-current-time-in-iron-dust-instead-of-using-hands-or-digital-numbers/"
+  "url": "https://www.yankodesign.com/2026/11/25/this-kinetic-wristwatch-draws-current-time-in-iron-dust-instead-of-using-hands-or-digital-numbers/",
+  "img": "assets/2026-11-26-15.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/this-kinetic-wristwatch-draws-the-time-in-iron-dust-instead-of-using-hands-or-digital-numbers/Strange-Inventions-DIY-Watch-Draws-Time-9.jpg"
  },
  {
   "tag": "Interaction",
@@ -171,6 +199,8 @@
   "zh": "Nothing的Ear (note)盒子是一台小小的铝制录音机，布局像Walkman。正面是TALK键和一颗红色RECORD按钮；透明盖收成两扇药片形窗口，里面是一层层像等高线的台阶。耳柄仍是透明的，上面用点阵字写着ear (note)。盒子上的麦克风录房间，耳机录通话，应用写出文字稿。12月8日上市。",
   "ko": "낫싱의 이어 (노트) 케이스는 워크맨 배치를 가진 작은 알루미늄 녹음기다. 앞면에는 TALK 키와 빨간 RECORD 버튼이 있고, 투명 뚜껑은 알약 모양 창 두 개로 줄어 그 안에 등고선 같은 단이 있다. 스템은 투명하게 남고, 도트 매트릭스 글자로 ear (note)가 박힌다. 케이스 마이크는 방을, 버드는 통화를 담고, 앱이 받아쓴다. 12월 8일에 나온다.",
   "src": "Yanko Design",
-  "url": "https://www.yankodesign.com/2026/11/25/nothings-ear-note-turns-the-earbud-case-into-a-tiny-ai-powered-meeting-recorder/"
+  "url": "https://www.yankodesign.com/2026/11/25/nothings-ear-note-turns-the-earbud-case-into-a-tiny-ai-powered-meeting-recorder/",
+  "img": "assets/2026-11-26-16.jpg",
+  "img_src": "https://www.yankodesign.com/images/design_news/2026/11/661762/nothing_ear_note_1.jpeg"
  }
 ]
