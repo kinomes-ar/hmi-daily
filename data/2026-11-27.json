@@ -1,0 +1,178 @@
+[
+ {
+  "tag": "Interaction",
+  "t": "Sand: tilt the phone, the grains follow",
+  "en": "A phone or tablet fills with anywhere from 100,000 to 460,000 separate grains. Tip it and they slide. Push with a finger and they pile. Shadows follow the tilt, and the grains glint like quartz. There is no chrome and no menu. Ivan Charapanau's browser piece is an interface made of nothing but sand.",
+  "blurb": "100,000 to 460,000 grains slide with the tilt, and the shadows follow",
+  "pick": true,
+  "zh": "手机或平板的画面里铺着十万到四十六万颗分开的沙粒。机身一斜，沙子就滑；手指一推，它们就堆起来。影子跟着倾角走，颗粒还会像石英一样闪。没有边框，也没有菜单。Ivan Charapanau做的这个浏览器小东西，整套界面只有沙子。",
+  "ko": "휴대폰이나 태블릿 화면이 10만 개에서 46만 개의 낱알로 채워진다. 기기를 기울이면 미끄러지고, 손가락으로 밀면 쌓인다. 그림자도 기울기를 따르고, 알갱이는 석영처럼 반짝인다. 프레임도 메뉴도 없다. 이반 차라파나우의 브라우저 작품은 모래만으로 된 인터페이스다.",
+  "src": "The Verge",
+  "url": "https://www.theverge.com/tech/1043267/safe-sand-ivan-charapanau-interactive-simulator-browser-phone-motion",
+  "img_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/sand.jpg?quality=90&strip=all&crop=0%2C10.752726382539%2C100%2C78.494547234923&w=1200"
+ },
+ {
+  "tag": "Motion",
+  "t": "Fold8: it bends, and the Duo is late",
+  "en": "FOREAL's film for the Samsung Galaxy Z Fold8 keeps the product shots clean, then bends the phone as a joke about Apple's late iPhone Duo. Benjamin Simon and Dirk Schuster took it from a pencil sketch to final renders in two weeks. Peter Albertz did the sound. Seven years of folding becomes the gag, not a spec sheet.",
+  "blurb": "FOREAL bends the Z Fold8 in two weeks, and the joke is the late iPhone Duo",
+  "pick": true,
+  "zh": "FOREAL给三星Galaxy Z Fold8做的片子先把产品拍得很干净，再把手机折起来，拿苹果迟到的iPhone Duo开玩笑。Benjamin Simon和Dirk Schuster从铅笔稿到成片只用了两周。声音是Peter Albertz。七年的折叠经验在这里是一个动作，不是一张参数表。",
+  "ko": "포리얼의 삼성 갤럭시 Z 폴드8 필름은 제품 컷을 깨끗하게 두고, 늦게 나온 애플 아이폰 듀오를 놀리듯 폰을 접는다. 베냐민 시몬과 디르크 슈스터는 연필 스케치에서 최종 렌더까지 2주가 걸렸다. 사운드는 페터 알베르츠. 7년의 폴딩은 스펙 표가 아니라 개그가 된다.",
+  "src": "STASH",
+  "url": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
+  "video": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
+  "img_url": "https://www.stashmedia.tv/wp-content/uploads/Samsung-Galaxy-ZFold8-global-campaign-film-by-Foreal-STASH-MAGAZINE2-640x360.jpg"
+ },
+ {
+  "tag": "Visual",
+  "t": "Codex: slide the bookmark, it moves",
+  "en": "The Soulbreaker Codex looks like a parts catalogue: exploded drawings, hot-pink waveforms, timestamps, and three epochs marked 1000, 2000 and 3000. Jacob Hulmston and Marty Uhrecký designed it with A.G. Cook. Drag the bookmark across a page and a barrier grid turns the stills into motion. It stays plain until you use it.",
+  "blurb": "Drag the bookmark and a barrier grid turns the still diagrams into motion",
+  "pick": true,
+  "zh": "《Soulbreaker Codex》看起来像一本零件目录：爆炸图、亮粉色波形、时间戳，还有标着1000、2000、3000的三个纪元。Jacob Hulmston和Marty Uhrecký与A.G. Cook一起做了它。书签贴着页面一拖，光栅就把静帧变成动画。它先装成一本平淡的手册，用了才露出来。",
+  "ko": "소울브레이커 코덱스는 부품 카탈로그처럼 보인다. 분해도, 핫핑크 파형, 타임스탬프, 그리고 1000, 2000, 3000으로 적힌 세 시대. 제이컵 헐름스턴과 마티 우흐레키가 A.G. 쿡과 함께 설계했다. 책갈피를 페이지 위로 끌면 배리어 그리드가 정지 그림을 움직인다. 쓰기 전에는 평범한 책이다.",
+  "src": "It's Nice That",
+  "url": "https://www.itsnicethat.com/articles/jacob-hulmston-martin-uhrecky-the-soulbreaker-codex-graphic-design-publication-project-261126"
+ },
+ {
+  "tag": "AI",
+  "t": "Canva: the reply is a file you can move",
+  "en": "Canva's assistant connector is open, with no waitlist. Ask for a campaign and the agent can hand back an editable design, a still, or a short video, then cut out a background or resize the result. Magic Layers splits a flat picture into text and objects you can move. Craft, Canva's own image model, sits on the same connection.",
+  "blurb": "The agent hands back an editable file, and Magic Layers splits a flat image",
+  "zh": "Canva接进助手的接口已经放开，不用排队。让它做一套campaign，它可以交回一份可编辑的设计、一张静帧或一条短片，再去背或改尺寸。Magic Layers把一张平面图拆成可以挪动的文字和物件。Canva自己的图像模型Craft也走同一条连接。",
+  "ko": "캔바의 어시스턴트 연결이 대기 없이 열렸다. 캠페인을 시키면 에이전트는 편집 가능한 디자인, 스틸, 짧은 영상을 돌려주고, 배경을 지우거나 크기를 바꾼다. 매직 레이어는 평면 그림을 옮길 수 있는 글자와 오브젝트로 쪼갠다. 캔바의 이미지 모델 크래프트도 같은 연결에 있다.",
+  "src": "Canva",
+  "url": "https://www.canva.com/newsroom/news/canva-mcp-update/"
+ },
+ {
+  "tag": "Realtime",
+  "t": "Rally: the dust is pulled-apart cotton",
+  "en": "Will Hoskin rebuilt a 1:64 and 1:32 rally diorama in Houdini, and none of it is a photograph. Dust and spray start as groomed hair, sculpted so the cotton looks pulled apart by hand. Trees are patches of tangled plastic wire. Figures and the car are smoothed toward molded plastic, then shaded with subsurface scattering in Karma.",
+  "blurb": "Cotton dust is groomed hair, and the car is shaded like molded plastic",
+  "pick": true,
+  "zh": "Will Hoskin在Houdini里重做了一座1:64和1:32的拉力赛场景模型，没有一张是照片。尘土和浪花从毛发梳理开始，再塑成用手扯开的棉花。树是一团团缠住的塑料丝。人物和赛车被磨向注塑玩具，再用Karma的次表面散射上色。",
+  "ko": "윌 호스킨은 후디니에서 1:64와 1:32 랠리 디오라마를 다시 만들었고, 사진은 한 장도 아니다. 먼지와 물보라는 그룸 헤어로 시작해, 손으로 잡아 뜯은 솜처럼 조각한다. 나무는 엉킨 플라스틱 철사 조각이다. 인물과 차는 사출 플라스틱 쪽으로 매끈해진 뒤 카르마의 서브서페이스 스캐터링으로 칠한다.",
+  "src": "80 Level",
+  "url": "https://80.lv/articles/recreating-the-scale-model-look-of-a-rally-diorama-in-houdini"
+ },
+ {
+  "tag": "Cockpit",
+  "t": "Galaxy M8: the panoramic glass is gone",
+  "en": "Geely's Galaxy M8, the five-seat twin of the M9, is on the Guangzhou stand with the panoramic screen and the HUD left off. One 15.4-inch floating display runs Flyme Auto 2. Crystal knobs, wood and suede stay on the console, in shell-beige or cognac. Less glass, and the cabin reads as a room again.",
+  "blurb": "The M9's panoramic glass and HUD are off; one 15.4-inch screen remains",
+  "zh": "吉利银河M8是M9的五座双胞胎，广州展台上把全景屏和HUD都拿掉了。一块15.4英寸悬浮屏跑Flyme Auto 2。水晶旋钮、木饰和麂皮还在中岛上，配色是云贝米或干邑棕。玻璃少了，座舱重新像一间房间。",
+  "ko": "지리 갤럭시 M8은 M9의 5인승 쌍둥이다. 광저우 전시장에서는 파노라마 스크린과 HUD를 빼 두었다. 15.4인치 플로팅 디스플레이 하나가 플라이미 오토 2를 돌린다. 콘솔에는 크리스털 노브와 우드, 스웨이드가 남고, 색은 셸 베이지와 코냑이다. 유리가 줄자 실내가 다시 방처럼 읽힌다.",
+  "src": "Sina Auto",
+  "url": "https://auto.sina.com.cn/newcar/2026-11-26/detail-inkaaifa8165308.shtml"
+ },
+ {
+  "tag": "Visual",
+  "t": "Fractura: the strap thickens inward",
+  "en": "Chezarit Mattie drew Fractura from the strap of an arm support: five moves, run, fold, loop, cut and join. Every letter is that one strap. Four weights, 223 characters each, the strap running from 56 to 140 units wide. The outer box never grows. Weight is added on the inside. He started from a broken arm, then kept the strap and left the brace behind.",
+  "blurb": "One strap, four weights, and the outline stays put as the stroke grows in",
+  "zh": "Chezarit Mattie从护具的一条带子画出Fractura：跑、折、环、切、接，五个动作。每个字母都是这一条带子。四个字重，每套223个字符，带子宽度从56到140单位。外框不长大。重量加在内侧。起点是一次手臂骨折，他留下带子的逻辑，把护具本身放下。",
+  "ko": "체자릿 매티는 팔 보호대의 끈 하나에서 프락투라를 그렸다. 동작은 달리기, 접기, 고리, 자르기, 잇기 다섯이다. 모든 글자가 그 끈 하나다. 네 가지 굵기, 각 223자, 끈 너비는 56에서 140유닛. 바깥 상자는 커지지 않는다. 무게는 안으로 더한다. 시작은 부러진 팔이었고, 그는 끈의 논리만 남기고 보호대는 뒤에 두었다.",
+  "src": "Fractura",
+  "url": "https://fractura-type.com",
+  "img_url": "https://fractura-type.netlify.app/og-image.png"
+ },
+ {
+  "tag": "Visual",
+  "t": "Abundance: twenty boards, each one local",
+  "en": "Fiona Quadri's Abundance of Being occupies 20 London billboards for Buildhollywood. Each collage is drawn for its own street: Brixton Market, the Vortex jazz club, the Black Cultural Archives. She visits, sketches, then stacks colour and type until the neighbourhood is the picture. A West India Dock board rebuilds a street party from an older fundraiser drawing.",
+  "blurb": "Twenty London billboards, each collage drawn for the street it stands on",
+  "zh": "Fiona Quadri的《Abundance of Being》占了Buildhollywood的20块伦敦大牌。每张拼贴只画它所在的那条街：布里克斯顿市场、Vortex爵士俱乐部、黑人文化档案馆。她先去现场速写，再把颜色和字叠到街区本身成为画面。西印度码头那一块，用一张更早的募捐画重做了一场街头聚会。",
+  "ko": "피오나 콰드리의 어번던스 오브 비잉은 빌드할리우드의 런던 빌보드 20면을 차지한다. 콜라주마다 그 거리만을 그린다. 브릭스턴 마켓, 보텍스 재즈 클럽, 블랙 컬처럴 아카이브. 그녀는 현장을 보고 스케치한 뒤 색과 글자를 쌓아 동네 자체가 그림이 되게 한다. 웨스트 인디아 독의 한 면은 예전 모금 드로잉으로 거리 파티를 다시 짓는다.",
+  "src": "It's Nice That",
+  "url": "https://www.itsnicethat.com/articles/fiona-quadri-the-abundance-of-being-art-project-261126",
+  "img_url": "https://m.itsnicethat.com/original_images/jam_afternoon.png?class=w1440"
+ },
+ {
+  "tag": "Interaction",
+  "t": "Y2: the ring slides, it does not spin",
+  "en": "The Innioasis Y2 sets a small colour screen above a touch ring that does not turn. A thumb slides to move the list, the centre presses to choose, and the ring's edges handle back, skip and pause. Volume is two buttons on the side. USB-C and a microSD slot bring the files in. FLAC and M3U playlists play. The theme can change when the menu looks too much like 2004.",
+  "blurb": "The ring does not spin: a thumb slides, the centre clicks, volume is on the side",
+  "zh": "Innioasis Y2把一块小彩屏放在不会转动的触控环上面。拇指滑动来翻列表，中间按下确认，环的边缘负责返回、切歌和暂停。音量是侧面的两颗键。文件从USB-C和microSD进来。FLAC和M3U歌单都能放。菜单太像2004年的时候，主题可以换。",
+  "ko": "이노아시스 Y2는 돌지 않는 터치 링 위에 작은 컬러 화면을 둔다. 엄지로 밀면 목록이 움직이고, 가운데를 누르면 고르며, 링의 가장자리는 뒤로, 건너뛰기, 일시정지를 맡는다. 볼륨은 옆면 버튼 두 개다. 파일은 USB-C와 마이크로SD로 넣고, FLAC와 M3U 재생목록이 재생된다. 메뉴가 2004년처럼 보이면 테마를 바꿀 수 있다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/11/26/the-innioasis-y2-music-player-brings-back-ipod-style-scrolling/",
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/the-innioasis-y2-music-player-brings-back-ipod-style-scrolling/innioasis-yw-hi-res-music-player-04.jpg"
+ },
+ {
+  "tag": "Design",
+  "t": "INOUI: darker toward the floor",
+  "en": "nendo and AREP's TGV INOUI is in service, and a river organises the whole graphic system. Broken white and grey circles sit on a warm grey shell. Bordeaux doors mark the entrances so they read against the body. Inside, one horizontal colour split runs across seats and walls, darker toward the floor. Headrests, lamps, coat hooks and grips share a pebble shape. Holes cut to save weight read as bubbles.",
+  "blurb": "Bordeaux doors, pebble lamps, and a colour split that darkens toward the floor",
+  "pick": true,
+  "zh": "nendo和AREP的TGV INOUI已经投入运营，一条河组织了整套图形。暖灰车身上是碎开的白圈和灰圈。波尔多色的门和车身拉开对比，方便找到上车的位置。舱内一条水平分色穿过座椅和墙面，越靠近地板越深。头枕、灯、衣钩和扶手共用一种鹅卵石外形。为了减重开的孔，读起来像水泡。",
+  "ko": "넨도와 AREP의 TGV INOUI는 이미 운행 중이고, 강이 그래픽 시스템 전체를 조직한다. 따뜻한 회색 차체 위에 깨진 흰 원과 회색 원이 놓인다. 보르도색 문은 차체와 대비되어 승차 위치를 읽히게 한다. 실내에서는 하나의 수평 색 분할이 좌석과 벽을 가로지르고, 바닥 쪽으로 갈수록 짙어진다. 헤드레스트, 조명, 코트 훅, 손잡이는 하나의 조약돌 형태를 나눈다. 무게를 줄이려 뚫은 구멍은 거품으로 읽힌다.",
+  "src": "designboom",
+  "url": "https://www.designboom.com/design/nendo-river-inspired-design-france-tgv-inoui-motion-interview/",
+  "img_url": "https://www.designboom.com/twitterimages/uploads/2026/11/nendo-river-inspired-design-france-tgv-inoui-motion-interview-designboom-1200.jpg"
+ },
+ {
+  "tag": "Visual",
+  "t": "Crua: a brutalist serif, 60 styles",
+  "en": "Pedro Leal's Crua, out from DSType, is a brutalist serif with wide proportions and sharp corners. Micro, Text, Headline and Display each ship in 14 styles, Light to Heavy, with italics. Crua XL pushes the same shapes into a Serif and a Slab. Sixty styles in all, so a text setting and a poster can share one concrete voice.",
+  "blurb": "Five families and 60 styles, a brutalist serif from Micro up to an XL slab",
+  "zh": "Pedro Leal的Crua由DSType发布，是一款比例开阔、转角锋利的粗野主义衬线。Micro、Text、Headline和Display各有14种样式，从Light到Heavy，带斜体。Crua XL把同一套形推到Serif和Slab。一共60种，正文和海报可以共用同一种混凝土的声音。",
+  "ko": "페드로 레알의 크루아는 DSType에서 나왔고, 넓은 비례와 날카로운 모서리를 가진 브루탈리스트 세리프다. 마이크로, 텍스트, 헤드라인, 디스플레이가 각각 14스타일, 라이트에서 헤비까지, 이탤릭이 있다. 크루아 XL은 같은 형태를 세리프와 슬래브로 민다. 모두 60스타일이라 본문과 포스터가 하나의 콘크리트 목소리를 나눌 수 있다.",
+  "src": "DSType",
+  "url": "https://www.dstype.com/fonts/crua"
+ },
+ {
+  "tag": "Realtime",
+  "t": "Cozy Town: the roofs cheat the camera",
+  "en": "Pedro Henrique Placido Silva turned Kemineko's illustrated town into a 3D scene that had no perspective lines to follow. He blocked it in simple masses, then cheated sizes so one camera angle would hold. A geometry node builds the tower roof and a deform makes it wobble. Lantern tiles vary in size and brightness. Stone edges go lighter through a curvature mask. The plants are SpeedTree.",
+  "blurb": "No perspective lines, so the roofs and streets are sized for one camera",
+  "zh": "Pedro Henrique Placido Silva把Kemineko的插画小镇做成三维场景，原画没有可以跟着走的透视线。他先用简单体块摆场，再按一个机位去“作弊”尺寸。塔楼屋顶用几何节点生成，再变形让它发软。灯笼的瓷砖大小和亮度都有随机。石头边缘靠曲率遮罩变浅。植物来自SpeedTree。",
+  "ko": "페드로 엔히키 플라시두 실바는 케미네코의 삽화 마을을 따라갈 투시선이 없는 3D 장면으로 옮겼다. 단순한 덩어리로 블로킹한 뒤, 카메라 앵글 하나가 성립하도록 크기를 속였다. 탑 지붕은 지오메트리 노드로 만들고 디폼으로 흔들리게 한다. 랜턴 타일은 크기와 밝기가 달라지고, 돌 가장자리는 곡률 마스크로 밝아진다. 식물은 스피드트리다.",
+  "src": "80 Level",
+  "url": "https://80.lv/articles/turning-whimsical-2d-town-into-cozy-3d-world"
+ },
+ {
+  "tag": "Visual",
+  "t": "Victorious: the O is the city's sun",
+  "en": "Wildish & Co. rebuilt Victorious Festival so Portsmouth, not the day's headliner, is the picture. The O in the wordmark is the sun from the city's coat of arms, and that starburst repeats on wristbands and wayfinding. Victorious Bold is a tall condensed capital for posters and stage screens. Navy, Sky, Sunset and Sunrise come off the seafront. Every act's press photo runs through one risograph treatment.",
+  "blurb": "The O is Portsmouth's sun, and every press photo shares one risograph",
+  "zh": "Wildish & Co.重做了Victorious音乐节，画面的主角换成朴茨茅斯，而不是当天的头牌。字标里的O是市徽上的太阳，这颗星芒接着用到手环和导视上。Victorious Bold是一套高窄的大写，给海报和舞台屏。海军蓝、天空、日落和日出取自海滨。每位艺人的新闻照都过同一套孔版处理。",
+  "ko": "와일디시 앤 코는 빅토리어스 페스티벌을 다시 짜서, 그날의 헤드라인 대신 포츠머스가 그림이 되게 했다. 워드마크의 O는 시 문장의 태양이고, 그 별 광선이 손목띠와 웨이파인딩에 반복된다. 빅토리어스 볼드는 포스터와 무대 화면을 위한 높고 좁은 대문자다. 네이비, 스카이, 선셋, 선라이즈는 해변에서 왔다. 모든 아티스트의 보도 사진은 하나의 리소그래프 처리를 거친다.",
+  "src": "Creative Boom",
+  "url": "https://www.creativeboom.com/news/why-victorious-festival-stopped-selling-its-headliners-and-started-selling-portsmouth/",
+  "img_url": "https://media.creativeboom.com/916418b9-66e8-4301-929c-655e90c77eb3/conversions/9fa9255f9a79540e79c602b96256b0140d37e258-medium.webp"
+ },
+ {
+  "tag": "Interaction",
+  "t": "KAIROS: snooze is a pattern now",
+  "en": "Cheon Ryong Choi's KAIROS concept removes the snooze button. A ribbed top gives the hand nothing to hit. The alarm stops only after a pattern on the screen, and the pattern is different each morning. Six small buttons sit on the back, between two speaker grilles. Once it is quiet, the same screen can show time, temperature and weather, and a companion app can leave the headlines off.",
+  "blurb": "No snooze key: the alarm stops only after a pattern drawn on the screen",
+  "zh": "Cheon Ryong Choi的KAIROS概念把贪睡键拿掉了。顶部全是棱，手摸不到可以按的地方。闹铃只在你画完屏幕上的图案之后才停，而且每天早上的图案都不一样。六颗小键藏在背面，夹在两块扬声器格栅之间。安静下来以后，同一块屏可以显示时间、温度和天气，配套应用也可以把新闻标题关掉。",
+  "ko": "천룡 최의 카이로스 콘셉트는 스누즈 버튼을 없앤다. 골이 진 윗면은 손이 누를 자리를 주지 않는다. 알람은 화면의 패턴을 끝내야 멈추고, 그 패턴은 아침마다 다르다. 작은 버튼 여섯 개는 뒤쪽, 스피커 그릴 두 개 사이에 있다. 조용해지면 같은 화면이 시간, 온도, 날씨를 보여주고, 컴패니언 앱은 헤드라인을 꺼 둘 수 있다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/11/26/this-alarm-clock-concept-trades-the-snooze-button-for-a-morning-puzzle/",
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/this-alarm-clock-concept-trades-the-snooze-button-for-a-morning-puzzle/kairos-smart-alarm-clock-concept-06.jpg"
+ },
+ {
+  "tag": "AI",
+  "t": "Indus: the answer is read back aloud",
+  "en": "HMD Rise puts Indus, from Bengaluru's Sarvam, on a 6.51-inch HD+ screen with a waterdrop notch. The assistant answers and reads the reply back in 22 Indian languages. Sarvam describes it as a limited beta of a 105-billion-parameter model. The phone runs Android 16 Go, in Indigo Silver, Midnight Gold or Emerald Gold. The notch is leftover 2019. The voice is the interface.",
+  "blurb": "Indus reads the reply aloud in 22 Indian languages, on a 6.51-inch screen",
+  "zh": "HMD Rise把班加罗尔Sarvam的Indus放在一块6.51英寸、带水滴刘海的HD+屏上。助手用22种印度语言回答，并把答复读出来。Sarvam把它描述成一个1050亿参数模型的限量测试界面。手机跑Android 16 Go，配色是Indigo Silver、Midnight Gold或Emerald Gold。刘海还停在2019年。声音才是这套界面。",
+  "ko": "HMD 라이즈는 벵갈루루 사르밤의 인더스를 물방울 노치가 있는 6.51인치 HD+ 화면에 올린다. 어시스턴트는 22개 인도 언어로 답하고, 그 답을 소리 내어 읽는다. 사르밤은 이를 1050억 파라미터 모델의 제한적 베타 인터페이스라고 부른다. 폰은 안드로이드 16 Go이고, 색은 인디고 실버, 미드나잇 골드, 에메랄드 골드다. 노치는 2019년에 남아 있다. 목소리가 인터페이스다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/11/26/hmds-new-113-phone-has-one-real-feature-a-non-english-ai-assistant/",
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/auto-draft/hmd_rise_1.jpg"
+ },
+ {
+  "tag": "Industrial",
+  "t": "Too: the puck leaves the disc in view",
+  "en": "NINM Lab's Long Time No See Too is a clear CD player cut to jewel-case size, 138 by 138 by 32 mm. A round speaker puck, 84.2 grams, sticks to one corner on a magnet, in translucent white or vivid red, so the disc stays visible while it spins. A small LED beside the disc shows playback and Bluetooth. The link is two-way Bluetooth 5.3: the disc can feed headphones, or a phone can play out of the puck.",
+  "blurb": "A magnetic speaker puck parks on the corner, so the spinning disc stays visible",
+  "zh": "NINM Lab的Long Time No See Too是一台透明CD机，尺寸按光盘盒来，138×138×32毫米。一只84.2克的圆形音箱吸在一个角上，半透明白或鲜红色，所以碟在转的时候一直看得见。碟旁边一颗小LED显示播放和蓝牙状态。连接是双向蓝牙5.3：光盘可以送到耳机，手机也可以从这只音箱放出来。",
+  "ko": "NINM 랩의 롱 타임 노 시 투는 주얼 케이스 크기의 투명 CD 플레이어다. 138×138×32mm. 84.2그램짜리 둥근 스피커 퍽이 자석으로 한 모서리에 붙고, 반투명 화이트 또는 비비드 레드라서 디스크가 도는 동안 그대로 보인다. 디스크 옆의 작은 LED가 재생과 블루투스 상태를 보여 준다. 연결은 양방향 블루투스 5.3이다. 디스크를 헤드폰으로 보내거나, 휴대폰 소리를 퍽으로 낼 수 있다.",
+  "src": "Yanko Design",
+  "url": "https://www.yankodesign.com/2026/11/26/this-see-through-cd-player-is-a-127-middle-finger-to-the-era-of-streaming-and-not-owning-music/",
+  "img_url": "https://www.yankodesign.com/images/design_news/2026/11/auto-draft/long_time_no_see_too_cd_player_1.jpeg"
+ }
+]
